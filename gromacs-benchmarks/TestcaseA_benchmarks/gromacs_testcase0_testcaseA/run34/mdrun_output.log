@@ -1,0 +1,36 @@
+                      :-) GROMACS - gmx mdrun, 2025.0 (-:
+
+Executable:   /users/ealnuaim/naive_build/gromacs-2025.0/bin/gmx
+Data prefix:  /users/ealnuaim/naive_build/gromacs-2025.0
+Working dir:  /users/ealnuaim
+Command line:
+  gmx mdrun -s /users/ealnuaim/GROMACS_TestCaseA/ion_channel.tpr -ntmpi 1 -ntomp 16 -nsteps 100
+
+Reading file /users/ealnuaim/GROMACS_TestCaseA/ion_channel.tpr, VERSION 2020.3 (single precision)
+Note: file tpx version 119, software tpx version 137
+Overriding nsteps with value passed on the command line: 100 steps, 0.25 ps
+Changing nstlist from 10 to 80, rlist from 1 to 1.131
+
+
+Update groups can not be used for this system because there are three or more consecutively coupled constraints
+
+Using 1 MPI thread
+Using 16 OpenMP threads 
+
+
+NOTE: The number of threads is not equal to the number of (logical) cpus
+      and the -pin option is set to auto: will not pin threads to cpus.
+      This can lead to significant performance degradation.
+      Consider using -pin on (and -pinoffset in case you run multiple jobs).
+starting mdrun 'Protein'
+100 steps,      0.2 ps.
+
+Writing final coordinates.
+
+               Core t (s)   Wall t (s)        (%)
+       Time:       26.884        1.681     1599.6
+                 (ns/day)    (hour/ns)
+Performance:       12.981        1.849
+
+GROMACS reminds you: "Requiem, bring the dissident from slumber" (Bad Religion)
+
