@@ -1,0 +1,35 @@
+                       :-) GROMACS - gmx_mpi, 2025.0 (-:
+
+Executable:   /usr/local/gromacs/bin/gmx_mpi
+Data prefix:  /usr/local/gromacs
+Working dir:  /gromacs-2025.0
+Command line:
+  gmx_mpi -version
+
+GROMACS version:     2025.0
+Precision:           mixed
+Memory model:        64 bit
+MPI library:         MPI
+MPI library version: MPICH Version: 3.4 MPICH Release date: Tue Jan  5 09:27:10 CST 2021 MPICH ABI: 13:9:1 MPICH Device: ch4:ofi MPICH configure: --prefix=/usr/local/mpich --with-device=ch4:ofi --enable-fast=all,O3 MPICH CC: gcc    -DNDEBUG -DNVALGRIND -O3 MPICH CXX: g++   -DNDEBUG -DNVALGRIND -O3 MPICH F77: gfortran   -O3 MPICH FC: gfortran   -O3 
+OpenMP support:      enabled (GMX_OPENMP_MAX_THREADS = 128)
+GPU support:         CUDA
+NBNxM GPU setup:     super-cluster 2x2x2 / cluster 8 (cluster-pair splitting on)
+SIMD instructions:   AVX_512
+CPU FFT library:     fftw-3.3.10-sse2-avx-avx2-avx2_128-avx512
+GPU FFT library:     cuFFT
+Multi-GPU FFT:       none
+RDTSCP usage:        enabled
+TNG support:         enabled
+Hwloc support:       disabled
+Tracing support:     disabled
+C compiler:          /usr/bin/cc GNU 11.4.0
+C compiler flags:    -fexcess-precision=fast -funroll-all-loops -march=skylake-avx512 -Wno-missing-field-initializers -O3 -DNDEBUG
+C++ compiler:        /usr/bin/c++ GNU 11.4.0
+C++ compiler flags:  -fexcess-precision=fast -funroll-all-loops -march=skylake-avx512 -Wno-missing-field-initializers -Wno-old-style-cast -Wno-cast-qual -Wno-suggest-override -Wno-suggest-destructor-override -Wno-zero-as-null-pointer-constant -Wno-cast-function-type-strict SHELL:-fopenmp -O3 -DNDEBUG
+BLAS library:        External - detected on the system
+LAPACK library:      External - detected on the system
+CUDA compiler:       /usr/local/cuda-12.1/bin/nvcc nvcc: NVIDIA (R) Cuda compiler driver;Copyright (c) 2005-2023 NVIDIA Corporation;Built on Mon_Apr__3_17:16:06_PDT_2023;Cuda compilation tools, release 12.1, V12.1.105;Build cuda_12.1.r12.1/compiler.32688072_0
+CUDA compiler flags: -O3 -DNDEBUG
+CUDA driver:         0.0
+CUDA runtime:        12.10
+
