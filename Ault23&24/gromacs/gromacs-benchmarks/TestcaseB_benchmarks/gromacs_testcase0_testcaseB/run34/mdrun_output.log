@@ -1,0 +1,34 @@
+                      :-) GROMACS - gmx mdrun, 2025.0 (-:
+
+Executable:   /users/ealnuaim/naive_build/gromacs-2025.0/bin/gmx
+Data prefix:  /users/ealnuaim/naive_build/gromacs-2025.0
+Working dir:  /users/ealnuaim
+Command line:
+  gmx mdrun -s /users/ealnuaim/GROMACS_TestCaseB/lignocellulose.tpr -ntmpi 1 -ntomp 64 -nsteps 100
+
+Reading file /users/ealnuaim/GROMACS_TestCaseB/lignocellulose.tpr, VERSION 2020.1 (single precision)
+Note: file tpx version 119, software tpx version 137
+Overriding nsteps with value passed on the command line: 100 steps, 0.2 ps
+Changing nstlist from 10 to 25, rlist from 1.262 to 1.407
+
+
+Update groups can not be used for this system because there are three or more consecutively coupled constraints
+
+Using 1 MPI thread
+Using 64 OpenMP threads 
+
+starting mdrun ''
+100 steps,      0.2 ps.
+
+Writing final coordinates.
+
+NOTE: 63 % of the run time was spent in pair search,
+      you might want to increase nstlist (this has no effect on accuracy)
+
+               Core t (s)   Wall t (s)        (%)
+       Time:     3686.461       57.649     6394.7
+                 (ns/day)    (hour/ns)
+Performance:        0.303       79.275
+
+GROMACS reminds you: "Here's the Way It Might End" (G. Michael)
+
