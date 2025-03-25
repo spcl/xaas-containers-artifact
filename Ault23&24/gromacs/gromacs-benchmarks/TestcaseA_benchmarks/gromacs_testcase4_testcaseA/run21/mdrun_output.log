@@ -32,9 +32,9 @@ starting mdrun 'Protein'
 Writing final coordinates.
 
                Core t (s)   Wall t (s)        (%)
-       Time:      192.461        3.008     6398.9
+       Time:     1645.300       25.708     6399.9
                  (ns/day)    (hour/ns)
-Performance:        7.253        3.309
+Performance:        0.849       28.282
 
-GROMACS reminds you: "You Got to Relate to It" (A.E. Torda)
+GROMACS reminds you: "Two chemists walk into a bar. The first one says, 'I'll have some H2O.'. The second one says, 'I'll have some H2O, too'. He dies." (Anonymous)
 

@@ -29,9 +29,9 @@ starting mdrun 'Protein'
 Writing final coordinates.
 
                Core t (s)   Wall t (s)        (%)
-       Time:       39.161        0.613     6393.6
+       Time:       38.926        0.609     6393.3
                  (ns/day)    (hour/ns)
-Performance:       35.618        0.674
+Performance:       35.831        0.670
 
-GROMACS reminds you: "FORTRAN, the infantile disorder, by now nearly 20 years old, is hopelessly inadequate for whatever computer application you have in mind today: it is now too clumsy, too risky, and too expensive to use." (Edsger Dijkstra, 1970)
+GROMACS reminds you: "Why add prime numbers? Prime numbers are made to be multiplied." (Lev Landau)
 

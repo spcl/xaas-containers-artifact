@@ -29,9 +29,9 @@ starting mdrun 'Protein'
 Writing final coordinates.
 
                Core t (s)   Wall t (s)        (%)
-       Time:       38.948        0.609     6392.8
+       Time:       37.895        0.593     6392.5
                  (ns/day)    (hour/ns)
-Performance:       35.808        0.670
+Performance:       36.801        0.652
 
-GROMACS reminds you: "I'm An Oakman" (Pulp Fiction)
+GROMACS reminds you: "We Have No Money" (E. Clementi)
 

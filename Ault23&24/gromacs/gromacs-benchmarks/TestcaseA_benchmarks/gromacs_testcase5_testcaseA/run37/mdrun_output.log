@@ -29,9 +29,9 @@ starting mdrun 'Protein'
 Writing final coordinates.
 
                Core t (s)   Wall t (s)        (%)
-       Time:       38.597        0.604     6392.9
+       Time:       37.606        0.588     6393.2
                  (ns/day)    (hour/ns)
-Performance:       36.135        0.664
+Performance:       37.088        0.647
 
-GROMACS reminds you: "It Was My Pleasure" (Pulp Fiction)
+GROMACS reminds you: "The best way to obtain plausible negative examples is to run a docking program with a biophysics-based function." (Julie Bernauer)
 

@@ -29,9 +29,9 @@ starting mdrun 'Protein'
 Writing final coordinates.
 
                Core t (s)   Wall t (s)        (%)
-       Time:       37.771        0.591     6393.0
+       Time:       38.104        0.596     6393.1
                  (ns/day)    (hour/ns)
-Performance:       36.925        0.650
+Performance:       36.604        0.656
 
-GROMACS reminds you: "Throwing the Baby Away With the SPC" (S. Hayward)
+GROMACS reminds you: "I love deadlines. I like the whooshing sound they make as they fly by." (Douglas Adams)
 

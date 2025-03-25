@@ -29,9 +29,9 @@ starting mdrun 'Protein'
 Writing final coordinates.
 
                Core t (s)   Wall t (s)        (%)
-       Time:       38.994        0.610     6392.9
+       Time:       37.873        0.592     6393.0
                  (ns/day)    (hour/ns)
-Performance:       35.767        0.671
+Performance:       36.825        0.652
 
-GROMACS reminds you: "One Ripple At a Time" (Bianca's Smut Shack)
+GROMACS reminds you: "C is quirky, flawed, and an enormous success." (Dennis Ritchie, C author)
 

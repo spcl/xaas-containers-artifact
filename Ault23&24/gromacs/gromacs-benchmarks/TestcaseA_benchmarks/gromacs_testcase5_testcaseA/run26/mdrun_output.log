@@ -29,9 +29,9 @@ starting mdrun 'Protein'
 Writing final coordinates.
 
                Core t (s)   Wall t (s)        (%)
-       Time:     1237.738       19.340     6399.8
+       Time:       38.253        0.598     6393.2
                  (ns/day)    (hour/ns)
-Performance:        1.128       21.276
+Performance:       36.461        0.658
 
-GROMACS reminds you: "(That makes 100 errors; please try again.)" (TeX)
+GROMACS reminds you: "I have a hunch that the unknown sequences of DNA will decode into copyright notices and patent protections." (Donald Knuth)
 

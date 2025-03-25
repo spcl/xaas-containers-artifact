@@ -32,9 +32,9 @@ starting mdrun 'Protein'
 Writing final coordinates.
 
                Core t (s)   Wall t (s)        (%)
-       Time:      194.084        3.033     6398.9
+       Time:      192.572        3.009     6398.9
                  (ns/day)    (hour/ns)
-Performance:        7.193        3.337
+Performance:        7.249        3.311
 
-GROMACS reminds you: "May the Force Be With You" (Star Wars)
+GROMACS reminds you: "Mendeleev's first attempt, the perfluoric table, was a total disaster, and his subsequent attempts, the perchloric and perbromic tables, were not favorably received. Only his fourth attempt, the periodic table, gained general acceptance." (Anonymous)
 

@@ -32,9 +32,9 @@ starting mdrun 'Protein'
 Writing final coordinates.
 
                Core t (s)   Wall t (s)        (%)
-       Time:      192.307        3.005     6398.9
+       Time:      192.398        3.007     6398.9
                  (ns/day)    (hour/ns)
-Performance:        7.259        3.306
+Performance:        7.256        3.308
 
-GROMACS reminds you: "Our hands are tied by physics." (Christian Blau)
+GROMACS reminds you: "Ubiquitin's just a rock" (Berk Hess)
 

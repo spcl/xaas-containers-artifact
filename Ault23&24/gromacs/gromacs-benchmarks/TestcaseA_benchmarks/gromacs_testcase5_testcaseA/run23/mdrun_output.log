@@ -29,9 +29,9 @@ starting mdrun 'Protein'
 Writing final coordinates.
 
                Core t (s)   Wall t (s)        (%)
-       Time:       37.881        0.593     6392.9
+       Time:       38.111        0.596     6392.8
                  (ns/day)    (hour/ns)
-Performance:       36.817        0.652
+Performance:       36.595        0.656
 
-GROMACS reminds you: "Jesus Can't Save You, Though It's Nice to Think He Tried" (Black Crowes)
+GROMACS reminds you: "If at first you don't succeed, try two more times so that your failure is statistically significant." (Dallas Warren)
 

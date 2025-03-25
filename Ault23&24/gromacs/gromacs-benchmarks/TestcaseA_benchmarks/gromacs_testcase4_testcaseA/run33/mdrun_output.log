@@ -32,9 +32,9 @@ starting mdrun 'Protein'
 Writing final coordinates.
 
                Core t (s)   Wall t (s)        (%)
-       Time:      191.722        2.996     6398.9
+       Time:      192.050        3.001     6398.9
                  (ns/day)    (hour/ns)
-Performance:        7.281        3.296
+Performance:        7.269        3.302
 
-GROMACS reminds you: "Load Up Your Rubber Bullets" (10 CC)
+GROMACS reminds you: "This type of advanced sampling techniques... which are not so advanced, really." (Viveca Lindahl, on AWH, at her thesis defense.)
 

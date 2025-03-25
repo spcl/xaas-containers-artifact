@@ -32,9 +32,9 @@ starting mdrun 'Protein'
 Writing final coordinates.
 
                Core t (s)   Wall t (s)        (%)
-       Time:      193.335        3.021     6398.9
+       Time:      191.950        3.000     6398.9
                  (ns/day)    (hour/ns)
-Performance:        7.221        3.324
+Performance:        7.273        3.300
 
-GROMACS reminds you: "Time is the best appraiser of scientific work, and I am aware that an industrial discovery rarely produces all its fruit in the hands of its first inventor." (Louis Pasteur)
+GROMACS reminds you: "We all understand the twinge of discomfort at the thought that we share a common ancestor with the apes. No one can embarrass you like a relative." (Neal DeGrasse Tyson)
 

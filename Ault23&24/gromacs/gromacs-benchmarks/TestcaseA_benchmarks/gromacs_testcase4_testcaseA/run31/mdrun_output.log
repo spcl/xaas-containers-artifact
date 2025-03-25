@@ -32,9 +32,9 @@ starting mdrun 'Protein'
 Writing final coordinates.
 
                Core t (s)   Wall t (s)        (%)
-       Time:      192.594        3.010     6398.8
+       Time:      192.333        3.006     6398.9
                  (ns/day)    (hour/ns)
-Performance:        7.248        3.311
+Performance:        7.258        3.307
 
-GROMACS reminds you: "Never Get a Chance to Kick Ass" (The Amps)
+GROMACS reminds you: "I never thought of stopping, and I just hated sleeping. I can't imagine having a better life." (Barbara McClintock)
 

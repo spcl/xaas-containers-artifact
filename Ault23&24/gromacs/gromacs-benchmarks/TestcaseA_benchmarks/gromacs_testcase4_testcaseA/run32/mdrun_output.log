@@ -32,9 +32,9 @@ starting mdrun 'Protein'
 Writing final coordinates.
 
                Core t (s)   Wall t (s)        (%)
-       Time:      193.061        3.017     6398.9
+       Time:      192.270        3.005     6398.9
                  (ns/day)    (hour/ns)
-Performance:        7.231        3.319
+Performance:        7.261        3.306
 
-GROMACS reminds you: "When you get right down to it, almost every explanation Man came up with for anything until about 1926 was stupid." (Dave Barry)
+GROMACS reminds you: "A C program is like a fast dance on a newly waxed dance floor by people carrying razors." (Waldi Ravens)
 

@@ -32,9 +32,9 @@ starting mdrun 'Protein'
 Writing final coordinates.
 
                Core t (s)   Wall t (s)        (%)
-       Time:      192.151        3.003     6398.8
+       Time:      192.237        3.004     6398.9
                  (ns/day)    (hour/ns)
-Performance:        7.265        3.304
+Performance:        7.262        3.305
 
-GROMACS reminds you: "Please implement proper hep writing" (GROMACS)
+GROMACS reminds you: "Weaseling out of things is important to learn. It's what separates us from the animals... except the weasels." (Homer Simpson)
 

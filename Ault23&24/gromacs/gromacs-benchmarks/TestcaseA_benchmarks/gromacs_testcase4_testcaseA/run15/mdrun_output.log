@@ -32,9 +32,9 @@ starting mdrun 'Protein'
 Writing final coordinates.
 
                Core t (s)   Wall t (s)        (%)
-       Time:      192.556        3.009     6399.0
+       Time:      193.457        3.023     6398.9
                  (ns/day)    (hour/ns)
-Performance:        7.250        3.310
+Performance:        7.216        3.326
 
-GROMACS reminds you: "It's So Lonely When You Don't Even Know Yourself" (Red Hot Chili Peppers)
+GROMACS reminds you: "I'm a strong believer that ignorance is important in science. If you know too much, you start seeing reasons why things won't work. That's why its important to change your field to collect more ignorance." (Sydney Brenner)
 

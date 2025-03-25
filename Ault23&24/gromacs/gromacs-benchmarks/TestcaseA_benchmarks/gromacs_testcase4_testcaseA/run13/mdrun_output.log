@@ -32,9 +32,9 @@ starting mdrun 'Protein'
 Writing final coordinates.
 
                Core t (s)   Wall t (s)        (%)
-       Time:      192.339        3.006     6398.9
+       Time:      193.930        3.031     6398.9
                  (ns/day)    (hour/ns)
-Performance:        7.258        3.307
+Performance:        7.198        3.334
 
-GROMACS reminds you: "On the East coast, a purple patch, to show where the jolly pioneers of progress drink the jolly lager-beer" (Joseph Conrad)
+GROMACS reminds you: "Suzy is a headbanger, her mother is a geek" (The Ramones)
 

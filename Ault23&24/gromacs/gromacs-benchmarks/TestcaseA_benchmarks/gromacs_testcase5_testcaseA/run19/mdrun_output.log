@@ -29,9 +29,9 @@ starting mdrun 'Protein'
 Writing final coordinates.
 
                Core t (s)   Wall t (s)        (%)
-       Time:       37.845        0.592     6393.0
+       Time:       37.290        0.583     6392.7
                  (ns/day)    (hour/ns)
-Performance:       36.853        0.651
+Performance:       37.400        0.642
 
-GROMACS reminds you: "It's Not Dark Yet, But It's Getting There" (Bob Dylan)
+GROMACS reminds you: "Nothing is more anarchic than power." (Pier Paolo Pasolini)
 

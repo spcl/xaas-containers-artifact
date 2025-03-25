@@ -32,9 +32,9 @@ starting mdrun 'Protein'
 Writing final coordinates.
 
                Core t (s)   Wall t (s)        (%)
-       Time:      192.373        3.006     6398.9
+       Time:      193.160        3.019     6398.9
                  (ns/day)    (hour/ns)
-Performance:        7.257        3.307
+Performance:        7.227        3.321
 
-GROMACS reminds you: "Try to calculate the numbers that have been" (The Smoke Fairies)
+GROMACS reminds you: "There was no preconception on what to do" (Daft Punk)
 

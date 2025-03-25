@@ -29,9 +29,9 @@ starting mdrun 'Protein'
 Writing final coordinates.
 
                Core t (s)   Wall t (s)        (%)
-       Time:       38.032        0.595     6392.9
+       Time:       37.994        0.594     6393.2
                  (ns/day)    (hour/ns)
-Performance:       36.671        0.654
+Performance:       36.710        0.654
 
-GROMACS reminds you: "Water is just water" (Berk Hess)
+GROMACS reminds you: "In science it often happens that scientists say, 'You know that's a really good argument; my position is mistaken,' and then they would actually change their minds and you never hear that old view from them again. They really do it. It doesn't happen as often as it should, because scientists are human and change is sometimes painful. But it happens every day. I cannot recall the last time something like that happened in politics or religion." (Carl Sagan)
 

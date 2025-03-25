@@ -29,9 +29,9 @@ starting mdrun 'Protein'
 Writing final coordinates.
 
                Core t (s)   Wall t (s)        (%)
-       Time:       39.276        0.614     6393.2
+       Time:       39.492        0.618     6393.4
                  (ns/day)    (hour/ns)
-Performance:       35.511        0.676
+Performance:       35.318        0.680
 
-GROMACS reminds you: "Do you know what cations don't like? Dog-ions. Do you know what they like? Pie." (Tom Cheatham)
+GROMACS reminds you: "Science adjusts its views based on what's observed. Faith is the denial of observation so that belief can be preserved." (Tim Minchin)
 

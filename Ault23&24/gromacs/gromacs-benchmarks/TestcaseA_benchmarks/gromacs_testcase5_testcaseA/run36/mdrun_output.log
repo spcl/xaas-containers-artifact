@@ -29,9 +29,9 @@ starting mdrun 'Protein'
 Writing final coordinates.
 
                Core t (s)   Wall t (s)        (%)
-       Time:       39.049        0.611     6392.7
+       Time:       38.571        0.603     6393.3
                  (ns/day)    (hour/ns)
-Performance:       35.715        0.672
+Performance:       36.161        0.664
 
-GROMACS reminds you: "A university faculty is 500 egotists with a common parking problem." (Keith Sullivan)
+GROMACS reminds you: "Your daddy ain't your daddy but your daddy don't know" (Dalahan)
 

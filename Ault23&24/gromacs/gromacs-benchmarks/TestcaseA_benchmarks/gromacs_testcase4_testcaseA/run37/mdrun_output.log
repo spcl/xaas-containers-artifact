@@ -32,9 +32,9 @@ starting mdrun 'Protein'
 Writing final coordinates.
 
                Core t (s)   Wall t (s)        (%)
-       Time:      191.021        2.985     6398.9
+       Time:      225.314        3.521     6399.1
                  (ns/day)    (hour/ns)
-Performance:        7.308        3.284
+Performance:        6.196        3.874
 
-GROMACS reminds you: "For the first time we can now mechanically simulate the cognitive process. We can make studies in artificial intelligence. Beyond that, this mechanism can be used to assist humans in learning. As we are going to have more mature students in greater numbers as time goes on, this type of teaching will probably be increasingly important." (Sister Mary Kenneth Keller)
+GROMACS reminds you: "There are three types of people: Those who see, those who see when they are shown, and those who do not see." (Leonardo da Vinci)
 

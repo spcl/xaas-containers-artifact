@@ -32,9 +32,9 @@ starting mdrun 'Protein'
 Writing final coordinates.
 
                Core t (s)   Wall t (s)        (%)
-       Time:     1637.874       25.592     6399.9
+       Time:      191.389        2.991     6398.9
                  (ns/day)    (hour/ns)
-Performance:        0.852       28.154
+Performance:        7.294        3.290
 
 GROMACS reminds you: "They never asked me to go back over (my calculations) because when I did it, I had done my best, and it was right." (Kathrine Jonson (legendary NASA mathematician))
 

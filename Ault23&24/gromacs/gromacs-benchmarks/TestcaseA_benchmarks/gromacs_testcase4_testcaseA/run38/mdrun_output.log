@@ -32,9 +32,9 @@ starting mdrun 'Protein'
 Writing final coordinates.
 
                Core t (s)   Wall t (s)        (%)
-       Time:      192.738        3.012     6399.0
+       Time:      191.545        2.993     6398.9
                  (ns/day)    (hour/ns)
-Performance:        7.243        3.314
+Performance:        7.288        3.293
 
-GROMACS reminds you: "I had trouble with physics in college. When I signed up I thought it said psychics." (Greg Tamblyn)
+GROMACS reminds you: "Confirmed" (Star Trek)
 

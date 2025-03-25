@@ -32,9 +32,9 @@ starting mdrun 'Protein'
 Writing final coordinates.
 
                Core t (s)   Wall t (s)        (%)
-       Time:      193.426        3.023     6398.9
+       Time:      191.191        2.988     6399.0
                  (ns/day)    (hour/ns)
-Performance:        7.217        3.325
+Performance:        7.302        3.287
 
-GROMACS reminds you: "What's Your Definition Of Dirty ?" (G. Michael)
+GROMACS reminds you: "We will always have STEM with us. Some things will drop out of the public eye and will go away, but there will always be science, engineering, and technology. And there will always, always be mathematics." (Katherine Johnson)
 

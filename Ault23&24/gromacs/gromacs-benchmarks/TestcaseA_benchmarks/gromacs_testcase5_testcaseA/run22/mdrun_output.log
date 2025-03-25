@@ -29,9 +29,9 @@ starting mdrun 'Protein'
 Writing final coordinates.
 
                Core t (s)   Wall t (s)        (%)
-       Time:       38.310        0.599     6393.1
+       Time:       38.425        0.601     6393.2
                  (ns/day)    (hour/ns)
-Performance:       36.406        0.659
+Performance:       36.298        0.661
 
-GROMACS reminds you: "Harvard makes mistakes too, you know. Kissinger taught there." (Woody Allen)
+GROMACS reminds you: "Breaking the Law, Breaking the Law" (Judas Priest)
 

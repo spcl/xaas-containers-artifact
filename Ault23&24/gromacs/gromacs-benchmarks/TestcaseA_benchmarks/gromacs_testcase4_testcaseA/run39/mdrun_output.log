@@ -32,9 +32,9 @@ starting mdrun 'Protein'
 Writing final coordinates.
 
                Core t (s)   Wall t (s)        (%)
-       Time:      193.002        3.016     6398.9
+       Time:      191.979        3.000     6398.9
                  (ns/day)    (hour/ns)
-Performance:        7.233        3.318
+Performance:        7.272        3.301
 
-GROMACS reminds you: "As Always Your Logic Is Impeccable" (Tuvok)
+GROMACS reminds you: "I Do It All the Time" (Magnapop)
 

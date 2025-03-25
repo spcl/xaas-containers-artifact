@@ -29,9 +29,9 @@ starting mdrun 'Protein'
 Writing final coordinates.
 
                Core t (s)   Wall t (s)        (%)
-       Time:      179.516        2.806     6398.5
+       Time:       37.318        0.584     6392.5
                  (ns/day)    (hour/ns)
-Performance:        7.776        3.086
+Performance:       37.371        0.642
 
-GROMACS reminds you: "If Java had true garbage collection, most programs would delete themselves upon execution." (Robert Sewell)
+GROMACS reminds you: "You Look Better Upside Down" (Throwing Muses)
 

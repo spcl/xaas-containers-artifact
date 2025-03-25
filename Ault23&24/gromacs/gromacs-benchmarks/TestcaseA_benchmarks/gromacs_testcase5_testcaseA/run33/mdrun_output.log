@@ -29,9 +29,9 @@ starting mdrun 'Protein'
 Writing final coordinates.
 
                Core t (s)   Wall t (s)        (%)
-       Time:       38.431        0.601     6392.8
+       Time:       37.868        0.592     6392.6
                  (ns/day)    (hour/ns)
-Performance:       36.290        0.661
+Performance:       36.829        0.652
 
-GROMACS reminds you: "It's just B I O L O G Y, can't you see?" (Joe Jackson)
+GROMACS reminds you: "FORTRAN, the infantile disorder, by now nearly 20 years old, is hopelessly inadequate for whatever computer application you have in mind today: it is now too clumsy, too risky, and too expensive to use." (Edsger Dijkstra, 1970)
 

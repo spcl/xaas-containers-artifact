@@ -29,9 +29,9 @@ starting mdrun 'Protein'
 Writing final coordinates.
 
                Core t (s)   Wall t (s)        (%)
-       Time:       38.784        0.607     6393.5
+       Time:       39.455        0.617     6393.3
                  (ns/day)    (hour/ns)
-Performance:       35.963        0.667
+Performance:       35.351        0.679
 
-GROMACS reminds you: "Bailed Out Of Edge Synchronization After 10,000 Iterations" (X/Motif)
+GROMACS reminds you: "Oh, There Goes Gravity" (Eminem)
 

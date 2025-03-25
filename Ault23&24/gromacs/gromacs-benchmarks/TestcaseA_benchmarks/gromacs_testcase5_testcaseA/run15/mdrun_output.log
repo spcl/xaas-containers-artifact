@@ -29,9 +29,9 @@ starting mdrun 'Protein'
 Writing final coordinates.
 
                Core t (s)   Wall t (s)        (%)
-       Time:       38.901        0.608     6393.2
+       Time:       37.728        0.590     6393.1
                  (ns/day)    (hour/ns)
-Performance:       35.854        0.669
+Performance:       36.968        0.649
 
-GROMACS reminds you: "For the first time we can now mechanically simulate the cognitive process. We can make studies in artificial intelligence. Beyond that, this mechanism can be used to assist humans in learning. As we are going to have more mature students in greater numbers as time goes on, this type of teaching will probably be increasingly important." (Sister Mary Kenneth Keller)
+GROMACS reminds you: "I'm Only Faking When I Get It Right" (Soundgarden)
 

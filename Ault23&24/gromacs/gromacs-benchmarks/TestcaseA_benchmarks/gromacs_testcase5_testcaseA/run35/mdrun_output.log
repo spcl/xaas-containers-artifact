@@ -29,9 +29,9 @@ starting mdrun 'Protein'
 Writing final coordinates.
 
                Core t (s)   Wall t (s)        (%)
-       Time:       39.204        0.613     6393.3
+       Time:       39.514        0.618     6393.6
                  (ns/day)    (hour/ns)
-Performance:       35.577        0.675
+Performance:       35.300        0.680
 
-GROMACS reminds you: "I Do It All the Time" (Magnapop)
+GROMACS reminds you: "Jesus Not Only Saves, He Also Frequently Makes Backups." (Myron Bradshaw)
 

@@ -32,9 +32,9 @@ starting mdrun 'Protein'
 Writing final coordinates.
 
                Core t (s)   Wall t (s)        (%)
-       Time:      192.192        3.004     6398.9
+       Time:      192.986        3.016     6398.9
                  (ns/day)    (hour/ns)
-Performance:        7.263        3.304
+Performance:        7.234        3.318
 
-GROMACS reminds you: "My Brothers are Protons (Protons!), My Sisters are Neurons (Neurons)" (Gogol Bordello)
+GROMACS reminds you: "Isn't this enough? Just this world? Just this beautiful, complex wonderfully unfathomable world? How does it so fail to hold our attention that we have to diminish it with the invention of cheap, man-made myths and monsters?" (Tim Minchin)
 

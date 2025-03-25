@@ -29,9 +29,9 @@ starting mdrun 'Protein'
 Writing final coordinates.
 
                Core t (s)   Wall t (s)        (%)
-       Time:       38.008        0.595     6393.1
+       Time:       38.266        0.599     6392.5
                  (ns/day)    (hour/ns)
-Performance:       36.695        0.654
+Performance:       36.444        0.659
 
-GROMACS reminds you: "It's So Lonely When You Don't Even Know Yourself" (Red Hot Chili Peppers)
+GROMACS reminds you: "I Quit My Job Blowing Leaves" (Beck)
 

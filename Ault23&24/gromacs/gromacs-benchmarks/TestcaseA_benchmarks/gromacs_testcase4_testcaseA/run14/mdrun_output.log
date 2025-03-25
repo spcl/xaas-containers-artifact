@@ -32,9 +32,9 @@ starting mdrun 'Protein'
 Writing final coordinates.
 
                Core t (s)   Wall t (s)        (%)
-       Time:      192.252        3.004     6398.9
+       Time:      192.951        3.015     6398.8
                  (ns/day)    (hour/ns)
-Performance:        7.261        3.305
+Performance:        7.235        3.317
 
-GROMACS reminds you: "Check Your Output" (P. Ahlstrom)
+GROMACS reminds you: "Or (horrors!) use Berendsen!" (Justin Lemkul)
 

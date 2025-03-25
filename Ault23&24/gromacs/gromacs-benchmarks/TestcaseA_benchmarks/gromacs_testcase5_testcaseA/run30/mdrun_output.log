@@ -29,9 +29,9 @@ starting mdrun 'Protein'
 Writing final coordinates.
 
                Core t (s)   Wall t (s)        (%)
-       Time:       38.578        0.603     6393.3
+       Time:       38.841        0.608     6393.0
                  (ns/day)    (hour/ns)
-Performance:       36.155        0.664
+Performance:       35.908        0.668
 
-GROMACS reminds you: "Philosophy of science is about as useful to scientists as ornithology is to birds." (Richard Feynman)
+GROMACS reminds you: "If 10 years from now, when you are doing something quick and dirty, you suddenly visualize that I am looking over your shoulders and say to yourself: 'Dijkstra would not have liked this', well that would be enough immortality for me." (Edsger Dijkstra)
 

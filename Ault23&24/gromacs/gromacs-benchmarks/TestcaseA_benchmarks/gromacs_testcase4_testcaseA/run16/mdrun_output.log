@@ -32,9 +32,9 @@ starting mdrun 'Protein'
 Writing final coordinates.
 
                Core t (s)   Wall t (s)        (%)
-       Time:      193.417        3.023     6398.9
+       Time:      191.955        3.000     6398.9
                  (ns/day)    (hour/ns)
-Performance:        7.218        3.325
+Performance:        7.272        3.300
 
-GROMACS reminds you: "Nurture Another Mind, Before Yours Expires" (Arrested Development)
+GROMACS reminds you: "If it's all right with Dirac, it's all right with me." (Enrico Fermi, on being told that there was experimental evidence He-3 nuclei obey Fermi-Dirac statistics.)
 

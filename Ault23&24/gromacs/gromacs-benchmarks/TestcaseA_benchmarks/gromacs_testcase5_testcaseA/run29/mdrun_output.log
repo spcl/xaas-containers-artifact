@@ -29,9 +29,9 @@ starting mdrun 'Protein'
 Writing final coordinates.
 
                Core t (s)   Wall t (s)        (%)
-       Time:       37.789        0.591     6393.2
+       Time:       39.107        0.612     6393.4
                  (ns/day)    (hour/ns)
-Performance:       36.909        0.650
+Performance:       35.666        0.673
 
-GROMACS reminds you: "A Protein is a Set Of Coordinates" (A.P. Heiner)
+GROMACS reminds you: "Any one who considers arithmetical methods of producing random digits is, of course, in a state of sin." (John von Neumann)
 

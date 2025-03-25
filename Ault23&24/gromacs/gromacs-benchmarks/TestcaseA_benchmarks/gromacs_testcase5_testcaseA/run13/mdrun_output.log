@@ -29,9 +29,9 @@ starting mdrun 'Protein'
 Writing final coordinates.
 
                Core t (s)   Wall t (s)        (%)
-       Time:       38.456        0.602     6393.1
+       Time:       38.384        0.600     6393.2
                  (ns/day)    (hour/ns)
-Performance:       36.267        0.662
+Performance:       36.337        0.660
 
-GROMACS reminds you: "I do not believe continuum electrostatics" (Arieh Warshel, Nobel lecture 2013)
+GROMACS reminds you: "She Says She Can't Go Home Without a Chaperone" (E. Costello)
 

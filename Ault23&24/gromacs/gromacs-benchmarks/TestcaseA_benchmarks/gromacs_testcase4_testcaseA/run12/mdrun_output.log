@@ -32,9 +32,9 @@ starting mdrun 'Protein'
 Writing final coordinates.
 
                Core t (s)   Wall t (s)        (%)
-       Time:      192.797        3.013     6398.9
+       Time:      193.049        3.017     6398.9
                  (ns/day)    (hour/ns)
-Performance:        7.241        3.315
+Performance:        7.231        3.319
 
-GROMACS reminds you: "Schrödinger's backup: The condition of any backup is unknown until a restore is attempted." (Anonymous)
+GROMACS reminds you: "No One Could Foresee the End That Came So Fast" (Slayer)
 

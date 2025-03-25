@@ -29,9 +29,9 @@ starting mdrun 'Protein'
 Writing final coordinates.
 
                Core t (s)   Wall t (s)        (%)
-       Time:       38.064        0.595     6392.8
+       Time:       37.604        0.588     6393.0
                  (ns/day)    (hour/ns)
-Performance:       36.640        0.655
+Performance:       37.089        0.647
 
-GROMACS reminds you: "I'd Like Monday Mornings Better If They Started Later" (Garfield)
+GROMACS reminds you: "We had the quaint notion at the time that software should be completely, absolutely free of bugs. Unfortunately it's a notion that never really quite caught on." (Mary Allen Wilkes)
 

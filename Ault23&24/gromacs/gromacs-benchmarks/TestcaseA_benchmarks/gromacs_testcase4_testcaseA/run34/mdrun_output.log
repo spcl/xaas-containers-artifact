@@ -32,9 +32,9 @@ starting mdrun 'Protein'
 Writing final coordinates.
 
                Core t (s)   Wall t (s)        (%)
-       Time:      192.909        3.015     6398.9
+       Time:      194.630        3.042     6398.9
                  (ns/day)    (hour/ns)
-Performance:        7.237        3.317
+Performance:        7.172        3.346
 
-GROMACS reminds you: "XML is not a language in the sense of a programming language any more than sketches on a napkin are a language." (Charles Simonyi)
+GROMACS reminds you: "Computer science is no more about computers than astronomy is about telescopes" (Edsger Dijkstra)
 

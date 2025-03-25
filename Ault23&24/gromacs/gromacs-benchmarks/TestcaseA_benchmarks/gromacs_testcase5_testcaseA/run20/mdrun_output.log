@@ -29,9 +29,9 @@ starting mdrun 'Protein'
 Writing final coordinates.
 
                Core t (s)   Wall t (s)        (%)
-       Time:       38.312        0.599     6392.9
+       Time:       37.914        0.593     6393.0
                  (ns/day)    (hour/ns)
-Performance:       36.404        0.659
+Performance:       36.786        0.652
 
-GROMACS reminds you: "Don't Follow Me Home" (Throwing Muses)
+GROMACS reminds you: "Step Aside, Butch" (Pulp Fiction)
 

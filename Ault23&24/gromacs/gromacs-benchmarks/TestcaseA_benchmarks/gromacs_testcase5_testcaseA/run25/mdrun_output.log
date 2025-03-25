@@ -29,9 +29,9 @@ starting mdrun 'Protein'
 Writing final coordinates.
 
                Core t (s)   Wall t (s)        (%)
-       Time:       39.238        0.614     6393.2
+       Time:       38.732        0.606     6393.2
                  (ns/day)    (hour/ns)
-Performance:       35.545        0.675
+Performance:       36.010        0.666
 
-GROMACS reminds you: "I have no responsibility to live up to what others expect of me. That's their mistake, not my failing." (Richard Feynman)
+GROMACS reminds you: "It's Bicycle Repair Man !" (Monty Python)
 

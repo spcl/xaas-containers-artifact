@@ -32,9 +32,9 @@ starting mdrun 'Protein'
 Writing final coordinates.
 
                Core t (s)   Wall t (s)        (%)
-       Time:      193.278        3.020     6398.9
+       Time:      192.156        3.003     6398.9
                  (ns/day)    (hour/ns)
-Performance:        7.223        3.323
+Performance:        7.265        3.304
 
-GROMACS reminds you: "A C program is like a fast dance on a newly waxed dance floor by people carrying razors." (Waldi Ravens)
+GROMACS reminds you: "Carry Me Away" (Motors)
 

@@ -32,9 +32,9 @@ starting mdrun 'Protein'
 Writing final coordinates.
 
                Core t (s)   Wall t (s)        (%)
-       Time:      192.394        3.007     6398.8
+       Time:      191.882        2.999     6398.9
                  (ns/day)    (hour/ns)
-Performance:        7.256        3.308
+Performance:        7.275        3.299
 
-GROMACS reminds you: "These are Ideas, They are Not Lies" (Magnapop)
+GROMACS reminds you: "She's a Good Sheila Bruce" (Monty Python)
 

@@ -29,9 +29,9 @@ starting mdrun 'Protein'
 Writing final coordinates.
 
                Core t (s)   Wall t (s)        (%)
-       Time:       39.624        0.620     6392.7
+       Time:       39.494        0.618     6393.4
                  (ns/day)    (hour/ns)
-Performance:       35.197        0.682
+Performance:       35.316        0.680
 
-GROMACS reminds you: "Mathematics is a game played according to certain rules with meaningless marks on paper." (David Hilbert)
+GROMACS reminds you: "Remember, being healthy is basically dying as slowly as possible." (Ricky Gervais)
 

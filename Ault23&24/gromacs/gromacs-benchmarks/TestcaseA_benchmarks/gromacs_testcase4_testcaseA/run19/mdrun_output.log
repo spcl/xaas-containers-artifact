@@ -32,9 +32,9 @@ starting mdrun 'Protein'
 Writing final coordinates.
 
                Core t (s)   Wall t (s)        (%)
-       Time:     1679.329       26.240     6399.9
+       Time:      192.443        3.007     6398.9
                  (ns/day)    (hour/ns)
-Performance:        0.831       28.867
+Performance:        7.254        3.309
 
-GROMACS reminds you: "For those who want some proof that physicists are human, the proof is in the idiocy of all the different units which they use for measuring energy." (Richard Feynman)
+GROMACS reminds you: "If You're So Special Why aren't You Dead ?" (The Breeders)
 

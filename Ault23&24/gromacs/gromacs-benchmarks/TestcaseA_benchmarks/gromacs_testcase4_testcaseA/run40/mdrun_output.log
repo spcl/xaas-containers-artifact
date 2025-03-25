@@ -32,9 +32,9 @@ starting mdrun 'Protein'
 Writing final coordinates.
 
                Core t (s)   Wall t (s)        (%)
-       Time:      192.416        3.007     6398.9
+       Time:      192.806        3.013     6398.9
                  (ns/day)    (hour/ns)
-Performance:        7.255        3.308
+Performance:        7.240        3.315
 
-GROMACS reminds you: "It is not clear that intelligence has any long-term survival value." (Stephen Hawking)
+GROMACS reminds you: "I wanted to have a real language where programmers could write real programs, and see whether they would find the idea of data abstraction at all useful." (Barbara Liskov)
 

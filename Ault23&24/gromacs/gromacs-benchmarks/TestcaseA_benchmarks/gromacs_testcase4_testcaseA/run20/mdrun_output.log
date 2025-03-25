@@ -32,9 +32,9 @@ starting mdrun 'Protein'
 Writing final coordinates.
 
                Core t (s)   Wall t (s)        (%)
-       Time:      191.660        2.995     6398.9
+       Time:      191.821        2.998     6398.9
                  (ns/day)    (hour/ns)
-Performance:        7.284        3.295
+Performance:        7.278        3.298
 
-GROMACS reminds you: "It's So Fast It's Slow" (F. Black)
+GROMACS reminds you: "(That makes 100 errors; please try again.)" (TeX)
 

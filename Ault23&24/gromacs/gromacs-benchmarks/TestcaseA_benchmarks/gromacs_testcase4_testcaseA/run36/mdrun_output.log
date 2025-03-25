@@ -32,9 +32,9 @@ starting mdrun 'Protein'
 Writing final coordinates.
 
                Core t (s)   Wall t (s)        (%)
-       Time:      192.454        3.008     6398.9
+       Time:      191.983        3.000     6398.9
                  (ns/day)    (hour/ns)
-Performance:        7.254        3.309
+Performance:        7.271        3.301
 
-GROMACS reminds you: "Humans are allergic to change. They love to say, 'We've always done it this way.' I try to fight that. That's why I have a clock on my wall that runs counter-clockwise." (Grace Hopper)
+GROMACS reminds you: "I Feel a Great Disturbance in the Force" (The Emperor Strikes Back)
 

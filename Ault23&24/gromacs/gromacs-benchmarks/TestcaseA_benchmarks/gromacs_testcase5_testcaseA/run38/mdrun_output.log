@@ -29,9 +29,9 @@ starting mdrun 'Protein'
 Writing final coordinates.
 
                Core t (s)   Wall t (s)        (%)
-       Time:       90.349        1.412     6397.0
+       Time:       37.725        0.590     6393.0
                  (ns/day)    (hour/ns)
-Performance:       15.446        1.554
+Performance:       36.971        0.649
 
-GROMACS reminds you: "Let's Go Hang Out In a Mall" (LIVE)
+GROMACS reminds you: "It Wouldn't Hurt to Wipe Once In a While" (Beavis and Butthead)
 

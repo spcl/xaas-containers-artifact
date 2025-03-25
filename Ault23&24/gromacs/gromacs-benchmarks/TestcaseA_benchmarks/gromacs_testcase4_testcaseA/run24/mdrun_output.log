@@ -32,9 +32,9 @@ starting mdrun 'Protein'
 Writing final coordinates.
 
                Core t (s)   Wall t (s)        (%)
-       Time:      255.007        3.985     6399.2
+       Time:      193.521        3.024     6398.9
                  (ns/day)    (hour/ns)
-Performance:        5.475        4.384
+Performance:        7.214        3.327
 
-GROMACS reminds you: "Louis Pasteur's theory of germs is ridiculous fiction." (Pierre Pachet, Professor of Physiology at Toulouse, 1872)
+GROMACS reminds you: "I never thought about breaking barriers, I was just interested in what I was doing and kept going." (Barbara Liskov)
 

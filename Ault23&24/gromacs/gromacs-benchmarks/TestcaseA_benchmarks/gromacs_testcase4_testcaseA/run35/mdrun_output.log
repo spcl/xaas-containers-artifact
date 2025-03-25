@@ -32,9 +32,9 @@ starting mdrun 'Protein'
 Writing final coordinates.
 
                Core t (s)   Wall t (s)        (%)
-       Time:      192.482        3.008     6398.9
+       Time:      192.421        3.007     6398.9
                  (ns/day)    (hour/ns)
-Performance:        7.253        3.309
+Performance:        7.255        3.308
 
-GROMACS reminds you: "I'm Only Faking When I Get It Right" (Soundgarden)
+GROMACS reminds you: "Oh, There Goes Gravity" (Eminem)
 

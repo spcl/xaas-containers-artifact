@@ -29,9 +29,9 @@ starting mdrun 'Protein'
 Writing final coordinates.
 
                Core t (s)   Wall t (s)        (%)
-       Time:       39.041        0.611     6393.1
+       Time:       38.634        0.604     6393.2
                  (ns/day)    (hour/ns)
-Performance:       35.725        0.672
+Performance:       36.101        0.665
 
-GROMACS reminds you: "I Was Born to Have Adventure" (F. Zappa)
+GROMACS reminds you: "The soul? There's nothing but chemistry here" (Breaking Bad)
 
