@@ -1,0 +1,28 @@
+FROM ealnuaimi/xaas:ubuntu22.04-mpich3.4-arm
+        # Use Bash as the default shell for all RUN commands
+        SHELL ["/bin/bash", "-c"]
+# Add CUDA repository key
+                RUN apt-key adv --fetch-keys https://developer.download.nvidia.com/compute/cuda/repos/ubuntu2004/sbsa/3bf863cc.pub \
+                    && echo "deb https://developer.download.nvidia.com/compute/cuda/repos/ubuntu2004/sbsa/ /" > /etc/apt/sources.list.d/cuda.list \
+                    && apt-get update \
+                    && apt-get install -y --no-install-recommends \
+                        cuda-toolkit-12.4
+
+                # Set CUDA environment variables
+                ENV PATH="/usr/local/cuda-12.4/bin:$PATH"
+                ENV LD_LIBRARY_PATH="/usr/local/cuda-12.4/lib64:$LD_LIBRARY_PATH"
+
+                # NVIDIA runtime environment variables
+                ENV NVIDIA_VISIBLE_DEVICES all
+                ENV NVIDIA_DRIVER_CAPABILITIES compute,utility
+                ENV NVIDIA_REQUIRE_CUDA "cuda>=12.4"
+COPY gromacs-2025.0 /gromacs-2025.0
+        WORKDIR /gromacs-2025.0
+RUN mkdir build \
+                && cd build \
+                && cmake .. -DCMAKE_BUILD_TYPE=Release -DGMX_BUILD_OWN_FFTW=ON -DGMX_SIMD=ARM_SVE -DGMX_GPU=CUDA -DGMX_GPU_FFT=cuFFT -DGMX_OPENMP=ON -DGMX_MPI=ON -DGMX_FFT_LIBRARY=fftw3 \
+                && make -j$(nproc) \
+                && make check \
+                && sudo make install 
+# Default command (modify if needed)
+CMD ["/bin/bash"]

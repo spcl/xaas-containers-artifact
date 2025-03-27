@@ -1,0 +1,34 @@
+/usr/local/gromacs/bin/gmx_mpi: /usr/lib/aarch64-linux-gnu/libnl-3.so.200: no version information available (required by /usr/lib64/libcxi.so.1)
+                       :-) GROMACS - gmx_mpi, 2025.0 (-:
+
+Executable:   /usr/local/gromacs/bin/gmx_mpi
+Data prefix:  /usr/local/gromacs
+Working dir:  /users/ealnuaim
+Command line:
+  gmx_mpi --version
+
+GROMACS version:     2025.0
+Precision:           mixed
+Memory model:        64 bit
+MPI library:         MPI
+MPI library version: MPICH Version: 3.4 MPICH Release date: Tue Jan  5 09:27:10 CST 2021 MPICH ABI: 13:9:1 MPICH Device: ch4:ofi MPICH configure: FFLAGS=-fallow-argument-mismatch --prefix=/usr/local/mpich --with-device=ch4:ofi --enable-fast=all,O3 MPICH CC: gcc    -DNDEBUG -DNVALGRIND -O3 MPICH CXX: g++   -DNDEBUG -DNVALGRIND -O3 MPICH F77: gfortran -fallow-argument-mismatch  -O3 MPICH FC: gfortran   -O3 
+OpenMP support:      enabled (GMX_OPENMP_MAX_THREADS = 128)
+GPU support:         CUDA
+NBNxM GPU setup:     super-cluster 2x2x2 / cluster 8 (cluster-pair splitting on)
+SIMD instructions:   ARM_SVE
+CPU FFT library:     fftw-3.3.10
+GPU FFT library:     cuFFT
+Multi-GPU FFT:       none
+TNG support:         enabled
+Hwloc support:       disabled
+Tracing support:     disabled
+C compiler:          /usr/bin/cc GNU 11.4.0
+C compiler flags:    -fexcess-precision=fast -funroll-all-loops -march=armv8.2-a+sve -msve-vector-bits=128 -Wno-missing-field-initializers -O3 -DNDEBUG
+C++ compiler:        /usr/bin/c++ GNU 11.4.0
+C++ compiler flags:  -fexcess-precision=fast -funroll-all-loops -march=armv8.2-a+sve -msve-vector-bits=128 -Wno-missing-field-initializers -Wno-old-style-cast -Wno-cast-qual -Wno-suggest-override -Wno-suggest-destructor-override -Wno-zero-as-null-pointer-constant -Wno-cast-function-type-strict SHELL:-fopenmp -O3 -DNDEBUG
+BLAS library:        Internal
+LAPACK library:      Internal
+CUDA compiler:       /usr/local/cuda-12.4/bin/nvcc nvcc: NVIDIA (R) Cuda compiler driver;Copyright (c) 2005-2024 NVIDIA Corporation;Built on Thu_Mar_28_02:24:28_PDT_2024;Cuda compilation tools, release 12.4, V12.4.131;Build cuda_12.4.r12.4/compiler.34097967_0
+CUDA compiler flags: -O3 -DNDEBUG
+CUDA driver:         12.40
+CUDA runtime:        12.40
