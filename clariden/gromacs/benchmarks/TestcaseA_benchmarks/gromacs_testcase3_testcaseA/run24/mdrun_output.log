@@ -1,0 +1,67 @@
+/usr/local/gromacs/bin/gmx_mpi: /usr/lib/aarch64-linux-gnu/libnl-3.so.200: no version information available (required by /usr/lib64/libcxi.so.1)
+/usr/local/gromacs/bin/gmx_mpi: /usr/lib/aarch64-linux-gnu/libnl-3.so.200: no version information available (required by /usr/lib64/libcxi.so.1)
+/usr/local/gromacs/bin/gmx_mpi: /usr/lib/aarch64-linux-gnu/libnl-3.so.200: no version information available (required by /usr/lib64/libcxi.so.1)
+/usr/local/gromacs/bin/gmx_mpi: /usr/lib/aarch64-linux-gnu/libnl-3.so.200: no version information available (required by /usr/lib64/libcxi.so.1)
+                      :-) GROMACS - gmx mdrun, 2025.0 (-:
+
+Executable:   /usr/local/gromacs/bin/gmx_mpi
+Data prefix:  /usr/local/gromacs
+Working dir:  /users/ealnuaim/gromacs_benchmarks/TestcaseA_benchmarks/gromacs_testcase3_testcaseA/run_24
+Command line:
+  gmx_mpi mdrun -s /users/ealnuaim/GROMACS_TestCaseA/ion_channel.tpr -ntomp 64 -bonded gpu -nb gpu -pme gpu -pin on -v -noconfout -dlb yes -nstlist 300 -gpu_id 0 -npme 1 -nsteps 300
+
+Reading file /users/ealnuaim/GROMACS_TestCaseA/ion_channel.tpr, VERSION 2020.3 (single precision)
+Note: file tpx version 119, software tpx version 137
+Overriding nsteps with value passed on the command line: 300 steps, 0.75 ps
+Changing nstlist from 10 to 300, rlist from 1 to 1.81
+
+
+Update groups can not be used for this system because there are three or more consecutively coupled constraints
+
+GPU-aware MPI was not detected, will not use direct GPU communication. Check the GROMACS install guide for recommendations for GPU-aware support. If you are certain about GPU-aware support in your MPI library, you can force its use by setting the GMX_FORCE_GPU_AWARE_MPI environment variable.
+
+On host nid006956 1 GPU selected for this run.
+Mapping of GPU IDs to the 4 GPU tasks in the 4 ranks on this node:
+  PP:0,PP:0,PP:0,PME:0
+PP tasks will do (non-perturbed) short-ranged and most bonded interactions on the GPU
+PP task will update and constrain coordinates on the CPU
+PME tasks will do all aspects on the GPU
+Using 4 MPI processes
+Using 64 OpenMP threads per MPI process
+
+
+Overriding thread affinity set outside gmx mdrun
+starting mdrun 'Protein'
+300 steps,      0.8 ps.
+step 0
+step 100
+step 200
+vol 1.00  imb F  2% pme/F 0.60 step 300, remaining wall clock time:     0 s          
+
+
+Dynamic load balancing report:
+ DLB was permanently on during the run per user request.
+ Average load imbalance: 1.6%.
+ The balanceable part of the MD step is 40%, load imbalance is computed from this.
+ Part of the total run time spent waiting due to load imbalance: 0.7%.
+ Steps where the load balancing was limited by -rdd, -rcon and/or -dds: Z 0 %
+ Average PME mesh/force load: 0.597
+ Part of the total run time spent waiting due to PP/PME imbalance: 5.6 %
+
+NOTE: 5.6 % performance was lost because the PME ranks
+      had less work to do than the PP ranks.
+      You might want to decrease the number of PME ranks
+      or decrease the cut-off and the grid spacing.
+
+
+               Core t (s)   Wall t (s)        (%)
+       Time:      176.814        0.696    25398.6
+                 (ns/day)    (hour/ns)
+Performance:       93.393        0.257
+
+GROMACS reminds you: "Don't Push Me, Cause I'm Close to the Edge" (Tricky)
+
+[WARNING] yaksa: 1 leaked handle pool objects
+[WARNING] yaksa: 1 leaked handle pool objects
+[WARNING] yaksa: 1 leaked handle pool objects
+[WARNING] yaksa: 1 leaked handle pool objects
