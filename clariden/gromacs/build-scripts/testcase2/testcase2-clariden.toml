@@ -9,3 +9,5 @@ mounts = [
 [annotations]
 com.hooks.cxi.enabled = "true"
 com.hooks.nvidia_cuda_mps.enabled = "true"
+com.hooks.aws_ofi_nccl.enabled = "true"
+com.hooks.aws_ofi_nccl.variant = "cuda12"
