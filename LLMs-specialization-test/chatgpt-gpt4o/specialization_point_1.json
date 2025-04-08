@@ -1,0 +1,207 @@
+{
+  "gpu_build": {
+    "value": true,
+    "build_flag": "GMX_GPU"
+  },
+  "gpu_backends": {
+    "CUDA": {
+      "used_as_default": false,
+      "build_flag": "GMX_GPU=CUDA",
+      "minimum_version": "12.1"
+    },
+    "OpenCL": {
+      "used_as_default": false,
+      "build_flag": "GMX_GPU=OpenCL",
+      "minimum_version": null
+    },
+    "SYCL": {
+      "used_as_default": false,
+      "build_flag": "GMX_GPU=SYCL",
+      "minimum_version": null
+    },
+    "HIP": {
+      "used_as_default": false,
+      "build_flag": "GMX_GPU=HIP",
+      "minimum_version": "5.2"
+    }
+  },
+  "parallel_programming_libraries": {
+    "MPI": {
+      "used_as_default": false,
+      "build_flag": "GMX_MPI",
+      "minimum_version": null
+    },
+    "thread-MPI": {
+      "used_as_default": false,
+      "build_flag": "GMX_THREAD_MPI",
+      "minimum_version": null
+    },
+    "OpenMP": {
+      "used_as_default": true,
+      "build_flag": "GMX_OPENMP",
+      "minimum_version": null
+    }
+  },
+  "linear_algebra_libraries": {
+    "BLAS/LAPACK": {
+      "used_as_default": false,
+      "build_flag": null,
+      "condition": null
+    },
+    "MKL": {
+      "used_as_default": false,
+      "build_flag": null,
+      "condition": null
+    },
+    "HeFFTe": {
+      "used_as_default": false,
+      "build_flag": "GMX_USE_HEFFTE",
+      "condition": "GMX_GPU STREQUAL CUDA OR GMX_GPU STREQUAL HIP OR GMX_GPU STREQUAL SYCL;GMX_MPI"
+    }
+  },
+  "FFT_libraries": {
+    "fftw3": {
+      "built-in": false,
+      "used_as_default": true,
+      "dependencies": null,
+      "build_flag": "GMX_FFT_LIBRARY=fftw3"
+    },
+    "mkl": {
+      "built-in": false,
+      "used_as_default": false,
+      "dependencies": null,
+      "build_flag": "GMX_FFT_LIBRARY=mkl"
+    },
+    "fftpack": {
+      "built-in": true,
+      "used_as_default": false,
+      "dependencies": null,
+      "build_flag": "GMX_FFT_LIBRARY=fftpack[built-in]"
+    },
+    "cuFFT": {
+      "built-in": false,
+      "used_as_default": false,
+      "dependencies": null,
+      "build_flag": "GMX_GPU_FFT_LIBRARY=cuFFT"
+    },
+    "clFFT": {
+      "built-in": false,
+      "used_as_default": false,
+      "dependencies": "OPENCL",
+      "build_flag": "GMX_GPU_FFT_LIBRARY=clFFT"
+    },
+    "VkFFT": {
+      "built-in": false,
+      "used_as_default": false,
+      "dependencies": null,
+      "build_flag": "GMX_GPU_FFT_LIBRARY=VkFFT"
+    },
+    "MKL": {
+      "built-in": false,
+      "used_as_default": false,
+      "dependencies": null,
+      "build_flag": "GMX_GPU_FFT_LIBRARY=MKL"
+    }
+  },
+  "other_external_libraries": {
+    "HWLOC": {
+      "version": "1.5",
+      "used_as_default": false,
+      "conditions": "GMX_HWLOC=ON",
+      "build_flag": "GMX_HWLOC"
+    },
+    "EXTRAE": {
+      "version": "any",
+      "used_as_default": false,
+      "conditions": "GMX_EXTRAE=ON",
+      "build_flag": "GMX_EXTRAE"
+    },
+    "TinyXML-2": {
+      "version": "6.0.0",
+      "used_as_default": false,
+      "conditions": "GMX_EXTERNAL_TINYXML2=ON",
+      "build_flag": "GMX_EXTERNAL_TINYXML2"
+    }
+  },
+  "compiler_flags": [
+    "GMX_DOUBLE",
+    "GMX_SKIP_DEFAULT_CFLAGS",
+    "CMAKE_CXX_STANDARD"
+  ],
+  "optimization_build_flags": [
+    "GMX_CYCLE_SUBCOUNTERS",
+    "GMX_BUILD_FOR_COVERAGE"
+  ],
+  "compilers": {
+    "Clang": {
+      "minimum_version": "14"
+    },
+    "GCC": {
+      "minimum_version": "11"
+    },
+    "CUDA": {
+      "minimum_version": "12.1"
+    }
+  },
+  "architectures": [
+    "APPLE_64BIT",
+    "X86_64",
+    "IBM_VSX",
+    "ARM_NEON_ASIMD",
+    "ARM_SVE"
+  ],
+  "simd_vectorization": {
+    "AUTO": {
+      "build_flag": "GMX_SIMD=AUTO",
+      "default": true
+    },
+    "SSE2": {
+      "build_flag": "GMX_SIMD=SSE2",
+      "default": false
+    },
+    "SSE4.1": {
+      "build_flag": "GMX_SIMD=SSE4.1",
+      "default": false
+    },
+    "AVX_128_FMA": {
+      "build_flag": "GMX_SIMD=AVX_128_FMA",
+      "default": false
+    },
+    "AVX_256": {
+      "build_flag": "GMX_SIMD=AVX_256",
+      "default": false
+    },
+    "AVX2_256": {
+      "build_flag": "GMX_SIMD=AVX2_256",
+      "default": false
+    },
+    "AVX2_128": {
+      "build_flag": "GMX_SIMD=AVX2_128",
+      "default": false
+    },
+    "AVX_512": {
+      "build_flag": "GMX_SIMD=AVX_512",
+      "default": false
+    },
+    "ARM_NEON_ASIMD": {
+      "build_flag": "GMX_SIMD=ARM_NEON_ASIMD",
+      "default": false
+    },
+    "ARM_SVE": {
+      "build_flag": "GMX_SIMD=ARM_SVE",
+      "default": false
+    },
+    "IBM_VSX": {
+      "build_flag": "GMX_SIMD=IBM_VSX",
+      "default": false
+    }
+  },
+  "build_system": {
+    "type": "cmake",
+    "minimum_version": "3.28"
+  },
+  "internal_build": {
+    "library_name": "FFTW",
+    "build_flag": "GMX_BUILD_OWN_FFTW"
+  }
+}
