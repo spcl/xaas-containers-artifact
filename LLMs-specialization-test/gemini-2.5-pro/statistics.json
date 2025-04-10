@@ -1,0 +1,62 @@
+[
+  {
+    "iteration": 1,
+    "input_tokens": 16150,
+    "output_tokens": 14598,
+    "time_seconds": 80.99462699890137
+  },
+  {
+    "iteration": 2,
+    "input_tokens": 16150,
+    "output_tokens": 6160,
+    "time_seconds": 45.20368576049805
+  },
+  {
+    "iteration": 3,
+    "input_tokens": 16150,
+    "output_tokens": 9273,
+    "time_seconds": 60.718945026397705
+  },
+  {
+    "iteration": 4,
+    "input_tokens": 16150,
+    "output_tokens": 11260,
+    "time_seconds": 74.36599612236023
+  },
+  {
+    "iteration": 5,
+    "input_tokens": 16150,
+    "output_tokens": 12898,
+    "time_seconds": 76.01520800590515
+  },
+  {
+    "iteration": 6,
+    "input_tokens": 16150,
+    "output_tokens": 10005,
+    "time_seconds": 65.56496596336365
+  },
+  {
+    "iteration": 7,
+    "input_tokens": 16150,
+    "output_tokens": 9783,
+    "time_seconds": 66.65079307556152
+  },
+  {
+    "iteration": 8,
+    "input_tokens": 16150,
+    "output_tokens": 6006,
+    "time_seconds": 43.82918095588684
+  },
+  {
+    "iteration": 9,
+    "input_tokens": 16150,
+    "output_tokens": 7031,
+    "time_seconds": 50.98719525337219
+  },
+  {
+    "iteration": 10,
+    "input_tokens": 16150,
+    "output_tokens": 8235,
+    "time_seconds": 52.12083101272583
+  }
+]

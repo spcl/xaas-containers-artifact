@@ -1,0 +1,1645 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "properties": {
+    "gpu_build": {
+      "type": "object",
+      "properties": {
+        "value": {
+          "type": "boolean",
+          "description": "Indicates if GPU build support is available via the GMX_GPU option. Default is OFF."
+        },
+        "build_flag": {
+          "type": "string",
+          "description": "Build flag to enable GPU backend selection. Use e.g. -DGMX_GPU=CUDA to enable a specific backend.",
+          "example": "-DGMX_GPU"
+        }
+      },
+      "required": [
+        "value",
+        "build_flag"
+      ]
+    },
+    "gpu_backends": {
+      "type": "object",
+      "properties": {
+        "CUDA": {
+          "type": "object",
+          "properties": {
+            "used_as_default": {
+              "type": "boolean"
+            },
+            "build_flag": {
+              "type": "string",
+              "example": "-DGMX_GPU=CUDA"
+            },
+            "minimum_version": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "used_as_default",
+            "build_flag",
+            "minimum_version"
+          ]
+        },
+        "OpenCL": {
+          "type": "object",
+          "properties": {
+            "used_as_default": {
+              "type": "boolean"
+            },
+            "build_flag": {
+              "type": "string",
+              "example": "-DGMX_GPU=OpenCL"
+            },
+            "minimum_version": {
+              "type": "null"
+            }
+          },
+          "required": [
+            "used_as_default",
+            "build_flag",
+            "minimum_version"
+          ]
+        },
+        "SYCL": {
+          "type": "object",
+          "properties": {
+            "used_as_default": {
+              "type": "boolean"
+            },
+            "build_flag": {
+              "type": "string",
+              "example": "-DGMX_GPU=SYCL"
+            },
+            "minimum_version": {
+              "type": "null"
+            },
+            "implementation_flags": {
+              "type": "object",
+              "properties": {
+                "DPCPP": {
+                  "build_flag": "-DGMX_SYCL=DPCPP"
+                },
+                "ACPP": {
+                  "build_flag": "-DGMX_SYCL=ACPP"
+                },
+                "AUTO": {
+                  "build_flag": "-DGMX_SYCL=AUTO"
+                }
+              },
+              "description": "Flag to select SYCL implementation (DPCPP or ACPP/hipSYCL). Default is AUTO."
+            }
+          },
+          "required": [
+            "used_as_default",
+            "build_flag",
+            "minimum_version"
+          ]
+        },
+        "HIP": {
+          "type": "object",
+          "properties": {
+            "used_as_default": {
+              "type": "boolean"
+            },
+            "build_flag": {
+              "type": "string",
+              "example": "-DGMX_GPU=HIP"
+            },
+            "minimum_version": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "used_as_default",
+            "build_flag",
+            "minimum_version"
+          ]
+        }
+      },
+      "additionalProperties": false
+    },
+    "parallel_programming_libraries": {
+      "type": "object",
+      "properties": {
+        "MPI": {
+          "type": "object",
+          "properties": {
+            "used_as_default": {
+              "type": "boolean"
+            },
+            "build_flag": {
+              "type": "string",
+              "example": "-DGMX_MPI=ON"
+            },
+            "minimum_version": {
+              "type": "null"
+            }
+          },
+          "required": [
+            "used_as_default",
+            "build_flag",
+            "minimum_version"
+          ]
+        },
+        "ThreadMPI": {
+          "type": "object",
+          "properties": {
+            "used_as_default": {
+              "type": "boolean"
+            },
+            "build_flag": {
+              "type": "string",
+              "example": "-DGMX_THREAD_MPI=ON"
+            },
+            "minimum_version": {
+              "type": "null"
+            }
+          },
+          "required": [
+            "used_as_default",
+            "build_flag",
+            "minimum_version"
+          ]
+        },
+        "OpenMP": {
+          "type": "object",
+          "properties": {
+            "used_as_default": {
+              "type": "boolean"
+            },
+            "build_flag": {
+              "type": "string",
+              "example": "-DGMX_OPENMP=ON"
+            },
+            "minimum_version": {
+              "type": "null"
+            }
+          },
+          "required": [
+            "used_as_default",
+            "build_flag",
+            "minimum_version"
+          ]
+        },
+        "NVSHMEM": {
+          "type": "object",
+          "properties": {
+            "used_as_default": {
+              "type": "boolean"
+            },
+            "build_flag": {
+              "type": "string",
+              "example": "-DGMX_NVSHMEM=ON"
+            },
+            "minimum_version": {
+              "type": "null"
+            },
+            "condition": {
+              "type": "string",
+              "description": "Requires CUDA GPU backend and MPI."
+            }
+          },
+          "required": [
+            "used_as_default",
+            "build_flag",
+            "minimum_version",
+            "condition"
+          ]
+        }
+      },
+      "additionalProperties": false
+    },
+    "linear_algebra_libraries": {
+      "type": "object",
+      "properties": {
+        "BLAS": {
+          "type": "object",
+          "properties": {
+            "used_as_default": {
+              "type": "boolean"
+            },
+            "build_flag": {
+              "type": "null",
+              "description": "Typically found automatically or specified via CMAKE_PREFIX_PATH."
+            },
+            "condition": {
+              "type": "null"
+            }
+          },
+          "required": [
+            "used_as_default",
+            "build_flag",
+            "condition"
+          ]
+        },
+        "LAPACK": {
+          "type": "object",
+          "properties": {
+            "used_as_default": {
+              "type": "boolean"
+            },
+            "build_flag": {
+              "type": "null",
+              "description": "Typically found automatically or specified via CMAKE_PREFIX_PATH."
+            },
+            "condition": {
+              "type": "null"
+            }
+          },
+          "required": [
+            "used_as_default",
+            "build_flag",
+            "condition"
+          ]
+        },
+        "MKL": {
+          "type": "object",
+          "properties": {
+            "used_as_default": {
+              "type": "boolean",
+              "description": "Default FFT library if GMX_INTEL_LLVM is set."
+            },
+            "build_flag": {
+              "type": "string",
+              "description": "Enabled as FFT library via -DGMX_FFT_LIBRARY=mkl or GPU FFT library via -DGMX_GPU_FFT_LIBRARY=MKL (for SYCL DPC++)",
+              "example": "-DGMX_FFT_LIBRARY=mkl"
+            },
+            "condition": {
+              "type": "string",
+              "description": "Can be used for CPU FFT. Also default for GPU FFT with SYCL DPC++."
+            }
+          },
+          "required": [
+            "used_as_default",
+            "build_flag",
+            "condition"
+          ]
+        }
+      },
+      "additionalProperties": false
+    },
+    "fft_libraries": {
+      "type": "object",
+      "properties": {
+        "fftw3": {
+          "type": "object",
+          "properties": {
+            "built-in": {
+              "type": "boolean"
+            },
+            "used_as_default": {
+              "type": "boolean",
+              "description": "Default unless GMX_INTEL_LLVM is set."
+            },
+            "dependencies": {
+              "type": "null"
+            },
+            "build_flag": {
+              "type": "string",
+              "example": "-DGMX_FFT_LIBRARY=fftw3"
+            }
+          },
+          "required": [
+            "built-in",
+            "used_as_default",
+            "dependencies",
+            "build_flag"
+          ]
+        },
+        "mkl": {
+          "type": "object",
+          "properties": {
+            "built-in": {
+              "type": "boolean"
+            },
+            "used_as_default": {
+              "type": "boolean",
+              "description": "Default if GMX_INTEL_LLVM is set."
+            },
+            "dependencies": {
+              "type": "string",
+              "description": "Requires Intel MKL library."
+            },
+            "build_flag": {
+              "type": "string",
+              "example": "-DGMX_FFT_LIBRARY=mkl"
+            }
+          },
+          "required": [
+            "built-in",
+            "used_as_default",
+            "dependencies",
+            "build_flag"
+          ]
+        },
+        "fftpack": {
+          "type": "object",
+          "properties": {
+            "built-in": {
+              "type": "boolean"
+            },
+            "used_as_default": {
+              "type": "boolean"
+            },
+            "dependencies": {
+              "type": "null"
+            },
+            "build_flag": {
+              "type": "string",
+              "example": "-DGMX_FFT_LIBRARY=fftpack[built-in]"
+            }
+          },
+          "required": [
+            "built-in",
+            "used_as_default",
+            "dependencies",
+            "build_flag"
+          ]
+        },
+        "cuFFT": {
+          "type": "object",
+          "properties": {
+            "built-in": {
+              "type": "boolean"
+            },
+            "used_as_default": {
+              "type": "boolean",
+              "description": "Default for CUDA backend."
+            },
+            "dependencies": {
+              "type": "string",
+              "description": "Requires GMX_GPU=CUDA."
+            },
+            "build_flag": {
+              "type": "string",
+              "example": "-DGMX_GPU_FFT_LIBRARY=cuFFT"
+            }
+          },
+          "required": [
+            "built-in",
+            "used_as_default",
+            "dependencies",
+            "build_flag"
+          ]
+        },
+        "clFFT": {
+          "type": "object",
+          "properties": {
+            "built-in": {
+              "type": "boolean"
+            },
+            "used_as_default": {
+              "type": "boolean",
+              "description": "Default for OpenCL backend (non-Apple/MSVC)."
+            },
+            "dependencies": {
+              "type": "string",
+              "description": "Requires GMX_GPU=OpenCL."
+            },
+            "build_flag": {
+              "type": "string",
+              "example": "-DGMX_GPU_FFT_LIBRARY=clFFT"
+            }
+          },
+          "required": [
+            "built-in",
+            "used_as_default",
+            "dependencies",
+            "build_flag"
+          ]
+        },
+        "VkFFT": {
+          "type": "object",
+          "properties": {
+            "built-in": {
+              "type": "boolean"
+            },
+            "used_as_default": {
+              "type": "boolean",
+              "description": "Default for HIP, OpenCL (Apple/MSVC), SYCL (ACPP)."
+            },
+            "dependencies": {
+              "type": "string",
+              "description": "Requires GMX_GPU=HIP, GMX_GPU=OpenCL, or GMX_GPU=SYCL with GMX_SYCL=ACPP."
+            },
+            "build_flag": {
+              "type": "string",
+              "example": "-DGMX_GPU_FFT_LIBRARY=VkFFT"
+            }
+          },
+          "required": [
+            "built-in",
+            "used_as_default",
+            "dependencies",
+            "build_flag"
+          ]
+        },
+        "MKL_GPU": {
+          "type": "object",
+          "properties": {
+            "built-in": {
+              "type": "boolean"
+            },
+            "used_as_default": {
+              "type": "boolean",
+              "description": "Default for SYCL backend via DPC++."
+            },
+            "dependencies": {
+              "type": "string",
+              "description": "Requires GMX_GPU=SYCL with GMX_SYCL=DPCPP."
+            },
+            "build_flag": {
+              "type": "string",
+              "example": "-DGMX_GPU_FFT_LIBRARY=MKL"
+            }
+          },
+          "required": [
+            "built-in",
+            "used_as_default",
+            "dependencies",
+            "build_flag"
+          ]
+        },
+        "oneMath": {
+          "type": "object",
+          "properties": {
+            "built-in": {
+              "type": "boolean"
+            },
+            "used_as_default": {
+              "type": "boolean"
+            },
+            "dependencies": {
+              "type": "string",
+              "description": "Requires GMX_GPU=SYCL (typically with DPC++)."
+            },
+            "build_flag": {
+              "type": "string",
+              "example": "-DGMX_GPU_FFT_LIBRARY=oneMath"
+            }
+          },
+          "required": [
+            "built-in",
+            "used_as_default",
+            "dependencies",
+            "build_flag"
+          ]
+        },
+        "rocFFT": {
+          "type": "object",
+          "properties": {
+            "built-in": {
+              "type": "boolean"
+            },
+            "used_as_default": {
+              "type": "boolean",
+              "description": "Alternative default for HIP backend (currently VkFFT is default)."
+            },
+            "dependencies": {
+              "type": "string",
+              "description": "Requires GMX_GPU=HIP or GMX_GPU=SYCL."
+            },
+            "build_flag": {
+              "type": "string",
+              "example": "-DGMX_GPU_FFT_LIBRARY=rocFFT"
+            }
+          },
+          "required": [
+            "built-in",
+            "used_as_default",
+            "dependencies",
+            "build_flag"
+          ]
+        },
+        "BBFFT": {
+          "type": "object",
+          "properties": {
+            "built-in": {
+              "type": "boolean"
+            },
+            "used_as_default": {
+              "type": "boolean"
+            },
+            "dependencies": {
+              "type": "string",
+              "description": "Requires GMX_GPU=HIP (Experimental)"
+            },
+            "build_flag": {
+              "type": "string",
+              "example": "-DGMX_GPU_FFT_LIBRARY=BBFFT"
+            }
+          },
+          "required": [
+            "built-in",
+            "used_as_default",
+            "dependencies",
+            "build_flag"
+          ]
+        },
+        "HeFFTe": {
+          "type": "object",
+          "properties": {
+            "built-in": {
+              "type": "boolean"
+            },
+            "used_as_default": {
+              "type": "boolean"
+            },
+            "dependencies": {
+              "type": "string",
+              "description": "Requires CUDA, HIP or SYCL GPU backend and MPI. Minimum version 2.2.0."
+            },
+            "build_flag": {
+              "type": "string",
+              "example": "-DGMX_USE_HEFFTE=ON"
+            }
+          },
+          "required": [
+            "built-in",
+            "used_as_default",
+            "dependencies",
+            "build_flag"
+          ]
+        },
+        "cuFFTMp": {
+          "type": "object",
+          "properties": {
+            "built-in": {
+              "type": "boolean"
+            },
+            "used_as_default": {
+              "type": "boolean"
+            },
+            "dependencies": {
+              "type": "string",
+              "description": "Requires CUDA GPU backend and MPI."
+            },
+            "build_flag": {
+              "type": "string",
+              "example": "-DGMX_USE_CUFFTMP=ON"
+            }
+          },
+          "required": [
+            "built-in",
+            "used_as_default",
+            "dependencies",
+            "build_flag"
+          ]
+        }
+      },
+      "additionalProperties": false
+    },
+    "other_external_libraries": {
+      "type": "object",
+      "properties": {
+        "hwloc": {
+          "type": "object",
+          "properties": {
+            "version": {
+              "type": "string",
+              "description": "Minimum version 1.5 required if enabled."
+            },
+            "used_as_default": {
+              "type": "boolean"
+            },
+            "conditions": {
+              "type": "null"
+            },
+            "build_flag": {
+              "type": "string",
+              "example": "-DGMX_HWLOC=ON"
+            }
+          },
+          "required": [
+            "version",
+            "used_as_default",
+            "conditions",
+            "build_flag"
+          ]
+        },
+        "TinyXML2": {
+          "type": "object",
+          "properties": {
+            "version": {
+              "type": "string",
+              "description": "Minimum version 6.0.0 required if external build enabled."
+            },
+            "used_as_default": {
+              "type": "boolean",
+              "description": "Defaults to internal build."
+            },
+            "conditions": {
+              "type": "null"
+            },
+            "build_flag": {
+              "type": "string",
+              "example": "-DGMX_EXTERNAL_TINYXML2=ON"
+            }
+          },
+          "required": [
+            "version",
+            "used_as_default",
+            "conditions",
+            "build_flag"
+          ]
+        },
+        "EXTRAE": {
+          "type": "object",
+          "properties": {
+            "version": {
+              "type": "null"
+            },
+            "used_as_default": {
+              "type": "boolean"
+            },
+            "conditions": {
+              "type": "null"
+            },
+            "build_flag": {
+              "type": "string",
+              "example": "-DGMX_EXTRAE=ON"
+            }
+          },
+          "required": [
+            "version",
+            "used_as_default",
+            "conditions",
+            "build_flag"
+          ]
+        },
+        "TNG": {
+          "type": "object",
+          "properties": {
+            "version": {
+              "type": "null"
+            },
+            "used_as_default": {
+              "type": "boolean"
+            },
+            "conditions": {
+              "type": "null"
+            },
+            "build_flag": {
+              "type": "string",
+              "example": "-DGMX_USE_TNG=ON"
+            }
+          },
+          "required": [
+            "version",
+            "used_as_default",
+            "conditions",
+            "build_flag"
+          ]
+        },
+        "HDF5": {
+          "type": "object",
+          "properties": {
+            "version": {
+              "type": "null",
+              "description": "Version not specified, but required by TNG."
+            },
+            "used_as_default": {
+              "type": "boolean",
+              "description": "Enabled if TNG is enabled."
+            },
+            "conditions": {
+              "type": "string",
+              "description": "Enabled via GMX_USE_TNG=ON."
+            },
+            "build_flag": {
+              "type": "null",
+              "description": "No specific flag, implicitly enabled with TNG."
+            }
+          },
+          "required": [
+            "version",
+            "used_as_default",
+            "conditions",
+            "build_flag"
+          ]
+        },
+        "Lmfit": {
+          "type": "object",
+          "properties": {
+            "version": {
+              "type": "null"
+            },
+            "used_as_default": {
+              "type": "boolean"
+            },
+            "conditions": {
+              "type": "string",
+              "description": "Potentially used, managed by gmxManageLmfit.cmake."
+            },
+            "build_flag": {
+              "type": "null",
+              "description": "No specific user-facing build flag mentioned."
+            }
+          },
+          "required": [
+            "version",
+            "used_as_default",
+            "conditions",
+            "build_flag"
+          ]
+        },
+        "Muparser": {
+          "type": "object",
+          "properties": {
+            "version": {
+              "type": "null"
+            },
+            "used_as_default": {
+              "type": "boolean"
+            },
+            "conditions": {
+              "type": "string",
+              "description": "Potentially used, managed by gmxManageMuparser.cmake."
+            },
+            "build_flag": {
+              "type": "null",
+              "description": "No specific user-facing build flag mentioned."
+            }
+          },
+          "required": [
+            "version",
+            "used_as_default",
+            "conditions",
+            "build_flag"
+          ]
+        },
+        "Colvars": {
+          "type": "object",
+          "properties": {
+            "version": {
+              "type": "null"
+            },
+            "used_as_default": {
+              "type": "boolean"
+            },
+            "conditions": {
+              "type": "string",
+              "description": "Potentially used, managed by gmxManageColvars.cmake."
+            },
+            "build_flag": {
+              "type": "null",
+              "description": "No specific user-facing build flag mentioned."
+            }
+          },
+          "required": [
+            "version",
+            "used_as_default",
+            "conditions",
+            "build_flag"
+          ]
+        },
+        "Plumed": {
+          "type": "object",
+          "properties": {
+            "version": {
+              "type": "null"
+            },
+            "used_as_default": {
+              "type": "boolean"
+            },
+            "conditions": {
+              "type": "string",
+              "description": "Potentially used, managed by gmxManagePlumed.cmake."
+            },
+            "build_flag": {
+              "type": "null",
+              "description": "No specific user-facing build flag mentioned."
+            }
+          },
+          "required": [
+            "version",
+            "used_as_default",
+            "conditions",
+            "build_flag"
+          ]
+        },
+        "MiMiC": {
+          "type": "object",
+          "properties": {
+            "version": {
+              "type": "null",
+              "description": "Requires CPMD."
+            },
+            "used_as_default": {
+              "type": "boolean"
+            },
+            "conditions": {
+              "type": "string",
+              "description": "Requires CPMD installation."
+            },
+            "build_flag": {
+              "type": "string",
+              "example": "-DGMX_MIMIC=ON"
+            }
+          },
+          "required": [
+            "version",
+            "used_as_default",
+            "conditions",
+            "build_flag"
+          ]
+        },
+        "CP2K": {
+          "type": "object",
+          "properties": {
+            "version": {
+              "type": "string",
+              "description": "Requires CP2K 8.1 or later."
+            },
+            "used_as_default": {
+              "type": "boolean"
+            },
+            "conditions": {
+              "type": "string",
+              "description": "Requires CP2K 8.1+ installation."
+            },
+            "build_flag": {
+              "type": "string",
+              "example": "-DGMX_CP2K=ON"
+            }
+          },
+          "required": [
+            "version",
+            "used_as_default",
+            "conditions",
+            "build_flag"
+          ]
+        },
+        "VMD": {
+          "type": "object",
+          "properties": {
+            "version": {
+              "type": "null"
+            },
+            "used_as_default": {
+              "type": "boolean"
+            },
+            "conditions": {
+              "type": "string",
+              "description": "Used if GMX_USE_PLUGINS=ON."
+            },
+            "build_flag": {
+              "type": "null",
+              "description": "Found via find_package(VMD) if GMX_USE_PLUGINS=ON."
+            }
+          },
+          "required": [
+            "version",
+            "used_as_default",
+            "conditions",
+            "build_flag"
+          ]
+        }
+      },
+      "additionalProperties": false
+    },
+    "compiler_flags": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "description": "General compiler flags identified in the build file.",
+      "examples": [
+        "-DGMX_DOUBLE=0",
+        "-DGMX_DOUBLE=1",
+        "-DNOMINMAX",
+        "-DTMPI_ATOMICS_DISABLED",
+        "-DGMX_COMPILER_WARNINGS=ON",
+        "-DGMX_COMPILER_WARNINGS=OFF"
+      ]
+    },
+    "optimization_build_flags": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "description": "Build flags related to performance optimizations.",
+      "examples": [
+        "-DGMX_SIMD=<level>",
+        "-DGMX_CYCLE_SUBCOUNTERS=ON",
+        "-DGMX_DISABLE_FFTW_MEASURE=ON",
+        "-DGMX_GPU_NB_CLUSTER_SIZE=<value>",
+        "-DGMX_GPU_NB_NUM_CLUSTER_PER_CELL_X=<value>",
+        "-DGMX_GPU_NB_NUM_CLUSTER_PER_CELL_Y=<value>",
+        "-DGMX_GPU_NB_NUM_CLUSTER_PER_CELL_Z=<value>",
+        "-DGMX_USE_RDTSCP=ON",
+        "-DGMX_USE_RDTSCP=OFF"
+      ]
+    },
+    "compilers": {
+      "type": "object",
+      "properties": {
+        "GCC": {
+          "type": "object",
+          "properties": {
+            "minimum_version": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "minimum_version"
+          ]
+        },
+        "Clang": {
+          "type": "object",
+          "properties": {
+            "minimum_version": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "minimum_version"
+          ]
+        },
+        "IntelLLVM": {
+          "type": "object",
+          "properties": {
+            "minimum_version": {
+              "type": "null",
+              "description": "Specific version not listed, but support is tested."
+            }
+          },
+          "required": [
+            "minimum_version"
+          ]
+        },
+        "MSVC": {
+          "type": "object",
+          "properties": {
+            "minimum_version": {
+              "type": "null",
+              "description": "Supported (indicated by MSVC specific checks), but minimum version not explicitly stated."
+            }
+          },
+          "required": [
+            "minimum_version"
+          ]
+        },
+        "XLC": {
+          "type": "object",
+          "properties": {
+            "minimum_version": {
+              "type": "null",
+              "description": "Supported (indicated by XLC specific checks), but minimum version not explicitly stated."
+            }
+          },
+          "required": [
+            "minimum_version"
+          ]
+        }
+      },
+      "additionalProperties": false
+    },
+    "architectures": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "description": "Architectures detected or specifically mentioned.",
+      "examples": [
+        "x86_64",
+        "ARM",
+        "IBM POWER (VSX)",
+        "Apple (ARM/x86)"
+      ]
+    },
+    "simd_vectorization": {
+      "type": "object",
+      "description": "Supported SIMD instruction sets.",
+      "properties": {
+        "AUTO": {
+          "type": "object",
+          "properties": {
+            "build_flag": {
+              "type": "string",
+              "example": "-DGMX_SIMD=AUTO"
+            },
+            "default": {
+              "type": "boolean"
+            }
+          },
+          "required": [
+            "build_flag",
+            "default"
+          ]
+        },
+        "None": {
+          "type": "object",
+          "properties": {
+            "build_flag": {
+              "type": "string",
+              "example": "-DGMX_SIMD=None"
+            },
+            "default": {
+              "type": "boolean"
+            }
+          },
+          "required": [
+            "build_flag",
+            "default"
+          ]
+        },
+        "SSE2": {
+          "type": "object",
+          "properties": {
+            "build_flag": {
+              "type": "string",
+              "example": "-DGMX_SIMD=SSE2"
+            },
+            "default": {
+              "type": "boolean"
+            }
+          },
+          "required": [
+            "build_flag",
+            "default"
+          ]
+        },
+        "SSE4.1": {
+          "type": "object",
+          "properties": {
+            "build_flag": {
+              "type": "string",
+              "example": "-DGMX_SIMD=SSE4.1"
+            },
+            "default": {
+              "type": "boolean"
+            }
+          },
+          "required": [
+            "build_flag",
+            "default"
+          ]
+        },
+        "AVX_128_FMA": {
+          "type": "object",
+          "properties": {
+            "build_flag": {
+              "type": "string",
+              "example": "-DGMX_SIMD=AVX_128_FMA"
+            },
+            "default": {
+              "type": "boolean"
+            }
+          },
+          "required": [
+            "build_flag",
+            "default"
+          ]
+        },
+        "AVX_256": {
+          "type": "object",
+          "properties": {
+            "build_flag": {
+              "type": "string",
+              "example": "-DGMX_SIMD=AVX_256"
+            },
+            "default": {
+              "type": "boolean"
+            }
+          },
+          "required": [
+            "build_flag",
+            "default"
+          ]
+        },
+        "AVX2_128": {
+          "type": "object",
+          "properties": {
+            "build_flag": {
+              "type": "string",
+              "example": "-DGMX_SIMD=AVX2_128"
+            },
+            "default": {
+              "type": "boolean"
+            }
+          },
+          "required": [
+            "build_flag",
+            "default"
+          ]
+        },
+        "AVX2_256": {
+          "type": "object",
+          "properties": {
+            "build_flag": {
+              "type": "string",
+              "example": "-DGMX_SIMD=AVX2_256"
+            },
+            "default": {
+              "type": "boolean"
+            }
+          },
+          "required": [
+            "build_flag",
+            "default"
+          ]
+        },
+        "AVX_512": {
+          "type": "object",
+          "properties": {
+            "build_flag": {
+              "type": "string",
+              "example": "-DGMX_SIMD=AVX_512"
+            },
+            "default": {
+              "type": "boolean"
+            }
+          },
+          "required": [
+            "build_flag",
+            "default"
+          ]
+        },
+        "AVX_512_KNL": {
+          "type": "object",
+          "properties": {
+            "build_flag": {
+              "type": "string",
+              "example": "-DGMX_SIMD=AVX_512_KNL"
+            },
+            "default": {
+              "type": "boolean"
+            }
+          },
+          "required": [
+            "build_flag",
+            "default"
+          ]
+        },
+        "ARM_NEON_ASIMD": {
+          "type": "object",
+          "properties": {
+            "build_flag": {
+              "type": "string",
+              "example": "-DGMX_SIMD=ARM_NEON_ASIMD"
+            },
+            "default": {
+              "type": "boolean"
+            }
+          },
+          "required": [
+            "build_flag",
+            "default"
+          ]
+        },
+        "ARM_SVE": {
+          "type": "object",
+          "properties": {
+            "build_flag": {
+              "type": "string",
+              "example": "-DGMX_SIMD=ARM_SVE"
+            },
+            "default": {
+              "type": "boolean"
+            }
+          },
+          "required": [
+            "build_flag",
+            "default"
+          ]
+        },
+        "IBM_VSX": {
+          "type": "object",
+          "properties": {
+            "build_flag": {
+              "type": "string",
+              "example": "-DGMX_SIMD=IBM_VSX"
+            },
+            "default": {
+              "type": "boolean"
+            }
+          },
+          "required": [
+            "build_flag",
+            "default"
+          ]
+        },
+        "Reference": {
+          "type": "object",
+          "properties": {
+            "build_flag": {
+              "type": "string",
+              "example": "-DGMX_SIMD=Reference"
+            },
+            "default": {
+              "type": "boolean"
+            }
+          },
+          "required": [
+            "build_flag",
+            "default"
+          ]
+        }
+      },
+      "additionalProperties": false
+    },
+    "build_system": {
+      "type": "object",
+      "properties": {
+        "type": {
+          "type": "string",
+          "enum": [
+            "cmake",
+            "make",
+            "undetermined"
+          ]
+        },
+        "minimum_version": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "type",
+        "minimum_version"
+      ]
+    },
+    "internal_build": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "library_name": {
+            "type": "string"
+          },
+          "build_flag": {
+            "type": [
+              "string",
+              "null"
+            ]
+          }
+        },
+        "required": [
+          "library_name",
+          "build_flag"
+        ]
+      }
+    }
+  },
+  "required": [
+    "gpu_build",
+    "gpu_backends",
+    "parallel_programming_libraries",
+    "linear_algebra_libraries",
+    "fft_libraries",
+    "other_external_libraries",
+    "compiler_flags",
+    "optimization_build_flags",
+    "compilers",
+    "architectures",
+    "simd_vectorization",
+    "build_system",
+    "internal_build"
+  ],
+  "additionalProperties": false,
+  "gpu_build": {
+    "value": true,
+    "build_flag": "-DGMX_GPU"
+  },
+  "gpu_backends": {
+    "CUDA": {
+      "used_as_default": false,
+      "build_flag": "-DGMX_GPU=CUDA",
+      "minimum_version": "12.1"
+    },
+    "OpenCL": {
+      "used_as_default": false,
+      "build_flag": "-DGMX_GPU=OpenCL",
+      "minimum_version": null
+    },
+    "SYCL": {
+      "used_as_default": false,
+      "build_flag": "-DGMX_GPU=SYCL",
+      "minimum_version": null,
+      "implementation_flags": {
+        "DPCPP": {
+          "build_flag": "-DGMX_SYCL=DPCPP"
+        },
+        "ACPP": {
+          "build_flag": "-DGMX_SYCL=ACPP"
+        },
+        "AUTO": {
+          "build_flag": "-DGMX_SYCL=AUTO"
+        }
+      }
+    },
+    "HIP": {
+      "used_as_default": false,
+      "build_flag": "-DGMX_GPU=HIP",
+      "minimum_version": "5.2"
+    }
+  },
+  "parallel_programming_libraries": {
+    "MPI": {
+      "used_as_default": false,
+      "build_flag": "-DGMX_MPI=ON",
+      "minimum_version": null
+    },
+    "ThreadMPI": {
+      "used_as_default": true,
+      "build_flag": "-DGMX_THREAD_MPI=ON",
+      "minimum_version": null
+    },
+    "OpenMP": {
+      "used_as_default": true,
+      "build_flag": "-DGMX_OPENMP=ON",
+      "minimum_version": null
+    },
+    "NVSHMEM": {
+      "used_as_default": false,
+      "build_flag": "-DGMX_NVSHMEM=ON",
+      "minimum_version": null,
+      "condition": "GMX_GPU=CUDA and GMX_MPI=ON"
+    }
+  },
+  "linear_algebra_libraries": {
+    "BLAS": {
+      "used_as_default": true,
+      "build_flag": null,
+      "condition": null
+    },
+    "LAPACK": {
+      "used_as_default": true,
+      "build_flag": null,
+      "condition": null
+    },
+    "MKL": {
+      "used_as_default": false,
+      "build_flag": "-DGMX_FFT_LIBRARY=mkl",
+      "condition": "Can be used for CPU FFT (default if GMX_INTEL_LLVM=ON) or GPU FFT via -DGMX_GPU_FFT_LIBRARY=MKL (default for SYCL DPC++)."
+    }
+  },
+  "fft_libraries": {
+    "fftw3": {
+      "built-in": false,
+      "used_as_default": true,
+      "dependencies": null,
+      "build_flag": "-DGMX_FFT_LIBRARY=fftw3"
+    },
+    "mkl": {
+      "built-in": false,
+      "used_as_default": false,
+      "dependencies": "Intel MKL library. Default if GMX_INTEL_LLVM is ON.",
+      "build_flag": "-DGMX_FFT_LIBRARY=mkl"
+    },
+    "fftpack": {
+      "built-in": true,
+      "used_as_default": false,
+      "dependencies": null,
+      "build_flag": "-DGMX_FFT_LIBRARY=fftpack[built-in]"
+    },
+    "cuFFT": {
+      "built-in": false,
+      "used_as_default": false,
+      "dependencies": "GMX_GPU=CUDA",
+      "build_flag": "-DGMX_GPU_FFT_LIBRARY=cuFFT"
+    },
+    "clFFT": {
+      "built-in": false,
+      "used_as_default": false,
+      "dependencies": "GMX_GPU=OpenCL (Default for non-Apple/MSVC)",
+      "build_flag": "-DGMX_GPU_FFT_LIBRARY=clFFT"
+    },
+    "VkFFT": {
+      "built-in": false,
+      "used_as_default": false,
+      "dependencies": "GMX_GPU=HIP (Default), GMX_GPU=OpenCL (Default Apple/MSVC), GMX_GPU=SYCL with GMX_SYCL=ACPP (Default)",
+      "build_flag": "-DGMX_GPU_FFT_LIBRARY=VkFFT"
+    },
+    "MKL_GPU": {
+      "built-in": false,
+      "used_as_default": false,
+      "dependencies": "GMX_GPU=SYCL with GMX_SYCL=DPCPP (Default)",
+      "build_flag": "-DGMX_GPU_FFT_LIBRARY=MKL"
+    },
+    "oneMath": {
+      "built-in": false,
+      "used_as_default": false,
+      "dependencies": "GMX_GPU=SYCL (typically with DPC++)",
+      "build_flag": "-DGMX_GPU_FFT_LIBRARY=oneMath"
+    },
+    "rocFFT": {
+      "built-in": false,
+      "used_as_default": false,
+      "dependencies": "GMX_GPU=HIP or GMX_GPU=SYCL",
+      "build_flag": "-DGMX_GPU_FFT_LIBRARY=rocFFT"
+    },
+    "BBFFT": {
+      "built-in": false,
+      "used_as_default": false,
+      "dependencies": "GMX_GPU=HIP (Experimental)",
+      "build_flag": "-DGMX_GPU_FFT_LIBRARY=BBFFT"
+    },
+    "HeFFTe": {
+      "built-in": false,
+      "used_as_default": false,
+      "dependencies": "GMX_GPU={CUDA|HIP|SYCL} and GMX_MPI=ON. Min version 2.2.0.",
+      "build_flag": "-DGMX_USE_HEFFTE=ON"
+    },
+    "cuFFTMp": {
+      "built-in": false,
+      "used_as_default": false,
+      "dependencies": "GMX_GPU=CUDA and GMX_MPI=ON.",
+      "build_flag": "-DGMX_USE_CUFFTMP=ON"
+    }
+  },
+  "other_external_libraries": {
+    "hwloc": {
+      "version": "1.5",
+      "used_as_default": false,
+      "conditions": null,
+      "build_flag": "-DGMX_HWLOC=ON"
+    },
+    "TinyXML2": {
+      "version": "6.0.0",
+      "used_as_default": false,
+      "conditions": "If external TinyXML-2 is used.",
+      "build_flag": "-DGMX_EXTERNAL_TINYXML2=ON"
+    },
+    "EXTRAE": {
+      "version": null,
+      "used_as_default": false,
+      "conditions": null,
+      "build_flag": "-DGMX_EXTRAE=ON"
+    },
+    "TNG": {
+      "version": null,
+      "used_as_default": true,
+      "conditions": null,
+      "build_flag": "-DGMX_USE_TNG=ON"
+    },
+    "HDF5": {
+      "version": null,
+      "used_as_default": true,
+      "conditions": "Required by TNG (enabled by default).",
+      "build_flag": null
+    },
+    "Lmfit": {
+      "version": null,
+      "used_as_default": false,
+      "conditions": "Handled internally by gmxManageLmfit.cmake.",
+      "build_flag": null
+    },
+    "Muparser": {
+      "version": null,
+      "used_as_default": false,
+      "conditions": "Handled internally by gmxManageMuparser.cmake.",
+      "build_flag": null
+    },
+    "Colvars": {
+      "version": null,
+      "used_as_default": false,
+      "conditions": "Handled internally by gmxManageColvars.cmake.",
+      "build_flag": null
+    },
+    "Plumed": {
+      "version": null,
+      "used_as_default": false,
+      "conditions": "Handled internally by gmxManagePlumed.cmake.",
+      "build_flag": null
+    },
+    "MiMiC": {
+      "version": null,
+      "used_as_default": false,
+      "conditions": "Requires CPMD.",
+      "build_flag": "-DGMX_MIMIC=ON"
+    },
+    "CP2K": {
+      "version": "8.1",
+      "used_as_default": false,
+      "conditions": "Requires CP2K 8.1 or later.",
+      "build_flag": "-DGMX_CP2K=ON"
+    },
+    "VMD": {
+      "version": null,
+      "used_as_default": false,
+      "conditions": "Required if GMX_USE_PLUGINS=ON.",
+      "build_flag": null
+    }
+  },
+  "compiler_flags": [
+    "-DGMX_DOUBLE=0",
+    "-DGMX_DOUBLE=1",
+    "-DNOMINMAX",
+    "-DTMPI_ATOMICS_DISABLED",
+    "-DGMX_COMPILER_WARNINGS=ON"
+  ],
+  "optimization_build_flags": [
+    "-DGMX_SIMD=AVX_256",
+    "-DGMX_CYCLE_SUBCOUNTERS=ON",
+    "-DGMX_DISABLE_FFTW_MEASURE=ON",
+    "-DGMX_GPU_NB_CLUSTER_SIZE=4",
+    "-DGMX_GPU_NB_CLUSTER_SIZE=8",
+    "-DGMX_GPU_NB_NUM_CLUSTER_PER_CELL_X=2",
+    "-DGMX_GPU_NB_NUM_CLUSTER_PER_CELL_Y=2",
+    "-DGMX_GPU_NB_NUM_CLUSTER_PER_CELL_Z=2",
+    "-DGMX_USE_RDTSCP=ON"
+  ],
+  "compilers": {
+    "GCC": {
+      "minimum_version": "11"
+    },
+    "Clang": {
+      "minimum_version": "14"
+    },
+    "IntelLLVM": {
+      "minimum_version": null
+    },
+    "MSVC": {
+      "minimum_version": null
+    },
+    "XLC": {
+      "minimum_version": null
+    }
+  },
+  "architectures": [
+    "x86_64",
+    "ARM",
+    "IBM POWER (VSX)",
+    "Apple (ARM/x86)"
+  ],
+  "simd_vectorization": {
+    "AUTO": {
+      "build_flag": "-DGMX_SIMD=AUTO",
+      "default": true
+    },
+    "None": {
+      "build_flag": "-DGMX_SIMD=None",
+      "default": false
+    },
+    "SSE2": {
+      "build_flag": "-DGMX_SIMD=SSE2",
+      "default": false
+    },
+    "SSE4.1": {
+      "build_flag": "-DGMX_SIMD=SSE4.1",
+      "default": false
+    },
+    "AVX_128_FMA": {
+      "build_flag": "-DGMX_SIMD=AVX_128_FMA",
+      "default": false
+    },
+    "AVX_256": {
+      "build_flag": "-DGMX_SIMD=AVX_256",
+      "default": false
+    },
+    "AVX2_128": {
+      "build_flag": "-DGMX_SIMD=AVX2_128",
+      "default": false
+    },
+    "AVX2_256": {
+      "build_flag": "-DGMX_SIMD=AVX2_256",
+      "default": false
+    },
+    "AVX_512": {
+      "build_flag": "-DGMX_SIMD=AVX_512",
+      "default": false
+    },
+    "AVX_512_KNL": {
+      "build_flag": "-DGMX_SIMD=AVX_512_KNL",
+      "default": false
+    },
+    "ARM_NEON_ASIMD": {
+      "build_flag": "-DGMX_SIMD=ARM_NEON_ASIMD",
+      "default": false
+    },
+    "ARM_SVE": {
+      "build_flag": "-DGMX_SIMD=ARM_SVE",
+      "default": false
+    },
+    "IBM_VSX": {
+      "build_flag": "-DGMX_SIMD=IBM_VSX",
+      "default": false
+    },
+    "Reference": {
+      "build_flag": "-DGMX_SIMD=Reference",
+      "default": false
+    }
+  },
+  "build_system": {
+    "type": "cmake",
+    "minimum_version": "3.28"
+  },
+  "internal_build": [
+    {
+      "library_name": "FFTW",
+      "build_flag": "-DGMX_BUILD_OWN_FFTW=ON"
+    },
+    {
+      "library_name": "XDR",
+      "build_flag": null
+    },
+    {
+      "library_name": "TinyXML2",
+      "build_flag": "-DGMX_EXTERNAL_TINYXML2=OFF"
+    }
+  ]
+}
