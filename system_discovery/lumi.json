@@ -1,0 +1,74 @@
+{
+  "CPU Info": {
+    "Architecture": "x86_64",
+    "Model Name": "AMD EPYC 7A53 64-Core Processor",
+    "Supported Vectorizations": [
+      "avx2",
+      "avx",
+      "sse4_2",
+      "sse4_1",
+      "ssse3",
+      "sse2",
+      "sse"
+    ]
+  },
+  "Accelerators": {
+    "Accelerators": {
+      "amd": [
+        {
+          "name": "gfx90a",
+          "marketing_name": "AMD Instinct MI250X",
+          "runtime_version": "1.1"
+        }
+      ]
+    },
+    "Driver Versions": {}
+  },
+  "Parallel Libraries": {
+    "No MPI Found": {
+      "None": "No MPI shared libraries detected in LD_LIBRARY_PATH"
+    }
+  },
+  "FFT Libraries": {},
+  "linear algebra Libraries": {},
+  "GPU Backends": {
+    "CUDA": {
+      "libraries": [],
+      "version": "Version not found"
+    },
+    "OpenCL": {
+      "libraries": [],
+      "version": null
+    },
+    "SYCL": {
+      "libraries": [],
+      "version": null
+    },
+    "HIP": {
+      "libraries": [],
+      "version": null
+    },
+    "ROCm": {
+      "libraries": [],
+      "version": "6.0.3"
+    }
+  },
+  "Loaded Modules": {
+    "perftools-base": "24.03.0",
+    "cce": "17.0.1",
+    "craype": "2.7.31.11",
+    "cray-dsmml": "0.3.0",
+    "cray-mpich": "8.1.29",
+    "cray-libsci": "24.03.0",
+    "PrgEnv-cray": "8.5.0",
+    "ModuleLabel": "label",
+    "lumi-tools": "24.05",
+    "init-lumi": "0.2",
+    "libfabric": "1.15.2.0",
+    "xpmem": "2.8.2-1.0_5.1__g84a27a5.shasta",
+    "partition": "L",
+    "LUMI": "24.03",
+    "cray-python": "3.11.7",
+    "buildtools-python": "24.03-cray-python3.11"
+  }
+}
