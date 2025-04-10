@@ -1,0 +1,98 @@
+{
+  "CPU Info": {
+    "Architecture": "x86_64",
+    "Model Name": "Intel(R) Xeon(R) Platinum 8460Y+",
+    "Supported Vectorizations": [
+      "avx512f",
+      "avx512dq",
+      "avx512cd",
+      "avx512bw",
+      "avx512vl",
+      "avx2",
+      "avx",
+      "sse4_2",
+      "sse4_1",
+      "ssse3",
+      "sse2",
+      "sse"
+    ]
+  },
+  "Accelerators": {
+    "Accelerators": {
+      "lspci": [
+        "1b:00.0 3D controller: NVIDIA Corporation Device 2337 (rev a1)",
+        "2c:00.0 3D controller: NVIDIA Corporation Device 2337 (rev a1)",
+        "9d:00.0 3D controller: NVIDIA Corporation Device 2337 (rev a1)",
+        "ad:00.0 3D controller: NVIDIA Corporation Device 2337 (rev a1)"
+      ]
+    },
+    "Driver Versions": {}
+  },
+  "Parallel Libraries": {
+    "Unknown MPI": {
+      "libmpicxx.so.12.0.0": "/gpfs/apps/MN5/GPP/ONEAPI/2023.2.0/mpi/2021.10.0/lib/libmpicxx.so.12.0.0",
+      "libmpifort.so.12.0.0": "/gpfs/apps/MN5/GPP/ONEAPI/2023.2.0/mpi/2021.10.0/lib/libmpifort.so.12.0.0",
+      "libmpi.so.12.0.0": "/gpfs/apps/MN5/GPP/ONEAPI/2023.2.0/mpi/2021.10.0/lib/release/libmpi.so.12.0.0"
+    }
+  },
+  "FFT Libraries": {
+    "FFTW": {
+      "shared_lib": "libfftw",
+      "path": "/lib64/libfftw3_threads.so.3",
+      "version": "Unknown Version"
+    },
+    "MKL": {
+      "shared_lib": "libmkl_core",
+      "path": "/gpfs/apps/MN5/GPP/ONEAPI/2023.2.0/mkl/2023.2.0/lib/intel64/libmkl_core.so",
+      "version": "Unknown Version"
+    }
+  },
+  "linear algebra Libraries": {
+    "MKL": {
+      "installation_path": "/gpfs/apps/MN5/GPP/ONEAPI/2023.2.0/mkl/2023.2.0/lib/intel64",
+      "version": "2023.2.0"
+    }
+  },
+  "GPU Backends": {
+    "CUDA": {
+      "libraries": [
+        "/usr/local/cuda/targets/x86_64-linux/lib/libcudart.so.12",
+        "/usr/local/cuda/targets/x86_64-linux/lib/libcudart.so",
+        "/lib64/libcudadebugger.so.1",
+        "/lib64/libcuda_wrapper.so.0",
+        "/lib64/libcuda_wrapper.so",
+        "/lib64/libcuda.so.1",
+        "/lib64/libcuda.so"
+      ],
+      "version": "Version not found"
+    },
+    "OpenCL": {
+      "libraries": [
+        "/usr/local/cuda/targets/x86_64-linux/lib/libOpenCL.so.1",
+        "/lib64/libOpenCL.so.1",
+        "/usr/local/cuda/targets/x86_64-linux/lib/libOpenCL.so"
+      ],
+      "version": "3.0"
+    },
+    "SYCL": {
+      "libraries": [],
+      "version": null
+    },
+    "HIP": {
+      "libraries": [],
+      "version": null
+    },
+    "ROCm": {
+      "libraries": [],
+      "version": null
+    }
+  },
+  "Loaded Modules": {
+    "intel": "2023.2.0",
+    "mkl": "2023.2.0",
+    "oneapi": "2023.2.0",
+    "impi": "2021.10.0",
+    "ucx": "1.15.0",
+    "bsc": "1.0"
+  }
+}
