@@ -6,8 +6,10 @@ import matplotlib.pyplot as plt
 import matplotlib as mpl
 import argparse
 
+from matplotlib.patches import FancyArrowPatch
+
 X86_VECTORIZATIONS = {
-    "x86-None",
+    "x86-Default",
     "x86-SSE2",
     "x86-SSE4.1",
     "x86-AVX_128_FMA",
@@ -16,7 +18,7 @@ X86_VECTORIZATIONS = {
     "x86-AVX2_256",
     "x86-AVX_512",
 }
-ARM_VECTORIZATIONS = {"arm-None", "arm-NEON_ASIMD", "arm-SVE"}
+ARM_VECTORIZATIONS = {"arm-Default", "arm-NEON_ASIMD", "arm-SVE"}
 
 
 def extract_values(md_log_path):
@@ -133,10 +135,15 @@ def plot_side_by_side_execution_times(results):
         edgecolor="black",
         linewidth=0.8,
     )
-    ax1.set_title("x86 Execution Time", fontsize=18, fontweight="bold", pad=15)
+    ax1.set_title(
+        "x86 Execution Time: Intel Xeon Gold 6130",
+        fontsize=18,
+        fontweight="bold",
+        pad=15,
+    )
     ax1.set_ylabel("Execution Time (seconds)", fontsize=18, fontweight="bold")
     ax1.set_xlabel("Vectorization Type", fontsize=18, fontweight="bold")
-    ax1.tick_params(axis="x", rotation=45, labelsize=18)
+    ax1.tick_params(axis="x", rotation=30, labelsize=18)
     ax1.tick_params(axis="y", labelsize=18)
     ax1.grid(True, linestyle="--", alpha=0.7)
 
@@ -151,6 +158,43 @@ def plot_side_by_side_execution_times(results):
             fontsize=18,
         )
 
+    if len(bars1) >= 2:
+        second_bar = bars1[1]  # Get the second bar
+        last_bar = bars1[-1]  # Get the last bar
+
+        second_val = x86_means[1]
+        last_val = x86_means[-1]
+        percent_change = ((last_val - second_val) / second_val) * 100
+
+        # Create arrow from second to last bar
+        arrow = FancyArrowPatch(
+            (
+                second_bar.get_x() + second_bar.get_width() / 2,
+                second_bar.get_height() + 10,
+            ),
+            (last_bar.get_x() + last_bar.get_width() / 2, last_bar.get_height() + 13),
+            connectionstyle="arc3,rad=-0.3",
+            arrowstyle="fancy,head_length=6,head_width=6",
+            color="black",
+            linewidth=4,
+        )
+        ax1.add_patch(arrow)
+
+        # Add percentage text above the arrow
+        midpoint_x = (second_bar.get_x() + last_bar.get_x() + last_bar.get_width()) / 2
+        midpoint_y = max(second_bar.get_height(), last_bar.get_height()) + 35
+        ax1.text(
+            midpoint_x,
+            midpoint_y,
+            f"{percent_change:.1f}%",
+            ha="center",
+            va="bottom",
+            color="black",
+            fontsize=16,
+            fontweight="bold",
+            bbox=dict(facecolor="white", alpha=0.0, edgecolor="none", pad=3),
+        )
+
     bars2 = ax2.bar(
         arm_labels,
         arm_means,
@@ -161,10 +205,15 @@ def plot_side_by_side_execution_times(results):
         edgecolor="black",
         linewidth=0.8,
     )
-    ax2.set_title("ARM Execution Time", fontsize=18, fontweight="bold", pad=15)
+    ax2.set_title(
+        "ARM Execution Time: NVIDIA GH200",
+        fontsize=18,
+        fontweight="bold",
+        pad=15,
+    )
     ax2.set_ylabel("Execution Time (seconds)", fontsize=18, fontweight="bold")
     ax2.set_xlabel("Vectorization Type", fontsize=18, fontweight="bold")
-    ax2.tick_params(axis="x", rotation=45, labelsize=18)
+    ax2.tick_params(axis="x", rotation=30, labelsize=18)
     ax2.tick_params(axis="y", labelsize=18)
     ax2.grid(True, linestyle="--", alpha=0.7)
 
@@ -181,9 +230,9 @@ def plot_side_by_side_execution_times(results):
         )
 
     # Ensure the same y-axis range for better comparison
-    max_y = max(max(x86_means), max(arm_means)) * 1.2
-    ax1.set_ylim(0, max_y)
-    ax2.set_ylim(0, max_y)
+    # max_y = max(max(x86_means), max(arm_means)) * 1.2
+    # ax1.set_ylim(0, max_y)
+    # ax2.set_ylim(0, max_y)
 
     plt.tight_layout(rect=[0, 0, 1, 0.95])
 
