@@ -8,7 +8,7 @@
 #SBATCH --time=4:00:00                    # Max time limit (adjust as needed)
 #SBATCH --exclusive                       # Ensures no other jobs run on this node
 
-# Load required modules
+# FIXME: adapt for your configuration
 module load cuda/12.1.1 intel-oneapi-mpi/2021.3.0 intel-oneapi-mkl/2021.3.0
 
 # FIXME: adapt for your configuration - if inside the container

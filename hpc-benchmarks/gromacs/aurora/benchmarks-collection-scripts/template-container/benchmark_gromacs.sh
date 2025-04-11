@@ -9,7 +9,7 @@
 #SBATCH --time=4:00:00                    # Max time limit
 #SBATCH --exclusive                       # Ensures no other jobs run on this node
 
-# Load required modules
+# FIXME: adapt for your configuration
 module load cuda/12.1.1 intel-oneapi-mpi/2021.3.0 intel-oneapi-mkl/2021.3.0 sarus/1.6
 
 # FIXME: adapt for your configuration
@@ -75,4 +75,3 @@ for i in $(seq 1 $TOTAL_RUNS); do
 done
 
 echo "All benchmarking runs are complete!"
-
