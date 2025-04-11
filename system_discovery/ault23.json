@@ -1,0 +1,106 @@
+{
+    "CPU Info": {
+      "Architecture": "x86_64",
+      "Model Name": "Intel(R) Xeon(R) Gold 6130 CPU @ 2.10GHz",
+      "Supported Vectorizations": [
+        "avx512f",
+        "avx512dq",
+        "avx512cd",
+        "avx512bw",
+        "avx512vl",
+        "avx2",
+        "avx",
+        "sse4_2",
+        "sse4_1",
+        "ssse3",
+        "sse2",
+        "sse"
+      ]
+    },
+    "Accelerators": {
+      "Accelerators": [
+        "1c:00.0 3D controller: NVIDIA Corporation GV100GL [Tesla V100 PCIe 16GB] (rev a1)",
+        "1e:00.0 3D controller: NVIDIA Corporation GV100GL [Tesla V100 PCIe 16GB] (rev a1)",
+        "40:00.0 3D controller: NVIDIA Corporation GV100GL [Tesla V100 PCIe 16GB] (rev a1)",
+        "41:00.0 3D controller: NVIDIA Corporation GV100GL [Tesla V100 PCIe 16GB] (rev a1)"
+      ],
+      "Driver Versions": {
+        "NVIDIA": "570.86.15"
+      }
+    },
+    "Parallel Libraries": {
+      "Intel MPI": {
+        "libmpi.so.12.0.0": "/apps/ault/spack/opt/spack/linux-centos8-zen/gcc-8.4.1/intel-oneapi-mpi-2021.3.0-cimviyny3mny7u7jdpvg6kpxra5syfdw/mpi/2021.3.0/lib/release/libmpi.so.12.0.0",
+        "libmpifort.so.12.0.0": "/apps/ault/spack/opt/spack/linux-centos8-zen/gcc-8.4.1/intel-oneapi-mpi-2021.3.0-cimviyny3mny7u7jdpvg6kpxra5syfdw/mpi/2021.3.0/lib/libmpifort.so.12.0.0",
+        "libmpicxx.so.12.0.0": "/apps/ault/spack/opt/spack/linux-centos8-zen/gcc-8.4.1/intel-oneapi-mpi-2021.3.0-cimviyny3mny7u7jdpvg6kpxra5syfdw/mpi/2021.3.0/lib/libmpicxx.so.12.0.0"
+      }
+    },
+    "FFT Libraries": {
+      "MKL": {
+        "shared_lib": "libmkl_core",
+        "path": "/apps/ault/spack/opt/spack/linux-centos8-zen/gcc-8.4.1/intel-oneapi-mkl-2021.3.0-7vtzbakydduwk5lkporwbhsd6znar5ib/mkl/2021.3.0/lib/intel64/libmkl_core.so",
+        "version": "Unknown Version"
+      },
+      "cufft": {
+        "shared_lib": "libcufft",
+        "path": "/apps/ault/spack/opt/spack/linux-centos8-zen/gcc-8.4.1/cuda-12.1.1-zbdbt4aikrp6sdems6n3t5wvqxm3tza5/lib64/libcufft.so.11.0.2.54",
+        "version": "11.0.2.54"
+      },
+      "cufftw": {
+        "shared_lib": "libcufftw",
+        "path": "/apps/ault/spack/opt/spack/linux-centos8-zen/gcc-8.4.1/cuda-12.1.1-zbdbt4aikrp6sdems6n3t5wvqxm3tza5/lib64/libcufftw.so.11.0.2.54",
+        "version": "11.0.2.54"
+      }
+    },
+    "linear algebra Libraries": {
+      "MKL": {
+        "installation_path": "/apps/ault/spack/opt/spack/linux-centos8-zen/gcc-8.4.1/intel-oneapi-mkl-2021.3.0-7vtzbakydduwk5lkporwbhsd6znar5ib/mkl/2021.3.0/lib/intel64",
+        "version": "8.4.1"
+      }
+    },
+    "GPU Backends": {
+      "CUDA": {
+        "libraries": [
+          "/lib64/libcudadebugger.so.1",
+          "/lib64/libcuda.so.1",
+          "/lib/libcuda.so.1",
+          "/lib64/libcuda.so",
+          "/lib/libcuda.so"
+        ],
+        "version": "12.1"
+      },
+      "OpenCL": {
+        "libraries": [
+          "/lib64/libOpenCL.so.1",
+          "/lib/libOpenCL.so.1",
+          "/lib64/libOpenCL.so",
+          "/lib/libOpenCL.so"
+        ],
+        "version": "3.0"
+      },
+      "SYCL": {
+        "libraries": [],
+        "version": null
+      },
+      "HIP": {
+        "libraries": [],
+        "version": null
+      },
+      "ROCm": {
+        "libraries": [],
+        "version": "4.3.0"
+      }
+    },
+    "Loaded Modules": {
+      "libxml2": "2.9.10",
+      "intel-oneapi-mpi": "2021.3.0",
+      "expat": ".2.1.0",
+      "git": "2.10.1",
+      "intel-oneapi-compilers": "2021.3.0",
+      "cuda": "12.1.1",
+      "cURL": ".7.47.0",
+      "Perl": "5.22.1-bare",
+      "intel-oneapi-mkl": "2021.3.0",
+      "sarus": "1.6.0"
+    }
+  }
