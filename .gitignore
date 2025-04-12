@@ -172,3 +172,8 @@ cython_debug/
 
 #DS_Store
 .DS_Store
+
+#Ignore simulation files
+*.gro
+*.cpt
+*.edr
