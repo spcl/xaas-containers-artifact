@@ -30,9 +30,9 @@ NOTE: 29 % of the run time was spent in pair search,
       you might want to increase nstlist (this has no effect on accuracy)
 
                Core t (s)   Wall t (s)        (%)
-       Time:     1379.131       13.263    10398.4
+       Time:     1388.908       13.357    10398.4
                  (ns/day)    (hour/ns)
-Performance:        1.316       18.238
+Performance:        1.307       18.368
 
-GROMACS reminds you: "Some People Say Not to Worry About the Air" (The Talking Heads)
+GROMACS reminds you: "Count the Bubbles In Your Hair" (The Breeders)
 

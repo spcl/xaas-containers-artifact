@@ -30,9 +30,9 @@ NOTE: 28 % of the run time was spent in pair search,
       you might want to increase nstlist (this has no effect on accuracy)
 
                Core t (s)   Wall t (s)        (%)
-       Time:     1384.555       13.315    10398.6
+       Time:     1395.628       13.421    10398.6
                  (ns/day)    (hour/ns)
-Performance:        1.311       18.310
+Performance:        1.300       18.456
 
-GROMACS reminds you: "It's more useful when you know what you're doing." (Artem Zhmurov)
+GROMACS reminds you: "You're Insignificant" (Tricky)
 

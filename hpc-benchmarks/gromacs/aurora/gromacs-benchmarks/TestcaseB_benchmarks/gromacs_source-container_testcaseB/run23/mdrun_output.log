@@ -30,9 +30,9 @@ NOTE: 29 % of the run time was spent in pair search,
       you might want to increase nstlist (this has no effect on accuracy)
 
                Core t (s)   Wall t (s)        (%)
-       Time:     1382.142       13.292    10398.5
+       Time:     1390.757       13.375    10398.6
                  (ns/day)    (hour/ns)
-Performance:        1.313       18.278
+Performance:        1.305       18.392
 
-GROMACS reminds you: "The message here is that Thermodynamic Integration sucks." (Berk Hess)
+GROMACS reminds you: "Molecular biology is essentially the practice of biochemistry without a license." (Edwin Chargaff)
 

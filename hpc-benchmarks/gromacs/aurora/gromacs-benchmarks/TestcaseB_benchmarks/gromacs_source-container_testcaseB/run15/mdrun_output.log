@@ -26,13 +26,13 @@ starting mdrun ''
 
 Writing final coordinates.
 
-NOTE: 28 % of the run time was spent in pair search,
+NOTE: 29 % of the run time was spent in pair search,
       you might want to increase nstlist (this has no effect on accuracy)
 
                Core t (s)   Wall t (s)        (%)
-       Time:     1375.559       13.228    10398.5
+       Time:     1365.265       13.129    10398.7
                  (ns/day)    (hour/ns)
-Performance:        1.319       18.191
+Performance:        1.329       18.054
 
-GROMACS reminds you: "I Smell Smoke From a Gun Named Extinction" (Pixies)
+GROMACS reminds you: "If Life Seems Jolly Rotten, There's Something You've Forgotten !" (Monty Python)
 

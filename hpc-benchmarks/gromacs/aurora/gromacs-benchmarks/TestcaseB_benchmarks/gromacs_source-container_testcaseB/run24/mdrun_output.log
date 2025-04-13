@@ -26,13 +26,13 @@ starting mdrun ''
 
 Writing final coordinates.
 
-NOTE: 29 % of the run time was spent in pair search,
+NOTE: 28 % of the run time was spent in pair search,
       you might want to increase nstlist (this has no effect on accuracy)
 
                Core t (s)   Wall t (s)        (%)
-       Time:     1377.827       13.250    10398.4
+       Time:     1381.995       13.290    10398.8
                  (ns/day)    (hour/ns)
-Performance:        1.317       18.221
+Performance:        1.313       18.276
 
-GROMACS reminds you: "Been There, Done It" (Beavis and Butthead)
+GROMACS reminds you: "On the East coast, a purple patch, to show where the jolly pioneers of progress drink the jolly lager-beer" (Joseph Conrad)
 

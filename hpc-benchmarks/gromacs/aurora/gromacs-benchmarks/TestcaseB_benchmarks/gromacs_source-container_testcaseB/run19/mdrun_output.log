@@ -30,9 +30,9 @@ NOTE: 28 % of the run time was spent in pair search,
       you might want to increase nstlist (this has no effect on accuracy)
 
                Core t (s)   Wall t (s)        (%)
-       Time:     1379.637       13.268    10398.5
+       Time:     1384.417       13.314    10398.4
                  (ns/day)    (hour/ns)
-Performance:        1.315       18.245
+Performance:        1.311       18.308
 
-GROMACS reminds you: "Occams Razor is the scientific principle that, all things being equal, the simplest explanation is always the dog ate my homework." (Greg Tamblyn)
+GROMACS reminds you: "Never replicate a successful experiment." (Fett's law.)
 

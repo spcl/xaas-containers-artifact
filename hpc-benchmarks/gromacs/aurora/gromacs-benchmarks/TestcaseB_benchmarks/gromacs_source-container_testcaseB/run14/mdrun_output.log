@@ -26,13 +26,13 @@ starting mdrun ''
 
 Writing final coordinates.
 
-NOTE: 29 % of the run time was spent in pair search,
+NOTE: 28 % of the run time was spent in pair search,
       you might want to increase nstlist (this has no effect on accuracy)
 
                Core t (s)   Wall t (s)        (%)
-       Time:     1375.583       13.229    10398.5
+       Time:     1398.345       13.447    10398.7
                  (ns/day)    (hour/ns)
-Performance:        1.319       18.191
+Performance:        1.298       18.492
 
-GROMACS reminds you: "If all else fails, immortality can always be assured by spectacular error." (John Kenneth Galbraith)
+GROMACS reminds you: "The great tragedy of science - the slaying of a beautiful hypothesis by an ugly fact." (Thomas Henry Huxley)
 

@@ -26,13 +26,13 @@ starting mdrun ''
 
 Writing final coordinates.
 
-NOTE: 30 % of the run time was spent in pair search,
+NOTE: 29 % of the run time was spent in pair search,
       you might want to increase nstlist (this has no effect on accuracy)
 
                Core t (s)   Wall t (s)        (%)
-       Time:     1414.154       13.599    10398.6
+       Time:     1392.519       13.392    10398.4
                  (ns/day)    (hour/ns)
-Performance:        1.283       18.701
+Performance:        1.303       18.415
 
-GROMACS reminds you: "We are perhaps not far removed from the time when we shall be able to submit the bulk of chemical phenomena to calculation." (Joseph Gay-Lussac, 1808)
+GROMACS reminds you: "Don't You Wish You Never Met Her, Dirty Blue Gene?" (Captain Beefheart)
 

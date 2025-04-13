@@ -30,9 +30,9 @@ NOTE: 28 % of the run time was spent in pair search,
       you might want to increase nstlist (this has no effect on accuracy)
 
                Core t (s)   Wall t (s)        (%)
-       Time:     1373.495       13.209    10398.5
+       Time:     1388.339       13.351    10398.5
                  (ns/day)    (hour/ns)
-Performance:        1.321       18.164
+Performance:        1.307       18.360
 
-GROMACS reminds you: "Ubiquitin's just a rock" (Berk Hess)
+GROMACS reminds you: "Product of optimism and knowledge is a constant." (Lev Landau)
 

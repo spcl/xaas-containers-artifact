@@ -30,9 +30,9 @@ NOTE: 28 % of the run time was spent in pair search,
       you might want to increase nstlist (this has no effect on accuracy)
 
                Core t (s)   Wall t (s)        (%)
-       Time:     1384.583       13.315    10398.6
+       Time:     1386.280       13.332    10398.4
                  (ns/day)    (hour/ns)
-Performance:        1.311       18.310
+Performance:        1.309       18.333
 
-GROMACS reminds you: "I Am a Wonderful Thing" (Kid Creole)
+GROMACS reminds you: "We'll celebrate a woman for anything, as long as it's not her talent." (Colleen McCullough)
 

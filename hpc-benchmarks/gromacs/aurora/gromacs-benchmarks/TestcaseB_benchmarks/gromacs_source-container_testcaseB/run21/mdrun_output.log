@@ -30,9 +30,9 @@ NOTE: 29 % of the run time was spent in pair search,
       you might want to increase nstlist (this has no effect on accuracy)
 
                Core t (s)   Wall t (s)        (%)
-       Time:     1379.504       13.266    10398.4
+       Time:     1387.725       13.345    10398.6
                  (ns/day)    (hour/ns)
-Performance:        1.316       18.243
+Performance:        1.308       18.352
 
-GROMACS reminds you: "Consistently separating words by spaces became a general custom about the tenth century A.D., and lasted until about 1957, when FORTRAN abandoned the practice." (Sun FORTRAN Reference Manual)
+GROMACS reminds you: "Forcefields are like dating; things go fine for a while and then sometimes it goes really bad." (Alex MacKerell)
 

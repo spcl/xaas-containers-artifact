@@ -30,9 +30,9 @@ NOTE: 29 % of the run time was spent in pair search,
       you might want to increase nstlist (this has no effect on accuracy)
 
                Core t (s)   Wall t (s)        (%)
-       Time:     1383.188       13.302    10398.5
+       Time:     1389.067       13.358    10398.5
                  (ns/day)    (hour/ns)
-Performance:        1.312       18.292
+Performance:        1.307       18.369
 
-GROMACS reminds you: "Mathematics is like love; a simple idea, but it can get complicated." (Anonymous)
+GROMACS reminds you: "Please implement proper hep writing" (GROMACS)
 

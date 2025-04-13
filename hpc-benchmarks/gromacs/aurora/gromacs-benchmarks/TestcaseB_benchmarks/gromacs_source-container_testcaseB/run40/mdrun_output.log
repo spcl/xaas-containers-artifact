@@ -30,9 +30,9 @@ NOTE: 29 % of the run time was spent in pair search,
       you might want to increase nstlist (this has no effect on accuracy)
 
                Core t (s)   Wall t (s)        (%)
-       Time:     1371.684       13.191    10398.5
+       Time:     1388.985       13.358    10398.3
                  (ns/day)    (hour/ns)
-Performance:        1.323       18.140
+Performance:        1.307       18.369
 
-GROMACS reminds you: "Chemistry: It tends to be a messy science." (Gunnar von Heijne, former chair of the Nobel Committee for chemistry)
+GROMACS reminds you: "...sometimes a scream is better than a thesis." (Ralph Waldo Emerson)
 

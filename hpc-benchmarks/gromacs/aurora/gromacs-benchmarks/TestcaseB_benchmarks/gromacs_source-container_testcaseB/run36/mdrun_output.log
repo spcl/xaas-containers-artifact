@@ -30,9 +30,9 @@ NOTE: 29 % of the run time was spent in pair search,
       you might want to increase nstlist (this has no effect on accuracy)
 
                Core t (s)   Wall t (s)        (%)
-       Time:     1375.622       13.229    10398.5
+       Time:     1396.984       13.434    10398.5
                  (ns/day)    (hour/ns)
-Performance:        1.319       18.192
+Performance:        1.299       18.474
 
-GROMACS reminds you: "When the universe has expanded, time will contract" (Franz Ferdinand)
+GROMACS reminds you: "I Want to Know Right Now" (Meatloaf)
 

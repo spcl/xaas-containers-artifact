@@ -30,9 +30,9 @@ NOTE: 29 % of the run time was spent in pair search,
       you might want to increase nstlist (this has no effect on accuracy)
 
                Core t (s)   Wall t (s)        (%)
-       Time:     1378.810       13.260    10398.2
+       Time:     1395.826       13.423    10398.7
                  (ns/day)    (hour/ns)
-Performance:        1.316       18.234
+Performance:        1.300       18.459
 
-GROMACS reminds you: "Science is organized knowledge. Wisdom is organized life." (Immanuel Kant)
+GROMACS reminds you: "Nada e organico, e tudo programado" (Pitty)
 

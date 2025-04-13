@@ -30,9 +30,9 @@ NOTE: 29 % of the run time was spent in pair search,
       you might want to increase nstlist (this has no effect on accuracy)
 
                Core t (s)   Wall t (s)        (%)
-       Time:     1376.997       13.242    10398.5
+       Time:     1385.904       13.328    10398.4
                  (ns/day)    (hour/ns)
-Performance:        1.318       18.210
+Performance:        1.309       18.328
 
-GROMACS reminds you: "The determined Real Programmer can write FORTRAN programs in any language." (Ed Post)
+GROMACS reminds you: "Science is a wonderful thing if one does not have to earn one's living at it." (Albert Einstein)
 

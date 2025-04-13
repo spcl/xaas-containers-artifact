@@ -26,13 +26,13 @@ starting mdrun ''
 
 Writing final coordinates.
 
-NOTE: 28 % of the run time was spent in pair search,
+NOTE: 29 % of the run time was spent in pair search,
       you might want to increase nstlist (this has no effect on accuracy)
 
                Core t (s)   Wall t (s)        (%)
-       Time:     1371.457       13.189    10398.8
+       Time:     1389.101       13.358    10398.8
                  (ns/day)    (hour/ns)
-Performance:        1.323       18.136
+Performance:        1.307       18.369
 
-GROMACS reminds you: "Wedged as we are between two eternities of idleness, there is no excuse for being idle now" (Anthony Burgess)
+GROMACS reminds you: "Why Do *You* Use Constraints ?" (H.J.C. Berendsen)
 

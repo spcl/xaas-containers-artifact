@@ -26,13 +26,13 @@ starting mdrun ''
 
 Writing final coordinates.
 
-NOTE: 29 % of the run time was spent in pair search,
+NOTE: 28 % of the run time was spent in pair search,
       you might want to increase nstlist (this has no effect on accuracy)
 
                Core t (s)   Wall t (s)        (%)
-       Time:     1379.791       13.269    10398.5
+       Time:     1382.346       13.294    10398.6
                  (ns/day)    (hour/ns)
-Performance:        1.315       18.247
+Performance:        1.313       18.280
 
-GROMACS reminds you: "A computer without COBOL and FORTRAN is like a piece of chocolate cake without ketchup or mustard." (Unix fortune program)
+GROMACS reminds you: "Nada e organico, e tudo programado" (Pitty)
 

@@ -26,13 +26,13 @@ starting mdrun ''
 
 Writing final coordinates.
 
-NOTE: 29 % of the run time was spent in pair search,
+NOTE: 28 % of the run time was spent in pair search,
       you might want to increase nstlist (this has no effect on accuracy)
 
                Core t (s)   Wall t (s)        (%)
-       Time:     1377.016       13.243    10398.4
+       Time:     1396.618       13.431    10398.4
                  (ns/day)    (hour/ns)
-Performance:        1.318       18.210
+Performance:        1.299       18.470
 
-GROMACS reminds you: "I had trouble with physics in college. When I signed up I thought it said psychics." (Greg Tamblyn)
+GROMACS reminds you: "Ohne Arbeit waer das Leben oede" (Wir Sind Helden)
 

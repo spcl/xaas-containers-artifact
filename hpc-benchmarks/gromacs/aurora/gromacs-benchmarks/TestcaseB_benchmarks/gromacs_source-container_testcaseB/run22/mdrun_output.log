@@ -26,13 +26,13 @@ starting mdrun ''
 
 Writing final coordinates.
 
-NOTE: 28 % of the run time was spent in pair search,
+NOTE: 30 % of the run time was spent in pair search,
       you might want to increase nstlist (this has no effect on accuracy)
 
                Core t (s)   Wall t (s)        (%)
-       Time:     1374.170       13.215    10398.5
+       Time:     1405.969       13.521    10398.5
                  (ns/day)    (hour/ns)
-Performance:        1.321       18.173
+Performance:        1.291       18.593
 
-GROMACS reminds you: "Fly to the Court of England and Unfold" (Macbeth, Act 3, Scene 6, William Shakespeare)
+GROMACS reminds you: "Culture eats strategy for breakfast" (Peter Drucker)
 

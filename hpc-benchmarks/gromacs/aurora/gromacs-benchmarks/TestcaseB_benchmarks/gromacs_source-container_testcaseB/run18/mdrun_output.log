@@ -26,13 +26,13 @@ starting mdrun ''
 
 Writing final coordinates.
 
-NOTE: 30 % of the run time was spent in pair search,
+NOTE: 29 % of the run time was spent in pair search,
       you might want to increase nstlist (this has no effect on accuracy)
 
                Core t (s)   Wall t (s)        (%)
-       Time:     1400.294       13.466    10398.4
+       Time:     1384.800       13.317    10398.5
                  (ns/day)    (hour/ns)
-Performance:        1.296       18.518
+Performance:        1.311       18.313
 
-GROMACS reminds you: "FORTRAN, the infantile disorder, by now nearly 20 years old, is hopelessly inadequate for whatever computer application you have in mind today: it is now too clumsy, too risky, and too expensive to use." (Edsger Dijkstra, 1970)
+GROMACS reminds you: "Art is what you can get away with." (Andy Warhol)
 

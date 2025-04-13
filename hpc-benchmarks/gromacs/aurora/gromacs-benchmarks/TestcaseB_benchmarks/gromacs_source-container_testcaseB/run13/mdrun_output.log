@@ -30,9 +30,9 @@ NOTE: 28 % of the run time was spent in pair search,
       you might want to increase nstlist (this has no effect on accuracy)
 
                Core t (s)   Wall t (s)        (%)
-       Time:     1368.010       13.156    10398.6
+       Time:     1379.763       13.269    10398.7
                  (ns/day)    (hour/ns)
-Performance:        1.327       18.091
+Performance:        1.315       18.246
 
-GROMACS reminds you: "All Work and No Play Makes Jack a Dull Boy" (The Shining)
+GROMACS reminds you: "The sign of wisdom is to have more questions than answers." (Abhijit Naskar)
 
