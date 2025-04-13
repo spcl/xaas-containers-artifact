@@ -1,0 +1,16 @@
+image = "/iopsstor/scratch/cscs/ealnuaim/.edf_imagestore/llama-cpp-testcase3-clariden.sqsh"
+workdir = "/iopsstor/scratch/cscs/ealnuaim"
+writable = true
+
+mounts = [
+  "/users/ealnuaim:/users/ealnuaim",
+  "/iopsstor/scratch/cscs/ealnuaim:/iopsstor/scratch/cscs/ealnuaim"
+
+]
+
+[annotations]
+com.hooks.cxi.enabled = "true"
+com.hooks.nvidia_cuda_mps.enabled = "true"
+com.hooks.aws_ofi_nccl.enabled = "true"
+com.hooks.aws_ofi_nccl.variant = "cuda12"
+com.hooks.gpu.enabled = "true"
