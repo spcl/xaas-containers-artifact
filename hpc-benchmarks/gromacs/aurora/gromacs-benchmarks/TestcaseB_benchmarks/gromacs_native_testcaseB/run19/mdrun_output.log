@@ -4,7 +4,7 @@ Executable:   /soft/applications/Gromacs/gromacs-2024.5/build/bin/gmx_mpi
 Data prefix:  /soft/applications/Gromacs/gromacs-2024.5/build
 Working dir:  /home/alokvk2
 Command line:
-  gmx_mpi mdrun -s /home/alokvk2/xaas-containers/data/GROMACS_TestCaseB/lignocellulose.tpr -ntomp 104 -gpu_id 0 -nsteps 100
+  gmx_mpi mdrun -s /home/alokvk2/xaas-containers/data/GROMACS_TestCaseB/lignocellulose.tpr -ntomp 104 -nsteps 100
 
 Reading file /home/alokvk2/xaas-containers/data/GROMACS_TestCaseB/lignocellulose.tpr, VERSION 2020.1 (single precision)
 Note: file tpx version 119, software tpx version 134
@@ -32,13 +32,10 @@ starting mdrun ''
 
 Writing final coordinates.
 
-NOTE: 36 % of the run time was spent in pair search,
-      you might want to increase nstlist (this has no effect on accuracy)
-
                Core t (s)   Wall t (s)        (%)
-       Time:     4478.175       43.139    10380.7
+       Time:     1435.284       13.803    10398.3
                  (ns/day)    (hour/ns)
-Performance:        0.405       59.323
+Performance:        1.264       18.981
 
-GROMACS reminds you: "He's using code that only you and I know" (Kate Bush)
+GROMACS reminds you: "Statistics: The only science that enables different experts using the same figures to draw different conclusions." (Evan Esar)
 

@@ -4,7 +4,7 @@ Executable:   /soft/applications/Gromacs/gromacs-2024.5/build/bin/gmx_mpi
 Data prefix:  /soft/applications/Gromacs/gromacs-2024.5/build
 Working dir:  /home/alokvk2
 Command line:
-  gmx_mpi mdrun -s /home/alokvk2/xaas-containers/data/GROMACS_TestCaseB/lignocellulose.tpr -ntomp 104 -gpu_id 0 -nsteps 100
+  gmx_mpi mdrun -s /home/alokvk2/xaas-containers/data/GROMACS_TestCaseB/lignocellulose.tpr -ntomp 104 -nsteps 100
 
 Reading file /home/alokvk2/xaas-containers/data/GROMACS_TestCaseB/lignocellulose.tpr, VERSION 2020.1 (single precision)
 Note: file tpx version 119, software tpx version 134
@@ -32,13 +32,10 @@ starting mdrun ''
 
 Writing final coordinates.
 
-NOTE: 36 % of the run time was spent in pair search,
-      you might want to increase nstlist (this has no effect on accuracy)
-
                Core t (s)   Wall t (s)        (%)
-       Time:     4503.456       43.375    10382.5
+       Time:     1446.331       13.909    10398.4
                  (ns/day)    (hour/ns)
-Performance:        0.402       59.647
+Performance:        1.255       19.127
 
-GROMACS reminds you: "Sacrifices must be made" (Otto Lilienthal, dying after having crashed with his glider in 1896)
+GROMACS reminds you: "I Live the Life They Wish They Did" (Tricky)
 

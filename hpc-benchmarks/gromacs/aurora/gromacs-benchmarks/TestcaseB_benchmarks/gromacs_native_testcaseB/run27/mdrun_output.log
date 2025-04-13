@@ -4,7 +4,7 @@ Executable:   /soft/applications/Gromacs/gromacs-2024.5/build/bin/gmx_mpi
 Data prefix:  /soft/applications/Gromacs/gromacs-2024.5/build
 Working dir:  /home/alokvk2
 Command line:
-  gmx_mpi mdrun -s /home/alokvk2/xaas-containers/data/GROMACS_TestCaseB/lignocellulose.tpr -ntomp 104 -gpu_id 0 -nsteps 100
+  gmx_mpi mdrun -s /home/alokvk2/xaas-containers/data/GROMACS_TestCaseB/lignocellulose.tpr -ntomp 104 -nsteps 100
 
 Reading file /home/alokvk2/xaas-containers/data/GROMACS_TestCaseB/lignocellulose.tpr, VERSION 2020.1 (single precision)
 Note: file tpx version 119, software tpx version 134
@@ -32,13 +32,10 @@ starting mdrun ''
 
 Writing final coordinates.
 
-NOTE: 36 % of the run time was spent in pair search,
-      you might want to increase nstlist (this has no effect on accuracy)
-
                Core t (s)   Wall t (s)        (%)
-       Time:     4424.286       42.613    10382.4
+       Time:     1439.205       13.841    10398.2
                  (ns/day)    (hour/ns)
-Performance:        0.410       58.599
+Performance:        1.261       19.033
 
-GROMACS reminds you: "Every revolutionary idea seems to evoke three stages of reaction. They may be summed up by the phrases: (1) It's completely impossible. (2) It's possible, but not worth doing. (3) I said it was a good idea all along." (Arthur C. Clarke)
+GROMACS reminds you: "Unfortunately, "simulation" has become increasingly misused to mean nothing more than "calculation"" (Bill Jorgensen)
 

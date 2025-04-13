@@ -4,7 +4,7 @@ Executable:   /soft/applications/Gromacs/gromacs-2024.5/build/bin/gmx_mpi
 Data prefix:  /soft/applications/Gromacs/gromacs-2024.5/build
 Working dir:  /home/alokvk2
 Command line:
-  gmx_mpi mdrun -s /home/alokvk2/xaas-containers/data/GROMACS_TestCaseB/lignocellulose.tpr -ntomp 104 -gpu_id 0 -nsteps 100
+  gmx_mpi mdrun -s /home/alokvk2/xaas-containers/data/GROMACS_TestCaseB/lignocellulose.tpr -ntomp 104 -nsteps 100
 
 Reading file /home/alokvk2/xaas-containers/data/GROMACS_TestCaseB/lignocellulose.tpr, VERSION 2020.1 (single precision)
 Note: file tpx version 119, software tpx version 134
@@ -32,13 +32,10 @@ starting mdrun ''
 
 Writing final coordinates.
 
-NOTE: 36 % of the run time was spent in pair search,
-      you might want to increase nstlist (this has no effect on accuracy)
-
                Core t (s)   Wall t (s)        (%)
-       Time:     4477.208       43.127    10381.6
+       Time:     1436.162       13.811    10398.3
                  (ns/day)    (hour/ns)
-Performance:        0.405       59.305
+Performance:        1.264       18.993
 
-GROMACS reminds you: "What They Need's a Damn Good Whacking" (The Beatles)
+GROMACS reminds you: "By three methods we may learn wisdom: First, by reflection, which is noblest; Second, by imitation, which is easiest; and third by experience, which is the bitterest." (Confucius)
 

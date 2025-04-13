@@ -4,7 +4,7 @@ Executable:   /soft/applications/Gromacs/gromacs-2024.5/build/bin/gmx_mpi
 Data prefix:  /soft/applications/Gromacs/gromacs-2024.5/build
 Working dir:  /home/alokvk2
 Command line:
-  gmx_mpi mdrun -s /home/alokvk2/xaas-containers/data/GROMACS_TestCaseB/lignocellulose.tpr -ntomp 104 -gpu_id 0 -nsteps 100
+  gmx_mpi mdrun -s /home/alokvk2/xaas-containers/data/GROMACS_TestCaseB/lignocellulose.tpr -ntomp 104 -nsteps 100
 
 Reading file /home/alokvk2/xaas-containers/data/GROMACS_TestCaseB/lignocellulose.tpr, VERSION 2020.1 (single precision)
 Note: file tpx version 119, software tpx version 134
@@ -32,13 +32,10 @@ starting mdrun ''
 
 Writing final coordinates.
 
-NOTE: 36 % of the run time was spent in pair search,
-      you might want to increase nstlist (this has no effect on accuracy)
-
                Core t (s)   Wall t (s)        (%)
-       Time:     4483.276       43.180    10382.8
+       Time:     1443.038       13.878    10398.3
                  (ns/day)    (hour/ns)
-Performance:        0.404       59.378
+Performance:        1.258       19.084
 
-GROMACS reminds you: "Your daddy ain't your daddy but your daddy don't know" (Dalahan)
+GROMACS reminds you: "We are perhaps not far removed from the time when we shall be able to submit the bulk of chemical phenomena to calculation." (Joseph Gay-Lussac, 1808)
 

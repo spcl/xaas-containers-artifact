@@ -33,7 +33,7 @@ for i in $(seq 1 $TOTAL_RUNS); do
 
   # FIXME: here put the instructions to run your execution
   # gmx for non-MPI, gmx_mpi for MPI
-  mpirun -np 1 gmx_mpi mdrun -s "$TPR_FILE" -ntomp 104 -gpu_id 0 -nsteps 100 >"$RUN_DIR/mdrun_output.log" 2>&1
+  gmx_mpi mdrun -s "$TPR_FILE" -ntomp 104 -nsteps 100 >"$RUN_DIR/mdrun_output.log" 2>&1
 
   mv md.log traj* ener.edr confout.gro state.cpt "$RUN_DIR/" 2>/dev/null
 
