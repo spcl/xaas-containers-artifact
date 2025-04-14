@@ -29,9 +29,9 @@ NOTE: 32 % of the run time was spent in pair search,
       you might want to increase nstlist (this has no effect on accuracy)
 
                Core t (s)   Wall t (s)        (%)
-       Time:     1188.676       11.431    10398.5
+       Time:     1198.565       11.527    10398.1
                  (ns/day)    (hour/ns)
-Performance:        1.527       15.720
+Performance:        1.514       15.851
 
-GROMACS reminds you: "You wouldn't walk into a chemistry lab and mix two clear liquids together just because they look pretty much the same, would you?" (Justin Lemkul)
+GROMACS reminds you: "How will I know it's working right?" (MGMT)
 

@@ -29,9 +29,9 @@ NOTE: 32 % of the run time was spent in pair search,
       you might want to increase nstlist (this has no effect on accuracy)
 
                Core t (s)   Wall t (s)        (%)
-       Time:     1194.240       11.485    10398.3
+       Time:     1199.995       11.540    10398.2
                  (ns/day)    (hour/ns)
-Performance:        1.520       15.793
+Performance:        1.512       15.870
 
-GROMACS reminds you: "Lottery: A tax on people who are bad at math." (Ambrose Bierce)
+GROMACS reminds you: "I think it's very important to get more women into computing. My slogan is: Computing is too important to be left to men." (Karen Jones)
 

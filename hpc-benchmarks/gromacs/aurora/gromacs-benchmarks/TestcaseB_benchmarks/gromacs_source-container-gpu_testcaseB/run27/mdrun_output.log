@@ -29,9 +29,9 @@ NOTE: 32 % of the run time was spent in pair search,
       you might want to increase nstlist (this has no effect on accuracy)
 
                Core t (s)   Wall t (s)        (%)
-       Time:     1189.045       11.435    10398.3
+       Time:     1202.452       11.564    10398.5
                  (ns/day)    (hour/ns)
-Performance:        1.526       15.725
+Performance:        1.509       15.902
 
-GROMACS reminds you: "The aim of science is not to open the door to infinite wisdom, but to set a limit to infinite error." (Bertolt Brecht, Life of Galileo)
+GROMACS reminds you: "I'll Match Your DNA" (Red Hot Chili Peppers)
 

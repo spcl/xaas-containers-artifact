@@ -29,9 +29,9 @@ NOTE: 32 % of the run time was spent in pair search,
       you might want to increase nstlist (this has no effect on accuracy)
 
                Core t (s)   Wall t (s)        (%)
-       Time:     1190.064       11.444    10398.6
+       Time:     1202.743       11.567    10398.5
                  (ns/day)    (hour/ns)
-Performance:        1.525       15.738
+Performance:        1.509       15.906
 
-GROMACS reminds you: "Look, I don't want to compete, so let's divide up physics between us. I'll take auroras and you take the rest of the universe." (Joan Feynman to her brother Richard)
+GROMACS reminds you: "It's easy to remember: a half a kT is equal to five fourths of a kJ/mol." (Anders Gabrielsson)
 

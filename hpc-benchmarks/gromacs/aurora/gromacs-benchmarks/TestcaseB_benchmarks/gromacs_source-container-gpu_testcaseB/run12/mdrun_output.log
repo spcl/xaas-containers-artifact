@@ -29,9 +29,9 @@ NOTE: 32 % of the run time was spent in pair search,
       you might want to increase nstlist (this has no effect on accuracy)
 
                Core t (s)   Wall t (s)        (%)
-       Time:     1189.309       11.438    10398.3
+       Time:     1199.329       11.534    10398.5
                  (ns/day)    (hour/ns)
-Performance:        1.526       15.728
+Performance:        1.513       15.860
 
-GROMACS reminds you: "If you want to destroy my sweater, hold this thread as I walk away." (Weezer)
+GROMACS reminds you: "Insane In Tha Membrane" (Cypress Hill)
 

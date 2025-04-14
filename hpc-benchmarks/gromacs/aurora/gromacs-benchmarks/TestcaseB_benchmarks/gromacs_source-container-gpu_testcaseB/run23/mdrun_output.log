@@ -29,9 +29,9 @@ NOTE: 32 % of the run time was spent in pair search,
       you might want to increase nstlist (this has no effect on accuracy)
 
                Core t (s)   Wall t (s)        (%)
-       Time:     1191.308       11.457    10398.3
+       Time:     1201.895       11.558    10398.5
                  (ns/day)    (hour/ns)
-Performance:        1.523       15.755
+Performance:        1.510       15.894
 
-GROMACS reminds you: "Baby, It Aint Over Till It's Over" (Lenny Kravitz)
+GROMACS reminds you: "When It Starts to Start It'll Never Stop" (Magnapop)
 

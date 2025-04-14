@@ -25,13 +25,13 @@ starting mdrun ''
 
 Writing final coordinates.
 
-NOTE: 33 % of the run time was spent in pair search,
+NOTE: 32 % of the run time was spent in pair search,
       you might want to increase nstlist (this has no effect on accuracy)
 
                Core t (s)   Wall t (s)        (%)
-       Time:     1171.487       11.266    10398.7
+       Time:     1206.271       11.600    10398.7
                  (ns/day)    (hour/ns)
-Performance:        1.549       15.492
+Performance:        1.505       15.952
 
-GROMACS reminds you: "I cannot think of a single one, not even intelligence." (Enrico Fermi, when asked what characteristics physics Nobel laureates had in common.)
+GROMACS reminds you: "Give someone a program, you frustrate them for a day; teach them how to program, you frustrate them for a lifetime." (David Leinweber)
 

@@ -29,9 +29,9 @@ NOTE: 32 % of the run time was spent in pair search,
       you might want to increase nstlist (this has no effect on accuracy)
 
                Core t (s)   Wall t (s)        (%)
-       Time:     1192.817       11.471    10398.6
+       Time:     1198.970       11.534    10395.5
                  (ns/day)    (hour/ns)
-Performance:        1.521       15.774
+Performance:        1.513       15.860
 
-GROMACS reminds you: "Here, kitty, kitty..." (Erwin Schroedinger)
+GROMACS reminds you: "Don't Eat That Yellow Snow" (F. Zappa)
 

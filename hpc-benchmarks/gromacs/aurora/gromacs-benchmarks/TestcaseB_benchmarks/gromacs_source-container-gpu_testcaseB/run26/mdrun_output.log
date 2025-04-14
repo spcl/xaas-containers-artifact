@@ -25,13 +25,13 @@ starting mdrun ''
 
 Writing final coordinates.
 
-NOTE: 34 % of the run time was spent in pair search,
+NOTE: 32 % of the run time was spent in pair search,
       you might want to increase nstlist (this has no effect on accuracy)
 
                Core t (s)   Wall t (s)        (%)
-       Time:     1208.739       11.624    10398.3
+       Time:     1210.130       11.638    10398.4
                  (ns/day)    (hour/ns)
-Performance:        1.501       15.985
+Performance:        1.500       16.003
 
-GROMACS reminds you: "I Am the Psychotherapist. Please, Describe Your Problems." (GNU Emacs)
+GROMACS reminds you: "There are only two things wrong with C++:  The initial concept and the implementation." (Bertrand Meyer)
 

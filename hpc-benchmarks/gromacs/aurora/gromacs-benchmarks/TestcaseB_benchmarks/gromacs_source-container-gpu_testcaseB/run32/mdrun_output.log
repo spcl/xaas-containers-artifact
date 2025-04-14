@@ -29,9 +29,9 @@ NOTE: 32 % of the run time was spent in pair search,
       you might want to increase nstlist (this has no effect on accuracy)
 
                Core t (s)   Wall t (s)        (%)
-       Time:     1190.736       11.451    10398.4
+       Time:     1206.950       11.607    10398.4
                  (ns/day)    (hour/ns)
-Performance:        1.524       15.747
+Performance:        1.504       15.961
 
-GROMACS reminds you: "If You Don't Like Cool Quotes Check Your GMXRC File" (Your Sysadmin)
+GROMACS reminds you: "If You Touch Me, You'll Get Shocked" (Beastie Boys)
 

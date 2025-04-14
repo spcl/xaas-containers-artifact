@@ -29,9 +29,9 @@ NOTE: 32 % of the run time was spent in pair search,
       you might want to increase nstlist (this has no effect on accuracy)
 
                Core t (s)   Wall t (s)        (%)
-       Time:     1191.691       11.460    10398.6
+       Time:     1211.976       11.655    10398.8
                  (ns/day)    (hour/ns)
-Performance:        1.523       15.759
+Performance:        1.497       16.027
 
-GROMACS reminds you: "It is disconcerting to reflect on the number of students we have flunked in chemistry for not knowing what we later found to be untrue." (Robert L. Weber)
+GROMACS reminds you: "A program that has not been tested does not work." (Bjarne Stroustrup)
 

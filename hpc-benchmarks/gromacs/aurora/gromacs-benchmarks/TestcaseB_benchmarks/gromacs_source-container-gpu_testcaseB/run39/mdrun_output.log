@@ -29,9 +29,9 @@ NOTE: 32 % of the run time was spent in pair search,
       you might want to increase nstlist (this has no effect on accuracy)
 
                Core t (s)   Wall t (s)        (%)
-       Time:     1187.425       11.419    10398.3
+       Time:     1199.564       11.536    10398.6
                  (ns/day)    (hour/ns)
-Performance:        1.528       15.703
+Performance:        1.513       15.863
 
-GROMACS reminds you: "If mathematical analysis should ever hold a prominent place in chemistry - an aberration which is happily almost impossible - it would occasion a rapid and widespread degeneration of that science." (Aguste Comte, 1830)
+GROMACS reminds you: "Chemistry: It tends to be a messy science." (Gunnar von Heijne, former chair of the Nobel Committee for chemistry)
 

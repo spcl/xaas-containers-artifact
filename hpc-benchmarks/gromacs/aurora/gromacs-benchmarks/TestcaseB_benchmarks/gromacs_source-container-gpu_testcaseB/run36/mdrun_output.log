@@ -25,13 +25,13 @@ starting mdrun ''
 
 Writing final coordinates.
 
-NOTE: 32 % of the run time was spent in pair search,
+NOTE: 33 % of the run time was spent in pair search,
       you might want to increase nstlist (this has no effect on accuracy)
 
                Core t (s)   Wall t (s)        (%)
-       Time:     1191.595       11.459    10398.3
+       Time:     1212.953       11.665    10398.5
                  (ns/day)    (hour/ns)
-Performance:        1.523       15.758
+Performance:        1.496       16.041
 
-GROMACS reminds you: "Not everyone is capable of madness; and of those lucky enough to be capable, not many have the courage for it." (August Strindberg)
+GROMACS reminds you: "The Stingrays Must Be Fat This Year" (Red Hot Chili Peppers)
 

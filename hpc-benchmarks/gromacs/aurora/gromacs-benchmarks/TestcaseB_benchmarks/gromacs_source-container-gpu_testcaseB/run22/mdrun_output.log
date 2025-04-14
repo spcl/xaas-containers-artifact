@@ -29,9 +29,9 @@ NOTE: 32 % of the run time was spent in pair search,
       you might want to increase nstlist (this has no effect on accuracy)
 
                Core t (s)   Wall t (s)        (%)
-       Time:     1196.049       11.502    10398.4
+       Time:     1199.120       11.532    10398.5
                  (ns/day)    (hour/ns)
-Performance:        1.517       15.817
+Performance:        1.513       15.858
 
-GROMACS reminds you: "Never measure the height of a mountain until you have reached the top. Then you will see how low it was." (Dag Hammarskjold)
+GROMACS reminds you: "Weaseling out of things is important to learn. It's what separates us from the animals... except the weasels." (Homer Simpson)
 

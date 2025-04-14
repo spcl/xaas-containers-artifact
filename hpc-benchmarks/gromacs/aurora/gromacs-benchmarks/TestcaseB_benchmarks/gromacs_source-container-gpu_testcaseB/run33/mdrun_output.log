@@ -29,9 +29,9 @@ NOTE: 32 % of the run time was spent in pair search,
       you might want to increase nstlist (this has no effect on accuracy)
 
                Core t (s)   Wall t (s)        (%)
-       Time:     1216.367       11.698    10398.4
+       Time:     1205.195       11.590    10398.7
                  (ns/day)    (hour/ns)
-Performance:        1.492       16.086
+Performance:        1.506       15.938
 
-GROMACS reminds you: "Remember, being healthy is basically dying as slowly as possible." (Ricky Gervais)
+GROMACS reminds you: "(That makes 100 errors; please try again.)" (TeX)
 

@@ -29,9 +29,9 @@ NOTE: 32 % of the run time was spent in pair search,
       you might want to increase nstlist (this has no effect on accuracy)
 
                Core t (s)   Wall t (s)        (%)
-       Time:     1187.935       11.424    10398.4
+       Time:     1213.645       11.671    10398.5
                  (ns/day)    (hour/ns)
-Performance:        1.528       15.710
+Performance:        1.495       16.050
 
-GROMACS reminds you: "And It Goes a Little Something Like This" (Tag Team)
+GROMACS reminds you: "I admired Bohr very much. We had long talks together, long talks in which Bohr did practically all the talking." (Paul Dirac)
 

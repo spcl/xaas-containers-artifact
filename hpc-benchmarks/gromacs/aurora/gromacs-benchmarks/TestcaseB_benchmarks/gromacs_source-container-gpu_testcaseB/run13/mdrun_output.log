@@ -29,9 +29,9 @@ NOTE: 32 % of the run time was spent in pair search,
       you might want to increase nstlist (this has no effect on accuracy)
 
                Core t (s)   Wall t (s)        (%)
-       Time:     1205.595       11.594    10398.2
+       Time:     1209.694       11.634    10398.3
                  (ns/day)    (hour/ns)
-Performance:        1.505       15.944
+Performance:        1.500       15.998
 
-GROMACS reminds you: "I Should Be the Pimp Of the Year" (Urban Dance Squad)
+GROMACS reminds you: "I see they found out the universe is 80 million years older than we thought. It's also been lying about its weight." (Bill Maher)
 

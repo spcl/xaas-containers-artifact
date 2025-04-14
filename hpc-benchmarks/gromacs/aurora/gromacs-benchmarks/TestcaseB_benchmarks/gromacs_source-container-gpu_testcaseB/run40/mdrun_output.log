@@ -29,9 +29,9 @@ NOTE: 32 % of the run time was spent in pair search,
       you might want to increase nstlist (this has no effect on accuracy)
 
                Core t (s)   Wall t (s)        (%)
-       Time:     1188.705       11.431    10398.6
+       Time:     1201.830       11.558    10398.5
                  (ns/day)    (hour/ns)
-Performance:        1.527       15.720
+Performance:        1.510       15.893
 
-GROMACS reminds you: "C is not a high-level language." (Brian Kernighan, C author)
+GROMACS reminds you: "Nothing in biology makes sense except in the light of evolution." (Theodosius Dobzhansky)
 

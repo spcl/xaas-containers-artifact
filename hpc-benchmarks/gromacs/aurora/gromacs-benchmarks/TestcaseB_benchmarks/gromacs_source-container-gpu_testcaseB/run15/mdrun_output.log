@@ -29,9 +29,9 @@ NOTE: 32 % of the run time was spent in pair search,
       you might want to increase nstlist (this has no effect on accuracy)
 
                Core t (s)   Wall t (s)        (%)
-       Time:     1193.211       11.475    10398.2
+       Time:     1202.011       11.559    10398.7
                  (ns/day)    (hour/ns)
-Performance:        1.521       15.780
+Performance:        1.510       15.896
 
-GROMACS reminds you: "Bring Out the Gimp" (Pulp Fiction)
+GROMACS reminds you: "A computer once beat me at chess, but it was no match for me at kick boxing." (Emo Philips)
 

@@ -29,9 +29,9 @@ NOTE: 32 % of the run time was spent in pair search,
       you might want to increase nstlist (this has no effect on accuracy)
 
                Core t (s)   Wall t (s)        (%)
-       Time:     1188.794       11.432    10398.6
+       Time:     1199.866       11.539    10398.7
                  (ns/day)    (hour/ns)
-Performance:        1.527       15.721
+Performance:        1.513       15.867
 
-GROMACS reminds you: "Being Great is Not So Good" (Red Hot Chili Peppers)
+GROMACS reminds you: "In the processing of models we must be especially cautious of the human weakness to think that models can be verified or validated. Especially one's own." (Roald Hoffmann)
 

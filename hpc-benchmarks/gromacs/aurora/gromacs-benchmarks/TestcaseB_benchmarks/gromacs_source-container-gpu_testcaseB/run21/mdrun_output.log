@@ -29,9 +29,9 @@ NOTE: 32 % of the run time was spent in pair search,
       you might want to increase nstlist (this has no effect on accuracy)
 
                Core t (s)   Wall t (s)        (%)
-       Time:     1190.640       11.450    10398.4
+       Time:     1213.345       11.669    10398.3
                  (ns/day)    (hour/ns)
-Performance:        1.524       15.746
+Performance:        1.496       16.046
 
-GROMACS reminds you: "Bailed Out Of Edge Synchronization After 10,000 Iterations" (X/Motif)
+GROMACS reminds you: "I don't believe in astrology; I'm a Sagittarian and we're skeptical." (Arthur C. Clarke)
 

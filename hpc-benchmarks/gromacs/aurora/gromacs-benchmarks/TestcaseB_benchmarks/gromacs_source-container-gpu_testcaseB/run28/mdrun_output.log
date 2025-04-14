@@ -29,9 +29,9 @@ NOTE: 32 % of the run time was spent in pair search,
       you might want to increase nstlist (this has no effect on accuracy)
 
                Core t (s)   Wall t (s)        (%)
-       Time:     1193.708       11.480    10398.5
+       Time:     1206.817       11.606    10398.5
                  (ns/day)    (hour/ns)
-Performance:        1.520       15.786
+Performance:        1.504       15.959
 
-GROMACS reminds you: "They don't have any beavers in India, so they have to simulate them" (The Tubes)
+GROMACS reminds you: "Act like Prometheus would" (Gogol Bordello)
 

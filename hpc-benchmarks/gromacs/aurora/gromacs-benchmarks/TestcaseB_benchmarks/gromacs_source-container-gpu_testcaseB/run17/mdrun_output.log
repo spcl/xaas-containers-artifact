@@ -25,13 +25,13 @@ starting mdrun ''
 
 Writing final coordinates.
 
-NOTE: 32 % of the run time was spent in pair search,
+NOTE: 33 % of the run time was spent in pair search,
       you might want to increase nstlist (this has no effect on accuracy)
 
                Core t (s)   Wall t (s)        (%)
-       Time:     1194.026       11.483    10398.4
+       Time:     1183.214       11.379    10398.4
                  (ns/day)    (hour/ns)
-Performance:        1.520       15.790
+Performance:        1.534       15.647
 
-GROMACS reminds you: "All Beauty Must Die" (Nick Cave)
+GROMACS reminds you: "The only greatness for man is immortality." (James Dean)
 

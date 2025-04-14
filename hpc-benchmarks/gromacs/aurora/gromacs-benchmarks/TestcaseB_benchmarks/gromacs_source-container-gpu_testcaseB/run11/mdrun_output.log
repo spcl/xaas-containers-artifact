@@ -25,13 +25,13 @@ starting mdrun ''
 
 Writing final coordinates.
 
-NOTE: 33 % of the run time was spent in pair search,
+NOTE: 32 % of the run time was spent in pair search,
       you might want to increase nstlist (this has no effect on accuracy)
 
                Core t (s)   Wall t (s)        (%)
-       Time:     1180.557       11.354    10398.2
+       Time:     1206.804       11.606    10398.3
                  (ns/day)    (hour/ns)
-Performance:        1.537       15.613
+Performance:        1.504       15.959
 
-GROMACS reminds you: "You always pass failure on the way to success." (Mickey Rooney)
+GROMACS reminds you: "Install our Free Energy Patents app! There is energy all around us; and it's free! Free energy is everywhere, and all around you, just waiting to be extracted! Over 100+ free energy patents!" (Mind and Miracle Productions on Twitter, spamming a FEP thread)
 

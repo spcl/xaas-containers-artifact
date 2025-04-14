@@ -29,9 +29,9 @@ NOTE: 32 % of the run time was spent in pair search,
       you might want to increase nstlist (this has no effect on accuracy)
 
                Core t (s)   Wall t (s)        (%)
-       Time:     1193.869       11.481    10398.5
+       Time:     1207.815       11.615    10398.6
                  (ns/day)    (hour/ns)
-Performance:        1.520       15.788
+Performance:        1.503       15.972
 
-GROMACS reminds you: "I Don't Want to Catch Anybody Not Drinking." (Monty Python)
+GROMACS reminds you: "It Doesn't Have to Be Tip Top" (Pulp Fiction)
 

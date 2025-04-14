@@ -29,9 +29,9 @@ NOTE: 32 % of the run time was spent in pair search,
       you might want to increase nstlist (this has no effect on accuracy)
 
                Core t (s)   Wall t (s)        (%)
-       Time:     1191.605       11.460    10398.4
+       Time:     1207.215       11.609    10398.9
                  (ns/day)    (hour/ns)
-Performance:        1.523       15.758
+Performance:        1.503       15.964
 
-GROMACS reminds you: "FORTRAN. Input: reason, output: pleasure" (ORDA, FORTRAN board game)
+GROMACS reminds you: "There is an infinite set A that is not too big." (John von Neumann)
 

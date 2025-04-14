@@ -29,9 +29,9 @@ NOTE: 32 % of the run time was spent in pair search,
       you might want to increase nstlist (this has no effect on accuracy)
 
                Core t (s)   Wall t (s)        (%)
-       Time:     1196.452       11.506    10398.1
+       Time:     1202.912       11.568    10398.5
                  (ns/day)    (hour/ns)
-Performance:        1.517       15.823
+Performance:        1.509       15.908
 
-GROMACS reminds you: "Do you have mole problems? If so, call Avogadro at 602-1023." (Jay Leno)
+GROMACS reminds you: "Never attribute to malice that which can be adequately explained by stupidity." (Robert Hanlon)
 
