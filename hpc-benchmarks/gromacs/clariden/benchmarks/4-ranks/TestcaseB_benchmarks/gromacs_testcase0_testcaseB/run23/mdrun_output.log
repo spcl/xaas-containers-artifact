@@ -1,0 +1,45 @@
+                      :-) GROMACS - gmx mdrun, 2025.0 (-:
+
+Executable:   /users/ealnuaim/testcase0/gromacs-2025.0/build/bin/gmx
+Data prefix:  /users/ealnuaim/testcase0/gromacs-2025.0 (source tree)
+Working dir:  /users/ealnuaim/gromacs_benchmarks/TestcaseB_benchmarks/gromacs_testcase0_testcaseB/run_23
+Command line:
+  gmx mdrun -s /users/ealnuaim/GROMACS_TestCaseB/lignocellulose.tpr -ntomp 64 -pin on -v -noconfout -dlb yes -nstlist 300 -nsteps 300
+
+Reading file /users/ealnuaim/GROMACS_TestCaseB/lignocellulose.tpr, VERSION 2020.1 (single precision)
+Note: file tpx version 119, software tpx version 137
+Overriding nsteps with value passed on the command line: 300 steps, 0.6 ps
+Changing nstlist from 10 to 300, rlist from 1.262 to 2.416
+
+
+Update groups can not be used for this system because there are three or more consecutively coupled constraints
+
+Using 4 MPI threads
+Using 64 OpenMP threads per tMPI thread
+
+
+Note: Your choice of number of MPI ranks and amount of resources results in using 64 OpenMP threads per rank, which is most likely inefficient. The optimum is usually between 1 and 8 threads per rank.
+starting mdrun ''
+300 steps,      0.6 ps.
+step 0step 100step 200vol 1.00  imb F 13% step 300, remaining wall clock time:     0 s          
+
+Dynamic load balancing report:
+ DLB was permanently on during the run per user request.
+ Average load imbalance: 13.5%.
+ The balanceable part of the MD step is 80%, load imbalance is computed from this.
+ Part of the total run time spent waiting due to load imbalance: 10.8%.
+ Steps where the load balancing was limited by -rdd, -rcon and/or -dds: X 0 %
+
+NOTE: 10.8 % of the available CPU time was lost due to load imbalance
+      in the domain decomposition.
+      You can consider manually changing the decomposition (option -dd);
+      e.g. by using fewer domains along the box dimension in which there is
+      considerable inhomogeneity in the simulated system.
+
+               Core t (s)   Wall t (s)        (%)
+       Time:     3528.927       13.787    25595.9
+                 (ns/day)    (hour/ns)
+Performance:        3.773        6.362
+
+GROMACS reminds you: "Right Between the Eyes" (F. Zappa)
+

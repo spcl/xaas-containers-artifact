@@ -1,0 +1,54 @@
+                      :-) GROMACS - gmx mdrun, 2024.4 (-:
+
+Executable:   /users/ealnuaim/spack/opt/spack/linux-neoverse_v2/gromacs-2024.4-2yteqaulwasocucvvtgipmpdbb5r5fck/bin/gmx_mpi
+Data prefix:  /users/ealnuaim/spack/opt/spack/linux-neoverse_v2/gromacs-2024.4-2yteqaulwasocucvvtgipmpdbb5r5fck
+Working dir:  /users/ealnuaim/gromacs_benchmarks/TestcaseB_benchmarks/gromacs_testcase5_testcaseB/run_12
+Command line:
+  gmx_mpi mdrun -s /users/ealnuaim/GROMACS_TestCaseB/lignocellulose.tpr -ntomp 64 -bonded gpu -nb gpu -pme cpu -pin on -v -noconfout -dlb yes -nstlist 300 -gpu_id 0 -nsteps 300
+
+Reading file /users/ealnuaim/GROMACS_TestCaseB/lignocellulose.tpr, VERSION 2020.1 (single precision)
+Note: file tpx version 119, software tpx version 134
+This run has forced use of 'GPU-aware MPI'. However, GROMACS cannot determine if underlying MPI is GPU-aware. Check the GROMACS install guide for recommendations for GPU-aware support. If you observe failures at runtime, try unsetting the GMX_FORCE_GPU_AWARE_MPI environment variable.
+
+GMX_ENABLE_DIRECT_GPU_COMM environment variable detected, enabling direct GPU communication using GPU-aware MPI.
+
+Overriding nsteps with value passed on the command line: 300 steps, 0.6 ps
+Changing nstlist from 10 to 300, rlist from 1.262 to 2.416
+
+
+Update groups can not be used for this system because there are three or more consecutively coupled constraints
+
+On host nid007341 1 GPU selected for this run.
+Mapping of GPU IDs to the 4 GPU tasks in the 4 ranks on this node:
+  PP:0,PP:0,PP:0,PP:0
+PP tasks will do (non-perturbed) short-ranged and most bonded interactions on the GPU
+PP task will update and constrain coordinates on the CPU
+GPU direct communication will be used between MPI ranks.
+Using 4 MPI processes
+Using 64 OpenMP threads per MPI process
+
+
+Overriding thread affinity set outside gmx mdrun
+starting mdrun ''
+300 steps,      0.6 ps.
+step 0
+step 100
+step 200
+vol 1.00  imb F  9% step 300, remaining wall clock time:     0 s          
+
+
+Dynamic load balancing report:
+ DLB was permanently on during the run per user request.
+ Average load imbalance: 9.0%.
+ The balanceable part of the MD step is 27%, load imbalance is computed from this.
+ Part of the total run time spent waiting due to load imbalance: 2.4%.
+ Steps where the load balancing was limited by -rdd, -rcon and/or -dds: X 0 %
+
+
+               Core t (s)   Wall t (s)        (%)
+       Time:      363.716        1.430    25435.3
+                 (ns/day)    (hour/ns)
+Performance:       36.373        0.660
+
+GROMACS reminds you: "There are three types of people: Those who see, those who see when they are shown, and those who do not see." (Leonardo da Vinci)
+

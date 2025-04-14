@@ -1,0 +1,36 @@
+                      :-) GROMACS - gmx mdrun, 2025.0 (-:
+
+Executable:   /users/ealnuaim/testcase1/gromacs-2025.0/build/bin/gmx_mpi
+Data prefix:  /users/ealnuaim/testcase1/gromacs-2025.0 (source tree)
+Working dir:  /iopsstor/scratch/cscs/ealnuaim/gromacs_benchmarks/TestcaseB_benchmarks/gromacs_testcase6_testcaseB/run_38
+Command line:
+  gmx_mpi mdrun -s /iopsstor/scratch/cscs/ealnuaim/GROMACS_TestCaseB/lignocellulose.tpr -ntomp 64 -bonded gpu -nb gpu -pin on -v -noconfout -dlb yes -nstlist 300 -gpu_id 0 -nsteps 300
+
+Reading file /iopsstor/scratch/cscs/ealnuaim/GROMACS_TestCaseB/lignocellulose.tpr, VERSION 2020.1 (single precision)
+Note: file tpx version 119, software tpx version 137
+Overriding nsteps with value passed on the command line: 300 steps, 0.6 ps
+Changing nstlist from 10 to 300, rlist from 1.262 to 2.416
+
+
+Update groups can not be used for this system because there are three or more consecutively coupled constraints
+
+This run has forced use of 'GPU-aware MPI'. However, GROMACS cannot determine if underlying MPI is GPU-aware. Check the GROMACS install guide for recommendations for GPU-aware support. If you observe failures at runtime, try unsetting the GMX_FORCE_GPU_AWARE_MPI environment variable.
+
+1 GPU selected for this run.
+Mapping of GPU IDs to the 1 GPU task in the 1 rank on this node:
+  PP:0
+PP tasks will do (non-perturbed) short-ranged and most bonded interactions on the GPU
+PP task will update and constrain coordinates on the GPU
+Using 1 MPI process
+Using 64 OpenMP threads 
+
+starting mdrun ''
+300 steps,      0.6 ps.
+step 0step 100step 200step 300, remaining wall clock time:     0 s          
+               Core t (s)   Wall t (s)        (%)
+       Time:      194.739        3.046     6394.3
+                 (ns/day)    (hour/ns)
+Performance:       17.078        1.405
+
+GROMACS reminds you: "There's an old saying among scientific guys: “You can't make an omelet without breaking eggs, ideally by dropping a cement truck on them from a crane." (Dave Barry)
+
