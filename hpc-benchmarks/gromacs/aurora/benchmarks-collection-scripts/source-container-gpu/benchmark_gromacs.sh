@@ -2,7 +2,7 @@
 #PBS -A workflow_scaling
 #PBS -N gromacs_app_tests
 #PBS -l walltime=00:60:00
-#PBS -l filesystems=flare
+#PBS -l filesystems=home
 #PBS -q debug
 
 # FIXME: adapt for your configuration
@@ -22,6 +22,9 @@ mkdir -p "$TESTCASE_DIR"
 WARMUP_RUNS=10
 BENCHMARK_RUNS=30
 TOTAL_RUNS=$((WARMUP_RUNS + BENCHMARK_RUNS))
+
+rm $HOME/xaas-containers/images/apptainer/gromacs-xaas-source-gpu.sing
+apptainer build $HOME/xaas-containers/images/apptainer/gromacs-xaas-source-gpu.sing docker://spcleth/xaas-artifact:source-gromacs-aurora-no-mpi-gpu-support
 
 for i in $(seq 1 $TOTAL_RUNS); do
   echo "Starting run $i..."

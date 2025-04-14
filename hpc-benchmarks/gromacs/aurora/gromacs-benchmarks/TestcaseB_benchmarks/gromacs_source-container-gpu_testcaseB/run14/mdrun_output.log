@@ -14,6 +14,11 @@ Changing nstlist from 10 to 25, rlist from 1.262 to 1.407
 
 Update groups can not be used for this system because there are three or more consecutively coupled constraints
 
+1 GPU selected for this run.
+Mapping of GPU IDs to the 1 GPU task in the 1 rank on this node:
+  PP:0
+PP tasks will do (non-perturbed) short-ranged interactions on the GPU
+PP task will update and constrain coordinates on the GPU
 Using 1 MPI thread
 
 Non-default thread affinity set, disabling internal thread affinity
@@ -25,13 +30,10 @@ starting mdrun ''
 
 Writing final coordinates.
 
-NOTE: 32 % of the run time was spent in pair search,
-      you might want to increase nstlist (this has no effect on accuracy)
-
                Core t (s)   Wall t (s)        (%)
-       Time:     1204.825       11.587    10398.5
+       Time:      996.645        9.585    10397.4
                  (ns/day)    (hour/ns)
-Performance:        1.506       15.933
+Performance:        1.821       13.181
 
-GROMACS reminds you: "All models are wrong, but some are useful." (George Box)
+GROMACS reminds you: "I'm Only Faking When I Get It Right" (Soundgarden)
 
