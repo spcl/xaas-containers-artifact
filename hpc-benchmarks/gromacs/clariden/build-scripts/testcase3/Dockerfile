@@ -1,4 +1,4 @@
-FROM ealnuaimi/xaas:ubuntu22.04-mpich3.4-arm
+FROM ealnuaimi/xaas:ubuntu22.04-mpich3.4-arm-gnu13
         # Use Bash as the default shell for all RUN commands
         SHELL ["/bin/bash", "-c"]
 # Add CUDA repository key
@@ -16,7 +16,8 @@ FROM ealnuaimi/xaas:ubuntu22.04-mpich3.4-arm
                 ENV NVIDIA_VISIBLE_DEVICES all
                 ENV NVIDIA_DRIVER_CAPABILITIES compute,utility
                 ENV NVIDIA_REQUIRE_CUDA "cuda>=12.4"
-COPY gromacs-2025.0 /gromacs-2025.0
+# force copy update
+COPY gromacs-2025.0 /gromacs-2025.0  
         WORKDIR /gromacs-2025.0
 RUN mkdir build \
                 && cd build \
