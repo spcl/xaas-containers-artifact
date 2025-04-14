@@ -3,6 +3,8 @@ import json
 import re
 import argparse
 import pandas as pd
+import matplotlib.pyplot as plt
+import seaborn as sns
 
 # to run the script: python evaluate_specialization_points.py --ground_truth ground_truth.json --base_dir . 
 
@@ -92,27 +94,23 @@ def evaluate_models(base_dir, ground_truth_path):
     gt_flat = extract_relevant_fields(ground_truth_json)
 
     model_dirs = [
-        "chatgpt-gpt4o",
         "chatgpt-o3-mini",
+        "chatgpt-gpt4o",
         "gemini-flash-1.5",
         "gemini-flash-2",
-        "gemini-2.5-pro",
+        #"gemini-2.5-pro",
         "claude-3-5-haiku",
         "claude-3-5-sonnet",
         "claude-3-7-sonnet",
-        "llama3"
+        #"llama3"
     ]
 
-    results = {}
+    long_metrics = []  # For plotting
 
     for model_dir in model_dirs:
         model_path = os.path.join(base_dir, model_dir)
         if not os.path.isdir(model_path):
             continue
-
-        precisions = []
-        recalls = []
-        f1s = []
 
         for i in range(1, 11):
             pred_file = os.path.join(model_path, f"specialization_point_{i}.json")
@@ -124,32 +122,51 @@ def evaluate_models(base_dir, ground_truth_path):
                     pred_flat = extract_relevant_fields(pred_json)
                     tp, fp, fn = compare_dicts(gt_flat, pred_flat)
                     precision, recall, f1 = compute_metrics(tp, fp, fn)
-                    precisions.append(precision)
-                    recalls.append(recall)
-                    f1s.append(f1)
+
+                    long_metrics.extend([
+                        {"Model": model_dir, "Metric": "F1 Score", "Value": f1},
+                        {"Model": model_dir, "Metric": "Precision", "Value": precision},
+                        {"Model": model_dir, "Metric": "Recall", "Value": recall}
+                    ])
             except Exception as e:
                 print(f"Error processing {pred_file}: {e}")
 
-        # Compute averages across 10 runs
-        avg_precision = round(sum(precisions) / len(precisions), 4) if precisions else 0.0
-        avg_recall = round(sum(recalls) / len(recalls), 4) if recalls else 0.0
-        avg_f1 = round(sum(f1s) / len(f1s), 4) if f1s else 0.0
+    return pd.DataFrame(long_metrics)
 
-        results[model_dir] = {
-            "Precision": avg_precision,
-            "Recall": avg_recall,
-            "F1 Score": avg_f1
-        }
 
-    return results
+def plot_metric_boxplots(df):
+    plt.figure(figsize=(14, 6))
+    
+    # Grouped boxplot: one per metric per model
+    ax = sns.boxplot(data=df, x="Model", y="Value", hue="Metric", notch=False, fill=False)
+
+    # Customize appearance
+    plt.title("Distribution of F1 Score, Precision, and Recall per Model")
+    plt.ylabel("Score")
+    plt.xlabel("Model")
+    plt.xticks(rotation=45, ha="right")
+    plt.grid(True, axis="y", linestyle="--", alpha=0.5)
+    plt.legend(title="Metric")
+
+    plt.tight_layout()
+    plt.savefig("metrics_boxplot.png")
+    plt.show()
+
+def print_metric_statistics(df):
+    print("\n📊 Metric Summary (Mean, Median, Min, Max per Model/Metric):\n")
+    grouped = df.groupby(["Model", "Metric"])["Value"]
+    summary = grouped.agg(['mean', 'median', 'min', 'max']).round(4)
+    print(summary.to_string())
+
 
 if __name__ == "__main__":
-
     parser = argparse.ArgumentParser(description="Evaluate LLM-generated specialization points.")
     parser.add_argument("--ground_truth", type=str, default="ground_truth.json", help="Path to ground truth JSON.")
     parser.add_argument("--base_dir", type=str, default=".", help="Base directory containing model folders.")
     args = parser.parse_args()
 
-    results = evaluate_models(args.base_dir, args.ground_truth)
-    df = pd.DataFrame(results).T
-    print(df)
+    metrics_df = evaluate_models(args.base_dir, args.ground_truth)
+
+    print_metric_statistics(metrics_df)  # ⬅️ Add this
+
+    plot_metric_boxplots(metrics_df)

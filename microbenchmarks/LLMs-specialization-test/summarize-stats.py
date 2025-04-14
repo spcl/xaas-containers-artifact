@@ -5,11 +5,13 @@ from statistics import mean, stdev
 # Define model pricing in $ per 1M tokens
 pricing_per_million = {
     "chatgpt-gpt4o": {"input": 2.5, "output": 10},
+    "chatgpt-o3-mini": {"input": 1.1, "output": 4.4},
     "claude-3-7-sonnet": {"input": 3, "output": 15},
     "claude-3-5-sonnet": {"input": 3, "output": 15},
     "claude-3-5-haiku": {"input": 0.8, "output": 4},
     "gemini-flash-2": {"input": 0.10, "output": 0.40},
     "gemini-flash-1.5": {"input": 0.075, "output": 0.30},  # assuming <128K
+    "gemini-2.5-pro": {"input": 1.25, "output": 10.00},  # assuming <= 200K
     "llama3": {"input": 0.0, "output": 0.0},
     "ollama": {"input": 0.0, "output": 0.0},
 }
@@ -35,10 +37,19 @@ def compute_stats(values):
     return (mean(values), stdev(values) if len(values) > 1 else 0.0)
 
 def compute_cost(input_tokens, output_tokens, model_name):
+    # Step 1: Get average input tokens
+    avg_input_tokens = mean(input_tokens) if input_tokens else 0.0
+
+    # Step 2: Get average output tokens
+    avg_output_tokens = mean(output_tokens) if output_tokens else 0.0
+
+    # Step 3: Find cost per run using pricing per 1M tokens
     pricing = pricing_per_million.get(model_name, {"input": 0.0, "output": 0.0})
-    input_cost = sum(input_tokens) / 1_000_000 * pricing["input"]
-    output_cost = sum(output_tokens) / 1_000_000 * pricing["output"]
-    return round(input_cost + output_cost, 4)
+    input_cost = avg_input_tokens / 1_000_000 * pricing["input"]
+    output_cost = avg_output_tokens / 1_000_000 * pricing["output"]
+    cost_per_run = input_cost + output_cost
+
+    return round(cost_per_run, 6)
 
 def summarize_model(model_dir):
     stats_file = os.path.join(model_dir, "statistics.json")

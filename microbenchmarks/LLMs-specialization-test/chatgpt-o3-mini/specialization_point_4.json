@@ -1,0 +1,241 @@
+{
+  "gpu_build": {
+    "value": true,
+    "build_flag": "-DGMX_GPU"
+  },
+  "gpu_backends": {
+    "CUDA": {
+      "used_as_default": false,
+      "build_flag": "-DGMX_GPU=CUDA",
+      "minimum_version": "12.1"
+    },
+    "OpenCL": {
+      "used_as_default": false,
+      "build_flag": "-DGMX_GPU=OpenCL",
+      "minimum_version": null
+    },
+    "SYCL": {
+      "used_as_default": false,
+      "build_flag": "-DGMX_GPU=SYCL",
+      "minimum_version": null
+    },
+    "HIP": {
+      "used_as_default": false,
+      "build_flag": "-DGMX_GPU=HIP",
+      "minimum_version": "5.2"
+    }
+  },
+  "parallel_programming_libraries": {
+    "MPI": {
+      "used_as_default": false,
+      "build_flag": "-DGMX_MPI",
+      "minimum_version": null
+    },
+    "ThreadMPI": {
+      "used_as_default": true,
+      "build_flag": "-DGMX_THREAD_MPI",
+      "minimum_version": null
+    },
+    "OpenMP": {
+      "used_as_default": true,
+      "build_flag": "-DGMX_OPENMP",
+      "minimum_version": null
+    }
+  },
+  "linear_algebra_libraries": {
+    "BLAS": {
+      "used_as_default": false,
+      "build_flag": null,
+      "condition": "Detected via external libraries (e.g. via find_package calls)"
+    },
+    "LAPACK": {
+      "used_as_default": false,
+      "build_flag": null,
+      "condition": "Detected via external libraries (e.g. via find_package calls)"
+    }
+  },
+  "FFT_libraries": {
+    "fftw3": {
+      "built-in": false,
+      "used_as_default": true,
+      "dependencies": null,
+      "build_flag": "-DGMX_FFT_LIBRARY=fftw3",
+      "condition": "Used as default if GMX_INTEL_LLVM is not set"
+    },
+    "mkl": {
+      "built-in": false,
+      "used_as_default": false,
+      "dependencies": null,
+      "build_flag": "-DGMX_FFT_LIBRARY=mkl",
+      "condition": "Used as default if GMX_INTEL_LLVM is set"
+    },
+    "fftpack[built-in]": {
+      "built-in": true,
+      "used_as_default": false,
+      "dependencies": null,
+      "build_flag": "-DGMX_FFT_LIBRARY=fftpack[built-in]",
+      "condition": "Selected explicitly when built-in FFTPACK is desired"
+    },
+    "cuFFT": {
+      "built-in": false,
+      "used_as_default": true,
+      "dependencies": "Requires GMX_GPU set to CUDA",
+      "build_flag": "-DGMX_GPU_FFT_LIBRARY=cuFFT",
+      "condition": "Default if GMX_GPU==CUDA"
+    },
+    "clFFT": {
+      "built-in": false,
+      "used_as_default": true,
+      "dependencies": "Preferred on OpenCL toolchains (non-APPLE/MSVC) on Linux",
+      "build_flag": "-DGMX_GPU_FFT_LIBRARY=clFFT",
+      "condition": "Default if GMX_GPU==OPENCL on applicable platforms"
+    },
+    "VkFFT": {
+      "built-in": false,
+      "used_as_default": true,
+      "dependencies": "Used with HIP or with SYCL when GMX_SYCL is set to ACPP",
+      "build_flag": "-DGMX_GPU_FFT_LIBRARY=VkFFT",
+      "condition": "Default if GMX_GPU==HIP or if GMX_GPU==SYCL and GMX_SYCL==ACPP"
+    },
+    "MKL_GPU": {
+      "built-in": false,
+      "used_as_default": true,
+      "dependencies": "Requires SYCL with DPC++ support",
+      "build_flag": "-DGMX_GPU_FFT_LIBRARY=MKL",
+      "condition": "Default if GMX_GPU==SYCL and GMX_SYCL==DPCPP"
+    },
+    "oneMath": {
+      "built-in": false,
+      "used_as_default": false,
+      "dependencies": null,
+      "build_flag": "-DGMX_GPU_FFT_LIBRARY=oneMath",
+      "condition": "Available for selection when requested explicitly"
+    },
+    "rocFFT": {
+      "built-in": false,
+      "used_as_default": false,
+      "dependencies": "May be used with HIP builds",
+      "build_flag": "-DGMX_GPU_FFT_LIBRARY=rocFFT",
+      "condition": "Selected explicitly if desired in a HIP build"
+    },
+    "BBFFT": {
+      "built-in": false,
+      "used_as_default": false,
+      "dependencies": null,
+      "build_flag": "-DGMX_GPU_FFT_LIBRARY=BBFFT",
+      "condition": "Selected explicitly when requested"
+    }
+  },
+  "other_external_libraries": {
+    "hwloc": {
+      "version": "1.5+",
+      "used_as_default": false,
+      "conditions": "Enabled when GMX_HWLOC option is turned ON",
+      "build_flag": null
+    },
+    "TinyXML2": {
+      "version": "6.0.0",
+      "used_as_default": false,
+      "conditions": "Used when GMX_EXTERNAL_TINYXML2 option is enabled",
+      "build_flag": null
+    },
+    "EXTRAE": {
+      "version": "",
+      "used_as_default": false,
+      "conditions": "Enabled when GMX_EXTRAE option is turned ON",
+      "build_flag": null
+    }
+  },
+  "compiler_flags": [
+    "-DGMX_DOUBLE",
+    "-DGMX_SIMD"
+  ],
+  "optimization_build_flags": [
+    "-DGMX_BUILD_FOR_COVERAGE"
+  ],
+  "compilers": {
+    "Clang": {
+      "minimum_version": "14"
+    },
+    "GCC": {
+      "minimum_version": "11"
+    },
+    "CUDA": {
+      "minimum_version": "12.1"
+    },
+    "HIP": {
+      "minimum_version": "5.2"
+    }
+  },
+  "architectures": [
+    "64-bit",
+    "x86_64",
+    "ARM"
+  ],
+  "simd_vectorization": {
+    "AUTO": {
+      "build_flag": "-DGMX_SIMD=AUTO",
+      "default": true
+    },
+    "None": {
+      "build_flag": "-DGMX_SIMD=None",
+      "default": false
+    },
+    "SSE2": {
+      "build_flag": "-DGMX_SIMD=SSE2",
+      "default": false
+    },
+    "SSE4.1": {
+      "build_flag": "-DGMX_SIMD=SSE4.1",
+      "default": false
+    },
+    "AVX_128_FMA": {
+      "build_flag": "-DGMX_SIMD=AVX_128_FMA",
+      "default": false
+    },
+    "AVX_256": {
+      "build_flag": "-DGMX_SIMD=AVX_256",
+      "default": false
+    },
+    "AVX2_256": {
+      "build_flag": "-DGMX_SIMD=AVX2_256",
+      "default": false
+    },
+    "AVX2_128": {
+      "build_flag": "-DGMX_SIMD=AVX2_128",
+      "default": false
+    },
+    "AVX_512": {
+      "build_flag": "-DGMX_SIMD=AVX_512",
+      "default": false
+    },
+    "AVX_512_KNL": {
+      "build_flag": "-DGMX_SIMD=AVX_512_KNL",
+      "default": false
+    },
+    "ARM_NEON_ASIMD": {
+      "build_flag": "-DGMX_SIMD=ARM_NEON_ASIMD",
+      "default": false
+    },
+    "ARM_SVE": {
+      "build_flag": "-DGMX_SIMD=ARM_SVE",
+      "default": false
+    },
+    "IBM_VSX": {
+      "build_flag": "-DGMX_SIMD=IBM_VSX",
+      "default": false
+    },
+    "Reference": {
+      "build_flag": "-DGMX_SIMD=Reference",
+      "default": false
+    }
+  },
+  "build_system": {
+    "type": "cmake",
+    "minimum_version": "3.28"
+  },
+  "internal_build": {
+    "library_name": "FFTW",
+    "build_flag": "-DGMX_BUILD_OWN_FFTW"
+  }
+}

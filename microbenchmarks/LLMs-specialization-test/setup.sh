@@ -15,3 +15,6 @@ pip install openai
 pip install anthropic 
 
 pip install ollama
+
+pip install matplotlib
+pip install seaborn
