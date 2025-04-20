@@ -1,75 +1,90 @@
 {
-    "CPU Info": {
-      "Architecture": "aarch64",
-      "Model Name": null,
-      "Supported Vectorizations": ["asimd", "sve"]
-    },
+  "CPU Info": {
+    "Architecture": "aarch64",
+    "Model Name": null,
+    "Supported Vectorizations": [
+      "asimd",
+      "sve"
+    ]
+  },
+  "Accelerators": {
     "Accelerators": {
-      "Accelerators": [
-        "NVIDIA GPU: NVIDIA GH200 120GB",
-        "NVIDIA GPU: NVIDIA GH200 120GB",
-        "NVIDIA GPU: NVIDIA GH200 120GB",
-        "NVIDIA GPU: NVIDIA GH200 120GB"
-      ],
-      "Driver Versions": ["550.54.15"]
+      "nvidia": [
+        {
+          "gpu": "NVIDIA GH200 120GB",
+          "compute_cap": "9.0",
+          "driver": "550.54.15"
+        },
+        {
+          "gpu": "NVIDIA GH200 120GB",
+          "compute_cap": "9.0",
+          "driver": "550.54.15"
+        },
+        {
+          "gpu": "NVIDIA GH200 120GB",
+          "compute_cap": "9.0",
+          "driver": "550.54.15"
+        },
+        {
+          "gpu": "NVIDIA GH200 120GB",
+          "compute_cap": "9.0",
+          "driver": "550.54.15"
+        }
+      ]
     },
-    "Parallel Libraries": {
-      "MPICH": {
-        "libmpi.so": "/user-environment/linux-sles15-neoverse_v2/gcc-13.3.0/cray-mpich-8.1.30-wb5peugemrg2ebx7psp2iz2abmqy3rgz/lib/libmpi.so",
-        "libmpifort.so": "/user-environment/linux-sles15-neoverse_v2/gcc-13.3.0/cray-mpich-8.1.30-wb5peugemrg2ebx7psp2iz2abmqy3rgz/lib/libmpifort.so"
-      }
-    },
-    "FFT Libraries": {
-      "cufft": {
-        "shared_lib": "libcufft",
-        "path": "/user-environment/linux-sles15-neoverse_v2/gcc-13.3.0/cuda-12.6.2-csv6jo3czkfdk46ep7pmm6ipo3yjlbjj/lib64/libcufftw.so.11.3.0.4",
-        "version": "11.3.0.4"
-      },
-      "cufftw": {
-        "shared_lib": "libcufftw",
-        "path": "/user-environment/linux-sles15-neoverse_v2/gcc-13.3.0/cuda-12.6.2-csv6jo3czkfdk46ep7pmm6ipo3yjlbjj/lib64/libcufftw.so.11.3.0.4",
-        "version": "11.3.0.4"
-      }
-    },
-    "Linear Algebra Libraries": {
-      "BLAS": {
-        "installation_path": "/user-environment/linux-sles15-neoverse_v2/gcc-13.3.0/openblas-0.3.28-fzip767wty4ltewko533hrsek2xhslwk/lib",
-        "version": "13.3.0"
-      },
-      "OpenBLAS": {
-        "installation_path": "/user-environment/linux-sles15-neoverse_v2/gcc-13.3.0/openblas-0.3.28-fzip767wty4ltewko533hrsek2xhslwk/lib",
-        "version": "13.3.0"
-      }
-    },
-    "GPU Backends": {
-      "CUDA": {
-        "libraries": [],
-        "version": "12.6"
-      },
-      "OpenCL": {
-        "libraries": [],
-        "version": null
-      },
-      "SYCL": {
-        "libraries": [],
-        "version": null
-      },
-      "HIP": {
-        "libraries": [],
-        "version": null
-      },
-      "ROCm": {
-        "libraries": [],
-        "version": null
-      }
-    },
-    "Loaded Modules": {
-      "aws-ofi-nccl": "git.v1.9.2-aws_1.9.2",
-      "boost": "1.86.0",
-      "cmake": "3.30.5",
-      "cray-mpich": "8.1.30",
-      "openblas": "0.3.28",
-      "python": "3.12.5",
-      "cuda": "12.6.2"
+    "Driver Versions": {
+      "NVIDIA": "550.54.15"
     }
+  },
+  "Parallel Libraries": {
+    "MPICH": {
+      "libmpi.so": "/user-environment/linux-sles15-neoverse_v2/gcc-13.3.0/cray-mpich-8.1.30-wb5peugemrg2ebx7psp2iz2abmqy3rgz/lib/libmpi.so",
+      "libmpifort.so": "/user-environment/linux-sles15-neoverse_v2/gcc-13.3.0/cray-mpich-8.1.30-wb5peugemrg2ebx7psp2iz2abmqy3rgz/lib/libmpifort.so"
+    }
+  },
+  "FFT Libraries": {
+    "cufft": {
+      "shared_lib": "libcufft",
+      "path": "/user-environment/linux-sles15-neoverse_v2/gcc-13.3.0/cuda-12.6.2-csv6jo3czkfdk46ep7pmm6ipo3yjlbjj/lib64/libcufftw.so.11.3.0.4",
+      "version": "11.3.0.4"
+    },
+    "cufftw": {
+      "shared_lib": "libcufftw",
+      "path": "/user-environment/linux-sles15-neoverse_v2/gcc-13.3.0/cuda-12.6.2-csv6jo3czkfdk46ep7pmm6ipo3yjlbjj/lib64/libcufftw.so.11.3.0.4",
+      "version": "11.3.0.4"
+    }
+  },
+  "Linear Algebra Libraries": {},
+  "GPU Backends": {
+    "CUDA": {
+      "libraries": [],
+      "version": "12.6"
+    },
+    "OpenCL": {
+      "libraries": [],
+      "version": null
+    },
+    "SYCL": {
+      "libraries": [],
+      "version": null
+    },
+    "HIP": {
+      "libraries": [],
+      "version": null
+    },
+    "ROCm": {
+      "libraries": [],
+      "version": null
+    }
+  },
+  "Loaded Modules": {
+    "cray-mpich": "8.1.30",
+    "cuda": "12.6.2",
+    "fftw": "3.3.10",
+    "aws-ofi-nccl": "git.v1.9.2-aws_1.9.2",
+    "python": "3.12.5",
+    "hdf5": "1.14.5",
+    "gcc": "13.3.0",
+    "cmake": "3.30.5"
   }
+}

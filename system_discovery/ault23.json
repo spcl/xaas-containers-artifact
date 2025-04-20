@@ -3,36 +3,59 @@
       "Architecture": "x86_64",
       "Model Name": "Intel(R) Xeon(R) Gold 6130 CPU @ 2.10GHz",
       "Supported Vectorizations": [
-        "avx512f",
-        "avx512dq",
-        "avx512cd",
-        "avx512bw",
-        "avx512vl",
-        "avx2",
-        "avx",
-        "sse4_2",
-        "sse4_1",
-        "ssse3",
-        "sse2",
-        "sse"
+        "avx512f", "avx512dq", "avx512cd", "avx512bw", "avx512vl",
+        "avx2", "avx", "sse4_2", "sse4_1", "ssse3", "sse2", "sse"
       ]
     },
     "Accelerators": {
-      "Accelerators": [
-        "1c:00.0 3D controller: NVIDIA Corporation GV100GL [Tesla V100 PCIe 16GB] (rev a1)",
-        "1e:00.0 3D controller: NVIDIA Corporation GV100GL [Tesla V100 PCIe 16GB] (rev a1)",
-        "40:00.0 3D controller: NVIDIA Corporation GV100GL [Tesla V100 PCIe 16GB] (rev a1)",
-        "41:00.0 3D controller: NVIDIA Corporation GV100GL [Tesla V100 PCIe 16GB] (rev a1)"
-      ],
+      "Accelerators": {
+        "lspci": [
+          "1c:00.0 3D controller: NVIDIA Corporation GV100GL [Tesla V100 PCIe 16GB] (rev a1)",
+          "1e:00.0 3D controller: NVIDIA Corporation GV100GL [Tesla V100 PCIe 16GB] (rev a1)",
+          "40:00.0 3D controller: NVIDIA Corporation GV100GL [Tesla V100 PCIe 16GB] (rev a1)",
+          "41:00.0 3D controller: NVIDIA Corporation GV100GL [Tesla V100 PCIe 16GB] (rev a1)"
+        ],
+        "nvidia": [
+          {
+            "gpu": "Tesla V100-PCIE-16GB",
+            "compute_cap": "7.0",
+            "driver": "570.86.15"
+          },
+          {
+            "gpu": "Tesla V100-PCIE-16GB",
+            "compute_cap": "7.0",
+            "driver": "570.86.15"
+          },
+          {
+            "gpu": "Tesla V100-PCIE-16GB",
+            "compute_cap": "7.0",
+            "driver": "570.86.15"
+          },
+          {
+            "gpu": "Tesla V100-PCIE-16GB",
+            "compute_cap": "7.0",
+            "driver": "570.86.15"
+          }
+        ]
+      },
       "Driver Versions": {
         "NVIDIA": "570.86.15"
       }
     },
     "Parallel Libraries": {
       "Intel MPI": {
+        "libmpi.so.12": "/apps/ault/spack/opt/spack/linux-centos8-zen/gcc-8.4.1/intel-oneapi-mpi-2021.3.0-cimviyny3mny7u7jdpvg6kpxra5syfdw/mpi/2021.3.0/lib/release/libmpi.so.12",
         "libmpi.so.12.0.0": "/apps/ault/spack/opt/spack/linux-centos8-zen/gcc-8.4.1/intel-oneapi-mpi-2021.3.0-cimviyny3mny7u7jdpvg6kpxra5syfdw/mpi/2021.3.0/lib/release/libmpi.so.12.0.0",
+        "libmpi.so": "/apps/ault/spack/opt/spack/linux-centos8-zen/gcc-8.4.1/intel-oneapi-mpi-2021.3.0-cimviyny3mny7u7jdpvg6kpxra5syfdw/mpi/2021.3.0/lib/release/libmpi.so",
+        "libmpi.so.12.0": "/apps/ault/spack/opt/spack/linux-centos8-zen/gcc-8.4.1/intel-oneapi-mpi-2021.3.0-cimviyny3mny7u7jdpvg6kpxra5syfdw/mpi/2021.3.0/lib/release/libmpi.so.12.0",
         "libmpifort.so.12.0.0": "/apps/ault/spack/opt/spack/linux-centos8-zen/gcc-8.4.1/intel-oneapi-mpi-2021.3.0-cimviyny3mny7u7jdpvg6kpxra5syfdw/mpi/2021.3.0/lib/libmpifort.so.12.0.0",
-        "libmpicxx.so.12.0.0": "/apps/ault/spack/opt/spack/linux-centos8-zen/gcc-8.4.1/intel-oneapi-mpi-2021.3.0-cimviyny3mny7u7jdpvg6kpxra5syfdw/mpi/2021.3.0/lib/libmpicxx.so.12.0.0"
+        "libmpifort.so": "/apps/ault/spack/opt/spack/linux-centos8-zen/gcc-8.4.1/intel-oneapi-mpi-2021.3.0-cimviyny3mny7u7jdpvg6kpxra5syfdw/mpi/2021.3.0/lib/libmpifort.so",
+        "libmpifort.so.12": "/apps/ault/spack/opt/spack/linux-centos8-zen/gcc-8.4.1/intel-oneapi-mpi-2021.3.0-cimviyny3mny7u7jdpvg6kpxra5syfdw/mpi/2021.3.0/lib/libmpifort.so.12",
+        "libmpifort.so.12.0": "/apps/ault/spack/opt/spack/linux-centos8-zen/gcc-8.4.1/intel-oneapi-mpi-2021.3.0-cimviyny3mny7u7jdpvg6kpxra5syfdw/mpi/2021.3.0/lib/libmpifort.so.12.0",
+        "libmpicxx.so": "/apps/ault/spack/opt/spack/linux-centos8-zen/gcc-8.4.1/intel-oneapi-mpi-2021.3.0-cimviyny3mny7u7jdpvg6kpxra5syfdw/mpi/2021.3.0/lib/libmpicxx.so",
+        "libmpicxx.so.12.0.0": "/apps/ault/spack/opt/spack/linux-centos8-zen/gcc-8.4.1/intel-oneapi-mpi-2021.3.0-cimviyny3mny7u7jdpvg6kpxra5syfdw/mpi/2021.3.0/lib/libmpicxx.so.12.0.0",
+        "libmpicxx.so.12": "/apps/ault/spack/opt/spack/linux-centos8-zen/gcc-8.4.1/intel-oneapi-mpi-2021.3.0-cimviyny3mny7u7jdpvg6kpxra5syfdw/mpi/2021.3.0/lib/libmpicxx.so.12",
+        "libmpicxx.so.12.0": "/apps/ault/spack/opt/spack/linux-centos8-zen/gcc-8.4.1/intel-oneapi-mpi-2021.3.0-cimviyny3mny7u7jdpvg6kpxra5syfdw/mpi/2021.3.0/lib/libmpicxx.so.12.0"
       }
     },
     "FFT Libraries": {
@@ -52,7 +75,7 @@
         "version": "11.0.2.54"
       }
     },
-    "linear algebra Libraries": {
+    "Linear Algebra Libraries": {
       "MKL": {
         "installation_path": "/apps/ault/spack/opt/spack/linux-centos8-zen/gcc-8.4.1/intel-oneapi-mkl-2021.3.0-7vtzbakydduwk5lkporwbhsd6znar5ib/mkl/2021.3.0/lib/intel64",
         "version": "8.4.1"
@@ -101,6 +124,6 @@
       "cURL": ".7.47.0",
       "Perl": "5.22.1-bare",
       "intel-oneapi-mkl": "2021.3.0",
-      "sarus": "1.6.0"
+      "python": "3.8.12"
     }
   }
