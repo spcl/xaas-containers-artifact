@@ -1,0 +1,70 @@
+diff --git a/common/arg.cpp b/common/arg.cpp
+index 0b57f9da..cab3a7ae 100644
+--- a/common/arg.cpp
++++ b/common/arg.cpp
+@@ -18,7 +18,7 @@
+ #include <algorithm>
+ #include <climits>
+ #include <cstdarg>
+-#include <filesystem>
++#include <experimental/filesystem>
+ #include <fstream>
+ #include <regex>
+ #include <set>
+diff --git a/common/common.cpp b/common/common.cpp
+index 94f545f8..148566ed 100644
+--- a/common/common.cpp
++++ b/common/common.cpp
+@@ -17,7 +17,7 @@
+ #include <cstdarg>
+ #include <cstring>
+ #include <ctime>
+-#include <filesystem>
++#include <experimental/filesystem>
+ #include <fstream>
+ #include <iostream>
+ #include <iterator>
+diff --git a/ggml/src/ggml-backend-reg.cpp b/ggml/src/ggml-backend-reg.cpp
+index 405d8e31..96a448d9 100644
+--- a/ggml/src/ggml-backend-reg.cpp
++++ b/ggml/src/ggml-backend-reg.cpp
+@@ -3,7 +3,7 @@
+ #include "ggml-impl.h"
+ #include <algorithm>
+ #include <cstring>
+-#include <filesystem>
++#include <experimental/filesystem>
+ #include <memory>
+ #include <string>
+ #include <type_traits>
+@@ -71,7 +71,7 @@
+ #    pragma clang diagnostic ignored "-Wdeprecated-declarations"
+ #endif
+ 
+-namespace fs = std::filesystem;
++namespace fs = std::experimental::filesystem;
+ 
+ static std::string path_str(const fs::path & path) {
+     std::string u8path;
+@@ -510,7 +510,7 @@ static ggml_backend_reg_t ggml_backend_load_best(const char * name, bool silent,
+         }
+         fs::directory_iterator dir_it(search_path, fs::directory_options::skip_permission_denied);
+         for (const auto & entry : dir_it) {
+-            if (entry.is_regular_file()) {
++            if (fs::is_regular_file(entry)) {
+                 auto filename = entry.path().filename();
+                 auto ext = entry.path().extension();
+                 if (filename.native().find(file_prefix) == 0 && ext == file_extension) {
+diff --git a/ggml/src/ggml-rpc/ggml-rpc.cpp b/ggml/src/ggml-rpc/ggml-rpc.cpp
+index 862b9b66..9dfcc39c 100644
+--- a/ggml/src/ggml-rpc/ggml-rpc.cpp
++++ b/ggml/src/ggml-rpc/ggml-rpc.cpp
+@@ -27,7 +27,7 @@
+ #endif
+ #include <cstring>
+ #include <fstream>
+-#include <filesystem>
++#include <experimental/filesystem>
+ 
+ namespace fs = std::filesystem;
+ 
