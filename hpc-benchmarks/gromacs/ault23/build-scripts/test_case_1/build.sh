@@ -20,7 +20,7 @@ module try-load OpenBLAS/0.3.5-gompi-system LAPACK/3.8.0-gompi-system
 cd $HOME/native_build/gromacs-2025.0/build || exit 1
 
 # build command 
-cmake .. DGMX_SIMD=AVX2_256 -DGMX_BUILD_OWN_FFTW=ON -DGMX_GPU=CUDA -DGMX_MPI=ON -DGMX_OPENMP=ON -DCMAKE_INSTALL_PREFIX=$HOME/native_build/gromacs-2025.0
+cmake .. -DGMX_SIMD=AVX2_256 -DGMX_BUILD_OWN_FFTW=ON -DGMX_GPU=CUDA -DGMX_MPI=ON -DGMX_OPENMP=ON -DCMAKE_INSTALL_PREFIX=$HOME/native_build/gromacs-2025.0
 
 # Compile with parallel jobs using all available processors
 make -j$(nproc)
