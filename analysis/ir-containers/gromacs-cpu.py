@@ -30,7 +30,7 @@ DATA_DIR = os.path.join(
     CURRENT_DIR,
     os.path.pardir,
     os.path.pardir,
-    "hpc-benchmarks",
+    "ir-containers",
     "gromacs-cpu",
     "ault01",
     "gromacs-benchmarks",
