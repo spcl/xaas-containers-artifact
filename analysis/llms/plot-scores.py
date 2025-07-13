@@ -6,7 +6,13 @@ import pandas as pd
 import matplotlib.pyplot as plt
 import seaborn as sns
 
-# to run the script: python evaluate_specialization_points.py --ground_truth ground_truth.json --base_dir . 
+CURRENT_DIR = os.path.dirname(os.path.realpath(__file__))
+DATA_DIR = os.path.join(
+    CURRENT_DIR,
+    os.path.pardir,
+    os.path.pardir,
+    "benchmarks-llms",
+)
 
 
 def normalize_key(key):
@@ -136,7 +142,7 @@ def evaluate_models(base_dir, ground_truth_path):
 
 def plot_metric_boxplots(df):
     plt.figure(figsize=(14, 6))
-    
+
     # Grouped boxplot: one per metric per model
     ax = sns.boxplot(data=df, x="Model", y="Value", hue="Metric", notch=False, fill=False)
 
@@ -149,8 +155,7 @@ def plot_metric_boxplots(df):
     plt.legend(title="Metric")
 
     plt.tight_layout()
-    plt.savefig("metrics_boxplot.png")
-    plt.show()
+    plt.savefig(os.path.join(CURRENT_DIR, "metrics_boxplot.pdf"), bbox_inches='tight')
 
 def print_metric_statistics(df):
     print("\n📊 Metric Summary (Mean, Median, Min, Max per Model/Metric):\n")
@@ -160,13 +165,10 @@ def print_metric_statistics(df):
 
 
 if __name__ == "__main__":
-    parser = argparse.ArgumentParser(description="Evaluate LLM-generated specialization points.")
-    parser.add_argument("--ground_truth", type=str, default="ground_truth.json", help="Path to ground truth JSON.")
-    parser.add_argument("--base_dir", type=str, default=".", help="Base directory containing model folders.")
-    args = parser.parse_args()
 
-    metrics_df = evaluate_models(args.base_dir, args.ground_truth)
+    ground_truth = os.path.join(DATA_DIR, "ground_truth.json")
+    metrics_df = evaluate_models(DATA_DIR, ground_truth)
 
-    print_metric_statistics(metrics_df)  # ⬅️ Add this
+    print_metric_statistics(metrics_df)
 
     plot_metric_boxplots(metrics_df)
