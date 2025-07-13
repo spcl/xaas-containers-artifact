@@ -12,7 +12,7 @@ matplotlib.rcParams["ps.fonttype"] = 42
 CURRENT_DIR = os.path.dirname(os.path.realpath(__file__))
 
 DATA_DIR = os.path.join(
-    CURRENT_DIR, os.path.pardir, os.path.pardir, "hpc-benchmarks", "llama.cpp"
+    CURRENT_DIR, os.path.pardir, os.path.pardir, "benchmarks-source", "llama.cpp"
 )
 
 mapping_experiments = {
