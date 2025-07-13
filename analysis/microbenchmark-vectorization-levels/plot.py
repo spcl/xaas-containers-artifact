@@ -8,6 +8,11 @@ import argparse
 
 from matplotlib.patches import FancyArrowPatch
 
+import matplotlib
+
+matplotlib.rcParams["pdf.fonttype"] = 42
+matplotlib.rcParams["ps.fonttype"] = 42
+
 X86_VECTORIZATIONS = {
     "x86-Default",
     "x86-SSE2",
@@ -18,7 +23,19 @@ X86_VECTORIZATIONS = {
     "x86-AVX2_256",
     "x86-AVX_512",
 }
+
 ARM_VECTORIZATIONS = {"arm-Default", "arm-NEON_ASIMD", "arm-SVE"}
+
+CURRENT_DIR = os.path.dirname(os.path.realpath(__file__))
+
+DATA_DIR = os.path.join(
+    CURRENT_DIR,
+    os.path.pardir,
+    os.path.pardir,
+    "microbenchmarks",
+    "vectorization-levels",
+    "benchmarks",
+)
 
 
 def extract_values(md_log_path):
@@ -240,26 +257,11 @@ def plot_side_by_side_execution_times(results):
 
 
 def main():
-    parser = argparse.ArgumentParser(
-        description="Benchmark different vectorization flags from x86 and ARM builds."
-    )
-    parser.add_argument(
-        "input_directory",
-        type=str,
-        help="Path to the top-level directory (with intel/ and arm/)",
-    )
-    args = parser.parse_args()
-
-    results = process_benchmarks(args.input_directory)
-    if not results:
-        print("No data found.")
-        return
+    results = process_benchmarks(DATA_DIR)
 
     fig = plot_side_by_side_execution_times(results)
     if fig:
-        output_path = os.path.join(
-            os.path.dirname(args.input_directory), "vectorization_comparison.pdf"
-        )
+        output_path = os.path.join(CURRENT_DIR, "vectorization_comparison.pdf")
         fig.savefig(output_path, format="pdf", dpi=300, bbox_inches="tight")
         print(f"Plot saved to: {output_path}")
 
