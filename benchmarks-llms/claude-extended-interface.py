@@ -1,3 +1,4 @@
+import argparse
 import os
 import json
 import time
@@ -185,13 +186,36 @@ class SpecializationBatchExtractor:
         return stats
 
 if __name__ == "__main__":
+    parser = argparse.ArgumentParser()
+
+    parser.add_argument(
+        "-n", "--num-runs",
+        type=int,
+        default=1,
+    )
+
+    parser.add_argument(
+        "-m", "--model-name",
+        type=str,
+        required=True,
+    )
+
+    parser.add_argument(
+        "-o", "--output-dir",
+        type=str,
+        required=True,
+    )
+
+    args = parser.parse_args()
     project_directory = "."  # Current directory
     extractor = SpecializationBatchExtractor(
         project_directory,
+        model_name=args.model_name,
+        output_dir=args.output_dir,
         thinking_tokens=32000,
         max_tokens=128000
     )
-    stats = extractor.run()
+    stats = extractor.run(num_runs=args.num_runs)
 
     print("--- Run Statistics ---")
     for s in stats:
