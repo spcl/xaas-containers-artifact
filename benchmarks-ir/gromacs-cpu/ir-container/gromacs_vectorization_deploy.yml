@@ -1,0 +1,12 @@
+ir_image: gromacs-ir
+working_directory: deployment
+layers_deps:
+  fftw3:
+    version: 3.3.10
+    arg_mapping:
+      VECTORIZATION: VECTORIZATION
+docker_repository: spcleth/xaas-artifact
+features_select:
+  VECTORIZATION: SSE4.1
+features_enabled: []
+features_boolean: {}
