@@ -13,7 +13,7 @@
 ARTIFACT_LOCATION=${ARTIFACT_LOCATION:-${SCRATCH}/xaas-containers-artifact}
 
 # Load necessary modules inside the uenv
-module load cray-mpich/8.1.30 cuda/12.6.2 cmake/3.30.5 gcc/13.3.0
+module load cray-mpich/8.1.30 cuda/12.6.2 cmake/3.30.5 gcc/13.3.0 openblas/0.3.28
 echo "CC version: " $(cc --version)
 echo "mpich version: " $(mpichversion)
 
@@ -22,8 +22,6 @@ cd ${ARTIFACT_LOCATION}/benchmarks-source/llama.cpp/clariden/build-scripts/testc
 
 rm -rf build && mkdir -p build
 
-# Naive build (CPU only, no tuning)
-# Source: https://github.com/ggml-org/llama.cpp/blob/master/docs/build.md
 cd build && cmake ${ARTIFACT_LOCATION}/data/llama.cpp/llama.cpp \
 	 -DGGML_BLAS=ON \
 	 -DGGML_BLAS_VENDOR=OpenBLAS \
