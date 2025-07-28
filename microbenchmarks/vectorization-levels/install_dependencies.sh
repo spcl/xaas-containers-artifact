@@ -13,6 +13,3 @@ mv cmake-3.31.8-linux-x86_64 cmake
 
 echo "Install Spack"
 git clone --depth=2 --branch=v1.0.0-alpha.4 https://github.com/spack/spack.git spack
-
-echo "Install GCC 11.5"
-spack install -j$(nproc) gcc@11.5.0

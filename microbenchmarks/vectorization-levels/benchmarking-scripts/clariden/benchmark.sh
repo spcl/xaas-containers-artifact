@@ -8,9 +8,10 @@
 #SBATCH --hint=nomultithread
 #SBATCH --account=a-g200
 #SBATCH --time=04:00:00
-
 #SBATCH --uenv=prgenv-gnu/24.11:v1
 #SBATCH --view=modules
+
+ARTIFACT_LOCATION=${ARTIFACT_LOCATION:-${SCRATCH}/xaas-containers-artifact}
 
 # Load necessary modules inside the uenv
 module load cray-mpich/8.1.30 cuda/12.6.2 cmake/3.30.5 gcc/13.3.0
@@ -25,61 +26,47 @@ export GMX_ENABLE_DIRECT_GPU_COMM=1
 export GMX_FORCE_GPU_AWARE_MPI=1
 
 # Define paths
-TPR_FILE="$HOME/GROMACS_TestCaseB/lignocellulose.tpr"
-MPS_WRAPPER="$HOME/mps-wrapper.sh"
-GROMACS_ROOT="$HOME/testcase1"
-
-mkdir -p "$HOME/gromacs_benchmarks/TestcaseB_benchmarks"
-chmod +x "$MPS_WRAPPER"
+TPR_FILE="${ARTIFACT_LOCATION}/data/gromacs/GROMACS_TestCaseB/lignocellulose.tpr"
+SIMD_ROOT="${ARTIFACT_LOCATION}/microbenchmarks/vectorization-levels/build-scripts/clariden"
+OUTPUT_DIRECTORY="${ARTIFACT_LOCATION}/microbenchmarks/vectorization-levels/benchmarks/arm/"
 
 WARMUP_RUNS=10
 BENCHMARK_RUNS=30
 TOTAL_RUNS=$((WARMUP_RUNS + BENCHMARK_RUNS))
 
 # List of SIMD builds to test
-SIMD_LEVELS=("ARM_SVE" "ARM_NEON_ASIMD")
+SIMD_LEVELS=("None" "SVE" "NEON_ASIMD")
 
-for SIMD in "${SIMD_LEVELS[@]}"; do
-    echo "Starting benchmarking for SIMD: $SIMD..."
+# Loop over SIMD builds
+for simd in "${SIMD_LEVELS[@]}"; do
+    echo "===== Starting benchmarks for SIMD: $simd ====="
 
-    GROMACS_BIN="${GROMACS_ROOT}/gromacs-2025.0-install-${SIMD}/bin/gmx_mpi"
-    BENCH_DIR="$HOME/gromacs_benchmarks/TestcaseB_benchmarks/gromacs_${SIMD}_testcaseB"
-
-    mkdir -p "$BENCH_DIR"
+    GMX_BINARY="${SIMD_ROOT}/${simd}/install/bin/gmx"
+    OUT_DIR="${OUTPUT_DIRECTORY}/${simd}"
+    mkdir -p "$OUT_DIR"
 
     for i in $(seq 1 $TOTAL_RUNS); do
-        echo "Run $i for $SIMD..."
+        echo "[$simd] Starting run $i..."
 
-        RUN_DIR="$BENCH_DIR/run_${i}"
+        RUN_DIR="$OUT_DIR/run${i}"
         mkdir -p "$RUN_DIR"
-        cd "$RUN_DIR"
 
-        srun --cpu-bind=socket "$MPS_WRAPPER" "$GROMACS_BIN" mdrun \
-            -s "$TPR_FILE" \
-            -ntomp 64 \
-            -bonded gpu \
-            -nb gpu \
-            -pin on \
-            -v \
-            -noconfout \
-            -dlb yes \
-            -nstlist 300 \
-            -gpu_id 0 \
-            -nsteps 300 > mdrun_output.log 2>&1
+	# -ntomp 64 -pin on -v -noconfout -dlb yes -nstlist 300 -nsteps 300
+        #"$GMX_BINARY" mdrun -s "$TPR_FILE" -ntmpi 1 -ntomp 64 -nsteps 100 > "$RUN_DIR/mdrun_output.log" 2>&1
+        "$GMX_BINARY" mdrun -s "$TPR_FILE" -ntmpi 1 -ntomp 16 -nsteps 100 > "$RUN_DIR/mdrun_output.log" 2>&1
 
-        mv md.log ener.edr confout.gro state.cpt "$RUN_DIR/" 2>/dev/null || true
+        mv md.log traj* ener.edr confout.gro state.cpt "$RUN_DIR/" 2>/dev/null
 
         if [ "$i" -le "$WARMUP_RUNS" ]; then
-            echo "Warm-up run $i completed for $SIMD. Deleting files..."
+            echo "[$simd] Warm-up run $i completed. Deleting..."
             rm -rf "$RUN_DIR"
         else
-            echo "Benchmark run $i completed for $SIMD. Results saved."
+            echo "[$simd] Benchmark run $i completed."
         fi
-
-        cd "$BENCH_DIR"
     done
 
-    echo "Completed all runs for SIMD: $SIMD."
+    echo "===== Completed SIMD: $simd ====="
 done
+
 
 echo "All benchmarking runs completed for all SIMD levels."
