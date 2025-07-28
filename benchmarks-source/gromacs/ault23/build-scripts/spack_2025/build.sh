@@ -1,33 +1,30 @@
 #!/bin/bash
 
 #SBATCH --job-name=spack_job    # Name of the job
-#SBATCH --output=spack_job.out    # File to capture standard output
-#SBATCH --error=spack_job.err     # File to capture standard error
+#SBATCH --output=spack_job_2025.out    # File to capture standard output
+#SBATCH --error=spack_job_2025.err     # File to capture standard error
 #SBATCH --time=04:00:00            # Time limit (HH:MM:SS)
 #SBATCH --nodes=1                  # Number of nodes
 #SBATCH --ntasks=1                 # Number of tasks (processes)
-#SBATCH --cpus-per-task=4          # Number of CPU cores per task
+#SBATCH --cpus-per-task=64          # Number of CPU cores per task
 #SBATCH --mem=16G                  # Memory per node
-#SBATCH --nodelist=ault24          # Specific node to use
+#SBATCH --nodelist=ault23          # Specific node to use
 #SBATCH --gres=gpu:1               # Request 1 GPU (if needed)
 
-# Ault24 has similar features as ault23 
+ARTIFACT_LOCATION=${ARTIFACT_LOCATION:-${SCRATCH}/xaas-containers-artifact}
 
-spack load gcc@11.5.0
+source ${ARTIFACT_LOCATION}/dependencies/spack/share/spack/setup-env.sh
+spack load gcc@11.5.0 arch=linux-centos8-zen
 
-# Load Spack environment
-source $HOME/spack/share/spack/setup-env.sh
+spack env create gromacs_2025_basic
+spack env activate gromacs_2025_basic
+spack compiler find
 
-spack env create new_gromacs
-
-spack env activate new_gromacs
-
-spack add gcc@11.5.0
-spack install gcc@11.5.0
-
+# reproduce the same set of versions that we previously had generated
+# but it should not be necessary
+spack add cuda@12.8
+spack add openmpi@5.0.6
 spack add gromacs@2025.0 +mpi +cuda
-
-#spack install gromacs@2025.0 +mpi +cuda
-spack install 
+spack install --no-checksum -j $(nproc)
 
 spack env deactivate
