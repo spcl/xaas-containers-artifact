@@ -3,6 +3,7 @@
 This repository contains scripts for automatically collecting performance and execution metrics for different builds.  
 
 We want to use test case B from [UEABS](https://repository.prace-ri.eu/git/UEABS/ueabs/-/tree/master/gromacs?ref_type=heads). There is one input file that needs to downloaded, extracted, and put on the high-performance filesystem.
+The script `download_data.sh` should take care of that.
 
 ## Usage Instructions
 

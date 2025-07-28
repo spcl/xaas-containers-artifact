@@ -9,19 +9,26 @@
 module load apptainer
 module load fuse-overlayfs
 
+ARTIFACT_LOCATION=${ARTIFACT_LOCATION:-${HOME}/xaas-containers-artifact}
+
 # FIXME: adapt for your configuration
 export OMP_NUM_THREADS=104     # Use 16 OpenMP threads
 
-# FIXME: change the path for the output of the result
-TESTCASE_DIR="$HOME/xaas-containers-artifact/hpc-benchmarks/gromacs/aurora/gromacs-benchmarks/TestcaseB_benchmarks/gromacs_specialized_testcaseB"
-# FIXME: change the input directory for test case B
-TPR_FILE="$HOME/xaas-containers/data/GROMACS_TestCaseB/lignocellulose.tpr"
+TESTCASE_DIR="${ARTIFACT_LOCATION}/benchmarks-source/gromacs/aurora/gromacs-benchmarks/TestcaseB_benchmarks/gromacs_specialized_testcaseB"
+TPR_FILE="${ARTIFACT_LOCATION}/data/gromacs/GROMACS_TestCaseB/lignocellulose.tpr"
+
+CONTAINER_PATH="${ARTIFACT_LOCATION}/data/gromacs/images/gromacs-mpi-ipc.sing"
 
 mkdir -p "$TESTCASE_DIR"
 
 WARMUP_RUNS=10
 BENCHMARK_RUNS=30
 TOTAL_RUNS=$((WARMUP_RUNS + BENCHMARK_RUNS))
+
+echo "GROMACS configuration"
+apptainer exec ${CONTAINER_PATH} which gmx
+apptainer exec ${CONTAINER_PATH} ldd $(which gmx)
+apptainer exec ${CONTAINER_PATH} gmx --version
 
 for i in $(seq 1 $TOTAL_RUNS); do
   echo "Starting run $i..."
@@ -31,7 +38,7 @@ for i in $(seq 1 $TOTAL_RUNS); do
 
   mkdir -p "$RUN_DIR"
 
-  apptainer exec $HOME/xaas-containers/images/apptainer/gromacs-mpi-ipc.sing gmx mdrun -s $TPR_FILE -ntomp 104 -ntmpi 1 -nsteps 100 > "$RUN_DIR/mdrun_output.log" 2>&1
+  apptainer exec ${CONTAINER_PATH} gmx mdrun -s $TPR_FILE -ntomp 104 -ntmpi 1 -nsteps 100 > "$RUN_DIR/mdrun_output.log" 2>&1
   mv md.log traj* ener.edr confout.gro state.cpt "$RUN_DIR/" 2>/dev/null
 
   if [ "$i" -le "$WARMUP_RUNS" ]; then
