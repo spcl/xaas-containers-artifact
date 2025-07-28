@@ -14,10 +14,10 @@ CONTAINER_PATH="${ARTIFACT_LOCATION}/data/gromacs/images/"
 mkdir -p ${CONTAINER_PATH}
 
 echo "Download specialized container"
-apptainer build ${CONTAINER_PATH}/gromacs-mpi-ipc.sing docker://spcleth/xaas-artifact:gromacs-aurora-specialized
+apptainer build ${CONTAINER_PATH}/gromacs-mpi-ipc.sing docker://${ARTIFACT_REPOSITORY}:gromacs-aurora-specialized
 
 echo "Download XaaS Source container"
-apptainer build ${CONTAINER_PATH}/gromacs-xaas-source.sing docker://spcleth/xaas-artifact:source-gromacs-aurora-no-mpi
+apptainer build ${CONTAINER_PATH}/gromacs-xaas-source.sing docker://${ARTIFACT_REPOSITORY}:source-gromacs-aurora-no-mpi
 
 echo "Download XaaS Source + GPU container"
-apptainer build ${CONTAINER_PATH}/gromacs-xaas-source-gpu.sing docker://spcleth/xaas-artifact:source-gromacs-aurora-no-mpi-gpu-support
+apptainer build ${CONTAINER_PATH}/gromacs-xaas-source-gpu.sing docker://${ARTIFACT_REPOSITORY}:source-gromacs-aurora-no-mpi-gpu-support
