@@ -10,11 +10,12 @@ module load cmake
 cd ${ARTIFACT_LOCATION}/benchmarks-source/llama.cpp/aurora/build_scripts/naive
 
 git clone git@github.com:ggml-org/llama.cpp.git
+cd llama.cpp
 git checkout 307bfa253dea07c9270e78fa53b133504e9c3c9d
 git apply $PATCH_FILE
 
-mkdir llama.cpp/build
-cd llama.cpp/build
+mkdir build
+cd build
 
 cmake .. -DLLAMA_CURL=OFF
 cmake --build . --config Release --target llama-bench
