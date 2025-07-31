@@ -13,8 +13,9 @@
 
 ARTIFACT_LOCATION=${ARTIFACT_LOCATION:-${SCRATCH}/xaas-containers-artifact}
 
-source ${ARTIFACT_LOCATION}/dependencies/spack/share/spack/setup-env.sh
+source ${ARTIFACT_LOCATION}/dependencies/spack_2025/share/spack/setup-env.sh
 spack load gcc@11.5.0 arch=linux-centos8-zen
+spack load gcc@11.5.0 
 
 spack env create gromacs_2025_basic
 spack env activate gromacs_2025_basic
