@@ -6,6 +6,7 @@
 #PBS -q debug
 
 ARTIFACT_LOCATION=${ARTIFACT_LOCATION:-${HOME}/xaas-containers-artifact}
+STEPS=1000
 
 # FIXME: adapt for your configuration
 module load fftw
@@ -14,7 +15,7 @@ source /soft/applications/Gromacs/gromacs-2024.5/build/bin/GMXRC
 
 export OMP_NUM_THREADS=104
 
-TESTCASE_DIR="${ARTIFACT_LOCATION}/benchmarks-source/gromacs/aurora/gromacs-benchmarks/TestcaseB_benchmarks/gromacs_native_testcaseB"
+TESTCASE_DIR="${ARTIFACT_LOCATION}/benchmarks-source/gromacs/aurora/gromacs-benchmarks/TestcaseB_benchmarks/gromacs_native_testcaseB/steps_${STEPS}"
 TPR_FILE="${ARTIFACT_LOCATION}/data/gromacs/GROMACS_TestCaseB/lignocellulose.tpr"
 
 mkdir -p "$TESTCASE_DIR"
@@ -36,7 +37,7 @@ for i in $(seq 1 $TOTAL_RUNS); do
 
   # FIXME: here put the instructions to run your execution
   # gmx for non-MPI, gmx_mpi for MPI
-  gmx_mpi mdrun -s "$TPR_FILE" -ntomp 104 -nsteps 100 >"$RUN_DIR/mdrun_output.log" 2>&1
+  gmx_mpi mdrun -s "$TPR_FILE" -ntomp 104 -nsteps ${STEPS} >"$RUN_DIR/mdrun_output.log" 2>&1
 
   mv md.log traj* ener.edr confout.gro state.cpt "$RUN_DIR/" 2>/dev/null
 
