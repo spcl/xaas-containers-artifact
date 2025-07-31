@@ -8,17 +8,22 @@
 #SBATCH --time=4:00:00
 #SBATCH --exclusive
 
-# Set scratch explicitly
-export SCRATCH=/scratch/$USER
+ARTIFACT_LOCATION=${ARTIFACT_LOCATION:-${SCRATCH}/xaas-containers-artifact}
 
 # Load required modules
 module load cuda/12.1.1 intel-oneapi-mpi/2021.3.0 intel-oneapi-mkl/2021.3.0
 
+source ${ARTIFACT_LOCATION}/dependencies/spack/share/spack/setup-env.sh
+spack load gcc@11.5
+spack load gcc@11.5.0 arch=linux-centos8-zen
 
 SIMD_BUILDS=("AVX2_128" "SSE2" "AVX_512" "SSE4.1" "SSE2" "None" "AVX_256")
 
 # Benchmarking config
-TPR_FILE="$HOME/GROMACS_TestCaseB/lignocellulose.tpr"
+TPR_FILE="${ARTIFACT_LOCATION}/data/gromacs/GROMACS_TestCaseB/lignocellulose.tpr"
+SIMD_ROOT="${ARTIFACT_LOCATION}/microbenchmarks/vectorization-levels/build-scripts/ault"
+OUTPUT_DIRECTORY="${ARTIFACT_LOCATION}/microbenchmarks/vectorization-levels/benchmarks/intel/"
+
 WARMUP_RUNS=10
 BENCHMARK_RUNS=30
 TOTAL_RUNS=$((WARMUP_RUNS + BENCHMARK_RUNS))
@@ -30,8 +35,8 @@ export CUDA_VISIBLE_DEVICES=0
 for simd in "${SIMD_BUILDS[@]}"; do
     echo "===== Starting benchmarks for SIMD: $simd ====="
 
-    GMX_BINARY="$SCRATCH/gromacs-simd-retry/${simd}/gromacs-install/bin/gmx"
-    OUT_DIR="$SCRATCH/vectorization_benchmarks/${simd}"
+    GMX_BINARY="${SIMD_ROOT}/${simd}/install/bin/gmx"
+    OUT_DIR="${OUTPUT_DIRECTORY}/${simd}"
     mkdir -p "$OUT_DIR"
 
     for i in $(seq 1 $TOTAL_RUNS); do

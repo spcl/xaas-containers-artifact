@@ -9,17 +9,16 @@
 #SBATCH --time=4:00:00                 # Max time limit (adjust as needed)
 #SBATCH --exclusive                    # Ensures no other jobs run on this node
 
-# Load required modules
-module load cuda/12.1.1 intel-oneapi-mkl/2021.3.0
+ARTIFACT_LOCATION=${ARTIFACT_LOCATION:-${SCRATCH}/xaas-containers-artifact}
 
 # Load Spack environment
-source $HOME/spack/share/spack/setup-env.sh
-spack env activate testcase5
+source ${ARTIFACT_LOCATION}/dependencies/spack/share/spack/setup-env.sh
+spack env activate gromacs_advanced
 spack load gromacs@2024.4
-spack load mpich  # Ensure MPICH is the active MPI
+spack load mpich  # Ensure MPICH is the active MPI - as installed
 
-# Source the GROMACS binary
-source $HOME/spack/opt/spack/linux-centos8-skylake_avx512/gcc-11.5.0/gromacs-2024.4-xbauegwbfvfaja3oz6bdkgprn2efymj3/bin/GMXRC
+echo "Source the GROMACS binary"
+source $(which GMXRC)
 
 # Set environment variables for MPICH and Libfabric
 export OMP_NUM_THREADS=64
@@ -28,14 +27,22 @@ export MPICH_OFI_NIC_POLICY=TCP
 export FI_PROVIDER=tcp
 
 # Define paths
-TESTCASE_DIR="$HOME/benchmarks_phase1/TestcaseB_benchmarks/gromacs_testcase5_testcaseB"
-TPR_FILE="$HOME/GROMACS_TestCaseA/ion_channel.tpr"
+TESTCASE_DIR="${ARTIFACT_LOCATION}/benchmarks-source/gromacs/ault23/gromacs-benchmarks/TestcaseB_benchmarks/gromacs_testcase5_testcaseB"
+TPR_FILE="${ARTIFACT_LOCATION}/data/gromacs/GROMACS_TestCaseB/lignocellulose.tpr"
 
 mkdir -p "$TESTCASE_DIR"
 
 WARMUP_RUNS=10
 BENCHMARK_RUNS=30
 TOTAL_RUNS=$((WARMUP_RUNS + BENCHMARK_RUNS))
+
+echo "GROMACS configuration"
+which gmx_mpi
+ldd $(which gmx_mpi)
+mpiexec -np 1 gmx_mpi --version
+
+echo "GROMACS Spack configuration"
+spack spec gromacs@2024.4
 
 for i in $(seq 1 $TOTAL_RUNS); do
     echo "Starting run $i..."

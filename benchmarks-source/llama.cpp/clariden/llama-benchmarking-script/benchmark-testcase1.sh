@@ -8,36 +8,28 @@
 #SBATCH --hint=nomultithread
 #SBATCH --account=a-g200
 #SBATCH --time=02:00:00
-
 #SBATCH --uenv=prgenv-gnu/24.11:v1
 #SBATCH --view=modules
+
+ARTIFACT_LOCATION=${ARTIFACT_LOCATION:-${SCRATCH}/xaas-containers-artifact}
 
 # Load necessary modules
 module load cray-mpich/8.1.30 cmake/3.30.5 gcc/13.3.0 openblas/0.3.28 cuda/12.6.2
 
-
 # Set OpenMP threads (adjust if llama.cpp uses OMP)
 export OMP_NUM_THREADS=16
 
-# Create output directory if it doesn't exist
-mkdir -p $SCRATCH/llama-benchmarks
+BIN_DIR="${ARTIFACT_LOCATION}/benchmarks-source/llama.cpp/clariden/build-scripts/testcase1"
+TESTCASE_DIR="${ARTIFACT_LOCATION}/benchmarks-source/llama.cpp/clariden/llama-benchmarks/Q4_K_M"
+MODEL_FILE="${ARTIFACT_LOCATION}/data/llama.cpp/llama-2-13b-chat.Q4_K_M.gguf"
 
-# Navigate to the build directory
-cd $SCRATCH/llama-builds/testcase1/llama.cpp/build/bin
+mkdir -p "$TESTCASE_DIR"
 
-# Run the benchmark
+cd ${BIN_DIR}/build/bin
+
 CUDA_VISIBLE_DEVICES="0" ./llama-bench \
-  -m $SCRATCH/llama-builds/testcase0/llama.cpp/models/13B/llama-2-13b-chat.Q4_K_M.gguf \
+  -m ${MODEL_FILE} \
   -pg 512,128 \
   -t $OMP_NUM_THREADS \
   -r 40 \
-  -o csv > $SCRATCH/llama-benchmarks/Q4_K_M/testcase1_pg_results.csv
-
-
-# Run the benchmark
-CUDA_VISIBLE_DEVICES="0" ./llama-bench \
-  -m $SCRATCH/llama-builds/testcase0/llama.cpp/models/13B/llama-2-13b-chat.Q4_0.gguf \
-  -pg 512,128 \
-  -t $OMP_NUM_THREADS \
-  -r 40 \
-  -o csv > $SCRATCH/llama-benchmarks/Q4_0/testcase1_pg_results.csv
+  -o csv > ${TESTCASE_DIR}/testcase1_pg_results.csv

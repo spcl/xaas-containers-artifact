@@ -5,25 +5,28 @@
 #PBS -l filesystems=flare
 #PBS -q debug
 
+ARTIFACT_LOCATION=${ARTIFACT_LOCATION:-${HOME}/xaas-containers-artifact}
+
 # FIXME: adapt for your configuration
 module load fftw
 
-# FIXME: adapt for your configuration - if inside the container
 source /soft/applications/Gromacs/gromacs-2024.5/build/bin/GMXRC
 
-# FIXME: adapt for your configuration
-export OMP_NUM_THREADS=104     # Use 16 OpenMP threads
+export OMP_NUM_THREADS=104
 
-# FIXME: change the path for the output of the result
-TESTCASE_DIR="$HOME/xaas-containers-artifact/hpc-benchmarks/gromacs/aurora/gromacs-benchmarks/TestcaseB_benchmarks/gromacs_native_testcaseB"
-# FIXME: change the input directory for test case B
-TPR_FILE="$HOME/xaas-containers/data/GROMACS_TestCaseB/lignocellulose.tpr"
+TESTCASE_DIR="${ARTIFACT_LOCATION}/benchmarks-source/gromacs/aurora/gromacs-benchmarks/TestcaseB_benchmarks/gromacs_native_testcaseB"
+TPR_FILE="${ARTIFACT_LOCATION}/data/gromacs/GROMACS_TestCaseB/lignocellulose.tpr"
 
 mkdir -p "$TESTCASE_DIR"
 
 WARMUP_RUNS=10
 BENCHMARK_RUNS=30
 TOTAL_RUNS=$((WARMUP_RUNS + BENCHMARK_RUNS))
+
+echo "GROMACS configuration"
+which gmx_mpi
+ldd $(which gmx_mpi)
+gmx_mpi --version
 
 for i in $(seq 1 $TOTAL_RUNS); do
   echo "Starting run $i..."

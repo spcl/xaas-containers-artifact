@@ -7,9 +7,10 @@
 #SBATCH --account=a-g200
 #SBATCH --output=gromacs_%j.out
 #SBATCH --error=gromacs_%j.err
-
 #SBATCH --uenv=prgenv-gnu/24.11:v1
 #SBATCH --view=modules
+
+ARTIFACT_LOCATION=${ARTIFACT_LOCATION:-${SCRATCH}/xaas-containers-artifact}
 
 # Load necessary modules inside the uenv
 module load cray-mpich/8.1.30 cuda/12.6.2 cmake/3.30.5 gcc/13.3.0
@@ -19,24 +20,20 @@ WORKDIR="$HOME/testcase1"
 mkdir -p "$WORKDIR"
 cd "$WORKDIR"
 
-# Download and extract GROMACS if not already present
-if [ ! -f gromacs-2025.0.tar.gz ]; then
-    wget https://ftp.gromacs.org/gromacs/gromacs-2025.0.tar.gz
-fi
-if [ ! -d gromacs-2025.0 ]; then
-    tar xfz gromacs-2025.0.tar.gz
-fi
+SOURCE_DIR="${ARTIFACT_LOCATION}/data/gromacs/gromacs-2025.0"
+SIMD_ROOT="${ARTIFACT_LOCATION}/microbenchmarks/vectorization-levels/build-scripts/clariden"
 
 # SIMD levels to build
-SIMD_LEVELS=("ARM_SVE" "ARM_NEON_ASIMD")
+SIMD_LEVELS=("None" "ARM_SVE" "ARM_NEON_ASIMD")
 
 # Loop over SIMD levels
 for SIMD in "${SIMD_LEVELS[@]}"; do
     echo "=== Building GROMACS with SIMD=$SIMD ==="
 
+    SIMD_NAME=${SIMD#ARM_}
     # Set build and install directories
-    BUILD_DIR="$WORKDIR/build_${SIMD}"
-    INSTALL_DIR="$WORKDIR/gromacs-2025.0-install-${SIMD}"
+    BUILD_DIR="$SIMD_ROOT/${SIMD_NAME}/build"
+    INSTALL_DIR="$SIMD_ROOT/${SIMD_NAME}/install"
 
     # Clean up previous build if exists
     rm -rf "$BUILD_DIR"
@@ -44,12 +41,9 @@ for SIMD in "${SIMD_LEVELS[@]}"; do
     cd "$BUILD_DIR" || exit 1
 
     # Configure
-    cmake ../gromacs-2025.0 \
+    cmake "$SOURCE_DIR" \
         -DGMX_SIMD="$SIMD" \
         -DGMX_BUILD_OWN_FFTW=ON \
-        -DGMX_GPU=CUDA \
-        -DGMX_MPI=ON \
-        -DGMX_OPENMP=ON \
         -DCMAKE_INSTALL_PREFIX="$INSTALL_DIR"
 
     # Build and install

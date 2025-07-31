@@ -9,22 +9,25 @@
 #SBATCH --time=1:00:00                        # Max wall time
 #SBATCH --exclusive                           # Exclusive access to the node
 
+ARTIFACT_LOCATION=${ARTIFACT_LOCATION:-${SCRATCH}/xaas-containers-artifact}
+
 # Load required modules
 module load cuda/12.1.1 intel-oneapi-mpi/2021.3.0 git/2.10.1 intel-oneapi-mkl/2021.3.0 intel-oneapi-compilers/2021.3.0
 
 # Set OpenMP threads (adjust if llama.cpp uses OMP)
 export OMP_NUM_THREADS=16
 
-# Create output directory if it doesn't exist
-mkdir -p $SCRATCH/llama-benchmarks
+BIN_DIR="${ARTIFACT_LOCATION}/benchmarks-source/llama.cpp/ault23/build-scripts/testcase1"
+TESTCASE_DIR="${ARTIFACT_LOCATION}/benchmarks-source/llama.cpp/ault23/llama-benchmarks/Q4_K_M"
+MODEL_FILE="${ARTIFACT_LOCATION}/data/llama.cpp/llama-2-13b-chat.Q4_K_M.gguf"
 
-# Navigate to the build directory
-cd $SCRATCH/llama-builds/testcase1/llama.cpp/build/bin
+mkdir -p "$TESTCASE_DIR"
 
-# Run the benchmark
+cd ${BIN_DIR}/build/bin
+
 CUDA_VISIBLE_DEVICES="0" ./llama-bench \
-  -m $SCRATCH/llama-builds/testcase0/llama.cpp/models/13B/llama-2-13b-chat.Q4_K_M.gguf \
+  -m ${MODEL_FILE} \
   -pg 512,128 \
   -t $OMP_NUM_THREADS \
   -r 40 \
-  -o csv > $SCRATCH/llama-benchmarks/Q4_K_M/testcase1_pg_results.csv
+  -o csv > ${TESTCASE_DIR}/testcase1_pg_results.csv

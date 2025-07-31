@@ -19,6 +19,8 @@ SHELL ["/bin/bash", "-c"]
 RUN wget https://ftp.gromacs.org/gromacs/gromacs-2025.0.tar.gz && tar -xzf gromacs-2025.0.tar.gz && mv gromacs-2025.0 /opt/gromacs
 
 # Build the code
+# https://www.intel.com/content/www/us/en/developer/articles/training/build-gromacs-with-intel-oneapi-dpc-c-compiler.html
+# BLAS and FFT are automatically recognized as MKL
 RUN mkdir -p /opt/gromacs/build && cd /opt/gromacs/build && cmake .. -DCMAKE_C_COMPILER=icx -DCMAKE_CXX_COMPILER=icpx -DGMX_GPU=SYCL -DGMX_GPU_NB_NUM_CLUSTER_PER_CELL_X=1 -DGMX_GPU_NB_CLUSTER_SIZE=8 && make -j$(nproc) && make install
 
 # Clean up to reduce the size of the container

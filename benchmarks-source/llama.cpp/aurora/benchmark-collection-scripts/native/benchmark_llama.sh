@@ -5,9 +5,9 @@
 #PBS -l filesystems=flare
 #PBS -q debug
 
-# FIXME: adapt for your configuration
-#module load apptainer
-#module load fuse-overlayfs
+ARTIFACT_LOCATION=${ARTIFACT_LOCATION:-${HOME}/xaas-containers-artifact}
+
+# FIXME: replace with oneapi 2025.0 available on Aurora
 module unload oneapi
 source $HOME/intel/oneapi/setvars.sh
 
@@ -15,16 +15,16 @@ source $HOME/intel/oneapi/setvars.sh
 export OMP_NUM_THREADS=102  # Use 102 OpenMP threads
 
 # FIXME: change the path for the output of the result
-TESTCASE_DIR="$HOME/xaas-containers-artifact/hpc-benchmarks/llama.cpp/aurora/llama-benchmarks/llamacpp-native/"
+TESTCASE_DIR="${ARTIFACT_LOCATION}/benchmarks-source/llama.cpp/aurora/llama-benchmarks/Q4_K_M/"
 
-LLAMA_DIR="$HOME/xaas-containers/builds/llama.cpp"
-MODEL_DIR="$HOME/xaas-containers/data"
+LLAMA_DIR="${ARTIFACT_LOCATION}/benchmarks-source/llama.cpp/aurora/build_scripts/native/llama.cpp"
+MODEL_FILE="${ARTIFACT_LOCATION}/data/llama.cpp/llama-2-13b-chat.Q4_K_M.gguf"
 
 mkdir -p $TESTCASE_DIR
 
 # Run the benchmark
 $LLAMA_DIR/build/bin/llama-bench \
-  -m $MODEL_DIR/llama-2-13b-chat.Q4_K_M.gguf \
+  -m ${MODEL_FILE} \
   -pg 512,128 \
   -t $OMP_NUM_THREADS \
   -r 40 \
