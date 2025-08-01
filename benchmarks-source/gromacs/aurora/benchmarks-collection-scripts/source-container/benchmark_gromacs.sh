@@ -1,9 +1,9 @@
 #!/bin/bash
 #PBS -A workflow_scaling
 #PBS -N gromacs_app_tests
-#PBS -l walltime=00:60:00
+#PBS -l walltime=02:00:00
 #PBS -l filesystems=flare
-#PBS -q debug
+#PBS -q prod
 
 # FIXME: adapt for your configuration
 module load apptainer
