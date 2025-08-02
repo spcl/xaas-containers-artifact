@@ -34,9 +34,9 @@ NOTE: 15 % of the run time was spent in pair search,
       you might want to increase nstlist (this has no effect on accuracy)
 
                Core t (s)   Wall t (s)        (%)
-       Time:     2974.990       28.608    10399.3
+       Time:     2944.518       28.315    10399.3
                  (ns/day)    (hour/ns)
-Performance:        6.046        3.969
+Performance:        6.109        3.929
 
-GROMACS reminds you: "Don't Follow Me Home" (Throwing Muses)
+GROMACS reminds you: "All sorts of things can happen when you're open to new ideas and playing around with things." (Stephanie Kwolek, inventor of Kevlar)
 

@@ -14,11 +14,6 @@ Changing nstlist from 10 to 25, rlist from 1.262 to 1.407
 
 Update groups can not be used for this system because there are three or more consecutively coupled constraints
 
-1 GPU selected for this run.
-Mapping of GPU IDs to the 1 GPU task in the 1 rank on this node:
-  PP:0
-PP tasks will do (non-perturbed) short-ranged interactions on the GPU
-PP task will update and constrain coordinates on the GPU
 Using 1 MPI thread
 
 Non-default thread affinity set, disabling internal thread affinity
@@ -28,15 +23,16 @@ Using 104 OpenMP threads
 starting mdrun ''
 1000 steps,      2.0 ps.
 
-Writing final coordinates.
+Back Off! I just backed up state_step1000.cpt to ./#state_step1000.cpt.1#
 
-NOTE: 15 % of the run time was spent in pair search,
-      you might want to increase nstlist (this has no effect on accuracy)
+-------------------------------------------------------
+Program:     gmx mdrun, version 2025.0
+Source file: src/gromacs/mdlib/mdoutf.cpp (line 495)
+Function:    void write_checkpoint(const char *, gmx_bool, FILE *, const t_commrec *, int *, int, IntegrationAlgorithm, int, gmx_bool, LambdaWeightCalculation, int64_t, double, t_state *, ObservablesHistory *, const gmx::MDModulesNotifiers &, gmx::WriteCheckpointDataHolder *, bool, MPI_Comm)
 
-               Core t (s)   Wall t (s)        (%)
-       Time:     2974.990       28.608    10399.3
-                 (ns/day)    (hour/ns)
-Performance:        6.046        3.969
+System I/O error:
+Cannot rename checkpoint file; maybe you are out of disk space?
 
-GROMACS reminds you: "Don't Follow Me Home" (Throwing Muses)
-
+For more information and tips for troubleshooting, please check the GROMACS
+website at https://manual.gromacs.org/current/user-guide/run-time-errors.html
+-------------------------------------------------------

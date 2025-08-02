@@ -34,9 +34,9 @@ NOTE: 15 % of the run time was spent in pair search,
       you might want to increase nstlist (this has no effect on accuracy)
 
                Core t (s)   Wall t (s)        (%)
-       Time:     2974.990       28.608    10399.3
+       Time:     2975.690       28.614    10399.3
                  (ns/day)    (hour/ns)
-Performance:        6.046        3.969
+Performance:        6.045        3.970
 
-GROMACS reminds you: "Don't Follow Me Home" (Throwing Muses)
+GROMACS reminds you: "I tend to consider myself as a scientist." (Emmanuelle Charpentier, when asked about the importance of two women sharing the Nobel Prize for Chemistry)
 

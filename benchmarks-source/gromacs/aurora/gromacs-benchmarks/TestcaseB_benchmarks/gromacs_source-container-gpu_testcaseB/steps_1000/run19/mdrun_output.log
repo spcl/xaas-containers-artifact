@@ -30,13 +30,13 @@ starting mdrun ''
 
 Writing final coordinates.
 
-NOTE: 15 % of the run time was spent in pair search,
+NOTE: 11 % of the run time was spent in pair search,
       you might want to increase nstlist (this has no effect on accuracy)
 
                Core t (s)   Wall t (s)        (%)
-       Time:     2974.990       28.608    10399.3
+       Time:     2827.738       27.192    10399.3
                  (ns/day)    (hour/ns)
-Performance:        6.046        3.969
+Performance:        6.361        3.773
 
-GROMACS reminds you: "Don't Follow Me Home" (Throwing Muses)
+GROMACS reminds you: "A weed scientist goes into a shop. He asks: 'Hey, you got any of that inhibitor of 3-phosphoshikimate-carboxyvinyl transferase?' Shopkeeper: 'You mean Roundup?' Scientist: 'Yeah, that's it. I can never remember that dang name!'" (John Pickett)
 

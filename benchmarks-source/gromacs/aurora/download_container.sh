@@ -14,7 +14,7 @@ CONTAINER_PATH="${ARTIFACT_LOCATION}/data/gromacs/images/"
 mkdir -p ${CONTAINER_PATH}
 
 echo "Download specialized container"
-apptainer build ${CONTAINER_PATH}/gromacs-mpi-ipc.sing docker://${ARTIFACT_REPOSITORY}:gromas-aurora-specialized
+apptainer build ${CONTAINER_PATH}/gromacs-mpi-ipc.sing docker://${ARTIFACT_REPOSITORY}:gromacs-aurora-specialized
 
 echo "Download XaaS Source container"
 apptainer build ${CONTAINER_PATH}/gromacs-xaas-source.sing docker://${ARTIFACT_REPOSITORY}:gromacs-source-deploy-aurora

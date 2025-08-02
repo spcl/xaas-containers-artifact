@@ -34,9 +34,9 @@ NOTE: 15 % of the run time was spent in pair search,
       you might want to increase nstlist (this has no effect on accuracy)
 
                Core t (s)   Wall t (s)        (%)
-       Time:     2974.990       28.608    10399.3
+       Time:     2947.724       28.345    10399.3
                  (ns/day)    (hour/ns)
-Performance:        6.046        3.969
+Performance:        6.102        3.933
 
-GROMACS reminds you: "Don't Follow Me Home" (Throwing Muses)
+GROMACS reminds you: "An intellectual is someone who has found something more interesting than sex." (Edgar Wallace)
 
