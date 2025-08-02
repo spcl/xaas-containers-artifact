@@ -1,0 +1,41 @@
+                      :-) GROMACS - gmx mdrun, 2025.0 (-:
+
+Executable:   /usr/local/gromacs/bin/gmx
+Data prefix:  /usr/local/gromacs
+Working dir:  /home/alokvk2
+Command line:
+  gmx mdrun -s /home/alokvk2/xaas-containers-artifact/data/gromacs/GROMACS_TestCaseB/lignocellulose.tpr -ntomp 104 -ntmpi 1 -nsteps 1000
+
+
+Back Off! I just backed up md.log to ./#md.log.7#
+Reading file /home/alokvk2/xaas-containers-artifact/data/gromacs/GROMACS_TestCaseB/lignocellulose.tpr, VERSION 2020.1 (single precision)
+Note: file tpx version 119, software tpx version 137
+Overriding nsteps with value passed on the command line: 1000 steps, 2 ps
+Changing nstlist from 10 to 25, rlist from 1.262 to 1.407
+
+
+Update groups can not be used for this system because there are three or more consecutively coupled constraints
+
+Using 1 MPI thread
+
+Non-default thread affinity set, disabling internal thread affinity
+
+Using 104 OpenMP threads 
+
+
+Back Off! I just backed up ener.edr to ./#ener.edr.10#
+starting mdrun ''
+1000 steps,      2.0 ps.
+
+Writing final coordinates.
+
+NOTE: 19 % of the run time was spent in pair search,
+      you might want to increase nstlist (this has no effect on accuracy)
+
+               Core t (s)   Wall t (s)        (%)
+       Time:     5734.340       55.140    10399.7
+                 (ns/day)    (hour/ns)
+Performance:        3.137        7.651
+
+GROMACS reminds you: "Discovery: A couple of months in the laboratory can frequently save a couple of hours in the library." (Anonymous)
+

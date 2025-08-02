@@ -1,0 +1,38 @@
+GROMACS configuration
+/usr/local/gromacs/bin/gmx
+                         :-) GROMACS - gmx, 2025.0 (-:
+
+Executable:   /usr/local/gromacs/bin/gmx
+Data prefix:  /usr/local/gromacs
+Working dir:  /home/alokvk2
+Command line:
+  gmx --version
+
+GROMACS version:     2025.0
+Precision:           mixed
+Memory model:        64 bit
+MPI library:         thread_mpi
+OpenMP support:      enabled (GMX_OPENMP_MAX_THREADS = 128)
+GPU support:         SYCL (oneAPI DPC++)
+NBNxM GPU setup:     super-cluster 2x2x2 / cluster 4 (cluster-pair splitting on)
+SIMD instructions:   AVX2_256
+CPU FFT library:     Intel MKL version 2024.0.2 Build 20240722
+GPU FFT library:     Intel MKL version 2024.0.2 Build 20240722
+Multi-GPU FFT:       none
+RDTSCP usage:        enabled
+TNG support:         enabled
+Hwloc support:       disabled
+Tracing support:     disabled
+C compiler:          /opt/intel/oneapi/compiler/2024.2/bin/icx IntelLLVM 2024.2.1
+C compiler flags:    -mavx2 -mfma -Wno-missing-field-initializers -O3 -DNDEBUG
+C++ compiler:        /opt/intel/oneapi/compiler/2024.2/bin/icpx IntelLLVM 2024.2.1
+C++ compiler flags:  -mavx2 -mfma -Wno-reserved-identifier -Wno-missing-field-initializers -Weverything -Wno-c++98-compat -Wno-c++98-compat-pedantic -Wno-source-uses-openmp -Wno-c++17-extensions -Wno-documentation-unknown-command -Wno-covered-switch-default -Wno-switch-enum -Wno-switch-default -Wno-extra-semi-stmt -Wno-weak-vtables -Wno-shadow -Wno-padded -Wno-reserved-id-macro -Wno-double-promotion -Wno-exit-time-destructors -Wno-global-constructors -Wno-documentation -Wno-format-nonliteral -Wno-used-but-marked-unused -Wno-float-equal -Wno-cuda-compat -Wno-conditional-uninitialized -Wno-conversion -Wno-disabled-macro-expansion -Wno-unused-macros -Wno-unsafe-buffer-usage -Wno-cast-function-type-strict SHELL:-fiopenmp -O3 -DNDEBUG
+BLAS library:        Intel MKL version 2024.0.2 Build 20240722
+LAPACK library:      Intel MKL version 2024.0.2 Build 20240722
+SYCL version:        oneAPI DPC++ 20240711 (libsycl 7.2.0)
+SYCL compiler flags: -fsycl -fsycl-device-code-split=per_kernel -ffast-math -Wno-incorrect-sub-group-size -DSYCL2020_DISABLE_DEPRECATION_WARNINGS
+SYCL linker flags:   -fsycl -fsycl-device-code-split=per_kernel -ftarget-register-alloc-mode=pvc:small
+
+Starting run 1...
+Benchmark run 1 completed. Data saved in /home/alokvk2/xaas-containers-artifact/benchmarks-source/gromacs/aurora/gromacs-benchmarks/TestcaseB_benchmarks/gromacs_source-container_testcaseB/run1.
+All benchmarking runs are complete!
