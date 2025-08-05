@@ -7,5 +7,4 @@ for container in "gromacs-ir-portable-container" "gromacs-ir-specialized-contain
 
   echo "Push container ${DOCKER_REPOSITORY}:${container}"
   docker push ${DOCKER_REPOSITORY}:${container}
-
 done
