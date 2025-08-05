@@ -1,7 +1,7 @@
 #!/bin/bash
 #SBATCH --job-name=benchmark_gromacs   # Job name
-#SBATCH --output=gromacs%j.AVX2_256.out        # Save output log
-#SBATCH --error=gromacs%j.AVX2_256.err         # Save error log
+#SBATCH --output=gromacs%j.specialized.out        # Save output log
+#SBATCH --error=gromacs%j.specialized.err
 #SBATCH --ntasks=1                        # 4 MPI processes
 #SBATCH --nodes=1                        # 4 MPI processes
 #SBATCH --cpus-per-task=36                        # 4 MPI processes
@@ -17,10 +17,10 @@ STEPS=200
 export OMP_NUM_THREADS=${SLURM_CPUS_PER_TASK}
 
 # Define paths (on host)
-ARCH_TYPE="AVX2_256"
+ARCH_TYPE="specialized"
 TESTCASE_DIR="${ARTIFACT_LOCATION}/benchmarks-ir/gromacs-cpu/ault01/gromacs-benchmarks/TestcaseB_benchmarks/gromacs_${ARCH_TYPE}_testcaseB/steps_${STEPS}"
 TPR_FILE="${ARTIFACT_LOCATION}/data/gromacs/GROMACS_TestCaseB/lignocellulose.tpr"
-CONTAINER_IMAGE="${DOCKER_REPOSITORY}:gromacs-deploy-_${ARCH_TYPE}"
+CONTAINER_IMAGE="${DOCKER_REPOSITORY}:gromacs-ir-specialized-container"
 
 mkdir -p "$TESTCASE_DIR"
 
