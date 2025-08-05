@@ -30,7 +30,7 @@ DATA_DIR = os.path.join(
     CURRENT_DIR,
     os.path.pardir,
     os.path.pardir,
-    "ir-containers",
+    "benchmarks-ir",
     "gromacs-cpu",
     "ault01",
     "gromacs-benchmarks",
@@ -38,7 +38,7 @@ DATA_DIR = os.path.join(
 
 
 def extract_values(md_log_path):
-    wall_time, performance = None, None
+    wall_time, performance, io_time = None, None, None
     try:
         with open(md_log_path, "r") as file:
             lines = file.readlines()
@@ -51,11 +51,16 @@ def extract_values(md_log_path):
                     perf_values = re.findall(r"\d+\.\d+", lines[i])
                     if perf_values:
                         performance = float(perf_values[0])
-                if wall_time and performance:
+                if "Write traj." in lines[i]:
+                    io_time = lines[i].split()[5]
+                if wall_time and performance and io_time:
                     break
     except Exception as e:
         print(f"Error reading {md_log_path}: {e}")
-    return wall_time, performance
+    if wall_time is None or performance is None or io_time is None:
+        print(f"Missing data in {md_log_path}")
+        raise RuntimeError()
+    return wall_time, performance, io_time
 
 
 def compute_statistics(data, harmonic=False):
@@ -74,7 +79,6 @@ def compute_statistics(data, harmonic=False):
 def process_benchmarks(base_dir):
     results = {}
     for arch in ["TestcaseA_benchmarks", "TestcaseB_benchmarks"]:
-        print(base_dir)
         arch_path = os.path.join(base_dir, arch)
         if not os.path.isdir(arch_path):
             continue
@@ -84,17 +88,21 @@ def process_benchmarks(base_dir):
             if not os.path.isdir(vec_path):
                 continue
 
-            wall_times, performances = [], []
+            wall_times, performances, io_times = [], [], []
 
-            for run in range(11, 41):
-                log_path = os.path.join(vec_path, f"run{run}", "md.log")
+            for run in range(3, 33):
+                log_path = os.path.join(vec_path, "steps_200", f"run{run}", "md.log")
                 if os.path.exists(log_path):
-                    wall, perf = extract_values(log_path)
+                    wall, perf, io_time = extract_values(log_path)
                     if wall and perf:
                         wall_times.append(wall)
                         performances.append(perf)
+                        io_times.append(io_time)
 
             if wall_times and performances:
+                for i in range(len(wall_times)):
+                    wall_times[i] -= float(io_times[i])
+
                 wall_mean, wall_ci = compute_statistics(wall_times, harmonic=False)
                 perf_mean, perf_ci = compute_statistics(performances, harmonic=True)
 
@@ -152,7 +160,7 @@ def plot_side_by_side_execution_times(results):
         linewidth=0.8,
     )
     ax1.set_title(
-        "TestCase A, 1 core",
+        "TestCase A, 1 core, 200 steps",
         fontsize=18,
         fontweight="bold",
         pad=15,
@@ -170,7 +178,7 @@ def plot_side_by_side_execution_times(results):
 
     transformed_labels = []
     prefix = "gromacs_"
-    suffix = "_testcaseB"
+    suffix = "_testcaseA"
 
     for label in current_xticks_labels:
         if label.startswith(prefix) and label.endswith(suffix):
@@ -178,6 +186,8 @@ def plot_side_by_side_execution_times(results):
             val = label[len(prefix) : -len(suffix)]
             if val == "portable":
                 val = "Portable"
+            if val == "specialized":
+                val = "Specialized"
             transformed_labels.append(val)
         else:
             # Handle cases where the label doesn't match the expected pattern
@@ -195,7 +205,7 @@ def plot_side_by_side_execution_times(results):
             f"{height:.1f}s",
             ha="center",
             va="bottom",
-            fontsize=18,
+            fontsize=16,
         )
 
     bars2 = ax2.bar(
@@ -209,7 +219,7 @@ def plot_side_by_side_execution_times(results):
         linewidth=0.8,
     )
     ax2.set_title(
-        "TestCase B, 36 cores",
+        "TestCase B, 36 cores, 200 steps",
         fontsize=18,
         fontweight="bold",
         pad=15,
@@ -235,6 +245,8 @@ def plot_side_by_side_execution_times(results):
             val = label[len(prefix) : -len(suffix)]
             if val == "portable":
                 val = "Portable"
+            if val == "specialized":
+                val = "Specialized"
             transformed_labels.append(val)
         else:
             # Handle cases where the label doesn't match the expected pattern
@@ -252,7 +264,7 @@ def plot_side_by_side_execution_times(results):
             f"{height:.1f}s",
             ha="center",
             va="bottom",
-            fontsize=18,
+            fontsize=16,
         )
 
     # Ensure the same y-axis range for better comparison
