@@ -17,7 +17,7 @@ echo "Download specialized container"
 apptainer build ${CONTAINER_PATH}/gromacs-mpi-ipc.sing docker://${ARTIFACT_REPOSITORY}:gromacs-aurora-specialized
 
 echo "Download XaaS Source container"
-apptainer build ${CONTAINER_PATH}/gromacs-xaas-source.sing docker://${ARTIFACT_REPOSITORY}:source-gromacs-aurora-no-mpi
+apptainer build ${CONTAINER_PATH}/gromacs-xaas-source.sing docker://${ARTIFACT_REPOSITORY}:gromacs-source-deploy-aurora
 
 echo "Download XaaS Source + GPU container"
-apptainer build ${CONTAINER_PATH}/gromacs-xaas-source-gpu.sing docker://${ARTIFACT_REPOSITORY}:source-gromacs-aurora-no-mpi-gpu-support
+apptainer build ${CONTAINER_PATH}/gromacs-xaas-source-gpu.sing docker://${ARTIFACT_REPOSITORY}:gromacs-source-deploy-aurora-gpu-fix
