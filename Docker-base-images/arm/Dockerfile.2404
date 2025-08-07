@@ -1,0 +1,55 @@
+FROM ubuntu:24.04
+ARG nproc
+ARG MPI_VER=4.3.0
+
+ENV DEBIAN_FRONTEND=noninteractive
+
+RUN apt-get update && apt-get install -y \
+    build-essential \
+    wget \
+    curl \
+    software-properties-common \
+    lsb-release \
+    gnupg \
+    sudo \
+    make \
+    gfortran \
+    libssl-dev \
+    libfabric-dev \
+    libfabric-bin \
+    autoconf \
+    automake \
+    libtool-bin \
+    gcc-13 g++-13 && \
+    update-alternatives --install /usr/bin/gcc gcc /usr/bin/gcc-13 100 && \
+    update-alternatives --install /usr/bin/g++ g++ /usr/bin/g++-13 100
+
+RUN wget -O - https://apt.llvm.org/llvm-snapshot.gpg.key | gpg --dearmor -o /usr/share/keyrings/llvm.gpg && \
+    echo "deb [signed-by=/usr/share/keyrings/llvm.gpg] http://apt.llvm.org/noble/ llvm-toolchain-noble-19 main" \
+    | tee /etc/apt/sources.list.d/llvm.list && \
+    apt-get update && \
+    apt-get install -y clang-19 lldb-19 lld-19 && \
+    update-alternatives --install /usr/bin/clang clang /usr/bin/clang-19 100 && \
+    update-alternatives --install /usr/bin/clang++ clang++ /usr/bin/clang++-19 100 && \
+    clang --version
+
+RUN wget -O - https://apt.kitware.com/keys/kitware-archive-latest.asc \
+    | gpg --dearmor -o /usr/share/keyrings/kitware.gpg && \
+    echo "deb [signed-by=/usr/share/keyrings/kitware.gpg] https://apt.kitware.com/ubuntu/ noble main" \
+    > /etc/apt/sources.list.d/kitware.list && \
+    apt-get update && \
+    apt-get install -y cmake=3.31.5-0kitware1ubuntu24.04.1 cmake-data=3.31.5-0kitware1ubuntu24.04.1
+
+RUN wget https://www.mpich.org/static/downloads/${MPI_VER}/mpich-${MPI_VER}.tar.gz \
+    && tar -xzf mpich-${MPI_VER}.tar.gz \
+    && cd mpich-${MPI_VER} \
+    && ./configure --prefix=/usr/local/mpich --with-device=ch4:ofi --disable-fortran --disable-cxx --enable-fast=ndebug,O3 \
+    && make -j$(nproc) \
+    && make install \
+    && ldconfig \
+    && cd .. \
+    && rm -rf mpich-${MPI_VER} mpich-${MPI_VER}.tar.gz
+
+RUN apt-get install -y --no-install-recommends pkg-config git
+
+ENV PATH=/usr/local/mpich/bin:$PATH LD_LIBRARY_PATH=/usr/local/mpich/lib:$LD_LIBRARY_PATH
