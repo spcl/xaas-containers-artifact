@@ -15,3 +15,6 @@ mkdir -p ${CONTAINER_PATH}
 
 echo "Download XaaS Source "
 apptainer build ${CONTAINER_PATH}/source-llamacpp-aurora.sing docker://${ARTIFACT_REPOSITORY}:llamacpp-source-deploy-aurora
+
+echo "Download XaaS Source No GPU"
+apptainer build ${CONTAINER_PATH}/source-llamacpp-aurora-nogpu.sing docker://${ARTIFACT_REPOSITORY}:llamacpp-source-deploy-aurora2
