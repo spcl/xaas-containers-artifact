@@ -1,0 +1,38 @@
+                      :-) GROMACS - gmx mdrun, 2025.0 (-:
+
+Executable:   /build/bin/gmx
+Data prefix:  / (source tree)
+Working dir:  /scratch/run17
+Command line:
+  gmx mdrun -s /input_dir/lignocellulose.tpr -ntomp 36 -ntmpi 1 -nsteps 200
+
+Compiled SIMD is SSE4.1, but AVX_512 might be faster (see log).
+Reading file /input_dir/lignocellulose.tpr, VERSION 2020.1 (single precision)
+Note: file tpx version 119, software tpx version 137
+Overriding nsteps with value passed on the command line: 200 steps, 0.4 ps
+Changing nstlist from 10 to 25, rlist from 1.262 to 1.407
+
+
+Update groups can not be used for this system because there are three or more consecutively coupled constraints
+
+Using 1 MPI thread
+Using 36 OpenMP threads 
+
+
+Non-default thread affinity set probably by the OpenMP library,
+disabling internal thread affinity
+starting mdrun ''
+200 steps,      0.4 ps.
+
+Writing final coordinates.
+
+NOTE: 34 % of the run time was spent in pair search,
+      you might want to increase nstlist (this has no effect on accuracy)
+
+               Core t (s)   Wall t (s)        (%)
+       Time:     1757.496       48.843     3598.3
+                 (ns/day)    (hour/ns)
+Performance:        0.711       33.750
+
+GROMACS reminds you: "Been There, Done It" (Beavis and Butthead)
+

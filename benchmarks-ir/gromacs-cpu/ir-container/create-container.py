@@ -3,8 +3,13 @@
 import yaml
 import subprocess
 import sys
+import os
 
 PARALLEL_WORKERS = 16
+
+repository = "spcleth/xaas-artifact"
+if "DOCKER_REPOSITORY" in os.environ:
+    repository = os.environ["DOCKER_REPOSITORY"]
 
 
 def run_cmd(command: str):
@@ -32,10 +37,10 @@ def run_cmd(command: str):
 with open("gromacs_vectorization.yml") as config_f:
     config = yaml.safe_load(config_f)
 
-print(f"We will build GROMACS present in {sys.argv[1]}")
+print(
+    f"We will build GROMACS present in {sys.argv[1]}, building for Docker repository {repository}"
+)
 config["source_directory"] = sys.argv[1]
-
-repository = sys.argv[2]
 
 with open("gromacs_vectorization_config.yml", "w") as config_output:
     yaml.dump(config, config_output, default_flow_style=False)
