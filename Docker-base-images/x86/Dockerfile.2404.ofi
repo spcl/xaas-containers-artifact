@@ -1,0 +1,54 @@
+FROM ubuntu:24.04
+ARG nproc
+
+ENV DEBIAN_FRONTEND=noninteractive
+
+RUN apt-get update && apt-get install -y --no-install-recommends \
+    wget \
+    curl \
+    build-essential \
+    software-properties-common \
+    lsb-release \
+    gfortran-11 \
+    libssl-dev \
+    libfabric-dev \
+    libfabric-bin \
+    gnupg \ 
+    autoconf \ 
+    automake \
+    libtool-bin \
+    make \
+    sudo \
+    gcc-11 g++-11 \
+    && update-alternatives --install /usr/bin/gfortran gfortran /usr/bin/gfortran-11 100 \
+    && update-alternatives --install /usr/bin/gcc gcc /usr/bin/gcc-11 100 \
+    && update-alternatives --install /usr/bin/g++ g++ /usr/bin/g++-11 100 \
+    && update-alternatives --install /usr/bin/gcc gcc /usr/bin/gcc-13 50 \
+    && update-alternatives --install /usr/bin/g++ g++ /usr/bin/g++-13 50
+
+RUN wget -O - https://apt.llvm.org/llvm-snapshot.gpg.key | apt-key add - \
+    && echo "deb http://apt.llvm.org/noble/ llvm-toolchain-noble-19 main" | tee -a /etc/apt/sources.list \
+    && apt-get update \
+    && apt-get install -y clang-19 lldb-19 lld-19 \
+    && update-alternatives --install /usr/bin/clang clang /usr/bin/clang-19 100 \
+    && update-alternatives --install /usr/bin/clang++ clang++ /usr/bin/clang++-19 100 \
+    && clang --version
+
+RUN wget -O - https://apt.kitware.com/keys/kitware-archive-latest.asc 2>/dev/null | gpg --dearmor - | tee /usr/share/keyrings/kitware-archive-keyring.gpg >/dev/null \
+    && echo 'deb [signed-by=/usr/share/keyrings/kitware-archive-keyring.gpg] https://apt.kitware.com/ubuntu/ noble main' | tee /etc/apt/sources.list.d/kitware.list >/dev/null \
+    && apt-get update \
+    && apt-get install -y cmake=3.31.5-0kitware1ubuntu24.04.1 cmake-data=3.31.5-0kitware1ubuntu24.04.1
+
+RUN wget https://www.mpich.org/static/downloads/4.2.3/mpich-4.2.3.tar.gz \
+    && tar -xzf mpich-4.2.3.tar.gz \
+    && cd mpich-4.2.3 \
+    && ./configure --prefix=/usr/local/mpich --with-device=ch4:ofi --disable-cxx --disable-fortran --enable-fast=ndebug,O3 \
+    && make -j${nproc} \
+    && make install \
+    && ldconfig \
+    && cd .. \
+    && rm -rf mpich-4.2.3 mpich-4.2.3.tar.gz
+
+ENV PATH=/usr/local/mpich/bin:$PATH LD_LIBRARY_PATH=/usr/local/mpich/lib:$LD_LIBRARY_PATH
+
+RUN apt-get install -y --no-install-recommends pkg-config git
