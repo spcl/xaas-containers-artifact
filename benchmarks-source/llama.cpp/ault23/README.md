@@ -34,7 +34,7 @@ sbatch -w ault23 < build-scripts/testcase0/build.sh
 sbatch -w ault23 < build-scripts/testcase1/build.sh
 ```
 
-To build container version, run on a system with Docker support:
+To build container version, run the following scripts on a system with Docker support:
 
 ```
 /bin/bash build_containers.sh
