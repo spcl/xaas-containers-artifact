@@ -30,7 +30,7 @@ cd build && cmake ${ARTIFACT_LOCATION}/data/llama.cpp/llama.cpp \
   -DGGML_CUDA=ON \
   -DCMAKE_CUDA_ARCHITECTURES="86;89;70" \
   -DGGML_NATIVE=ON \
-  -D BLAS_INCLUDE_DIRS=$MKLROOT/include \
-  -DCMAKE_EXE_LINKER_FLAGS="-Wl,-rpath,/users/ealnuaim/spack/opt/spack/linux-centos8-zen/gcc-8.4.1/gcc-11.5.0-lubixtieinubtxpukoheitjpnwjwfres/lib64"
+  -D BLAS_INCLUDE_DIRS=$MKLROOT/include
+  #-DCMAKE_EXE_LINKER_FLAGS="-Wl,-rpath,/users/ealnuaim/spack/opt/spack/linux-centos8-zen/gcc-8.4.1/gcc-11.5.0-lubixtieinubtxpukoheitjpnwjwfres/lib64"
 
 cmake --build . --config Release -j $(nproc)

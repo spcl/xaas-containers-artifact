@@ -1,0 +1,1065 @@
+-- CUDA host compiler is GNU 8.4.1
+
+/scratch/mcopik/xaas-containers-artifact/data/llama.cpp/llama.cpp/ggml/src/ggml-cpu/ggml-cpu-aarch64.cpp:332:32: warning: compound literals are a C99-specific feature [-Wc99-extensions]
+            y[i].d[row_iter] = GGML_FP32_TO_FP16(d);
+                               ^
+/scratch/mcopik/xaas-containers-artifact/data/llama.cpp/llama.cpp/ggml/src/./ggml-impl.h:513:30: note: expanded from macro 'GGML_FP32_TO_FP16'
+#define GGML_FP32_TO_FP16(x) GGML_COMPUTE_FP32_TO_FP16(x)
+                             ^
+/scratch/mcopik/xaas-containers-artifact/data/llama.cpp/llama.cpp/ggml/src/./ggml-impl.h:353:46: note: expanded from macro 'GGML_COMPUTE_FP32_TO_FP16'
+        #define GGML_COMPUTE_FP32_TO_FP16(x) _cvtss_sh(x, 0)
+                                             ^
+/apps/ault/spack/opt/spack/linux-centos8-zen/gcc-8.4.1/intel-oneapi-compilers-2021.3.0-zdnqmgilkc6gnyxxmek7w3ny7iua4qpw/compiler/2021.3.0/linux/lib/clang/13.0.0/include/f16cintrin.h:69:54: note: expanded from macro '_cvtss_sh'
+  (unsigned short)(((__v8hi)__builtin_ia32_vcvtps2ph((__v4sf){a, 0, 0, 0}, \
+                                                     ^
+/scratch/mcopik/xaas-containers-artifact/data/llama.cpp/llama.cpp/ggml/src/ggml-cpu/ggml-cpu-aarch64.cpp:462:32: warning: compound literals are a C99-specific feature [-Wc99-extensions]
+            y[i].d[row_iter] = GGML_FP32_TO_FP16(d);
+                               ^
+/scratch/mcopik/xaas-containers-artifact/data/llama.cpp/llama.cpp/ggml/src/./ggml-impl.h:513:30: note: expanded from macro 'GGML_FP32_TO_FP16'
+#define GGML_FP32_TO_FP16(x) GGML_COMPUTE_FP32_TO_FP16(x)
+                             ^
+/scratch/mcopik/xaas-containers-artifact/data/llama.cpp/llama.cpp/ggml/src/./ggml-impl.h:353:46: note: expanded from macro 'GGML_COMPUTE_FP32_TO_FP16'
+        #define GGML_COMPUTE_FP32_TO_FP16(x) _cvtss_sh(x, 0)
+                                             ^
+/apps/ault/spack/opt/spack/linux-centos8-zen/gcc-8.4.1/intel-oneapi-compilers-2021.3.0-zdnqmgilkc6gnyxxmek7w3ny7iua4qpw/compiler/2021.3.0/linux/lib/clang/13.0.0/include/f16cintrin.h:69:54: note: expanded from macro '_cvtss_sh'
+  (unsigned short)(((__v8hi)__builtin_ia32_vcvtps2ph((__v4sf){a, 0, 0, 0}, \
+                                                     ^
+In file included from /scratch/mcopik/xaas-containers-artifact/data/llama.cpp/llama.cpp/ggml/src/ggml-cpu/vec.cpp:1:
+/scratch/mcopik/xaas-containers-artifact/data/llama.cpp/llama.cpp/ggml/src/ggml-cpu/vec.h:60:16: warning: compound literals are a C99-specific feature [-Wc99-extensions]
+        z[i] = GGML_FP32_TO_FP16(GGML_FP16_TO_FP32(x[i]) + GGML_FP16_TO_FP32(y[i]));
+               ^
+/scratch/mcopik/xaas-containers-artifact/data/llama.cpp/llama.cpp/ggml/src/./ggml-impl.h:513:30: note: expanded from macro 'GGML_FP32_TO_FP16'
+#define GGML_FP32_TO_FP16(x) GGML_COMPUTE_FP32_TO_FP16(x)
+                             ^
+/scratch/mcopik/xaas-containers-artifact/data/llama.cpp/llama.cpp/ggml/src/./ggml-impl.h:353:46: note: expanded from macro 'GGML_COMPUTE_FP32_TO_FP16'
+        #define GGML_COMPUTE_FP32_TO_FP16(x) _cvtss_sh(x, 0)
+                                             ^
+/apps/ault/spack/opt/spack/linux-centos8-zen/gcc-8.4.1/intel-oneapi-compilers-2021.3.0-zdnqmgilkc6gnyxxmek7w3ny7iua4qpw/compiler/2021.3.0/linux/lib/clang/13.0.0/include/f16cintrin.h:69:54: note: expanded from macro '_cvtss_sh'
+  (unsigned short)(((__v8hi)__builtin_ia32_vcvtps2ph((__v4sf){a, 0, 0, 0}, \
+                                                     ^
+In file included from /scratch/mcopik/xaas-containers-artifact/data/llama.cpp/llama.cpp/ggml/src/ggml-cpu/vec.cpp:1:
+/scratch/mcopik/xaas-containers-artifact/data/llama.cpp/llama.cpp/ggml/src/ggml-cpu/vec.h:69:16: warning: compound literals are a C99-specific feature [-Wc99-extensions]
+        z[i] = GGML_FP32_TO_FP16(GGML_FP16_TO_FP32(x[i]) - GGML_FP16_TO_FP32(y[i]));
+               ^
+/scratch/mcopik/xaas-containers-artifact/data/llama.cpp/llama.cpp/ggml/src/./ggml-impl.h:513:30: note: expanded from macro 'GGML_FP32_TO_FP16'
+#define GGML_FP32_TO_FP16(x) GGML_COMPUTE_FP32_TO_FP16(x)
+                             ^
+/scratch/mcopik/xaas-containers-artifact/data/llama.cpp/llama.cpp/ggml/src/./ggml-impl.h:353:46: note: expanded from macro 'GGML_COMPUTE_FP32_TO_FP16'
+        #define GGML_COMPUTE_FP32_TO_FP16(x) _cvtss_sh(x, 0)
+                                             ^
+/apps/ault/spack/opt/spack/linux-centos8-zen/gcc-8.4.1/intel-oneapi-compilers-2021.3.0-zdnqmgilkc6gnyxxmek7w3ny7iua4qpw/compiler/2021.3.0/linux/lib/clang/13.0.0/include/f16cintrin.h:69:54: note: expanded from macro '_cvtss_sh'
+  (unsigned short)(((__v8hi)__builtin_ia32_vcvtps2ph((__v4sf){a, 0, 0, 0}, \
+                                                     ^
+In file included from /scratch/mcopik/xaas-containers-artifact/data/llama.cpp/llama.cpp/ggml/src/ggml-cpu/vec.cpp:1:
+/scratch/mcopik/xaas-containers-artifact/data/llama.cpp/llama.cpp/ggml/src/ggml-cpu/vec.h:77:16: warning: compound literals are a C99-specific feature [-Wc99-extensions]
+        y[i] = GGML_FP32_TO_FP16(-GGML_FP16_TO_FP32(x[i]));
+               ^
+/scratch/mcopik/xaas-containers-artifact/data/llama.cpp/llama.cpp/ggml/src/./ggml-impl.h:513:30: note: expanded from macro 'GGML_FP32_TO_FP16'
+#define GGML_FP32_TO_FP16(x) GGML_COMPUTE_FP32_TO_FP16(x)
+                             ^
+/scratch/mcopik/xaas-containers-artifact/data/llama.cpp/llama.cpp/ggml/src/./ggml-impl.h:353:46: note: expanded from macro 'GGML_COMPUTE_FP32_TO_FP16'
+        #define GGML_COMPUTE_FP32_TO_FP16(x) _cvtss_sh(x, 0)
+                                             ^
+/apps/ault/spack/opt/spack/linux-centos8-zen/gcc-8.4.1/intel-oneapi-compilers-2021.3.0-zdnqmgilkc6gnyxxmek7w3ny7iua4qpw/compiler/2021.3.0/linux/lib/clang/13.0.0/include/f16cintrin.h:69:54: note: expanded from macro '_cvtss_sh'
+  (unsigned short)(((__v8hi)__builtin_ia32_vcvtps2ph((__v4sf){a, 0, 0, 0}, \
+                                                     ^
+In file included from /scratch/mcopik/xaas-containers-artifact/data/llama.cpp/llama.cpp/ggml/src/ggml-cpu/vec.cpp:1:
+/scratch/mcopik/xaas-containers-artifact/data/llama.cpp/llama.cpp/ggml/src/ggml-cpu/vec.h:84:16: warning: compound literals are a C99-specific feature [-Wc99-extensions]
+        z[i] = GGML_FP32_TO_FP16(GGML_FP16_TO_FP32(x[i]) * GGML_FP16_TO_FP32(y[i]));
+               ^
+/scratch/mcopik/xaas-containers-artifact/data/llama.cpp/llama.cpp/ggml/src/./ggml-impl.h:513:30: note: expanded from macro 'GGML_FP32_TO_FP16'
+#define GGML_FP32_TO_FP16(x) GGML_COMPUTE_FP32_TO_FP16(x)
+                             ^
+/scratch/mcopik/xaas-containers-artifact/data/llama.cpp/llama.cpp/ggml/src/./ggml-impl.h:353:In file included from 46/scratch/mcopik/xaas-containers-artifact/data/llama.cpp/llama.cpp/ggml/src/ggml-cpu/unary-ops.cpp:: 1note: :
+expanded from macro 'GGML_COMPUTE_FP32_TO_FP16'In file included from 
+/scratch/mcopik/xaas-containers-artifact/data/llama.cpp/llama.cpp/ggml/src/ggml-cpu/unary-ops.h:        #define GGML_COMPUTE_FP32_TO_FP16(x) _cvtss_sh(x, 0)3
+:
+                                             ^/scratch/mcopik/xaas-containers-artifact/data/llama.cpp/llama.cpp/ggml/src/ggml-cpu/common.h
+:/apps/ault/spack/opt/spack/linux-centos8-zen/gcc-8.4.1/intel-oneapi-compilers-2021.3.0-zdnqmgilkc6gnyxxmek7w3ny7iua4qpw/compiler/2021.3.0/linux/lib/clang/13.0.0/include/f16cintrin.h15::6912::54 :warning:  compound literals are a C99-specific feature [-Wc99-extensions]note: 
+expanded from macro '_cvtss_sh'
+    return GGML_FP32_TO_FP16(x);
+  (unsigned short)(((__v8hi)__builtin_ia32_vcvtps2ph((__v4sf){a, 0, 0, 0}, \           ^
+
+                                                     ^/scratch/mcopik/xaas-containers-artifact/data/llama.cpp/llama.cpp/ggml/src/./ggml-impl.h
+:513:30: note: expanded from macro 'GGML_FP32_TO_FP16'
+#define GGML_FP32_TO_FP16(x) GGML_COMPUTE_FP32_TO_FP16(x)
+                             ^
+/scratch/mcopik/xaas-containers-artifact/data/llama.cpp/llama.cpp/ggml/src/./ggml-impl.h:353:46: note: expanded from macro 'GGML_COMPUTE_FP32_TO_FP16'
+        #define GGML_COMPUTE_FP32_TO_FP16(x) _cvtss_sh(x, 0)
+                                             ^
+/apps/ault/spack/opt/spack/linux-centos8-zen/gcc-8.4.1/intel-oneapi-compilers-2021.3.0-zdnqmgilkc6gnyxxmek7w3ny7iua4qpw/compiler/2021.3.0/linux/lib/clang/13.0.0/include/f16cintrin.hIn file included from :/scratch/mcopik/xaas-containers-artifact/data/llama.cpp/llama.cpp/ggml/src/ggml-cpu/vec.cpp69::154:
+:/scratch/mcopik/xaas-containers-artifact/data/llama.cpp/llama.cpp/ggml/src/ggml-cpu/vec.h :note: 90expanded from macro '_cvtss_sh':
+16:   (unsigned short)(((__v8hi)__builtin_ia32_vcvtps2ph((__v4sf){a, 0, 0, 0}, \warning: 
+compound literals are a C99-specific feature [-Wc99-extensions]                                                     ^
+
+        z[i] = GGML_FP32_TO_FP16(GGML_FP16_TO_FP32(x[i]) / GGML_FP16_TO_FP32(y[i]));
+               ^
+/scratch/mcopik/xaas-containers-artifact/data/llama.cpp/llama.cpp/ggml/src/./ggml-impl.h:513:30: note: expanded from macro 'GGML_FP32_TO_FP16'
+#define GGML_FP32_TO_FP16(x) GGML_COMPUTE_FP32_TO_FP16(x)
+                             ^
+/scratch/mcopik/xaas-containers-artifact/data/llama.cpp/llama.cpp/ggml/src/./ggml-impl.h:353:46: note: expanded from macro 'GGML_COMPUTE_FP32_TO_FP16'
+        #define GGML_COMPUTE_FP32_TO_FP16(x) _cvtss_sh(x, 0)
+                                             ^
+/apps/ault/spack/opt/spack/linux-centos8-zen/gcc-8.4.1/intel-oneapi-compilers-2021.3.0-zdnqmgilkc6gnyxxmek7w3ny7iua4qpw/compiler/2021.3.0/linux/lib/clang/13.0.0/include/f16cintrin.h:69:54: note: expanded from macro '_cvtss_sh'
+  (unsigned short)(((__v8hi)__builtin_ia32_vcvtps2ph((__v4sf){a, 0, 0, 0}, \
+                                                     ^
+In file included from /scratch/mcopik/xaas-containers-artifact/data/llama.cpp/llama.cpp/ggml/src/ggml-cpu/vec.cpp:1:
+/scratch/mcopik/xaas-containers-artifact/data/llama.cpp/llama.cpp/ggml/src/ggml-cpu/vec.h:201:16: warning: compound literals are a C99-specific feature [-Wc99-extensions]
+        y[i] = GGML_FP32_TO_FP16(GGML_FP16_TO_FP32(y[i]) + GGML_FP16_TO_FP32(x[i])*v);
+               ^
+/scratch/mcopik/xaas-containers-artifact/data/llama.cpp/llama.cpp/ggml/src/./ggml-impl.h:513:30: note: expanded from macro 'GGML_FP32_TO_FP16'
+#define GGML_FP32_TO_FP16(x) GGML_COMPUTE_FP32_TO_FP16(x)
+                             ^
+/scratch/mcopik/xaas-containers-artifact/data/llama.cpp/llama.cpp/ggml/src/./ggml-impl.h:353:46: note: expanded from macro 'GGML_COMPUTE_FP32_TO_FP16'
+        #define GGML_COMPUTE_FP32_TO_FP16(x) _cvtss_sh(x, 0)
+                                             ^
+/apps/ault/spack/opt/spack/linux-centos8-zen/gcc-8.4.1/intel-oneapi-compilers-2021.3.0-zdnqmgilkc6gnyxxmek7w3ny7iua4qpw/compiler/2021.3.0/linux/lib/clang/13.0.0/include/f16cintrin.h:69:54: note: expanded from macro '_cvtss_sh'
+  (unsigned short)(((__v8hi)__builtin_ia32_vcvtps2ph((__v4sf){a, 0, 0, 0}, \
+                                                     ^
+In file included from /scratch/mcopik/xaas-containers-artifact/data/llama.cpp/llama.cpp/ggml/src/ggml-cpu/binary-ops.cpp:1:
+In file included from /scratch/mcopik/xaas-containers-artifact/data/llama.cpp/llama.cpp/ggml/src/ggml-cpu/binary-ops.h:3:
+/scratch/mcopik/xaas-containers-artifact/data/llama.cpp/llama.cpp/ggml/src/ggml-cpu/common.h:15:12: warning: compound literals are a C99-specific feature [-Wc99-extensions]
+    return GGML_FP32_TO_FP16(x);
+           ^
+/scratch/mcopik/xaas-containers-artifact/data/llama.cpp/llama.cpp/ggml/src/./ggml-impl.h:513:30: note: expanded from macro 'GGML_FP32_TO_FP16'In file included from 
+/scratch/mcopik/xaas-containers-artifact/data/llama.cpp/llama.cpp/ggml/src/ggml-cpu/vec.cpp#define GGML_FP32_TO_FP16(x) GGML_COMPUTE_FP32_TO_FP16(x):
+1                             ^:
+
+/scratch/mcopik/xaas-containers-artifact/data/llama.cpp/llama.cpp/ggml/src/ggml-cpu/vec.h/scratch/mcopik/xaas-containers-artifact/data/llama.cpp/llama.cpp/ggml/src/./ggml-impl.h::314353::1646::  warning: note: compound literals are a C99-specific feature [-Wc99-extensions]expanded from macro 'GGML_COMPUTE_FP32_TO_FP16'
+
+        y[i] = GGML_FP32_TO_FP16(GGML_FP16_TO_FP32(y[i])*v);
+        #define GGML_COMPUTE_FP32_TO_FP16(x) _cvtss_sh(x, 0)               ^
+
+                                             ^/scratch/mcopik/xaas-containers-artifact/data/llama.cpp/llama.cpp/ggml/src/./ggml-impl.h
+:/apps/ault/spack/opt/spack/linux-centos8-zen/gcc-8.4.1/intel-oneapi-compilers-2021.3.0-zdnqmgilkc6gnyxxmek7w3ny7iua4qpw/compiler/2021.3.0/linux/lib/clang/13.0.0/include/f16cintrin.h513::6930::54 :note:  expanded from macro 'GGML_FP32_TO_FP16'note: 
+expanded from macro '_cvtss_sh'
+#define GGML_FP32_TO_FP16(x) GGML_COMPUTE_FP32_TO_FP16(x)
+                             ^  (unsigned short)(((__v8hi)__builtin_ia32_vcvtps2ph((__v4sf){a, 0, 0, 0}, \
+/scratch/mcopik/xaas-containers-artifact/data/llama.cpp/llama.cpp/ggml/src/./ggml-impl.h
+:                                                     ^353
+:46: note: expanded from macro 'GGML_COMPUTE_FP32_TO_FP16'
+        #define GGML_COMPUTE_FP32_TO_FP16(x) _cvtss_sh(x, 0)
+                                             ^
+/apps/ault/spack/opt/spack/linux-centos8-zen/gcc-8.4.1/intel-oneapi-compilers-2021.3.0-zdnqmgilkc6gnyxxmek7w3ny7iua4qpw/compiler/2021.3.0/linux/lib/clang/13.0.0/include/f16cintrin.h:69:54: note: expanded from macro '_cvtss_sh'
+  (unsigned short)(((__v8hi)__builtin_ia32_vcvtps2ph((__v4sf){a, 0, 0, 0}, \
+                                                     ^
+In file included from /scratch/mcopik/xaas-containers-artifact/data/llama.cpp/llama.cpp/ggml/src/ggml-cpu/vec.cpp:1:
+/scratch/mcopik/xaas-containers-artifact/data/llama.cpp/llama.cpp/ggml/src/ggml-cpu/vec.h:329:16: warning: compound literals are a C99-specific feature [-Wc99-extensions]
+        y[i] = GGML_FP32_TO_FP16(v*v);
+               ^
+/scratch/mcopik/xaas-containers-artifact/data/llama.cpp/llama.cpp/ggml/src/./ggml-impl.h:513:30: note: expanded from macro 'GGML_FP32_TO_FP16'
+#define GGML_FP32_TO_FP16(x) GGML_COMPUTE_FP32_TO_FP16(x)
+                             ^
+/scratch/mcopik/xaas-containers-artifact/data/llama.cpp/llama.cpp/ggml/src/./ggml-impl.h:353:46: note: expanded from macro 'GGML_COMPUTE_FP32_TO_FP16'
+        #define GGML_COMPUTE_FP32_TO_FP16(x) _cvtss_sh(x, 0)
+                                             ^
+/apps/ault/spack/opt/spack/linux-centos8-zen/gcc-8.4.1/intel-oneapi-compilers-2021.3.0-zdnqmgilkc6gnyxxmek7w3ny7iua4qpw/compiler/2021.3.0/linux/lib/clang/13.0.0/include/f16cintrin.h:69:54: note: expanded from macro '_cvtss_sh'
+  (unsigned short)(((__v8hi)__builtin_ia32_vcvtps2ph((__v4sf){a, 0, 0, 0}, \
+                                                     ^
+In file included from /scratch/mcopik/xaas-containers-artifact/data/llama.cpp/llama.cpp/ggml/src/ggml-cpu/vec.cpp:1:
+/scratch/mcopik/xaas-containers-artifact/data/llama.cpp/llama.cpp/ggml/src/ggml-cpu/vec.h:335:16: warning: compound literals are a C99-specific feature [-Wc99-extensions]
+        y[i] = GGML_FP32_TO_FP16(sqrtf(GGML_FP16_TO_FP32(x[i])));
+               ^
+/scratch/mcopik/xaas-containers-artifact/data/llama.cpp/llama.cpp/ggml/src/./ggml-impl.h:513:30: note: expanded from macro 'GGML_FP32_TO_FP16'
+#define GGML_FP32_TO_FP16(x) GGML_COMPUTE_FP32_TO_FP16(x)
+                             ^
+/scratch/mcopik/xaas-containers-artifact/data/llama.cpp/llama.cpp/ggml/src/./ggml-impl.h:353:46: note: expanded from macro 'GGML_COMPUTE_FP32_TO_FP16'
+        #define GGML_COMPUTE_FP32_TO_FP16(x) _cvtss_sh(x, 0)
+                                             ^
+/apps/ault/spack/opt/spack/linux-centos8-zen/gcc-8.4.1/intel-oneapi-compilers-2021.3.0-zdnqmgilkc6gnyxxmek7w3ny7iua4qpw/compiler/2021.3.0/linux/lib/clang/13.0.0/include/f16cintrin.h:69:54: note: expanded from macro '_cvtss_sh'
+  (unsigned short)(((__v8hi)__builtin_ia32_vcvtps2ph((__v4sf){a, 0, 0, 0}, \
+                                                     ^
+In file included from /scratch/mcopik/xaas-containers-artifact/data/llama.cpp/llama.cpp/ggml/src/ggml-cpu/vec.cpp:1:
+/scratch/mcopik/xaas-containers-artifact/data/llama.cpp/llama.cpp/ggml/src/ggml-cpu/vec.h:341:16: warning: compound literals are a C99-specific feature [-Wc99-extensions]
+        y[i] = GGML_FP32_TO_FP16(logf(GGML_FP16_TO_FP32(x[i])));
+               ^
+/scratch/mcopik/xaas-containers-artifact/data/llama.cpp/llama.cpp/ggml/src/./ggml-impl.h:513:30: note: expanded from macro 'GGML_FP32_TO_FP16'
+#define GGML_FP32_TO_FP16(x) GGML_COMPUTE_FP32_TO_FP16(x)
+                             ^
+/scratch/mcopik/xaas-containers-artifact/data/llama.cpp/llama.cpp/ggml/src/./ggml-impl.h:353:46: note: expanded from macro 'GGML_COMPUTE_FP32_TO_FP16'
+        #define GGML_COMPUTE_FP32_TO_FP16(x) _cvtss_sh(x, 0)
+                                             ^
+/apps/ault/spack/opt/spack/linux-centos8-zen/gcc-8.4.1/intel-oneapi-compilers-2021.3.0-zdnqmgilkc6gnyxxmek7w3ny7iua4qpw/compiler/2021.3.0/linux/lib/clang/13.0.0/include/f16cintrin.h:69:54: note: expanded from macro '_cvtss_sh'
+  (unsigned short)(((__v8hi)__builtin_ia32_vcvtps2ph((__v4sf){a, 0, 0, 0}, \
+                                                     ^
+In file included from /scratch/mcopik/xaas-containers-artifact/data/llama.cpp/llama.cpp/ggml/src/ggml-cpu/vec.cpp:1:
+/scratch/mcopik/xaas-containers-artifact/data/llama.cpp/llama.cpp/ggml/src/ggml-cpu/vec.h:347:16: warning: compound literals are a C99-specific feature [-Wc99-extensions]
+        y[i] = GGML_FP32_TO_FP16(sinf(GGML_FP16_TO_FP32(x[i])));
+               ^
+/scratch/mcopik/xaas-containers-artifact/data/llama.cpp/llama.cpp/ggml/src/./ggml-impl.h:513:30: note: expanded from macro 'GGML_FP32_TO_FP16'
+#define GGML_FP32_TO_FP16(x) GGML_COMPUTE_FP32_TO_FP16(x)
+                             ^
+/scratch/mcopik/xaas-containers-artifact/data/llama.cpp/llama.cpp/ggml/src/./ggml-impl.h:353:46: note: expanded from macro 'GGML_COMPUTE_FP32_TO_FP16'
+        #define GGML_COMPUTE_FP32_TO_FP16(x) _cvtss_sh(x, 0)
+                                             ^
+/apps/ault/spack/opt/spack/linux-centos8-zen/gcc-8.4.1/intel-oneapi-compilers-2021.3.0-zdnqmgilkc6gnyxxmek7w3ny7iua4qpw/compiler/2021.3.0/linux/lib/clang/13.0.0/include/f16cintrin.h:69:54: note: expanded from macro '_cvtss_sh'
+  (unsigned short)(((__v8hi)__builtin_ia32_vcvtps2ph((__v4sf){a, 0, 0, 0}, \
+                                                     ^
+In file included from /scratch/mcopik/xaas-containers-artifact/data/llama.cpp/llama.cpp/ggml/src/ggml-cpu/vec.cpp:1:
+/scratch/mcopik/xaas-containers-artifact/data/llama.cpp/llama.cpp/ggml/src/ggml-cpu/vec.h:353:16: warning: compound literals are a C99-specific feature [-Wc99-extensions]
+        y[i] = GGML_FP32_TO_FP16(cosf(GGML_FP16_TO_FP32(x[i])));
+               ^
+/scratch/mcopik/xaas-containers-artifact/data/llama.cpp/llama.cpp/ggml/src/./ggml-impl.h:513:30: note: expanded from macro 'GGML_FP32_TO_FP16'
+#define GGML_FP32_TO_FP16(x) GGML_COMPUTE_FP32_TO_FP16(x)
+                             ^
+/scratch/mcopik/xaas-containers-artifact/data/llama.cpp/llama.cpp/ggml/src/./ggml-impl.h:353:46: note: expanded from macro 'GGML_COMPUTE_FP32_TO_FP16'
+        #define GGML_COMPUTE_FP32_TO_FP16(x) _cvtss_sh(x, 0)
+                                             ^
+/apps/ault/spack/opt/spack/linux-centos8-zen/gcc-8.4.1/intel-oneapi-compilers-2021.3.0-zdnqmgilkc6gnyxxmek7w3ny7iua4qpw/compiler/2021.3.0/linux/lib/clang/13.0.0/include/f16cintrin.h:69:54: note: expanded from macro '_cvtss_sh'
+  (unsigned short)(((__v8hi)__builtin_ia32_vcvtps2ph((__v4sf){a, 0, 0, 0}, \
+                                                     ^
+In file included from /scratch/mcopik/xaas-containers-artifact/data/llama.cpp/llama.cpp/ggml/src/ggml-cpu/vec.cpp:In file included from 1/scratch/mcopik/xaas-containers-artifact/data/llama.cpp/llama.cpp/ggml/src/ggml-cpu/ops.cpp:
+:/scratch/mcopik/xaas-containers-artifact/data/llama.cpp/llama.cpp/ggml/src/ggml-cpu/vec.h5::
+359In file included from :/scratch/mcopik/xaas-containers-artifact/data/llama.cpp/llama.cpp/ggml/src/ggml-cpu/binary-ops.h16::3 :
+warning: /scratch/mcopik/xaas-containers-artifact/data/llama.cpp/llama.cpp/ggml/src/ggml-cpu/common.hcompound literals are a C99-specific feature [-Wc99-extensions]:
+15:12        y[i] = GGML_FP32_TO_FP16(fabsf(GGML_FP16_TO_FP32(x[i])));:
+                ^warning: 
+compound literals are a C99-specific feature [-Wc99-extensions]/scratch/mcopik/xaas-containers-artifact/data/llama.cpp/llama.cpp/ggml/src/./ggml-impl.h
+:513:    return GGML_FP32_TO_FP16(x);30
+:           ^ 
+note: expanded from macro 'GGML_FP32_TO_FP16'/scratch/mcopik/xaas-containers-artifact/data/llama.cpp/llama.cpp/ggml/src/./ggml-impl.h
+:513#define GGML_FP32_TO_FP16(x) GGML_COMPUTE_FP32_TO_FP16(x):
+30                             ^:
+ /scratch/mcopik/xaas-containers-artifact/data/llama.cpp/llama.cpp/ggml/src/./ggml-impl.hnote: :expanded from macro 'GGML_FP32_TO_FP16'353
+:46#define GGML_FP32_TO_FP16(x) GGML_COMPUTE_FP32_TO_FP16(x):
+                              ^note: 
+expanded from macro 'GGML_COMPUTE_FP32_TO_FP16'/scratch/mcopik/xaas-containers-artifact/data/llama.cpp/llama.cpp/ggml/src/./ggml-impl.h
+:353        #define GGML_COMPUTE_FP32_TO_FP16(x) _cvtss_sh(x, 0):
+46                                             ^:
+ /apps/ault/spack/opt/spack/linux-centos8-zen/gcc-8.4.1/intel-oneapi-compilers-2021.3.0-zdnqmgilkc6gnyxxmek7w3ny7iua4qpw/compiler/2021.3.0/linux/lib/clang/13.0.0/include/f16cintrin.hnote: :expanded from macro 'GGML_COMPUTE_FP32_TO_FP16'69
+:54        #define GGML_COMPUTE_FP32_TO_FP16(x) _cvtss_sh(x, 0):
+                                              ^note: 
+expanded from macro '_cvtss_sh'/apps/ault/spack/opt/spack/linux-centos8-zen/gcc-8.4.1/intel-oneapi-compilers-2021.3.0-zdnqmgilkc6gnyxxmek7w3ny7iua4qpw/compiler/2021.3.0/linux/lib/clang/13.0.0/include/f16cintrin.h
+:69:  (unsigned short)(((__v8hi)__builtin_ia32_vcvtps2ph((__v4sf){a, 0, 0, 0}, \54
+:                                                     ^ 
+note: expanded from macro '_cvtss_sh'
+  (unsigned short)(((__v8hi)__builtin_ia32_vcvtps2ph((__v4sf){a, 0, 0, 0}, \
+                                                     ^
+In file included from /scratch/mcopik/xaas-containers-artifact/data/llama.cpp/llama.cpp/ggml/src/ggml-cpu/vec.cpp:1:
+/scratch/mcopik/xaas-containers-artifact/data/llama.cpp/llama.cpp/ggml/src/ggml-cpu/vec.h:366:16: warning: compound literals are a C99-specific feature [-Wc99-extensions]
+        y[i] = GGML_FP32_TO_FP16((v > 0.f) ? 1.f : ((v < 0.f) ? -1.f : 0.f));
+               ^
+/scratch/mcopik/xaas-containers-artifact/data/llama.cpp/llama.cpp/ggml/src/./ggml-impl.h:513:30: note: expanded from macro 'GGML_FP32_TO_FP16'
+#define GGML_FP32_TO_FP16(x) GGML_COMPUTE_FP32_TO_FP16(x)
+                             ^
+/scratch/mcopik/xaas-containers-artifact/data/llama.cpp/llama.cpp/ggml/src/./ggml-impl.h:353:46: note: expanded from macro 'GGML_COMPUTE_FP32_TO_FP16'
+        #define GGML_COMPUTE_FP32_TO_FP16(x) _cvtss_sh(x, 0)
+                                             ^
+/apps/ault/spack/opt/spack/linux-centos8-zen/gcc-8.4.1/intel-oneapi-compilers-2021.3.0-zdnqmgilkc6gnyxxmek7w3ny7iua4qpw/compiler/2021.3.0/linux/lib/clang/13.0.0/include/f16cintrin.h:69:54: note: expanded from macro '_cvtss_sh'
+  (unsigned short)(((__v8hi)__builtin_ia32_vcvtps2ph((__v4sf){a, 0, 0, 0}, \
+                                                     ^
+In file included from /scratch/mcopik/xaas-containers-artifact/data/llama.cpp/llama.cpp/ggml/src/ggml-cpu/vec.cpp:1:
+/scratch/mcopik/xaas-containers-artifact/data/llama.cpp/llama.cpp/ggml/src/ggml-cpu/vec.h:372:16: warning: compound literals are a C99-specific feature [-Wc99-extensions]
+        y[i] = GGML_FP32_TO_FP16((GGML_FP16_TO_FP32(x[i]) > 0.f) ? 1.f : 0.f);
+               ^
+/scratch/mcopik/xaas-containers-artifact/data/llama.cpp/llama.cpp/ggml/src/./ggml-impl.h:513:30: note: expanded from macro 'GGML_FP32_TO_FP16'
+#define GGML_FP32_TO_FP16(x) GGML_COMPUTE_FP32_TO_FP16(x)
+                             ^
+/scratch/mcopik/xaas-containers-artifact/data/llama.cpp/llama.cpp/ggml/src/./ggml-impl.h:353:46: note: expanded from macro 'GGML_COMPUTE_FP32_TO_FP16'
+        #define GGML_COMPUTE_FP32_TO_FP16(x) _cvtss_sh(x, 0)
+                                             ^
+/apps/ault/spack/opt/spack/linux-centos8-zen/gcc-8.4.1/intel-oneapi-compilers-2021.3.0-zdnqmgilkc6gnyxxmek7w3ny7iua4qpw/compiler/2021.3.0/linux/lib/clang/13.0.0/include/f16cintrin.h:69:54: note: expanded from macro '_cvtss_sh'
+  (unsigned short)(((__v8hi)__builtin_ia32_vcvtps2ph((__v4sf){a, 0, 0, 0}, \
+                                                     ^
+In file included from /scratch/mcopik/xaas-containers-artifact/data/llama.cpp/llama.cpp/ggml/src/ggml-cpu/vec.cpp:1:
+/scratch/mcopik/xaas-containers-artifact/data/llama.cpp/llama.cpp/ggml/src/ggml-cpu/vec.h:378:16: warning: compound literals are a C99-specific feature [-Wc99-extensions]
+        y[i] = GGML_FP32_TO_FP16(tanhf(GGML_FP16_TO_FP32(x[i])));
+               ^
+/scratch/mcopik/xaas-containers-artifact/data/llama.cpp/llama.cpp/ggml/src/./ggml-impl.h:513:30: note: expanded from macro 'GGML_FP32_TO_FP16'
+#define GGML_FP32_TO_FP16(x) GGML_COMPUTE_FP32_TO_FP16(x)
+                             ^
+/scratch/mcopik/xaas-containers-artifact/data/llama.cpp/llama.cpp/ggml/src/./ggml-impl.h:353:46: note: expanded from macro 'GGML_COMPUTE_FP32_TO_FP16'
+        #define GGML_COMPUTE_FP32_TO_FP16(x) _cvtss_sh(x, 0)
+                                             ^
+/apps/ault/spack/opt/spack/linux-centos8-zen/gcc-8.4.1/intel-oneapi-compilers-2021.3.0-zdnqmgilkc6gnyxxmek7w3ny7iua4qpw/compiler/2021.3.0/linux/lib/clang/13.0.0/include/f16cintrin.h:69:54: note: expanded from macro '_cvtss_sh'
+  (unsigned short)(((__v8hi)__builtin_ia32_vcvtps2ph((__v4sf){a, 0, 0, 0}, \
+                                                     ^
+In file included from /scratch/mcopik/xaas-containers-artifact/data/llama.cpp/llama.cpp/ggml/src/ggml-cpu/vec.cpp:1:
+/scratch/mcopik/xaas-containers-artifact/data/llama.cpp/llama.cpp/ggml/src/ggml-cpu/vec.h:384:16: warning: compound literals are a C99-specific feature [-Wc99-extensions]
+        y[i] = GGML_FP32_TO_FP16(expm1f(GGML_FP16_TO_FP32(x[i])));
+               ^
+/scratch/mcopik/xaas-containers-artifact/data/llama.cpp/llama.cpp/ggml/src/./ggml-impl.h:513:30: note: expanded from macro 'GGML_FP32_TO_FP16'
+#define GGML_FP32_TO_FP16(x) GGML_COMPUTE_FP32_TO_FP16(x)
+                             ^
+/scratch/mcopik/xaas-containers-artifact/data/llama.cpp/llama.cpp/ggml/src/./ggml-impl.h:353:46: note: expanded from macro 'GGML_COMPUTE_FP32_TO_FP16'
+        #define GGML_COMPUTE_FP32_TO_FP16(x) _cvtss_sh(x, 0)
+                                             ^
+/apps/ault/spack/opt/spack/linux-centos8-zen/gcc-8.4.1/intel-oneapi-compilers-2021.3.0-zdnqmgilkc6gnyxxmek7w3ny7iua4qpw/compiler/2021.3.0/linux/lib/clang/13.0.0/include/f16cintrin.h:69:54: note: expanded from macro '_cvtss_sh'
+  (unsigned short)(((__v8hi)__builtin_ia32_vcvtps2ph((__v4sf){a, 0, 0, 0}, \
+                                                     ^
+In file included from /scratch/mcopik/xaas-containers-artifact/data/llama.cpp/llama.cpp/ggml/src/ggml-cpu/vec.cpp:1:
+/scratch/mcopik/xaas-containers-artifact/data/llama.cpp/llama.cpp/ggml/src/ggml-cpu/vec.h:391:16: warning: compound literals are a C99-specific feature [-Wc99-extensions]
+        y[i] = GGML_FP32_TO_FP16((v > 0.f) ? v : 0.f);
+               ^
+/scratch/mcopik/xaas-containers-artifact/data/llama.cpp/llama.cpp/ggml/src/./ggml-impl.h:513:30: note: expanded from macro 'GGML_FP32_TO_FP16'
+#define GGML_FP32_TO_FP16(x) GGML_COMPUTE_FP32_TO_FP16(x)
+                             ^
+/scratch/mcopik/xaas-containers-artifact/data/llama.cpp/llama.cpp/ggml/src/./ggml-impl.h:353:46: note: expanded from macro 'GGML_COMPUTE_FP32_TO_FP16'
+        #define GGML_COMPUTE_FP32_TO_FP16(x) _cvtss_sh(x, 0)
+                                             ^
+/apps/ault/spack/opt/spack/linux-centos8-zen/gcc-8.4.1/intel-oneapi-compilers-2021.3.0-zdnqmgilkc6gnyxxmek7w3ny7iua4qpw/compiler/2021.3.0/linux/lib/clang/13.0.0/include/f16cintrin.h:69:54: note: expanded from macro '_cvtss_sh'
+  (unsigned short)(((__v8hi)__builtin_ia32_vcvtps2ph((__v4sf){a, 0, 0, 0}, \
+                                                     ^
+In file included from /scratch/mcopik/xaas-containers-artifact/data/llama.cpp/llama.cpp/ggml/src/ggml-cpu/vec.cpp:1:
+/scratch/mcopik/xaas-containers-artifact/data/llama.cpp/llama.cpp/ggml/src/ggml-cpu/vec.h:398:16: warning: compound literals are a C99-specific feature [-Wc99-extensions]
+        y[i] = GGML_FP32_TO_FP16(((v > 0.f) ? v : 0.f) + ns * ((v < 0.0f) ? v : 0.f));
+               ^
+/scratch/mcopik/xaas-containers-artifact/data/llama.cpp/llama.cpp/ggml/src/./ggml-impl.h:513:30: note: expanded from macro 'GGML_FP32_TO_FP16'
+#define GGML_FP32_TO_FP16(x) GGML_COMPUTE_FP32_TO_FP16(x)
+                             ^
+/scratch/mcopik/xaas-containers-artifact/data/llama.cpp/llama.cpp/ggml/src/./ggml-impl.h:353:46: note: expanded from macro 'GGML_COMPUTE_FP32_TO_FP16'
+        #define GGML_COMPUTE_FP32_TO_FP16(x) _cvtss_sh(x, 0)
+                                             ^
+/apps/ault/spack/opt/spack/linux-centos8-zen/gcc-8.4.1/intel-oneapi-compilers-2021.3.0-zdnqmgilkc6gnyxxmek7w3ny7iua4qpw/compiler/2021.3.0/linux/lib/clang/13.0.0/include/f16cintrin.h:69:54: note: expanded from macro '_cvtss_sh'
+  (unsigned short)(((__v8hi)__builtin_ia32_vcvtps2ph((__v4sf){a, 0, 0, 0}, \
+                                                     ^
+In file included from /scratch/mcopik/xaas-containers-artifact/data/llama.cpp/llama.cpp/ggml/src/ggml-cpu/vec.cpp:1:
+/scratch/mcopik/xaas-containers-artifact/data/llama.cpp/llama.cpp/ggml/src/ggml-cpu/vec.h:404:16: warning: compound literals are a C99-specific feature [-Wc99-extensions]
+        y[i] = GGML_FP32_TO_FP16(1.f / (1.f + expf(-GGML_FP16_TO_FP32(x[i]))));
+               ^
+/scratch/mcopik/xaas-containers-artifact/data/llama.cpp/llama.cpp/ggml/src/./ggml-impl.h:513:30: note: expanded from macro 'GGML_FP32_TO_FP16'
+#define GGML_FP32_TO_FP16(x) GGML_COMPUTE_FP32_TO_FP16(x)
+                             ^
+/scratch/mcopik/xaas-containers-artifact/data/llama.cpp/llama.cpp/ggml/src/./ggml-impl.h:353In file included from :/scratch/mcopik/xaas-containers-artifact/data/llama.cpp/llama.cpp/ggml/src/ggml-cpu/ops.cpp46::7 :
+note: /scratch/mcopik/xaas-containers-artifact/data/llama.cpp/llama.cpp/ggml/src/ggml-cpu/vec.hexpanded from macro 'GGML_COMPUTE_FP32_TO_FP16':
+60:        #define GGML_COMPUTE_FP32_TO_FP16(x) _cvtss_sh(x, 0)16
+:                                             ^ 
+warning: /apps/ault/spack/opt/spack/linux-centos8-zen/gcc-8.4.1/intel-oneapi-compilers-2021.3.0-zdnqmgilkc6gnyxxmek7w3ny7iua4qpw/compiler/2021.3.0/linux/lib/clang/13.0.0/include/f16cintrin.hcompound literals are a C99-specific feature [-Wc99-extensions]:
+69:54        z[i] = GGML_FP32_TO_FP16(GGML_FP16_TO_FP32(x[i]) + GGML_FP16_TO_FP32(y[i]));:
+                ^note: 
+expanded from macro '_cvtss_sh'/scratch/mcopik/xaas-containers-artifact/data/llama.cpp/llama.cpp/ggml/src/./ggml-impl.h
+:513:  (unsigned short)(((__v8hi)__builtin_ia32_vcvtps2ph((__v4sf){a, 0, 0, 0}, \30
+:                                                     ^ 
+note: expanded from macro 'GGML_FP32_TO_FP16'
+#define GGML_FP32_TO_FP16(x) GGML_COMPUTE_FP32_TO_FP16(x)
+                             ^
+/scratch/mcopik/xaas-containers-artifact/data/llama.cpp/llama.cpp/ggml/src/./ggml-impl.h:353:46: note: expanded from macro 'GGML_COMPUTE_FP32_TO_FP16'
+        #define GGML_COMPUTE_FP32_TO_FP16(x) _cvtss_sh(x, 0)
+                                             ^
+/apps/ault/spack/opt/spack/linux-centos8-zen/gcc-8.4.1/intel-oneapi-compilers-2021.3.0-zdnqmgilkc6gnyxxmek7w3ny7iua4qpw/compiler/2021.3.0/linux/lib/clang/13.0.0/include/f16cintrin.h:69:54: note: expanded from macro '_cvtss_sh'
+  (unsigned short)(((__v8hi)__builtin_ia32_vcvtps2ph((__v4sf){a, 0, 0, 0}, \
+                                                     ^
+In file included from /scratch/mcopik/xaas-containers-artifact/data/llama.cpp/llama.cpp/ggml/src/ggml-cpu/vec.cpp:1:
+/scratch/mcopik/xaas-containers-artifact/data/llama.cpp/llama.cpp/ggml/src/ggml-cpu/vec.h:412:16: warning: compound literals are a C99-specific feature [-Wc99-extensions]
+        y[i] = GGML_FP32_TO_FP16(v * fminf(1.0f, fmaxf(0.0f, (v + 3.0f) / 6.0f)));
+               ^
+/scratch/mcopik/xaas-containers-artifact/data/llama.cpp/llama.cpp/ggml/src/./ggml-impl.h:513:30: note: expanded from macro 'GGML_FP32_TO_FP16'
+#define GGML_FP32_TO_FP16(x) GGML_COMPUTE_FP32_TO_FP16(x)
+                             ^
+/scratch/mcopik/xaas-containers-artifact/data/llama.cpp/llama.cpp/ggml/src/./ggml-impl.h:353:46In file included from :/scratch/mcopik/xaas-containers-artifact/data/llama.cpp/llama.cpp/ggml/src/ggml-cpu/ops.cpp :note: 7expanded from macro 'GGML_COMPUTE_FP32_TO_FP16':
+
+/scratch/mcopik/xaas-containers-artifact/data/llama.cpp/llama.cpp/ggml/src/ggml-cpu/vec.h:69        #define GGML_COMPUTE_FP32_TO_FP16(x) _cvtss_sh(x, 0):
+16                                             ^:
+ /apps/ault/spack/opt/spack/linux-centos8-zen/gcc-8.4.1/intel-oneapi-compilers-2021.3.0-zdnqmgilkc6gnyxxmek7w3ny7iua4qpw/compiler/2021.3.0/linux/lib/clang/13.0.0/include/f16cintrin.hwarning: :compound literals are a C99-specific feature [-Wc99-extensions]69
+:54:        z[i] = GGML_FP32_TO_FP16(GGML_FP16_TO_FP32(x[i]) - GGML_FP16_TO_FP32(y[i])); 
+note:                ^expanded from macro '_cvtss_sh'
+
+/scratch/mcopik/xaas-containers-artifact/data/llama.cpp/llama.cpp/ggml/src/./ggml-impl.h:  (unsigned short)(((__v8hi)__builtin_ia32_vcvtps2ph((__v4sf){a, 0, 0, 0}, \513
+:                                                     ^30
+: note: expanded from macro 'GGML_FP32_TO_FP16'
+#define GGML_FP32_TO_FP16(x) GGML_COMPUTE_FP32_TO_FP16(x)
+                             ^
+/scratch/mcopik/xaas-containers-artifact/data/llama.cpp/llama.cpp/ggml/src/./ggml-impl.h:353:46: note: expanded from macro 'GGML_COMPUTE_FP32_TO_FP16'
+        #define GGML_COMPUTE_FP32_TO_FP16(x) _cvtss_sh(x, 0)
+                                             ^
+/apps/ault/spack/opt/spack/linux-centos8-zen/gcc-8.4.1/intel-oneapi-compilers-2021.3.0-zdnqmgilkc6gnyxxmek7w3ny7iua4qpw/compiler/2021.3.0/linux/lib/clang/13.0.0/include/f16cintrin.h:69:54: note: expanded from macro '_cvtss_sh'
+  (unsigned short)(((__v8hi)__builtin_ia32_vcvtps2ph((__v4sf){a, 0, 0, 0}, \
+                                                     ^
+In file included from /scratch/mcopik/xaas-containers-artifact/data/llama.cpp/llama.cpp/ggml/src/ggml-cpu/vec.cpp:1:
+/scratch/mcopik/xaas-containers-artifact/data/llama.cpp/llama.cpp/ggml/src/ggml-cpu/vec.h:418:16: warning: compound literals are a C99-specific feature [-Wc99-extensions]
+        y[i] = GGML_FP32_TO_FP16(fminf(1.0f, fmaxf(0.0f, (GGML_FP16_TO_FP32(x[i]) + 3.0f) / 6.0f)));In file included from 
+/scratch/mcopik/xaas-containers-artifact/data/llama.cpp/llama.cpp/ggml/src/ggml-cpu/ops.cpp               ^:
+7/scratch/mcopik/xaas-containers-artifact/data/llama.cpp/llama.cpp/ggml/src/./ggml-impl.h:
+:/scratch/mcopik/xaas-containers-artifact/data/llama.cpp/llama.cpp/ggml/src/ggml-cpu/vec.h513::7730::16 :note:  expanded from macro 'GGML_FP32_TO_FP16'warning: 
+compound literals are a C99-specific feature [-Wc99-extensions]
+#define GGML_FP32_TO_FP16(x) GGML_COMPUTE_FP32_TO_FP16(x)        y[i] = GGML_FP32_TO_FP16(-GGML_FP16_TO_FP32(x[i]));
+
+                             ^               ^
+
+/scratch/mcopik/xaas-containers-artifact/data/llama.cpp/llama.cpp/ggml/src/./ggml-impl.h/scratch/mcopik/xaas-containers-artifact/data/llama.cpp/llama.cpp/ggml/src/./ggml-impl.h::353513::4630::  note: note: expanded from macro 'GGML_COMPUTE_FP32_TO_FP16'expanded from macro 'GGML_FP32_TO_FP16'
+
+        #define GGML_COMPUTE_FP32_TO_FP16(x) _cvtss_sh(x, 0)#define GGML_FP32_TO_FP16(x) GGML_COMPUTE_FP32_TO_FP16(x)
+
+                                             ^                             ^
+
+/apps/ault/spack/opt/spack/linux-centos8-zen/gcc-8.4.1/intel-oneapi-compilers-2021.3.0-zdnqmgilkc6gnyxxmek7w3ny7iua4qpw/compiler/2021.3.0/linux/lib/clang/13.0.0/include/f16cintrin.h/scratch/mcopik/xaas-containers-artifact/data/llama.cpp/llama.cpp/ggml/src/./ggml-impl.h::69353::5446::  note: note: expanded from macro '_cvtss_sh'expanded from macro 'GGML_COMPUTE_FP32_TO_FP16'
+
+  (unsigned short)(((__v8hi)__builtin_ia32_vcvtps2ph((__v4sf){a, 0, 0, 0}, \        #define GGML_COMPUTE_FP32_TO_FP16(x) _cvtss_sh(x, 0)
+
+                                                     ^                                             ^
+
+/apps/ault/spack/opt/spack/linux-centos8-zen/gcc-8.4.1/intel-oneapi-compilers-2021.3.0-zdnqmgilkc6gnyxxmek7w3ny7iua4qpw/compiler/2021.3.0/linux/lib/clang/13.0.0/include/f16cintrin.h:69:54: note: expanded from macro '_cvtss_sh'
+  (unsigned short)(((__v8hi)__builtin_ia32_vcvtps2ph((__v4sf){a, 0, 0, 0}, \
+                                                     ^
+In file included from /scratch/mcopik/xaas-containers-artifact/data/llama.cpp/llama.cpp/ggml/src/ggml-cpu/vec.cpp:1:
+/scratch/mcopik/xaas-containers-artifact/data/llama.cpp/llama.cpp/ggml/src/ggml-cpu/vec.h:424:16: warning: compound literals are a C99-specific feature [-Wc99-extensions]
+In file included from         y[i] = GGML_FP32_TO_FP16(expf(GGML_FP16_TO_FP32(x[i])));/scratch/mcopik/xaas-containers-artifact/data/llama.cpp/llama.cpp/ggml/src/ggml-cpu/ops.cpp
+:               ^7
+:
+/scratch/mcopik/xaas-containers-artifact/data/llama.cpp/llama.cpp/ggml/src/./ggml-impl.h/scratch/mcopik/xaas-containers-artifact/data/llama.cpp/llama.cpp/ggml/src/ggml-cpu/vec.h::51384::3016::  note: warning: expanded from macro 'GGML_FP32_TO_FP16'compound literals are a C99-specific feature [-Wc99-extensions]
+
+#define GGML_FP32_TO_FP16(x) GGML_COMPUTE_FP32_TO_FP16(x)        z[i] = GGML_FP32_TO_FP16(GGML_FP16_TO_FP32(x[i]) * GGML_FP16_TO_FP32(y[i]));
+
+                             ^               ^
+
+/scratch/mcopik/xaas-containers-artifact/data/llama.cpp/llama.cpp/ggml/src/./ggml-impl.h/scratch/mcopik/xaas-containers-artifact/data/llama.cpp/llama.cpp/ggml/src/./ggml-impl.h::353513::4630::  note: note: expanded from macro 'GGML_COMPUTE_FP32_TO_FP16'expanded from macro 'GGML_FP32_TO_FP16'
+
+        #define GGML_COMPUTE_FP32_TO_FP16(x) _cvtss_sh(x, 0)#define GGML_FP32_TO_FP16(x) GGML_COMPUTE_FP32_TO_FP16(x)
+
+                                             ^                             ^
+
+/apps/ault/spack/opt/spack/linux-centos8-zen/gcc-8.4.1/intel-oneapi-compilers-2021.3.0-zdnqmgilkc6gnyxxmek7w3ny7iua4qpw/compiler/2021.3.0/linux/lib/clang/13.0.0/include/f16cintrin.h/scratch/mcopik/xaas-containers-artifact/data/llama.cpp/llama.cpp/ggml/src/./ggml-impl.h::69353::5446::  note: note: expanded from macro '_cvtss_sh'expanded from macro 'GGML_COMPUTE_FP32_TO_FP16'
+
+  (unsigned short)(((__v8hi)__builtin_ia32_vcvtps2ph((__v4sf){a, 0, 0, 0}, \        #define GGML_COMPUTE_FP32_TO_FP16(x) _cvtss_sh(x, 0)
+
+                                                     ^                                             ^
+
+/apps/ault/spack/opt/spack/linux-centos8-zen/gcc-8.4.1/intel-oneapi-compilers-2021.3.0-zdnqmgilkc6gnyxxmek7w3ny7iua4qpw/compiler/2021.3.0/linux/lib/clang/13.0.0/include/f16cintrin.h:69:54: note: In file included from /scratch/mcopik/xaas-containers-artifact/data/llama.cpp/llama.cpp/ggml/src/ggml-cpu/vec.cpp:1expanded from macro '_cvtss_sh':
+
+/scratch/mcopik/xaas-containers-artifact/data/llama.cpp/llama.cpp/ggml/src/ggml-cpu/vec.h:  (unsigned short)(((__v8hi)__builtin_ia32_vcvtps2ph((__v4sf){a, 0, 0, 0}, \452
+:                                                     ^32
+: warning: compound literals are a C99-specific feature [-Wc99-extensions]
+            ggml_fp16_t fp16 = GGML_FP32_TO_FP16(x[i]);
+                               ^
+/scratch/mcopik/xaas-containers-artifact/data/llama.cpp/llama.cpp/ggml/src/./ggml-impl.h:513:30: note: expanded from macro 'GGML_FP32_TO_FP16'
+#define GGML_FP32_TO_FP16(x) GGML_COMPUTE_FP32_TO_FP16(x)
+                             ^
+/scratch/mcopik/xaas-containers-artifact/data/llama.cpp/llama.cpp/ggml/src/./ggml-impl.h:353:46: note: expanded from macro 'GGML_COMPUTE_FP32_TO_FP16'In file included from 
+/scratch/mcopik/xaas-containers-artifact/data/llama.cpp/llama.cpp/ggml/src/ggml-cpu/ops.cpp:        #define GGML_COMPUTE_FP32_TO_FP16(x) _cvtss_sh(x, 0)7
+:
+                                             ^/scratch/mcopik/xaas-containers-artifact/data/llama.cpp/llama.cpp/ggml/src/ggml-cpu/vec.h
+:/apps/ault/spack/opt/spack/linux-centos8-zen/gcc-8.4.1/intel-oneapi-compilers-2021.3.0-zdnqmgilkc6gnyxxmek7w3ny7iua4qpw/compiler/2021.3.0/linux/lib/clang/13.0.0/include/f16cintrin.h90::6916::54 :warning:  compound literals are a C99-specific feature [-Wc99-extensions]note: 
+expanded from macro '_cvtss_sh'
+        z[i] = GGML_FP32_TO_FP16(GGML_FP16_TO_FP32(x[i]) / GGML_FP16_TO_FP32(y[i]));
+  (unsigned short)(((__v8hi)__builtin_ia32_vcvtps2ph((__v4sf){a, 0, 0, 0}, \               ^
+
+                                                     ^/scratch/mcopik/xaas-containers-artifact/data/llama.cpp/llama.cpp/ggml/src/./ggml-impl.h
+:513:30: note: expanded from macro 'GGML_FP32_TO_FP16'
+#define GGML_FP32_TO_FP16(x) GGML_COMPUTE_FP32_TO_FP16(x)
+                             ^
+/scratch/mcopik/xaas-containers-artifact/data/llama.cpp/llama.cpp/ggml/src/./ggml-impl.h:353:46: note: expanded from macro 'GGML_COMPUTE_FP32_TO_FP16'
+        #define GGML_COMPUTE_FP32_TO_FP16(x) _cvtss_sh(x, 0)
+                                             ^
+/apps/ault/spack/opt/spack/linux-centos8-zen/gcc-8.4.1/intel-oneapi-compilers-2021.3.0-zdnqmgilkc6gnyxxmek7w3ny7iua4qpw/compiler/2021.3.0/linux/lib/clang/13.0.0/include/f16cintrin.h:69:54: note: expanded from macro '_cvtss_sh'
+In file included from   (unsigned short)(((__v8hi)__builtin_ia32_vcvtps2ph((__v4sf){a, 0, 0, 0}, \/scratch/mcopik/xaas-containers-artifact/data/llama.cpp/llama.cpp/ggml/src/ggml-cpu/vec.cpp
+:                                                     ^1
+:
+/scratch/mcopik/xaas-containers-artifact/data/llama.cpp/llama.cpp/ggml/src/ggml-cpu/vec.h:481:28: warning: compound literals are a C99-specific feature [-Wc99-extensions]
+        ggml_fp16_t fp16 = GGML_FP32_TO_FP16(x[i]);
+                           ^
+/scratch/mcopik/xaas-containers-artifact/data/llama.cpp/llama.cpp/ggml/src/./ggml-impl.h:513:30: note: expanded from macro 'GGML_FP32_TO_FP16'
+#define GGML_FP32_TO_FP16(x) GGML_COMPUTE_FP32_TO_FP16(x)
+                             ^
+/scratch/mcopik/xaas-containers-artifact/data/llama.cpp/llama.cpp/ggml/src/./ggml-impl.h:353:46: note: expanded from macro 'GGML_COMPUTE_FP32_TO_FP16'
+        #define GGML_COMPUTE_FP32_TO_FP16(x) _cvtss_sh(x, 0)
+                                             ^
+/apps/ault/spack/opt/spack/linux-centos8-zen/gcc-8.4.1/intel-oneapi-compilers-2021.3.0-zdnqmgilkc6gnyxxmek7w3ny7iua4qpw/compiler/2021.3.0/linux/lib/clang/13.0.0/include/f16cintrin.h:69:54: note: expanded from macro '_cvtss_sh'
+  (unsigned short)(((__v8hi)__builtin_ia32_vcvtps2ph((__v4sf){a, 0, 0, 0}, \
+                                                     ^
+In file included from /scratch/mcopik/xaas-containers-artifact/data/llama.cpp/llama.cpp/ggml/src/ggml-cpu/vec.cpp:1:
+/scratch/mcopik/xaas-containers-artifact/data/llama.cpp/llama.cpp/ggml/src/ggml-cpu/vec.h:497:16: warning: compound literals are a C99-specific feature [-Wc99-extensions]
+        y[i] = GGML_FP32_TO_FP16(v*(1.0f/(1.0f+expf(GELU_QUICK_COEF*v))));
+               ^
+/scratch/mcopik/xaas-containers-artifact/data/llama.cpp/llama.cpp/ggml/src/./ggml-impl.h:513:30: note: expanded from macro 'GGML_FP32_TO_FP16'
+#define GGML_FP32_TO_FP16(x) GGML_COMPUTE_FP32_TO_FP16(x)
+                             ^
+/scratch/mcopik/xaas-containers-artifact/data/llama.cpp/llama.cpp/ggml/src/./ggml-impl.h:353:46: note: expanded from macro 'GGML_COMPUTE_FP32_TO_FP16'
+        #define GGML_COMPUTE_FP32_TO_FP16(x) _cvtss_sh(x, 0)
+                                             ^
+/apps/ault/spack/opt/spack/linux-centos8-zen/gcc-8.4.1/intel-oneapi-compilers-2021.3.0-zdnqmgilkc6gnyxxmek7w3ny7iua4qpw/compiler/2021.3.0/linux/lib/clang/13.0.0/include/f16cintrin.h:69:54: note: expanded from macro '_cvtss_sh'
+  (unsigned short)(((__v8hi)__builtin_ia32_vcvtps2ph((__v4sf){a, 0, 0, 0}, \
+                                                     ^
+In file included from /scratch/mcopik/xaas-containers-artifact/data/llama.cpp/llama.cpp/ggml/src/ggml-cpu/vec.cpp:1:
+/scratch/mcopik/xaas-containers-artifact/data/llama.cpp/llama.cpp/ggml/src/ggml-cpu/vec.h:507:12: warning: compound literals are a C99-specific feature [-Wc99-extensions]
+    return GGML_FP32_TO_FP16(v/(1.0f + expf(-v)));
+           ^
+/scratch/mcopik/xaas-containers-artifact/data/llama.cpp/llama.cpp/ggml/src/./ggml-impl.h:513:30: note: expanded from macro 'GGML_FP32_TO_FP16'
+#define GGML_FP32_TO_FP16(x) GGML_COMPUTE_FP32_TO_FP16(x)
+                             ^
+/scratch/mcopik/xaas-containers-artifact/data/llama.cpp/llama.cpp/ggml/src/./ggml-impl.h:353:46: note: expanded from macro 'GGML_COMPUTE_FP32_TO_FP16'
+        #define GGML_COMPUTE_FP32_TO_FP16(x) _cvtss_sh(x, 0)
+                                             ^
+/apps/ault/spack/opt/spack/linux-centos8-zen/gcc-8.4.1/intel-oneapi-compilers-2021.3.0-zdnqmgilkc6gnyxxmek7w3ny7iua4qpw/compiler/2021.3.0/linux/lib/clang/13.0.0/include/f16cintrin.h:69:In file included from 54/scratch/mcopik/xaas-containers-artifact/data/llama.cpp/llama.cpp/ggml/src/ggml-cpu/ops.cpp:: 7note: :
+expanded from macro '_cvtss_sh'/scratch/mcopik/xaas-containers-artifact/data/llama.cpp/llama.cpp/ggml/src/ggml-cpu/vec.h
+:201:  (unsigned short)(((__v8hi)__builtin_ia32_vcvtps2ph((__v4sf){a, 0, 0, 0}, \16
+:                                                     ^ 
+warning: compound literals are a C99-specific feature [-Wc99-extensions]
+        y[i] = GGML_FP32_TO_FP16(GGML_FP16_TO_FP32(y[i]) + GGML_FP16_TO_FP32(x[i])*v);
+               ^
+/scratch/mcopik/xaas-containers-artifact/data/llama.cpp/llama.cpp/ggml/src/./ggml-impl.h:513:30: note: expanded from macro 'GGML_FP32_TO_FP16'
+#define GGML_FP32_TO_FP16(x) GGML_COMPUTE_FP32_TO_FP16(x)
+                             ^
+/scratch/mcopik/xaas-containers-artifact/data/llama.cpp/llama.cpp/ggml/src/./ggml-impl.h:353:46: note: expanded from macro 'GGML_COMPUTE_FP32_TO_FP16'
+        #define GGML_COMPUTE_FP32_TO_FP16(x) _cvtss_sh(x, 0)
+                                             ^
+/apps/ault/spack/opt/spack/linux-centos8-zen/gcc-8.4.1/intel-oneapi-compilers-2021.3.0-zdnqmgilkc6gnyxxmek7w3ny7iua4qpw/compiler/2021.3.0/linux/lib/clang/13.0.0/include/f16cintrin.h:69:54: note: expanded from macro '_cvtss_sh'
+  (unsigned short)(((__v8hi)__builtin_ia32_vcvtps2ph((__v4sf){a, 0, 0, 0}, \
+                                                     ^
+In file included from /scratch/mcopik/xaas-containers-artifact/data/llama.cpp/llama.cpp/ggml/src/ggml-cpu/vec.cpp:1:
+/scratch/mcopik/xaas-containers-artifact/data/llama.cpp/llama.cpp/ggml/src/ggml-cpu/vec.h:722:12: warning: compound literals are a C99-specific feature [-Wc99-extensions]
+    return GGML_FP32_TO_FP16(GGML_FP16_TO_FP32(dy)*s*(1.0f + v*(1.0f - s)));
+           ^
+/scratch/mcopik/xaas-containers-artifact/data/llama.cpp/llama.cpp/ggml/src/./ggml-impl.h:513:30: note: expanded from macro 'GGML_FP32_TO_FP16'
+#define GGML_FP32_TO_FP16(x) GGML_COMPUTE_FP32_TO_FP16(x)
+                             ^
+/scratch/mcopik/xaas-containers-artifact/data/llama.cpp/llama.cpp/ggml/src/./ggml-impl.h:353:46: note: expanded from macro 'GGML_COMPUTE_FP32_TO_FP16'
+        #define GGML_COMPUTE_FP32_TO_FP16(x) _cvtss_sh(x, 0)
+                                             ^
+/apps/ault/spack/opt/spack/linux-centos8-zen/gcc-8.4.1/intel-oneapi-compilers-2021.3.0-zdnqmgilkc6gnyxxmek7w3ny7iua4qpw/compiler/2021.3.0/linux/lib/clang/13.0.0/include/f16cintrin.h:69:54: note: expanded from macro '_cvtss_sh'
+  (unsigned short)(((__v8hi)__builtin_ia32_vcvtps2ph((__v4sf){a, 0, 0, 0}, \
+                                                     ^
+In file included from /scratch/mcopik/xaas-containers-artifact/data/llama.cpp/llama.cpp/ggml/src/ggml-cpu/ops.cpp:7:
+/scratch/mcopik/xaas-containers-artifact/data/llama.cpp/llama.cpp/ggml/src/ggml-cpu/vec.h:314:16: warning: compound literals are a C99-specific feature [-Wc99-extensions]
+        y[i] = GGML_FP32_TO_FP16(GGML_FP16_TO_FP32(y[i])*v);
+               ^
+/scratch/mcopik/xaas-containers-artifact/data/llama.cpp/llama.cpp/ggml/src/./ggml-impl.h:513:30: note: expanded from macro 'GGML_FP32_TO_FP16'
+#define GGML_FP32_TO_FP16(x) GGML_COMPUTE_FP32_TO_FP16(x)
+                             ^
+/scratch/mcopik/xaas-containers-artifact/data/llama.cpp/llama.cpp/ggml/src/./ggml-impl.h:353:46: note: expanded from macro 'GGML_COMPUTE_FP32_TO_FP16'
+        #define GGML_COMPUTE_FP32_TO_FP16(x) _cvtss_sh(x, 0)
+                                             ^
+/apps/ault/spack/opt/spack/linux-centos8-zen/gcc-8.4.1/intel-oneapi-compilers-2021.3.0-zdnqmgilkc6gnyxxmek7w3ny7iua4qpw/compiler/2021.3.0/linux/lib/clang/13.0.0/include/f16cintrin.h:69:54: note: expanded from macro '_cvtss_sh'
+  (unsigned short)(((__v8hi)__builtin_ia32_vcvtps2ph((__v4sf){a, 0, 0, 0}, \
+                                                     ^
+In file included from /scratch/mcopik/xaas-containers-artifact/data/llama.cpp/llama.cpp/ggml/src/ggml-cpu/ops.cpp:7:
+/scratch/mcopik/xaas-containers-artifact/data/llama.cpp/llama.cpp/ggml/src/ggml-cpu/vec.h:329:16: warning: compound literals are a C99-specific feature [-Wc99-extensions]
+        y[i] = GGML_FP32_TO_FP16(v*v);
+               ^
+/scratch/mcopik/xaas-containers-artifact/data/llama.cpp/llama.cpp/ggml/src/./ggml-impl.h:513:30: note: expanded from macro 'GGML_FP32_TO_FP16'
+#define GGML_FP32_TO_FP16(x) GGML_COMPUTE_FP32_TO_FP16(x)
+                             ^
+/scratch/mcopik/xaas-containers-artifact/data/llama.cpp/llama.cpp/ggml/src/./ggml-impl.h:353:46: note: expanded from macro 'GGML_COMPUTE_FP32_TO_FP16'
+        #define GGML_COMPUTE_FP32_TO_FP16(x) _cvtss_sh(x, 0)
+                                             ^
+/apps/ault/spack/opt/spack/linux-centos8-zen/gcc-8.4.1/intel-oneapi-compilers-2021.3.0-zdnqmgilkc6gnyxxmek7w3ny7iua4qpw/compiler/2021.3.0/linux/lib/clang/13.0.0/include/f16cintrin.h:69:54: note: expanded from macro '_cvtss_sh'
+  (unsigned short)(((__v8hi)__builtin_ia32_vcvtps2ph((__v4sf){a, 0, 0, 0}, \
+                                                     ^
+In file included from /scratch/mcopik/xaas-containers-artifact/data/llama.cpp/llama.cpp/ggml/src/ggml-cpu/ops.cpp:7:
+/scratch/mcopik/xaas-containers-artifact/data/llama.cpp/llama.cpp/ggml/src/ggml-cpu/vec.h:335:16: warning: compound literals are a C99-specific feature [-Wc99-extensions]
+        y[i] = GGML_FP32_TO_FP16(sqrtf(GGML_FP16_TO_FP32(x[i])));
+               ^
+/scratch/mcopik/xaas-containers-artifact/data/llama.cpp/llama.cpp/ggml/src/./ggml-impl.h:513:30: note: expanded from macro 'GGML_FP32_TO_FP16'
+#define GGML_FP32_TO_FP16(x) GGML_COMPUTE_FP32_TO_FP16(x)
+                             ^
+/scratch/mcopik/xaas-containers-artifact/data/llama.cpp/llama.cpp/ggml/src/./ggml-impl.h:353:46: note: expanded from macro 'GGML_COMPUTE_FP32_TO_FP16'
+        #define GGML_COMPUTE_FP32_TO_FP16(x) _cvtss_sh(x, 0)
+                                             ^
+/apps/ault/spack/opt/spack/linux-centos8-zen/gcc-8.4.1/intel-oneapi-compilers-2021.3.0-zdnqmgilkc6gnyxxmek7w3ny7iua4qpw/compiler/2021.3.0/linux/lib/clang/13.0.0/include/f16cintrin.h:69:54: note: expanded from macro '_cvtss_sh'
+  (unsigned short)(((__v8hi)__builtin_ia32_vcvtps2ph((__v4sf){a, 0, 0, 0}, \
+                                                     ^
+In file included from /scratch/mcopik/xaas-containers-artifact/data/llama.cpp/llama.cpp/ggml/src/ggml-cpu/ops.cpp:7:
+/scratch/mcopik/xaas-containers-artifact/data/llama.cpp/llama.cpp/ggml/src/ggml-cpu/vec.h:341:16: warning: compound literals are a C99-specific feature [-Wc99-extensions]
+        y[i] = GGML_FP32_TO_FP16(logf(GGML_FP16_TO_FP32(x[i])));
+               ^
+/scratch/mcopik/xaas-containers-artifact/data/llama.cpp/llama.cpp/ggml/src/./ggml-impl.h:513:30: note: expanded from macro 'GGML_FP32_TO_FP16'
+#define GGML_FP32_TO_FP16(x) GGML_COMPUTE_FP32_TO_FP16(x)
+                             ^
+/scratch/mcopik/xaas-containers-artifact/data/llama.cpp/llama.cpp/ggml/src/./ggml-impl.h:353:46: note: expanded from macro 'GGML_COMPUTE_FP32_TO_FP16'
+        #define GGML_COMPUTE_FP32_TO_FP16(x) _cvtss_sh(x, 0)
+                                             ^
+/apps/ault/spack/opt/spack/linux-centos8-zen/gcc-8.4.1/intel-oneapi-compilers-2021.3.0-zdnqmgilkc6gnyxxmek7w3ny7iua4qpw/compiler/2021.3.0/linux/lib/clang/13.0.0/include/f16cintrin.h:69:54: note: expanded from macro '_cvtss_sh'
+  (unsigned short)(((__v8hi)__builtin_ia32_vcvtps2ph((__v4sf){a, 0, 0, 0}, \
+                                                     ^
+In file included from /scratch/mcopik/xaas-containers-artifact/data/llama.cpp/llama.cpp/ggml/src/ggml-cpu/ops.cpp:7:
+/scratch/mcopik/xaas-containers-artifact/data/llama.cpp/llama.cpp/ggml/src/ggml-cpu/vec.h:347:16: warning: compound literals are a C99-specific feature [-Wc99-extensions]
+        y[i] = GGML_FP32_TO_FP16(sinf(GGML_FP16_TO_FP32(x[i])));
+               ^
+/scratch/mcopik/xaas-containers-artifact/data/llama.cpp/llama.cpp/ggml/src/./ggml-impl.h:513:30: note: expanded from macro 'GGML_FP32_TO_FP16'
+#define GGML_FP32_TO_FP16(x) GGML_COMPUTE_FP32_TO_FP16(x)
+                             ^
+/scratch/mcopik/xaas-containers-artifact/data/llama.cpp/llama.cpp/ggml/src/./ggml-impl.h:353:46: note: expanded from macro 'GGML_COMPUTE_FP32_TO_FP16'
+        #define GGML_COMPUTE_FP32_TO_FP16(x) _cvtss_sh(x, 0)
+                                             ^
+/apps/ault/spack/opt/spack/linux-centos8-zen/gcc-8.4.1/intel-oneapi-compilers-2021.3.0-zdnqmgilkc6gnyxxmek7w3ny7iua4qpw/compiler/2021.3.0/linux/lib/clang/13.0.0/include/f16cintrin.h:69:54: note: expanded from macro '_cvtss_sh'
+  (unsigned short)(((__v8hi)__builtin_ia32_vcvtps2ph((__v4sf){a, 0, 0, 0}, \
+                                                     ^
+In file included from /scratch/mcopik/xaas-containers-artifact/data/llama.cpp/llama.cpp/ggml/src/ggml-cpu/ops.cpp:7:
+/scratch/mcopik/xaas-containers-artifact/data/llama.cpp/llama.cpp/ggml/src/ggml-cpu/vec.h:353:16: warning: compound literals are a C99-specific feature [-Wc99-extensions]
+        y[i] = GGML_FP32_TO_FP16(cosf(GGML_FP16_TO_FP32(x[i])));
+               ^
+/scratch/mcopik/xaas-containers-artifact/data/llama.cpp/llama.cpp/ggml/src/./ggml-impl.h:513:30: note: expanded from macro 'GGML_FP32_TO_FP16'
+#define GGML_FP32_TO_FP16(x) GGML_COMPUTE_FP32_TO_FP16(x)
+                             ^
+/scratch/mcopik/xaas-containers-artifact/data/llama.cpp/llama.cpp/ggml/src/./ggml-impl.h:353:46: note: expanded from macro 'GGML_COMPUTE_FP32_TO_FP16'
+        #define GGML_COMPUTE_FP32_TO_FP16(x) _cvtss_sh(x, 0)
+                                             ^
+/apps/ault/spack/opt/spack/linux-centos8-zen/gcc-8.4.1/intel-oneapi-compilers-2021.3.0-zdnqmgilkc6gnyxxmek7w3ny7iua4qpw/compiler/2021.3.0/linux/lib/clang/13.0.0/include/f16cintrin.h:69:54: note: expanded from macro '_cvtss_sh'
+  (unsigned short)(((__v8hi)__builtin_ia32_vcvtps2ph((__v4sf){a, 0, 0, 0}, \
+                                                     ^
+In file included from /scratch/mcopik/xaas-containers-artifact/data/llama.cpp/llama.cpp/ggml/src/ggml-cpu/ops.cpp:7:
+/scratch/mcopik/xaas-containers-artifact/data/llama.cpp/llama.cpp/ggml/src/ggml-cpu/vec.h:359:16: warning: compound literals are a C99-specific feature [-Wc99-extensions]
+        y[i] = GGML_FP32_TO_FP16(fabsf(GGML_FP16_TO_FP32(x[i])));
+               ^
+/scratch/mcopik/xaas-containers-artifact/data/llama.cpp/llama.cpp/ggml/src/./ggml-impl.h:513:30: note: expanded from macro 'GGML_FP32_TO_FP16'
+#define GGML_FP32_TO_FP16(x) GGML_COMPUTE_FP32_TO_FP16(x)
+                             ^
+/scratch/mcopik/xaas-containers-artifact/data/llama.cpp/llama.cpp/ggml/src/./ggml-impl.h:353:46: note: expanded from macro 'GGML_COMPUTE_FP32_TO_FP16'
+        #define GGML_COMPUTE_FP32_TO_FP16(x) _cvtss_sh(x, 0)
+                                             ^
+/apps/ault/spack/opt/spack/linux-centos8-zen/gcc-8.4.1/intel-oneapi-compilers-2021.3.0-zdnqmgilkc6gnyxxmek7w3ny7iua4qpw/compiler/2021.3.0/linux/lib/clang/13.0.0/include/f16cintrin.h:69:54: note: expanded from macro '_cvtss_sh'
+  (unsigned short)(((__v8hi)__builtin_ia32_vcvtps2ph((__v4sf){a, 0, 0, 0}, \
+                                                     ^
+In file included from /scratch/mcopik/xaas-containers-artifact/data/llama.cpp/llama.cpp/ggml/src/ggml-cpu/ops.cpp:7:
+/scratch/mcopik/xaas-containers-artifact/data/llama.cpp/llama.cpp/ggml/src/ggml-cpu/vec.h:366:16: warning: compound literals are a C99-specific feature [-Wc99-extensions]
+        y[i] = GGML_FP32_TO_FP16((v > 0.f) ? 1.f : ((v < 0.f) ? -1.f : 0.f));
+               ^
+/scratch/mcopik/xaas-containers-artifact/data/llama.cpp/llama.cpp/ggml/src/./ggml-impl.h:513:30: note: expanded from macro 'GGML_FP32_TO_FP16'
+#define GGML_FP32_TO_FP16(x) GGML_COMPUTE_FP32_TO_FP16(x)
+                             ^
+/scratch/mcopik/xaas-containers-artifact/data/llama.cpp/llama.cpp/ggml/src/./ggml-impl.h:353:46: note: expanded from macro 'GGML_COMPUTE_FP32_TO_FP16'
+        #define GGML_COMPUTE_FP32_TO_FP16(x) _cvtss_sh(x, 0)
+                                             ^
+/apps/ault/spack/opt/spack/linux-centos8-zen/gcc-8.4.1/intel-oneapi-compilers-2021.3.0-zdnqmgilkc6gnyxxmek7w3ny7iua4qpw/compiler/2021.3.0/linux/lib/clang/13.0.0/include/f16cintrin.h:69:54: note: expanded from macro '_cvtss_sh'
+  (unsigned short)(((__v8hi)__builtin_ia32_vcvtps2ph((__v4sf){a, 0, 0, 0}, \
+                                                     ^
+In file included from /scratch/mcopik/xaas-containers-artifact/data/llama.cpp/llama.cpp/ggml/src/ggml-cpu/ops.cpp:7:
+/scratch/mcopik/xaas-containers-artifact/data/llama.cpp/llama.cpp/ggml/src/ggml-cpu/vec.h:372:16: warning: compound literals are a C99-specific feature [-Wc99-extensions]
+        y[i] = GGML_FP32_TO_FP16((GGML_FP16_TO_FP32(x[i]) > 0.f) ? 1.f : 0.f);
+               ^
+/scratch/mcopik/xaas-containers-artifact/data/llama.cpp/llama.cpp/ggml/src/./ggml-impl.h:513:30: note: expanded from macro 'GGML_FP32_TO_FP16'
+#define GGML_FP32_TO_FP16(x) GGML_COMPUTE_FP32_TO_FP16(x)
+                             ^
+/scratch/mcopik/xaas-containers-artifact/data/llama.cpp/llama.cpp/ggml/src/./ggml-impl.h:353:46: note: expanded from macro 'GGML_COMPUTE_FP32_TO_FP16'
+        #define GGML_COMPUTE_FP32_TO_FP16(x) _cvtss_sh(x, 0)
+                                             ^
+/apps/ault/spack/opt/spack/linux-centos8-zen/gcc-8.4.1/intel-oneapi-compilers-2021.3.0-zdnqmgilkc6gnyxxmek7w3ny7iua4qpw/compiler/2021.3.0/linux/lib/clang/13.0.0/include/f16cintrin.h:69:54: note: expanded from macro '_cvtss_sh'
+  (unsigned short)(((__v8hi)__builtin_ia32_vcvtps2ph((__v4sf){a, 0, 0, 0}, \
+                                                     ^
+In file included from /scratch/mcopik/xaas-containers-artifact/data/llama.cpp/llama.cpp/ggml/src/ggml-cpu/ops.cpp:7:
+/scratch/mcopik/xaas-containers-artifact/data/llama.cpp/llama.cpp/ggml/src/ggml-cpu/vec.h:378:16: warning: compound literals are a C99-specific feature [-Wc99-extensions]
+        y[i] = GGML_FP32_TO_FP16(tanhf(GGML_FP16_TO_FP32(x[i])));
+               ^
+/scratch/mcopik/xaas-containers-artifact/data/llama.cpp/llama.cpp/ggml/src/./ggml-impl.h:513:30: note: expanded from macro 'GGML_FP32_TO_FP16'
+#define GGML_FP32_TO_FP16(x) GGML_COMPUTE_FP32_TO_FP16(x)
+                             ^
+/scratch/mcopik/xaas-containers-artifact/data/llama.cpp/llama.cpp/ggml/src/./ggml-impl.h:353:46: note: expanded from macro 'GGML_COMPUTE_FP32_TO_FP16'
+        #define GGML_COMPUTE_FP32_TO_FP16(x) _cvtss_sh(x, 0)
+                                             ^
+/apps/ault/spack/opt/spack/linux-centos8-zen/gcc-8.4.1/intel-oneapi-compilers-2021.3.0-zdnqmgilkc6gnyxxmek7w3ny7iua4qpw/compiler/2021.3.0/linux/lib/clang/13.0.0/include/f16cintrin.h:69:54: note: expanded from macro '_cvtss_sh'
+  (unsigned short)(((__v8hi)__builtin_ia32_vcvtps2ph((__v4sf){a, 0, 0, 0}, \
+                                                     ^
+In file included from /scratch/mcopik/xaas-containers-artifact/data/llama.cpp/llama.cpp/ggml/src/ggml-cpu/ops.cpp:7:
+/scratch/mcopik/xaas-containers-artifact/data/llama.cpp/llama.cpp/ggml/src/ggml-cpu/vec.h:384:16: warning: compound literals are a C99-specific feature [-Wc99-extensions]
+        y[i] = GGML_FP32_TO_FP16(expm1f(GGML_FP16_TO_FP32(x[i])));
+               ^
+/scratch/mcopik/xaas-containers-artifact/data/llama.cpp/llama.cpp/ggml/src/./ggml-impl.h:513:30: note: expanded from macro 'GGML_FP32_TO_FP16'
+#define GGML_FP32_TO_FP16(x) GGML_COMPUTE_FP32_TO_FP16(x)
+                             ^
+/scratch/mcopik/xaas-containers-artifact/data/llama.cpp/llama.cpp/ggml/src/./ggml-impl.h:353:46: note: expanded from macro 'GGML_COMPUTE_FP32_TO_FP16'
+        #define GGML_COMPUTE_FP32_TO_FP16(x) _cvtss_sh(x, 0)
+                                             ^
+/apps/ault/spack/opt/spack/linux-centos8-zen/gcc-8.4.1/intel-oneapi-compilers-2021.3.0-zdnqmgilkc6gnyxxmek7w3ny7iua4qpw/compiler/2021.3.0/linux/lib/clang/13.0.0/include/f16cintrin.h:69:54: note: expanded from macro '_cvtss_sh'
+  (unsigned short)(((__v8hi)__builtin_ia32_vcvtps2ph((__v4sf){a, 0, 0, 0}, \
+                                                     ^
+In file included from /scratch/mcopik/xaas-containers-artifact/data/llama.cpp/llama.cpp/ggml/src/ggml-cpu/ops.cpp:7:
+/scratch/mcopik/xaas-containers-artifact/data/llama.cpp/llama.cpp/ggml/src/ggml-cpu/vec.h:391:16: warning: compound literals are a C99-specific feature [-Wc99-extensions]
+        y[i] = GGML_FP32_TO_FP16((v > 0.f) ? v : 0.f);
+               ^
+/scratch/mcopik/xaas-containers-artifact/data/llama.cpp/llama.cpp/ggml/src/./ggml-impl.h:513:30: note: expanded from macro 'GGML_FP32_TO_FP16'
+#define GGML_FP32_TO_FP16(x) GGML_COMPUTE_FP32_TO_FP16(x)
+                             ^
+/scratch/mcopik/xaas-containers-artifact/data/llama.cpp/llama.cpp/ggml/src/./ggml-impl.h:353:46: note: expanded from macro 'GGML_COMPUTE_FP32_TO_FP16'
+        #define GGML_COMPUTE_FP32_TO_FP16(x) _cvtss_sh(x, 0)
+                                             ^
+/apps/ault/spack/opt/spack/linux-centos8-zen/gcc-8.4.1/intel-oneapi-compilers-2021.3.0-zdnqmgilkc6gnyxxmek7w3ny7iua4qpw/compiler/2021.3.0/linux/lib/clang/13.0.0/include/f16cintrin.h:69:54: note: expanded from macro '_cvtss_sh'
+  (unsigned short)(((__v8hi)__builtin_ia32_vcvtps2ph((__v4sf){a, 0, 0, 0}, \
+                                                     ^
+In file included from /scratch/mcopik/xaas-containers-artifact/data/llama.cpp/llama.cpp/ggml/src/ggml-cpu/ops.cpp:7:
+/scratch/mcopik/xaas-containers-artifact/data/llama.cpp/llama.cpp/ggml/src/ggml-cpu/vec.h:398:16: warning: compound literals are a C99-specific feature [-Wc99-extensions]
+        y[i] = GGML_FP32_TO_FP16(((v > 0.f) ? v : 0.f) + ns * ((v < 0.0f) ? v : 0.f));
+               ^
+/scratch/mcopik/xaas-containers-artifact/data/llama.cpp/llama.cpp/ggml/src/./ggml-impl.h:513:30: note: expanded from macro 'GGML_FP32_TO_FP16'
+#define GGML_FP32_TO_FP16(x) GGML_COMPUTE_FP32_TO_FP16(x)
+                             ^
+/scratch/mcopik/xaas-containers-artifact/data/llama.cpp/llama.cpp/ggml/src/./ggml-impl.h:353:46: note: expanded from macro 'GGML_COMPUTE_FP32_TO_FP16'
+        #define GGML_COMPUTE_FP32_TO_FP16(x) _cvtss_sh(x, 0)
+                                             ^
+/apps/ault/spack/opt/spack/linux-centos8-zen/gcc-8.4.1/intel-oneapi-compilers-2021.3.0-zdnqmgilkc6gnyxxmek7w3ny7iua4qpw/compiler/2021.3.0/linux/lib/clang/13.0.0/include/f16cintrin.h:69:54: note: expanded from macro '_cvtss_sh'
+  (unsigned short)(((__v8hi)__builtin_ia32_vcvtps2ph((__v4sf){a, 0, 0, 0}, \
+                                                     ^
+In file included from /scratch/mcopik/xaas-containers-artifact/data/llama.cpp/llama.cpp/ggml/src/ggml-cpu/ops.cpp:7:
+/scratch/mcopik/xaas-containers-artifact/data/llama.cpp/llama.cpp/ggml/src/ggml-cpu/vec.h:404:16: warning: compound literals are a C99-specific feature [-Wc99-extensions]
+        y[i] = GGML_FP32_TO_FP16(1.f / (1.f + expf(-GGML_FP16_TO_FP32(x[i]))));
+               ^
+/scratch/mcopik/xaas-containers-artifact/data/llama.cpp/llama.cpp/ggml/src/./ggml-impl.h:513:30: note: expanded from macro 'GGML_FP32_TO_FP16'
+#define GGML_FP32_TO_FP16(x) GGML_COMPUTE_FP32_TO_FP16(x)
+                             ^
+/scratch/mcopik/xaas-containers-artifact/data/llama.cpp/llama.cpp/ggml/src/./ggml-impl.h:353:46: note: expanded from macro 'GGML_COMPUTE_FP32_TO_FP16'
+        #define GGML_COMPUTE_FP32_TO_FP16(x) _cvtss_sh(x, 0)
+                                             ^
+/apps/ault/spack/opt/spack/linux-centos8-zen/gcc-8.4.1/intel-oneapi-compilers-2021.3.0-zdnqmgilkc6gnyxxmek7w3ny7iua4qpw/compiler/2021.3.0/linux/lib/clang/13.0.0/include/f16cintrin.h:69:54: note: expanded from macro '_cvtss_sh'
+  (unsigned short)(((__v8hi)__builtin_ia32_vcvtps2ph((__v4sf){a, 0, 0, 0}, \
+                                                     ^
+In file included from /scratch/mcopik/xaas-containers-artifact/data/llama.cpp/llama.cpp/ggml/src/ggml-cpu/ops.cpp:7:
+/scratch/mcopik/xaas-containers-artifact/data/llama.cpp/llama.cpp/ggml/src/ggml-cpu/vec.h:412:16: warning: compound literals are a C99-specific feature [-Wc99-extensions]
+        y[i] = GGML_FP32_TO_FP16(v * fminf(1.0f, fmaxf(0.0f, (v + 3.0f) / 6.0f)));
+               ^
+/scratch/mcopik/xaas-containers-artifact/data/llama.cpp/llama.cpp/ggml/src/./ggml-impl.h:513:30: note: expanded from macro 'GGML_FP32_TO_FP16'
+#define GGML_FP32_TO_FP16(x) GGML_COMPUTE_FP32_TO_FP16(x)
+                             ^
+/scratch/mcopik/xaas-containers-artifact/data/llama.cpp/llama.cpp/ggml/src/./ggml-impl.h:353:46: note: expanded from macro 'GGML_COMPUTE_FP32_TO_FP16'
+        #define GGML_COMPUTE_FP32_TO_FP16(x) _cvtss_sh(x, 0)
+                                             ^
+/apps/ault/spack/opt/spack/linux-centos8-zen/gcc-8.4.1/intel-oneapi-compilers-2021.3.0-zdnqmgilkc6gnyxxmek7w3ny7iua4qpw/compiler/2021.3.0/linux/lib/clang/13.0.0/include/f16cintrin.h:69:54: note: expanded from macro '_cvtss_sh'
+  (unsigned short)(((__v8hi)__builtin_ia32_vcvtps2ph((__v4sf){a, 0, 0, 0}, \
+                                                     ^
+In file included from /scratch/mcopik/xaas-containers-artifact/data/llama.cpp/llama.cpp/ggml/src/ggml-cpu/ops.cpp:7:
+/scratch/mcopik/xaas-containers-artifact/data/llama.cpp/llama.cpp/ggml/src/ggml-cpu/vec.h:418:16: warning: compound literals are a C99-specific feature [-Wc99-extensions]
+        y[i] = GGML_FP32_TO_FP16(fminf(1.0f, fmaxf(0.0f, (GGML_FP16_TO_FP32(x[i]) + 3.0f) / 6.0f)));
+               ^
+/scratch/mcopik/xaas-containers-artifact/data/llama.cpp/llama.cpp/ggml/src/./ggml-impl.h:513:30: note: expanded from macro 'GGML_FP32_TO_FP16'
+#define GGML_FP32_TO_FP16(x) GGML_COMPUTE_FP32_TO_FP16(x)
+                             ^
+/scratch/mcopik/xaas-containers-artifact/data/llama.cpp/llama.cpp/ggml/src/./ggml-impl.h:353:46: note: expanded from macro 'GGML_COMPUTE_FP32_TO_FP16'
+        #define GGML_COMPUTE_FP32_TO_FP16(x) _cvtss_sh(x, 0)
+                                             ^
+/apps/ault/spack/opt/spack/linux-centos8-zen/gcc-8.4.1/intel-oneapi-compilers-2021.3.0-zdnqmgilkc6gnyxxmek7w3ny7iua4qpw/compiler/2021.3.0/linux/lib/clang/13.0.0/include/f16cintrin.h:69:54: note: expanded from macro '_cvtss_sh'
+  (unsigned short)(((__v8hi)__builtin_ia32_vcvtps2ph((__v4sf){a, 0, 0, 0}, \
+                                                     ^
+In file included from /scratch/mcopik/xaas-containers-artifact/data/llama.cpp/llama.cpp/ggml/src/ggml-cpu/ops.cpp:7:
+/scratch/mcopik/xaas-containers-artifact/data/llama.cpp/llama.cpp/ggml/src/ggml-cpu/vec.h:424:16: warning: compound literals are a C99-specific feature [-Wc99-extensions]
+        y[i] = GGML_FP32_TO_FP16(expf(GGML_FP16_TO_FP32(x[i])));
+               ^
+/scratch/mcopik/xaas-containers-artifact/data/llama.cpp/llama.cpp/ggml/src/./ggml-impl.h:513:30: note: expanded from macro 'GGML_FP32_TO_FP16'
+#define GGML_FP32_TO_FP16(x) GGML_COMPUTE_FP32_TO_FP16(x)
+                             ^
+/scratch/mcopik/xaas-containers-artifact/data/llama.cpp/llama.cpp/ggml/src/./ggml-impl.h:353:46: note: expanded from macro 'GGML_COMPUTE_FP32_TO_FP16'
+        #define GGML_COMPUTE_FP32_TO_FP16(x) _cvtss_sh(x, 0)
+                                             ^
+/apps/ault/spack/opt/spack/linux-centos8-zen/gcc-8.4.1/intel-oneapi-compilers-2021.3.0-zdnqmgilkc6gnyxxmek7w3ny7iua4qpw/compiler/2021.3.0/linux/lib/clang/13.0.0/include/f16cintrin.h:69:54: note: expanded from macro '_cvtss_sh'
+  (unsigned short)(((__v8hi)__builtin_ia32_vcvtps2ph((__v4sf){a, 0, 0, 0}, \
+                                                     ^
+In file included from /scratch/mcopik/xaas-containers-artifact/data/llama.cpp/llama.cpp/ggml/src/ggml-cpu/ops.cpp:7:
+/scratch/mcopik/xaas-containers-artifact/data/llama.cpp/llama.cpp/ggml/src/ggml-cpu/vec.h:452:32: warning: compound literals are a C99-specific feature [-Wc99-extensions]
+            ggml_fp16_t fp16 = GGML_FP32_TO_FP16(x[i]);
+                               ^
+/scratch/mcopik/xaas-containers-artifact/data/llama.cpp/llama.cpp/ggml/src/./ggml-impl.h:513:30: note: expanded from macro 'GGML_FP32_TO_FP16'
+#define GGML_FP32_TO_FP16(x) GGML_COMPUTE_FP32_TO_FP16(x)
+                             ^
+/scratch/mcopik/xaas-containers-artifact/data/llama.cpp/llama.cpp/ggml/src/./ggml-impl.h:353:46: note: expanded from macro 'GGML_COMPUTE_FP32_TO_FP16'
+        #define GGML_COMPUTE_FP32_TO_FP16(x) _cvtss_sh(x, 0)
+                                             ^
+/apps/ault/spack/opt/spack/linux-centos8-zen/gcc-8.4.1/intel-oneapi-compilers-2021.3.0-zdnqmgilkc6gnyxxmek7w3ny7iua4qpw/compiler/2021.3.0/linux/lib/clang/13.0.0/include/f16cintrin.h:69:54: note: expanded from macro '_cvtss_sh'
+  (unsigned short)(((__v8hi)__builtin_ia32_vcvtps2ph((__v4sf){a, 0, 0, 0}, \
+                                                     ^
+In file included from /scratch/mcopik/xaas-containers-artifact/data/llama.cpp/llama.cpp/ggml/src/ggml-cpu/ops.cpp:7:
+/scratch/mcopik/xaas-containers-artifact/data/llama.cpp/llama.cpp/ggml/src/ggml-cpu/vec.h:481:28: warning: compound literals are a C99-specific feature [-Wc99-extensions]
+        ggml_fp16_t fp16 = GGML_FP32_TO_FP16(x[i]);
+                           ^
+/scratch/mcopik/xaas-containers-artifact/data/llama.cpp/llama.cpp/ggml/src/./ggml-impl.h:513:30: note: expanded from macro 'GGML_FP32_TO_FP16'
+#define GGML_FP32_TO_FP16(x) GGML_COMPUTE_FP32_TO_FP16(x)
+                             ^
+/scratch/mcopik/xaas-containers-artifact/data/llama.cpp/llama.cpp/ggml/src/./ggml-impl.h:353:46: note: expanded from macro 'GGML_COMPUTE_FP32_TO_FP16'
+        #define GGML_COMPUTE_FP32_TO_FP16(x) _cvtss_sh(x, 0)
+                                             ^
+/apps/ault/spack/opt/spack/linux-centos8-zen/gcc-8.4.1/intel-oneapi-compilers-2021.3.0-zdnqmgilkc6gnyxxmek7w3ny7iua4qpw/compiler/2021.3.0/linux/lib/clang/13.0.0/include/f16cintrin.h:69:54: note: expanded from macro '_cvtss_sh'
+  (unsigned short)(((__v8hi)__builtin_ia32_vcvtps2ph((__v4sf){a, 0, 0, 0}, \
+                                                     ^
+In file included from /scratch/mcopik/xaas-containers-artifact/data/llama.cpp/llama.cpp/ggml/src/ggml-cpu/ops.cpp:7:
+/scratch/mcopik/xaas-containers-artifact/data/llama.cpp/llama.cpp/ggml/src/ggml-cpu/vec.h:497:16: warning: compound literals are a C99-specific feature [-Wc99-extensions]
+        y[i] = GGML_FP32_TO_FP16(v*(1.0f/(1.0f+expf(GELU_QUICK_COEF*v))));
+               ^
+/scratch/mcopik/xaas-containers-artifact/data/llama.cpp/llama.cpp/ggml/src/./ggml-impl.h:513:30: note: expanded from macro 'GGML_FP32_TO_FP16'
+#define GGML_FP32_TO_FP16(x) GGML_COMPUTE_FP32_TO_FP16(x)
+                             ^
+/scratch/mcopik/xaas-containers-artifact/data/llama.cpp/llama.cpp/ggml/src/./ggml-impl.h:353:46: note: expanded from macro 'GGML_COMPUTE_FP32_TO_FP16'
+        #define GGML_COMPUTE_FP32_TO_FP16(x) _cvtss_sh(x, 0)
+                                             ^
+/apps/ault/spack/opt/spack/linux-centos8-zen/gcc-8.4.1/intel-oneapi-compilers-2021.3.0-zdnqmgilkc6gnyxxmek7w3ny7iua4qpw/compiler/2021.3.0/linux/lib/clang/13.0.0/include/f16cintrin.h:69:54: note: expanded from macro '_cvtss_sh'
+  (unsigned short)(((__v8hi)__builtin_ia32_vcvtps2ph((__v4sf){a, 0, 0, 0}, \
+                                                     ^
+In file included from /scratch/mcopik/xaas-containers-artifact/data/llama.cpp/llama.cpp/ggml/src/ggml-cpu/ops.cpp:7:
+/scratch/mcopik/xaas-containers-artifact/data/llama.cpp/llama.cpp/ggml/src/ggml-cpu/vec.h:507:12: warning: compound literals are a C99-specific feature [-Wc99-extensions]
+    return GGML_FP32_TO_FP16(v/(1.0f + expf(-v)));
+           ^
+/scratch/mcopik/xaas-containers-artifact/data/llama.cpp/llama.cpp/ggml/src/./ggml-impl.h:513:30: note: expanded from macro 'GGML_FP32_TO_FP16'
+#define GGML_FP32_TO_FP16(x) GGML_COMPUTE_FP32_TO_FP16(x)
+                             ^
+/scratch/mcopik/xaas-containers-artifact/data/llama.cpp/llama.cpp/ggml/src/./ggml-impl.h:353:46: note: expanded from macro 'GGML_COMPUTE_FP32_TO_FP16'
+        #define GGML_COMPUTE_FP32_TO_FP16(x) _cvtss_sh(x, 0)
+                                             ^
+/apps/ault/spack/opt/spack/linux-centos8-zen/gcc-8.4.1/intel-oneapi-compilers-2021.3.0-zdnqmgilkc6gnyxxmek7w3ny7iua4qpw/compiler/2021.3.0/linux/lib/clang/13.0.0/include/f16cintrin.h:69:54: note: expanded from macro '_cvtss_sh'
+  (unsigned short)(((__v8hi)__builtin_ia32_vcvtps2ph((__v4sf){a, 0, 0, 0}, \
+                                                     ^
+In file included from /scratch/mcopik/xaas-containers-artifact/data/llama.cpp/llama.cpp/ggml/src/ggml-cpu/ops.cpp:7:
+/scratch/mcopik/xaas-containers-artifact/data/llama.cpp/llama.cpp/ggml/src/ggml-cpu/vec.h:722:12: warning: compound literals are a C99-specific feature [-Wc99-extensions]
+    return GGML_FP32_TO_FP16(GGML_FP16_TO_FP32(dy)*s*(1.0f + v*(1.0f - s)));
+           ^
+/scratch/mcopik/xaas-containers-artifact/data/llama.cpp/llama.cpp/ggml/src/./ggml-impl.h:513:30: note: expanded from macro 'GGML_FP32_TO_FP16'
+#define GGML_FP32_TO_FP16(x) GGML_COMPUTE_FP32_TO_FP16(x)
+                             ^
+/scratch/mcopik/xaas-containers-artifact/data/llama.cpp/llama.cpp/ggml/src/./ggml-impl.h:353:46: note: expanded from macro 'GGML_COMPUTE_FP32_TO_FP16'
+        #define GGML_COMPUTE_FP32_TO_FP16(x) _cvtss_sh(x, 0)
+                                             ^
+/apps/ault/spack/opt/spack/linux-centos8-zen/gcc-8.4.1/intel-oneapi-compilers-2021.3.0-zdnqmgilkc6gnyxxmek7w3ny7iua4qpw/compiler/2021.3.0/linux/lib/clang/13.0.0/include/f16cintrin.h:69:54: note: expanded from macro '_cvtss_sh'
+  (unsigned short)(((__v8hi)__builtin_ia32_vcvtps2ph((__v4sf){a, 0, 0, 0}, \
+                                                     ^
+/scratch/mcopik/xaas-containers-artifact/data/llama.cpp/llama.cpp/ggml/src/ggml-cpu/ops.cpp:388:47: warning: compound literals are a C99-specific feature [-Wc99-extensions]
+                                dst_ptr[id] = GGML_FP32_TO_FP16(GGML_BF16_TO_FP32(src0_ptr[i00]));
+                                              ^
+/scratch/mcopik/xaas-containers-artifact/data/llama.cpp/llama.cpp/ggml/src/./ggml-impl.h:513:30: note: expanded from macro 'GGML_FP32_TO_FP16'
+#define GGML_FP32_TO_FP16(x) GGML_COMPUTE_FP32_TO_FP16(x)
+                             ^
+/scratch/mcopik/xaas-containers-artifact/data/llama.cpp/llama.cpp/ggml/src/./ggml-impl.h:353:46: note: expanded from macro 'GGML_COMPUTE_FP32_TO_FP16'
+        #define GGML_COMPUTE_FP32_TO_FP16(x) _cvtss_sh(x, 0)
+                                             ^
+/apps/ault/spack/opt/spack/linux-centos8-zen/gcc-8.4.1/intel-oneapi-compilers-2021.3.0-zdnqmgilkc6gnyxxmek7w3ny7iua4qpw/compiler/2021.3.0/linux/lib/clang/13.0.0/include/f16cintrin.h:69:54: note: expanded from macro '_cvtss_sh'
+  (unsigned short)(((__v8hi)__builtin_ia32_vcvtps2ph((__v4sf){a, 0, 0, 0}, \
+                                                     ^
+/scratch/mcopik/xaas-containers-artifact/data/llama.cpp/llama.cpp/ggml/src/ggml-cpu/ops.cpp:489:47: warning: compound literals are a C99-specific feature [-Wc99-extensions]
+                                dst_ptr[id] = GGML_FP32_TO_FP16(GGML_BF16_TO_FP32(*src0_ptr));
+                                              ^
+/scratch/mcopik/xaas-containers-artifact/data/llama.cpp/llama.cpp/ggml/src/./ggml-impl.h:513:30: note: expanded from macro 'GGML_FP32_TO_FP16'
+#define GGML_FP32_TO_FP16(x) GGML_COMPUTE_FP32_TO_FP16(x)
+                             ^
+/scratch/mcopik/xaas-containers-artifact/data/llama.cpp/llama.cpp/ggml/src/./ggml-impl.h:353:46: note: expanded from macro 'GGML_COMPUTE_FP32_TO_FP16'
+        #define GGML_COMPUTE_FP32_TO_FP16(x) _cvtss_sh(x, 0)
+                                             ^
+/apps/ault/spack/opt/spack/linux-centos8-zen/gcc-8.4.1/intel-oneapi-compilers-2021.3.0-zdnqmgilkc6gnyxxmek7w3ny7iua4qpw/compiler/2021.3.0/linux/lib/clang/13.0.0/include/f16cintrin.h:69:54: note: expanded from macro '_cvtss_sh'
+  (unsigned short)(((__v8hi)__builtin_ia32_vcvtps2ph((__v4sf){a, 0, 0, 0}, \
+                                                     ^
+/scratch/mcopik/xaas-containers-artifact/data/llama.cpp/llama.cpp/ggml/src/ggml-cpu/ops.cpp:582:52: warning: compound literals are a C99-specific feature [-Wc99-extensions]
+                        *(ggml_fp16_t *) dst_ptr = GGML_FP32_TO_FP16(GGML_BF16_TO_FP32(*(const ggml_bf16_t *) src0_ptr));
+                                                   ^
+/scratch/mcopik/xaas-containers-artifact/data/llama.cpp/llama.cpp/ggml/src/./ggml-impl.h:513:30: note: expanded from macro 'GGML_FP32_TO_FP16'
+#define GGML_FP32_TO_FP16(x) GGML_COMPUTE_FP32_TO_FP16(x)
+                             ^
+/scratch/mcopik/xaas-containers-artifact/data/llama.cpp/llama.cpp/ggml/src/./ggml-impl.h:353:46: note: expanded from macro 'GGML_COMPUTE_FP32_TO_FP16'
+        #define GGML_COMPUTE_FP32_TO_FP16(x) _cvtss_sh(x, 0)
+                                             ^
+/apps/ault/spack/opt/spack/linux-centos8-zen/gcc-8.4.1/intel-oneapi-compilers-2021.3.0-zdnqmgilkc6gnyxxmek7w3ny7iua4qpw/compiler/2021.3.0/linux/lib/clang/13.0.0/include/f16cintrin.h:69:54: note: expanded from macro '_cvtss_sh'
+  (unsigned short)(((__v8hi)__builtin_ia32_vcvtps2ph((__v4sf){a, 0, 0, 0}, \
+                                                     ^
+/scratch/mcopik/xaas-containers-artifact/data/llama.cpp/llama.cpp/ggml/src/ggml-cpu/ops.cpp:781:47: warning: compound literals are a C99-specific feature [-Wc99-extensions]
+                                dst_ptr[id] = GGML_FP32_TO_FP16(*src0_ptr);
+                                              ^
+/scratch/mcopik/xaas-containers-artifact/data/llama.cpp/llama.cpp/ggml/src/./ggml-impl.h:513:30: note: expanded from macro 'GGML_FP32_TO_FP16'
+#define GGML_FP32_TO_FP16(x) GGML_COMPUTE_FP32_TO_FP16(x)
+                             ^
+/scratch/mcopik/xaas-containers-artifact/data/llama.cpp/llama.cpp/ggml/src/./ggml-impl.h:353:46: note: expanded from macro 'GGML_COMPUTE_FP32_TO_FP16'
+        #define GGML_COMPUTE_FP32_TO_FP16(x) _cvtss_sh(x, 0)
+                                             ^
+/apps/ault/spack/opt/spack/linux-centos8-zen/gcc-8.4.1/intel-oneapi-compilers-2021.3.0-zdnqmgilkc6gnyxxmek7w3ny7iua4qpw/compiler/2021.3.0/linux/lib/clang/13.0.0/include/f16cintrin.h:69:54: note: expanded from macro '_cvtss_sh'
+  (unsigned short)(((__v8hi)__builtin_ia32_vcvtps2ph((__v4sf){a, 0, 0, 0}, \
+                                                     ^
+/scratch/mcopik/xaas-containers-artifact/data/llama.cpp/llama.cpp/ggml/src/ggml-cpu/ops.cpp:894:52: warning: compound literals are a C99-specific feature [-Wc99-extensions]
+                        *(ggml_fp16_t *) dst_ptr = GGML_FP32_TO_FP16(*(const float *) src0_ptr);
+                                                   ^
+/scratch/mcopik/xaas-containers-artifact/data/llama.cpp/llama.cpp/ggml/src/./ggml-impl.h:513:30: note: expanded from macro 'GGML_FP32_TO_FP16'
+#define GGML_FP32_TO_FP16(x) GGML_COMPUTE_FP32_TO_FP16(x)
+                             ^
+/scratch/mcopik/xaas-containers-artifact/data/llama.cpp/llama.cpp/ggml/src/./ggml-impl.h:353:46: note: expanded from macro 'GGML_COMPUTE_FP32_TO_FP16'
+        #define GGML_COMPUTE_FP32_TO_FP16(x) _cvtss_sh(x, 0)
+                                             ^
+/apps/ault/spack/opt/spack/linux-centos8-zen/gcc-8.4.1/intel-oneapi-compilers-2021.3.0-zdnqmgilkc6gnyxxmek7w3ny7iua4qpw/compiler/2021.3.0/linux/lib/clang/13.0.0/include/f16cintrin.h:69:54: note: expanded from macro '_cvtss_sh'
+  (unsigned short)(((__v8hi)__builtin_ia32_vcvtps2ph((__v4sf){a, 0, 0, 0}, \
+                                                     ^
+/scratch/mcopik/xaas-containers-artifact/data/llama.cpp/llama.cpp/ggml/src/ggml-cpu/ops.cpp:1435:26: warning: compound literals are a C99-specific feature [-Wc99-extensions]
+            dst_ptr[i] = GGML_FP32_TO_FP16(GGML_FP16_TO_FP32(src0_ptr[i]) + v);
+                         ^
+/scratch/mcopik/xaas-containers-artifact/data/llama.cpp/llama.cpp/ggml/src/./ggml-impl.h:513:30: note: expanded from macro 'GGML_FP32_TO_FP16'
+#define GGML_FP32_TO_FP16(x) GGML_COMPUTE_FP32_TO_FP16(x)
+                             ^
+/scratch/mcopik/xaas-containers-artifact/data/llama.cpp/llama.cpp/ggml/src/./ggml-impl.h:353:46: note: expanded from macro 'GGML_COMPUTE_FP32_TO_FP16'
+        #define GGML_COMPUTE_FP32_TO_FP16(x) _cvtss_sh(x, 0)
+                                             ^
+/apps/ault/spack/opt/spack/linux-centos8-zen/gcc-8.4.1/intel-oneapi-compilers-2021.3.0-zdnqmgilkc6gnyxxmek7w3ny7iua4qpw/compiler/2021.3.0/linux/lib/clang/13.0.0/include/f16cintrin.h:69:54: note: expanded from macro '_cvtss_sh'
+  (unsigned short)(((__v8hi)__builtin_ia32_vcvtps2ph((__v4sf){a, 0, 0, 0}, \
+                                                     ^
+/scratch/mcopik/xaas-containers-artifact/data/llama.cpp/llama.cpp/ggml/src/ggml-cpu/ops.cpp:1483:26: warning: compound literals are a C99-specific feature [-Wc99-extensions]
+            dst_ptr[i] = GGML_FP32_TO_FP16(GGML_FP16_TO_FP32(src0_ptr[i]) + v);
+                         ^
+/scratch/mcopik/xaas-containers-artifact/data/llama.cpp/llama.cpp/ggml/src/./ggml-impl.h:513:30: note: expanded from macro 'GGML_FP32_TO_FP16'
+#define GGML_FP32_TO_FP16(x) GGML_COMPUTE_FP32_TO_FP16(x)
+                             ^
+/scratch/mcopik/xaas-containers-artifact/data/llama.cpp/llama.cpp/ggml/src/./ggml-impl.h:353:46: note: expanded from macro 'GGML_COMPUTE_FP32_TO_FP16'
+        #define GGML_COMPUTE_FP32_TO_FP16(x) _cvtss_sh(x, 0)
+                                             ^
+/apps/ault/spack/opt/spack/linux-centos8-zen/gcc-8.4.1/intel-oneapi-compilers-2021.3.0-zdnqmgilkc6gnyxxmek7w3ny7iua4qpw/compiler/2021.3.0/linux/lib/clang/13.0.0/include/f16cintrin.h:69:54: note: expanded from macro '_cvtss_sh'
+  (unsigned short)(((__v8hi)__builtin_ia32_vcvtps2ph((__v4sf){a, 0, 0, 0}, \
+                                                     ^
+/scratch/mcopik/xaas-containers-artifact/data/llama.cpp/llama.cpp/ggml/src/ggml-cpu/ops.cpp:1905:38: warning: compound literals are a C99-specific feature [-Wc99-extensions]
+    ((ggml_fp16_t *) dst->data)[0] = GGML_FP32_TO_FP16(sum);
+                                     ^
+/scratch/mcopik/xaas-containers-artifact/data/llama.cpp/llama.cpp/ggml/src/./ggml-impl.h:513:30: note: expanded from macro 'GGML_FP32_TO_FP16'
+#define GGML_FP32_TO_FP16(x) GGML_COMPUTE_FP32_TO_FP16(x)
+                             ^
+/scratch/mcopik/xaas-containers-artifact/data/llama.cpp/llama.cpp/ggml/src/./ggml-impl.h:353:46: note: expanded from macro 'GGML_COMPUTE_FP32_TO_FP16'
+        #define GGML_COMPUTE_FP32_TO_FP16(x) _cvtss_sh(x, 0)
+                                             ^
+/apps/ault/spack/opt/spack/linux-centos8-zen/gcc-8.4.1/intel-oneapi-compilers-2021.3.0-zdnqmgilkc6gnyxxmek7w3ny7iua4qpw/compiler/2021.3.0/linux/lib/clang/13.0.0/include/f16cintrin.h:69:54: note: expanded from macro '_cvtss_sh'
+  (unsigned short)(((__v8hi)__builtin_ia32_vcvtps2ph((__v4sf){a, 0, 0, 0}, \
+                                                     ^
+/scratch/mcopik/xaas-containers-artifact/data/llama.cpp/llama.cpp/ggml/src/ggml-cpu/ops.cpp:4932:26: warning: compound literals are a C99-specific feature [-Wc99-extensions]
+            dst_ptr[i] = GGML_FP32_TO_FP16(MAX(MIN(v, max), min));
+                         ^
+/scratch/mcopik/xaas-containers-artifact/data/llama.cpp/llama.cpp/ggml/src/./ggml-impl.h:513:30: note: expanded from macro 'GGML_FP32_TO_FP16'
+#define GGML_FP32_TO_FP16(x) GGML_COMPUTE_FP32_TO_FP16(x)
+                             ^
+/scratch/mcopik/xaas-containers-artifact/data/llama.cpp/llama.cpp/ggml/src/./ggml-impl.h:353:46: note: expanded from macro 'GGML_COMPUTE_FP32_TO_FP16'
+        #define GGML_COMPUTE_FP32_TO_FP16(x) _cvtss_sh(x, 0)
+                                             ^
+/apps/ault/spack/opt/spack/linux-centos8-zen/gcc-8.4.1/intel-oneapi-compilers-2021.3.0-zdnqmgilkc6gnyxxmek7w3ny7iua4qpw/compiler/2021.3.0/linux/lib/clang/13.0.0/include/f16cintrin.h:69:54: note: expanded from macro '_cvtss_sh'
+  (unsigned short)(((__v8hi)__builtin_ia32_vcvtps2ph((__v4sf){a, 0, 0, 0}, \
+                                                     ^
+/scratch/mcopik/xaas-containers-artifact/data/llama.cpp/llama.cpp/ggml/src/ggml-cpu/ops.cpp:5392:48: warning: compound literals are a C99-specific feature [-Wc99-extensions]
+                            dst_data[0]      = GGML_FP32_TO_FP16(x0*cos_theta - x1*sin_theta);
+                                               ^
+/scratch/mcopik/xaas-containers-artifact/data/llama.cpp/llama.cpp/ggml/src/./ggml-impl.h:513:30: note: expanded from macro 'GGML_FP32_TO_FP16'
+#define GGML_FP32_TO_FP16(x) GGML_COMPUTE_FP32_TO_FP16(x)
+                             ^
+/scratch/mcopik/xaas-containers-artifact/data/llama.cpp/llama.cpp/ggml/src/./ggml-impl.h:353:46: note: expanded from macro 'GGML_COMPUTE_FP32_TO_FP16'
+        #define GGML_COMPUTE_FP32_TO_FP16(x) _cvtss_sh(x, 0)
+                                             ^
+/apps/ault/spack/opt/spack/linux-centos8-zen/gcc-8.4.1/intel-oneapi-compilers-2021.3.0-zdnqmgilkc6gnyxxmek7w3ny7iua4qpw/compiler/2021.3.0/linux/lib/clang/13.0.0/include/f16cintrin.h:69:54: note: expanded from macro '_cvtss_sh'
+  (unsigned short)(((__v8hi)__builtin_ia32_vcvtps2ph((__v4sf){a, 0, 0, 0}, \
+                                                     ^
+/scratch/mcopik/xaas-containers-artifact/data/llama.cpp/llama.cpp/ggml/src/ggml-cpu/ops.cpp:5393:48: warning: compound literals are a C99-specific feature [-Wc99-extensions]
+                            dst_data[n_dims] = GGML_FP32_TO_FP16(x0*sin_theta + x1*cos_theta);
+                                               ^
+/scratch/mcopik/xaas-containers-artifact/data/llama.cpp/llama.cpp/ggml/src/./ggml-impl.h:513:30: note: expanded from macro 'GGML_FP32_TO_FP16'
+#define GGML_FP32_TO_FP16(x) GGML_COMPUTE_FP32_TO_FP16(x)
+                             ^
+/scratch/mcopik/xaas-containers-artifact/data/llama.cpp/llama.cpp/ggml/src/./ggml-impl.h:353:46: note: expanded from macro 'GGML_COMPUTE_FP32_TO_FP16'
+        #define GGML_COMPUTE_FP32_TO_FP16(x) _cvtss_sh(x, 0)
+                                             ^
+/apps/ault/spack/opt/spack/linux-centos8-zen/gcc-8.4.1/intel-oneapi-compilers-2021.3.0-zdnqmgilkc6gnyxxmek7w3ny7iua4qpw/compiler/2021.3.0/linux/lib/clang/13.0.0/include/f16cintrin.h:69:54: note: expanded from macro '_cvtss_sh'
+  (unsigned short)(((__v8hi)__builtin_ia32_vcvtps2ph((__v4sf){a, 0, 0, 0}, \
+                                                     ^
+/scratch/mcopik/xaas-containers-artifact/data/llama.cpp/llama.cpp/ggml/src/ggml-cpu/ops.cpp:5408:50: warning: compound literals are a C99-specific feature [-Wc99-extensions]
+                            dst_data[0]        = GGML_FP32_TO_FP16(x0*cos_theta - x1*sin_theta);
+                                                 ^
+/scratch/mcopik/xaas-containers-artifact/data/llama.cpp/llama.cpp/ggml/src/./ggml-impl.h:513:30: note: expanded from macro 'GGML_FP32_TO_FP16'
+#define GGML_FP32_TO_FP16(x) GGML_COMPUTE_FP32_TO_FP16(x)
+                             ^
+/scratch/mcopik/xaas-containers-artifact/data/llama.cpp/llama.cpp/ggml/src/./ggml-impl.h:353:46: note: expanded from macro 'GGML_COMPUTE_FP32_TO_FP16'
+        #define GGML_COMPUTE_FP32_TO_FP16(x) _cvtss_sh(x, 0)
+                                             ^
+/apps/ault/spack/opt/spack/linux-centos8-zen/gcc-8.4.1/intel-oneapi-compilers-2021.3.0-zdnqmgilkc6gnyxxmek7w3ny7iua4qpw/compiler/2021.3.0/linux/lib/clang/13.0.0/include/f16cintrin.h:69:54: note: expanded from macro '_cvtss_sh'
+  (unsigned short)(((__v8hi)__builtin_ia32_vcvtps2ph((__v4sf){a, 0, 0, 0}, \
+                                                     ^
+/scratch/mcopik/xaas-containers-artifact/data/llama.cpp/llama.cpp/ggml/src/ggml-cpu/ops.cpp:5409:50: warning: compound literals are a C99-specific feature [-Wc99-extensions]
+                            dst_data[n_dims/2] = GGML_FP32_TO_FP16(x0*sin_theta + x1*cos_theta);
+                                                 ^
+/scratch/mcopik/xaas-containers-artifact/data/llama.cpp/llama.cpp/ggml/src/./ggml-impl.h:513:30: note: expanded from macro 'GGML_FP32_TO_FP16'
+#define GGML_FP32_TO_FP16(x) GGML_COMPUTE_FP32_TO_FP16(x)
+                             ^
+/scratch/mcopik/xaas-containers-artifact/data/llama.cpp/llama.cpp/ggml/src/./ggml-impl.h:353:46: note: expanded from macro 'GGML_COMPUTE_FP32_TO_FP16'
+        #define GGML_COMPUTE_FP32_TO_FP16(x) _cvtss_sh(x, 0)
+                                             ^
+/apps/ault/spack/opt/spack/linux-centos8-zen/gcc-8.4.1/intel-oneapi-compilers-2021.3.0-zdnqmgilkc6gnyxxmek7w3ny7iua4qpw/compiler/2021.3.0/linux/lib/clang/13.0.0/include/f16cintrin.h:69:54: note: expanded from macro '_cvtss_sh'
+  (unsigned short)(((__v8hi)__builtin_ia32_vcvtps2ph((__v4sf){a, 0, 0, 0}, \
+                                                     ^
+/scratch/mcopik/xaas-containers-artifact/data/llama.cpp/llama.cpp/ggml/src/ggml-cpu/ops.cpp:5423:39: warning: compound literals are a C99-specific feature [-Wc99-extensions]
+                        dst_data[0] = GGML_FP32_TO_FP16(x0*cos_theta - x1*sin_theta);
+                                      ^
+/scratch/mcopik/xaas-containers-artifact/data/llama.cpp/llama.cpp/ggml/src/./ggml-impl.h:513:30: note: expanded from macro 'GGML_FP32_TO_FP16'
+#define GGML_FP32_TO_FP16(x) GGML_COMPUTE_FP32_TO_FP16(x)
+                             ^
+/scratch/mcopik/xaas-containers-artifact/data/llama.cpp/llama.cpp/ggml/src/./ggml-impl.h:353:46: note: expanded from macro 'GGML_COMPUTE_FP32_TO_FP16'
+        #define GGML_COMPUTE_FP32_TO_FP16(x) _cvtss_sh(x, 0)
+                                             ^
+/apps/ault/spack/opt/spack/linux-centos8-zen/gcc-8.4.1/intel-oneapi-compilers-2021.3.0-zdnqmgilkc6gnyxxmek7w3ny7iua4qpw/compiler/2021.3.0/linux/lib/clang/13.0.0/include/f16cintrin.h:69:54: note: expanded from macro '_cvtss_sh'
+  (unsigned short)(((__v8hi)__builtin_ia32_vcvtps2ph((__v4sf){a, 0, 0, 0}, \
+                                                     ^
+/scratch/mcopik/xaas-containers-artifact/data/llama.cpp/llama.cpp/ggml/src/ggml-cpu/ops.cpp:5424:39: warning: compound literals are a C99-specific feature [-Wc99-extensions]
+                        dst_data[1] = GGML_FP32_TO_FP16(x0*sin_theta + x1*cos_theta);
+                                      ^
+/scratch/mcopik/xaas-containers-artifact/data/llama.cpp/llama.cpp/ggml/src/./ggml-impl.h:513:30: note: expanded from macro 'GGML_FP32_TO_FP16'
+#define GGML_FP32_TO_FP16(x) GGML_COMPUTE_FP32_TO_FP16(x)
+                             ^
+/scratch/mcopik/xaas-containers-artifact/data/llama.cpp/llama.cpp/ggml/src/./ggml-impl.h:353:46: note: expanded from macro 'GGML_COMPUTE_FP32_TO_FP16'
+        #define GGML_COMPUTE_FP32_TO_FP16(x) _cvtss_sh(x, 0)
+                                             ^
+/apps/ault/spack/opt/spack/linux-centos8-zen/gcc-8.4.1/intel-oneapi-compilers-2021.3.0-zdnqmgilkc6gnyxxmek7w3ny7iua4qpw/compiler/2021.3.0/linux/lib/clang/13.0.0/include/f16cintrin.h:69:54: note: expanded from macro '_cvtss_sh'
+  (unsigned short)(((__v8hi)__builtin_ia32_vcvtps2ph((__v4sf){a, 0, 0, 0}, \
+                                                     ^
+/scratch/mcopik/xaas-containers-artifact/data/llama.cpp/llama.cpp/ggml/src/ggml-cpu/ops.cpp:5441:44: warning: compound literals are a C99-specific feature [-Wc99-extensions]
+                        dst_data[0]      = GGML_FP32_TO_FP16(x0*cos_theta - x1*sin_theta);
+                                           ^
+/scratch/mcopik/xaas-containers-artifact/data/llama.cpp/llama.cpp/ggml/src/./ggml-impl.h:513:30: note: expanded from macro 'GGML_FP32_TO_FP16'
+#define GGML_FP32_TO_FP16(x) GGML_COMPUTE_FP32_TO_FP16(x)
+                             ^
+/scratch/mcopik/xaas-containers-artifact/data/llama.cpp/llama.cpp/ggml/src/./ggml-impl.h:353:46: note: expanded from macro 'GGML_COMPUTE_FP32_TO_FP16'
+        #define GGML_COMPUTE_FP32_TO_FP16(x) _cvtss_sh(x, 0)
+                                             ^
+/apps/ault/spack/opt/spack/linux-centos8-zen/gcc-8.4.1/intel-oneapi-compilers-2021.3.0-zdnqmgilkc6gnyxxmek7w3ny7iua4qpw/compiler/2021.3.0/linux/lib/clang/13.0.0/include/f16cintrin.h:69:54: note: expanded from macro '_cvtss_sh'
+  (unsigned short)(((__v8hi)__builtin_ia32_vcvtps2ph((__v4sf){a, 0, 0, 0}, \
+                                                     ^
+/scratch/mcopik/xaas-containers-artifact/data/llama.cpp/llama.cpp/ggml/src/ggml-cpu/ops.cpp:5442:44: warning: compound literals are a C99-specific feature [-Wc99-extensions]
+                        dst_data[n_dims] = GGML_FP32_TO_FP16(x0*sin_theta + x1*cos_theta);
+                                           ^
+/scratch/mcopik/xaas-containers-artifact/data/llama.cpp/llama.cpp/ggml/src/./ggml-impl.h:513:30: note: expanded from macro 'GGML_FP32_TO_FP16'
+#define GGML_FP32_TO_FP16(x) GGML_COMPUTE_FP32_TO_FP16(x)
+                             ^
+/scratch/mcopik/xaas-containers-artifact/data/llama.cpp/llama.cpp/ggml/src/./ggml-impl.h:353:46: note: expanded from macro 'GGML_COMPUTE_FP32_TO_FP16'
+        #define GGML_COMPUTE_FP32_TO_FP16(x) _cvtss_sh(x, 0)
+                                             ^
+/apps/ault/spack/opt/spack/linux-centos8-zen/gcc-8.4.1/intel-oneapi-compilers-2021.3.0-zdnqmgilkc6gnyxxmek7w3ny7iua4qpw/compiler/2021.3.0/linux/lib/clang/13.0.0/include/f16cintrin.h:69:54: note: expanded from macro '_cvtss_sh'
+  (unsigned short)(((__v8hi)__builtin_ia32_vcvtps2ph((__v4sf){a, 0, 0, 0}, \
+                                                     ^
+/scratch/mcopik/xaas-containers-artifact/data/llama.cpp/llama.cpp/ggml/src/ggml-cpu/ops.cpp:5553:48: warning: compound literals are a C99-specific feature [-Wc99-extensions]
+                    dst_data[i10*ne11 + i11] = GGML_FP32_TO_FP16(src[i10]);
+                                               ^
+/scratch/mcopik/xaas-containers-artifact/data/llama.cpp/llama.cpp/ggml/src/./ggml-impl.h:513:30: note: expanded from macro 'GGML_FP32_TO_FP16'
+#define GGML_FP32_TO_FP16(x) GGML_COMPUTE_FP32_TO_FP16(x)
+                             ^
+/scratch/mcopik/xaas-containers-artifact/data/llama.cpp/llama.cpp/ggml/src/./ggml-impl.h:353:46: note: expanded from macro 'GGML_COMPUTE_FP32_TO_FP16'
+        #define GGML_COMPUTE_FP32_TO_FP16(x) _cvtss_sh(x, 0)
+                                             ^
+/apps/ault/spack/opt/spack/linux-centos8-zen/gcc-8.4.1/intel-oneapi-compilers-2021.3.0-zdnqmgilkc6gnyxxmek7w3ny7iua4qpw/compiler/2021.3.0/linux/lib/clang/13.0.0/include/f16cintrin.h:69:54: note: expanded from macro '_cvtss_sh'
+  (unsigned short)(((__v8hi)__builtin_ia32_vcvtps2ph((__v4sf){a, 0, 0, 0}, \
+                                                     ^
+/scratch/mcopik/xaas-containers-artifact/data/llama.cpp/llama.cpp/ggml/src/ggml-cpu/ops.cpp:5846:76: warning: compound literals are a C99-specific feature [-Wc99-extensions]
+                                    dst_data[iic*(KH*KW) + ikh*KW + ikw] = GGML_FP32_TO_FP16(src_data[iih*IW + iiw]);
+                                                                           ^
+/scratch/mcopik/xaas-containers-artifact/data/llama.cpp/llama.cpp/ggml/src/./ggml-impl.h:513:30: note: expanded from macro 'GGML_FP32_TO_FP16'
+#define GGML_FP32_TO_FP16(x) GGML_COMPUTE_FP32_TO_FP16(x)
+                             ^
+/scratch/mcopik/xaas-containers-artifact/data/llama.cpp/llama.cpp/ggml/src/./ggml-impl.h:353:46: note: expanded from macro 'GGML_COMPUTE_FP32_TO_FP16'
+        #define GGML_COMPUTE_FP32_TO_FP16(x) _cvtss_sh(x, 0)
+                                             ^
+/apps/ault/spack/opt/spack/linux-centos8-zen/gcc-8.4.1/intel-oneapi-compilers-2021.3.0-zdnqmgilkc6gnyxxmek7w3ny7iua4qpw/compiler/2021.3.0/linux/lib/clang/13.0.0/include/f16cintrin.h:69:54: note: expanded from macro '_cvtss_sh'
+  (unsigned short)(((__v8hi)__builtin_ia32_vcvtps2ph((__v4sf){a, 0, 0, 0}, \
+                                                     ^
+/scratch/mcopik/xaas-containers-artifact/data/llama.cpp/llama.cpp/ggml/src/ggml-cpu/ops.cpp:6022:52: warning: compound literals are a C99-specific feature [-Wc99-extensions]
+                        dst_data[i10*ne12 + i12] = GGML_FP32_TO_FP16(src[i10]);
+                                                   ^
+/scratch/mcopik/xaas-containers-artifact/data/llama.cpp/llama.cpp/ggml/src/./ggml-impl.h:513:30: note: expanded from macro 'GGML_FP32_TO_FP16'
+#define GGML_FP32_TO_FP16(x) GGML_COMPUTE_FP32_TO_FP16(x)
+                             ^
+/scratch/mcopik/xaas-containers-artifact/data/llama.cpp/llama.cpp/ggml/src/./ggml-impl.h:353:46: note: expanded from macro 'GGML_COMPUTE_FP32_TO_FP16'
+        #define GGML_COMPUTE_FP32_TO_FP16(x) _cvtss_sh(x, 0)
+                                             ^
+/apps/ault/spack/opt/spack/linux-centos8-zen/gcc-8.4.1/intel-oneapi-compilers-2021.3.0-zdnqmgilkc6gnyxxmek7w3ny7iua4qpw/compiler/2021.3.0/linux/lib/clang/13.0.0/include/f16cintrin.h:69:54: note: expanded from macro '_cvtss_sh'
+  (unsigned short)(((__v8hi)__builtin_ia32_vcvtps2ph((__v4sf){a, 0, 0, 0}, \
+                                                     ^
+/scratch/mcopik/xaas-containers-artifact/data/llama.cpp/llama.cpp/ggml/src/ggml-cpu/ops.cpp:6299:53: warning: compound literals are a C99-specific feature [-Wc99-extensions]
+                        ((ggml_fp16_t *) drow)[j] = GGML_FP32_TO_FP16(grad0 + GGML_FP16_TO_FP32(((const ggml_fp16_t *) drow)[j]));
+                                                    ^
+/scratch/mcopik/xaas-containers-artifact/data/llama.cpp/llama.cpp/ggml/src/./ggml-impl.h:513:30: note: expanded from macro 'GGML_FP32_TO_FP16'
+#define GGML_FP32_TO_FP16(x) GGML_COMPUTE_FP32_TO_FP16(x)
+                             ^
+/scratch/mcopik/xaas-containers-artifact/data/llama.cpp/llama.cpp/ggml/src/./ggml-impl.h:353:46: note: expanded from macro 'GGML_COMPUTE_FP32_TO_FP16'
+        #define GGML_COMPUTE_FP32_TO_FP16(x) _cvtss_sh(x, 0)
+                                             ^
+/apps/ault/spack/opt/spack/linux-centos8-zen/gcc-8.4.1/intel-oneapi-compilers-2021.3.0-zdnqmgilkc6gnyxxmek7w3ny7iua4qpw/compiler/2021.3.0/linux/lib/clang/13.0.0/include/f16cintrin.h:69:54: note: expanded from macro '_cvtss_sh'
+  (unsigned short)(((__v8hi)__builtin_ia32_vcvtps2ph((__v4sf){a, 0, 0, 0}, \
+                                                     ^
+/scratch/mcopik/xaas-containers-artifact/data/llama.cpp/llama.cpp/ggml/src/ggml-cpu/ops.cpp:6318:62: warning: compound literals are a C99-specific feature [-Wc99-extensions]
+                                ((ggml_fp16_t *) drow)[j] += GGML_FP32_TO_FP16(grad);
+                                                             ^
+/scratch/mcopik/xaas-containers-artifact/data/llama.cpp/llama.cpp/ggml/src/./ggml-impl.h:513:30: note: expanded from macro 'GGML_FP32_TO_FP16'
+#define GGML_FP32_TO_FP16(x) GGML_COMPUTE_FP32_TO_FP16(x)
+                             ^
+/scratch/mcopik/xaas-containers-artifact/data/llama.cpp/llama.cpp/ggml/src/./ggml-impl.h:353:46: note: expanded from macro 'GGML_COMPUTE_FP32_TO_FP16'
+        #define GGML_COMPUTE_FP32_TO_FP16(x) _cvtss_sh(x, 0)
+                                             ^
+/apps/ault/spack/opt/spack/linux-centos8-zen/gcc-8.4.1/intel-oneapi-compilers-2021.3.0-zdnqmgilkc6gnyxxmek7w3ny7iua4qpw/compiler/2021.3.0/linux/lib/clang/13.0.0/include/f16cintrin.h:69:54: note: expanded from macro '_cvtss_sh'
+  (unsigned short)(((__v8hi)__builtin_ia32_vcvtps2ph((__v4sf){a, 0, 0, 0}, \
+                                                     ^
+28 warnings generated.
+1 warning generated.
+2 warnings generated.
+1 warning generated.
+51 warnings generated.

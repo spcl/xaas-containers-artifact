@@ -10,3 +10,4 @@ cd llama.cpp && git checkout 307bfa253dea07c9270e78fa53b133504e9c3c9d && cd ..
 
 wget https://huggingface.co/TheBloke/Llama-2-13B-chat-GGUF/resolve/main/llama-2-13b-chat.Q4_K_M.gguf
 
+wget https://huggingface.co/TheBloke/Llama-2-13B-chat-GGUF/resolve/main/llama-2-13b-chat.Q4_0.gguf

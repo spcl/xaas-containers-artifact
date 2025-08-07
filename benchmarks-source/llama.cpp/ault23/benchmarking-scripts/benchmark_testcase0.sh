@@ -27,3 +27,13 @@ cd ${BIN_DIR}/build/bin
   -t $OMP_NUM_THREADS \
   -r 40 \
   -o csv > ${TESTCASE_DIR}/testcase0_pg_results.csv
+
+MODEL_FILE="${ARTIFACT_LOCATION}/data/llama.cpp/llama-2-13b-chat.Q4_0.gguf"
+TESTCASE_DIR="${ARTIFACT_LOCATION}/benchmarks-source/llama.cpp/ault23/llama-benchmarks/Q4_0"
+
+./llama-bench \
+  -m ${MODEL_FILE} \
+  -pg 512,128 \
+  -t $OMP_NUM_THREADS \
+  -r 40 \
+  -o csv > ${TESTCASE_DIR}/testcase0_pg_results.csv
