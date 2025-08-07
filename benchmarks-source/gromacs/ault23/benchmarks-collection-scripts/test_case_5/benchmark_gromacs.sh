@@ -1,7 +1,7 @@
 #!/bin/bash
 #SBATCH --job-name=benchmark_gromacs   # Job name
-#SBATCH --output=gromacs%j.out         # Save output log
-#SBATCH --error=gromacs%j.err          # Save error log
+#SBATCH --output=gromacs_%j.out         # Save output log
+#SBATCH --error=gromacs_%j.err          # Save error log
 #SBATCH --nodelist=ault23              # Assign the job to ault23
 #SBATCH --ntasks=1                     # 1 MPI process
 #SBATCH --cpus-per-task=64             # 64 OpenMP threads per MPI process
@@ -10,29 +10,30 @@
 #SBATCH --exclusive                    # Ensures no other jobs run on this node
 
 ARTIFACT_LOCATION=${ARTIFACT_LOCATION:-${SCRATCH}/xaas-containers-artifact}
+STEPS=1000
 
 # Load Spack environment
 source ${ARTIFACT_LOCATION}/dependencies/spack/share/spack/setup-env.sh
 spack env activate gromacs_advanced
 spack load gromacs@2024.4
-spack load mpich  # Ensure MPICH is the active MPI - as installed
+spack load mpich # Ensure MPICH is the active MPI - as installed
 
 echo "Source the GROMACS binary"
 source $(which GMXRC)
 
-# Set environment variables for MPICH and Libfabric
 export OMP_NUM_THREADS=64
 export MPICH_OFI_CXI_ENABLE=0
 export MPICH_OFI_NIC_POLICY=TCP
 export FI_PROVIDER=tcp
+export CUDA_VISIBLE_DEVICES=0
 
 # Define paths
-TESTCASE_DIR="${ARTIFACT_LOCATION}/benchmarks-source/gromacs/ault23/gromacs-benchmarks/TestcaseB_benchmarks/gromacs_testcase5_testcaseB"
+TESTCASE_DIR="${ARTIFACT_LOCATION}/benchmarks-source/gromacs/ault23/gromacs-benchmarks/TestcaseB_benchmarks/gromacs_testcase5_testcaseB/steps_${STEPS}"
 TPR_FILE="${ARTIFACT_LOCATION}/data/gromacs/GROMACS_TestCaseB/lignocellulose.tpr"
 
 mkdir -p "$TESTCASE_DIR"
 
-WARMUP_RUNS=10
+WARMUP_RUNS=2
 BENCHMARK_RUNS=30
 TOTAL_RUNS=$((WARMUP_RUNS + BENCHMARK_RUNS))
 
@@ -45,22 +46,24 @@ echo "GROMACS Spack configuration"
 spack spec gromacs@2024.4
 
 for i in $(seq 1 $TOTAL_RUNS); do
-    echo "Starting run $i..."
+  echo "Starting run $i..."
 
-    RUN_DIR="$TESTCASE_DIR/run${i}"
-    mkdir -p "$RUN_DIR"
+  RUN_DIR="$TESTCASE_DIR/run${i}"
+  mkdir -p "$RUN_DIR"
 
-    # Pin to cores 0-63
-    taskset -c 0-63 mpiexec -n 1 gmx_mpi mdrun -s "$TPR_FILE" -ntomp 64 -gpu_id 0 -nsteps 100 > "$RUN_DIR/mdrun_output.log" 2>&1
+  pushd ${RUN_DIR}
+  #taskset -c 0-63
+  mpiexec -n 1 gmx_mpi mdrun -s "$TPR_FILE" -ntomp 64 -gpu_id 0 -nsteps ${STEPS} >"$RUN_DIR/mdrun_output.log" 2>&1
+  popd
 
-    mv md.log traj* ener.edr confout.gro state.cpt "$RUN_DIR/" 2>/dev/null
+  #mv md.log traj* ener.edr confout.gro state.cpt "$RUN_DIR/" 2>/dev/null
 
-    if [ "$i" -le "$WARMUP_RUNS" ]; then
-        echo "Warm-up run $i completed. Deleting files..."
-        rm -rf "$RUN_DIR"
-    else
-        echo "Benchmark run $i completed. Data saved in $RUN_DIR."
-    fi
+  if [ "$i" -le "$WARMUP_RUNS" ]; then
+    echo "Warm-up run $i completed. Deleting files..."
+    rm -rf "$RUN_DIR"
+  else
+    echo "Benchmark run $i completed. Data saved in $RUN_DIR."
+  fi
 done
 
 echo "All benchmarking runs are complete!"

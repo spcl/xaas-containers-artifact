@@ -1,0 +1,581 @@
+==> Created environment gromacs_basic in: /scratch/mcopik/xaas-containers-artifact/dependencies/spack/var/spack/environments/gromacs_basic
+==> Activate with: spack env activate gromacs_basic
+==> Added 2 new compilers to /scratch/mcopik/xaas-containers-artifact/dependencies/spack/var/spack/environments/gromacs_basic/spack.yaml
+    gcc@8.4.1
+    gcc@11.5.0
+==> Compilers are defined in the following files:
+    /scratch/mcopik/xaas-containers-artifact/dependencies/spack/var/spack/environments/gromacs_basic/spack.yaml
+==> Adding gromacs@2024.4+cuda+mpi to environment gromacs_basic
+==> Fetching https://mirror.spack.io/bootstrap/github-actions/v0.5/build_cache/linux-centos7-x86_64-gcc-10.2.1-clingo-bootstrap-spack-zcw5ieomfwwpzpzpabetix2plfqzpvwd.spec.json
+==> Fetching https://mirror.spack.io/bootstrap/github-actions/v0.5/build_cache/linux-centos7-x86_64/gcc-10.2.1/clingo-bootstrap-spack/linux-centos7-x86_64-gcc-10.2.1-clingo-bootstrap-spack-zcw5ieomfwwpzpzpabetix2plfqzpvwd.spack
+==> Installing "clingo-bootstrap@=spack~docs+ipo+optimized+python+static_libstdcpp build_system=cmake build_type=Release generator=make patches=bebb819,ec99431 arch=linux-centos7-x86_64" from a buildcache
+==> Concretized 1 spec
+ -   xsfsye7  gromacs@2024.4~cp2k+cuda~cufftmp~cycle_subcounters~double+gmxapi~heffte+hwloc~intel_provided_gcc~ipo~itt~mdrun_only+mpi+nblib~nosuffix~nvshmem~opencl+openmp~relaxed_double_precision+shared~sycl build_system=cmake build_type=Release cuda_arch=none generator=make openmp_max_threads=none arch=linux-centos8-skylake_avx512
+ -   wif3l2w      ^cmake@3.31.5~doc+ncurses+ownlibs~qtgui build_system=generic build_type=Release arch=linux-centos8-skylake_avx512
+ -   5fpbisy          ^curl@8.11.1~gssapi~ldap~libidn2~librtmp~libssh~libssh2+nghttp2 build_system=autotools libs=shared,static tls=openssl arch=linux-centos8-skylake_avx512
+ -   kla4p77              ^nghttp2@1.64.0 build_system=autotools arch=linux-centos8-skylake_avx512
+ -   dh2zxux                  ^diffutils@3.10 build_system=autotools arch=linux-centos8-skylake_avx512
+ -   ehu7lzv              ^openssl@3.4.0~docs+shared build_system=generic certs=mozilla arch=linux-centos8-skylake_avx512
+ -   mwcpxl7                  ^ca-certificates-mozilla@2024-12-31 build_system=generic arch=linux-centos8-skylake_avx512
+ -   pdehvol          ^ncurses@6.5~symlinks+termlib abi=none build_system=autotools patches=7a351bc arch=linux-centos8-skylake_avx512
+ -   agvc5fu          ^zlib-ng@2.2.3+compat+new_strategies+opt+pic+shared build_system=autotools arch=linux-centos8-skylake_avx512
+ -   eaps7qs      ^compiler-wrapper@1.0 build_system=generic arch=linux-centos8-skylake_avx512
+ -   7rxmrpq      ^cuda@12.8.0~allow-unsupported-compilers~dev build_system=generic arch=linux-centos8-skylake_avx512
+ -   s7f4orn          ^libxml2@2.13.5~http+pic~python+shared build_system=autotools arch=linux-centos8-skylake_avx512
+ -   gkbsrqy              ^libiconv@1.17 build_system=autotools libs=shared,static arch=linux-centos8-skylake_avx512
+ -   h5nnlvw              ^xz@5.4.6~pic build_system=autotools libs=shared,static arch=linux-centos8-skylake_avx512
+ -   drgbriy      ^fftw@3.3.10+mpi~openmp~pfft_patches+shared build_system=autotools patches=872cff9 precision=double,float arch=linux-centos8-skylake_avx512
+[e]  lojwf5p      ^gcc@11.5.0~binutils+bootstrap~graphite~nvptx~piclibs~strip build_system=autotools build_type=RelWithDebInfo languages='c,c++,fortran' arch=linux-centos8-skylake_avx512
+ -   jp3zjh5      ^gcc-runtime@11.5.0 build_system=generic arch=linux-centos8-skylake_avx512
+[e]  yga375d      ^glibc@2.28 build_system=autotools arch=linux-centos8-skylake_avx512
+ -   263omav      ^gmake@4.4.1~guile build_system=generic arch=linux-centos8-skylake_avx512
+ -   54j37z4      ^hwloc@2.11.1~cairo~cuda~gl~level_zero~libudev+libxml2~nvml~opencl+pci~rocm build_system=autotools libs=shared,static arch=linux-centos8-skylake_avx512
+ -   yvxuwo4          ^libpciaccess@0.17 build_system=autotools arch=linux-centos8-skylake_avx512
+ -   7g7m3yc              ^util-macros@1.20.1 build_system=autotools arch=linux-centos8-skylake_avx512
+ -   2rjl3be      ^openblas@0.3.29~bignuma~consistent_fpcsr+dynamic_dispatch+fortran~ilp64+locking+pic+shared build_system=makefile symbol_suffix=none threads=none arch=linux-centos8-skylake_avx512
+ -   qbzhgcq      ^openmpi@5.0.6+atomics~cuda~debug~gpfs~internal-hwloc~internal-libevent~internal-pmix~java~lustre~memchecker~openshmem~romio+rsh~static~two_level_namespace+vt+wrapper-rpath build_system=autotools fabrics=none romio-filesystem=none schedulers=none arch=linux-centos8-skylake_avx512
+ -   wxg7vqh          ^autoconf@2.72 build_system=autotools arch=linux-centos8-skylake_avx512
+ -   3sb5sno              ^m4@1.4.19+sigsegv build_system=autotools patches=9dc5fbd,bfdffa7 arch=linux-centos8-skylake_avx512
+ -   zrccarp                  ^libsigsegv@2.14 build_system=autotools arch=linux-centos8-skylake_avx512
+ -   iuai5e3          ^automake@1.16.5 build_system=autotools arch=linux-centos8-skylake_avx512
+ -   sledzwk          ^libevent@2.1.12+openssl build_system=autotools arch=linux-centos8-skylake_avx512
+ -   rjxnldj          ^libtool@2.4.7 build_system=autotools arch=linux-centos8-skylake_avx512
+ -   qdlkfnf              ^findutils@4.10.0 build_system=autotools patches=440b954 arch=linux-centos8-skylake_avx512
+ -   z4xazys                  ^gettext@0.23.1+bzip2+curses+git~libunistring+libxml2+pic+shared+tar+xz build_system=autotools arch=linux-centos8-skylake_avx512
+ -   bgq4u7e                      ^tar@1.35 build_system=autotools zip=pigz arch=linux-centos8-skylake_avx512
+ -   oaoy64o                          ^pigz@2.8 build_system=makefile arch=linux-centos8-skylake_avx512
+ -   yaujxdo                          ^zstd@1.5.6+programs build_system=makefile compression=none libs=shared,static arch=linux-centos8-skylake_avx512
+ -   dnrne6b          ^numactl@2.0.18 build_system=autotools arch=linux-centos8-skylake_avx512
+ -   2pxjah5          ^openssh@9.9p1+gssapi build_system=autotools arch=linux-centos8-skylake_avx512
+ -   qouwtcj              ^krb5@1.21.3+shared build_system=autotools arch=linux-centos8-skylake_avx512
+ -   loiymso                  ^bison@3.8.2~color build_system=autotools arch=linux-centos8-skylake_avx512
+ -   5vsgvjx              ^libedit@3.1-20240808 build_system=autotools arch=linux-centos8-skylake_avx512
+ -   6emdhbg              ^libxcrypt@4.4.35~obsolete_api build_system=autotools patches=4885da3 arch=linux-centos8-skylake_avx512
+ -   bzf5oxl          ^perl@5.40.0+cpanm+opcode+open+shared+threads build_system=generic arch=linux-centos8-skylake_avx512
+ -   x4ulmm5              ^berkeley-db@18.1.40+cxx~docs+stl build_system=autotools patches=26090f4,b231fcc arch=linux-centos8-skylake_avx512
+ -   qtpqkw4              ^bzip2@1.0.8~debug~pic+shared build_system=generic arch=linux-centos8-skylake_avx512
+ -   35tu5l7              ^gdbm@1.23 build_system=autotools arch=linux-centos8-skylake_avx512
+ -   jmqlfn6                  ^readline@8.2 build_system=autotools patches=1ea4349,24f587b,3d9885e,5911a5b,622ba38,6c8adf8,758e2ec,79572ee,a177edc,bbf97f1,c7b45ff,e0013d9,e065038 arch=linux-centos8-skylake_avx512
+ -   ulovpgy          ^pmix@5.0.5~munge~python build_system=autotools arch=linux-centos8-skylake_avx512
+ -   7hbrugo      ^pkgconf@2.3.0 build_system=autotools arch=linux-centos8-skylake_avx512
+
+==> Installing compiler-wrapper-1.0-eaps7qsvrr75caoepgoncgn63yfcfhmc [1/48]
+==> No binary for compiler-wrapper-1.0-eaps7qsvrr75caoepgoncgn63yfcfhmc found: installing from source
+==> Fetching file:////scratch/mcopik/xaas-containers-artifact/dependencies/spack/var/spack/repos/builtin/packages/compiler-wrapper/cc.sh
+==> No patches needed for compiler-wrapper
+==> compiler-wrapper: Executing phase: 'install'
+==> compiler-wrapper: Successfully installed compiler-wrapper-1.0-eaps7qsvrr75caoepgoncgn63yfcfhmc
+  Stage: 0.54s.  Install: 0.03s.  Post-install: 0.14s.  Total: 11.15s
+[+] /scratch/mcopik/xaas-containers-artifact/dependencies/spack/opt/spack/linux-skylake_avx512/compiler-wrapper-1.0-eaps7qsvrr75caoepgoncgn63yfcfhmc
+[+] /scratch/mcopik/xaas-containers-artifact/dependencies/spack/opt/spack/linux-centos8-zen/gcc-8.4.1/gcc-11.5.0-7bf3bhz3wu2vzvrtokgp444qkbrbzk6h (external gcc-11.5.0-lojwf5psyx6ervlsgrxbxwdzjdaquw5n)
+[+] /usr (external glibc-2.28-yga375dybazxmdmcytf6ap6a5it55zlm)
+==> Installing ca-certificates-mozilla-2024-12-31-mwcpxl7x7d3c7a7tmovipqknvlecbkce [4/48]
+==> No binary for ca-certificates-mozilla-2024-12-31-mwcpxl7x7d3c7a7tmovipqknvlecbkce found: installing from source
+==> Fetching https://mirror.spack.io/_source-cache/archive/a3/a3f328c21e39ddd1f2be1cea43ac0dec819eaa20a90425d7da901a11531b3aa5
+==> No patches needed for ca-certificates-mozilla
+==> ca-certificates-mozilla: Executing phase: 'install'
+==> ca-certificates-mozilla: Successfully installed ca-certificates-mozilla-2024-12-31-mwcpxl7x7d3c7a7tmovipqknvlecbkce
+  Stage: 1.01s.  Install: 0.01s.  Post-install: 0.05s.  Total: 1.11s
+[+] /scratch/mcopik/xaas-containers-artifact/dependencies/spack/opt/spack/linux-skylake_avx512/ca-certificates-mozilla-2024-12-31-mwcpxl7x7d3c7a7tmovipqknvlecbkce
+==> Installing gcc-runtime-11.5.0-jp3zjh5xhqjlfj3bwyo2spgmw4z4rcen [5/48]
+==> No binary for gcc-runtime-11.5.0-jp3zjh5xhqjlfj3bwyo2spgmw4z4rcen found: installing from source
+==> No patches needed for gcc-runtime
+==> gcc-runtime: Executing phase: 'install'
+==> gcc-runtime: Successfully installed gcc-runtime-11.5.0-jp3zjh5xhqjlfj3bwyo2spgmw4z4rcen
+  Stage: 0.00s.  Install: 0.45s.  Post-install: 0.17s.  Total: 0.66s
+[+] /scratch/mcopik/xaas-containers-artifact/dependencies/spack/opt/spack/linux-skylake_avx512/gcc-runtime-11.5.0-jp3zjh5xhqjlfj3bwyo2spgmw4z4rcen
+==> Installing gmake-4.4.1-263omavzevlx2kv2pl5gbcm75p6mfbie [6/48]
+==> No binary for gmake-4.4.1-263omavzevlx2kv2pl5gbcm75p6mfbie found: installing from source
+==> Using cached archive: /scratch/mcopik/xaas-containers-artifact/dependencies/spack/var/spack/cache/_source-cache/archive/dd/dd16fb1d67bfab79a72f5e8390735c49e3e8e70b4945a15ab1f81ddb78658fb3.tar.gz
+==> No patches needed for gmake
+==> gmake: Executing phase: 'install'
+==> gmake: Successfully installed gmake-4.4.1-263omavzevlx2kv2pl5gbcm75p6mfbie
+  Stage: 0.10s.  Install: 17.71s.  Post-install: 0.06s.  Total: 24.58s
+[+] /scratch/mcopik/xaas-containers-artifact/dependencies/spack/opt/spack/linux-skylake_avx512/gmake-4.4.1-263omavzevlx2kv2pl5gbcm75p6mfbie
+==> Installing openblas-0.3.29-2rjl3bebvu7lvxxgdesbg2toi57odxwy [7/48]
+==> No binary for openblas-0.3.29-2rjl3bebvu7lvxxgdesbg2toi57odxwy found: installing from source
+==> Fetching https://mirror.spack.io/_source-cache/archive/38/38240eee1b29e2bde47ebb5d61160207dc68668a54cac62c076bb5032013b1eb.tar.gz
+==> No patches needed for openblas
+==> openblas: Executing phase: 'edit'
+==> openblas: Executing phase: 'build'
+==> openblas: Executing phase: 'install'
+==> openblas: Successfully installed openblas-0.3.29-2rjl3bebvu7lvxxgdesbg2toi57odxwy
+  Stage: 3.60s.  Edit: 0.00s.  Build: 5m 2.24s.  Install: 4.03s.  Post-install: 0.31s.  Total: 5m 10.39s
+[+] /scratch/mcopik/xaas-containers-artifact/dependencies/spack/opt/spack/linux-skylake_avx512/openblas-0.3.29-2rjl3bebvu7lvxxgdesbg2toi57odxwy
+==> Installing util-macros-1.20.1-7g7m3yc4vsnpjisl2lcxkthjnlaznv3y [8/48]
+==> No binary for util-macros-1.20.1-7g7m3yc4vsnpjisl2lcxkthjnlaznv3y found: installing from source
+==> Fetching https://mirror.spack.io/_source-cache/archive/0b/0b308f62dce78ac0f4d9de6888234bf170f276b64ac7c96e99779bb4319bcef5.tar.xz
+==> No patches needed for util-macros
+==> util-macros: Executing phase: 'autoreconf'
+==> util-macros: Executing phase: 'configure'
+==> util-macros: Executing phase: 'build'
+==> util-macros: Executing phase: 'install'
+==> util-macros: Successfully installed util-macros-1.20.1-7g7m3yc4vsnpjisl2lcxkthjnlaznv3y
+  Stage: 0.07s.  Autoreconf: 0.00s.  Configure: 1.24s.  Build: 0.00s.  Install: 0.03s.  Post-install: 0.08s.  Total: 1.57s
+[+] /scratch/mcopik/xaas-containers-artifact/dependencies/spack/opt/spack/linux-skylake_avx512/util-macros-1.20.1-7g7m3yc4vsnpjisl2lcxkthjnlaznv3y
+==> Installing zlib-ng-2.2.3-agvc5fumsnuuk7keu7dj445jc5uwv7up [9/48]
+==> No binary for zlib-ng-2.2.3-agvc5fumsnuuk7keu7dj445jc5uwv7up found: installing from source
+==> Fetching https://mirror.spack.io/_source-cache/archive/f2/f2fb245c35082fe9ea7a22b332730f63cf1d42f04d84fe48294207d033cba4dd.tar.gz
+==> No patches needed for zlib-ng
+==> zlib-ng: Executing phase: 'autoreconf'
+==> zlib-ng: Executing phase: 'configure'
+==> zlib-ng: Executing phase: 'build'
+==> zlib-ng: Executing phase: 'install'
+==> zlib-ng: Successfully installed zlib-ng-2.2.3-agvc5fumsnuuk7keu7dj445jc5uwv7up
+  Stage: 0.61s.  Autoreconf: 0.00s.  Configure: 5.09s.  Build: 1.04s.  Install: 1.69s.  Post-install: 0.10s.  Total: 8.68s
+[+] /scratch/mcopik/xaas-containers-artifact/dependencies/spack/opt/spack/linux-skylake_avx512/zlib-ng-2.2.3-agvc5fumsnuuk7keu7dj445jc5uwv7up
+==> Installing zstd-1.5.6-yaujxdoasuhvbtjm6xl7l6rbctlpvfxt [10/48]
+==> No binary for zstd-1.5.6-yaujxdoasuhvbtjm6xl7l6rbctlpvfxt found: installing from source
+==> Using cached archive: /scratch/mcopik/xaas-containers-artifact/dependencies/spack/var/spack/cache/_source-cache/archive/30/30f35f71c1203369dc979ecde0400ffea93c27391bfd2ac5a9715d2173d92ff7.tar.gz
+==> No patches needed for zstd
+==> zstd: Executing phase: 'edit'
+==> zstd: Executing phase: 'build'
+==> zstd: Executing phase: 'install'
+==> zstd: Successfully installed zstd-1.5.6-yaujxdoasuhvbtjm6xl7l6rbctlpvfxt
+  Stage: 0.09s.  Edit: 0.00s.  Build: 0.00s.  Install: 18.93s.  Post-install: 0.11s.  Total: 19.26s
+[+] /scratch/mcopik/xaas-containers-artifact/dependencies/spack/opt/spack/linux-skylake_avx512/zstd-1.5.6-yaujxdoasuhvbtjm6xl7l6rbctlpvfxt
+==> Installing berkeley-db-18.1.40-x4ulmm5ifkch4436yfzti4ybej5xutgb [11/48]
+==> No binary for berkeley-db-18.1.40-x4ulmm5ifkch4436yfzti4ybej5xutgb found: installing from source
+==> Using cached archive: /scratch/mcopik/xaas-containers-artifact/dependencies/spack/var/spack/cache/_source-cache/archive/0c/0cecb2ef0c67b166de93732769abdeba0555086d51de1090df325e18ee8da9c8.tar.gz
+==> Applied patch /scratch/mcopik/xaas-containers-artifact/dependencies/spack/var/spack/repos/builtin/packages/berkeley-db/drop-docs.patch
+==> Applied patch /scratch/mcopik/xaas-containers-artifact/dependencies/spack/var/spack/repos/builtin/packages/berkeley-db/tls.patch
+==> Ran patch() for berkeley-db
+==> berkeley-db: Executing phase: 'autoreconf'
+==> berkeley-db: Executing phase: 'configure'
+==> berkeley-db: Executing phase: 'build'
+==> berkeley-db: Executing phase: 'install'
+==> berkeley-db: Successfully installed berkeley-db-18.1.40-x4ulmm5ifkch4436yfzti4ybej5xutgb
+  Stage: 0.98s.  Autoreconf: 0.00s.  Configure: 19.15s.  Build: 5.45s.  Install: 0.64s.  Post-install: 0.14s.  Total: 26.52s
+[+] /scratch/mcopik/xaas-containers-artifact/dependencies/spack/opt/spack/linux-skylake_avx512/berkeley-db-18.1.40-x4ulmm5ifkch4436yfzti4ybej5xutgb
+==> Installing xz-5.4.6-h5nnlvwhnmfir74c6mel4uigix66zbdg [12/48]
+==> No binary for xz-5.4.6-h5nnlvwhnmfir74c6mel4uigix66zbdg found: installing from source
+==> Using cached archive: /scratch/mcopik/xaas-containers-artifact/dependencies/spack/var/spack/cache/_source-cache/archive/91/913851b274e8e1d31781ec949f1c23e8dbcf0ecf6e73a2436dc21769dd3e6f49.tar.bz2
+==> No patches needed for xz
+==> xz: Executing phase: 'autoreconf'
+==> xz: Executing phase: 'configure'
+==> xz: Executing phase: 'build'
+==> xz: Executing phase: 'install'
+==> xz: Successfully installed xz-5.4.6-h5nnlvwhnmfir74c6mel4uigix66zbdg
+  Stage: 0.35s.  Autoreconf: 0.00s.  Configure: 10.67s.  Build: 3.60s.  Install: 1.93s.  Post-install: 0.55s.  Total: 17.27s
+[+] /scratch/mcopik/xaas-containers-artifact/dependencies/spack/opt/spack/linux-skylake_avx512/xz-5.4.6-h5nnlvwhnmfir74c6mel4uigix66zbdg
+==> Installing pkgconf-2.3.0-7hbrugowb4bqx2zptptepq4i3wqvacll [13/48]
+==> No binary for pkgconf-2.3.0-7hbrugowb4bqx2zptptepq4i3wqvacll found: installing from source
+==> Fetching https://mirror.spack.io/_source-cache/archive/3a/3a9080ac51d03615e7c1910a0a2a8df08424892b5f13b0628a204d3fcce0ea8b.tar.xz
+==> No patches needed for pkgconf
+==> pkgconf: Executing phase: 'autoreconf'
+==> pkgconf: Executing phase: 'configure'
+==> pkgconf: Executing phase: 'build'
+==> pkgconf: Executing phase: 'install'
+==> pkgconf: Successfully installed pkgconf-2.3.0-7hbrugowb4bqx2zptptepq4i3wqvacll
+  Stage: 0.59s.  Autoreconf: 0.00s.  Configure: 3.78s.  Build: 1.28s.  Install: 0.25s.  Post-install: 0.14s.  Total: 6.20s
+[+] /scratch/mcopik/xaas-containers-artifact/dependencies/spack/opt/spack/linux-skylake_avx512/pkgconf-2.3.0-7hbrugowb4bqx2zptptepq4i3wqvacll
+==> Installing libiconv-1.17-gkbsrqyzbkrzodzuwsikcfg2l4nxbmjc [14/48]
+==> No binary for libiconv-1.17-gkbsrqyzbkrzodzuwsikcfg2l4nxbmjc found: installing from source
+==> Using cached archive: /scratch/mcopik/xaas-containers-artifact/dependencies/spack/var/spack/cache/_source-cache/archive/8f/8f74213b56238c85a50a5329f77e06198771e70dd9a739779f4c02f65d971313.tar.gz
+==> No patches needed for libiconv
+==> libiconv: Executing phase: 'autoreconf'
+==> libiconv: Executing phase: 'configure'
+==> libiconv: Executing phase: 'build'
+==> libiconv: Executing phase: 'install'
+==> libiconv: Successfully installed libiconv-1.17-gkbsrqyzbkrzodzuwsikcfg2l4nxbmjc
+  Stage: 0.20s.  Autoreconf: 0.00s.  Configure: 17.58s.  Build: 11.32s.  Install: 2.32s.  Post-install: 0.37s.  Total: 31.95s
+[+] /scratch/mcopik/xaas-containers-artifact/dependencies/spack/opt/spack/linux-skylake_avx512/libiconv-1.17-gkbsrqyzbkrzodzuwsikcfg2l4nxbmjc
+==> Installing libsigsegv-2.14-zrccarpwkh6cudkfg55adxyzx7vahcsp [15/48]
+==> No binary for libsigsegv-2.14-zrccarpwkh6cudkfg55adxyzx7vahcsp found: installing from source
+==> Using cached archive: /scratch/mcopik/xaas-containers-artifact/dependencies/spack/var/spack/cache/_source-cache/archive/cd/cdac3941803364cf81a908499beb79c200ead60b6b5b40cad124fd1e06caa295.tar.gz
+==> No patches needed for libsigsegv
+==> libsigsegv: Executing phase: 'autoreconf'
+==> libsigsegv: Executing phase: 'configure'
+==> libsigsegv: Executing phase: 'build'
+==> libsigsegv: Executing phase: 'install'
+==> libsigsegv: Successfully installed libsigsegv-2.14-zrccarpwkh6cudkfg55adxyzx7vahcsp
+  Stage: 0.03s.  Autoreconf: 0.00s.  Configure: 6.02s.  Build: 0.75s.  Install: 0.17s.  Post-install: 0.10s.  Total: 7.24s
+[+] /scratch/mcopik/xaas-containers-artifact/dependencies/spack/opt/spack/linux-skylake_avx512/libsigsegv-2.14-zrccarpwkh6cudkfg55adxyzx7vahcsp
+==> Installing pigz-2.8-oaoy64oq4ayujgebbwzjzb4t5p4mwimh [16/48]
+==> No binary for pigz-2.8-oaoy64oq4ayujgebbwzjzb4t5p4mwimh found: installing from source
+==> Using cached archive: /scratch/mcopik/xaas-containers-artifact/dependencies/spack/var/spack/cache/_source-cache/archive/2f/2f7f6a6986996d21cb8658535fff95f1c7107ddce22b5324f4b41890e2904706.tar.gz
+==> No patches needed for pigz
+==> pigz: Executing phase: 'edit'
+==> pigz: Executing phase: 'build'
+==> pigz: Executing phase: 'install'
+==> pigz: Successfully installed pigz-2.8-oaoy64oq4ayujgebbwzjzb4t5p4mwimh
+  Stage: 0.02s.  Edit: 0.00s.  Build: 1.86s.  Install: 0.01s.  Post-install: 0.08s.  Total: 2.10s
+[+] /scratch/mcopik/xaas-containers-artifact/dependencies/spack/opt/spack/linux-skylake_avx512/pigz-2.8-oaoy64oq4ayujgebbwzjzb4t5p4mwimh
+==> Installing ncurses-6.5-pdehvolqopnpqfhp7qajjyg7njfcbxfm [17/48]
+==> No binary for ncurses-6.5-pdehvolqopnpqfhp7qajjyg7njfcbxfm found: installing from source
+==> Using cached archive: /scratch/mcopik/xaas-containers-artifact/dependencies/spack/var/spack/cache/_source-cache/archive/13/136d91bc269a9a5785e5f9e980bc76ab57428f604ce3e5a5a90cebc767971cc6.tar.gz
+==> Applied patch /scratch/mcopik/xaas-containers-artifact/dependencies/spack/var/spack/repos/builtin/packages/ncurses/rxvt_unicode_6_4.patch
+==> ncurses: Executing phase: 'autoreconf'
+==> ncurses: Executing phase: 'configure'
+==> ncurses: Executing phase: 'build'
+==> ncurses: Executing phase: 'install'
+==> ncurses: Successfully installed ncurses-6.5-pdehvolqopnpqfhp7qajjyg7njfcbxfm
+  Stage: 0.17s.  Autoreconf: 0.00s.  Configure: 39.48s.  Build: 15.49s.  Install: 23.76s.  Post-install: 4.76s.  Total: 1m 23.84s
+[+] /scratch/mcopik/xaas-containers-artifact/dependencies/spack/opt/spack/linux-skylake_avx512/ncurses-6.5-pdehvolqopnpqfhp7qajjyg7njfcbxfm
+==> Installing libpciaccess-0.17-yvxuwo4vd7mst2crya6ujtvsp6j2taap [18/48]
+==> No binary for libpciaccess-0.17-yvxuwo4vd7mst2crya6ujtvsp6j2taap found: installing from source
+==> Fetching https://mirror.spack.io/_source-cache/archive/bf/bf6985a77d2ecb00e2c79da3edfb26b909178ffca3f2e9d14ed0620259ab733b.tar.gz
+==> No patches needed for libpciaccess
+==> libpciaccess: Executing phase: 'autoreconf'
+==> libpciaccess: Executing phase: 'configure'
+==> libpciaccess: Executing phase: 'build'
+==> libpciaccess: Executing phase: 'install'
+==> libpciaccess: Successfully installed libpciaccess-0.17-yvxuwo4vd7mst2crya6ujtvsp6j2taap
+  Stage: 0.14s.  Autoreconf: 0.00s.  Configure: 6.01s.  Build: 1.10s.  Install: 0.21s.  Post-install: 0.10s.  Total: 7.73s
+[+] /scratch/mcopik/xaas-containers-artifact/dependencies/spack/opt/spack/linux-skylake_avx512/libpciaccess-0.17-yvxuwo4vd7mst2crya6ujtvsp6j2taap
+==> Installing diffutils-3.10-dh2zxux6brffgqujj2tiwifaylggrjad [19/48]
+==> No binary for diffutils-3.10-dh2zxux6brffgqujj2tiwifaylggrjad found: installing from source
+==> Using cached archive: /scratch/mcopik/xaas-containers-artifact/dependencies/spack/var/spack/cache/_source-cache/archive/90/90e5e93cc724e4ebe12ede80df1634063c7a855692685919bfe60b556c9bd09e.tar.xz
+==> No patches needed for diffutils
+==> diffutils: Executing phase: 'autoreconf'
+==> diffutils: Executing phase: 'configure'
+==> diffutils: Executing phase: 'build'
+==> diffutils: Executing phase: 'install'
+==> diffutils: Successfully installed diffutils-3.10-dh2zxux6brffgqujj2tiwifaylggrjad
+  Stage: 0.15s.  Autoreconf: 0.00s.  Configure: 36.44s.  Build: 4.09s.  Install: 0.87s.  Post-install: 0.33s.  Total: 42.05s
+[+] /scratch/mcopik/xaas-containers-artifact/dependencies/spack/opt/spack/linux-skylake_avx512/diffutils-3.10-dh2zxux6brffgqujj2tiwifaylggrjad
+==> Installing libxml2-2.13.5-s7f4ornnyjwvqvplvybe5zdlbyp7i6vc [20/48]
+==> No binary for libxml2-2.13.5-s7f4ornnyjwvqvplvybe5zdlbyp7i6vc found: installing from source
+==> Fetching https://mirror.spack.io/_source-cache/archive/74/74fc163217a3964257d3be39af943e08861263c4231f9ef5b496b6f6d4c7b2b6.tar.xz
+==> Using cached archive: /scratch/mcopik/xaas-containers-artifact/dependencies/spack/var/spack/cache/_source-cache/archive/96/96151685cec997e1f9f3387e3626d61e6284d4d6e66e0e440c209286c03e9cc7.tar.gz
+==> Moving resource stage
+	source: /tmp/mcopik/spack-stage/resource-xmlts-s7f4ornnyjwvqvplvybe5zdlbyp7i6vc/spack-src/
+	destination: /tmp/mcopik/spack-stage/spack-stage-libxml2-2.13.5-s7f4ornnyjwvqvplvybe5zdlbyp7i6vc/spack-src/xmlconf
+==> Ran patch() for libxml2
+==> libxml2: Executing phase: 'autoreconf'
+==> libxml2: Executing phase: 'configure'
+==> libxml2: Executing phase: 'build'
+==> libxml2: Executing phase: 'install'
+==> libxml2: Successfully installed libxml2-2.13.5-s7f4ornnyjwvqvplvybe5zdlbyp7i6vc
+  Stage: 0.84s.  Autoreconf: 0.00s.  Configure: 5.48s.  Build: 7.03s.  Install: 5.51s.  Post-install: 0.33s.  Total: 19.41s
+[+] /scratch/mcopik/xaas-containers-artifact/dependencies/spack/opt/spack/linux-skylake_avx512/libxml2-2.13.5-s7f4ornnyjwvqvplvybe5zdlbyp7i6vc
+==> Installing libedit-3.1-20240808-5vsgvjx6cutwomuwc7olfnfmturnomzo [21/48]
+==> No binary for libedit-3.1-20240808-5vsgvjx6cutwomuwc7olfnfmturnomzo found: installing from source
+==> Fetching https://mirror.spack.io/_source-cache/archive/5f/5f0573349d77c4a48967191cdd6634dd7aa5f6398c6a57fe037cc02696d6099f.tar.gz
+==> No patches needed for libedit
+==> libedit: Executing phase: 'autoreconf'
+==> libedit: Executing phase: 'configure'
+==> libedit: Executing phase: 'build'
+==> libedit: Executing phase: 'install'
+==> libedit: Successfully installed libedit-3.1-20240808-5vsgvjx6cutwomuwc7olfnfmturnomzo
+  Stage: 0.12s.  Autoreconf: 0.00s.  Configure: 7.46s.  Build: 2.16s.  Install: 0.27s.  Post-install: 0.14s.  Total: 18.92s
+[+] /scratch/mcopik/xaas-containers-artifact/dependencies/spack/opt/spack/linux-skylake_avx512/libedit-3.1-20240808-5vsgvjx6cutwomuwc7olfnfmturnomzo
+==> Installing readline-8.2-jmqlfn6r6sovmjg2eus7jvhgajp5sydk [22/48]
+==> No binary for readline-8.2-jmqlfn6r6sovmjg2eus7jvhgajp5sydk found: installing from source
+==> Using cached archive: /scratch/mcopik/xaas-containers-artifact/dependencies/spack/var/spack/cache/_source-cache/archive/3f/3feb7171f16a84ee82ca18a36d7b9be109a52c04f492a053331d7d1095007c35.tar.gz
+==> Using cached archive: /scratch/mcopik/xaas-containers-artifact/dependencies/spack/var/spack/cache/_source-cache/archive/bb/bbf97f1ec40a929edab5aa81998c1e2ef435436c597754916e6a5868f273aff7
+==> Fetching https://mirror.spack.io/_source-cache/archive/e0/e06503822c62f7bc0d9f387d4c78c09e0ce56e53872011363c74786c7cd4c053
+==> Fetching https://mirror.spack.io/_source-cache/archive/24/24f587ba46b46ed2b1868ccaf9947504feba154bb8faabd4adaea63ef7e6acb0
+==> Fetching https://mirror.spack.io/_source-cache/archive/79/79572eeaeb82afdc6869d7ad4cba9d4f519b1218070e17fa90bbecd49bd525ac
+==> Fetching https://mirror.spack.io/_source-cache/archive/62/622ba387dae5c185afb4b9b20634804e5f6c1c6e5e87ebee7c35a8f065114c99
+==> Fetching https://mirror.spack.io/_source-cache/archive/c7/c7b45ff8c0d24d81482e6e0677e81563d13c74241f7b86c4de00d239bc81f5a1
+==> Fetching https://mirror.spack.io/_source-cache/archive/59/5911a5b980d7900aabdbee483f86dab7056851e6400efb002776a0a4a1bab6f6
+==> Fetching https://mirror.spack.io/_source-cache/archive/a1/a177edc9d8c9f82e8c19d0630ab351f3fd1b201d655a1ddb5d51c4cee197b26a
+==> Fetching https://mirror.spack.io/_source-cache/archive/3d/3d9885e692e1998523fd5c61f558cecd2aafd67a07bd3bfe1d7ad5a31777a116
+==> Fetching https://mirror.spack.io/_source-cache/archive/75/758e2ec65a0c214cfe6161f5cde3c5af4377c67d820ea01d13de3ca165f67b4c
+==> Fetching https://mirror.spack.io/_source-cache/archive/e0/e0013d907f3a9e6482cc0934de1bd82ee3c3c4fd07a9646aa9899af237544dd7
+==> Fetching https://mirror.spack.io/_source-cache/archive/6c/6c8adf8ed4a2ca629f7fd11301ed6293a6248c9da0c674f86217df715efccbd3
+==> Fetching https://mirror.spack.io/_source-cache/archive/1e/1ea434957d6ec3a7b61763f1f3552dad0ebdd6754d65888b5cd6d80db3a788a8
+==> Applied patch https://ftpmirror.gnu.org/readline/readline-8.2-patches/readline82-001
+==> Applied patch https://ftpmirror.gnu.org/readline/readline-8.2-patches/readline82-002
+==> Applied patch https://ftpmirror.gnu.org/readline/readline-8.2-patches/readline82-003
+==> Applied patch https://ftpmirror.gnu.org/readline/readline-8.2-patches/readline82-004
+==> Applied patch https://ftpmirror.gnu.org/readline/readline-8.2-patches/readline82-005
+==> Applied patch https://ftpmirror.gnu.org/readline/readline-8.2-patches/readline82-006
+==> Applied patch https://ftpmirror.gnu.org/readline/readline-8.2-patches/readline82-007
+==> Applied patch https://ftpmirror.gnu.org/readline/readline-8.2-patches/readline82-008
+==> Applied patch https://ftpmirror.gnu.org/readline/readline-8.2-patches/readline82-009
+==> Applied patch https://ftpmirror.gnu.org/readline/readline-8.2-patches/readline82-010
+==> Applied patch https://ftpmirror.gnu.org/readline/readline-8.2-patches/readline82-011
+==> Applied patch https://ftpmirror.gnu.org/readline/readline-8.2-patches/readline82-012
+==> Applied patch https://ftpmirror.gnu.org/readline/readline-8.2-patches/readline82-013
+==> readline: Executing phase: 'autoreconf'
+==> readline: Executing phase: 'configure'
+==> readline: Executing phase: 'build'
+==> readline: Executing phase: 'install'
+==> readline: Successfully installed readline-8.2-jmqlfn6r6sovmjg2eus7jvhgajp5sydk
+  Stage: 0.65s.  Autoreconf: 0.00s.  Configure: 8.34s.  Build: 1.33s.  Install: 0.21s.  Post-install: 0.19s.  Total: 10.92s
+[+] /scratch/mcopik/xaas-containers-artifact/dependencies/spack/opt/spack/linux-skylake_avx512/readline-8.2-jmqlfn6r6sovmjg2eus7jvhgajp5sydk
+==> Installing m4-1.4.19-3sb5sno2eoxeqnu27lrbetqbkk5mdubm [23/48]
+==> No binary for m4-1.4.19-3sb5sno2eoxeqnu27lrbetqbkk5mdubm found: installing from source
+==> Using cached archive: /scratch/mcopik/xaas-containers-artifact/dependencies/spack/var/spack/cache/_source-cache/archive/3b/3be4a26d825ffdfda52a56fc43246456989a3630093cced3fbddf4771ee58a70.tar.gz
+==> Applied patch /scratch/mcopik/xaas-containers-artifact/dependencies/spack/var/spack/repos/builtin/packages/m4/checks-198.sysval.1.patch
+==> Applied patch /scratch/mcopik/xaas-containers-artifact/dependencies/spack/var/spack/repos/builtin/packages/m4/checks-198.sysval.2.patch
+==> Ran patch() for m4
+==> m4: Executing phase: 'autoreconf'
+==> m4: Executing phase: 'configure'
+==> m4: Executing phase: 'build'
+==> m4: Executing phase: 'install'
+==> m4: Successfully installed m4-1.4.19-3sb5sno2eoxeqnu27lrbetqbkk5mdubm
+  Stage: 0.16s.  Autoreconf: 0.00s.  Configure: 43.11s.  Build: 4.53s.  Install: 0.89s.  Post-install: 0.29s.  Total: 49.21s
+[+] /scratch/mcopik/xaas-containers-artifact/dependencies/spack/opt/spack/linux-skylake_avx512/m4-1.4.19-3sb5sno2eoxeqnu27lrbetqbkk5mdubm
+==> Installing nghttp2-1.64.0-kla4p7733rk7lwuxixw6uc53sigievsb [24/48]
+==> No binary for nghttp2-1.64.0-kla4p7733rk7lwuxixw6uc53sigievsb found: installing from source
+==> Fetching https://mirror.spack.io/_source-cache/archive/20/20e73f3cf9db3f05988996ac8b3a99ed529f4565ca91a49eb0550498e10621e8.tar.gz
+==> No patches needed for nghttp2
+==> nghttp2: Executing phase: 'autoreconf'
+==> nghttp2: Executing phase: 'configure'
+==> nghttp2: Executing phase: 'build'
+==> nghttp2: Executing phase: 'install'
+==> nghttp2: Successfully installed nghttp2-1.64.0-kla4p7733rk7lwuxixw6uc53sigievsb
+  Stage: 0.66s.  Autoreconf: 0.00s.  Configure: 13.50s.  Build: 3.97s.  Install: 0.35s.  Post-install: 0.15s.  Total: 18.83s
+[+] /scratch/mcopik/xaas-containers-artifact/dependencies/spack/opt/spack/linux-skylake_avx512/nghttp2-1.64.0-kla4p7733rk7lwuxixw6uc53sigievsb
+==> Installing bzip2-1.0.8-qtpqkw4uftqk5kvfxkrjzk3mwln3qn4h [25/48]
+==> No binary for bzip2-1.0.8-qtpqkw4uftqk5kvfxkrjzk3mwln3qn4h found: installing from source
+==> Using cached archive: /scratch/mcopik/xaas-containers-artifact/dependencies/spack/var/spack/cache/_source-cache/archive/ab/ab5a03176ee106d3f0fa90e381da478ddae405918153cca248e682cd0c4a2269.tar.gz
+==> Ran patch() for bzip2
+==> bzip2: Executing phase: 'install'
+==> bzip2: Successfully installed bzip2-1.0.8-qtpqkw4uftqk5kvfxkrjzk3mwln3qn4h
+  Stage: 0.04s.  Install: 2.71s.  Post-install: 0.13s.  Total: 2.99s
+[+] /scratch/mcopik/xaas-containers-artifact/dependencies/spack/opt/spack/linux-skylake_avx512/bzip2-1.0.8-qtpqkw4uftqk5kvfxkrjzk3mwln3qn4h
+==> Installing hwloc-2.11.1-54j37z4kbugo4lhlkswgrs2ahu2oisyc [26/48]
+==> No binary for hwloc-2.11.1-54j37z4kbugo4lhlkswgrs2ahu2oisyc found: installing from source
+==> Fetching https://mirror.spack.io/_source-cache/archive/9f/9f320925cfd0daeaf3a3d724c93e127ecac63750c623654dca0298504aac4c2c.tar.gz
+==> No patches needed for hwloc
+==> hwloc: Executing phase: 'autoreconf'
+==> hwloc: Executing phase: 'configure'
+==> hwloc: Executing phase: 'build'
+==> hwloc: Executing phase: 'install'
+==> hwloc: Successfully installed hwloc-2.11.1-54j37z4kbugo4lhlkswgrs2ahu2oisyc
+  Stage: 0.28s.  Autoreconf: 0.00s.  Configure: 18.57s.  Build: 8.10s.  Install: 20.15s.  Post-install: 1.03s.  Total: 48.40s
+[+] /scratch/mcopik/xaas-containers-artifact/dependencies/spack/opt/spack/linux-skylake_avx512/hwloc-2.11.1-54j37z4kbugo4lhlkswgrs2ahu2oisyc
+==> Installing cuda-12.8.0-7rxmrpqtrijs2arsmcomnl5qnx47mzss [27/48]
+==> No binary for cuda-12.8.0-7rxmrpqtrijs2arsmcomnl5qnx47mzss found: installing from source
+==> Fetching https://mirror.spack.io/_source-cache/archive/61/610867dcd6d94c4e36c4924f1d01b9db28ec08164e8af6c764f21b84200695f8
+==> No patches needed for cuda
+==> cuda: Executing phase: 'install'
+==> cuda: Successfully installed cuda-12.8.0-7rxmrpqtrijs2arsmcomnl5qnx47mzss
+  Stage: 49.09s.  Install: 3m 47.64s.  Post-install: 31.03s.  Total: 5m 7.93s
+[+] /scratch/mcopik/xaas-containers-artifact/dependencies/spack/opt/spack/linux-skylake_avx512/cuda-12.8.0-7rxmrpqtrijs2arsmcomnl5qnx47mzss
+==> Installing gdbm-1.23-35tu5l7hhc5oatwkkzf6jux4by56rrna [28/48]
+==> No binary for gdbm-1.23-35tu5l7hhc5oatwkkzf6jux4by56rrna found: installing from source
+==> Using cached archive: /scratch/mcopik/xaas-containers-artifact/dependencies/spack/var/spack/cache/_source-cache/archive/74/74b1081d21fff13ae4bd7c16e5d6e504a4c26f7cde1dca0d963a484174bbcacd.tar.gz
+==> No patches needed for gdbm
+==> gdbm: Executing phase: 'autoreconf'
+==> gdbm: Executing phase: 'configure'
+==> gdbm: Executing phase: 'build'
+==> gdbm: Executing phase: 'install'
+==> gdbm: Successfully installed gdbm-1.23-35tu5l7hhc5oatwkkzf6jux4by56rrna
+  Stage: 0.06s.  Autoreconf: 0.00s.  Configure: 6.47s.  Build: 2.32s.  Install: 0.79s.  Post-install: 0.25s.  Total: 10.13s
+[+] /scratch/mcopik/xaas-containers-artifact/dependencies/spack/opt/spack/linux-skylake_avx512/gdbm-1.23-35tu5l7hhc5oatwkkzf6jux4by56rrna
+==> Installing bison-3.8.2-loiymsoxe6f6ibu677kzvnrsie7pgvsh [29/48]
+==> No binary for bison-3.8.2-loiymsoxe6f6ibu677kzvnrsie7pgvsh found: installing from source
+==> Fetching https://mirror.spack.io/_source-cache/archive/06/06c9e13bdf7eb24d4ceb6b59205a4f67c2c7e7213119644430fe82fbd14a0abb.tar.gz
+==> No patches needed for bison
+==> bison: Executing phase: 'autoreconf'
+==> bison: Executing phase: 'configure'
+==> bison: Executing phase: 'build'
+==> bison: Executing phase: 'install'
+==> bison: Successfully installed bison-3.8.2-loiymsoxe6f6ibu677kzvnrsie7pgvsh
+  Stage: 0.43s.  Autoreconf: 0.00s.  Configure: 40.88s.  Build: 1.89s.  Install: 10.71s.  Post-install: 0.71s.  Total: 54.87s
+[+] /scratch/mcopik/xaas-containers-artifact/dependencies/spack/opt/spack/linux-skylake_avx512/bison-3.8.2-loiymsoxe6f6ibu677kzvnrsie7pgvsh
+==> Installing tar-1.35-bgq4u7e5louz7y4wef7geoaji5vociwa [30/48]
+==> No binary for tar-1.35-bgq4u7e5louz7y4wef7geoaji5vociwa found: installing from source
+==> Fetching https://mirror.spack.io/_source-cache/archive/14/14d55e32063ea9526e057fbf35fcabd53378e769787eff7919c3755b02d2b57e.tar.gz
+==> No patches needed for tar
+==> tar: Executing phase: 'autoreconf'
+==> tar: Executing phase: 'configure'
+==> tar: Executing phase: 'build'
+==> tar: Executing phase: 'install'
+==> tar: Successfully installed tar-1.35-bgq4u7e5louz7y4wef7geoaji5vociwa
+  Stage: 0.29s.  Autoreconf: 0.00s.  Configure: 44.04s.  Build: 5.16s.  Install: 0.48s.  Post-install: 0.16s.  Total: 1m 3.13s
+[+] /scratch/mcopik/xaas-containers-artifact/dependencies/spack/opt/spack/linux-skylake_avx512/tar-1.35-bgq4u7e5louz7y4wef7geoaji5vociwa
+==> Installing perl-5.40.0-bzf5oxlt6oxzbdklwrvna327mra34ure [31/48]
+==> No binary for perl-5.40.0-bzf5oxlt6oxzbdklwrvna327mra34ure found: installing from source
+==> Using cached archive: /scratch/mcopik/xaas-containers-artifact/dependencies/spack/var/spack/cache/_source-cache/archive/c7/c740348f357396327a9795d3e8323bafd0fe8a5c7835fc1cbaba0cc8dfe7161f.tar.gz
+==> Using cached archive: /scratch/mcopik/xaas-containers-artifact/dependencies/spack/var/spack/cache/_source-cache/archive/9d/9da50e155df72bce55cb69f51f1dbb4b62d23740fb99f6178bb27f22ebdf8a46.tar.gz
+==> Moving resource stage
+	source: /tmp/mcopik/spack-stage/resource-cpanm-bzf5oxlt6oxzbdklwrvna327mra34ure/spack-src/
+	destination: /tmp/mcopik/spack-stage/spack-stage-perl-5.40.0-bzf5oxlt6oxzbdklwrvna327mra34ure/spack-src/cpanm/cpanm
+==> Ran patch() for perl
+==> perl: Executing phase: 'configure'
+==> perl: Executing phase: 'build'
+==> perl: Executing phase: 'install'
+==> perl: Successfully installed perl-5.40.0-bzf5oxlt6oxzbdklwrvna327mra34ure
+  Stage: 0.84s.  Configure: 1m 22.72s.  Build: 36.49s.  Install: 1m 39.11s.  Post-install: 5.36s.  Total: 3m 44.80s
+[+] /scratch/mcopik/xaas-containers-artifact/dependencies/spack/opt/spack/linux-skylake_avx512/perl-5.40.0-bzf5oxlt6oxzbdklwrvna327mra34ure
+==> Installing gettext-0.23.1-z4xazysnrcgsjuonics6dhv55wqwprv3 [32/48]
+==> No binary for gettext-0.23.1-z4xazysnrcgsjuonics6dhv55wqwprv3 found: installing from source
+==> Fetching https://mirror.spack.io/_source-cache/archive/c1/c1f97a72a7385b7e71dd07b5fea6cdaf12c9b88b564976b23bd8c11857af2970.tar.xz
+==> Ran patch() for gettext
+==> gettext: Executing phase: 'autoreconf'
+==> gettext: Executing phase: 'configure'
+==> gettext: Executing phase: 'build'
+==> gettext: Executing phase: 'install'
+==> gettext: Successfully installed gettext-0.23.1-z4xazysnrcgsjuonics6dhv55wqwprv3
+  Stage: 1.26s.  Autoreconf: 0.00s.  Configure: 3m 3.87s.  Build: 2m 0.97s.  Install: 27.16s.  Post-install: 3.89s.  Total: 5m 37.54s
+[+] /scratch/mcopik/xaas-containers-artifact/dependencies/spack/opt/spack/linux-skylake_avx512/gettext-0.23.1-z4xazysnrcgsjuonics6dhv55wqwprv3
+==> Installing openssl-3.4.0-ehu7lzvupu2fe5oj63docb2j4nzi6jxp [33/48]
+==> No binary for openssl-3.4.0-ehu7lzvupu2fe5oj63docb2j4nzi6jxp found: installing from source
+==> Fetching https://mirror.spack.io/_source-cache/archive/e1/e15dda82fe2fe8139dc2ac21a36d4ca01d5313c75f99f46c4e8a27709b7294bf.tar.gz
+==> Ran patch() for openssl
+==> openssl: Executing phase: 'install'
+==> openssl: Successfully installed openssl-3.4.0-ehu7lzvupu2fe5oj63docb2j4nzi6jxp
+  Stage: 0.76s.  Install: 37.15s.  Post-install: 0.48s.  Total: 38.67s
+[+] /scratch/mcopik/xaas-containers-artifact/dependencies/spack/opt/spack/linux-skylake_avx512/openssl-3.4.0-ehu7lzvupu2fe5oj63docb2j4nzi6jxp
+==> Installing autoconf-2.72-wxg7vqhfjbk6uo7bfph4danlmckk47rv [34/48]
+==> No binary for autoconf-2.72-wxg7vqhfjbk6uo7bfph4danlmckk47rv found: installing from source
+==> Using cached archive: /scratch/mcopik/xaas-containers-artifact/dependencies/spack/var/spack/cache/_source-cache/archive/af/afb181a76e1ee72832f6581c0eddf8df032b83e2e0239ef79ebedc4467d92d6e.tar.gz
+==> Ran patch() for autoconf
+==> autoconf: Executing phase: 'autoreconf'
+==> autoconf: Executing phase: 'configure'
+==> autoconf: Executing phase: 'build'
+==> autoconf: Executing phase: 'install'
+==> autoconf: Successfully installed autoconf-2.72-wxg7vqhfjbk6uo7bfph4danlmckk47rv
+  Stage: 0.10s.  Autoreconf: 0.00s.  Configure: 1.24s.  Build: 0.22s.  Install: 0.17s.  Post-install: 0.34s.  Total: 2.45s
+[+] /scratch/mcopik/xaas-containers-artifact/dependencies/spack/opt/spack/linux-skylake_avx512/autoconf-2.72-wxg7vqhfjbk6uo7bfph4danlmckk47rv
+==> Installing libxcrypt-4.4.35-6emdhbg3abhlool6kizamq5zpo2frt7o [35/48]
+==> No binary for libxcrypt-4.4.35-6emdhbg3abhlool6kizamq5zpo2frt7o found: installing from source
+==> Fetching https://mirror.spack.io/_source-cache/archive/a8/a8c935505b55f1df0d17f8bfd59468c7c6709a1d31831b0f8e3e045ab8fd455d.tar.xz
+==> Applied patch /scratch/mcopik/xaas-containers-artifact/dependencies/spack/var/spack/repos/builtin/packages/libxcrypt/commit-95d56e0.patch
+==> libxcrypt: Executing phase: 'autoreconf'
+==> libxcrypt: Executing phase: 'configure'
+==> libxcrypt: Executing phase: 'build'
+==> libxcrypt: Executing phase: 'install'
+==> libxcrypt: Successfully installed libxcrypt-4.4.35-6emdhbg3abhlool6kizamq5zpo2frt7o
+  Stage: 0.60s.  Autoreconf: 0.00s.  Configure: 7.44s.  Build: 2.53s.  Install: 0.21s.  Post-install: 0.19s.  Total: 12.29s
+[+] /scratch/mcopik/xaas-containers-artifact/dependencies/spack/opt/spack/linux-skylake_avx512/libxcrypt-4.4.35-6emdhbg3abhlool6kizamq5zpo2frt7o
+==> Installing findutils-4.10.0-qdlkfnfi3hj7eldxszgry36egfcwtbwq [36/48]
+==> No binary for findutils-4.10.0-qdlkfnfi3hj7eldxszgry36egfcwtbwq found: installing from source
+==> Fetching https://mirror.spack.io/_source-cache/archive/13/1387e0b67ff247d2abde998f90dfbf70c1491391a59ddfecb8ae698789f0a4f5.tar.xz
+==> Applied patch /scratch/mcopik/xaas-containers-artifact/dependencies/spack/var/spack/repos/builtin/packages/findutils/nonnull.patch
+==> findutils: Executing phase: 'autoreconf'
+==> findutils: Executing phase: 'configure'
+==> findutils: Executing phase: 'build'
+==> findutils: Executing phase: 'install'
+==> findutils: Successfully installed findutils-4.10.0-qdlkfnfi3hj7eldxszgry36egfcwtbwq
+  Stage: 0.28s.  Autoreconf: 0.00s.  Configure: 52.79s.  Build: 5.85s.  Install: 1.57s.  Post-install: 0.46s.  Total: 1m 1.31s
+[+] /scratch/mcopik/xaas-containers-artifact/dependencies/spack/opt/spack/linux-skylake_avx512/findutils-4.10.0-qdlkfnfi3hj7eldxszgry36egfcwtbwq
+==> Installing curl-8.11.1-5fpbisyhwsdrk7etwoajxwd6negdyeed [37/48]
+==> No binary for curl-8.11.1-5fpbisyhwsdrk7etwoajxwd6negdyeed found: installing from source
+==> Fetching https://mirror.spack.io/_source-cache/archive/e9/e9773ad1dfa21aedbfe8e1ef24c9478fa780b1b3d4f763c98dd04629b5e43485.tar.bz2
+==> No patches needed for curl
+==> curl: Executing phase: 'autoreconf'
+==> curl: Executing phase: 'configure'
+==> curl: Executing phase: 'build'
+==> curl: Executing phase: 'install'
+==> curl: Successfully installed curl-8.11.1-5fpbisyhwsdrk7etwoajxwd6negdyeed
+  Stage: 0.72s.  Autoreconf: 0.00s.  Configure: 28.34s.  Build: 6.04s.  Install: 0.63s.  Post-install: 0.23s.  Total: 36.32s
+[+] /scratch/mcopik/xaas-containers-artifact/dependencies/spack/opt/spack/linux-skylake_avx512/curl-8.11.1-5fpbisyhwsdrk7etwoajxwd6negdyeed
+==> Installing libevent-2.1.12-sledzwksnh646ei2qw2caxesmgjx3czy [38/48]
+==> No binary for libevent-2.1.12-sledzwksnh646ei2qw2caxesmgjx3czy found: installing from source
+==> Fetching https://mirror.spack.io/_source-cache/archive/92/92e6de1be9ec176428fd2367677e61ceffc2ee1cb119035037a27d346b0403bb.tar.gz
+==> Ran patch() for libevent
+==> libevent: Executing phase: 'autoreconf'
+==> libevent: Executing phase: 'configure'
+==> libevent: Executing phase: 'build'
+==> libevent: Executing phase: 'install'
+==> libevent: Successfully installed libevent-2.1.12-sledzwksnh646ei2qw2caxesmgjx3czy
+  Stage: 0.13s.  Autoreconf: 0.00s.  Configure: 15.52s.  Build: 3.48s.  Install: 0.46s.  Post-install: 0.26s.  Total: 20.19s
+[+] /scratch/mcopik/xaas-containers-artifact/dependencies/spack/opt/spack/linux-skylake_avx512/libevent-2.1.12-sledzwksnh646ei2qw2caxesmgjx3czy
+==> Installing automake-1.16.5-iuai5e3hzlczjo2ehlnmsxji4k736fiv [39/48]
+==> No binary for automake-1.16.5-iuai5e3hzlczjo2ehlnmsxji4k736fiv found: installing from source
+==> Using cached archive: /scratch/mcopik/xaas-containers-artifact/dependencies/spack/var/spack/cache/_source-cache/archive/07/07bd24ad08a64bc17250ce09ec56e921d6343903943e99ccf63bbf0705e34605.tar.gz
+==> Ran patch() for automake
+==> automake: Executing phase: 'autoreconf'
+==> automake: Executing phase: 'configure'
+==> automake: Executing phase: 'build'
+==> automake: Executing phase: 'install'
+==> automake: Successfully installed automake-1.16.5-iuai5e3hzlczjo2ehlnmsxji4k736fiv
+  Stage: 0.12s.  Autoreconf: 0.00s.  Configure: 1.73s.  Build: 0.40s.  Install: 12.89s.  Post-install: 0.38s.  Total: 15.88s
+[+] /scratch/mcopik/xaas-containers-artifact/dependencies/spack/opt/spack/linux-skylake_avx512/automake-1.16.5-iuai5e3hzlczjo2ehlnmsxji4k736fiv
+==> Installing krb5-1.21.3-qouwtcjxlh5huuy6na3mtzixokwevgoi [40/48]
+==> No binary for krb5-1.21.3-qouwtcjxlh5huuy6na3mtzixokwevgoi found: installing from source
+==> Fetching https://mirror.spack.io/_source-cache/archive/b7/b7a4cd5ead67fb08b980b21abd150ff7217e85ea320c9ed0c6dadd304840ad35.tar.gz
+==> Ran patch() for krb5
+==> krb5: Executing phase: 'autoreconf'
+==> krb5: Executing phase: 'configure'
+==> krb5: Executing phase: 'build'
+==> krb5: Executing phase: 'install'
+==> krb5: Successfully installed krb5-1.21.3-qouwtcjxlh5huuy6na3mtzixokwevgoi
+  Stage: 0.36s.  Autoreconf: 0.00s.  Configure: 24.45s.  Build: 22.56s.  Install: 1.94s.  Post-install: 0.60s.  Total: 50.47s
+[+] /scratch/mcopik/xaas-containers-artifact/dependencies/spack/opt/spack/linux-skylake_avx512/krb5-1.21.3-qouwtcjxlh5huuy6na3mtzixokwevgoi
+==> Installing libtool-2.4.7-rjxnldjzrmovyn5mvbf32stxa53nsssv [41/48]
+==> No binary for libtool-2.4.7-rjxnldjzrmovyn5mvbf32stxa53nsssv found: installing from source
+==> Using cached archive: /scratch/mcopik/xaas-containers-artifact/dependencies/spack/var/spack/cache/_source-cache/archive/04/04e96c2404ea70c590c546eba4202a4e12722c640016c12b9b2f1ce3d481e9a8.tar.gz
+==> Ran patch() for libtool
+==> libtool: Executing phase: 'autoreconf'
+==> libtool: Executing phase: 'configure'
+==> libtool: Executing phase: 'build'
+==> libtool: Executing phase: 'install'
+==> libtool: Successfully installed libtool-2.4.7-rjxnldjzrmovyn5mvbf32stxa53nsssv
+  Stage: 0.10s.  Autoreconf: 0.00s.  Configure: 7.06s.  Build: 1.49s.  Install: 0.64s.  Post-install: 0.33s.  Total: 10.05s
+[+] /scratch/mcopik/xaas-containers-artifact/dependencies/spack/opt/spack/linux-skylake_avx512/libtool-2.4.7-rjxnldjzrmovyn5mvbf32stxa53nsssv
+==> Installing cmake-3.31.5-wif3l2wcyfidg7trvdgzoqky43ydrd3j [42/48]
+==> No binary for cmake-3.31.5-wif3l2wcyfidg7trvdgzoqky43ydrd3j found: installing from source
+==> Fetching https://mirror.spack.io/_source-cache/archive/66/66fb53a145648be56b46fa9e8ccade3a4d0dfc92e401e52ce76bdad1fea43d27.tar.gz
+==> No patches needed for cmake
+==> cmake: Executing phase: 'bootstrap'
+==> cmake: Executing phase: 'build'
+==> cmake: Executing phase: 'install'
+==> cmake: Successfully installed cmake-3.31.5-wif3l2wcyfidg7trvdgzoqky43ydrd3j
+  Stage: 1.31s.  Bootstrap: 1m 18.96s.  Build: 1m 22.41s.  Install: 29.43s.  Post-install: 6.34s.  Total: 3m 18.89s
+[+] /scratch/mcopik/xaas-containers-artifact/dependencies/spack/opt/spack/linux-skylake_avx512/cmake-3.31.5-wif3l2wcyfidg7trvdgzoqky43ydrd3j
+==> Installing pmix-5.0.5-ulovpgykgrcgmunbfyi57inicdgrpy7d [43/48]
+==> No binary for pmix-5.0.5-ulovpgykgrcgmunbfyi57inicdgrpy7d found: installing from source
+==> Fetching https://mirror.spack.io/_source-cache/archive/a1/a12e148c8ec4b032593a2c465a762e93c43ad715f3ceb9fbc038525613b0c70d.tar.bz2
+==> No patches needed for pmix
+==> pmix: Executing phase: 'autoreconf'
+==> pmix: Executing phase: 'configure'
+==> pmix: Executing phase: 'build'
+==> pmix: Executing phase: 'install'
+==> pmix: Successfully installed pmix-5.0.5-ulovpgykgrcgmunbfyi57inicdgrpy7d
+  Stage: 1.34s.  Autoreconf: 0.00s.  Configure: 31.58s.  Build: 1m 8.48s.  Install: 6.27s.  Post-install: 1.05s.  Total: 1m 49.19s
+[+] /scratch/mcopik/xaas-containers-artifact/dependencies/spack/opt/spack/linux-skylake_avx512/pmix-5.0.5-ulovpgykgrcgmunbfyi57inicdgrpy7d
+==> Installing openssh-9.9p1-2pxjah5ahgiltsxhlya64itg54grjkic [44/48]
+==> No binary for openssh-9.9p1-2pxjah5ahgiltsxhlya64itg54grjkic found: installing from source
+==> Fetching https://mirror.spack.io/_source-cache/archive/b3/b343fbcdbff87f15b1986e6e15d6d4fc9a7d36066be6b7fb507087ba8f966c02.tar.gz
+==> Ran patch() for openssh
+==> openssh: Executing phase: 'autoreconf'
+==> openssh: Executing phase: 'configure'
+==> openssh: Executing phase: 'build'
+==> openssh: Executing phase: 'install'
+==> openssh: Successfully installed openssh-9.9p1-2pxjah5ahgiltsxhlya64itg54grjkic
+  Stage: 0.26s.  Autoreconf: 0.00s.  Configure: 1m 0.11s.  Build: 4.12s.  Install: 3.02s.  Post-install: 0.38s.  Total: 1m 8.52s
+[+] /scratch/mcopik/xaas-containers-artifact/dependencies/spack/opt/spack/linux-skylake_avx512/openssh-9.9p1-2pxjah5ahgiltsxhlya64itg54grjkic
+==> Installing numactl-2.0.18-dnrne6b4f7dgedintuetxb2yhej7ptuu [45/48]
+==> No binary for numactl-2.0.18-dnrne6b4f7dgedintuetxb2yhej7ptuu found: installing from source
+==> Fetching https://mirror.spack.io/_source-cache/archive/8c/8cd6c13f3096e9c2293c1d732f56e2aa37a7ada1a98deed3fac7bd6da1aaaaf6.tar.gz
+==> No patches needed for numactl
+==> numactl: Executing phase: 'autoreconf'
+==> numactl: Executing phase: 'configure'
+==> numactl: Executing phase: 'build'
+==> numactl: Executing phase: 'install'
+==> numactl: Successfully installed numactl-2.0.18-dnrne6b4f7dgedintuetxb2yhej7ptuu
+  Stage: 0.11s.  Autoreconf: 5.53s.  Configure: 3.53s.  Build: 1.90s.  Install: 0.31s.  Post-install: 0.31s.  Total: 12.25s
+[+] /scratch/mcopik/xaas-containers-artifact/dependencies/spack/opt/spack/linux-skylake_avx512/numactl-2.0.18-dnrne6b4f7dgedintuetxb2yhej7ptuu
+==> Installing openmpi-5.0.6-qbzhgcq2ebxhd4er2xlp33kmwzyvrq6j [46/48]
+==> No binary for openmpi-5.0.6-qbzhgcq2ebxhd4er2xlp33kmwzyvrq6j found: installing from source
+==> Fetching https://mirror.spack.io/_source-cache/archive/bd/bd4183fcbc43477c254799b429df1a6e576c042e74a2d2f8b37d537b2ff98157.tar.bz2
+==> No patches needed for openmpi
+==> openmpi: Executing phase: 'autoreconf'
+==> openmpi: Executing phase: 'configure'
+==> openmpi: Executing phase: 'build'
+==> openmpi: Executing phase: 'install'
+==> openmpi: Successfully installed openmpi-5.0.6-qbzhgcq2ebxhd4er2xlp33kmwzyvrq6j
+  Stage: 5.77s.  Autoreconf: 0.00s.  Configure: 2m 5.74s.  Build: 2m 42.10s.  Install: 27.07s.  Post-install: 4.98s.  Total: 5m 26.61s
+[+] /scratch/mcopik/xaas-containers-artifact/dependencies/spack/opt/spack/linux-skylake_avx512/openmpi-5.0.6-qbzhgcq2ebxhd4er2xlp33kmwzyvrq6j
+==> Installing fftw-3.3.10-drgbriynva7wvdwzjyr63qqzwj63p6k3 [47/48]
+==> No binary for fftw-3.3.10-drgbriynva7wvdwzjyr63qqzwj63p6k3 found: installing from source
+==> Fetching https://mirror.spack.io/_source-cache/archive/56/56c932549852cddcfafdab3820b0200c7742675be92179e59e6215b340e26467.tar.gz
+==> Fetching https://mirror.spack.io/_source-cache/archive/87/872cff9a7d346e91a108ffd3540bfcebeb8cf86c7f40f6b31fd07a80267cbf53
+==> Applied patch https://github.com/FFTW/fftw3/commit/f69fef7aa546d4477a2a3fd7f13fa8b2f6c54af7.patch?full_index=1
+==> Ran patch() for fftw
+==> fftw: Executing phase: 'autoreconf'
+==> fftw: Executing phase: 'configure'
+==> fftw: Executing phase: 'build'
+==> fftw: Executing phase: 'install'
+==> fftw: Successfully installed fftw-3.3.10-drgbriynva7wvdwzjyr63qqzwj63p6k3
+  Stage: 0.72s.  Autoreconf: 0.00s.  Configure: 50.61s.  Build: 1m 55.19s.  Install: 6.50s.  Post-install: 0.49s.  Total: 2m 54.39s
+[+] /scratch/mcopik/xaas-containers-artifact/dependencies/spack/opt/spack/linux-skylake_avx512/fftw-3.3.10-drgbriynva7wvdwzjyr63qqzwj63p6k3
+==> Installing gromacs-2024.4-xsfsye7hfrh6pvc4kidmtwjsxpqpd2so [48/48]
+==> No binary for gromacs-2024.4-xsfsye7hfrh6pvc4kidmtwjsxpqpd2so found: installing from source
+==> Fetching https://mirror.spack.io/_source-cache/archive/ac/ac618ece2e58afa86b536c5a2c4fcb937f0760318f12d18f10346b6bdebd86a8.tar.gz
+==> Ran patch() for gromacs
+==> gromacs: Executing phase: 'cmake'
+==> gromacs: Executing phase: 'build'
+==> gromacs: Executing phase: 'install'
+==> gromacs: Successfully installed gromacs-2024.4-xsfsye7hfrh6pvc4kidmtwjsxpqpd2so
+  Stage: 3.53s.  Cmake: 1m 4.76s.  Build: 4m 9.20s.  Install: 11.23s.  Post-install: 1.87s.  Total: 5m 31.70s
+[+] /scratch/mcopik/xaas-containers-artifact/dependencies/spack/opt/spack/linux-skylake_avx512/gromacs-2024.4-xsfsye7hfrh6pvc4kidmtwjsxpqpd2so
+==> Updating view at /scratch/mcopik/xaas-containers-artifact/dependencies/spack/var/spack/environments/gromacs_basic/.spack-env/view

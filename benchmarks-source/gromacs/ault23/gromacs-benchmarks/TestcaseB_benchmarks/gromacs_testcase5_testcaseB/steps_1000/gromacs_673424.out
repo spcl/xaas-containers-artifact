@@ -1,0 +1,250 @@
+Source the GROMACS binary
+GROMACS configuration
+/scratch/mcopik/xaas-containers-artifact/dependencies/spack/opt/spack/linux-skylake_avx512/gromacs-2024.4-ahwslxxlv5nlqfryutx7iilzrxyynw4e/bin/gmx_mpi
+	linux-vdso.so.1 (0x0000155555551000)
+	libgromacs_mpi.so.9 => /scratch/mcopik/xaas-containers-artifact/dependencies/spack/opt/spack/linux-skylake_avx512/gromacs-2024.4-ahwslxxlv5nlqfryutx7iilzrxyynw4e/lib64/libgromacs_mpi.so.9 (0x0000155553591000)
+	libmpicxx.so.12 => /scratch/mcopik/xaas-containers-artifact/dependencies/spack/opt/spack/linux-skylake_avx512/mpich-4.2.3-oa6xwng6ty4i4uuu53ayr6xlza7uowdq/lib/libmpicxx.so.12 (0x000015555336e000)
+	libmpi.so.12 => /scratch/mcopik/xaas-containers-artifact/dependencies/spack/opt/spack/linux-skylake_avx512/mpich-4.2.3-oa6xwng6ty4i4uuu53ayr6xlza7uowdq/lib/libmpi.so.12 (0x0000155552817000)
+	libgomp.so.1 => /scratch/mcopik/xaas-containers-artifact/dependencies/spack/opt/spack/linux-centos8-zen/gcc-8.4.1/gcc-11.5.0-7bf3bhz3wu2vzvrtokgp444qkbrbzk6h/lib64/libgomp.so.1 (0x00001555525d3000)
+	libpthread.so.0 => /lib64/libpthread.so.0 (0x00001555523b3000)
+	libstdc++.so.6 => /scratch/mcopik/xaas-containers-artifact/dependencies/spack/opt/spack/linux-centos8-zen/gcc-8.4.1/gcc-11.5.0-7bf3bhz3wu2vzvrtokgp444qkbrbzk6h/lib64/libstdc++.so.6 (0x0000155551f96000)
+	libm.so.6 => /lib64/libm.so.6 (0x0000155551c14000)
+	libgcc_s.so.1 => /scratch/mcopik/xaas-containers-artifact/dependencies/spack/opt/spack/linux-centos8-zen/gcc-8.4.1/gcc-11.5.0-7bf3bhz3wu2vzvrtokgp444qkbrbzk6h/lib64/libgcc_s.so.1 (0x00001555519fb000)
+	libc.so.6 => /lib64/libc.so.6 (0x0000155551636000)
+	libdl.so.2 => /lib64/libdl.so.2 (0x0000155551432000)
+	librt.so.1 => /lib64/librt.so.1 (0x000015555122a000)
+	libcufft.so.11 => /scratch/mcopik/xaas-containers-artifact/dependencies/spack/opt/spack/linux-skylake_avx512/cuda-12.8.0-7rxmrpqtrijs2arsmcomnl5qnx47mzss/lib64/libcufft.so.11 (0x0000155540066000)
+	libheffte.so.2 => /scratch/mcopik/xaas-containers-artifact/dependencies/spack/opt/spack/linux-skylake_avx512/heffte-2.4.1-noyjgacsc5c3cosocixks5h2y5yviewl/lib64/libheffte.so.2 (0x000015553fcc1000)
+	libhwloc.so.15 => /scratch/mcopik/xaas-containers-artifact/dependencies/spack/opt/spack/linux-skylake_avx512/hwloc-2.11.1-54j37z4kbugo4lhlkswgrs2ahu2oisyc/lib/libhwloc.so.15 (0x000015553fa61000)
+	libfftw3f.so.3 => /scratch/mcopik/xaas-containers-artifact/dependencies/spack/opt/spack/linux-skylake_avx512/fftw-3.3.10-kki5zo755fj2vlywtzrzgrkg3q2l6tg5/lib/libfftw3f.so.3 (0x000015553f4ba000)
+	libopenblas.so.0 => /scratch/mcopik/xaas-containers-artifact/dependencies/spack/opt/spack/linux-skylake_avx512/openblas-0.3.29-2rjl3bebvu7lvxxgdesbg2toi57odxwy/lib/libopenblas.so.0 (0x000015553d1df000)
+	libmkl_intel_ilp64.so.2 => /scratch/mcopik/xaas-containers-artifact/dependencies/spack/opt/spack/linux-skylake_avx512/intel-oneapi-mkl-2024.2.2-ausjjwndg4jv4aapjeiulxj4l7xw7srh/mkl/2024.2/lib/libmkl_intel_ilp64.so.2 (0x000015553c490000)
+	libmkl_cdft_core.so.2 => /scratch/mcopik/xaas-containers-artifact/dependencies/spack/opt/spack/linux-skylake_avx512/intel-oneapi-mkl-2024.2.2-ausjjwndg4jv4aapjeiulxj4l7xw7srh/mkl/2024.2/lib/libmkl_cdft_core.so.2 (0x0000155555505000)
+	libmkl_gnu_thread.so.2 => /scratch/mcopik/xaas-containers-artifact/dependencies/spack/opt/spack/linux-skylake_avx512/intel-oneapi-mkl-2024.2.2-ausjjwndg4jv4aapjeiulxj4l7xw7srh/mkl/2024.2/lib/libmkl_gnu_thread.so.2 (0x000015553abef000)
+	libmkl_core.so.2 => /scratch/mcopik/xaas-containers-artifact/dependencies/spack/opt/spack/linux-skylake_avx512/intel-oneapi-mkl-2024.2.2-ausjjwndg4jv4aapjeiulxj4l7xw7srh/mkl/2024.2/lib/libmkl_core.so.2 (0x0000155536c7a000)
+	libcudart.so.12 => /scratch/mcopik/xaas-containers-artifact/dependencies/spack/opt/spack/linux-skylake_avx512/cuda-12.8.0-7rxmrpqtrijs2arsmcomnl5qnx47mzss/lib64/libcudart.so.12 (0x00001555369c6000)
+	libmuparser.so.2 => /scratch/mcopik/xaas-containers-artifact/dependencies/spack/opt/spack/linux-skylake_avx512/gromacs-2024.4-ahwslxxlv5nlqfryutx7iilzrxyynw4e/lib64/libmuparser.so.2 (0x0000155536747000)
+	/lib64/ld-linux-x86-64.so.2 (0x0000155555327000)
+	libyaksa.so.0 => /scratch/mcopik/xaas-containers-artifact/dependencies/spack/opt/spack/linux-skylake_avx512/yaksa-0.3-piip532exemzeorokjpq3vjrqadrdxs5/lib/libyaksa.so.0 (0x00001555345bd000)
+	libfabric.so.1 => /scratch/mcopik/xaas-containers-artifact/dependencies/spack/opt/spack/linux-skylake_avx512/libfabric-1.22.0-v34k45a6thkcq43xcgdh6h7oxfdqyxtt/lib/libfabric.so.1 (0x0000155534310000)
+	libatomic.so.1 => /scratch/mcopik/xaas-containers-artifact/dependencies/spack/opt/spack/linux-centos8-zen/gcc-8.4.1/gcc-11.5.0-7bf3bhz3wu2vzvrtokgp444qkbrbzk6h/lib64/libatomic.so.1 (0x0000155534108000)
+	libpciaccess.so.0 => /scratch/mcopik/xaas-containers-artifact/dependencies/spack/opt/spack/linux-skylake_avx512/libpciaccess-0.17-yvxuwo4vd7mst2crya6ujtvsp6j2taap/lib/libpciaccess.so.0 (0x0000155533efe000)
+	libxml2.so.2 => /scratch/mcopik/xaas-containers-artifact/dependencies/spack/opt/spack/linux-skylake_avx512/libxml2-2.13.5-s7f4ornnyjwvqvplvybe5zdlbyp7i6vc/lib/libxml2.so.2 (0x0000155533baa000)
+	libgfortran.so.5 => /scratch/mcopik/xaas-containers-artifact/dependencies/spack/opt/spack/linux-centos8-zen/gcc-8.4.1/gcc-11.5.0-7bf3bhz3wu2vzvrtokgp444qkbrbzk6h/lib64/libgfortran.so.5 (0x0000155533710000)
+	liblzma.so.5 => /scratch/mcopik/xaas-containers-artifact/dependencies/spack/opt/spack/linux-skylake_avx512/xz-5.4.6-h5nnlvwhnmfir74c6mel4uigix66zbdg/lib/liblzma.so.5 (0x00001555334e3000)
+	libiconv.so.2 => /scratch/mcopik/xaas-containers-artifact/dependencies/spack/opt/spack/linux-skylake_avx512/libiconv-1.17-gkbsrqyzbkrzodzuwsikcfg2l4nxbmjc/lib/libiconv.so.2 (0x00001555331d7000)
+	libquadmath.so.0 => /scratch/mcopik/xaas-containers-artifact/dependencies/spack/opt/spack/linux-centos8-zen/gcc-8.4.1/gcc-11.5.0-7bf3bhz3wu2vzvrtokgp444qkbrbzk6h/lib/../lib64/libquadmath.so.0 (0x0000155532f8f000)
+                       :-) GROMACS - gmx_mpi, 2024.4 (-:
+
+Executable:   /scratch/mcopik/xaas-containers-artifact/dependencies/spack/opt/spack/linux-skylake_avx512/gromacs-2024.4-ahwslxxlv5nlqfryutx7iilzrxyynw4e/bin/gmx_mpi
+Data prefix:  /scratch/mcopik/xaas-containers-artifact/dependencies/spack/opt/spack/linux-skylake_avx512/gromacs-2024.4-ahwslxxlv5nlqfryutx7iilzrxyynw4e
+Working dir:  /scratch/mcopik/xaas-containers-artifact/benchmarks-source/gromacs/ault23
+Command line:
+  gmx_mpi --version
+
+GROMACS version:     2024.4
+Precision:           mixed
+Memory model:        64 bit
+MPI library:         MPI
+MPI library version: MPICH Version:      4.2.3 MPICH Release date: Wed Oct  2 09:35:21 AM CDT 2024 MPICH ABI:          16:3:4 MPICH Device:       ch4:ofi MPICH configure:    --prefix=/scratch/mcopik/xaas-containers-artifact/dependencies/spack/opt/spack/linux-skylake_avx512/mpich-4.2.3-oa6xwng6ty4i4uuu53ayr6xlza7uowdq --disable-maintainer-mode --disable-silent-rules --enable-shared --with-pm=hydra --enable-romio --without-ibverbs --enable-wrapper-rpath=yes --with-yaksa=/scratch/mcopik/xaas-containers-artifact/dependencies/spack/opt/spack/linux-skylake_avx512/yaksa-0.3-piip532exemzeorokjpq3vjrqadrdxs5 --without-ze --with-hwloc=/scratch/mcopik/xaas-containers-artifact/dependencies/spack/opt/spack/linux-skylake_avx512/hwloc-2.11.1-54j37z4kbugo4lhlkswgrs2ahu2oisyc --enable-fortran --with-slurm=no --without-cuda --without-hip --with-device=ch4:ofi --with-libfabric=/scratch/mcopik/xaas-containers-artifact/dependencies/spack/opt/spack/linux-skylake_avx512/libfabric-1.22.0-v34k45a6thkcq43xcgdh6h7oxfdqyxtt --enable-libxml2 --with-datatype-engine=auto MPICH CC:           /scratch/mcopik/xaas-containers-artifact/dependencies/spack/opt/spack/linux-skylake_avx512/compiler-wrapper-1.0-eaps7qsvrr75caoepgoncgn63yfcfhmc/libexec/spack/gcc/gcc    -O2 MPICH CXX:          /scratch/mcopik/xaas-containers-artifact/dependencies/spack/opt/spack/linux-skylake_avx512/compiler-wrapper-1.0-eaps7qsvrr75caoepgoncgn63yfcfhmc/libexec/spack/gcc/g++   -O2 MPICH F77:          /scratch/mcopik/xaas-containers-artifact/dependencies/spack/opt/spack/linux-skylake_avx512/compiler-wrapper-1.0-eaps7qsvrr75caoepgoncgn63yfcfhmc/libexec/spack/gcc/gfortran   -O2 MPICH FC:           /scratch/mcopik/xaas-containers-artifact/dependencies/spack/opt/spack/linux-skylake_avx512/compiler-wrapper-1.0-eaps7qsvrr75caoepgoncgn63yfcfhmc/libexec/spack/gcc/gfortran   -O2 MPICH features:     threadcomm 
+OpenMP support:      enabled (GMX_OPENMP_MAX_THREADS = 128)
+GPU support:         CUDA
+NBNxM GPU setup:     super-cluster 2x2x2 / cluster 8
+SIMD instructions:   AVX_512
+CPU FFT library:     fftw-3.3.10-sse2-avx-avx2-avx2_128-avx512
+GPU FFT library:     cuFFT
+Multi-GPU FFT:       HeFFTe 2.4.1 with cuFFT backend
+RDTSCP usage:        enabled
+TNG support:         enabled
+Hwloc support:       hwloc-2.11.1
+Tracing support:     disabled
+C compiler:          /scratch/mcopik/xaas-containers-artifact/dependencies/spack/opt/spack/linux-skylake_avx512/compiler-wrapper-1.0-eaps7qsvrr75caoepgoncgn63yfcfhmc/libexec/spack/gcc/gcc GNU 11.5.0
+C compiler flags:    -fexcess-precision=fast -funroll-all-loops -march=skylake-avx512 -Wno-missing-field-initializers -O3 -DNDEBUG
+C++ compiler:        /scratch/mcopik/xaas-containers-artifact/dependencies/spack/opt/spack/linux-skylake_avx512/compiler-wrapper-1.0-eaps7qsvrr75caoepgoncgn63yfcfhmc/libexec/spack/gcc/g++ GNU 11.5.0
+C++ compiler flags:  -fexcess-precision=fast -funroll-all-loops -march=skylake-avx512 -Wno-missing-field-initializers -Wno-cast-function-type-strict SHELL:-fopenmp -O3 -DNDEBUG
+BLAS library:        External - user-supplied
+LAPACK library:      External - user-supplied
+CUDA compiler:       /scratch/mcopik/xaas-containers-artifact/dependencies/spack/opt/spack/linux-skylake_avx512/cuda-12.8.0-7rxmrpqtrijs2arsmcomnl5qnx47mzss/bin/nvcc nvcc: NVIDIA (R) Cuda compiler driver;Copyright (c) 2005-2025 NVIDIA Corporation;Built on Wed_Jan_15_19:20:09_PST_2025;Cuda compilation tools, release 12.8, V12.8.61;Build cuda_12.8.r12.8/compiler.35404655_0
+CUDA compiler flags:-std=c++17;--generate-code=arch=compute_70,code=sm_70;-use_fast_math;-Xptxas;-warn-double-usage;-Xptxas;-Werror;-D_FORCE_INLINES;-Xcompiler;-fopenmp;-fexcess-precision=fast -funroll-all-loops -march=skylake-avx512 -Wno-missing-field-initializers -Wno-cast-function-type-strict SHELL:-fopenmp -O3 -DNDEBUG
+CUDA driver:         12.80
+CUDA runtime:        12.80
+
+GROMACS Spack configuration
+[+]  gromacs@2024.4~cp2k+cuda~cufftmp~cycle_subcounters~double+gmxapi~heffte+hwloc~intel_provided_gcc~ipo~itt~mdrun_only+mpi+nblib~nosuffix~nvshmem~opencl+openmp~relaxed_double_precision+shared~sycl build_system=cmake build_type=Release cuda_arch=none generator=make openmp_max_threads=none arch=linux-centos8-skylake_avx512
+[+]      ^cmake@3.31.5~doc+ncurses+ownlibs~qtgui build_system=generic build_type=Release arch=linux-centos8-skylake_avx512
+[+]          ^curl@8.11.1~gssapi~ldap~libidn2~librtmp~libssh~libssh2+nghttp2 build_system=autotools libs=shared,static tls=openssl arch=linux-centos8-skylake_avx512
+[+]              ^nghttp2@1.64.0 build_system=autotools arch=linux-centos8-skylake_avx512
+[+]                  ^diffutils@3.10 build_system=autotools arch=linux-centos8-skylake_avx512
+[+]              ^openssl@3.4.0~docs+shared build_system=generic certs=mozilla arch=linux-centos8-skylake_avx512
+[+]                  ^ca-certificates-mozilla@2024-12-31 build_system=generic arch=linux-centos8-skylake_avx512
+[+]          ^ncurses@6.5~symlinks+termlib abi=none build_system=autotools patches=7a351bc arch=linux-centos8-skylake_avx512
+[+]          ^zlib-ng@2.2.3+compat+new_strategies+opt+pic+shared build_system=autotools arch=linux-centos8-skylake_avx512
+[+]      ^compiler-wrapper@1.0 build_system=generic arch=linux-centos8-skylake_avx512
+[+]      ^cuda@12.8.0~allow-unsupported-compilers~dev build_system=generic arch=linux-centos8-skylake_avx512
+[+]          ^libxml2@2.13.5~http+pic~python+shared build_system=autotools arch=linux-centos8-skylake_avx512
+[+]              ^libiconv@1.17 build_system=autotools libs=shared,static arch=linux-centos8-skylake_avx512
+[+]              ^xz@5.4.6~pic build_system=autotools libs=shared,static arch=linux-centos8-skylake_avx512
+[+]      ^fftw@3.3.10+mpi~openmp~pfft_patches+shared build_system=autotools patches=872cff9 precision=double,float arch=linux-centos8-skylake_avx512
+[e]      ^gcc@11.5.0~binutils+bootstrap~graphite~nvptx~piclibs~strip build_system=autotools build_type=RelWithDebInfo languages='c,c++,fortran' arch=linux-centos8-skylake_avx512
+[+]      ^gcc-runtime@11.5.0 build_system=generic arch=linux-centos8-skylake_avx512
+[e]      ^glibc@2.28 build_system=autotools arch=linux-centos8-skylake_avx512
+[+]      ^gmake@4.4.1~guile build_system=generic arch=linux-centos8-skylake_avx512
+[+]      ^hwloc@2.11.1~cairo~cuda~gl~level_zero~libudev+libxml2~nvml~opencl+pci~rocm build_system=autotools libs=shared,static arch=linux-centos8-skylake_avx512
+[+]          ^libpciaccess@0.17 build_system=autotools arch=linux-centos8-skylake_avx512
+[+]              ^util-macros@1.20.1 build_system=autotools arch=linux-centos8-skylake_avx512
+[+]      ^openblas@0.3.29~bignuma~consistent_fpcsr+dynamic_dispatch+fortran~ilp64+locking+pic+shared build_system=makefile symbol_suffix=none threads=none arch=linux-centos8-skylake_avx512
+[+]      ^openmpi@5.0.6+atomics~cuda~debug~gpfs~internal-hwloc~internal-libevent~internal-pmix~java~lustre~memchecker~openshmem~romio+rsh~static~two_level_namespace+vt+wrapper-rpath build_system=autotools fabrics=none romio-filesystem=none schedulers=none arch=linux-centos8-skylake_avx512
+[+]          ^autoconf@2.72 build_system=autotools arch=linux-centos8-skylake_avx512
+[+]              ^m4@1.4.19+sigsegv build_system=autotools patches=9dc5fbd,bfdffa7 arch=linux-centos8-skylake_avx512
+[+]                  ^libsigsegv@2.14 build_system=autotools arch=linux-centos8-skylake_avx512
+[+]          ^automake@1.16.5 build_system=autotools arch=linux-centos8-skylake_avx512
+[+]          ^libevent@2.1.12+openssl build_system=autotools arch=linux-centos8-skylake_avx512
+[+]          ^libtool@2.4.7 build_system=autotools arch=linux-centos8-skylake_avx512
+[+]              ^findutils@4.10.0 build_system=autotools patches=440b954 arch=linux-centos8-skylake_avx512
+[+]                  ^gettext@0.23.1+bzip2+curses+git~libunistring+libxml2+pic+shared+tar+xz build_system=autotools arch=linux-centos8-skylake_avx512
+[+]                      ^tar@1.35 build_system=autotools zip=pigz arch=linux-centos8-skylake_avx512
+[+]                          ^pigz@2.8 build_system=makefile arch=linux-centos8-skylake_avx512
+[+]                          ^zstd@1.5.6+programs build_system=makefile compression=none libs=shared,static arch=linux-centos8-skylake_avx512
+[+]          ^numactl@2.0.18 build_system=autotools arch=linux-centos8-skylake_avx512
+[+]          ^openssh@9.9p1+gssapi build_system=autotools arch=linux-centos8-skylake_avx512
+[+]              ^krb5@1.21.3+shared build_system=autotools arch=linux-centos8-skylake_avx512
+[+]                  ^bison@3.8.2~color build_system=autotools arch=linux-centos8-skylake_avx512
+[+]              ^libedit@3.1-20240808 build_system=autotools arch=linux-centos8-skylake_avx512
+[+]              ^libxcrypt@4.4.35~obsolete_api build_system=autotools patches=4885da3 arch=linux-centos8-skylake_avx512
+[+]          ^perl@5.40.0+cpanm+opcode+open+shared+threads build_system=generic arch=linux-centos8-skylake_avx512
+[+]              ^berkeley-db@18.1.40+cxx~docs+stl build_system=autotools patches=26090f4,b231fcc arch=linux-centos8-skylake_avx512
+[+]              ^bzip2@1.0.8~debug~pic+shared build_system=generic arch=linux-centos8-skylake_avx512
+[+]              ^gdbm@1.23 build_system=autotools arch=linux-centos8-skylake_avx512
+[+]                  ^readline@8.2 build_system=autotools patches=1ea4349,24f587b,3d9885e,5911a5b,622ba38,6c8adf8,758e2ec,79572ee,a177edc,bbf97f1,c7b45ff,e0013d9,e065038 arch=linux-centos8-skylake_avx512
+[+]          ^pmix@5.0.5~munge~python build_system=autotools arch=linux-centos8-skylake_avx512
+[+]      ^pkgconf@2.3.0 build_system=autotools arch=linux-centos8-skylake_avx512
+
+Starting run 1...
+/scratch/mcopik/xaas-containers-artifact/benchmarks-source/gromacs/ault23/gromacs-benchmarks/TestcaseB_benchmarks/gromacs_testcase5_testcaseB/steps_1000/run1 /scratch/mcopik/xaas-containers-artifact/benchmarks-source/gromacs/ault23
+/scratch/mcopik/xaas-containers-artifact/benchmarks-source/gromacs/ault23
+Warm-up run 1 completed. Deleting files...
+Starting run 2...
+/scratch/mcopik/xaas-containers-artifact/benchmarks-source/gromacs/ault23/gromacs-benchmarks/TestcaseB_benchmarks/gromacs_testcase5_testcaseB/steps_1000/run2 /scratch/mcopik/xaas-containers-artifact/benchmarks-source/gromacs/ault23
+/scratch/mcopik/xaas-containers-artifact/benchmarks-source/gromacs/ault23
+Warm-up run 2 completed. Deleting files...
+Starting run 3...
+/scratch/mcopik/xaas-containers-artifact/benchmarks-source/gromacs/ault23/gromacs-benchmarks/TestcaseB_benchmarks/gromacs_testcase5_testcaseB/steps_1000/run3 /scratch/mcopik/xaas-containers-artifact/benchmarks-source/gromacs/ault23
+/scratch/mcopik/xaas-containers-artifact/benchmarks-source/gromacs/ault23
+Benchmark run 3 completed. Data saved in /scratch/mcopik/xaas-containers-artifact/benchmarks-source/gromacs/ault23/gromacs-benchmarks/TestcaseB_benchmarks/gromacs_testcase5_testcaseB/steps_1000/run3.
+Starting run 4...
+/scratch/mcopik/xaas-containers-artifact/benchmarks-source/gromacs/ault23/gromacs-benchmarks/TestcaseB_benchmarks/gromacs_testcase5_testcaseB/steps_1000/run4 /scratch/mcopik/xaas-containers-artifact/benchmarks-source/gromacs/ault23
+/scratch/mcopik/xaas-containers-artifact/benchmarks-source/gromacs/ault23
+Benchmark run 4 completed. Data saved in /scratch/mcopik/xaas-containers-artifact/benchmarks-source/gromacs/ault23/gromacs-benchmarks/TestcaseB_benchmarks/gromacs_testcase5_testcaseB/steps_1000/run4.
+Starting run 5...
+/scratch/mcopik/xaas-containers-artifact/benchmarks-source/gromacs/ault23/gromacs-benchmarks/TestcaseB_benchmarks/gromacs_testcase5_testcaseB/steps_1000/run5 /scratch/mcopik/xaas-containers-artifact/benchmarks-source/gromacs/ault23
+/scratch/mcopik/xaas-containers-artifact/benchmarks-source/gromacs/ault23
+Benchmark run 5 completed. Data saved in /scratch/mcopik/xaas-containers-artifact/benchmarks-source/gromacs/ault23/gromacs-benchmarks/TestcaseB_benchmarks/gromacs_testcase5_testcaseB/steps_1000/run5.
+Starting run 6...
+/scratch/mcopik/xaas-containers-artifact/benchmarks-source/gromacs/ault23/gromacs-benchmarks/TestcaseB_benchmarks/gromacs_testcase5_testcaseB/steps_1000/run6 /scratch/mcopik/xaas-containers-artifact/benchmarks-source/gromacs/ault23
+/scratch/mcopik/xaas-containers-artifact/benchmarks-source/gromacs/ault23
+Benchmark run 6 completed. Data saved in /scratch/mcopik/xaas-containers-artifact/benchmarks-source/gromacs/ault23/gromacs-benchmarks/TestcaseB_benchmarks/gromacs_testcase5_testcaseB/steps_1000/run6.
+Starting run 7...
+/scratch/mcopik/xaas-containers-artifact/benchmarks-source/gromacs/ault23/gromacs-benchmarks/TestcaseB_benchmarks/gromacs_testcase5_testcaseB/steps_1000/run7 /scratch/mcopik/xaas-containers-artifact/benchmarks-source/gromacs/ault23
+/scratch/mcopik/xaas-containers-artifact/benchmarks-source/gromacs/ault23
+Benchmark run 7 completed. Data saved in /scratch/mcopik/xaas-containers-artifact/benchmarks-source/gromacs/ault23/gromacs-benchmarks/TestcaseB_benchmarks/gromacs_testcase5_testcaseB/steps_1000/run7.
+Starting run 8...
+/scratch/mcopik/xaas-containers-artifact/benchmarks-source/gromacs/ault23/gromacs-benchmarks/TestcaseB_benchmarks/gromacs_testcase5_testcaseB/steps_1000/run8 /scratch/mcopik/xaas-containers-artifact/benchmarks-source/gromacs/ault23
+/scratch/mcopik/xaas-containers-artifact/benchmarks-source/gromacs/ault23
+Benchmark run 8 completed. Data saved in /scratch/mcopik/xaas-containers-artifact/benchmarks-source/gromacs/ault23/gromacs-benchmarks/TestcaseB_benchmarks/gromacs_testcase5_testcaseB/steps_1000/run8.
+Starting run 9...
+/scratch/mcopik/xaas-containers-artifact/benchmarks-source/gromacs/ault23/gromacs-benchmarks/TestcaseB_benchmarks/gromacs_testcase5_testcaseB/steps_1000/run9 /scratch/mcopik/xaas-containers-artifact/benchmarks-source/gromacs/ault23
+/scratch/mcopik/xaas-containers-artifact/benchmarks-source/gromacs/ault23
+Benchmark run 9 completed. Data saved in /scratch/mcopik/xaas-containers-artifact/benchmarks-source/gromacs/ault23/gromacs-benchmarks/TestcaseB_benchmarks/gromacs_testcase5_testcaseB/steps_1000/run9.
+Starting run 10...
+/scratch/mcopik/xaas-containers-artifact/benchmarks-source/gromacs/ault23/gromacs-benchmarks/TestcaseB_benchmarks/gromacs_testcase5_testcaseB/steps_1000/run10 /scratch/mcopik/xaas-containers-artifact/benchmarks-source/gromacs/ault23
+/scratch/mcopik/xaas-containers-artifact/benchmarks-source/gromacs/ault23
+Benchmark run 10 completed. Data saved in /scratch/mcopik/xaas-containers-artifact/benchmarks-source/gromacs/ault23/gromacs-benchmarks/TestcaseB_benchmarks/gromacs_testcase5_testcaseB/steps_1000/run10.
+Starting run 11...
+/scratch/mcopik/xaas-containers-artifact/benchmarks-source/gromacs/ault23/gromacs-benchmarks/TestcaseB_benchmarks/gromacs_testcase5_testcaseB/steps_1000/run11 /scratch/mcopik/xaas-containers-artifact/benchmarks-source/gromacs/ault23
+/scratch/mcopik/xaas-containers-artifact/benchmarks-source/gromacs/ault23
+Benchmark run 11 completed. Data saved in /scratch/mcopik/xaas-containers-artifact/benchmarks-source/gromacs/ault23/gromacs-benchmarks/TestcaseB_benchmarks/gromacs_testcase5_testcaseB/steps_1000/run11.
+Starting run 12...
+/scratch/mcopik/xaas-containers-artifact/benchmarks-source/gromacs/ault23/gromacs-benchmarks/TestcaseB_benchmarks/gromacs_testcase5_testcaseB/steps_1000/run12 /scratch/mcopik/xaas-containers-artifact/benchmarks-source/gromacs/ault23
+/scratch/mcopik/xaas-containers-artifact/benchmarks-source/gromacs/ault23
+Benchmark run 12 completed. Data saved in /scratch/mcopik/xaas-containers-artifact/benchmarks-source/gromacs/ault23/gromacs-benchmarks/TestcaseB_benchmarks/gromacs_testcase5_testcaseB/steps_1000/run12.
+Starting run 13...
+/scratch/mcopik/xaas-containers-artifact/benchmarks-source/gromacs/ault23/gromacs-benchmarks/TestcaseB_benchmarks/gromacs_testcase5_testcaseB/steps_1000/run13 /scratch/mcopik/xaas-containers-artifact/benchmarks-source/gromacs/ault23
+/scratch/mcopik/xaas-containers-artifact/benchmarks-source/gromacs/ault23
+Benchmark run 13 completed. Data saved in /scratch/mcopik/xaas-containers-artifact/benchmarks-source/gromacs/ault23/gromacs-benchmarks/TestcaseB_benchmarks/gromacs_testcase5_testcaseB/steps_1000/run13.
+Starting run 14...
+/scratch/mcopik/xaas-containers-artifact/benchmarks-source/gromacs/ault23/gromacs-benchmarks/TestcaseB_benchmarks/gromacs_testcase5_testcaseB/steps_1000/run14 /scratch/mcopik/xaas-containers-artifact/benchmarks-source/gromacs/ault23
+/scratch/mcopik/xaas-containers-artifact/benchmarks-source/gromacs/ault23
+Benchmark run 14 completed. Data saved in /scratch/mcopik/xaas-containers-artifact/benchmarks-source/gromacs/ault23/gromacs-benchmarks/TestcaseB_benchmarks/gromacs_testcase5_testcaseB/steps_1000/run14.
+Starting run 15...
+/scratch/mcopik/xaas-containers-artifact/benchmarks-source/gromacs/ault23/gromacs-benchmarks/TestcaseB_benchmarks/gromacs_testcase5_testcaseB/steps_1000/run15 /scratch/mcopik/xaas-containers-artifact/benchmarks-source/gromacs/ault23
+/scratch/mcopik/xaas-containers-artifact/benchmarks-source/gromacs/ault23
+Benchmark run 15 completed. Data saved in /scratch/mcopik/xaas-containers-artifact/benchmarks-source/gromacs/ault23/gromacs-benchmarks/TestcaseB_benchmarks/gromacs_testcase5_testcaseB/steps_1000/run15.
+Starting run 16...
+/scratch/mcopik/xaas-containers-artifact/benchmarks-source/gromacs/ault23/gromacs-benchmarks/TestcaseB_benchmarks/gromacs_testcase5_testcaseB/steps_1000/run16 /scratch/mcopik/xaas-containers-artifact/benchmarks-source/gromacs/ault23
+/scratch/mcopik/xaas-containers-artifact/benchmarks-source/gromacs/ault23
+Benchmark run 16 completed. Data saved in /scratch/mcopik/xaas-containers-artifact/benchmarks-source/gromacs/ault23/gromacs-benchmarks/TestcaseB_benchmarks/gromacs_testcase5_testcaseB/steps_1000/run16.
+Starting run 17...
+/scratch/mcopik/xaas-containers-artifact/benchmarks-source/gromacs/ault23/gromacs-benchmarks/TestcaseB_benchmarks/gromacs_testcase5_testcaseB/steps_1000/run17 /scratch/mcopik/xaas-containers-artifact/benchmarks-source/gromacs/ault23
+/scratch/mcopik/xaas-containers-artifact/benchmarks-source/gromacs/ault23
+Benchmark run 17 completed. Data saved in /scratch/mcopik/xaas-containers-artifact/benchmarks-source/gromacs/ault23/gromacs-benchmarks/TestcaseB_benchmarks/gromacs_testcase5_testcaseB/steps_1000/run17.
+Starting run 18...
+/scratch/mcopik/xaas-containers-artifact/benchmarks-source/gromacs/ault23/gromacs-benchmarks/TestcaseB_benchmarks/gromacs_testcase5_testcaseB/steps_1000/run18 /scratch/mcopik/xaas-containers-artifact/benchmarks-source/gromacs/ault23
+/scratch/mcopik/xaas-containers-artifact/benchmarks-source/gromacs/ault23
+Benchmark run 18 completed. Data saved in /scratch/mcopik/xaas-containers-artifact/benchmarks-source/gromacs/ault23/gromacs-benchmarks/TestcaseB_benchmarks/gromacs_testcase5_testcaseB/steps_1000/run18.
+Starting run 19...
+/scratch/mcopik/xaas-containers-artifact/benchmarks-source/gromacs/ault23/gromacs-benchmarks/TestcaseB_benchmarks/gromacs_testcase5_testcaseB/steps_1000/run19 /scratch/mcopik/xaas-containers-artifact/benchmarks-source/gromacs/ault23
+/scratch/mcopik/xaas-containers-artifact/benchmarks-source/gromacs/ault23
+Benchmark run 19 completed. Data saved in /scratch/mcopik/xaas-containers-artifact/benchmarks-source/gromacs/ault23/gromacs-benchmarks/TestcaseB_benchmarks/gromacs_testcase5_testcaseB/steps_1000/run19.
+Starting run 20...
+/scratch/mcopik/xaas-containers-artifact/benchmarks-source/gromacs/ault23/gromacs-benchmarks/TestcaseB_benchmarks/gromacs_testcase5_testcaseB/steps_1000/run20 /scratch/mcopik/xaas-containers-artifact/benchmarks-source/gromacs/ault23
+/scratch/mcopik/xaas-containers-artifact/benchmarks-source/gromacs/ault23
+Benchmark run 20 completed. Data saved in /scratch/mcopik/xaas-containers-artifact/benchmarks-source/gromacs/ault23/gromacs-benchmarks/TestcaseB_benchmarks/gromacs_testcase5_testcaseB/steps_1000/run20.
+Starting run 21...
+/scratch/mcopik/xaas-containers-artifact/benchmarks-source/gromacs/ault23/gromacs-benchmarks/TestcaseB_benchmarks/gromacs_testcase5_testcaseB/steps_1000/run21 /scratch/mcopik/xaas-containers-artifact/benchmarks-source/gromacs/ault23
+/scratch/mcopik/xaas-containers-artifact/benchmarks-source/gromacs/ault23
+Benchmark run 21 completed. Data saved in /scratch/mcopik/xaas-containers-artifact/benchmarks-source/gromacs/ault23/gromacs-benchmarks/TestcaseB_benchmarks/gromacs_testcase5_testcaseB/steps_1000/run21.
+Starting run 22...
+/scratch/mcopik/xaas-containers-artifact/benchmarks-source/gromacs/ault23/gromacs-benchmarks/TestcaseB_benchmarks/gromacs_testcase5_testcaseB/steps_1000/run22 /scratch/mcopik/xaas-containers-artifact/benchmarks-source/gromacs/ault23
+/scratch/mcopik/xaas-containers-artifact/benchmarks-source/gromacs/ault23
+Benchmark run 22 completed. Data saved in /scratch/mcopik/xaas-containers-artifact/benchmarks-source/gromacs/ault23/gromacs-benchmarks/TestcaseB_benchmarks/gromacs_testcase5_testcaseB/steps_1000/run22.
+Starting run 23...
+/scratch/mcopik/xaas-containers-artifact/benchmarks-source/gromacs/ault23/gromacs-benchmarks/TestcaseB_benchmarks/gromacs_testcase5_testcaseB/steps_1000/run23 /scratch/mcopik/xaas-containers-artifact/benchmarks-source/gromacs/ault23
+/scratch/mcopik/xaas-containers-artifact/benchmarks-source/gromacs/ault23
+Benchmark run 23 completed. Data saved in /scratch/mcopik/xaas-containers-artifact/benchmarks-source/gromacs/ault23/gromacs-benchmarks/TestcaseB_benchmarks/gromacs_testcase5_testcaseB/steps_1000/run23.
+Starting run 24...
+/scratch/mcopik/xaas-containers-artifact/benchmarks-source/gromacs/ault23/gromacs-benchmarks/TestcaseB_benchmarks/gromacs_testcase5_testcaseB/steps_1000/run24 /scratch/mcopik/xaas-containers-artifact/benchmarks-source/gromacs/ault23
+/scratch/mcopik/xaas-containers-artifact/benchmarks-source/gromacs/ault23
+Benchmark run 24 completed. Data saved in /scratch/mcopik/xaas-containers-artifact/benchmarks-source/gromacs/ault23/gromacs-benchmarks/TestcaseB_benchmarks/gromacs_testcase5_testcaseB/steps_1000/run24.
+Starting run 25...
+/scratch/mcopik/xaas-containers-artifact/benchmarks-source/gromacs/ault23/gromacs-benchmarks/TestcaseB_benchmarks/gromacs_testcase5_testcaseB/steps_1000/run25 /scratch/mcopik/xaas-containers-artifact/benchmarks-source/gromacs/ault23
+/scratch/mcopik/xaas-containers-artifact/benchmarks-source/gromacs/ault23
+Benchmark run 25 completed. Data saved in /scratch/mcopik/xaas-containers-artifact/benchmarks-source/gromacs/ault23/gromacs-benchmarks/TestcaseB_benchmarks/gromacs_testcase5_testcaseB/steps_1000/run25.
+Starting run 26...
+/scratch/mcopik/xaas-containers-artifact/benchmarks-source/gromacs/ault23/gromacs-benchmarks/TestcaseB_benchmarks/gromacs_testcase5_testcaseB/steps_1000/run26 /scratch/mcopik/xaas-containers-artifact/benchmarks-source/gromacs/ault23
+/scratch/mcopik/xaas-containers-artifact/benchmarks-source/gromacs/ault23
+Benchmark run 26 completed. Data saved in /scratch/mcopik/xaas-containers-artifact/benchmarks-source/gromacs/ault23/gromacs-benchmarks/TestcaseB_benchmarks/gromacs_testcase5_testcaseB/steps_1000/run26.
+Starting run 27...
+/scratch/mcopik/xaas-containers-artifact/benchmarks-source/gromacs/ault23/gromacs-benchmarks/TestcaseB_benchmarks/gromacs_testcase5_testcaseB/steps_1000/run27 /scratch/mcopik/xaas-containers-artifact/benchmarks-source/gromacs/ault23
+/scratch/mcopik/xaas-containers-artifact/benchmarks-source/gromacs/ault23
+Benchmark run 27 completed. Data saved in /scratch/mcopik/xaas-containers-artifact/benchmarks-source/gromacs/ault23/gromacs-benchmarks/TestcaseB_benchmarks/gromacs_testcase5_testcaseB/steps_1000/run27.
+Starting run 28...
+/scratch/mcopik/xaas-containers-artifact/benchmarks-source/gromacs/ault23/gromacs-benchmarks/TestcaseB_benchmarks/gromacs_testcase5_testcaseB/steps_1000/run28 /scratch/mcopik/xaas-containers-artifact/benchmarks-source/gromacs/ault23
+/scratch/mcopik/xaas-containers-artifact/benchmarks-source/gromacs/ault23
+Benchmark run 28 completed. Data saved in /scratch/mcopik/xaas-containers-artifact/benchmarks-source/gromacs/ault23/gromacs-benchmarks/TestcaseB_benchmarks/gromacs_testcase5_testcaseB/steps_1000/run28.
+Starting run 29...
+/scratch/mcopik/xaas-containers-artifact/benchmarks-source/gromacs/ault23/gromacs-benchmarks/TestcaseB_benchmarks/gromacs_testcase5_testcaseB/steps_1000/run29 /scratch/mcopik/xaas-containers-artifact/benchmarks-source/gromacs/ault23
+/scratch/mcopik/xaas-containers-artifact/benchmarks-source/gromacs/ault23
+Benchmark run 29 completed. Data saved in /scratch/mcopik/xaas-containers-artifact/benchmarks-source/gromacs/ault23/gromacs-benchmarks/TestcaseB_benchmarks/gromacs_testcase5_testcaseB/steps_1000/run29.
+Starting run 30...
+/scratch/mcopik/xaas-containers-artifact/benchmarks-source/gromacs/ault23/gromacs-benchmarks/TestcaseB_benchmarks/gromacs_testcase5_testcaseB/steps_1000/run30 /scratch/mcopik/xaas-containers-artifact/benchmarks-source/gromacs/ault23
+/scratch/mcopik/xaas-containers-artifact/benchmarks-source/gromacs/ault23
+Benchmark run 30 completed. Data saved in /scratch/mcopik/xaas-containers-artifact/benchmarks-source/gromacs/ault23/gromacs-benchmarks/TestcaseB_benchmarks/gromacs_testcase5_testcaseB/steps_1000/run30.
+Starting run 31...
+/scratch/mcopik/xaas-containers-artifact/benchmarks-source/gromacs/ault23/gromacs-benchmarks/TestcaseB_benchmarks/gromacs_testcase5_testcaseB/steps_1000/run31 /scratch/mcopik/xaas-containers-artifact/benchmarks-source/gromacs/ault23
+/scratch/mcopik/xaas-containers-artifact/benchmarks-source/gromacs/ault23
+Benchmark run 31 completed. Data saved in /scratch/mcopik/xaas-containers-artifact/benchmarks-source/gromacs/ault23/gromacs-benchmarks/TestcaseB_benchmarks/gromacs_testcase5_testcaseB/steps_1000/run31.
+Starting run 32...
+/scratch/mcopik/xaas-containers-artifact/benchmarks-source/gromacs/ault23/gromacs-benchmarks/TestcaseB_benchmarks/gromacs_testcase5_testcaseB/steps_1000/run32 /scratch/mcopik/xaas-containers-artifact/benchmarks-source/gromacs/ault23
+/scratch/mcopik/xaas-containers-artifact/benchmarks-source/gromacs/ault23
+Benchmark run 32 completed. Data saved in /scratch/mcopik/xaas-containers-artifact/benchmarks-source/gromacs/ault23/gromacs-benchmarks/TestcaseB_benchmarks/gromacs_testcase5_testcaseB/steps_1000/run32.
+All benchmarking runs are complete!

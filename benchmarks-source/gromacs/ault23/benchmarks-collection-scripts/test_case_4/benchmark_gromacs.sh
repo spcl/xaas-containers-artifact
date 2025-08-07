@@ -10,6 +10,7 @@
 #SBATCH --exclusive                    # Ensures no other jobs run on this node
 
 ARTIFACT_LOCATION=${ARTIFACT_LOCATION:-${SCRATCH}/xaas-containers-artifact}
+STEPS=1000
 
 # Load Spack environment
 source ${ARTIFACT_LOCATION}/dependencies/spack/share/spack/setup-env.sh
@@ -20,16 +21,16 @@ echo "Source the GROMACS binary"
 source $(which GMXRC)
 
 # Set environment variables
-export OMP_NUM_THREADS=64          # 16 OpenMP threads per MPI process
-export CUDA_VISIBLE_DEVICES=0  # Ensure GPU visibility
+export OMP_NUM_THREADS=64     # 16 OpenMP threads per MPI process
+export CUDA_VISIBLE_DEVICES=0 # Ensure GPU visibility
 
 # Define paths
-TESTCASE_DIR="${ARTIFACT_LOCATION}/benchmarks-source/gromacs/ault23/gromacs-benchmarks/TestcaseB_benchmarks/gromacs_testcase4_testcaseB"
+TESTCASE_DIR="${ARTIFACT_LOCATION}/benchmarks-source/gromacs/ault23/gromacs-benchmarks/TestcaseB_benchmarks/gromacs_testcase4_testcaseB/steps_${STEPS}"
 TPR_FILE="${ARTIFACT_LOCATION}/data/gromacs/GROMACS_TestCaseB/lignocellulose.tpr"
 
-mkdir -p "$TESTCASE_DIR"
+mkdir -p "$TESTCASE_DIR/"
 
-WARMUP_RUNS=10
+WARMUP_RUNS=2
 BENCHMARK_RUNS=30
 TOTAL_RUNS=$((WARMUP_RUNS + BENCHMARK_RUNS))
 
@@ -42,23 +43,25 @@ echo "GROMACS Spack configuration"
 spack spec gromacs@2024.4
 
 for i in $(seq 1 $TOTAL_RUNS); do
-    echo "Starting run $i..."
+  echo "Starting run $i..."
 
-    RUN_DIR="$TESTCASE_DIR/run${i}"
-    mkdir -p "$RUN_DIR"
+  RUN_DIR="$TESTCASE_DIR/run${i}"
+  mkdir -p "$RUN_DIR"
 
-    # Pin to cores 0-63 like Testcase 5
-    taskset -c 0-63 mpirun -np 1 gmx_mpi mdrun -s "$TPR_FILE" -ntomp 64 -gpu_id 0 -nsteps 100 \
-        > "$RUN_DIR/mdrun_output.log" 2>&1
+  # Pin to cores 0-63 like Testcase 5
+  #taskset -c 0-63
+  pushd ${RUN_DIR}
+  mpirun -np 1 gmx_mpi mdrun -s "$TPR_FILE" -ntomp 64 -gpu_id 0 -nsteps ${STEPS} >"$RUN_DIR/mdrun_output.log" 2>&1
+  popd
 
-    mv md.log traj* ener.edr confout.gro state.cpt "$RUN_DIR/" 2>/dev/null
+  #mv md.log traj* ener.edr confout.gro state.cpt "$RUN_DIR/" 2>/dev/null
 
-    if [ "$i" -le "$WARMUP_RUNS" ]; then
-        echo "Warm-up run $i completed. Deleting files..."
-        rm -rf "$RUN_DIR"
-    else
-        echo "Benchmark run $i completed. Data saved in $RUN_DIR."
-    fi
+  if [ "$i" -le "$WARMUP_RUNS" ]; then
+    echo "Warm-up run $i completed. Deleting files..."
+    rm -rf "$RUN_DIR"
+  else
+    echo "Benchmark run $i completed. Data saved in $RUN_DIR."
+  fi
 done
 
 echo "All benchmarking runs are complete!"

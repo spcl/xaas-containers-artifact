@@ -1,0 +1,253 @@
+==> Created environment gromacs_2025_advanced in: /scratch/mcopik/xaas-containers-artifact/dependencies/spack_2025/var/spack/environments/gromacs_2025_advanced
+==> Activate with: spack env activate gromacs_2025_advanced
+==> Added 1 new compiler to /scratch/mcopik/xaas-containers-artifact/dependencies/spack_2025/var/spack/environments/gromacs_2025_advanced/spack.yaml
+    gcc@8.4.1
+==> Compilers are defined in the following files:
+    /users/mcopik/.spack/packages.yaml
+    /scratch/mcopik/xaas-containers-artifact/dependencies/spack_2025/var/spack/environments/gromacs_2025_advanced/spack.yaml
+==> Adding gromacs@2025.0+cuda+mpi+openmp cuda_arch=70 ^fftw@3 arch=None-None-skylake_avx512 ^intel-oneapi-mkl to environment gromacs_2025_advanced
+==> Concretized 1 spec
+ -   ucuxcyv  gromacs@2025.0~cp2k+cuda~cufftmp~cycle_subcounters~double+gmxapi+heffte+hwloc~intel_provided_gcc~ipo~itt~mdrun_only+mpi+nblib~nosuffix~nvshmem~opencl+openmp~relaxed_double_precision+shared~sycl build_system=cmake build_type=Release cuda_arch:=70 generator=make openmp_max_threads=none arch=linux-centos8-skylake_avx512 %c,cxx=gcc@11.5.0
+[+]  tg35gfc      ^cmake@3.31.8~doc+ncurses+ownlibs~qtgui build_system=generic build_type=Release arch=linux-centos8-skylake_avx512 %c,cxx=gcc@11.5.0
+[+]  pdyfqyf          ^curl@8.11.1~gssapi~ldap~libidn2~librtmp~libssh~libssh2+nghttp2 build_system=autotools libs:=shared,static tls:=openssl arch=linux-centos8-skylake_avx512 %c,cxx=gcc@11.5.0
+[+]  7isrqme              ^nghttp2@1.65.0 build_system=autotools arch=linux-centos8-skylake_avx512 %c,cxx=gcc@11.5.0
+[+]  i3jepcl                  ^diffutils@3.10 build_system=autotools arch=linux-centos8-skylake_avx512 %c=gcc@11.5.0
+[+]  h4unfhm              ^openssl@3.4.1~docs+shared build_system=generic certs=mozilla arch=linux-centos8-skylake_avx512 %c,cxx=gcc@11.5.0
+[+]  y45rwaa                  ^ca-certificates-mozilla@2025-05-20 build_system=generic arch=linux-centos8-skylake_avx512
+[+]  ygdoofv                  ^perl@5.42.0+cpanm+opcode+open+shared+threads build_system=generic arch=linux-centos8-skylake_avx512 %c=gcc@11.5.0
+[+]  5xwqvgk                      ^berkeley-db@18.1.40+cxx~docs+stl build_system=autotools patches:=26090f4,b231fcc arch=linux-centos8-skylake_avx512 %c,cxx=gcc@11.5.0
+[+]  l5v6zaz          ^ncurses@6.5-20250705~symlinks+termlib abi=none build_system=autotools patches:=7a351bc arch=linux-centos8-skylake_avx512 %c,cxx=gcc@11.5.0
+[+]  kfpp2aw          ^zlib-ng@2.2.4+compat+new_strategies+opt+pic+shared build_system=autotools arch=linux-centos8-skylake_avx512 %c,cxx=gcc@11.5.0
+[+]  pwvcynl      ^compiler-wrapper@1.0 build_system=generic arch=linux-centos8-skylake_avx512
+ -   5d5ko7i      ^cuda@12.9.0~allow-unsupported-compilers~dev build_system=generic arch=linux-centos8-skylake_avx512
+[+]  gt7aez6          ^libxml2@2.13.5~http+pic~python+shared build_system=autotools arch=linux-centos8-skylake_avx512 %c=gcc@11.5.0
+[+]  bbrrqvr              ^libiconv@1.18 build_system=autotools libs:=shared,static arch=linux-centos8-skylake_avx512 %c=gcc@11.5.0
+[+]  6kacrlh              ^xz@5.6.3~pic build_system=autotools libs:=shared,static arch=linux-centos8-skylake_avx512 %c=gcc@11.5.0
+ -   3r3nbzz      ^fftw@3.3.10+mpi~openmp~pfft_patches+shared build_system=autotools patches:=872cff9 precision:=double,float arch=linux-centos8-skylake_avx512 %c,fortran=gcc@11.5.0
+[e]  pdwd63e      ^gcc@11.5.0~binutils+bootstrap~graphite~nvptx~piclibs~profiled~strip build_system=autotools build_type=RelWithDebInfo languages:='c,c++,fortran' arch=linux-centos8-skylake_avx512
+[+]  z2jclta      ^gcc-runtime@11.5.0 build_system=generic arch=linux-centos8-skylake_avx512
+[e]  djvryd3      ^glibc@2.28 build_system=autotools arch=linux-centos8-skylake_avx512
+[+]  excge4s      ^gmake@4.4.1~guile build_system=generic arch=linux-centos8-skylake_avx512 %c=gcc@11.5.0
+ -   c4mpgpt      ^heffte@2.4.1+cuda~fftw~fortran~ipo~magma+mkl~python~rocm+shared build_system=cmake build_type=Release cuda_arch:=none generator=make arch=linux-centos8-skylake_avx512 %c,cxx,fortran=gcc@11.5.0
+ -   f6xvtfj          ^intel-oneapi-mkl@2024.2.2~cluster+envmods~gfortran~ilp64+shared build_system=generic mpi_family=none threads=none arch=linux-centos8-skylake_avx512 %c=gcc@11.5.0
+[+]  4adtlqi      ^hwloc@2.11.1~cairo~cuda~gl~level_zero~libudev+libxml2~nvml~opencl+pci~rocm build_system=autotools libs:=shared,static arch=linux-centos8-skylake_avx512 %c,cxx=gcc@11.5.0
+[+]  mgjhbtf          ^libpciaccess@0.17 build_system=autotools arch=linux-centos8-skylake_avx512 %c=gcc@11.5.0
+[+]  ibza63l              ^util-macros@1.20.1 build_system=autotools arch=linux-centos8-skylake_avx512
+ -   iwbuglx      ^mpich@4.3.1~argobots~cuda+fortran+hwloc+hydra~level_zero+libxml2+pci~rocm+romio~slurm~vci~verbs+wrapperrpath~xpmem build_system=autotools datatype-engine=auto device=ch4 netmod=ofi pmi=default arch=linux-centos8-skylake_avx512 %c,cxx,fortran=gcc@11.5.0
+[+]  pvmyzw4          ^findutils@4.10.0 build_system=autotools patches:=440b954 arch=linux-centos8-skylake_avx512 %c=gcc@11.5.0
+[+]  plurgs3              ^gettext@0.23.1+bzip2+curses+git~libunistring+libxml2+pic+shared+tar+xz build_system=autotools arch=linux-centos8-skylake_avx512 %c,cxx=gcc@11.5.0
+[+]  azdofd2                  ^bzip2@1.0.8~debug~pic+shared build_system=generic arch=linux-centos8-skylake_avx512 %c=gcc@11.5.0
+[+]  bwhqyca                  ^tar@1.35 build_system=autotools zip=pigz arch=linux-centos8-skylake_avx512 %c=gcc@11.5.0
+[+]  mlam7fc                      ^pigz@2.8 build_system=makefile arch=linux-centos8-skylake_avx512 %c=gcc@11.5.0
+[+]  n6tsduk                      ^zstd@1.5.7+programs build_system=makefile compression:=none libs:=shared,static arch=linux-centos8-skylake_avx512 %c,cxx=gcc@11.5.0
+ -   6aepmhv          ^libfabric@2.2.0~cuda~debug~kdreg~level_zero~uring build_system=autotools fabrics:=sockets,tcp,udp arch=linux-centos8-skylake_avx512 %c=gcc@11.5.0
+ -   6c3f5zh          ^yaksa@0.3~cuda~level_zero~rocm build_system=autotools arch=linux-centos8-skylake_avx512 %c=gcc@11.5.0
+[+]  47mouoi              ^autoconf@2.72 build_system=autotools arch=linux-centos8-skylake_avx512
+[+]  z7xbvdz              ^automake@1.16.5 build_system=autotools arch=linux-centos8-skylake_avx512 %c=gcc@11.5.0
+[+]  w524ba7              ^libtool@2.4.7 build_system=autotools arch=linux-centos8-skylake_avx512 %c=gcc@11.5.0
+[+]  gernrd6              ^m4@1.4.20+sigsegv build_system=autotools arch=linux-centos8-skylake_avx512 %c,cxx=gcc@11.5.0
+[+]  qvnuiul                  ^libsigsegv@2.14 build_system=autotools arch=linux-centos8-skylake_avx512 %c=gcc@11.5.0
+ -   bwtmc7i              ^python@3.13.5+bz2+ctypes+dbm~debug+libxml2+lzma~optimizations+pic+pyexpat+pythoncmd+readline+shared+sqlite3+ssl~tkinter+uuid+zlib build_system=generic arch=linux-centos8-skylake_avx512 %c,cxx=gcc@11.5.0
+ -   jtzgqay                  ^expat@2.7.1+libbsd build_system=autotools arch=linux-centos8-skylake_avx512 %c,cxx=gcc@11.5.0
+ -   wdcpnk4                      ^libbsd@0.12.2 build_system=autotools arch=linux-centos8-skylake_avx512 %c=gcc@11.5.0
+ -   52cmtcw                          ^libmd@1.1.0 build_system=autotools arch=linux-centos8-skylake_avx512 %c=gcc@11.5.0
+[+]  nc7ieji                  ^gdbm@1.23 build_system=autotools arch=linux-centos8-skylake_avx512 %c=gcc@11.5.0
+ -   emoxezu                  ^libffi@3.4.8 build_system=autotools arch=linux-centos8-skylake_avx512 %c,cxx=gcc@11.5.0
+[+]  7kx25ln                  ^readline@8.3 build_system=autotools patches:=21f0a03 arch=linux-centos8-skylake_avx512 %c=gcc@11.5.0
+ -   dkyqccj                  ^sqlite@3.46.0+column_metadata+dynamic_extensions+fts~functions+rtree build_system=autotools arch=linux-centos8-skylake_avx512 %c=gcc@11.5.0
+ -   5m6vvvv                  ^util-linux-uuid@2.41 build_system=autotools arch=linux-centos8-skylake_avx512 %c=gcc@11.5.0
+[+]  l675vwp      ^openblas@0.3.30~bignuma~consistent_fpcsr+dynamic_dispatch+fortran~ilp64+locking+pic+shared build_system=makefile symbol_suffix=none threads=none arch=linux-centos8-skylake_avx512 %c,cxx,fortran=gcc@11.5.0
+[+]  sar7wq4      ^pkgconf@2.5.1 build_system=autotools arch=linux-centos8-skylake_avx512 %c=gcc@11.5.0
+
+[+] /usr (external glibc-2.28-djvryd3gxdysfrvdgtf7an7muvq4yluz)
+[+] /scratch/mcopik/xaas-containers-artifact/dependencies/spack_2025/opt/spack/linux-skylake_avx512/compiler-wrapper-1.0-pwvcynlepsfvtofklxk2y55vmwbo7aoj
+[+] /scratch/mcopik/xaas-containers-artifact/dependencies/spack/opt/spack/linux-centos8-zen/gcc-8.4.1/gcc-11.5.0-7bf3bhz3wu2vzvrtokgp444qkbrbzk6h (external gcc-11.5.0-pdwd63eq2ihuy6c3sclfmvi36nc5iely)
+[+] /scratch/mcopik/xaas-containers-artifact/dependencies/spack_2025/opt/spack/linux-skylake_avx512/gcc-runtime-11.5.0-z2jcltaublyas2hewwzk4sns43435ccj
+[+] /scratch/mcopik/xaas-containers-artifact/dependencies/spack_2025/opt/spack/linux-skylake_avx512/xz-5.6.3-6kacrlh4b4fk2qm4ubojmyiw7ueabrfc
+[+] /scratch/mcopik/xaas-containers-artifact/dependencies/spack_2025/opt/spack/linux-skylake_avx512/libsigsegv-2.14-qvnuiuldqwpbtl5rtswufhl3flkcgyi5
+[+] /scratch/mcopik/xaas-containers-artifact/dependencies/spack_2025/opt/spack/linux-skylake_avx512/berkeley-db-18.1.40-5xwqvgkxtfuk6wtqmg7rcvtsveooyoao
+[+] /scratch/mcopik/xaas-containers-artifact/dependencies/spack_2025/opt/spack/linux-skylake_avx512/ncurses-6.5-20250705-l5v6zazsoyveams4rbielf2k65vahgdk
+[+] /scratch/mcopik/xaas-containers-artifact/dependencies/spack_2025/opt/spack/linux-skylake_avx512/libiconv-1.18-bbrrqvrg7x3bxhzjlvegmthyii6fbzbz
+[+] /scratch/mcopik/xaas-containers-artifact/dependencies/spack_2025/opt/spack/linux-skylake_avx512/nghttp2-1.65.0-7isrqmex6wlzbskhpwil7akp47d66y4j
+[+] /scratch/mcopik/xaas-containers-artifact/dependencies/spack_2025/opt/spack/linux-skylake_avx512/openblas-0.3.30-l675vwpu5iwdjd2tinp2ylicdyagigav
+[+] /scratch/mcopik/xaas-containers-artifact/dependencies/spack_2025/opt/spack/linux-skylake_avx512/gmake-4.4.1-excge4s7cx4muuhvs46yvnud5u6hjr6t
+==> No binary for intel-oneapi-mkl-2024.2.2-f6xvtfjnv7qnlm7fvsgf2uobyiwl2kav found: installing from source
+==> Fetching https://registrationcenter-download.intel.com/akdlm/IRC_NAS/89a381f6-f85d-4dda-ae62-30d51470f53c/l_onemkl_p_2024.2.2.17_offline.sh
+==> No patches needed for intel-oneapi-mkl
+==> intel-oneapi-mkl: Executing phase: 'install'
+==> intel-oneapi-mkl: Successfully installed intel-oneapi-mkl-2024.2.2-f6xvtfjnv7qnlm7fvsgf2uobyiwl2kav
+  Stage: 36.82s.  Install: 1m 52.02s.  Post-install: 12.95s.  Total: 2m 41.87s
+[+] /scratch/mcopik/xaas-containers-artifact/dependencies/spack_2025/opt/spack/linux-skylake_avx512/intel-oneapi-mkl-2024.2.2-f6xvtfjnv7qnlm7fvsgf2uobyiwl2kav
+==> Installing intel-oneapi-mkl-2024.2.2-f6xvtfjnv7qnlm7fvsgf2uobyiwl2kav [13/48]
+[+] /scratch/mcopik/xaas-containers-artifact/dependencies/spack_2025/opt/spack/linux-skylake_avx512/m4-1.4.20-gernrd6tjhxrng5nvj5ylcrvmctwdwyq
+[+] /scratch/mcopik/xaas-containers-artifact/dependencies/spack_2025/opt/spack/linux-skylake_avx512/zlib-ng-2.2.4-kfpp2aw2xbu24gzytzvd2lnz2auykzzd
+[+] /scratch/mcopik/xaas-containers-artifact/dependencies/spack_2025/opt/spack/linux-skylake_avx512/zstd-1.5.7-n6tsdukheo7x254f6tgzuu47ue3pr42d
+[+] /scratch/mcopik/xaas-containers-artifact/dependencies/spack_2025/opt/spack/linux-skylake_avx512/findutils-4.10.0-pvmyzw4ehftvk6gk7yazzywslau4upgd
+==> No binary for libmd-1.1.0-52cmtcw6rpaolnf5iwbzcmorxtzcn5so found: installing from source
+==> Fetching https://mirror.spack.io/_source-cache/archive/1b/1bd6aa42275313af3141c7cf2e5b964e8b1fd488025caf2f971f43b00776b332.tar.xz
+==> No patches needed for libmd
+==> libmd: Executing phase: 'autoreconf'
+==> libmd: Executing phase: 'configure'
+==> libmd: Executing phase: 'build'
+==> libmd: Executing phase: 'install'
+==> libmd: Successfully installed libmd-1.1.0-52cmtcw6rpaolnf5iwbzcmorxtzcn5so
+  Stage: 0.16s.  Autoreconf: 0.00s.  Configure: 6.13s.  Build: 1.24s.  Install: 0.34s.  Post-install: 0.13s.  Total: 8.14s
+[+] /scratch/mcopik/xaas-containers-artifact/dependencies/spack_2025/opt/spack/linux-skylake_avx512/libmd-1.1.0-52cmtcw6rpaolnf5iwbzcmorxtzcn5so
+==> Installing libmd-1.1.0-52cmtcw6rpaolnf5iwbzcmorxtzcn5so [18/48]
+[+] /scratch/mcopik/xaas-containers-artifact/dependencies/spack_2025/opt/spack/linux-skylake_avx512/bzip2-1.0.8-azdofd23l4ivxepx2mmzsnpa43t7eyad
+[+] /scratch/mcopik/xaas-containers-artifact/dependencies/spack_2025/opt/spack/linux-skylake_avx512/pkgconf-2.5.1-sar7wq4jmkdlgako3ltjit3m57s5e7uk
+==> No binary for libfabric-2.2.0-6aepmhvd2ausqv737r4g5q723p7lxmxs found: installing from source
+==> Fetching https://github.com/ofiwg/libfabric/releases/download/v2.2.0/libfabric-2.2.0.tar.bz2
+==> No patches needed for libfabric
+==> libfabric: Executing phase: 'autoreconf'
+==> libfabric: Executing phase: 'configure'
+==> libfabric: Executing phase: 'build'
+==> libfabric: Executing phase: 'install'
+==> libfabric: Successfully installed libfabric-2.2.0-6aepmhvd2ausqv737r4g5q723p7lxmxs
+  Stage: 1.67s.  Autoreconf: 0.00s.  Configure: 12.17s.  Build: 6.89s.  Install: 1.26s.  Post-install: 0.41s.  Total: 22.58s
+[+] /scratch/mcopik/xaas-containers-artifact/dependencies/spack_2025/opt/spack/linux-skylake_avx512/libfabric-2.2.0-6aepmhvd2ausqv737r4g5q723p7lxmxs
+==> Installing libfabric-2.2.0-6aepmhvd2ausqv737r4g5q723p7lxmxs [21/48]
+==> No binary for libffi-3.4.8-emoxezuzla4jmwvmmqeqgbhkle7asdgf found: installing from source
+==> Fetching https://github.com/libffi/libffi/releases/download/v3.4.8/libffi-3.4.8.tar.gz
+==> No patches needed for libffi
+==> libffi: Executing phase: 'autoreconf'
+==> libffi: Executing phase: 'configure'
+==> libffi: Executing phase: 'build'
+==> libffi: Executing phase: 'install'
+==> libffi: Successfully installed libffi-3.4.8-emoxezuzla4jmwvmmqeqgbhkle7asdgf
+  Stage: 0.94s.  Autoreconf: 0.00s.  Configure: 7.72s.  Build: 1.43s.  Install: 0.29s.  Post-install: 0.11s.  Total: 10.64s
+[+] /scratch/mcopik/xaas-containers-artifact/dependencies/spack_2025/opt/spack/linux-skylake_avx512/libffi-3.4.8-emoxezuzla4jmwvmmqeqgbhkle7asdgf
+==> Installing libffi-3.4.8-emoxezuzla4jmwvmmqeqgbhkle7asdgf [22/48]
+[+] /scratch/mcopik/xaas-containers-artifact/dependencies/spack_2025/opt/spack/linux-skylake_avx512/readline-8.3-7kx25lnur5xuba7yoq3rfjixghpymlh7
+[+] /scratch/mcopik/xaas-containers-artifact/dependencies/spack_2025/opt/spack/linux-skylake_avx512/openssl-3.4.1-h4unfhmfjsli4v5ksr563na3vz5wtsyt
+[+] /scratch/mcopik/xaas-containers-artifact/dependencies/spack_2025/opt/spack/linux-skylake_avx512/pigz-2.8-mlam7fcawfzv7ojhmfpdsbeg7bykqwrw
+[+] /scratch/mcopik/xaas-containers-artifact/dependencies/spack_2025/opt/spack/linux-skylake_avx512/libtool-2.4.7-w524ba7fgnx2eh4odpccy7ikan6jou22
+==> No binary for libbsd-0.12.2-wdcpnk4kki3n3hk7dmvch4n55pvikmau found: installing from source
+==> Fetching https://mirror.spack.io/_source-cache/archive/b8/b88cc9163d0c652aaf39a99991d974ddba1c3a9711db8f1b5838af2a14731014.tar.xz
+==> No patches needed for libbsd
+==> libbsd: Executing phase: 'autoreconf'
+==> libbsd: Executing phase: 'configure'
+==> libbsd: Executing phase: 'build'
+==> libbsd: Executing phase: 'install'
+==> libbsd: Successfully installed libbsd-0.12.2-wdcpnk4kki3n3hk7dmvch4n55pvikmau
+  Stage: 0.12s.  Autoreconf: 0.00s.  Configure: 10.37s.  Build: 1.30s.  Install: 1.01s.  Post-install: 0.52s.  Total: 13.47s
+[+] /scratch/mcopik/xaas-containers-artifact/dependencies/spack_2025/opt/spack/linux-skylake_avx512/libbsd-0.12.2-wdcpnk4kki3n3hk7dmvch4n55pvikmau
+==> Installing libbsd-0.12.2-wdcpnk4kki3n3hk7dmvch4n55pvikmau [27/48]
+[+] /scratch/mcopik/xaas-containers-artifact/dependencies/spack_2025/opt/spack/linux-skylake_avx512/libpciaccess-0.17-mgjhbtfigi3wfb2xiljsdazetzczfnbo
+[+] /scratch/mcopik/xaas-containers-artifact/dependencies/spack_2025/opt/spack/linux-skylake_avx512/libxml2-2.13.5-gt7aez6njqvqhta7wow7hqq46n6zwaxn
+==> No binary for util-linux-uuid-2.41-5m6vvvvmxg2rlv7a32t4e65wxfphodj6 found: installing from source
+==> Fetching https://mirror.spack.io/_source-cache/archive/c0/c014b5861695b603d0be2ad1e6f10d5838b9d7859e1dd72d01504556817d8a87.tar.gz
+==> No patches needed for util-linux-uuid
+==> util-linux-uuid: Executing phase: 'autoreconf'
+==> util-linux-uuid: Executing phase: 'configure'
+==> util-linux-uuid: Executing phase: 'build'
+==> util-linux-uuid: Executing phase: 'install'
+==> util-linux-uuid: Successfully installed util-linux-uuid-2.41-5m6vvvvmxg2rlv7a32t4e65wxfphodj6
+  Stage: 0.86s.  Autoreconf: 0.00s.  Configure: 26.97s.  Build: 0.88s.  Install: 0.72s.  Post-install: 0.36s.  Total: 29.95s
+[+] /scratch/mcopik/xaas-containers-artifact/dependencies/spack_2025/opt/spack/linux-skylake_avx512/util-linux-uuid-2.41-5m6vvvvmxg2rlv7a32t4e65wxfphodj6
+==> Installing util-linux-uuid-2.41-5m6vvvvmxg2rlv7a32t4e65wxfphodj6 [30/48]
+==> No binary for sqlite-3.46.0-dkyqccjapir4im2f5pcfowfeetskajfb found: installing from source
+==> Fetching https://mirror.spack.io/_source-cache/archive/6f/6f8e6a7b335273748816f9b3b62bbdc372a889de8782d7f048c653a447417a7d.tar.gz
+==> No patches needed for sqlite
+==> sqlite: Executing phase: 'autoreconf'
+==> sqlite: Executing phase: 'configure'
+==> sqlite: Executing phase: 'build'
+==> sqlite: Executing phase: 'install'
+==> sqlite: Successfully installed sqlite-3.46.0-dkyqccjapir4im2f5pcfowfeetskajfb
+  Stage: 0.24s.  Autoreconf: 0.00s.  Configure: 5.58s.  Build: 1m 41.29s.  Install: 0.23s.  Post-install: 0.16s.  Total: 1m 47.65s
+[+] /scratch/mcopik/xaas-containers-artifact/dependencies/spack_2025/opt/spack/linux-skylake_avx512/sqlite-3.46.0-dkyqccjapir4im2f5pcfowfeetskajfb
+==> Installing sqlite-3.46.0-dkyqccjapir4im2f5pcfowfeetskajfb [31/48]
+[+] /scratch/mcopik/xaas-containers-artifact/dependencies/spack_2025/opt/spack/linux-skylake_avx512/gdbm-1.23-nc7iejimmc5hctfbfl3namneesenwh3p
+[+] /scratch/mcopik/xaas-containers-artifact/dependencies/spack_2025/opt/spack/linux-skylake_avx512/curl-8.11.1-pdyfqyf7fjrbbtcqmbtzewi53jznze6c
+[+] /scratch/mcopik/xaas-containers-artifact/dependencies/spack_2025/opt/spack/linux-skylake_avx512/tar-1.35-bwhqycaytqp7vighlhaykv2xioi644lq
+==> No binary for expat-2.7.1-jtzgqayjzv4qv27ubpa5bf2hjixe3kfk found: installing from source
+==> Fetching https://mirror.spack.io/_source-cache/archive/45/45c98ae1e9b5127325d25186cf8c511fa814078e9efeae7987a574b482b79b3d.tar.bz2
+==> No patches needed for expat
+==> expat: Executing phase: 'autoreconf'
+==> expat: Executing phase: 'configure'
+==> expat: Executing phase: 'build'
+==> expat: Executing phase: 'install'
+==> expat: Successfully installed expat-2.7.1-jtzgqayjzv4qv27ubpa5bf2hjixe3kfk
+  Stage: 0.23s.  Autoreconf: 0.00s.  Configure: 7.77s.  Build: 6.01s.  Install: 0.33s.  Post-install: 0.13s.  Total: 14.61s
+[+] /scratch/mcopik/xaas-containers-artifact/dependencies/spack_2025/opt/spack/linux-skylake_avx512/expat-2.7.1-jtzgqayjzv4qv27ubpa5bf2hjixe3kfk
+==> Installing expat-2.7.1-jtzgqayjzv4qv27ubpa5bf2hjixe3kfk [35/48]
+==> No binary for cuda-12.9.0-5d5ko7iqhvjmccpitfbpbxv6aupjcu4l found: installing from source
+==> Fetching https://mirror.spack.io/_source-cache/archive/bb/bbce2b760fe2096ca1c86f729e03bf377c1519add7b2755ecc4e9b0a9e07ee43
+==> No patches needed for cuda
+==> cuda: Executing phase: 'install'
+==> cuda: Successfully installed cuda-12.9.0-5d5ko7iqhvjmccpitfbpbxv6aupjcu4l
+  Stage: 4m 23.72s.  Install: 4m 13.61s.  Post-install: 36.41s.  Total: 9m 13.81s
+[+] /scratch/mcopik/xaas-containers-artifact/dependencies/spack_2025/opt/spack/linux-skylake_avx512/cuda-12.9.0-5d5ko7iqhvjmccpitfbpbxv6aupjcu4l
+==> Installing cuda-12.9.0-5d5ko7iqhvjmccpitfbpbxv6aupjcu4l [36/48]
+[+] /scratch/mcopik/xaas-containers-artifact/dependencies/spack_2025/opt/spack/linux-skylake_avx512/hwloc-2.11.1-4adtlqiznt6pgfqmxsar7aef3gx5rcyu
+[+] /scratch/mcopik/xaas-containers-artifact/dependencies/spack_2025/opt/spack/linux-skylake_avx512/perl-5.42.0-ygdoofvrfvi2lc4cncdyrdetee2utoqq
+[+] /scratch/mcopik/xaas-containers-artifact/dependencies/spack_2025/opt/spack/linux-skylake_avx512/cmake-3.31.8-tg35gfcarvdyyytre3dlhftqgraasgsy
+[+] /scratch/mcopik/xaas-containers-artifact/dependencies/spack_2025/opt/spack/linux-skylake_avx512/gettext-0.23.1-plurgs37upk6iynrexvwlviee5mvnvge
+[+] /scratch/mcopik/xaas-containers-artifact/dependencies/spack_2025/opt/spack/linux-skylake_avx512/autoconf-2.72-47mouoidfv4fza2rqkgfcvbk63kv6ion
+==> No binary for python-3.13.5-bwtmc7is6fxyz3tehf7z3frhtdqkvckj found: installing from source
+==> Fetching https://www.python.org/ftp/python/3.13.5/Python-3.13.5.tgz
+==> Ran patch() for python
+==> python: Executing phase: 'configure'
+==> python: Executing phase: 'build'
+==> python: Executing phase: 'install'
+==> python: Successfully installed python-3.13.5-bwtmc7is6fxyz3tehf7z3frhtdqkvckj
+  Stage: 1.48s.  Configure: 1m 12.58s.  Build: 21.29s.  Install: 25.42s.  Post-install: 14.28s.  Total: 2m 15.27s
+[+] /scratch/mcopik/xaas-containers-artifact/dependencies/spack_2025/opt/spack/linux-skylake_avx512/python-3.13.5-bwtmc7is6fxyz3tehf7z3frhtdqkvckj
+==> Installing python-3.13.5-bwtmc7is6fxyz3tehf7z3frhtdqkvckj [42/48]
+[+] /scratch/mcopik/xaas-containers-artifact/dependencies/spack_2025/opt/spack/linux-skylake_avx512/automake-1.16.5-z7xbvdzp2f2gjx2rwperb3fkkg3ucm7m
+==> No binary for yaksa-0.3-6c3f5zh7zs7xuctnb5acjc3ubgfc3luv found: installing from source
+==> Fetching https://mirror.spack.io/_source-cache/archive/c9/c9e5291211bee8852831bb464f430ad5ba1541e31db5718a6fa2f2d3329fc2d9.tar.gz
+==> No patches needed for yaksa
+==> yaksa: Executing phase: 'autoreconf'
+==> yaksa: Executing phase: 'configure'
+==> yaksa: Executing phase: 'build'
+==> yaksa: Executing phase: 'install'
+==> yaksa: Successfully installed yaksa-0.3-6c3f5zh7zs7xuctnb5acjc3ubgfc3luv
+  Stage: 0.13s.  Autoreconf: 14.65s.  Configure: 12.49s.  Build: 1m 53.31s.  Install: 0.76s.  Post-install: 0.27s.  Total: 2m 21.82s
+[+] /scratch/mcopik/xaas-containers-artifact/dependencies/spack_2025/opt/spack/linux-skylake_avx512/yaksa-0.3-6c3f5zh7zs7xuctnb5acjc3ubgfc3luv
+==> Installing yaksa-0.3-6c3f5zh7zs7xuctnb5acjc3ubgfc3luv [44/48]
+==> No binary for mpich-4.3.1-iwbuglxzla7gisnlgdllob6hdzjjzbzn found: installing from source
+==> Fetching https://www.mpich.org/static/downloads/4.3.1/mpich-4.3.1.tar.gz
+==> No patches needed for mpich
+==> mpich: Executing phase: 'autoreconf'
+==> mpich: Executing phase: 'configure'
+==> mpich: Executing phase: 'build'
+==> mpich: Executing phase: 'install'
+==> mpich: Successfully installed mpich-4.3.1-iwbuglxzla7gisnlgdllob6hdzjjzbzn
+  Stage: 3.94s.  Autoreconf: 0.00s.  Configure: 2m 25.64s.  Build: 1m 30.07s.  Install: 32.46s.  Post-install: 7.05s.  Total: 4m 39.48s
+[+] /scratch/mcopik/xaas-containers-artifact/dependencies/spack_2025/opt/spack/linux-skylake_avx512/mpich-4.3.1-iwbuglxzla7gisnlgdllob6hdzjjzbzn
+==> Installing mpich-4.3.1-iwbuglxzla7gisnlgdllob6hdzjjzbzn [45/48]
+==> No binary for fftw-3.3.10-3r3nbzz2m4hwbj6s2nbqy3naj5ey2hid found: installing from source
+==> Using cached archive: /scratch/mcopik/xaas-containers-artifact/dependencies/spack_2025/var/spack/cache/_source-cache/archive/56/56c932549852cddcfafdab3820b0200c7742675be92179e59e6215b340e26467.tar.gz
+==> Using cached archive: /scratch/mcopik/xaas-containers-artifact/dependencies/spack_2025/var/spack/cache/_source-cache/archive/87/872cff9a7d346e91a108ffd3540bfcebeb8cf86c7f40f6b31fd07a80267cbf53
+==> Applied patch https://github.com/FFTW/fftw3/commit/f69fef7aa546d4477a2a3fd7f13fa8b2f6c54af7.patch?full_index=1
+==> Ran patch() for fftw
+==> fftw: Executing phase: 'autoreconf'
+==> fftw: Executing phase: 'configure'
+==> fftw: Executing phase: 'build'
+==> fftw: Executing phase: 'install'
+==> fftw: Successfully installed fftw-3.3.10-3r3nbzz2m4hwbj6s2nbqy3naj5ey2hid
+  Stage: 0.20s.  Autoreconf: 0.00s.  Configure: 58.67s.  Build: 1m 57.85s.  Install: 6.99s.  Post-install: 0.21s.  Total: 3m 4.22s
+[+] /scratch/mcopik/xaas-containers-artifact/dependencies/spack_2025/opt/spack/linux-skylake_avx512/fftw-3.3.10-3r3nbzz2m4hwbj6s2nbqy3naj5ey2hid
+==> Installing fftw-3.3.10-3r3nbzz2m4hwbj6s2nbqy3naj5ey2hid [46/48]
+==> No binary for heffte-2.4.1-c4mpgpttqarv2tefxzy6px4t625nvvoi found: installing from source
+==> Fetching https://mirror.spack.io/_source-cache/archive/de/de2cf26df5d61baac7841525db3f393cb007f79612ac7534fd4757f154ba3e6c.tar.gz
+==> No patches needed for heffte
+==> heffte: Executing phase: 'cmake'
+==> heffte: Executing phase: 'build'
+==> heffte: Executing phase: 'install'
+==> heffte: Successfully installed heffte-2.4.1-c4mpgpttqarv2tefxzy6px4t625nvvoi
+  Stage: 0.16s.  Cmake: 7.31s.  Build: 51.80s.  Install: 0.40s.  Post-install: 0.20s.  Total: 1m 0.04s
+[+] /scratch/mcopik/xaas-containers-artifact/dependencies/spack_2025/opt/spack/linux-skylake_avx512/heffte-2.4.1-c4mpgpttqarv2tefxzy6px4t625nvvoi
+==> Installing heffte-2.4.1-c4mpgpttqarv2tefxzy6px4t625nvvoi [47/48]
+==> No binary for gromacs-2025.0-ucuxcyvfffej6s2jytwrgveyytdfzdqw found: installing from source
+==> Using cached archive: /scratch/mcopik/xaas-containers-artifact/dependencies/spack_2025/var/spack/cache/_source-cache/archive/a2/a27ad35a646295bbec129abe684d9d03d1e2e0bd76b0d625e9055746aaefae82.tar.gz
+==> Ran patch() for gromacs
+==> gromacs: Executing phase: 'cmake'
+==> gromacs: Executing phase: 'build'
+==> gromacs: Executing phase: 'install'
+==> gromacs: Successfully installed gromacs-2025.0-ucuxcyvfffej6s2jytwrgveyytdfzdqw
+  Stage: 1.60s.  Cmake: 43.76s.  Build: 2m 7.63s.  Install: 5.93s.  Post-install: 1.43s.  Total: 3m 0.60s
+[+] /scratch/mcopik/xaas-containers-artifact/dependencies/spack_2025/opt/spack/linux-skylake_avx512/gromacs-2025.0-ucuxcyvfffej6s2jytwrgveyytdfzdqw
+==> Installing gromacs-2025.0-ucuxcyvfffej6s2jytwrgveyytdfzdqw [48/48]
+==> Updating view at /scratch/mcopik/xaas-containers-artifact/dependencies/spack_2025/var/spack/environments/gromacs_2025_advanced/.spack-env/view

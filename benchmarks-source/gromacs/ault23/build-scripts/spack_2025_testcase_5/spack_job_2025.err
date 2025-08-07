@@ -1,0 +1,6 @@
+[1;31m==>[0m Error: Spec 'gcc@11.5.0 arch=linux-centos8-zen' matches no installed packages.
+[1;31m==>[0m Error: gcc@11.5.0 matches multiple packages.
+  Matching packages:
+    [0;90mpdwd63e[0m gcc[0;36m@11.5.0[0m[0;35m arch=linux-centos8-skylake_avx512[0m nonenone
+    [0;90mor3nxji[0m gcc[0;36m@11.5.0[0m[0;35m arch=linux-centos8-zen2[0m nonenone
+  Use a more specific spec (e.g., prepend '/' to the hash).

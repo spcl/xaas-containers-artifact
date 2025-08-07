@@ -1,0 +1,22 @@
+CMake Warning at cmake/gmxManageGpuAwareMpi.cmake:88 (MESSAGE):
+  GROMACS cannot determine if underlying MPI is CUDA-aware, for better
+  multi-GPU performance consider using a more recent CUDA-aware MPI.
+Call Stack (most recent call first):
+  cmake/gmxManageGpuAwareMpi.cmake:97 (gmx_test_gpu_aware_mpi)
+  CMakeLists.txt:783 (include)
+
+
+CMake Warning:
+  Value of SPHINX_EXECUTABLE_VERSION contained a newline; truncating
+
+
+CMake Warning:
+  Value of SPHINX_EXECUTABLE_VERSION contained a newline; truncating
+
+
+/scratch/mcopik/xaas-containers-artifact/data/gromacs/gromacs-2025.0/src/gromacs/ewald/pme_force_sender_gpu_impl.h:73:32: warning: unknown option after '#pragma GCC diagnostic' kind [-Wpragmas]
+   73 |     GCC_DIAGNOSTIC_IGNORE("-Winterference-size")
+      |                                ^~~~~~~~~~~~~~~~~    
+/scratch/mcopik/xaas-containers-artifact/data/gromacs/gromacs-2025.0/src/gromacs/ewald/pme_force_sender_gpu_impl.h:73:32: warning: unknown option after '#pragma GCC diagnostic' kind [-Wpragmas]
+   73 |     GCC_DIAGNOSTIC_IGNORE("-Winterference-size")
+      |                                ^~~~~~~~~~~~~~~~~    

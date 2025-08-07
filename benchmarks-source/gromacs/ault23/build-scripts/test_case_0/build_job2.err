@@ -1,0 +1,19 @@
+[1;31m==>[0m Error: gcc@11.5 matches multiple packages.
+  Matching packages:
+    [0;90m7bf3bhz[0m gcc[0;36m@11.5.0[0mnonenone[0;35m arch=linux-centos8-zen[0m
+    [0;90mlojwf5p[0m gcc[0;36m@11.5.0[0mnonenone[0;35m arch=linux-centos8-skylake_avx512[0m
+  Use a more specific spec (e.g., prepend '/' to the hash).
+Downloading: https://ftp.gromacs.org/regressiontests/regressiontests-2025.0.tar.gz
+CMake Warning:
+  Value of SPHINX_EXECUTABLE_VERSION contained a newline; truncating
+
+
+CMake Warning:
+  Value of SPHINX_EXECUTABLE_VERSION contained a newline; truncating
+
+
+Errors while running CTest
+make[3]: *** [CMakeFiles/run-ctest-nophys.dir/build.make:71: CMakeFiles/run-ctest-nophys] Error 8
+make[2]: *** [CMakeFiles/Makefile2:4254: CMakeFiles/run-ctest-nophys.dir/all] Error 2
+make[1]: *** [CMakeFiles/Makefile2:4294: CMakeFiles/check.dir/rule] Error 2
+make: *** [Makefile:628: check] Error 2

@@ -1,0 +1,85 @@
+==> Created environment gromacs_advanced in: /scratch/mcopik/xaas-containers-artifact/dependencies/spack/var/spack/environments/gromacs_advanced
+==> Activate with: spack env activate gromacs_advanced
+==> Found no new compilers
+==> Compilers are defined in the following files:
+    /users/mcopik/.spack/packages.yaml
+==> Adding gromacs@2024.4+cuda+mpi+openmp cuda_arch=70 ^fftw@3 arch=None-None-skylake_avx512 ^intel-oneapi-mkl to environment gromacs_advanced
+==> Concretized 1 spec
+[+]  ahwslxx  gromacs@2024.4~cp2k+cuda~cufftmp~cycle_subcounters~double+gmxapi+heffte+hwloc~intel_provided_gcc~ipo~itt~mdrun_only+mpi+nblib~nosuffix~nvshmem~opencl+openmp~relaxed_double_precision+shared~sycl build_system=cmake build_type=Release cuda_arch=70 generator=make openmp_max_threads=none arch=linux-centos8-skylake_avx512
+[+]  wif3l2w      ^cmake@3.31.5~doc+ncurses+ownlibs~qtgui build_system=generic build_type=Release arch=linux-centos8-skylake_avx512
+[+]  5fpbisy          ^curl@8.11.1~gssapi~ldap~libidn2~librtmp~libssh~libssh2+nghttp2 build_system=autotools libs=shared,static tls=openssl arch=linux-centos8-skylake_avx512
+[+]  kla4p77              ^nghttp2@1.64.0 build_system=autotools arch=linux-centos8-skylake_avx512
+[+]  dh2zxux                  ^diffutils@3.10 build_system=autotools arch=linux-centos8-skylake_avx512
+[+]  ehu7lzv              ^openssl@3.4.0~docs+shared build_system=generic certs=mozilla arch=linux-centos8-skylake_avx512
+[+]  mwcpxl7                  ^ca-certificates-mozilla@2024-12-31 build_system=generic arch=linux-centos8-skylake_avx512
+[+]  bzf5oxl                  ^perl@5.40.0+cpanm+opcode+open+shared+threads build_system=generic arch=linux-centos8-skylake_avx512
+[+]  x4ulmm5                      ^berkeley-db@18.1.40+cxx~docs+stl build_system=autotools patches=26090f4,b231fcc arch=linux-centos8-skylake_avx512
+[+]  pdehvol          ^ncurses@6.5~symlinks+termlib abi=none build_system=autotools patches=7a351bc arch=linux-centos8-skylake_avx512
+[+]  agvc5fu          ^zlib-ng@2.2.3+compat+new_strategies+opt+pic+shared build_system=autotools arch=linux-centos8-skylake_avx512
+[+]  eaps7qs      ^compiler-wrapper@1.0 build_system=generic arch=linux-centos8-skylake_avx512
+[+]  7rxmrpq      ^cuda@12.8.0~allow-unsupported-compilers~dev build_system=generic arch=linux-centos8-skylake_avx512
+[+]  s7f4orn          ^libxml2@2.13.5~http+pic~python+shared build_system=autotools arch=linux-centos8-skylake_avx512
+[+]  gkbsrqy              ^libiconv@1.17 build_system=autotools libs=shared,static arch=linux-centos8-skylake_avx512
+[+]  h5nnlvw              ^xz@5.4.6~pic build_system=autotools libs=shared,static arch=linux-centos8-skylake_avx512
+[+]  kki5zo7      ^fftw@3.3.10+mpi~openmp~pfft_patches+shared build_system=autotools patches=872cff9 precision=double,float arch=linux-centos8-skylake_avx512
+[e]  lojwf5p      ^gcc@11.5.0~binutils+bootstrap~graphite~nvptx~piclibs~strip build_system=autotools build_type=RelWithDebInfo languages='c,c++,fortran' arch=linux-centos8-skylake_avx512
+[+]  jp3zjh5      ^gcc-runtime@11.5.0 build_system=generic arch=linux-centos8-skylake_avx512
+[e]  yga375d      ^glibc@2.28 build_system=autotools arch=linux-centos8-skylake_avx512
+[+]  263omav      ^gmake@4.4.1~guile build_system=generic arch=linux-centos8-skylake_avx512
+[+]  noyjgac      ^heffte@2.4.1+cuda~fftw~fortran~ipo~magma+mkl~python~rocm+shared build_system=cmake build_type=Release cuda_arch=none generator=make arch=linux-centos8-skylake_avx512
+[+]  ausjjwn          ^intel-oneapi-mkl@2024.2.2~cluster+envmods~gfortran~ilp64+shared build_system=generic mpi_family=none threads=none arch=linux-centos8-skylake_avx512
+[+]  ptn4tta              ^intel-tbb@2022.0.0~ipo+shared+tm build_system=cmake build_type=Release cxxstd=default generator=make arch=linux-centos8-skylake_avx512
+[+]  54j37z4      ^hwloc@2.11.1~cairo~cuda~gl~level_zero~libudev+libxml2~nvml~opencl+pci~rocm build_system=autotools libs=shared,static arch=linux-centos8-skylake_avx512
+[+]  yvxuwo4          ^libpciaccess@0.17 build_system=autotools arch=linux-centos8-skylake_avx512
+[+]  7g7m3yc              ^util-macros@1.20.1 build_system=autotools arch=linux-centos8-skylake_avx512
+[+]  oa6xwng      ^mpich@4.2.3~argobots~cuda+fortran+hwloc+hydra~level_zero+libxml2+pci~rocm+romio~slurm~vci~verbs+wrapperrpath~xpmem build_system=autotools datatype-engine=auto device=ch4 netmod=ofi pmi=default arch=linux-centos8-skylake_avx512
+[+]  qdlkfnf          ^findutils@4.10.0 build_system=autotools patches=440b954 arch=linux-centos8-skylake_avx512
+[+]  z4xazys              ^gettext@0.23.1+bzip2+curses+git~libunistring+libxml2+pic+shared+tar+xz build_system=autotools arch=linux-centos8-skylake_avx512
+[+]  qtpqkw4                  ^bzip2@1.0.8~debug~pic+shared build_system=generic arch=linux-centos8-skylake_avx512
+[+]  bgq4u7e                  ^tar@1.35 build_system=autotools zip=pigz arch=linux-centos8-skylake_avx512
+[+]  oaoy64o                      ^pigz@2.8 build_system=makefile arch=linux-centos8-skylake_avx512
+[+]  yaujxdo                      ^zstd@1.5.6+programs build_system=makefile compression=none libs=shared,static arch=linux-centos8-skylake_avx512
+[+]  v34k45a          ^libfabric@1.22.0~cuda~debug~kdreg~level_zero~uring build_system=autotools fabrics=sockets,tcp,udp arch=linux-centos8-skylake_avx512
+[+]  piip532          ^yaksa@0.3~cuda~level_zero~rocm build_system=autotools arch=linux-centos8-skylake_avx512
+[+]  wxg7vqh              ^autoconf@2.72 build_system=autotools arch=linux-centos8-skylake_avx512
+[+]  iuai5e3              ^automake@1.16.5 build_system=autotools arch=linux-centos8-skylake_avx512
+[+]  rjxnldj              ^libtool@2.4.7 build_system=autotools arch=linux-centos8-skylake_avx512
+[+]  3sb5sno              ^m4@1.4.19+sigsegv build_system=autotools patches=9dc5fbd,bfdffa7 arch=linux-centos8-skylake_avx512
+[+]  zrccarp                  ^libsigsegv@2.14 build_system=autotools arch=linux-centos8-skylake_avx512
+[+]  wadwj6p              ^python@3.13.2+bz2+ctypes+dbm~debug+libxml2+lzma~optimizations+pic+pyexpat+pythoncmd+readline+shared+sqlite3+ssl~tkinter+uuid+zlib build_system=generic arch=linux-centos8-skylake_avx512
+[+]  7fjpy4c                  ^expat@2.6.4+libbsd build_system=autotools arch=linux-centos8-skylake_avx512
+[+]  adtsgmw                      ^libbsd@0.12.2 build_system=autotools arch=linux-centos8-skylake_avx512
+[+]  bx4yivs                          ^libmd@1.0.4 build_system=autotools arch=linux-centos8-skylake_avx512
+[+]  35tu5l7                  ^gdbm@1.23 build_system=autotools arch=linux-centos8-skylake_avx512
+[+]  m4mbvqr                  ^libffi@3.4.6 build_system=autotools arch=linux-centos8-skylake_avx512
+[+]  jmqlfn6                  ^readline@8.2 build_system=autotools patches=1ea4349,24f587b,3d9885e,5911a5b,622ba38,6c8adf8,758e2ec,79572ee,a177edc,bbf97f1,c7b45ff,e0013d9,e065038 arch=linux-centos8-skylake_avx512
+[+]  s32cgpv                  ^sqlite@3.46.0+column_metadata+dynamic_extensions+fts~functions+rtree build_system=autotools arch=linux-centos8-skylake_avx512
+[+]  tsw3mku                  ^util-linux-uuid@2.40.2 build_system=autotools arch=linux-centos8-skylake_avx512
+[+]  2rjl3be      ^openblas@0.3.29~bignuma~consistent_fpcsr+dynamic_dispatch+fortran~ilp64+locking+pic+shared build_system=makefile symbol_suffix=none threads=none arch=linux-centos8-skylake_avx512
+[+]  7hbrugo      ^pkgconf@2.3.0 build_system=autotools arch=linux-centos8-skylake_avx512
+
+[+] /usr (external glibc-2.28-yga375dybazxmdmcytf6ap6a5it55zlm)
+[+] /scratch/mcopik/xaas-containers-artifact/dependencies/spack/opt/spack/linux-skylake_avx512/gcc-runtime-11.5.0-jp3zjh5xhqjlfj3bwyo2spgmw4z4rcen
+[+] /scratch/mcopik/xaas-containers-artifact/dependencies/spack/opt/spack/linux-skylake_avx512/xz-5.4.6-h5nnlvwhnmfir74c6mel4uigix66zbdg
+[+] /scratch/mcopik/xaas-containers-artifact/dependencies/spack/opt/spack/linux-skylake_avx512/libiconv-1.17-gkbsrqyzbkrzodzuwsikcfg2l4nxbmjc
+[+] /scratch/mcopik/xaas-containers-artifact/dependencies/spack/opt/spack/linux-skylake_avx512/gmake-4.4.1-263omavzevlx2kv2pl5gbcm75p6mfbie
+[+] /scratch/mcopik/xaas-containers-artifact/dependencies/spack/opt/spack/linux-skylake_avx512/ncurses-6.5-pdehvolqopnpqfhp7qajjyg7njfcbxfm
+[+] /scratch/mcopik/xaas-containers-artifact/dependencies/spack/opt/spack/linux-skylake_avx512/openblas-0.3.29-2rjl3bebvu7lvxxgdesbg2toi57odxwy
+[+] /scratch/mcopik/xaas-containers-artifact/dependencies/spack/opt/spack/linux-skylake_avx512/yaksa-0.3-piip532exemzeorokjpq3vjrqadrdxs5
+[+] /scratch/mcopik/xaas-containers-artifact/dependencies/spack/opt/spack/linux-skylake_avx512/libpciaccess-0.17-yvxuwo4vd7mst2crya6ujtvsp6j2taap
+[+] /scratch/mcopik/xaas-containers-artifact/dependencies/spack/opt/spack/linux-skylake_avx512/zlib-ng-2.2.3-agvc5fumsnuuk7keu7dj445jc5uwv7up
+[+] /scratch/mcopik/xaas-containers-artifact/dependencies/spack/opt/spack/linux-skylake_avx512/libfabric-1.22.0-v34k45a6thkcq43xcgdh6h7oxfdqyxtt
+[+] /scratch/mcopik/xaas-containers-artifact/dependencies/spack/opt/spack/linux-skylake_avx512/nghttp2-1.64.0-kla4p7733rk7lwuxixw6uc53sigievsb
+[+] /scratch/mcopik/xaas-containers-artifact/dependencies/spack/opt/spack/linux-skylake_avx512/libxml2-2.13.5-s7f4ornnyjwvqvplvybe5zdlbyp7i6vc
+[+] /scratch/mcopik/xaas-containers-artifact/dependencies/spack/opt/spack/linux-skylake_avx512/openssl-3.4.0-ehu7lzvupu2fe5oj63docb2j4nzi6jxp
+[+] /scratch/mcopik/xaas-containers-artifact/dependencies/spack/opt/spack/linux-skylake_avx512/hwloc-2.11.1-54j37z4kbugo4lhlkswgrs2ahu2oisyc
+[+] /scratch/mcopik/xaas-containers-artifact/dependencies/spack/opt/spack/linux-skylake_avx512/cuda-12.8.0-7rxmrpqtrijs2arsmcomnl5qnx47mzss
+[+] /scratch/mcopik/xaas-containers-artifact/dependencies/spack/opt/spack/linux-skylake_avx512/curl-8.11.1-5fpbisyhwsdrk7etwoajxwd6negdyeed
+[+] /scratch/mcopik/xaas-containers-artifact/dependencies/spack/opt/spack/linux-skylake_avx512/intel-tbb-2022.0.0-ptn4tta6mmly5ctmhuvbjhwi57sqdbmv
+[+] /scratch/mcopik/xaas-containers-artifact/dependencies/spack/opt/spack/linux-skylake_avx512/mpich-4.2.3-oa6xwng6ty4i4uuu53ayr6xlza7uowdq
+[+] /scratch/mcopik/xaas-containers-artifact/dependencies/spack/opt/spack/linux-skylake_avx512/cmake-3.31.5-wif3l2wcyfidg7trvdgzoqky43ydrd3j
+[+] /scratch/mcopik/xaas-containers-artifact/dependencies/spack/opt/spack/linux-skylake_avx512/intel-oneapi-mkl-2024.2.2-ausjjwndg4jv4aapjeiulxj4l7xw7srh
+[+] /scratch/mcopik/xaas-containers-artifact/dependencies/spack/opt/spack/linux-skylake_avx512/fftw-3.3.10-kki5zo755fj2vlywtzrzgrkg3q2l6tg5
+[+] /scratch/mcopik/xaas-containers-artifact/dependencies/spack/opt/spack/linux-skylake_avx512/heffte-2.4.1-noyjgacsc5c3cosocixks5h2y5yviewl
+[+] /scratch/mcopik/xaas-containers-artifact/dependencies/spack/opt/spack/linux-skylake_avx512/gromacs-2024.4-ahwslxxlv5nlqfryutx7iilzrxyynw4e
+==> Updating view at /scratch/mcopik/xaas-containers-artifact/dependencies/spack/var/spack/environments/gromacs_advanced/.spack-env/view
