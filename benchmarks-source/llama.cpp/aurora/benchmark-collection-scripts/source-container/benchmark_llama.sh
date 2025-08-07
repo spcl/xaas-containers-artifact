@@ -3,7 +3,7 @@
 #PBS -N llama_xaas_tests
 #PBS -l walltime=00:60:00
 #PBS -l filesystems=flare
-#PBS -q debug
+#PBS -q prod
 
 ARTIFACT_LOCATION=${ARTIFACT_LOCATION:-${HOME}/xaas-containers-artifact}
 
@@ -17,7 +17,7 @@ export OMP_NUM_THREADS=102  # Use 102 OpenMP threads
 # FIXME: change the path for the output of the result
 TESTCASE_DIR="${ARTIFACT_LOCATION}/benchmarks-source/llama.cpp/aurora/llama-benchmarks/Q4_K_M/"
 
-LLAMA_DIR="/llama.cpp"
+LLAMA_DIR="/source"
 MODEL_FILE="${ARTIFACT_LOCATION}/data/llama.cpp/llama-2-13b-chat.Q4_K_M.gguf"
 
 CONTAINER_PATH="${ARTIFACT_LOCATION}/data/gromacs/images/"
