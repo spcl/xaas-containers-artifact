@@ -7,81 +7,55 @@ You can download the required model files from the links below:
 - [llama-2-13b-chat.Q4_K_M.gguf](https://huggingface.co/TheBloke/Llama-2-13B-chat-GGUF/blob/main/llama-2-13b-chat.Q4_K_M.gguf)
 - [llama-2-13b-chat.Q4_0.gguf](https://huggingface.co/TheBloke/Llama-2-13B-chat-GGUF/blob/main/llama-2-13b-chat.Q4_0.gguf)
 
-You need to create the `models/13B/` directory manually if it doesn't exist.
-
-
-
+We provide the script `download_data.sh` which downloads them and places them in directories that the script expects.
 
 ## Test Cases
 
 This repository contains four benchmark test cases:
 
-- **Test Case 0 (naive)**: CPU-only build.
+- **Test Case 0 (naive)**: naive build with no flags, which results in a CPU-only configuration.
 - **Test Case 1 (specialized)**: Host build with Intel MKL Blas and CUDA.
 - **Test Case 2 (containerized specialized)**: Same as Test Case 1 but built inside a container.
-- **Test Case 3 (XaaS)**: CUDA backend with cuBLAS and fine-tuning options.
+- **Test Case 3 (XaaS)**: XaaS source container with user selection of CUDA, AVX_512. and MKL.
 
-### Test Case 0: Naive CPU-only Build
+## Build
 
-```bash
-cmake -B build && cmake --build build --config Release -j 8
+Run the following commands:
+
+```
+/bin/bash install_dependencies.sh
+/bin/bash download_data.sh
 ```
 
-### Test Case 1: Specialized Build on Host (Intel MKL + CUDA)
+Then, schedule building of non-containerized versions:
 
-```bash
-cmake -B build \
- -DCMAKE_C_COMPILER=icx \
- -DCMAKE_CXX_COMPILER=icpx \
- -DGGML_BLAS=ON \
- -DGGML_BLAS_VENDOR=Intel10_64lp \
- -DGGML_CUDA=ON \
- -DCMAKE_CUDA_ARCHITECTURES="86;89;70" \
- -DGGML_NATIVE=ON \
- -DBLAS_INCLUDE_DIRS=$MKLROOT/include \
- -DCMAKE_EXE_LINKER_FLAGS="-Wl,-rpath,/users/ealnuaim/spack/opt/spack/linux-centos8-zen/gcc-8.4.1/gcc-11.5.0-lubixtieinubtxpukoheitjpnwjwfres/lib64"
-
-cmake --build build --config Release -j4
+```
+sbatch -w ault23 < build-scripts/testcase0/build.sh
+sbatch -w ault23 < build-scripts/testcase1/build.sh
 ```
 
-### Test Case 2: Specialized Build in Container
+To build container version, run on a system with Docker support:
 
-> Before building, make sure to source the Intel compilers:
->
-> ```bash
-> source /opt/intel/oneapi/setvars.sh
-> ```
-
-```bash
-cmake -B build \
- -DCMAKE_C_COMPILER=icx \
- -DCMAKE_CXX_COMPILER=icpx \
- -DGGML_BLAS=ON \
- -DGGML_BLAS_VENDOR=Intel10_64lp \
- -DGGML_CUDA=ON \
- -DCMAKE_CUDA_ARCHITECTURES="86;89;70" \
- -DGGML_NATIVE=OFF \
- -DBLAS_INCLUDE_DIRS=$MKLROOT/include \
- -DCMAKE_EXE_LINKER_FLAGS="-Wl,-rpath,/usr/lib/gcc/x86_64-linux-gnu/11"
-
-cmake --build build --config Release -j4
+```
+/bin/bash build_containers.sh
+/bin/bash push_containers.sh
 ```
 
-### Test Case 3: XaaS - CUDA + cuBLAS + Fine-tuning
+This will build containers in the default `spcleth/xaas-artifact` repository. Use the enviroment variable `DOCKER_REPOSITORY` to override this.
 
-```bash
-cmake -B build \
- -DGGML_CUDA=ON \
- -DGGML_CUDA_FORCE_CUBLAS=ON \
- -DGGML_CUDA_FORCE_MMQ=ON \
- -DGGML_CUDA_F16=ON \
- -DGGML_CUDA_PEER_MAX_BATCH_SIZE=256 \
- -DGGML_AVX512=ON \
- -DGGML_NATIVE=OFF \
- -DGGML_BACKEND_DL=OFF \
- -DCMAKE_CUDA_ARCHITECTURES="86;89;70;75" \
- -DCMAKE_C_COMPILER=icx \
- -DCMAKE_CXX_COMPILER=icpx
+Then, run the following script to get all containers on Ault:
 
-cmake --build build --config Release -j$(nproc)
+```
+/bin/bash download_containers.sh
+```
+
+## Execute
+
+Submit jobs:
+
+```
+sbatch -w ault23 < benchmarking-scripts/benchmark_testcase0.sh
+sbatch -w ault23 < benchmarking-scripts/benchmark_testcase1.sh
+sbatch -w ault23 < benchmarking-scripts/benchmark_testcase2.sh
+sbatch -w ault23 < benchmarking-scripts/benchmark_testcase3.sh
 ```

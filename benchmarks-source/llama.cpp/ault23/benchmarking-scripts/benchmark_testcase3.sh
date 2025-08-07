@@ -1,73 +1,46 @@
 #!/bin/bash
+#SBATCH --job-name=llama_benchmark_pg         # More descriptive job name
+#SBATCH --output=llama_pg_%j.out              # Standard output log
+#SBATCH --error=llama_pg_%j.err               # Error log
+#SBATCH --nodelist=ault23                     # Assign the job to a specific node
+#SBATCH --ntasks=1                            # 1 MPI rank (not really needed here, but kept for clarity)
+#SBATCH --gpus=1                              # 1 GPU (if used by llama.cpp)
+#SBATCH --cpus-per-task=64                    # CPUs allocated to the task
+#SBATCH --time=1:00:00                        # Max wall time
+#SBATCH --exclusive                           # Exclusive access to the node
 
-# === Step 1: Start interactive session ===
-srun --nodelist=ault23 --mem=32G --gres=gpu:1 --time=04:00:00 --pty /bin/bash
+ARTIFACT_LOCATION=${ARTIFACT_LOCATION:-${SCRATCH}/xaas-containers-artifact}
+DOCKER_REPOSITORY=${DOCKER_REPOSITORY:-"spcleth/xaas-artifact"}
+DOCKER_IMAGE="llamacpp-source-deploy-ault23"
 
-# === Step 2: Load required modules ===
-module load cuda/12.1.1 intel-oneapi-mpi/2021.3.0 \
-            git/2.10.1 intel-oneapi-mkl/2021.3.0 \
-            intel-oneapi-compilers/2021.3.0 \
-            sarus
+BIN_DIR="${ARTIFACT_LOCATION}/benchmarks-source/llama.cpp/ault23/build-scripts/testcase1"
+TESTCASE_DIR="${ARTIFACT_LOCATION}/benchmarks-source/llama.cpp/ault23/llama-benchmarks/Q4_K_M"
+MODEL_FILE="${ARTIFACT_LOCATION}/data/llama.cpp/llama-2-13b-chat.Q4_K_M.gguf"
 
-# === Step 3: Launch the container ===
-sarus run -t \
-    --mount=type=bind,source=/usr/lib64/libcuda.so,destination=/usr/lib64/libcuda.so \
-    --mount=type=bind,source=/usr/lib64/libcuda.so.1,destination=/usr/lib64/libcuda.so.1 \
-    --mount=type=bind,source=/usr/lib64/libcuda.so.570.86.15,destination=/usr/lib64/libcuda.so.570.86.15 \
-    --mount=type=bind,source=/usr/lib64/libnvidia-ml.so,destination=/usr/lib64/libnvidia-ml.so \
-    --mount=type=bind,source=/usr/lib64/libnvidia-ml.so.1,destination=/usr/lib64/libnvidia-ml.so.1 \
-    --mount=type=bind,source=/usr/lib64/libnvidia-ml.so.570.86.15,destination=/usr/lib64/libnvidia-ml.so.570.86.15 \
-    --mount=type=bind,source=/usr/bin/nvidia-smi,destination=/usr/bin/nvidia-smi \
-    --mount=type=bind,source=/dev/nvidia0,destination=/dev/nvidia0 \
-    --mount=type=bind,source=/dev/nvidiactl,destination=/dev/nvidiactl \
-    --mount=type=bind,source=/dev/nvidia-uvm,destination=/dev/nvidia-uvm \
-    --mount=type=bind,source=/proc/driver/nvidia,destination=/proc/driver/nvidia \
-    --mount=type=bind,source="$SCRATCH",destination="/host_home" \
-    --mount=type=bind,source=/scratch/ealnuaim/llama-builds/testcase0/llama.cpp/models/13B,destination=/mnt \
-    ealnuaimi/llama-cpp-testcase3-ault:latest /bin/bash
+export OMP_NUM_THREADS=64
 
-# === Inside the container ===
+module load sarus
 
-source /opt/intel/oneapi/setvars.sh
+mkdir -p "$TESTCASE_DIR"
 
-# Go to llama.cpp root
-cd ../llama.cpp/
+export CUDA_VISIBLE_DEVICES=0
 
-# Clean previous builds
-rm -rf build
+srun sarus run \
+  --mount=type=bind,source="$(dirname $MODEL_FILE)",destination="/input_dir" \
+  --mount=type=bind,source="${TESTCASE_DIR}",destination="/result_dir" \
+  --env OMP_NUM_THREADS=${OMP_NUM_THREADS} \
+  --env CUDA_VISIBLE_DEVICES=${CUDA_VISIBLE_DEVICES} \
+  ${DOCKER_REPOSITORY}:${DOCKER_IMAGE} bash -c '
+  source /opt/intel/oneapi/setvars.sh > /dev/null 2>&1 && \
+  /source/build/bin/llama-bench -m /input_dir/llama-2-13b-chat.Q4_K_M.gguf -pg 512,128 -t ${OMP_NUM_THREADS} -r 40 -o csv > /result_dir/testcase3_pg_results.csv'
 
-# Reconfigure with portable flags
-cmake -B build \
-  -DGGML_CUDA=ON \
-  -DGGML_CUDA_FORCE_CUBLAS=ON \
-  -DGGML_CUDA_FORCE_MMQ=ON \
-  -DGGML_CUDA_F16=ON \
-  -DGGML_CUDA_PEER_MAX_BATCH_SIZE=256 \
-  -DGGML_AVX512=ON \
-  -DGGML_NATIVE=OFF \
-  -DGGML_BACKEND_DL=OFF \
-  -DCMAKE_CUDA_ARCHITECTURES="86;89;70;75" \
-  -DCMAKE_C_COMPILER=icx \
-  -DCMAKE_CXX_COMPILER=icpx
+TESTCASE_DIR="${ARTIFACT_LOCATION}/benchmarks-source/llama.cpp/ault23/llama-benchmarks/Q4_0"
 
-cmake --build build --config Release -j$(nproc)
-
-# Set up env and run benchmarks
-cd build/bin
-export OMP_NUM_THREADS=16
-
-# Benchmark: Q4_K_M
-CUDA_VISIBLE_DEVICES="0" ./llama-bench \
-  -m /mnt/llama-2-13b-chat.Q4_K_M.gguf \
-  -pg 512,128 \
-  -t $OMP_NUM_THREADS \
-  -r 40 \
-  -o csv > /host_home/llama-benchmarks/Q4_K_M/testcase3_pg_results.csv
-
-# Benchmark: Q4_0
-CUDA_VISIBLE_DEVICES="0" ./llama-bench \
-  -m /mnt/llama-2-13b-chat.Q4_0.gguf \
-  -pg 512,128 \
-  -t $OMP_NUM_THREADS \
-  -r 40 \
-  -o csv > /host_home/llama-benchmarks/Q4_0/testcase3_pg_results.csv
+srun sarus run \
+  --mount=type=bind,source="$(dirname $MODEL_FILE)",destination="/input_dir" \
+  --mount=type=bind,source="${TESTCASE_DIR}",destination="/result_dir" \
+  --env OMP_NUM_THREADS=${OMP_NUM_THREADS} \
+  --env CUDA_VISIBLE_DEVICES=${CUDA_VISIBLE_DEVICES} \
+  ${DOCKER_REPOSITORY}:${DOCKER_IMAGE} bash -c '
+  source /opt/intel/oneapi/setvars.sh > /dev/null 2>&1 && \
+  /source/build/bin/llama-bench -m /input_dir/llama-2-13b-chat.Q4_0.gguf -pg 512,128 -t ${OMP_NUM_THREADS} -r 40 -o csv > /result_dir/testcase3_pg_results.csv'
