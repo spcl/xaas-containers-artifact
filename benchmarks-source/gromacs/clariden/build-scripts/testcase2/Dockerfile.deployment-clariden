@@ -1,0 +1,22 @@
+FROM docker.io/spcleth/xaas:cuda-12.6-arm as cuda-12.6-arm-layer
+FROM docker.io/spcleth/xaas-artifact:gromacs-source-arm64 AS SOURCE
+SHELL ["/bin/bash", "-c"]
+
+ARG nproc
+
+COPY --from=cuda-12.6-arm-layer /usr/local/cuda-12.6 /usr/local/cuda-12.6
+
+ENV PATH="/usr/local/cuda-12.6/bin:$PATH"
+ENV LD_LIBRARY_PATH="/usr/local/cuda-12.6/lib64:$LD_LIBRARY_PATH"
+RUN mkdir build \
+    && cd build \
+    && cmake ..  -DCMAKE_BUILD_TYPE=Release -DGMX_SIMD=ARM_SVE -DGMX_GPU=CUDA -DGMX_OPENMP=ON -DGMX_MPI=ON -DGMX_FFT_LIBRARY=fftw3 -DGMX_GPU_FFT_LIBRARY=cuFFT -DCMAKE_C_COMPILER=gcc -DCMAKE_CXX_COMPILER=g++ -DCMAKE_CUDA_ARCHITECTURES="90" -DGMX_BUILD_OWN_FFTW=ON -DBUILD_TESTING=OFF \
+    && make -j$(nproc) \
+    && make install \
+    && . /usr/local/gromacs/bin/GMXRC \
+    && cd ../
+
+CMD ["/bin/bash"]
+
+ENV NVIDIA_VISIBLE_DEVICES all
+ENV NVIDIA_DRIVER_CAPABILITIES compute,utility
