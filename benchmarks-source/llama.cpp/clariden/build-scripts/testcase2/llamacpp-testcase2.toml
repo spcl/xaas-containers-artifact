@@ -1,11 +1,10 @@
-image = "/iopsstor/scratch/cscs/ealnuaim/.edf_imagestore/llama-cpp-testcase2-clariden.sqsh"
-workdir = "/iopsstor/scratch/cscs/ealnuaim"
+image = "ealnuaimi/llama-cpp-testcase2-clariden:latest"
+workdir = "/iopsstor/scratch/cscs/mcopik"
 writable = true
 
 mounts = [
-  "/users/ealnuaim:/users/ealnuaim",
-  "/iopsstor/scratch/cscs/ealnuaim:/iopsstor/scratch/cscs/ealnuaim"
-
+  "/users/mcopik:/users/mcopik",
+  "/iopsstor/scratch/cscs/mcopik:/iopsstor/scratch/cscs/mcopik"
 ]
 
 [annotations]

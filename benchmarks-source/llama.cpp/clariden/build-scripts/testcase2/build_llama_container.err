@@ -1,0 +1,80 @@
+cp: cannot create regular file './llama.cpp/.git/objects/pack/pack-16e31e2ca63fffab9e971d49ef0b795136d162a0.pack': Permission denied
+cp: cannot create regular file './llama.cpp/.git/objects/pack/pack-16e31e2ca63fffab9e971d49ef0b795136d162a0.idx': Permission denied
+time="2025-08-08T12:56:31+02:00" level=warning msg="\"/\" is not a shared mount, this could cause issues or missing mounts with rootless containers"
+Trying to pull docker.io/spcleth/xaas:source-base-arm-24.04...
+Getting image source signatures
+Copying blob sha256:27f5d44cca588902b0c90336209c12caccdc11c84def245026db21585f20f4ae
+Copying blob sha256:661ef49a64c2a52c355c8c7124939ab5ce0907d120f5b75bef6ae8d434f5e98b
+Copying blob sha256:eaebc6ddd66c205a07e43ba484afed28e2b8c24ba93a54e1e78d87363151ab93
+Copying blob sha256:e3bd89a9dac501ff564b39359113adad7c3d2813d5e04eab53ee10e20a6793a7
+Copying blob sha256:77d5e5e30de7a0c7747e967e8351487bc21ce11377a39f3eb0919d2cfa98a85a
+Copying blob sha256:6d7ce99753bfeb45f9f025ec66a993d664b249d67cda693ba8abbca2238b5095
+Copying config sha256:f4a02e75b88998e3b53539e2de30f17d6683cb440c10b8f80681ba34b12b3df8
+Writing manifest to image destination
+--2025-08-08 10:56:42--  https://developer.download.nvidia.com/compute/cuda/repos/ubuntu2404/sbsa/cuda-keyring_1.1-1_all.deb
+Resolving proxy.cscs.ch (proxy.cscs.ch)... 148.187.0.244
+Connecting to proxy.cscs.ch (proxy.cscs.ch)|148.187.0.244|:8080... connected.
+Proxy request sent, awaiting response... 200 OK
+Length: 4324 (4.2K) [application/x-deb]
+Saving to: 'cuda-keyring_1.1-1_all.deb'
+
+     0K ....                                                  100%  365M=0s
+
+2025-08-08 10:56:44 (365 MB/s) - 'cuda-keyring_1.1-1_all.deb' saved [4324/4324]
+
+debconf: delaying package configuration, since apt-utils is not installed
+debconf: delaying package configuration, since apt-utils is not installed
+-- CUDA host compiler is GNU 13.3.0
+
+/llama.cpp/examples/perplexity/perplexity.cpp: In lambda function:
+/llama.cpp/examples/perplexity/perplexity.cpp:1750:41: note: parameter passing for argument of type 'std::pair<double, double>' when C++17 is enabled changed to match C++14 in GCC 10.1
+ 1750 |             return std::make_pair(0., 0.);
+      |                                         ^
+time="2025-08-08T13:06:36+02:00" level=warning msg="Failed to add pause process to systemd sandbox cgroup: dial unix /run/user/25181/bus: connect: no such file or directory"
+[INFO] Fetching image
+aa9f6834b50d53020b03488e8f0b04039259459b9fe3fc330b270f845c1aea46
+[INFO] Mounting image from Podman container...
+[INFO] Creating squashfs filesystem...
+Parallel mksquashfs: Using 64 processors
+Creating 4.0 filesystem on /iopsstor/scratch/cscs/mcopik/xaas-containers-artifact/benchmarks-source/llama.cpp/clariden/build-scripts/testcase2/llamacpp_clariden.sqsh, block size 131072.
+
+Exportable Squashfs 4.0 filesystem, zstd compressed, data block size 131072
+	uncompressed data, compressed metadata, compressed fragments,
+	compressed xattrs, compressed ids
+	duplicates are removed
+Filesystem size 8599819.97 Kbytes (8398.26 Mbytes)
+	97.17% of uncompressed filesystem size (8850508.01 Kbytes)
+Inode table size 358832 bytes (350.42 Kbytes)
+	23.78% of uncompressed inode table size (1509002 bytes)
+Directory table size 397139 bytes (387.83 Kbytes)
+	42.92% of uncompressed directory table size (925289 bytes)
+Xattr table size 40 bytes (0.04 Kbytes)
+	100.00% of uncompressed xattr table size (40 bytes)
+Number of duplicate files found 2353
+Number of inodes 37479
+Number of files 31963
+Number of fragments 2934
+Number of symbolic links 1800
+Number of device nodes 0
+Number of fifo nodes 0
+Number of socket nodes 0
+Number of directories 3716
+Number of hard-links 5
+Number of ids (unique uids + gids) 1
+Number of uids 1
+	root (0)
+Number of gids 1
+	root (0)
+Getting image source signatures
+Copying blob sha256:84beebe2984a0289bfe1f7460cc2252ee3c0ef2a816a8abe08ff10b55d643738
+Copying blob sha256:c4034b47388cbb652ecda5ba5528f83c160506c90032ed993658b043ec19448f
+Copying blob sha256:18106318f2f61edc54f2da45eadf9009a05b559c8830a3c50d03df8fa24eb655
+Copying blob sha256:f938656f385ef839075702193b749dad80f71362a3316b96702c58c070312e22
+Copying blob sha256:87873fd75fc76d2f881e811360da2aa5bd88f9b89eed6520443ba8dda45f2352
+Copying blob sha256:175f8aa923dd5dae601a98989472b074906800f9b2ca22243a997ab94ae398dc
+Copying blob sha256:b4ba64ccec7be39839983964ef9916376631d81dedac9cf595281737b8825fc3
+Copying blob sha256:95692358739fcd6b6c0a50bd377fc84273061ac7675cda4fbea679c1ac6c34e6
+Copying blob sha256:7d36e66c2ce074b5f36289cf80c1daa90480fdb7b48d3ee2435e2362ab03db35
+Copying blob sha256:d6e9761e43cad11379885bca77828fe0b83b54f4c5f9fa23a1bd89b398e480b2
+Copying config sha256:066ee68f707b5dd6e69a37f316d4168dc478ade892e8db906e316c1141f1956d
+Writing manifest to image destination

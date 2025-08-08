@@ -1,0 +1,47 @@
+time="2025-08-08T15:03:09+02:00" level=warning msg="\"/\" is not a shared mount, this could cause issues or missing mounts with rootless containers"
+Trying to pull docker.io/spcleth/xaas:cuda-12.6-arm...
+Getting image source signatures
+Copying blob sha256:4b50ffd647b2dc66d4bf6afc13a29546f60dfc4cb04163a0464cd082b6b712a0
+Copying blob sha256:ef6d179edc98e93dc6073cb3ddec6f1a6ed1d68d04cd7836a82abfd397922a05
+Copying config sha256:c0b0edb69edc683d6cc77b1ba5667fcc384e73d0d893470efc938fbf94ae70f2
+Writing manifest to image destination
+Trying to pull docker.io/spcleth/xaas-artifact:llamacpp-source-arm64...
+Getting image source signatures
+Copying blob sha256:661ef49a64c2a52c355c8c7124939ab5ce0907d120f5b75bef6ae8d434f5e98b
+Copying blob sha256:77d5e5e30de7a0c7747e967e8351487bc21ce11377a39f3eb0919d2cfa98a85a
+Copying blob sha256:6d7ce99753bfeb45f9f025ec66a993d664b249d67cda693ba8abbca2238b5095
+Copying blob sha256:27f5d44cca588902b0c90336209c12caccdc11c84def245026db21585f20f4ae
+Copying blob sha256:eaebc6ddd66c205a07e43ba484afed28e2b8c24ba93a54e1e78d87363151ab93
+Copying blob sha256:e3bd89a9dac501ff564b39359113adad7c3d2813d5e04eab53ee10e20a6793a7
+Copying blob sha256:b4c89bca4cc521ff06abf8c53ebd873e63fd9123328b638068fa43d51161f713
+Copying config sha256:d5610450112449596ca74c91ef30f279dd171e7d5b2eac7714de5edfc24fc9d9
+Writing manifest to image destination
+time="2025-08-08T15:04:30+02:00" level=warning msg="SHELL is not supported for OCI image format, [/bin/bash -c] will be ignored. Must use `docker` format"
+time="2025-08-08T15:04:30+02:00" level=warning msg="SHELL is not supported for OCI image format, [/bin/bash -c] will be ignored. Must use `docker` format"
+time="2025-08-08T15:04:37+02:00" level=warning msg="SHELL is not supported for OCI image format, [/bin/bash -c] will be ignored. Must use `docker` format"
+time="2025-08-08T15:05:11+02:00" level=warning msg="SHELL is not supported for OCI image format, [/bin/bash -c] will be ignored. Must use `docker` format"
+time="2025-08-08T15:05:11+02:00" level=warning msg="SHELL is not supported for OCI image format, [/bin/bash -c] will be ignored. Must use `docker` format"
+-- CUDA host compiler is GNU 13.3.0
+
+/source/examples/perplexity/perplexity.cpp: In lambda function:
+/source/examples/perplexity/perplexity.cpp:1750:41: note: parameter passing for argument of type 'std::pair<double, double>' when C++17 is enabled changed to match C++14 in GCC 10.1
+ 1750 |             return std::make_pair(0., 0.);
+      |                                         ^
+time="2025-08-08T15:06:45+02:00" level=warning msg="SHELL is not supported for OCI image format, [/bin/bash -c] will be ignored. Must use `docker` format"
+time="2025-08-08T15:06:53+02:00" level=warning msg="SHELL is not supported for OCI image format, [/bin/bash -c] will be ignored. Must use `docker` format"
+time="2025-08-08T15:06:54+02:00" level=warning msg="SHELL is not supported for OCI image format, [/bin/bash -c] will be ignored. Must use `docker` format"
+time="2025-08-08T15:06:54+02:00" level=warning msg="SHELL is not supported for OCI image format, [/bin/bash -c] will be ignored. Must use `docker` format"
+time="2025-08-08T15:06:54+02:00" level=warning msg="Failed to add pause process to systemd sandbox cgroup: dial unix /run/user/25181/bus: connect: no such file or directory"
+[ERROR] File already exists: /iopsstor/scratch/cscs/mcopik/xaas-containers-artifact/benchmarks-source/llama.cpp/clariden/build-scripts/testcase3/llamacpp_clariden.sqsh
+Getting image source signatures
+Copying blob sha256:84beebe2984a0289bfe1f7460cc2252ee3c0ef2a816a8abe08ff10b55d643738
+Copying blob sha256:18106318f2f61edc54f2da45eadf9009a05b559c8830a3c50d03df8fa24eb655
+Copying blob sha256:c4034b47388cbb652ecda5ba5528f83c160506c90032ed993658b043ec19448f
+Copying blob sha256:175f8aa923dd5dae601a98989472b074906800f9b2ca22243a997ab94ae398dc
+Copying blob sha256:f938656f385ef839075702193b749dad80f71362a3316b96702c58c070312e22
+Copying blob sha256:87873fd75fc76d2f881e811360da2aa5bd88f9b89eed6520443ba8dda45f2352
+Copying blob sha256:578348acfb89c04f4f9378aab703bb8841858c2906033ad8f8392510c2b1c580
+Copying blob sha256:0bb1ec227358b4c2f85ae908b9441ba052942509ec7517469b4502f8f418842f
+Copying blob sha256:4755c7b983bfa816af3d1223414c97a1e9aeb92ec3a266a74cf40a7b75e82e66
+Copying config sha256:5c2662eb0630bc4f1a697a30360cc0ed41555b68b62d5021e0b824b75d4d6ae1
+Writing manifest to image destination

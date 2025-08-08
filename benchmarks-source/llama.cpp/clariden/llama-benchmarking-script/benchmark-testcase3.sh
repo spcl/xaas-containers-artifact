@@ -4,32 +4,32 @@
 # Run this inside an srun container session:
 # srun -A a-g200 --ntasks=1 --cpus-per-task=64 --hint=nomultithread --time=01:00:00 --environment=llamacpp-testcase3 --pty bash
 
-# Set OpenMP threads
-export OMP_NUM_THREADS=16
+ARTIFACT_LOCATION=${ARTIFACT_LOCATION:-${SCRATCH}/xaas-containers-artifact}
 
-# Navigate to the benchmark binary directory (assuming you're in /llama.cpp/build/bin already)
-cd /llama.cpp/build/bin
+export OMP_NUM_THREADS=72
 
-# Paths
-MODEL_DIR="$SCRATCH/llama-builds/testcase0/llama.cpp/models/13B"
-OUTPUT_DIR="$SCRATCH/llama-benchmarks"
+BIN_DIR="/source/build/bin/"
+TESTCASE_DIR="${ARTIFACT_LOCATION}/benchmarks-source/llama.cpp/clariden/llama-benchmarks/Q4_K_M"
+MODEL_FILE="${ARTIFACT_LOCATION}/data/llama.cpp/llama-2-13b-chat.Q4_K_M.gguf"
 
-# Create output directories
 mkdir -p "$OUTPUT_DIR/Q4_K_M"
 mkdir -p "$OUTPUT_DIR/Q4_0"
 
-# Run benchmark for Q4_K_M
-CUDA_VISIBLE_DEVICES=0 ./llama-bench \
-  -m "$MODEL_DIR/llama-2-13b-chat.Q4_K_M.gguf" \
-  -pg 512,128 \
-  -t "$OMP_NUM_THREADS" \
-  -r 40 \
-  -o csv > "$OUTPUT_DIR/Q4_K_M/testcase3_pg_results.csv"
+cd ${BIN_DIR}
 
-# Run benchmark for Q4_0
 CUDA_VISIBLE_DEVICES=0 ./llama-bench \
-  -m "$MODEL_DIR/llama-2-13b-chat.Q4_0.gguf" \
+  -m ${MODEL_FILE} \
   -pg 512,128 \
   -t "$OMP_NUM_THREADS" \
   -r 40 \
-  -o csv > "$OUTPUT_DIR/Q4_0/testcase3_pg_results.csv"
+  -o csv > "${TESTCASE_DIR}/testcase3_pg_results.csv"
+
+MODEL_FILE="${ARTIFACT_LOCATION}/data/llama.cpp/llama-2-13b-chat.Q4_0.gguf"
+TESTCASE_DIR="${ARTIFACT_LOCATION}/benchmarks-source/llama.cpp/clariden/llama-benchmarks/Q4_0"
+
+CUDA_VISIBLE_DEVICES=0 ./llama-bench \
+  -m ${MODEL_FILE} \
+  -pg 512,128 \
+  -t "$OMP_NUM_THREADS" \
+  -r 40 \
+  -o csv > "${TESTCASE_DIR}/testcase3_pg_results.csv"

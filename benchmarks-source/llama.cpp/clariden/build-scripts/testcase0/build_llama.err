@@ -1,0 +1,4 @@
+/iopsstor/scratch/cscs/mcopik/xaas-containers-artifact/data/llama.cpp/llama.cpp/examples/perplexity/perplexity.cpp: In lambda function:
+/iopsstor/scratch/cscs/mcopik/xaas-containers-artifact/data/llama.cpp/llama.cpp/examples/perplexity/perplexity.cpp:1750:41: note: parameter passing for argument of type 'std::pair<double, double>' when C++17 is enabled changed to match C++14 in GCC 10.1
+ 1750 |             return std::make_pair(0., 0.);
+      |                                         ^

@@ -1,0 +1,1162 @@
+Create new /iopsstor/scratch/cscs/mcopik/xaas-containers-artifact/benchmarks-source/llama.cpp/clariden/build-scripts/testcase2/environment.toml
+STEP 1/11: FROM docker.io/spcleth/xaas:source-base-arm-24.04
+STEP 2/11: RUN wget https://developer.download.nvidia.com/compute/cuda/repos/ubuntu2404/sbsa/cuda-keyring_1.1-1_all.deb &&     dpkg -i cuda-keyring_1.1-1_all.deb &&     apt-get update &&     apt-get install -y --no-install-recommends cuda-toolkit-12.6
+Selecting previously unselected package cuda-keyring.
+(Reading database ... 30255 files and directories currently installed.)
+Preparing to unpack cuda-keyring_1.1-1_all.deb ...
+Unpacking cuda-keyring (1.1-1) ...
+Setting up cuda-keyring (1.1-1) ...
+Get:1 https://apt.llvm.org/noble llvm-toolchain-noble-19 InRelease [5554 B]
+Hit:2 http://ports.ubuntu.com/ubuntu-ports noble InRelease
+Get:3 https://apt.kitware.com/ubuntu noble InRelease [15.5 kB]
+Get:4 https://apt.llvm.org/noble llvm-toolchain-noble-19/main arm64 Packages [12.7 kB]
+Get:5 https://apt.kitware.com/ubuntu noble/main arm64 Packages [35.5 kB]
+Get:6 http://ports.ubuntu.com/ubuntu-ports noble-updates InRelease [126 kB]
+Get:7 http://ports.ubuntu.com/ubuntu-ports noble-backports InRelease [126 kB]
+Get:8 http://ports.ubuntu.com/ubuntu-ports noble-security InRelease [126 kB]
+Get:9 https://developer.download.nvidia.com/compute/cuda/repos/ubuntu2404/sbsa  InRelease [1579 B]
+Get:10 http://ports.ubuntu.com/ubuntu-ports noble-updates/main arm64 Packages [1700 kB]
+Get:11 http://ports.ubuntu.com/ubuntu-ports noble-updates/main arm64 Components [215 kB]
+Get:12 http://ports.ubuntu.com/ubuntu-ports noble-updates/universe arm64 Packages [1422 kB]
+Get:13 http://ports.ubuntu.com/ubuntu-ports noble-updates/universe arm64 Components [517 kB]
+Get:14 http://ports.ubuntu.com/ubuntu-ports noble-updates/restricted arm64 Components [159 B]
+Get:15 http://ports.ubuntu.com/ubuntu-ports noble-updates/multiverse arm64 Components [159 B]
+Get:16 http://ports.ubuntu.com/ubuntu-ports noble-backports/main arm64 Components [3703 B]
+Get:17 http://ports.ubuntu.com/ubuntu-ports noble-backports/universe arm64 Packages [33.9 kB]
+Get:18 http://ports.ubuntu.com/ubuntu-ports noble-backports/universe arm64 Components [35.4 kB]
+Get:19 http://ports.ubuntu.com/ubuntu-ports noble-backports/restricted arm64 Components [161 B]
+Get:20 https://developer.download.nvidia.com/compute/cuda/repos/ubuntu2404/sbsa  Packages [757 kB]
+Get:21 http://ports.ubuntu.com/ubuntu-ports noble-backports/multiverse arm64 Components [162 B]
+Get:22 http://ports.ubuntu.com/ubuntu-ports noble-security/main arm64 Packages [1370 kB]
+Get:23 http://ports.ubuntu.com/ubuntu-ports noble-security/main arm64 Components [21.6 kB]
+Get:24 http://ports.ubuntu.com/ubuntu-ports noble-security/universe arm64 Components [65.7 kB]
+Get:25 http://ports.ubuntu.com/ubuntu-ports noble-security/restricted arm64 Components [156 B]
+Get:26 http://ports.ubuntu.com/ubuntu-ports noble-security/multiverse arm64 Components [158 B]
+Fetched 6592 kB in 3s (2191 kB/s)
+Reading package lists...
+Reading package lists...
+Building dependency tree...
+Reading state information...
+The following additional packages will be installed:
+  cuda-cccl-12-6 cuda-command-line-tools-12-6 cuda-compiler-12-6 cuda-crt-12-6
+  cuda-cudart-12-6 cuda-cudart-dev-12-6 cuda-cuobjdump-12-6 cuda-cupti-12-6
+  cuda-cupti-dev-12-6 cuda-cuxxfilt-12-6 cuda-documentation-12-6
+  cuda-driver-dev-12-6 cuda-gdb-12-6 cuda-libraries-12-6
+  cuda-libraries-dev-12-6 cuda-nsight-compute-12-6 cuda-nsight-systems-12-6
+  cuda-nvcc-12-6 cuda-nvdisasm-12-6 cuda-nvml-dev-12-6 cuda-nvprune-12-6
+  cuda-nvrtc-12-6 cuda-nvrtc-dev-12-6 cuda-nvtx-12-6 cuda-nvvm-12-6
+  cuda-profiler-api-12-6 cuda-sanitizer-12-6 cuda-toolkit-12-config-common
+  cuda-toolkit-config-common cuda-tools-12-6 cuda-visual-tools-12-6
+  gds-tools-12-6 libcublas-12-6 libcublas-dev-12-6 libcufft-12-6
+  libcufft-dev-12-6 libcufile-12-6 libcufile-dev-12-6 libcurand-12-6
+  libcurand-dev-12-6 libcusolver-12-6 libcusolver-dev-12-6 libcusparse-12-6
+  libcusparse-dev-12-6 libdrm-amdgpu1 libdrm-common libdrm2 libegl-mesa0
+  libegl1 libgbm1 libglvnd0 libnpp-12-6 libnpp-dev-12-6 libnspr4 libnss3
+  libnuma1 libnvfatbin-12-6 libnvfatbin-dev-12-6 libnvjitlink-12-6
+  libnvjitlink-dev-12-6 libnvjpeg-12-6 libnvjpeg-dev-12-6 libopengl0
+  liboss4-salsa-asound2 liboss4-salsa2 libsensors-config libsensors5
+  libwayland-client0 libwayland-server0 libx11-xcb1 libxcb-cursor0
+  libxcb-dri3-0 libxcb-icccm4 libxcb-image0 libxcb-keysyms1 libxcb-present0
+  libxcb-randr0 libxcb-render-util0 libxcb-render0 libxcb-shape0 libxcb-shm0
+  libxcb-sync1 libxcb-util1 libxcb-xfixes0 libxcb-xinerama0 libxcb-xinput0
+  libxcb-xkb1 libxcomposite1 libxdamage1 libxext6 libxkbcommon-x11-0
+  libxkbcommon0 libxrandr2 libxrender1 libxshmfence1 libxtst6 mesa-libgallium
+  nsight-compute-2024.3.2 nsight-systems-2024.5.1 x11-common xkb-data
+Suggested packages:
+  lm-sensors
+The following NEW packages will be installed:
+  cuda-cccl-12-6 cuda-command-line-tools-12-6 cuda-compiler-12-6 cuda-crt-12-6
+  cuda-cudart-12-6 cuda-cudart-dev-12-6 cuda-cuobjdump-12-6 cuda-cupti-12-6
+  cuda-cupti-dev-12-6 cuda-cuxxfilt-12-6 cuda-documentation-12-6
+  cuda-driver-dev-12-6 cuda-gdb-12-6 cuda-libraries-12-6
+  cuda-libraries-dev-12-6 cuda-nsight-compute-12-6 cuda-nsight-systems-12-6
+  cuda-nvcc-12-6 cuda-nvdisasm-12-6 cuda-nvml-dev-12-6 cuda-nvprune-12-6
+  cuda-nvrtc-12-6 cuda-nvrtc-dev-12-6 cuda-nvtx-12-6 cuda-nvvm-12-6
+  cuda-profiler-api-12-6 cuda-sanitizer-12-6 cuda-toolkit-12-6
+  cuda-toolkit-12-6-config-common cuda-toolkit-12-config-common
+  cuda-toolkit-config-common cuda-tools-12-6 cuda-visual-tools-12-6
+  gds-tools-12-6 libcublas-12-6 libcublas-dev-12-6 libcufft-12-6
+  libcufft-dev-12-6 libcufile-12-6 libcufile-dev-12-6 libcurand-12-6
+  libcurand-dev-12-6 libcusolver-12-6 libcusolver-dev-12-6 libcusparse-12-6
+  libcusparse-dev-12-6 libdrm-amdgpu1 libdrm-common libdrm2 libegl-mesa0
+  libegl1 libgbm1 libglvnd0 libnpp-12-6 libnpp-dev-12-6 libnspr4 libnss3
+  libnuma1 libnvfatbin-12-6 libnvfatbin-dev-12-6 libnvjitlink-12-6
+  libnvjitlink-dev-12-6 libnvjpeg-12-6 libnvjpeg-dev-12-6 libopengl0
+  liboss4-salsa-asound2 liboss4-salsa2 libsensors-config libsensors5
+  libwayland-client0 libwayland-server0 libx11-xcb1 libxcb-cursor0
+  libxcb-dri3-0 libxcb-icccm4 libxcb-image0 libxcb-keysyms1 libxcb-present0
+  libxcb-randr0 libxcb-render-util0 libxcb-render0 libxcb-shape0 libxcb-shm0
+  libxcb-sync1 libxcb-util1 libxcb-xfixes0 libxcb-xinerama0 libxcb-xinput0
+  libxcb-xkb1 libxcomposite1 libxdamage1 libxext6 libxkbcommon-x11-0
+  libxkbcommon0 libxrandr2 libxrender1 libxshmfence1 libxtst6 mesa-libgallium
+  nsight-compute-2024.3.2 nsight-systems-2024.5.1 x11-common xkb-data
+0 upgraded, 103 newly installed, 0 to remove and 18 not upgraded.
+Need to get 2488 MB of archives.
+After this operation, 5318 MB of additional disk space will be used.
+Get:1 http://ports.ubuntu.com/ubuntu-ports noble-updates/main arm64 xkb-data all 2.41-2ubuntu1.1 [397 kB]
+Get:2 http://ports.ubuntu.com/ubuntu-ports noble-updates/main arm64 libdrm-common all 2.4.122-1~ubuntu0.24.04.1 [8406 B]
+Get:3 http://ports.ubuntu.com/ubuntu-ports noble-updates/main arm64 libdrm2 arm64 2.4.122-1~ubuntu0.24.04.1 [42.2 kB]
+Get:4 http://ports.ubuntu.com/ubuntu-ports noble/main arm64 libnuma1 arm64 2.0.18-1build1 [23.6 kB]
+Get:5 http://ports.ubuntu.com/ubuntu-ports noble/main arm64 libsensors-config all 1:3.6.0-9build1 [5546 B]
+Get:6 http://ports.ubuntu.com/ubuntu-ports noble/main arm64 libsensors5 arm64 1:3.6.0-9build1 [27.0 kB]
+Get:7 https://developer.download.nvidia.com/compute/cuda/repos/ubuntu2404/sbsa  cuda-cccl-12-6 12.6.77-1 [973 kB]
+Get:8 http://ports.ubuntu.com/ubuntu-ports noble/main arm64 libxext6 arm64 2:1.3.4-1build2 [30.4 kB]
+Get:9 http://ports.ubuntu.com/ubuntu-ports noble/main arm64 libxkbcommon0 arm64 1.6.0-1build1 [122 kB]
+Get:10 http://ports.ubuntu.com/ubuntu-ports noble/main arm64 libxcb-xinerama0 arm64 1.15-1ubuntu2 [5598 B]
+Get:11 http://ports.ubuntu.com/ubuntu-ports noble/main arm64 libxcb-icccm4 arm64 0.4.1-1.1build3 [10.5 kB]
+Get:12 http://ports.ubuntu.com/ubuntu-ports noble/main arm64 libxcb-shm0 arm64 1.15-1ubuntu2 [5876 B]
+Get:13 http://ports.ubuntu.com/ubuntu-ports noble/main arm64 libxcb-util1 arm64 0.4.0-1build3 [10.7 kB]
+Get:14 http://ports.ubuntu.com/ubuntu-ports noble/main arm64 libxcb-image0 arm64 0.4.0-2build1 [10.8 kB]
+Get:15 http://ports.ubuntu.com/ubuntu-ports noble/main arm64 libxcb-keysyms1 arm64 0.4.0-1build4 [7984 B]
+Get:16 http://ports.ubuntu.com/ubuntu-ports noble/main arm64 libxcb-randr0 arm64 1.15-1ubuntu2 [18.4 kB]
+Get:17 http://ports.ubuntu.com/ubuntu-ports noble/main arm64 libxcb-render0 arm64 1.15-1ubuntu2 [16.6 kB]
+Get:18 http://ports.ubuntu.com/ubuntu-ports noble/main arm64 libxcb-render-util0 arm64 0.3.9-1build4 [9648 B]
+Get:19 https://developer.download.nvidia.com/compute/cuda/repos/ubuntu2404/sbsa  cuda-cupti-12-6 12.6.80-1 [7072 kB]
+Get:20 http://ports.ubuntu.com/ubuntu-ports noble/main arm64 libxcb-xfixes0 arm64 1.15-1ubuntu2 [10.6 kB]
+Get:21 http://ports.ubuntu.com/ubuntu-ports noble/main arm64 libxcb-shape0 arm64 1.15-1ubuntu2 [6250 B]
+Get:22 http://ports.ubuntu.com/ubuntu-ports noble/main arm64 libxcb-xkb1 arm64 1.15-1ubuntu2 [32.6 kB]
+Get:23 http://ports.ubuntu.com/ubuntu-ports noble/main arm64 libxkbcommon-x11-0 arm64 1.6.0-1build1 [13.6 kB]
+Get:24 http://ports.ubuntu.com/ubuntu-ports noble/main arm64 libxcb-xinput0 arm64 1.15-1ubuntu2 [34.2 kB]
+Get:25 http://ports.ubuntu.com/ubuntu-ports noble/universe arm64 libxcb-cursor0 arm64 0.1.4-1build1 [10.6 kB]
+Get:26 https://developer.download.nvidia.com/compute/cuda/repos/ubuntu2404/sbsa  cuda-cupti-dev-12-6 12.6.80-1 [3923 kB]
+Get:27 http://ports.ubuntu.com/ubuntu-ports noble/main arm64 libnspr4 arm64 2:4.35-1.1build1 [114 kB]
+Get:28 http://ports.ubuntu.com/ubuntu-ports noble/main arm64 libnss3 arm64 2:3.98-1build1 [1408 kB]
+Get:29 http://ports.ubuntu.com/ubuntu-ports noble/main arm64 libxcomposite1 arm64 1:0.4.5-1build3 [6336 B]
+Get:30 http://ports.ubuntu.com/ubuntu-ports noble/main arm64 libxdamage1 arm64 1:1.1.6-1build1 [6236 B]
+Get:31 http://ports.ubuntu.com/ubuntu-ports noble/main arm64 libxrender1 arm64 1:0.9.10-1.1build1 [18.8 kB]
+Get:32 http://ports.ubuntu.com/ubuntu-ports noble/main arm64 libxrandr2 arm64 2:1.5.2-2build1 [19.6 kB]
+Get:33 http://ports.ubuntu.com/ubuntu-ports noble/main arm64 x11-common all 1:7.7+23ubuntu3 [21.7 kB]
+Get:34 http://ports.ubuntu.com/ubuntu-ports noble/main arm64 libxtst6 arm64 2:1.2.3-1.1build1 [13.0 kB]
+Get:35 https://developer.download.nvidia.com/compute/cuda/repos/ubuntu2404/sbsa  cuda-nvdisasm-12-6 12.6.77-1 [49.8 MB]
+Get:36 https://developer.download.nvidia.com/compute/cuda/repos/ubuntu2404/sbsa  cuda-cuobjdump-12-6 12.6.77-1 [211 kB]
+Get:37 https://developer.download.nvidia.com/compute/cuda/repos/ubuntu2404/sbsa  cuda-gdb-12-6 12.6.77-1 [4348 kB]
+Get:38 http://ports.ubuntu.com/ubuntu-ports noble/universe arm64 liboss4-salsa2 arm64 4.2-build2020-1ubuntu3 [44.9 kB]
+Get:39 http://ports.ubuntu.com/ubuntu-ports noble/universe arm64 liboss4-salsa-asound2 arm64 4.2-build2020-1ubuntu3 [3608 B]
+Get:40 http://ports.ubuntu.com/ubuntu-ports noble/main arm64 libglvnd0 arm64 1.7.0-1build1 [60.6 kB]
+Get:41 http://ports.ubuntu.com/ubuntu-ports noble/main arm64 libopengl0 arm64 1.7.0-1build1 [35.1 kB]
+Get:42 http://ports.ubuntu.com/ubuntu-ports noble/main arm64 libwayland-server0 arm64 1.22.0-2.1build1 [34.6 kB]
+Get:43 http://ports.ubuntu.com/ubuntu-ports noble-updates/main arm64 libdrm-amdgpu1 arm64 2.4.122-1~ubuntu0.24.04.1 [20.9 kB]
+Get:44 http://ports.ubuntu.com/ubuntu-ports noble/main arm64 libx11-xcb1 arm64 2:1.8.7-1build1 [7870 B]
+Get:45 http://ports.ubuntu.com/ubuntu-ports noble/main arm64 libxcb-dri3-0 arm64 1.15-1ubuntu2 [7196 B]
+Get:46 http://ports.ubuntu.com/ubuntu-ports noble/main arm64 libxcb-present0 arm64 1.15-1ubuntu2 [5866 B]
+Get:47 http://ports.ubuntu.com/ubuntu-ports noble/main arm64 libxcb-sync1 arm64 1.15-1ubuntu2 [9682 B]
+Get:48 https://developer.download.nvidia.com/compute/cuda/repos/ubuntu2404/sbsa  cuda-nvtx-12-6 12.6.77-1 [52.0 kB]
+Get:49 http://ports.ubuntu.com/ubuntu-ports noble/main arm64 libxshmfence1 arm64 1.3-1build5 [4938 B]
+Get:50 http://ports.ubuntu.com/ubuntu-ports noble-updates/main arm64 mesa-libgallium arm64 25.0.7-0ubuntu0.24.04.1 [9356 kB]
+Get:51 http://ports.ubuntu.com/ubuntu-ports noble-updates/main arm64 libgbm1 arm64 25.0.7-0ubuntu0.24.04.1 [33.5 kB]
+Get:52 https://developer.download.nvidia.com/compute/cuda/repos/ubuntu2404/sbsa  cuda-sanitizer-12-6 12.6.77-1 [7961 kB]
+Get:53 https://developer.download.nvidia.com/compute/cuda/repos/ubuntu2404/sbsa  cuda-command-line-tools-12-6 12.6.3-1 [2534 B]
+Get:54 https://developer.download.nvidia.com/compute/cuda/repos/ubuntu2404/sbsa  cuda-cuxxfilt-12-6 12.6.77-1 [179 kB]
+Get:55 https://developer.download.nvidia.com/compute/cuda/repos/ubuntu2404/sbsa  cuda-toolkit-config-common 13.0.48-1 [17.4 kB]
+Get:56 http://ports.ubuntu.com/ubuntu-ports noble/main arm64 libwayland-client0 arm64 1.22.0-2.1build1 [25.9 kB]
+Get:57 http://ports.ubuntu.com/ubuntu-ports noble-updates/main arm64 libegl-mesa0 arm64 25.0.7-0ubuntu0.24.04.1 [123 kB]
+Get:58 http://ports.ubuntu.com/ubuntu-ports noble/main arm64 libegl1 arm64 1.7.0-1build1 [29.5 kB]
+Get:59 https://developer.download.nvidia.com/compute/cuda/repos/ubuntu2404/sbsa  cuda-toolkit-12-config-common 12.9.79-1 [16.6 kB]
+Get:60 https://developer.download.nvidia.com/compute/cuda/repos/ubuntu2404/sbsa  cuda-toolkit-12-6-config-common 12.6.77-1 [16.4 kB]
+Get:61 https://developer.download.nvidia.com/compute/cuda/repos/ubuntu2404/sbsa  cuda-cudart-12-6 12.6.77-1 [168 kB]
+Get:62 https://developer.download.nvidia.com/compute/cuda/repos/ubuntu2404/sbsa  cuda-driver-dev-12-6 12.6.77-1 [30.1 kB]
+Get:63 https://developer.download.nvidia.com/compute/cuda/repos/ubuntu2404/sbsa  cuda-cudart-dev-12-6 12.6.77-1 [1013 kB]
+Get:64 https://developer.download.nvidia.com/compute/cuda/repos/ubuntu2404/sbsa  cuda-nvvm-12-6 12.6.85-1 [16.0 MB]
+Get:65 https://developer.download.nvidia.com/compute/cuda/repos/ubuntu2404/sbsa  cuda-crt-12-6 12.6.85-1 [77.4 kB]
+Get:66 https://developer.download.nvidia.com/compute/cuda/repos/ubuntu2404/sbsa  cuda-nvcc-12-6 12.6.85-1 [28.1 MB]
+Get:67 https://developer.download.nvidia.com/compute/cuda/repos/ubuntu2404/sbsa  cuda-nvprune-12-6 12.6.77-1 [51.3 kB]
+Get:68 https://developer.download.nvidia.com/compute/cuda/repos/ubuntu2404/sbsa  cuda-compiler-12-6 12.6.3-1 [2510 B]
+Get:69 https://developer.download.nvidia.com/compute/cuda/repos/ubuntu2404/sbsa  cuda-documentation-12-6 12.6.77-1 [50.0 kB]
+Get:70 https://developer.download.nvidia.com/compute/cuda/repos/ubuntu2404/sbsa  cuda-nvrtc-12-6 12.6.85-1 [15.6 MB]
+Get:71 https://developer.download.nvidia.com/compute/cuda/repos/ubuntu2404/sbsa  libcublas-12-6 12.6.4.1-1 [258 MB]
+Get:72 https://developer.download.nvidia.com/compute/cuda/repos/ubuntu2404/sbsa  libcufft-12-6 11.3.0.4-1 [159 MB]
+Get:73 https://developer.download.nvidia.com/compute/cuda/repos/ubuntu2404/sbsa  libcufile-12-6 1.11.1.6-1 [734 kB]
+Get:74 https://developer.download.nvidia.com/compute/cuda/repos/ubuntu2404/sbsa  libcurand-12-6 10.3.7.77-1 [41.3 MB]
+Get:75 https://developer.download.nvidia.com/compute/cuda/repos/ubuntu2404/sbsa  libcusolver-12-6 11.7.1.2-1 [97.1 MB]
+Get:76 https://developer.download.nvidia.com/compute/cuda/repos/ubuntu2404/sbsa  libcusparse-12-6 12.5.4.2-1 [121 MB]
+Get:77 https://developer.download.nvidia.com/compute/cuda/repos/ubuntu2404/sbsa  libnpp-12-6 12.3.1.54-1 [93.8 MB]
+Get:78 https://developer.download.nvidia.com/compute/cuda/repos/ubuntu2404/sbsa  libnvjitlink-12-6 12.6.85-1 [13.5 MB]
+Get:79 https://developer.download.nvidia.com/compute/cuda/repos/ubuntu2404/sbsa  libnvfatbin-12-6 12.6.77-1 [646 kB]
+Get:80 https://developer.download.nvidia.com/compute/cuda/repos/ubuntu2404/sbsa  libnvjpeg-12-6 12.3.3.54-1 [2195 kB]
+Get:81 https://developer.download.nvidia.com/compute/cuda/repos/ubuntu2404/sbsa  cuda-libraries-12-6 12.6.3-1 [2606 B]
+Get:82 https://developer.download.nvidia.com/compute/cuda/repos/ubuntu2404/sbsa  cuda-profiler-api-12-6 12.6.77-1 [18.7 kB]
+Get:83 https://developer.download.nvidia.com/compute/cuda/repos/ubuntu2404/sbsa  cuda-nvrtc-dev-12-6 12.6.85-1 [16.5 MB]
+Get:84 https://developer.download.nvidia.com/compute/cuda/repos/ubuntu2404/sbsa  libcublas-dev-12-6 12.6.4.1-1 [275 MB]
+Get:85 https://developer.download.nvidia.com/compute/cuda/repos/ubuntu2404/sbsa  libcufft-dev-12-6 11.3.0.4-1 [321 MB]
+Get:86 https://developer.download.nvidia.com/compute/cuda/repos/ubuntu2404/sbsa  libcufile-dev-12-6 1.11.1.6-1 [2019 kB]
+Get:87 https://developer.download.nvidia.com/compute/cuda/repos/ubuntu2404/sbsa  libcurand-dev-12-6 10.3.7.77-1 [41.7 MB]
+Get:88 https://developer.download.nvidia.com/compute/cuda/repos/ubuntu2404/sbsa  libcusolver-dev-12-6 11.7.1.2-1 [65.5 MB]
+Get:89 https://developer.download.nvidia.com/compute/cuda/repos/ubuntu2404/sbsa  libcusparse-dev-12-6 12.5.4.2-1 [120 MB]
+Get:90 https://developer.download.nvidia.com/compute/cuda/repos/ubuntu2404/sbsa  libnpp-dev-12-6 12.3.1.54-1 [92.1 MB]
+Get:91 https://developer.download.nvidia.com/compute/cuda/repos/ubuntu2404/sbsa  libnvjitlink-dev-12-6 12.6.85-1 [13.5 MB]
+Get:92 https://developer.download.nvidia.com/compute/cuda/repos/ubuntu2404/sbsa  libnvfatbin-dev-12-6 12.6.77-1 [556 kB]
+Get:93 https://developer.download.nvidia.com/compute/cuda/repos/ubuntu2404/sbsa  libnvjpeg-dev-12-6 12.3.3.54-1 [1958 kB]
+Get:94 https://developer.download.nvidia.com/compute/cuda/repos/ubuntu2404/sbsa  cuda-libraries-dev-12-6 12.6.3-1 [2646 B]
+Get:95 https://developer.download.nvidia.com/compute/cuda/repos/ubuntu2404/sbsa  nsight-compute-2024.3.2 2024.3.2.3-1 [219 MB]
+Get:96 https://developer.download.nvidia.com/compute/cuda/repos/ubuntu2404/sbsa  cuda-nsight-compute-12-6 12.6.3-1 [4056 B]
+Get:97 https://developer.download.nvidia.com/compute/cuda/repos/ubuntu2404/sbsa  nsight-systems-2024.5.1 2024.5.1.113-245134619542v0 [344 MB]
+Get:98 https://developer.download.nvidia.com/compute/cuda/repos/ubuntu2404/sbsa  cuda-nsight-systems-12-6 12.6.3-1 [3348 B]
+Get:99 https://developer.download.nvidia.com/compute/cuda/repos/ubuntu2404/sbsa  cuda-nvml-dev-12-6 12.6.77-1 [151 kB]
+Get:100 https://developer.download.nvidia.com/compute/cuda/repos/ubuntu2404/sbsa  cuda-visual-tools-12-6 12.6.3-1 [2930 B]
+Get:101 https://developer.download.nvidia.com/compute/cuda/repos/ubuntu2404/sbsa  gds-tools-12-6 1.11.1.6-1 [39.0 MB]
+Get:102 https://developer.download.nvidia.com/compute/cuda/repos/ubuntu2404/sbsa  cuda-tools-12-6 12.6.3-1 [2470 B]
+Get:103 https://developer.download.nvidia.com/compute/cuda/repos/ubuntu2404/sbsa  cuda-toolkit-12-6 12.6.3-1 [3248 B]
+Fetched 2488 MB in 1min 8s (36.7 MB/s)
+Selecting previously unselected package xkb-data.
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 30260 files and directories currently installed.)
+Preparing to unpack .../000-xkb-data_2.41-2ubuntu1.1_all.deb ...
+Unpacking xkb-data (2.41-2ubuntu1.1) ...
+Selecting previously unselected package libdrm-common.
+Preparing to unpack .../001-libdrm-common_2.4.122-1~ubuntu0.24.04.1_all.deb ...
+Unpacking libdrm-common (2.4.122-1~ubuntu0.24.04.1) ...
+Selecting previously unselected package libdrm2:arm64.
+Preparing to unpack .../002-libdrm2_2.4.122-1~ubuntu0.24.04.1_arm64.deb ...
+Unpacking libdrm2:arm64 (2.4.122-1~ubuntu0.24.04.1) ...
+Selecting previously unselected package libnuma1:arm64.
+Preparing to unpack .../003-libnuma1_2.0.18-1build1_arm64.deb ...
+Unpacking libnuma1:arm64 (2.0.18-1build1) ...
+Selecting previously unselected package libsensors-config.
+Preparing to unpack .../004-libsensors-config_1%3a3.6.0-9build1_all.deb ...
+Unpacking libsensors-config (1:3.6.0-9build1) ...
+Selecting previously unselected package libsensors5:arm64.
+Preparing to unpack .../005-libsensors5_1%3a3.6.0-9build1_arm64.deb ...
+Unpacking libsensors5:arm64 (1:3.6.0-9build1) ...
+Selecting previously unselected package libxext6:arm64.
+Preparing to unpack .../006-libxext6_2%3a1.3.4-1build2_arm64.deb ...
+Unpacking libxext6:arm64 (2:1.3.4-1build2) ...
+Selecting previously unselected package libxkbcommon0:arm64.
+Preparing to unpack .../007-libxkbcommon0_1.6.0-1build1_arm64.deb ...
+Unpacking libxkbcommon0:arm64 (1.6.0-1build1) ...
+Selecting previously unselected package cuda-cccl-12-6.
+Preparing to unpack .../008-cuda-cccl-12-6_12.6.77-1_arm64.deb ...
+Unpacking cuda-cccl-12-6 (12.6.77-1) ...
+Selecting previously unselected package cuda-cupti-12-6.
+Preparing to unpack .../009-cuda-cupti-12-6_12.6.80-1_arm64.deb ...
+Unpacking cuda-cupti-12-6 (12.6.80-1) ...
+Selecting previously unselected package cuda-cupti-dev-12-6.
+Preparing to unpack .../010-cuda-cupti-dev-12-6_12.6.80-1_arm64.deb ...
+Unpacking cuda-cupti-dev-12-6 (12.6.80-1) ...
+Selecting previously unselected package cuda-nvdisasm-12-6.
+Preparing to unpack .../011-cuda-nvdisasm-12-6_12.6.77-1_arm64.deb ...
+Unpacking cuda-nvdisasm-12-6 (12.6.77-1) ...
+Selecting previously unselected package cuda-cuobjdump-12-6.
+Preparing to unpack .../012-cuda-cuobjdump-12-6_12.6.77-1_arm64.deb ...
+Unpacking cuda-cuobjdump-12-6 (12.6.77-1) ...
+Selecting previously unselected package cuda-gdb-12-6.
+Preparing to unpack .../013-cuda-gdb-12-6_12.6.77-1_arm64.deb ...
+Unpacking cuda-gdb-12-6 (12.6.77-1) ...
+Selecting previously unselected package cuda-nvtx-12-6.
+Preparing to unpack .../014-cuda-nvtx-12-6_12.6.77-1_arm64.deb ...
+Unpacking cuda-nvtx-12-6 (12.6.77-1) ...
+Selecting previously unselected package cuda-sanitizer-12-6.
+Preparing to unpack .../015-cuda-sanitizer-12-6_12.6.77-1_arm64.deb ...
+Unpacking cuda-sanitizer-12-6 (12.6.77-1) ...
+Selecting previously unselected package cuda-command-line-tools-12-6.
+Preparing to unpack .../016-cuda-command-line-tools-12-6_12.6.3-1_arm64.deb ...
+Unpacking cuda-command-line-tools-12-6 (12.6.3-1) ...
+Selecting previously unselected package cuda-cuxxfilt-12-6.
+Preparing to unpack .../017-cuda-cuxxfilt-12-6_12.6.77-1_arm64.deb ...
+Unpacking cuda-cuxxfilt-12-6 (12.6.77-1) ...
+Selecting previously unselected package cuda-toolkit-config-common.
+Preparing to unpack .../018-cuda-toolkit-config-common_13.0.48-1_all.deb ...
+Unpacking cuda-toolkit-config-common (13.0.48-1) ...
+Selecting previously unselected package cuda-toolkit-12-config-common.
+Preparing to unpack .../019-cuda-toolkit-12-config-common_12.9.79-1_all.deb ...
+Unpacking cuda-toolkit-12-config-common (12.9.79-1) ...
+Selecting previously unselected package cuda-toolkit-12-6-config-common.
+Preparing to unpack .../020-cuda-toolkit-12-6-config-common_12.6.77-1_all.deb ...
+Unpacking cuda-toolkit-12-6-config-common (12.6.77-1) ...
+Selecting previously unselected package cuda-cudart-12-6.
+Preparing to unpack .../021-cuda-cudart-12-6_12.6.77-1_arm64.deb ...
+Unpacking cuda-cudart-12-6 (12.6.77-1) ...
+Selecting previously unselected package cuda-driver-dev-12-6.
+Preparing to unpack .../022-cuda-driver-dev-12-6_12.6.77-1_arm64.deb ...
+Unpacking cuda-driver-dev-12-6 (12.6.77-1) ...
+Selecting previously unselected package cuda-cudart-dev-12-6.
+Preparing to unpack .../023-cuda-cudart-dev-12-6_12.6.77-1_arm64.deb ...
+Unpacking cuda-cudart-dev-12-6 (12.6.77-1) ...
+Selecting previously unselected package cuda-nvvm-12-6.
+Preparing to unpack .../024-cuda-nvvm-12-6_12.6.85-1_arm64.deb ...
+Unpacking cuda-nvvm-12-6 (12.6.85-1) ...
+Selecting previously unselected package cuda-crt-12-6.
+Preparing to unpack .../025-cuda-crt-12-6_12.6.85-1_arm64.deb ...
+Unpacking cuda-crt-12-6 (12.6.85-1) ...
+Selecting previously unselected package cuda-nvcc-12-6.
+Preparing to unpack .../026-cuda-nvcc-12-6_12.6.85-1_arm64.deb ...
+Unpacking cuda-nvcc-12-6 (12.6.85-1) ...
+Selecting previously unselected package cuda-nvprune-12-6.
+Preparing to unpack .../027-cuda-nvprune-12-6_12.6.77-1_arm64.deb ...
+Unpacking cuda-nvprune-12-6 (12.6.77-1) ...
+Selecting previously unselected package cuda-compiler-12-6.
+Preparing to unpack .../028-cuda-compiler-12-6_12.6.3-1_arm64.deb ...
+Unpacking cuda-compiler-12-6 (12.6.3-1) ...
+Selecting previously unselected package cuda-documentation-12-6.
+Preparing to unpack .../029-cuda-documentation-12-6_12.6.77-1_arm64.deb ...
+Unpacking cuda-documentation-12-6 (12.6.77-1) ...
+Selecting previously unselected package cuda-nvrtc-12-6.
+Preparing to unpack .../030-cuda-nvrtc-12-6_12.6.85-1_arm64.deb ...
+Unpacking cuda-nvrtc-12-6 (12.6.85-1) ...
+Selecting previously unselected package libcublas-12-6.
+Preparing to unpack .../031-libcublas-12-6_12.6.4.1-1_arm64.deb ...
+Unpacking libcublas-12-6 (12.6.4.1-1) ...
+Selecting previously unselected package libcufft-12-6.
+Preparing to unpack .../032-libcufft-12-6_11.3.0.4-1_arm64.deb ...
+Unpacking libcufft-12-6 (11.3.0.4-1) ...
+Selecting previously unselected package libcufile-12-6.
+Preparing to unpack .../033-libcufile-12-6_1.11.1.6-1_arm64.deb ...
+Unpacking libcufile-12-6 (1.11.1.6-1) ...
+Selecting previously unselected package libcurand-12-6.
+Preparing to unpack .../034-libcurand-12-6_10.3.7.77-1_arm64.deb ...
+Unpacking libcurand-12-6 (10.3.7.77-1) ...
+Selecting previously unselected package libcusolver-12-6.
+Preparing to unpack .../035-libcusolver-12-6_11.7.1.2-1_arm64.deb ...
+Unpacking libcusolver-12-6 (11.7.1.2-1) ...
+Selecting previously unselected package libcusparse-12-6.
+Preparing to unpack .../036-libcusparse-12-6_12.5.4.2-1_arm64.deb ...
+Unpacking libcusparse-12-6 (12.5.4.2-1) ...
+Selecting previously unselected package libnpp-12-6.
+Preparing to unpack .../037-libnpp-12-6_12.3.1.54-1_arm64.deb ...
+Unpacking libnpp-12-6 (12.3.1.54-1) ...
+Selecting previously unselected package libnvjitlink-12-6.
+Preparing to unpack .../038-libnvjitlink-12-6_12.6.85-1_arm64.deb ...
+Unpacking libnvjitlink-12-6 (12.6.85-1) ...
+Selecting previously unselected package libnvfatbin-12-6.
+Preparing to unpack .../039-libnvfatbin-12-6_12.6.77-1_arm64.deb ...
+Unpacking libnvfatbin-12-6 (12.6.77-1) ...
+Selecting previously unselected package libnvjpeg-12-6.
+Preparing to unpack .../040-libnvjpeg-12-6_12.3.3.54-1_arm64.deb ...
+Unpacking libnvjpeg-12-6 (12.3.3.54-1) ...
+Selecting previously unselected package cuda-libraries-12-6.
+Preparing to unpack .../041-cuda-libraries-12-6_12.6.3-1_arm64.deb ...
+Unpacking cuda-libraries-12-6 (12.6.3-1) ...
+Selecting previously unselected package cuda-profiler-api-12-6.
+Preparing to unpack .../042-cuda-profiler-api-12-6_12.6.77-1_arm64.deb ...
+Unpacking cuda-profiler-api-12-6 (12.6.77-1) ...
+Selecting previously unselected package cuda-nvrtc-dev-12-6.
+Preparing to unpack .../043-cuda-nvrtc-dev-12-6_12.6.85-1_arm64.deb ...
+Unpacking cuda-nvrtc-dev-12-6 (12.6.85-1) ...
+Selecting previously unselected package libcublas-dev-12-6.
+Preparing to unpack .../044-libcublas-dev-12-6_12.6.4.1-1_arm64.deb ...
+Unpacking libcublas-dev-12-6 (12.6.4.1-1) ...
+Selecting previously unselected package libcufft-dev-12-6.
+Preparing to unpack .../045-libcufft-dev-12-6_11.3.0.4-1_arm64.deb ...
+Unpacking libcufft-dev-12-6 (11.3.0.4-1) ...
+Selecting previously unselected package libcufile-dev-12-6.
+Preparing to unpack .../046-libcufile-dev-12-6_1.11.1.6-1_arm64.deb ...
+Unpacking libcufile-dev-12-6 (1.11.1.6-1) ...
+Selecting previously unselected package libcurand-dev-12-6.
+Preparing to unpack .../047-libcurand-dev-12-6_10.3.7.77-1_arm64.deb ...
+Unpacking libcurand-dev-12-6 (10.3.7.77-1) ...
+Selecting previously unselected package libcusolver-dev-12-6.
+Preparing to unpack .../048-libcusolver-dev-12-6_11.7.1.2-1_arm64.deb ...
+Unpacking libcusolver-dev-12-6 (11.7.1.2-1) ...
+Selecting previously unselected package libcusparse-dev-12-6.
+Preparing to unpack .../049-libcusparse-dev-12-6_12.5.4.2-1_arm64.deb ...
+Unpacking libcusparse-dev-12-6 (12.5.4.2-1) ...
+Selecting previously unselected package libnpp-dev-12-6.
+Preparing to unpack .../050-libnpp-dev-12-6_12.3.1.54-1_arm64.deb ...
+Unpacking libnpp-dev-12-6 (12.3.1.54-1) ...
+Selecting previously unselected package libnvjitlink-dev-12-6.
+Preparing to unpack .../051-libnvjitlink-dev-12-6_12.6.85-1_arm64.deb ...
+Unpacking libnvjitlink-dev-12-6 (12.6.85-1) ...
+Selecting previously unselected package libnvfatbin-dev-12-6.
+Preparing to unpack .../052-libnvfatbin-dev-12-6_12.6.77-1_arm64.deb ...
+Unpacking libnvfatbin-dev-12-6 (12.6.77-1) ...
+Selecting previously unselected package libnvjpeg-dev-12-6.
+Preparing to unpack .../053-libnvjpeg-dev-12-6_12.3.3.54-1_arm64.deb ...
+Unpacking libnvjpeg-dev-12-6 (12.3.3.54-1) ...
+Selecting previously unselected package cuda-libraries-dev-12-6.
+Preparing to unpack .../054-cuda-libraries-dev-12-6_12.6.3-1_arm64.deb ...
+Unpacking cuda-libraries-dev-12-6 (12.6.3-1) ...
+Selecting previously unselected package nsight-compute-2024.3.2.
+Preparing to unpack .../055-nsight-compute-2024.3.2_2024.3.2.3-1_arm64.deb ...
+Unpacking nsight-compute-2024.3.2 (2024.3.2.3-1) ...
+Selecting previously unselected package cuda-nsight-compute-12-6.
+Preparing to unpack .../056-cuda-nsight-compute-12-6_12.6.3-1_arm64.deb ...
+Unpacking cuda-nsight-compute-12-6 (12.6.3-1) ...
+Selecting previously unselected package libxcb-xinerama0:arm64.
+Preparing to unpack .../057-libxcb-xinerama0_1.15-1ubuntu2_arm64.deb ...
+Unpacking libxcb-xinerama0:arm64 (1.15-1ubuntu2) ...
+Selecting previously unselected package libxcb-icccm4:arm64.
+Preparing to unpack .../058-libxcb-icccm4_0.4.1-1.1build3_arm64.deb ...
+Unpacking libxcb-icccm4:arm64 (0.4.1-1.1build3) ...
+Selecting previously unselected package libxcb-shm0:arm64.
+Preparing to unpack .../059-libxcb-shm0_1.15-1ubuntu2_arm64.deb ...
+Unpacking libxcb-shm0:arm64 (1.15-1ubuntu2) ...
+Selecting previously unselected package libxcb-util1:arm64.
+Preparing to unpack .../060-libxcb-util1_0.4.0-1build3_arm64.deb ...
+Unpacking libxcb-util1:arm64 (0.4.0-1build3) ...
+Selecting previously unselected package libxcb-image0:arm64.
+Preparing to unpack .../061-libxcb-image0_0.4.0-2build1_arm64.deb ...
+Unpacking libxcb-image0:arm64 (0.4.0-2build1) ...
+Selecting previously unselected package libxcb-keysyms1:arm64.
+Preparing to unpack .../062-libxcb-keysyms1_0.4.0-1build4_arm64.deb ...
+Unpacking libxcb-keysyms1:arm64 (0.4.0-1build4) ...
+Selecting previously unselected package libxcb-randr0:arm64.
+Preparing to unpack .../063-libxcb-randr0_1.15-1ubuntu2_arm64.deb ...
+Unpacking libxcb-randr0:arm64 (1.15-1ubuntu2) ...
+Selecting previously unselected package libxcb-render0:arm64.
+Preparing to unpack .../064-libxcb-render0_1.15-1ubuntu2_arm64.deb ...
+Unpacking libxcb-render0:arm64 (1.15-1ubuntu2) ...
+Selecting previously unselected package libxcb-render-util0:arm64.
+Preparing to unpack .../065-libxcb-render-util0_0.3.9-1build4_arm64.deb ...
+Unpacking libxcb-render-util0:arm64 (0.3.9-1build4) ...
+Selecting previously unselected package libxcb-xfixes0:arm64.
+Preparing to unpack .../066-libxcb-xfixes0_1.15-1ubuntu2_arm64.deb ...
+Unpacking libxcb-xfixes0:arm64 (1.15-1ubuntu2) ...
+Selecting previously unselected package libxcb-shape0:arm64.
+Preparing to unpack .../067-libxcb-shape0_1.15-1ubuntu2_arm64.deb ...
+Unpacking libxcb-shape0:arm64 (1.15-1ubuntu2) ...
+Selecting previously unselected package libxcb-xkb1:arm64.
+Preparing to unpack .../068-libxcb-xkb1_1.15-1ubuntu2_arm64.deb ...
+Unpacking libxcb-xkb1:arm64 (1.15-1ubuntu2) ...
+Selecting previously unselected package libxkbcommon-x11-0:arm64.
+Preparing to unpack .../069-libxkbcommon-x11-0_1.6.0-1build1_arm64.deb ...
+Unpacking libxkbcommon-x11-0:arm64 (1.6.0-1build1) ...
+Selecting previously unselected package libxcb-xinput0:arm64.
+Preparing to unpack .../070-libxcb-xinput0_1.15-1ubuntu2_arm64.deb ...
+Unpacking libxcb-xinput0:arm64 (1.15-1ubuntu2) ...
+Selecting previously unselected package libxcb-cursor0:arm64.
+Preparing to unpack .../071-libxcb-cursor0_0.1.4-1build1_arm64.deb ...
+Unpacking libxcb-cursor0:arm64 (0.1.4-1build1) ...
+Selecting previously unselected package libnspr4:arm64.
+Preparing to unpack .../072-libnspr4_2%3a4.35-1.1build1_arm64.deb ...
+Unpacking libnspr4:arm64 (2:4.35-1.1build1) ...
+Selecting previously unselected package libnss3:arm64.
+Preparing to unpack .../073-libnss3_2%3a3.98-1build1_arm64.deb ...
+Unpacking libnss3:arm64 (2:3.98-1build1) ...
+Selecting previously unselected package libxcomposite1:arm64.
+Preparing to unpack .../074-libxcomposite1_1%3a0.4.5-1build3_arm64.deb ...
+Unpacking libxcomposite1:arm64 (1:0.4.5-1build3) ...
+Selecting previously unselected package libxdamage1:arm64.
+Preparing to unpack .../075-libxdamage1_1%3a1.1.6-1build1_arm64.deb ...
+Unpacking libxdamage1:arm64 (1:1.1.6-1build1) ...
+Selecting previously unselected package libxrender1:arm64.
+Preparing to unpack .../076-libxrender1_1%3a0.9.10-1.1build1_arm64.deb ...
+Unpacking libxrender1:arm64 (1:0.9.10-1.1build1) ...
+Selecting previously unselected package libxrandr2:arm64.
+Preparing to unpack .../077-libxrandr2_2%3a1.5.2-2build1_arm64.deb ...
+Unpacking libxrandr2:arm64 (2:1.5.2-2build1) ...
+Selecting previously unselected package x11-common.
+Preparing to unpack .../078-x11-common_1%3a7.7+23ubuntu3_all.deb ...
+Unpacking x11-common (1:7.7+23ubuntu3) ...
+Selecting previously unselected package libxtst6:arm64.
+Preparing to unpack .../079-libxtst6_2%3a1.2.3-1.1build1_arm64.deb ...
+Unpacking libxtst6:arm64 (2:1.2.3-1.1build1) ...
+Selecting previously unselected package liboss4-salsa2:arm64.
+Preparing to unpack .../080-liboss4-salsa2_4.2-build2020-1ubuntu3_arm64.deb ...
+Unpacking liboss4-salsa2:arm64 (4.2-build2020-1ubuntu3) ...
+Selecting previously unselected package liboss4-salsa-asound2:arm64.
+Preparing to unpack .../081-liboss4-salsa-asound2_4.2-build2020-1ubuntu3_arm64.deb ...
+Unpacking liboss4-salsa-asound2:arm64 (4.2-build2020-1ubuntu3) ...
+Selecting previously unselected package libglvnd0:arm64.
+Preparing to unpack .../082-libglvnd0_1.7.0-1build1_arm64.deb ...
+Unpacking libglvnd0:arm64 (1.7.0-1build1) ...
+Selecting previously unselected package libopengl0:arm64.
+Preparing to unpack .../083-libopengl0_1.7.0-1build1_arm64.deb ...
+Unpacking libopengl0:arm64 (1.7.0-1build1) ...
+Selecting previously unselected package libwayland-server0:arm64.
+Preparing to unpack .../084-libwayland-server0_1.22.0-2.1build1_arm64.deb ...
+Unpacking libwayland-server0:arm64 (1.22.0-2.1build1) ...
+Selecting previously unselected package libdrm-amdgpu1:arm64.
+Preparing to unpack .../085-libdrm-amdgpu1_2.4.122-1~ubuntu0.24.04.1_arm64.deb ...
+Unpacking libdrm-amdgpu1:arm64 (2.4.122-1~ubuntu0.24.04.1) ...
+Selecting previously unselected package libx11-xcb1:arm64.
+Preparing to unpack .../086-libx11-xcb1_2%3a1.8.7-1build1_arm64.deb ...
+Unpacking libx11-xcb1:arm64 (2:1.8.7-1build1) ...
+Selecting previously unselected package libxcb-dri3-0:arm64.
+Preparing to unpack .../087-libxcb-dri3-0_1.15-1ubuntu2_arm64.deb ...
+Unpacking libxcb-dri3-0:arm64 (1.15-1ubuntu2) ...
+Selecting previously unselected package libxcb-present0:arm64.
+Preparing to unpack .../088-libxcb-present0_1.15-1ubuntu2_arm64.deb ...
+Unpacking libxcb-present0:arm64 (1.15-1ubuntu2) ...
+Selecting previously unselected package libxcb-sync1:arm64.
+Preparing to unpack .../089-libxcb-sync1_1.15-1ubuntu2_arm64.deb ...
+Unpacking libxcb-sync1:arm64 (1.15-1ubuntu2) ...
+Selecting previously unselected package libxshmfence1:arm64.
+Preparing to unpack .../090-libxshmfence1_1.3-1build5_arm64.deb ...
+Unpacking libxshmfence1:arm64 (1.3-1build5) ...
+Selecting previously unselected package mesa-libgallium:arm64.
+Preparing to unpack .../091-mesa-libgallium_25.0.7-0ubuntu0.24.04.1_arm64.deb ...
+Unpacking mesa-libgallium:arm64 (25.0.7-0ubuntu0.24.04.1) ...
+Selecting previously unselected package libgbm1:arm64.
+Preparing to unpack .../092-libgbm1_25.0.7-0ubuntu0.24.04.1_arm64.deb ...
+Unpacking libgbm1:arm64 (25.0.7-0ubuntu0.24.04.1) ...
+Selecting previously unselected package libwayland-client0:arm64.
+Preparing to unpack .../093-libwayland-client0_1.22.0-2.1build1_arm64.deb ...
+Unpacking libwayland-client0:arm64 (1.22.0-2.1build1) ...
+Selecting previously unselected package libegl-mesa0:arm64.
+Preparing to unpack .../094-libegl-mesa0_25.0.7-0ubuntu0.24.04.1_arm64.deb ...
+Unpacking libegl-mesa0:arm64 (25.0.7-0ubuntu0.24.04.1) ...
+Selecting previously unselected package libegl1:arm64.
+Preparing to unpack .../095-libegl1_1.7.0-1build1_arm64.deb ...
+Unpacking libegl1:arm64 (1.7.0-1build1) ...
+Selecting previously unselected package nsight-systems-2024.5.1.
+Preparing to unpack .../096-nsight-systems-2024.5.1_2024.5.1.113-245134619542v0_arm64.deb ...
+Unpacking nsight-systems-2024.5.1 (2024.5.1.113-245134619542v0) ...
+Selecting previously unselected package cuda-nsight-systems-12-6.
+Preparing to unpack .../097-cuda-nsight-systems-12-6_12.6.3-1_arm64.deb ...
+Unpacking cuda-nsight-systems-12-6 (12.6.3-1) ...
+Selecting previously unselected package cuda-nvml-dev-12-6.
+Preparing to unpack .../098-cuda-nvml-dev-12-6_12.6.77-1_arm64.deb ...
+Unpacking cuda-nvml-dev-12-6 (12.6.77-1) ...
+Selecting previously unselected package cuda-visual-tools-12-6.
+Preparing to unpack .../099-cuda-visual-tools-12-6_12.6.3-1_arm64.deb ...
+Unpacking cuda-visual-tools-12-6 (12.6.3-1) ...
+Selecting previously unselected package gds-tools-12-6.
+Preparing to unpack .../100-gds-tools-12-6_1.11.1.6-1_arm64.deb ...
+Unpacking gds-tools-12-6 (1.11.1.6-1) ...
+Selecting previously unselected package cuda-tools-12-6.
+Preparing to unpack .../101-cuda-tools-12-6_12.6.3-1_arm64.deb ...
+Unpacking cuda-tools-12-6 (12.6.3-1) ...
+Selecting previously unselected package cuda-toolkit-12-6.
+Preparing to unpack .../102-cuda-toolkit-12-6_12.6.3-1_arm64.deb ...
+Unpacking cuda-toolkit-12-6 (12.6.3-1) ...
+Setting up cuda-cccl-12-6 (12.6.77-1) ...
+Setting up cuda-toolkit-config-common (13.0.48-1) ...
+Setting up libxcb-dri3-0:arm64 (1.15-1ubuntu2) ...
+Setting up libwayland-server0:arm64 (1.22.0-2.1build1) ...
+Setting up libx11-xcb1:arm64 (2:1.8.7-1build1) ...
+Setting up libxdamage1:arm64 (1:1.1.6-1build1) ...
+Setting up libxcb-xfixes0:arm64 (1.15-1ubuntu2) ...
+Setting up cuda-documentation-12-6 (12.6.77-1) ...
+Setting up libxcb-xinput0:arm64 (1.15-1ubuntu2) ...
+Setting up libxrender1:arm64 (1:0.9.10-1.1build1) ...
+Setting up libxcb-render0:arm64 (1.15-1ubuntu2) ...
+Setting up cuda-nvml-dev-12-6 (12.6.77-1) ...
+Setting up libglvnd0:arm64 (1.7.0-1build1) ...
+Setting up cuda-profiler-api-12-6 (12.6.77-1) ...
+Setting up libxcb-keysyms1:arm64 (0.4.0-1build4) ...
+Setting up libxcb-shape0:arm64 (1.15-1ubuntu2) ...
+Setting up x11-common (1:7.7+23ubuntu3) ...
+invoke-rc.d: could not determine current runlevel
+invoke-rc.d: policy-rc.d denied execution of start.
+Setting up libsensors-config (1:3.6.0-9build1) ...
+Setting up libxext6:arm64 (2:1.3.4-1build2) ...
+Setting up libxcb-render-util0:arm64 (0.3.9-1build4) ...
+Setting up xkb-data (2.41-2ubuntu1.1) ...
+Setting up nsight-compute-2024.3.2 (2024.3.2.3-1) ...
+Setting up cuda-nvvm-12-6 (12.6.85-1) ...
+Setting up libxcb-shm0:arm64 (1.15-1ubuntu2) ...
+Setting up libxcb-icccm4:arm64 (0.4.1-1.1build3) ...
+Setting up libopengl0:arm64 (1.7.0-1build1) ...
+Setting up cuda-nvtx-12-6 (12.6.77-1) ...
+Setting up libxcb-util1:arm64 (0.4.0-1build3) ...
+Setting up libxcb-xkb1:arm64 (1.15-1ubuntu2) ...
+Setting up libxcb-image0:arm64 (0.4.0-2build1) ...
+Setting up libxcb-present0:arm64 (1.15-1ubuntu2) ...
+Setting up cuda-cuxxfilt-12-6 (12.6.77-1) ...
+Setting up libxcb-xinerama0:arm64 (1.15-1ubuntu2) ...
+Setting up liboss4-salsa2:arm64 (4.2-build2020-1ubuntu3) ...
+Setting up cuda-nvdisasm-12-6 (12.6.77-1) ...
+Setting up libnspr4:arm64 (2:4.35-1.1build1) ...
+Setting up libxcb-sync1:arm64 (1.15-1ubuntu2) ...
+Setting up libxcb-cursor0:arm64 (0.1.4-1build1) ...
+Setting up cuda-nvprune-12-6 (12.6.77-1) ...
+Setting up cuda-driver-dev-12-6 (12.6.77-1) ...
+Setting up cuda-nsight-compute-12-6 (12.6.3-1) ...
+Setting up libxrandr2:arm64 (2:1.5.2-2build1) ...
+Setting up liboss4-salsa-asound2:arm64 (4.2-build2020-1ubuntu3) ...
+Setting up libsensors5:arm64 (1:3.6.0-9build1) ...
+Setting up libnuma1:arm64 (2.0.18-1build1) ...
+Setting up libxshmfence1:arm64 (1.3-1build5) ...
+Setting up cuda-toolkit-12-6-config-common (12.6.77-1) ...
+Setting alternatives
+update-alternatives: using /usr/local/cuda-12.6 to provide /usr/local/cuda (cuda) in auto mode
+update-alternatives: using /usr/local/cuda-12.6 to provide /usr/local/cuda-12 (cuda-12) in auto mode
+Setting up libxcb-randr0:arm64 (1.15-1ubuntu2) ...
+Setting up cuda-cuobjdump-12-6 (12.6.77-1) ...
+Setting up cuda-nvrtc-12-6 (12.6.85-1) ...
+Setting up cuda-sanitizer-12-6 (12.6.77-1) ...
+Setting up cuda-cupti-12-6 (12.6.80-1) ...
+Setting up libdrm-common (2.4.122-1~ubuntu0.24.04.1) ...
+Setting up libxcomposite1:arm64 (1:0.4.5-1build3) ...
+Setting up cuda-toolkit-12-config-common (12.9.79-1) ...
+Setting up libcusolver-12-6 (11.7.1.2-1) ...
+Setting up libxkbcommon0:arm64 (1.6.0-1build1) ...
+Setting up libwayland-client0:arm64 (1.22.0-2.1build1) ...
+Setting up libnvjitlink-12-6 (12.6.85-1) ...
+Setting up gds-tools-12-6 (1.11.1.6-1) ...
+Setting up libcurand-12-6 (10.3.7.77-1) ...
+Setting up libcufft-12-6 (11.3.0.4-1) ...
+Setting up libcufft-dev-12-6 (11.3.0.4-1) ...
+Setting up libnpp-12-6 (12.3.1.54-1) ...
+Setting up libnvjitlink-dev-12-6 (12.6.85-1) ...
+Setting up libxtst6:arm64 (2:1.2.3-1.1build1) ...
+Setting up libcusparse-12-6 (12.5.4.2-1) ...
+Setting up cuda-cupti-dev-12-6 (12.6.80-1) ...
+Setting up libnvfatbin-12-6 (12.6.77-1) ...
+Setting up libcurand-dev-12-6 (10.3.7.77-1) ...
+Setting up libnss3:arm64 (2:3.98-1build1) ...
+Setting up libnpp-dev-12-6 (12.3.1.54-1) ...
+Setting up libcublas-12-6 (12.6.4.1-1) ...
+Setting up libcublas-dev-12-6 (12.6.4.1-1) ...
+Setting up cuda-cudart-12-6 (12.6.77-1) ...
+Setting up cuda-gdb-12-6 (12.6.77-1) ...
+Setting up libnvjpeg-12-6 (12.3.3.54-1) ...
+Setting up libxkbcommon-x11-0:arm64 (1.6.0-1build1) ...
+Setting up libcufile-12-6 (1.11.1.6-1) ...
+Setting alternatives
+update-alternatives: using /usr/local/cuda-12.6/gds/cufile.json to provide /etc/cufile.json (cufile.json) in auto mode
+Setting up libcusparse-dev-12-6 (12.5.4.2-1) ...
+Setting up libdrm2:arm64 (2.4.122-1~ubuntu0.24.04.1) ...
+Setting up cuda-libraries-12-6 (12.6.3-1) ...
+Setting up cuda-nvrtc-dev-12-6 (12.6.85-1) ...
+Setting up libcusolver-dev-12-6 (11.7.1.2-1) ...
+Setting up cuda-command-line-tools-12-6 (12.6.3-1) ...
+Setting up libdrm-amdgpu1:arm64 (2.4.122-1~ubuntu0.24.04.1) ...
+Setting up mesa-libgallium:arm64 (25.0.7-0ubuntu0.24.04.1) ...
+Setting up libgbm1:arm64 (25.0.7-0ubuntu0.24.04.1) ...
+Setting up libnvfatbin-dev-12-6 (12.6.77-1) ...
+Setting up libnvjpeg-dev-12-6 (12.3.3.54-1) ...
+Setting up libcufile-dev-12-6 (1.11.1.6-1) ...
+Setting up cuda-cudart-dev-12-6 (12.6.77-1) ...
+Setting up cuda-libraries-dev-12-6 (12.6.3-1) ...
+Setting up libegl-mesa0:arm64 (25.0.7-0ubuntu0.24.04.1) ...
+Setting up libegl1:arm64 (1.7.0-1build1) ...
+Setting up cuda-crt-12-6 (12.6.85-1) ...
+Setting up nsight-systems-2024.5.1 (2024.5.1.113-245134619542v0) ...
+update-alternatives: using /opt/nvidia/nsight-systems/2024.5.1/target-linux-sbsa-armv8/nsys to provide /usr/local/bin/nsys (nsys) in auto mode
+update-alternatives: using /opt/nvidia/nsight-systems/2024.5.1/host-linux-armv8/nsys-ui to provide /usr/local/bin/nsys-ui (nsys-ui) in auto mode
+Setting up cuda-nsight-systems-12-6 (12.6.3-1) ...
+Setting up cuda-nvcc-12-6 (12.6.85-1) ...
+Setting up cuda-visual-tools-12-6 (12.6.3-1) ...
+Setting up cuda-compiler-12-6 (12.6.3-1) ...
+Setting up cuda-tools-12-6 (12.6.3-1) ...
+Setting up cuda-toolkit-12-6 (12.6.3-1) ...
+Processing triggers for libc-bin (2.39-0ubuntu8.5) ...
+--> b0cd4b0385f4
+STEP 3/11: ENV PATH="/usr/local/cuda-12.6/bin:$PATH"
+--> f6f44cd28a4b
+STEP 4/11: ENV LD_LIBRARY_PATH="/usr/local/cuda-12.6/lib64:$LD_LIBRARY_PATH"
+--> 4a3866134d51
+STEP 5/11: ENV NVIDIA_VISIBLE_DEVICES all
+--> 48d39d8fdeb2
+STEP 6/11: ENV NVIDIA_DRIVER_CAPABILITIES compute,utility
+--> c00184a5c2c1
+STEP 7/11: ENV NVIDIA_REQUIRE_CUDA "cuda>=12.4"
+--> 6a7b5070e2db
+STEP 8/11: RUN apt-get update     && apt-get install -y --no-install-recommends libopenblas-dev     && apt-get clean     && rm -rf /var/lib/apt/lists/*
+Hit:2 https://developer.download.nvidia.com/compute/cuda/repos/ubuntu2404/sbsa  InRelease
+Hit:1 https://apt.llvm.org/noble llvm-toolchain-noble-19 InRelease
+Hit:3 http://ports.ubuntu.com/ubuntu-ports noble InRelease
+Hit:4 https://apt.kitware.com/ubuntu noble InRelease
+Get:5 http://ports.ubuntu.com/ubuntu-ports noble-updates InRelease [126 kB]
+Get:6 http://ports.ubuntu.com/ubuntu-ports noble-backports InRelease [126 kB]
+Get:7 http://ports.ubuntu.com/ubuntu-ports noble-security InRelease [126 kB]
+Get:8 http://ports.ubuntu.com/ubuntu-ports noble-updates/main arm64 Components [215 kB]
+Get:9 http://ports.ubuntu.com/ubuntu-ports noble-updates/universe arm64 Components [515 kB]
+Get:10 http://ports.ubuntu.com/ubuntu-ports noble-updates/restricted arm64 Components [160 B]
+Get:11 http://ports.ubuntu.com/ubuntu-ports noble-updates/multiverse arm64 Components [159 B]
+Get:12 http://ports.ubuntu.com/ubuntu-ports noble-backports/main arm64 Components [3704 B]
+Get:13 http://ports.ubuntu.com/ubuntu-ports noble-backports/universe arm64 Components [35.0 kB]
+Get:14 http://ports.ubuntu.com/ubuntu-ports noble-backports/restricted arm64 Components [161 B]
+Get:15 http://ports.ubuntu.com/ubuntu-ports noble-backports/multiverse arm64 Components [161 B]
+Get:16 http://ports.ubuntu.com/ubuntu-ports noble-security/main arm64 Components [21.6 kB]
+Get:17 http://ports.ubuntu.com/ubuntu-ports noble-security/universe arm64 Components [65.7 kB]
+Get:18 http://ports.ubuntu.com/ubuntu-ports noble-security/restricted arm64 Components [157 B]
+Get:19 http://ports.ubuntu.com/ubuntu-ports noble-security/multiverse arm64 Components [158 B]
+Fetched 1235 kB in 3s (462 kB/s)
+Reading package lists...
+Reading package lists...
+Building dependency tree...
+Reading state information...
+The following additional packages will be installed:
+  libopenblas-pthread-dev libopenblas0 libopenblas0-pthread
+The following NEW packages will be installed:
+  libopenblas-dev libopenblas-pthread-dev libopenblas0 libopenblas0-pthread
+0 upgraded, 4 newly installed, 0 to remove and 18 not upgraded.
+Need to get 9280 kB of archives.
+After this operation, 56.2 MB of additional disk space will be used.
+Get:1 http://ports.ubuntu.com/ubuntu-ports noble/universe arm64 libopenblas0-pthread arm64 0.3.26+ds-1 [5464 kB]
+Get:2 http://ports.ubuntu.com/ubuntu-ports noble/universe arm64 libopenblas0 arm64 0.3.26+ds-1 [6170 B]
+Get:3 http://ports.ubuntu.com/ubuntu-ports noble/universe arm64 libopenblas-pthread-dev arm64 0.3.26+ds-1 [3790 kB]
+Get:4 http://ports.ubuntu.com/ubuntu-ports noble/universe arm64 libopenblas-dev arm64 0.3.26+ds-1 [19.6 kB]
+Fetched 9280 kB in 2s (5880 kB/s)
+Selecting previously unselected package libopenblas0-pthread:arm64.
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 35357 files and directories currently installed.)
+Preparing to unpack .../libopenblas0-pthread_0.3.26+ds-1_arm64.deb ...
+Unpacking libopenblas0-pthread:arm64 (0.3.26+ds-1) ...
+Selecting previously unselected package libopenblas0:arm64.
+Preparing to unpack .../libopenblas0_0.3.26+ds-1_arm64.deb ...
+Unpacking libopenblas0:arm64 (0.3.26+ds-1) ...
+Selecting previously unselected package libopenblas-pthread-dev:arm64.
+Preparing to unpack .../libopenblas-pthread-dev_0.3.26+ds-1_arm64.deb ...
+Unpacking libopenblas-pthread-dev:arm64 (0.3.26+ds-1) ...
+Selecting previously unselected package libopenblas-dev:arm64.
+Preparing to unpack .../libopenblas-dev_0.3.26+ds-1_arm64.deb ...
+Unpacking libopenblas-dev:arm64 (0.3.26+ds-1) ...
+Setting up libopenblas0-pthread:arm64 (0.3.26+ds-1) ...
+update-alternatives: using /usr/lib/aarch64-linux-gnu/openblas-pthread/libblas.so.3 to provide /usr/lib/aarch64-linux-gnu/libblas.so.3 (libblas.so.3-aarch64-linux-gnu) in auto mode
+update-alternatives: using /usr/lib/aarch64-linux-gnu/openblas-pthread/liblapack.so.3 to provide /usr/lib/aarch64-linux-gnu/liblapack.so.3 (liblapack.so.3-aarch64-linux-gnu) in auto mode
+update-alternatives: using /usr/lib/aarch64-linux-gnu/openblas-pthread/libopenblas.so.0 to provide /usr/lib/aarch64-linux-gnu/libopenblas.so.0 (libopenblas.so.0-aarch64-linux-gnu) in auto mode
+Setting up libopenblas0:arm64 (0.3.26+ds-1) ...
+Setting up libopenblas-pthread-dev:arm64 (0.3.26+ds-1) ...
+update-alternatives: using /usr/lib/aarch64-linux-gnu/openblas-pthread/libblas.so to provide /usr/lib/aarch64-linux-gnu/libblas.so (libblas.so-aarch64-linux-gnu) in auto mode
+update-alternatives: using /usr/lib/aarch64-linux-gnu/openblas-pthread/liblapack.so to provide /usr/lib/aarch64-linux-gnu/liblapack.so (liblapack.so-aarch64-linux-gnu) in auto mode
+update-alternatives: using /usr/lib/aarch64-linux-gnu/openblas-pthread/libopenblas.so to provide /usr/lib/aarch64-linux-gnu/libopenblas.so (libopenblas.so-aarch64-linux-gnu) in auto mode
+Setting up libopenblas-dev:arm64 (0.3.26+ds-1) ...
+Processing triggers for libc-bin (2.39-0ubuntu8.5) ...
+--> 2d23c0d2501f
+STEP 9/11: ADD llama.cpp /llama.cpp
+--> 1b2c0a862e68
+STEP 10/11: RUN cd /llama.cpp && cmake -B build         -DGGML_BLAS=ON         -DGGML_BLAS_VENDOR=OpenBLAS         -DGGML_CUDA=ON         -DCMAKE_CUDA_ARCHITECTURES="86;89;70;90"         -DGGML_NATIVE=ON         -DLLAMA_CURL=OFF     && cmake --build build --config Release -j8     && apt-get clean     && rm -rf /var/lib/apt/lists/*
+-- The C compiler identification is GNU 13.3.0
+-- The CXX compiler identification is GNU 13.3.0
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /usr/bin/cc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/bin/c++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Found Git: /usr/bin/git (found version "2.43.0")
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+-- Found Threads: TRUE
+-- Warning: ccache not found - consider installing it for faster compilation or disable this warning with GGML_CCACHE=OFF
+-- CMAKE_SYSTEM_PROCESSOR: aarch64
+-- Including CPU backend
+-- Found OpenMP_C: -fopenmp (found version "4.5")
+-- Found OpenMP_CXX: -fopenmp (found version "4.5")
+-- Found OpenMP: TRUE (found version "4.5")
+-- ARM detected
+-- Performing Test GGML_COMPILER_SUPPORTS_FP16_FORMAT_I3E
+-- Performing Test GGML_COMPILER_SUPPORTS_FP16_FORMAT_I3E - Failed
+-- Performing Test GGML_MACHINE_SUPPORTS_dotprod
+-- Performing Test GGML_MACHINE_SUPPORTS_dotprod - Success
+-- Performing Test GGML_MACHINE_SUPPORTS_i8mm
+-- Performing Test GGML_MACHINE_SUPPORTS_i8mm - Success
+-- Performing Test GGML_MACHINE_SUPPORTS_sve
+-- Performing Test GGML_MACHINE_SUPPORTS_sve - Success
+-- Performing Test GGML_MACHINE_SUPPORTS_sme
+-- Performing Test GGML_MACHINE_SUPPORTS_sme - Failed
+-- Performing Test GGML_MACHINE_SUPPORTS_nosme
+-- Performing Test GGML_MACHINE_SUPPORTS_nosme - Failed
+-- ARM feature DOTPROD enabled
+-- ARM feature SVE enabled
+-- ARM feature MATMUL_INT8 enabled
+-- ARM feature FMA enabled
+-- ARM feature FP16_VECTOR_ARITHMETIC enabled
+-- Adding CPU backend variant ggml-cpu: -mcpu=neoverse-v2+crc+sve2-sm4+sve2-aes+sve2-sha3+norng+dotprod+i8mm+sve 
+-- Looking for sgemm_
+-- Looking for sgemm_ - found
+-- Found BLAS: /usr/lib/aarch64-linux-gnu/libopenblas.so
+-- BLAS found, Libraries: /usr/lib/aarch64-linux-gnu/libopenblas.so
+-- Found PkgConfig: /usr/bin/pkg-config (found version "1.8.1")
+-- Checking for module 'openblas64'
+--   Package 'openblas64', required by 'virtual:world', not found
+-- Checking for module 'openblas'
+--   Found openblas, version 0.3.26
+-- BLAS found, Includes: /usr/include/aarch64-linux-gnu/openblas-pthread/
+-- Including BLAS backend
+-- Found CUDAToolkit: /usr/local/cuda-12.6/targets/sbsa-linux/include (found version "12.6.85")
+-- CUDA Toolkit found
+-- Using CUDA architectures: 86;89;70;90
+-- The CUDA compiler identification is NVIDIA 12.6.85 with host compiler GNU 13.3.0
+-- Detecting CUDA compiler ABI info
+-- Detecting CUDA compiler ABI info - done
+-- Check for working CUDA compiler: /usr/local/cuda-12.6/bin/nvcc - skipped
+-- Detecting CUDA compile features
+-- Detecting CUDA compile features - done
+-- Including CUDA backend
+-- Configuring done (3.0s)
+-- Generating done (0.3s)
+-- Build files have been written to: /llama.cpp/build
+[  0%] Building C object ggml/src/CMakeFiles/ggml-base.dir/ggml-alloc.c.o
+[  1%] Building CXX object ggml/src/CMakeFiles/ggml-base.dir/ggml-backend.cpp.o
+[  1%] Building C object examples/gguf-hash/CMakeFiles/sha256.dir/deps/sha256/sha256.c.o
+[  1%] Building C object examples/gguf-hash/CMakeFiles/sha1.dir/deps/sha1/sha1.c.o
+[  2%] Building C object examples/gguf-hash/CMakeFiles/xxhash.dir/deps/xxhash/xxhash.c.o
+[  4%] Building CXX object ggml/src/CMakeFiles/ggml-base.dir/ggml-opt.cpp.o
+[  4%] Building C object ggml/src/CMakeFiles/ggml-base.dir/ggml.c.o
+[  4%] Building CXX object common/CMakeFiles/build_info.dir/build-info.cpp.o
+[  4%] Built target build_info
+[  4%] Building CXX object ggml/src/CMakeFiles/ggml-base.dir/ggml-threading.cpp.o
+[  4%] Building C object ggml/src/CMakeFiles/ggml-base.dir/ggml-quants.c.o
+[  4%] Built target sha1
+[  5%] Building CXX object ggml/src/CMakeFiles/ggml-base.dir/gguf.cpp.o
+[  5%] Built target sha256
+[  5%] Built target xxhash
+[  5%] Linking CXX shared library ../../bin/libggml-base.so
+[  5%] Built target ggml-base
+[  5%] Building CXX object ggml/src/ggml-blas/CMakeFiles/ggml-blas.dir/ggml-blas.cpp.o
+[  5%] Building C object ggml/src/CMakeFiles/ggml-cpu.dir/ggml-cpu/ggml-cpu.c.o
+[  5%] Building CXX object ggml/src/CMakeFiles/ggml-cpu.dir/ggml-cpu/ggml-cpu.cpp.o
+[  6%] Building CXX object ggml/src/CMakeFiles/ggml-cpu.dir/ggml-cpu/ggml-cpu-aarch64.cpp.o
+[  6%] Building C object ggml/src/CMakeFiles/ggml-cpu.dir/ggml-cpu/ggml-cpu-quants.c.o
+[  7%] Building CXX object ggml/src/CMakeFiles/ggml-cpu.dir/ggml-cpu/ggml-cpu-traits.cpp.o
+[  7%] Building CXX object ggml/src/CMakeFiles/ggml-cpu.dir/ggml-cpu/ggml-cpu-hbm.cpp.o
+[  7%] Building CUDA object ggml/src/ggml-cuda/CMakeFiles/ggml-cuda.dir/acc.cu.o
+[  7%] Building CXX object ggml/src/CMakeFiles/ggml-cpu.dir/ggml-cpu/amx/amx.cpp.o
+[  7%] Building CXX object ggml/src/CMakeFiles/ggml-cpu.dir/ggml-cpu/amx/mmq.cpp.o
+[  8%] Building CXX object ggml/src/CMakeFiles/ggml-cpu.dir/ggml-cpu/binary-ops.cpp.o
+[  8%] Building CXX object ggml/src/CMakeFiles/ggml-cpu.dir/ggml-cpu/unary-ops.cpp.o
+[  8%] Building CXX object ggml/src/CMakeFiles/ggml-cpu.dir/ggml-cpu/vec.cpp.o
+[  9%] Building CXX object ggml/src/CMakeFiles/ggml-cpu.dir/ggml-cpu/ops.cpp.o
+[ 10%] Linking CXX shared library ../../../bin/libggml-blas.so
+[ 10%] Built target ggml-blas
+[ 10%] Building CXX object ggml/src/CMakeFiles/ggml-cpu.dir/ggml-cpu/llamafile/sgemm.cpp.o
+[ 11%] Building CUDA object ggml/src/ggml-cuda/CMakeFiles/ggml-cuda.dir/arange.cu.o
+[ 11%] Building CUDA object ggml/src/ggml-cuda/CMakeFiles/ggml-cuda.dir/argmax.cu.o
+[ 11%] Building CUDA object ggml/src/ggml-cuda/CMakeFiles/ggml-cuda.dir/argsort.cu.o
+[ 12%] Building CUDA object ggml/src/ggml-cuda/CMakeFiles/ggml-cuda.dir/binbcast.cu.o
+[ 12%] Building CUDA object ggml/src/ggml-cuda/CMakeFiles/ggml-cuda.dir/clamp.cu.o
+[ 12%] Building CUDA object ggml/src/ggml-cuda/CMakeFiles/ggml-cuda.dir/concat.cu.o
+[ 13%] Building CUDA object ggml/src/ggml-cuda/CMakeFiles/ggml-cuda.dir/conv-transpose-1d.cu.o
+[ 13%] Linking CXX shared library ../../bin/libggml-cpu.so
+[ 13%] Building CUDA object ggml/src/ggml-cuda/CMakeFiles/ggml-cuda.dir/convert.cu.o
+[ 13%] Built target ggml-cpu
+[ 13%] Building CUDA object ggml/src/ggml-cuda/CMakeFiles/ggml-cuda.dir/count-equal.cu.o
+[ 14%] Building CUDA object ggml/src/ggml-cuda/CMakeFiles/ggml-cuda.dir/cpy.cu.o
+[ 14%] Building CUDA object ggml/src/ggml-cuda/CMakeFiles/ggml-cuda.dir/cross-entropy-loss.cu.o
+[ 14%] Building CUDA object ggml/src/ggml-cuda/CMakeFiles/ggml-cuda.dir/diagmask.cu.o
+[ 15%] Building CUDA object ggml/src/ggml-cuda/CMakeFiles/ggml-cuda.dir/fattn-tile-f16.cu.o
+[ 15%] Building CUDA object ggml/src/ggml-cuda/CMakeFiles/ggml-cuda.dir/fattn-tile-f32.cu.o
+[ 15%] Building CUDA object ggml/src/ggml-cuda/CMakeFiles/ggml-cuda.dir/fattn-wmma-f16.cu.o
+[ 16%] Building CUDA object ggml/src/ggml-cuda/CMakeFiles/ggml-cuda.dir/fattn.cu.o
+[ 16%] Building CUDA object ggml/src/ggml-cuda/CMakeFiles/ggml-cuda.dir/getrows.cu.o
+[ 16%] Building CUDA object ggml/src/ggml-cuda/CMakeFiles/ggml-cuda.dir/ggml-cuda.cu.o
+[ 17%] Building CUDA object ggml/src/ggml-cuda/CMakeFiles/ggml-cuda.dir/gla.cu.o
+[ 17%] Building CUDA object ggml/src/ggml-cuda/CMakeFiles/ggml-cuda.dir/im2col.cu.o
+[ 17%] Building CUDA object ggml/src/ggml-cuda/CMakeFiles/ggml-cuda.dir/mmq.cu.o
+[ 18%] Building CUDA object ggml/src/ggml-cuda/CMakeFiles/ggml-cuda.dir/mmv.cu.o
+[ 18%] Building CUDA object ggml/src/ggml-cuda/CMakeFiles/ggml-cuda.dir/mmvq.cu.o
+[ 18%] Building CUDA object ggml/src/ggml-cuda/CMakeFiles/ggml-cuda.dir/norm.cu.o
+[ 19%] Building CUDA object ggml/src/ggml-cuda/CMakeFiles/ggml-cuda.dir/opt-step-adamw.cu.o
+[ 19%] Building CUDA object ggml/src/ggml-cuda/CMakeFiles/ggml-cuda.dir/out-prod.cu.o
+[ 19%] Building CUDA object ggml/src/ggml-cuda/CMakeFiles/ggml-cuda.dir/pad.cu.o
+[ 20%] Building CUDA object ggml/src/ggml-cuda/CMakeFiles/ggml-cuda.dir/pool2d.cu.o
+[ 20%] Building CUDA object ggml/src/ggml-cuda/CMakeFiles/ggml-cuda.dir/quantize.cu.o
+[ 20%] Building CUDA object ggml/src/ggml-cuda/CMakeFiles/ggml-cuda.dir/rope.cu.o
+[ 21%] Building CUDA object ggml/src/ggml-cuda/CMakeFiles/ggml-cuda.dir/scale.cu.o
+[ 21%] Building CUDA object ggml/src/ggml-cuda/CMakeFiles/ggml-cuda.dir/softmax.cu.o
+[ 21%] Building CUDA object ggml/src/ggml-cuda/CMakeFiles/ggml-cuda.dir/ssm-conv.cu.o
+[ 21%] Building CUDA object ggml/src/ggml-cuda/CMakeFiles/ggml-cuda.dir/ssm-scan.cu.o
+[ 21%] Building CUDA object ggml/src/ggml-cuda/CMakeFiles/ggml-cuda.dir/sum.cu.o
+[ 21%] Building CUDA object ggml/src/ggml-cuda/CMakeFiles/ggml-cuda.dir/sumrows.cu.o
+[ 23%] Building CUDA object ggml/src/ggml-cuda/CMakeFiles/ggml-cuda.dir/tsembd.cu.o
+[ 23%] Building CUDA object ggml/src/ggml-cuda/CMakeFiles/ggml-cuda.dir/unary.cu.o
+[ 23%] Building CUDA object ggml/src/ggml-cuda/CMakeFiles/ggml-cuda.dir/upscale.cu.o
+[ 23%] Building CUDA object ggml/src/ggml-cuda/CMakeFiles/ggml-cuda.dir/wkv.cu.o
+[ 24%] Building CUDA object ggml/src/ggml-cuda/CMakeFiles/ggml-cuda.dir/template-instances/fattn-mma-f16-instance-ncols1_1-ncols2_8.cu.o
+[ 24%] Building CUDA object ggml/src/ggml-cuda/CMakeFiles/ggml-cuda.dir/template-instances/fattn-mma-f16-instance-ncols1_16-ncols2_1.cu.o
+[ 24%] Building CUDA object ggml/src/ggml-cuda/CMakeFiles/ggml-cuda.dir/template-instances/fattn-mma-f16-instance-ncols1_16-ncols2_2.cu.o
+[ 25%] Building CUDA object ggml/src/ggml-cuda/CMakeFiles/ggml-cuda.dir/template-instances/fattn-mma-f16-instance-ncols1_16-ncols2_4.cu.o
+[ 25%] Building CUDA object ggml/src/ggml-cuda/CMakeFiles/ggml-cuda.dir/template-instances/fattn-mma-f16-instance-ncols1_2-ncols2_4.cu.o
+[ 25%] Building CUDA object ggml/src/ggml-cuda/CMakeFiles/ggml-cuda.dir/template-instances/fattn-mma-f16-instance-ncols1_2-ncols2_8.cu.o
+[ 26%] Building CUDA object ggml/src/ggml-cuda/CMakeFiles/ggml-cuda.dir/template-instances/fattn-mma-f16-instance-ncols1_32-ncols2_1.cu.o
+[ 26%] Building CUDA object ggml/src/ggml-cuda/CMakeFiles/ggml-cuda.dir/template-instances/fattn-mma-f16-instance-ncols1_32-ncols2_2.cu.o
+[ 26%] Building CUDA object ggml/src/ggml-cuda/CMakeFiles/ggml-cuda.dir/template-instances/fattn-mma-f16-instance-ncols1_4-ncols2_2.cu.o
+[ 27%] Building CUDA object ggml/src/ggml-cuda/CMakeFiles/ggml-cuda.dir/template-instances/fattn-mma-f16-instance-ncols1_4-ncols2_4.cu.o
+[ 27%] Building CUDA object ggml/src/ggml-cuda/CMakeFiles/ggml-cuda.dir/template-instances/fattn-mma-f16-instance-ncols1_4-ncols2_8.cu.o
+[ 27%] Building CUDA object ggml/src/ggml-cuda/CMakeFiles/ggml-cuda.dir/template-instances/fattn-mma-f16-instance-ncols1_64-ncols2_1.cu.o
+[ 28%] Building CUDA object ggml/src/ggml-cuda/CMakeFiles/ggml-cuda.dir/template-instances/fattn-mma-f16-instance-ncols1_8-ncols2_1.cu.o
+[ 28%] Building CUDA object ggml/src/ggml-cuda/CMakeFiles/ggml-cuda.dir/template-instances/fattn-mma-f16-instance-ncols1_8-ncols2_2.cu.o
+[ 28%] Building CUDA object ggml/src/ggml-cuda/CMakeFiles/ggml-cuda.dir/template-instances/fattn-mma-f16-instance-ncols1_8-ncols2_4.cu.o
+[ 29%] Building CUDA object ggml/src/ggml-cuda/CMakeFiles/ggml-cuda.dir/template-instances/fattn-mma-f16-instance-ncols1_8-ncols2_8.cu.o
+[ 29%] Building CUDA object ggml/src/ggml-cuda/CMakeFiles/ggml-cuda.dir/template-instances/mmq-instance-iq1_s.cu.o
+[ 29%] Building CUDA object ggml/src/ggml-cuda/CMakeFiles/ggml-cuda.dir/template-instances/mmq-instance-iq2_s.cu.o
+[ 30%] Building CUDA object ggml/src/ggml-cuda/CMakeFiles/ggml-cuda.dir/template-instances/mmq-instance-iq2_xs.cu.o
+[ 30%] Building CUDA object ggml/src/ggml-cuda/CMakeFiles/ggml-cuda.dir/template-instances/mmq-instance-iq2_xxs.cu.o
+[ 30%] Building CUDA object ggml/src/ggml-cuda/CMakeFiles/ggml-cuda.dir/template-instances/mmq-instance-iq3_s.cu.o
+[ 31%] Building CUDA object ggml/src/ggml-cuda/CMakeFiles/ggml-cuda.dir/template-instances/mmq-instance-iq3_xxs.cu.o
+[ 31%] Building CUDA object ggml/src/ggml-cuda/CMakeFiles/ggml-cuda.dir/template-instances/mmq-instance-iq4_nl.cu.o
+[ 31%] Building CUDA object ggml/src/ggml-cuda/CMakeFiles/ggml-cuda.dir/template-instances/mmq-instance-iq4_xs.cu.o
+[ 32%] Building CUDA object ggml/src/ggml-cuda/CMakeFiles/ggml-cuda.dir/template-instances/mmq-instance-q2_k.cu.o
+[ 32%] Building CUDA object ggml/src/ggml-cuda/CMakeFiles/ggml-cuda.dir/template-instances/mmq-instance-q3_k.cu.o
+[ 32%] Building CUDA object ggml/src/ggml-cuda/CMakeFiles/ggml-cuda.dir/template-instances/mmq-instance-q4_0.cu.o
+[ 33%] Building CUDA object ggml/src/ggml-cuda/CMakeFiles/ggml-cuda.dir/template-instances/mmq-instance-q4_1.cu.o
+[ 33%] Building CUDA object ggml/src/ggml-cuda/CMakeFiles/ggml-cuda.dir/template-instances/mmq-instance-q4_k.cu.o
+[ 33%] Building CUDA object ggml/src/ggml-cuda/CMakeFiles/ggml-cuda.dir/template-instances/mmq-instance-q5_0.cu.o
+[ 34%] Building CUDA object ggml/src/ggml-cuda/CMakeFiles/ggml-cuda.dir/template-instances/mmq-instance-q5_1.cu.o
+[ 34%] Building CUDA object ggml/src/ggml-cuda/CMakeFiles/ggml-cuda.dir/template-instances/mmq-instance-q5_k.cu.o
+[ 34%] Building CUDA object ggml/src/ggml-cuda/CMakeFiles/ggml-cuda.dir/template-instances/mmq-instance-q6_k.cu.o
+[ 35%] Building CUDA object ggml/src/ggml-cuda/CMakeFiles/ggml-cuda.dir/template-instances/mmq-instance-q8_0.cu.o
+[ 35%] Building CUDA object ggml/src/ggml-cuda/CMakeFiles/ggml-cuda.dir/template-instances/fattn-vec-f16-instance-hs128-q4_0-q4_0.cu.o
+[ 35%] Building CUDA object ggml/src/ggml-cuda/CMakeFiles/ggml-cuda.dir/template-instances/fattn-vec-f32-instance-hs128-q4_0-q4_0.cu.o
+[ 35%] Building CUDA object ggml/src/ggml-cuda/CMakeFiles/ggml-cuda.dir/template-instances/fattn-vec-f16-instance-hs128-q8_0-q8_0.cu.o
+[ 36%] Building CUDA object ggml/src/ggml-cuda/CMakeFiles/ggml-cuda.dir/template-instances/fattn-vec-f32-instance-hs128-q8_0-q8_0.cu.o
+[ 36%] Building CUDA object ggml/src/ggml-cuda/CMakeFiles/ggml-cuda.dir/template-instances/fattn-vec-f16-instance-hs128-f16-f16.cu.o
+[ 36%] Building CUDA object ggml/src/ggml-cuda/CMakeFiles/ggml-cuda.dir/template-instances/fattn-vec-f16-instance-hs256-f16-f16.cu.o
+[ 37%] Building CUDA object ggml/src/ggml-cuda/CMakeFiles/ggml-cuda.dir/template-instances/fattn-vec-f16-instance-hs64-f16-f16.cu.o
+[ 37%] Building CUDA object ggml/src/ggml-cuda/CMakeFiles/ggml-cuda.dir/template-instances/fattn-vec-f32-instance-hs128-f16-f16.cu.o
+[ 37%] Building CUDA object ggml/src/ggml-cuda/CMakeFiles/ggml-cuda.dir/template-instances/fattn-vec-f32-instance-hs256-f16-f16.cu.o
+[ 38%] Building CUDA object ggml/src/ggml-cuda/CMakeFiles/ggml-cuda.dir/template-instances/fattn-vec-f32-instance-hs64-f16-f16.cu.o
+[ 38%] Linking CUDA shared library ../../../bin/libggml-cuda.so
+[ 38%] Built target ggml-cuda
+[ 38%] Building CXX object ggml/src/CMakeFiles/ggml.dir/ggml-backend-reg.cpp.o
+[ 38%] Linking CXX shared library ../../bin/libggml.so
+[ 38%] Built target ggml
+[ 38%] Building CXX object examples/gguf-hash/CMakeFiles/llama-gguf-hash.dir/gguf-hash.cpp.o
+[ 38%] Building CXX object examples/gguf/CMakeFiles/llama-gguf.dir/gguf.cpp.o
+[ 38%] Building CXX object src/CMakeFiles/llama.dir/llama.cpp.o
+[ 39%] Building CXX object src/CMakeFiles/llama.dir/llama-adapter.cpp.o
+[ 39%] Building CXX object src/CMakeFiles/llama.dir/llama-arch.cpp.o
+[ 39%] Building CXX object src/CMakeFiles/llama.dir/llama-batch.cpp.o
+[ 40%] Building CXX object src/CMakeFiles/llama.dir/llama-chat.cpp.o
+[ 40%] Building CXX object src/CMakeFiles/llama.dir/llama-context.cpp.o
+[ 41%] Linking CXX executable ../../bin/llama-gguf
+[ 41%] Built target llama-gguf
+[ 41%] Building CXX object src/CMakeFiles/llama.dir/llama-grammar.cpp.o
+[ 41%] Linking CXX executable ../../bin/llama-gguf-hash
+[ 41%] Built target llama-gguf-hash
+[ 42%] Building CXX object src/CMakeFiles/llama.dir/llama-graph.cpp.o
+[ 42%] Building CXX object src/CMakeFiles/llama.dir/llama-hparams.cpp.o
+[ 42%] Building CXX object src/CMakeFiles/llama.dir/llama-impl.cpp.o
+[ 43%] Building CXX object src/CMakeFiles/llama.dir/llama-io.cpp.o
+[ 43%] Building CXX object src/CMakeFiles/llama.dir/llama-kv-cache.cpp.o
+[ 43%] Building CXX object src/CMakeFiles/llama.dir/llama-memory.cpp.o
+[ 44%] Building CXX object src/CMakeFiles/llama.dir/llama-mmap.cpp.o
+[ 44%] Building CXX object src/CMakeFiles/llama.dir/llama-model-loader.cpp.o
+[ 44%] Building CXX object src/CMakeFiles/llama.dir/llama-model.cpp.o
+[ 45%] Building CXX object src/CMakeFiles/llama.dir/llama-quant.cpp.o
+[ 45%] Building CXX object src/CMakeFiles/llama.dir/llama-sampling.cpp.o
+[ 45%] Building CXX object src/CMakeFiles/llama.dir/llama-vocab.cpp.o
+[ 46%] Building CXX object src/CMakeFiles/llama.dir/unicode-data.cpp.o
+[ 46%] Building CXX object src/CMakeFiles/llama.dir/unicode.cpp.o
+[ 46%] Linking CXX shared library ../bin/libllama.so
+[ 46%] Built target llama
+[ 46%] Building C object tests/CMakeFiles/test-c.dir/test-c.c.o
+[ 46%] Building CXX object common/CMakeFiles/common.dir/arg.cpp.o
+[ 48%] Building CXX object examples/simple/CMakeFiles/llama-simple.dir/simple.cpp.o
+[ 48%] Building CXX object common/CMakeFiles/common.dir/chat.cpp.o
+[ 48%] Building CXX object examples/simple-chat/CMakeFiles/llama-simple-chat.dir/simple-chat.cpp.o
+[ 49%] Building CXX object examples/quantize-stats/CMakeFiles/llama-quantize-stats.dir/quantize-stats.cpp.o
+[ 49%] Building CXX object examples/llava/CMakeFiles/llava.dir/llava.cpp.o
+[ 49%] Building CXX object examples/llava/CMakeFiles/mtmd.dir/mtmd.cpp.o
+[ 50%] Linking C executable ../bin/test-c
+[ 50%] Built target test-c
+[ 51%] Building CXX object examples/llava/CMakeFiles/mtmd.dir/clip.cpp.o
+[ 51%] Linking CXX executable ../../bin/llama-simple
+[ 51%] Built target llama-simple
+[ 51%] Building CXX object common/CMakeFiles/common.dir/common.cpp.o
+[ 52%] Linking CXX executable ../../bin/llama-simple-chat
+[ 52%] Built target llama-simple-chat
+[ 52%] Building CXX object common/CMakeFiles/common.dir/console.cpp.o
+[ 52%] Building CXX object examples/llava/CMakeFiles/llava.dir/clip.cpp.o
+[ 53%] Building CXX object common/CMakeFiles/common.dir/json-schema-to-grammar.cpp.o
+[ 53%] Building CXX object common/CMakeFiles/common.dir/llguidance.cpp.o
+[ 53%] Building CXX object common/CMakeFiles/common.dir/log.cpp.o
+[ 54%] Building CXX object common/CMakeFiles/common.dir/ngram-cache.cpp.o
+[ 54%] Building CXX object common/CMakeFiles/common.dir/sampling.cpp.o
+[ 54%] Linking CXX executable ../../bin/llama-quantize-stats
+[ 54%] Built target llama-quantize-stats
+[ 54%] Building CXX object common/CMakeFiles/common.dir/speculative.cpp.o
+[ 54%] Built target mtmd
+[ 54%] Linking CXX static library libmtmd_static.a
+[ 54%] Linking CXX shared library ../../bin/libmtmd_shared.so
+[ 54%] Built target mtmd_shared
+[ 54%] Built target mtmd_static
+[ 54%] Built target llava
+[ 55%] Linking CXX static library libllava_static.a
+[ 55%] Linking CXX shared library ../../bin/libllava_shared.so
+[ 55%] Built target llava_static
+[ 55%] Built target llava_shared
+[ 56%] Linking CXX static library libcommon.a
+[ 56%] Built target common
+[ 58%] Building CXX object tests/CMakeFiles/test-sampling.dir/test-sampling.cpp.o
+[ 58%] Building CXX object tests/CMakeFiles/test-tokenizer-0.dir/test-tokenizer-0.cpp.o
+[ 60%] Building CXX object tests/CMakeFiles/test-llama-grammar.dir/test-llama-grammar.cpp.o
+[ 60%] Building CXX object tests/CMakeFiles/test-grammar-parser.dir/test-grammar-parser.cpp.o
+[ 60%] Building CXX object tests/CMakeFiles/test-chat.dir/test-chat.cpp.o
+[ 61%] Building CXX object tests/CMakeFiles/test-grammar-integration.dir/test-grammar-integration.cpp.o
+[ 61%] Building CXX object tests/CMakeFiles/test-tokenizer-1-bpe.dir/test-tokenizer-1-bpe.cpp.o
+[ 61%] Building CXX object tests/CMakeFiles/test-json-schema-to-grammar.dir/test-json-schema-to-grammar.cpp.o
+[ 63%] Linking CXX executable ../bin/test-tokenizer-1-bpe
+[ 63%] Built target test-tokenizer-1-bpe
+[ 63%] Building CXX object tests/CMakeFiles/test-tokenizer-1-spm.dir/test-tokenizer-1-spm.cpp.o
+[ 63%] Building CXX object tests/CMakeFiles/test-sampling.dir/get-model.cpp.o
+[ 63%] Building CXX object tests/CMakeFiles/test-grammar-parser.dir/get-model.cpp.o
+[ 63%] Linking CXX executable ../bin/test-sampling
+[ 63%] Linking CXX executable ../bin/test-grammar-parser
+[ 63%] Built target test-sampling
+[ 64%] Building CXX object tests/CMakeFiles/test-log.dir/test-log.cpp.o
+[ 64%] Linking CXX executable ../bin/test-tokenizer-0
+[ 64%] Built target test-grammar-parser
+[ 64%] Building CXX object tests/CMakeFiles/test-chat-template.dir/test-chat-template.cpp.o
+[ 64%] Built target test-tokenizer-0
+[ 64%] Building CXX object tests/CMakeFiles/test-chat-template.dir/get-model.cpp.o
+[ 64%] Building CXX object tests/CMakeFiles/test-llama-grammar.dir/get-model.cpp.o
+[ 64%] Building CXX object tests/CMakeFiles/test-json-schema-to-grammar.dir/get-model.cpp.o
+[ 64%] Linking CXX executable ../bin/test-llama-grammar
+[ 64%] Building CXX object tests/CMakeFiles/test-grammar-integration.dir/get-model.cpp.o
+[ 64%] Building CXX object tests/CMakeFiles/test-log.dir/get-model.cpp.o
+[ 64%] Built target test-llama-grammar
+[ 64%] Building CXX object tests/CMakeFiles/test-arg-parser.dir/test-arg-parser.cpp.o
+[ 65%] Building CXX object tests/CMakeFiles/test-arg-parser.dir/get-model.cpp.o
+[ 65%] Linking CXX executable ../bin/test-log
+[ 65%] Built target test-log
+[ 65%] Building CXX object tests/CMakeFiles/test-gguf.dir/test-gguf.cpp.o
+[ 65%] Linking CXX executable ../bin/test-tokenizer-1-spm
+[ 65%] Building CXX object tests/CMakeFiles/test-backend-ops.dir/test-backend-ops.cpp.o
+[ 65%] Built target test-tokenizer-1-spm
+[ 66%] Building CXX object tests/CMakeFiles/test-model-load-cancel.dir/test-model-load-cancel.cpp.o
+[ 66%] Building CXX object tests/CMakeFiles/test-model-load-cancel.dir/get-model.cpp.o
+[ 66%] Linking CXX executable ../bin/test-model-load-cancel
+[ 66%] Built target test-model-load-cancel
+[ 66%] Building CXX object tests/CMakeFiles/test-autorelease.dir/test-autorelease.cpp.o
+[ 67%] Building CXX object tests/CMakeFiles/test-autorelease.dir/get-model.cpp.o
+[ 67%] Linking CXX executable ../bin/test-autorelease
+[ 67%] Built target test-autorelease
+[ 67%] Building CXX object tests/CMakeFiles/test-barrier.dir/test-barrier.cpp.o
+[ 68%] Building CXX object tests/CMakeFiles/test-barrier.dir/get-model.cpp.o
+[ 68%] Linking CXX executable ../bin/test-barrier
+[ 68%] Built target test-barrier
+[ 69%] Building CXX object tests/CMakeFiles/test-quantize-fns.dir/test-quantize-fns.cpp.o
+[ 69%] Linking CXX executable ../bin/test-arg-parser
+[ 69%] Built target test-arg-parser
+[ 70%] Building CXX object tests/CMakeFiles/test-quantize-perf.dir/test-quantize-perf.cpp.o
+[ 70%] Building CXX object tests/CMakeFiles/test-quantize-fns.dir/get-model.cpp.o
+[ 70%] Linking CXX executable ../bin/test-quantize-fns
+[ 70%] Built target test-quantize-fns
+[ 71%] Building CXX object tests/CMakeFiles/test-rope.dir/test-rope.cpp.o
+[ 72%] Linking CXX executable ../bin/test-chat-template
+[ 72%] Built target test-chat-template
+[ 72%] Building CXX object examples/batched-bench/CMakeFiles/llama-batched-bench.dir/batched-bench.cpp.o
+[ 72%] Building CXX object tests/CMakeFiles/test-gguf.dir/get-model.cpp.o
+[ 72%] Linking CXX executable ../bin/test-gguf
+[ 72%] Building CXX object tests/CMakeFiles/test-rope.dir/get-model.cpp.o
+[ 72%] Built target test-gguf
+[ 72%] Linking CXX executable ../bin/test-rope
+[ 73%] Building CXX object examples/batched/CMakeFiles/llama-batched.dir/batched.cpp.o
+[ 73%] Built target test-rope
+[ 73%] Building CXX object examples/embedding/CMakeFiles/llama-embedding.dir/embedding.cpp.o
+[ 73%] Building CXX object tests/CMakeFiles/test-quantize-perf.dir/get-model.cpp.o
+[ 73%] Linking CXX executable ../bin/test-quantize-perf
+[ 73%] Built target test-quantize-perf
+[ 73%] Building CXX object examples/eval-callback/CMakeFiles/llama-eval-callback.dir/eval-callback.cpp.o
+[ 74%] Linking CXX executable ../../bin/llama-batched-bench
+[ 74%] Linking CXX executable ../bin/test-grammar-integration
+[ 74%] Built target llama-batched-bench
+[ 74%] Building CXX object examples/gbnf-validator/CMakeFiles/llama-gbnf-validator.dir/gbnf-validator.cpp.o
+[ 74%] Linking CXX executable ../../bin/llama-batched
+[ 74%] Built target test-grammar-integration
+[ 75%] Building CXX object examples/gguf-split/CMakeFiles/llama-gguf-split.dir/gguf-split.cpp.o
+[ 75%] Built target llama-batched
+[ 75%] Building CXX object examples/gritlm/CMakeFiles/llama-gritlm.dir/gritlm.cpp.o
+[ 76%] Linking CXX executable ../../bin/llama-embedding
+[ 76%] Linking CXX executable ../../bin/llama-eval-callback
+[ 76%] Built target llama-embedding
+[ 76%] Building CXX object examples/imatrix/CMakeFiles/llama-imatrix.dir/imatrix.cpp.o
+[ 76%] Built target llama-eval-callback
+[ 77%] Building CXX object examples/infill/CMakeFiles/llama-infill.dir/infill.cpp.o
+[ 78%] Linking CXX executable ../../bin/llama-gbnf-validator
+[ 78%] Built target llama-gbnf-validator
+[ 78%] Building CXX object examples/llama-bench/CMakeFiles/llama-bench.dir/llama-bench.cpp.o
+[ 78%] Linking CXX executable ../../bin/llama-gguf-split
+[ 78%] Built target llama-gguf-split
+[ 79%] Building CXX object examples/lookahead/CMakeFiles/llama-lookahead.dir/lookahead.cpp.o
+[ 80%] Linking CXX executable ../../bin/llama-gritlm
+[ 80%] Built target llama-gritlm
+[ 80%] Building CXX object examples/lookup/CMakeFiles/llama-lookup.dir/lookup.cpp.o
+[ 80%] Linking CXX executable ../../bin/llama-infill
+[ 80%] Built target llama-infill
+[ 80%] Building CXX object examples/lookup/CMakeFiles/llama-lookup-create.dir/lookup-create.cpp.o
+[ 80%] Linking CXX executable ../../bin/llama-lookahead
+[ 80%] Built target llama-lookahead
+[ 80%] Building CXX object examples/lookup/CMakeFiles/llama-lookup-merge.dir/lookup-merge.cpp.o
+[ 81%] Linking CXX executable ../../bin/llama-lookup
+[ 81%] Built target llama-lookup
+[ 81%] Building CXX object examples/lookup/CMakeFiles/llama-lookup-stats.dir/lookup-stats.cpp.o
+[ 82%] Linking CXX executable ../../bin/llama-lookup-merge
+[ 82%] Linking CXX executable ../../bin/llama-lookup-create
+[ 82%] Built target llama-lookup-merge
+[ 83%] Building CXX object examples/main/CMakeFiles/llama-cli.dir/main.cpp.o
+[ 83%] Built target llama-lookup-create
+[ 83%] Building CXX object examples/parallel/CMakeFiles/llama-parallel.dir/parallel.cpp.o
+[ 83%] Linking CXX executable ../../bin/llama-imatrix
+[ 83%] Linking CXX executable ../bin/test-json-schema-to-grammar
+[ 83%] Built target llama-imatrix
+[ 83%] Building CXX object examples/passkey/CMakeFiles/llama-passkey.dir/passkey.cpp.o
+[ 83%] Built target test-json-schema-to-grammar
+[ 84%] Building CXX object examples/perplexity/CMakeFiles/llama-perplexity.dir/perplexity.cpp.o
+[ 84%] Linking CXX executable ../../bin/llama-lookup-stats
+[ 84%] Built target llama-lookup-stats
+[ 84%] Building CXX object examples/quantize/CMakeFiles/llama-quantize.dir/quantize.cpp.o
+[ 85%] Linking CXX executable ../../bin/llama-parallel
+[ 85%] Linking CXX executable ../../bin/llama-passkey
+[ 85%] Built target llama-parallel
+[ 85%] Building CXX object examples/retrieval/CMakeFiles/llama-retrieval.dir/retrieval.cpp.o
+[ 85%] Built target llama-passkey
+[ 86%] Generating loading.html.hpp
+[ 86%] Generating index.html.gz.hpp
+[ 86%] Linking CXX executable ../../bin/llama-cli
+[ 86%] Built target llama-cli
+[ 87%] Building CXX object examples/save-load-state/CMakeFiles/llama-save-load-state.dir/save-load-state.cpp.o
+[ 87%] Linking CXX executable ../../bin/llama-quantize
+[ 87%] Built target llama-quantize
+[ 88%] Building CXX object examples/run/CMakeFiles/llama-run.dir/run.cpp.o
+[ 88%] Building CXX object tests/CMakeFiles/test-chat.dir/get-model.cpp.o
+[ 89%] Linking CXX executable ../bin/test-chat
+[ 89%] Built target test-chat
+[ 89%] Building CXX object examples/speculative/CMakeFiles/llama-speculative.dir/speculative.cpp.o
+[ 89%] Building CXX object examples/server/CMakeFiles/llama-server.dir/server.cpp.o
+[ 89%] Linking CXX executable ../../bin/llama-retrieval
+[ 89%] Linking CXX executable ../../bin/llama-save-load-state
+[ 89%] Built target llama-retrieval
+[ 90%] Building CXX object examples/speculative-simple/CMakeFiles/llama-speculative-simple.dir/speculative-simple.cpp.o
+[ 90%] Built target llama-save-load-state
+[ 90%] Building CXX object examples/tokenize/CMakeFiles/llama-tokenize.dir/tokenize.cpp.o
+[ 90%] Linking CXX executable ../../bin/llama-perplexity
+[ 90%] Linking CXX executable ../../bin/llama-tokenize
+[ 90%] Built target llama-tokenize
+[ 90%] Built target llama-perplexity
+[ 91%] Building CXX object examples/tts/CMakeFiles/llama-tts.dir/tts.cpp.o
+[ 92%] Building CXX object examples/gen-docs/CMakeFiles/llama-gen-docs.dir/gen-docs.cpp.o
+[ 93%] Building CXX object tests/CMakeFiles/test-backend-ops.dir/get-model.cpp.o
+[ 93%] Linking CXX executable ../bin/test-backend-ops
+[ 93%] Linking CXX executable ../../bin/llama-speculative-simple
+[ 93%] Built target test-backend-ops
+[ 93%] Building CXX object examples/convert-llama2c-to-ggml/CMakeFiles/llama-convert-llama2c-to-ggml.dir/convert-llama2c-to-ggml.cpp.o
+[ 93%] Built target llama-speculative-simple
+[ 94%] Building CXX object examples/cvector-generator/CMakeFiles/llama-cvector-generator.dir/cvector-generator.cpp.o
+[ 94%] Linking CXX executable ../../bin/llama-speculative
+[ 94%] Linking CXX executable ../../bin/llama-gen-docs
+[ 94%] Built target llama-speculative
+[ 95%] Building CXX object examples/export-lora/CMakeFiles/llama-export-lora.dir/export-lora.cpp.o
+[ 95%] Linking CXX executable ../../bin/llama-bench
+[ 95%] Built target llama-gen-docs
+[ 95%] Building CXX object examples/llava/CMakeFiles/llama-llava-cli.dir/llava-cli.cpp.o
+[ 95%] Built target llama-bench
+[ 96%] Building CXX object examples/llava/CMakeFiles/llama-minicpmv-cli.dir/minicpmv-cli.cpp.o
+[ 96%] Linking CXX executable ../../bin/llama-convert-llama2c-to-ggml
+[ 96%] Built target llama-convert-llama2c-to-ggml
+[ 96%] Building CXX object examples/llava/CMakeFiles/llama-qwen2vl-cli.dir/qwen2vl-cli.cpp.o
+[ 96%] Building CXX object examples/run/CMakeFiles/llama-run.dir/linenoise.cpp/linenoise.cpp.o
+[ 97%] Linking CXX executable ../../bin/llama-llava-cli
+[ 97%] Linking CXX executable ../../bin/llama-minicpmv-cli
+[ 97%] Linking CXX executable ../../bin/llama-cvector-generator
+[ 97%] Built target llama-minicpmv-cli
+[ 97%] Built target llama-llava-cli
+[ 97%] Building CXX object examples/llava/CMakeFiles/llama-gemma3-cli.dir/gemma3-cli.cpp.o
+[ 97%] Building CXX object examples/llava/CMakeFiles/llama-llava-clip-quantize-cli.dir/clip-quantize-cli.cpp.o
+[ 97%] Built target llama-cvector-generator
+[ 97%] Building CXX object pocs/vdot/CMakeFiles/llama-vdot.dir/vdot.cpp.o
+[ 97%] Linking CXX executable ../../bin/llama-export-lora
+[ 97%] Linking CXX executable ../../bin/llama-run
+[ 97%] Linking CXX executable ../../bin/llama-llava-clip-quantize-cli
+[ 97%] Built target llama-export-lora
+[ 97%] Building CXX object pocs/vdot/CMakeFiles/llama-q8dot.dir/q8dot.cpp.o
+[ 97%] Built target llama-llava-clip-quantize-cli
+[ 97%] Built target llama-run
+[ 98%] Linking CXX executable ../../bin/llama-qwen2vl-cli
+[ 99%] Linking CXX executable ../../bin/llama-vdot
+[ 99%] Built target llama-vdot
+[ 99%] Built target llama-qwen2vl-cli
+[100%] Linking CXX executable ../../bin/llama-q8dot
+[100%] Built target llama-q8dot
+[100%] Linking CXX executable ../../bin/llama-gemma3-cli
+[100%] Built target llama-gemma3-cli
+[100%] Linking CXX executable ../../bin/llama-tts
+[100%] Built target llama-tts
+[100%] Linking CXX executable ../../bin/llama-server
+[100%] Built target llama-server
+--> 22936373706d
+STEP 11/11: CMD ["/bin/bash"]
+COMMIT docker.io/spcleth/xaas-artifact:llama.cpp-specialized-clariden
+--> 066ee68f707b
+[Warning] one or more build args were not consumed: [nproc]
+Successfully tagged docker.io/spcleth/xaas-artifact:llama.cpp-specialized-clariden
+066ee68f707b5dd6e69a37f316d4168dc478ade892e8db906e316c1141f1956d
+enroot.afBca6n4hW
+enroot.afBca6n4hW
+Login Succeeded!
