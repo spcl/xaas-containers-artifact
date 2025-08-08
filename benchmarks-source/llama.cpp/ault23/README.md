@@ -9,6 +9,15 @@ You can download the required model files from the links below:
 
 We provide the script `download_data.sh` which downloads them and places them in directories that the script expects.
 
+## Docker Images
+
+We use the following Docker images:
+
+```
+spcleth/xaas-artifact:llamacpp-source-deploy-ault23
+spcleth/xaas-artifact:llamacpp-specialized-ault23
+```
+
 ## Test Cases
 
 This repository contains four benchmark test cases:
