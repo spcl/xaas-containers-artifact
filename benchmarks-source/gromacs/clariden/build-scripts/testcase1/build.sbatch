@@ -3,32 +3,27 @@
 #SBATCH --time=04:00:00
 #SBATCH --nodes=1
 #SBATCH --ntasks-per-node=1
-#SBATCH --cpus-per-task=16
+#SBATCH --cpus-per-task=64
 #SBATCH --account=a-g200
-#SBATCH --output=gromacs_%j.out
-#SBATCH --error=gromacs_%j.err
+#SBATCH --output=gromacs_build_exprt.%j.out
+#SBATCH --error=gromacs_build_exprt.%j.err
 
 #SBATCH --uenv=prgenv-gnu/24.11:v1
 #SBATCH --view=modules
 
+ARTIFACT_LOCATION=${ARTIFACT_LOCATION:-${SCRATCH}/xaas-containers-artifact}
+
 # Load necessary modules inside the uenv
 module load cray-mpich/8.1.30 cuda/12.6.2 cmake/3.30.5 gcc/13.3.0
 
-# Work inside home directory
-mkdir $HOME/testcase1/
-cd $HOME/testcase1/
+cd ${ARTIFACT_LOCATION}/benchmarks-source/gromacs/clariden/build-scripts/testcase1
 
-# Download and extract GROMACS (if needed)
-wget https://ftp.gromacs.org/gromacs/gromacs-2025.0.tar.gz
-tar xfz gromacs-2025.0.tar.gz
-cd gromacs-2025.0
-
-rm -r build
 # Create build directory
-mkdir -p build && cd build
+rm -rf build && mkdir -p build
+mkdir -p install
 
 # Configure and compile GROMACS
-cmake .. -DGMX_SIMD=ARM_SVE -DGMX_BUILD_OWN_FFTW=ON -DGMX_GPU=CUDA -DGMX_MPI=ON -DGMX_OPENMP=ON -DCMAKE_INSTALL_PREFIX=$HOME/testcase1/gromacs-2025.0
+cd build && cmake ${ARTIFACT_LOCATION}/data/gromacs/gromacs-2025.0 -DGMX_SIMD=ARM_SVE -DGMX_BUILD_OWN_FFTW=ON -DGMX_GPU=CUDA -DGMX_MPI=ON -DGMX_OPENMP=ON -DCMAKE_INSTALL_PREFIX=$(pwd)/../install
 
 
 make -j16

@@ -1,0 +1,4 @@
+/iopsstor/scratch/cscs/mcopik/xaas-containers-artifact/data/gromacs/gromacs-2025.0/src/gromacs/mdrun/tpi.cpp: In member function 'std::pair<double, double> gmx::TestParticleInsertion::performSingleInsertion(double, int64_t, bool, const gmx::RVec&, t_state*, gmx::MdrunScheduleWorkload*, gmx_wallcycle*, t_nrnb*)':
+/iopsstor/scratch/cscs/mcopik/xaas-containers-artifact/data/gromacs/gromacs-2025.0/src/gromacs/mdrun/tpi.cpp:494:85: note: parameter passing for argument of type 'std::pair<double, double>' when C++17 is enabled changed to match C++14 in GCC 10.1
+  494 |                                                                         t_nrnb* nrnb)
+      |                                                                                     ^

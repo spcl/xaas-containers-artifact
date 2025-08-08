@@ -1,12 +1,12 @@
-image = "/users/ealnuaim/.local/enroot/testcase3-clariden.sqsh"
-workdir = "/users/ealnuaim"
+image = "ealnuaimi/testcase3-clariden:latest"
+workdir = "/iopsstor/scratch/cscs/mcopik"
 writable = true
 
 mounts = [
-  "/users/ealnuaim:/users/ealnuaim"
+  "/iopsstor/scratch/cscs/mcopik:/iopsstor/scratch/cscs/mcopik"
 ]
 [annotations]
 com.hooks.cxi.enabled = "true"
-com.hooks.nvidia_cuda_mps.enabled = "true"
-com.hooks.aws_ofi_nccl.enabled = "true"
-com.hooks.aws_ofi_nccl.variant = "cuda12"
+#com.hooks.nvidia_cuda_mps.enabled = "true"
+#com.hooks.aws_ofi_nccl.enabled = "true"
+#com.hooks.aws_ofi_nccl.variant = "cuda12"

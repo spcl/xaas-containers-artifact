@@ -7,27 +7,15 @@
 #SBATCH --account=a-g200
 #SBATCH --ntasks=1
 #SBATCH --cpus-per-task=72
-#SBATCH --uenv=prgenv-gnu/24.11:v1
-##SBATCH --view=modules
-#SBATCH --view=modules,spack
-
-# Load necessary modules inside the uenv
-module load cray-mpich/8.1.30 cuda/12.6.2 cmake/3.30.5 gcc/13.3.0
-echo "GCC version: " $(gcc --version)
-echo "mpich version: " $(mpichversion)
 
 ARTIFACT_LOCATION=${ARTIFACT_LOCATION:-${SCRATCH}/xaas-containers-artifact}
 source ${ARTIFACT_LOCATION}/dependencies/spack/share/spack/setup-env.sh
 
-spack env create gromacs_basic
+spack env create gromacs_basic 
 spack env activate gromacs_basic
 spack compiler find
-spack external find
 
-# This currently fails due to an issue on Clariden
-# OpenMPI build fails as it picks up a broken libtool file /usr/lib64/libpmix.la
-spack add gromacs@2024.4 +mpi +cuda ^mpich
-#spack add gromacs@2024.4 +mpi +cuda
+spack add gromacs@2024.4 +mpi +cuda
 
 # Run Spack commands
 spack concretize --force

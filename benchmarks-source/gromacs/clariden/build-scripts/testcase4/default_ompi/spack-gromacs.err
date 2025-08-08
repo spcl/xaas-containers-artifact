@@ -1,0 +1,229 @@
+==> Error: ProcessError: Command exited with status 2:
+    '/iopsstor/scratch/cscs/mcopik/xaas-containers-artifact/dependencies/spack/opt/spack/linux-neoverse_v2/gmake-4.4.1-fah4jl7jg26twx32hcysgpqptsrmnfam/bin/make' '-j16' 'V=1'
+
+7 errors found in build log:
+     3910    /bin/sh ../../../../libtool  --tag=CC   --mode=compile /iopsstor/s
+             cratch/cscs/mcopik/xaas-containers-artifact/dependencies/spack/opt
+             /spack/linux-neoverse_v2/compiler-wrapper-1.0-axxghzn7az3fq7jodan2
+             7v6axodl37qn/libexec/spack/gcc/gcc -DHAVE_CONFIG_H -I. -I../../../
+             ../src/include  -I/usr/include/libnl3 -DPRTE_HAVE_LIBNL3= -iquote/
+             tmp/mcopik/spack-stage/spack-stage-openmpi-5.0.6-sdpmbmpakeo45exs4
+             zghuxg5xq6fw3bd/spack-src/3rd-party/prrte -iquote/tmp/mcopik/spack
+             -stage/spack-stage-openmpi-5.0.6-sdpmbmpakeo45exs4zghuxg5xq6fw3bd/
+             spack-src/3rd-party/prrte/src/include  -I/iopsstor/scratch/cscs/mc
+             opik/xaas-containers-artifact/dependencies/spack/opt/spack/linux-n
+             eoverse_v2/libevent-2.1.12-rljlidnkqchpkr6wl3piulytconszmzm/includ
+             e -I/iopsstor/scratch/cscs/mcopik/xaas-containers-artifact/depende
+             ncies/spack/opt/spack/linux-neoverse_v2/pmix-5.0.5-e52lgmwze5ybe7x
+             f3j5bp4tlxx44wezh/include -I/iopsstor/scratch/cscs/mcopik/xaas-con
+             tainers-artifact/dependencies/spack/opt/spack/linux-neoverse_v2/pm
+             ix-5.0.5-e52lgmwze5ybe7xf3j5bp4tlxx44wezh/include/pmix -I/iopsstor
+             /scratch/cscs/mcopik/xaas-containers-artifact/dependencies/spack/o
+             pt/spack/linux-neoverse_v2/libevent-2.1.12-rljlidnkqchpkr6wl3piuly
+             tconszmzm/include -I/iopsstor/scratch/cscs/mcopik/xaas-containers-
+             artifact/dependencies/spack/opt/spack/linux-neoverse_v2/hwloc-2.11
+             .1-ds7lwxezbsmfpo75snh63m4qeodr2x2u/include -I/iopsstor/scratch/cs
+             cs/mcopik/xaas-containers-artifact/dependencies/spack/opt/spack/li
+             nux-neoverse_v2/libxml2-2.13.5-mocgenps5askhr466byjcohznrnpqcty/in
+             clude/libxml2 -I/iopsstor/scratch/cscs/mcopik/xaas-containers-arti
+             fact/dependencies/spack/opt/spack/linux-neoverse_v2/libiconv-1.17-
+             ioaocnj45x2esdfq3u3zuw7zcfyrri34/include -I/iopsstor/scratch/cscs/
+             mcopik/xaas-containers-artifact/dependencies/spack/opt/spack/linux
+             -neoverse_v2/libpciaccess-0.17-yivxvtyy5kk6ylrozw3b4walbdhxjacf/in
+             clude -pthread -I/iopsstor/scratch/cscs/mcopik/xaas-containers-art
+             ifact/dependencies/spack/opt/spack/linux-neoverse_v2/zlib-ng-2.2.3
+             -y6xjjeljvb3leat3mgiju3n27wb3fujk/include -DWITH_GZFILEOP -I/iopss
+             tor/scratch/cscs/mcopik/xaas-containers-artifact/dependencies/spac
+             k/opt/spack/linux-neoverse_v2/hwloc-2.11.1-ds7lwxezbsmfpo75snh63m4
+             qeodr2x2u/include -I/iopsstor/scratch/cscs/mcopik/xaas-containers-
+             artifact/dependencies/spack/opt/spack/linux-neoverse_v2/libxml2-2.
+             13.5-mocgenps5askhr466byjcohznrnpqcty/include/libxml2 -I/iopsstor/
+             scratch/cscs/mcopik/xaas-containers-artifact/dependencies/spack/op
+             t/spack/linux-neoverse_v2/libiconv-1.17-ioaocnj45x2esdfq3u3zuw7zcf
+             yrri34/include -I/iopsstor/scratch/cscs/mcopik/xaas-containers-art
+             ifact/dependencies/spack/opt/spack/linux-neoverse_v2/libpciaccess-
+             0.17-yivxvtyy5kk6ylrozw3b4walbdhxjacf/include  -O3 -DNDEBUG  -DYY_
+             BUF_SIZE=1048576 -finline-functions -pthread -MT reachable_netlink
+             _utils_common.lo -MD -MP -MF $depbase.Tpo -c -o reachable_netlink_
+             utils_common.lo reachable_netlink_utils_common.c &&\
+     3911    mv -f $depbase.Tpo $depbase.Plo
+     3912    libtool: compile:  /iopsstor/scratch/cscs/mcopik/xaas-containers-a
+             rtifact/dependencies/spack/opt/spack/linux-neoverse_v2/compiler-wr
+             apper-1.0-axxghzn7az3fq7jodan27v6axodl37qn/libexec/spack/gcc/gcc -
+             DHAVE_CONFIG_H -I. -I../../../../src/include -I/usr/include/libnl3
+              -DPRTE_HAVE_LIBNL3= -iquote/tmp/mcopik/spack-stage/spack-stage-op
+             enmpi-5.0.6-sdpmbmpakeo45exs4zghuxg5xq6fw3bd/spack-src/3rd-party/p
+             rrte -iquote/tmp/mcopik/spack-stage/spack-stage-openmpi-5.0.6-sdpm
+             bmpakeo45exs4zghuxg5xq6fw3bd/spack-src/3rd-party/prrte/src/include
+              -I/iopsstor/scratch/cscs/mcopik/xaas-containers-artifact/dependen
+             cies/spack/opt/spack/linux-neoverse_v2/libevent-2.1.12-rljlidnkqch
+             pkr6wl3piulytconszmzm/include -I/iopsstor/scratch/cscs/mcopik/xaas
+             -containers-artifact/dependencies/spack/opt/spack/linux-neoverse_v
+             2/pmix-5.0.5-e52lgmwze5ybe7xf3j5bp4tlxx44wezh/include -I/iopsstor/
+             scratch/cscs/mcopik/xaas-containers-artifact/dependencies/spack/op
+             t/spack/linux-neoverse_v2/pmix-5.0.5-e52lgmwze5ybe7xf3j5bp4tlxx44w
+             ezh/include/pmix -I/iopsstor/scratch/cscs/mcopik/xaas-containers-a
+             rtifact/dependencies/spack/opt/spack/linux-neoverse_v2/libevent-2.
+             1.12-rljlidnkqchpkr6wl3piulytconszmzm/include -I/iopsstor/scratch/
+             cscs/mcopik/xaas-containers-artifact/dependencies/spack/opt/spack/
+             linux-neoverse_v2/hwloc-2.11.1-ds7lwxezbsmfpo75snh63m4qeodr2x2u/in
+             clude -I/iopsstor/scratch/cscs/mcopik/xaas-containers-artifact/dep
+             endencies/spack/opt/spack/linux-neoverse_v2/libxml2-2.13.5-mocgenp
+             s5askhr466byjcohznrnpqcty/include/libxml2 -I/iopsstor/scratch/cscs
+             /mcopik/xaas-containers-artifact/dependencies/spack/opt/spack/linu
+             x-neoverse_v2/libiconv-1.17-ioaocnj45x2esdfq3u3zuw7zcfyrri34/inclu
+             de -I/iopsstor/scratch/cscs/mcopik/xaas-containers-artifact/depend
+             encies/spack/opt/spack/linux-neoverse_v2/libpciaccess-0.17-yivxvty
+             y5kk6ylrozw3b4walbdhxjacf/include -pthread -I/iopsstor/scratch/csc
+             s/mcopik/xaas-containers-artifact/dependencies/spack/opt/spack/lin
+             ux-neoverse_v2/zlib-ng-2.2.3-y6xjjeljvb3leat3mgiju3n27wb3fujk/incl
+             ude -DWITH_GZFILEOP -I/iopsstor/scratch/cscs/mcopik/xaas-container
+             s-artifact/dependencies/spack/opt/spack/linux-neoverse_v2/hwloc-2.
+             11.1-ds7lwxezbsmfpo75snh63m4qeodr2x2u/include -I/iopsstor/scratch/
+             cscs/mcopik/xaas-containers-artifact/dependencies/spack/opt/spack/
+             linux-neoverse_v2/libxml2-2.13.5-mocgenps5askhr466byjcohznrnpqcty/
+             include/libxml2 -I/iopsstor/scratch/cscs/mcopik/xaas-containers-ar
+             tifact/dependencies/spack/opt/spack/linux-neoverse_v2/libiconv-1.1
+             7-ioaocnj45x2esdfq3u3zuw7zcfyrri34/include -I/iopsstor/scratch/csc
+             s/mcopik/xaas-containers-artifact/dependencies/spack/opt/spack/lin
+             ux-neoverse_v2/libpciaccess-0.17-yivxvtyy5kk6ylrozw3b4walbdhxjacf/
+             include -O3 -DNDEBUG -DYY_BUF_SIZE=1048576 -finline-functions -pth
+             read -MT reachable_netlink_utils_common.lo -MD -MP -MF .deps/reach
+             able_netlink_utils_common.Tpo -c reachable_netlink_utils_common.c 
+              -fPIC -DPIC -o .libs/reachable_netlink_utils_common.o
+     3913    libtool: compile:  /iopsstor/scratch/cscs/mcopik/xaas-containers-a
+             rtifact/dependencies/spack/opt/spack/linux-neoverse_v2/compiler-wr
+             apper-1.0-axxghzn7az3fq7jodan27v6axodl37qn/libexec/spack/gcc/gcc -
+             DHAVE_CONFIG_H -I. -I../../../../src/include -I/usr/include/libnl3
+              -DPRTE_HAVE_LIBNL3= -iquote/tmp/mcopik/spack-stage/spack-stage-op
+             enmpi-5.0.6-sdpmbmpakeo45exs4zghuxg5xq6fw3bd/spack-src/3rd-party/p
+             rrte -iquote/tmp/mcopik/spack-stage/spack-stage-openmpi-5.0.6-sdpm
+             bmpakeo45exs4zghuxg5xq6fw3bd/spack-src/3rd-party/prrte/src/include
+              -I/iopsstor/scratch/cscs/mcopik/xaas-containers-artifact/dependen
+             cies/spack/opt/spack/linux-neoverse_v2/libevent-2.1.12-rljlidnkqch
+             pkr6wl3piulytconszmzm/include -I/iopsstor/scratch/cscs/mcopik/xaas
+             -containers-artifact/dependencies/spack/opt/spack/linux-neoverse_v
+             2/pmix-5.0.5-e52lgmwze5ybe7xf3j5bp4tlxx44wezh/include -I/iopsstor/
+             scratch/cscs/mcopik/xaas-containers-artifact/dependencies/spack/op
+             t/spack/linux-neoverse_v2/pmix-5.0.5-e52lgmwze5ybe7xf3j5bp4tlxx44w
+             ezh/include/pmix -I/iopsstor/scratch/cscs/mcopik/xaas-containers-a
+             rtifact/dependencies/spack/opt/spack/linux-neoverse_v2/libevent-2.
+             1.12-rljlidnkqchpkr6wl3piulytconszmzm/include -I/iopsstor/scratch/
+             cscs/mcopik/xaas-containers-artifact/dependencies/spack/opt/spack/
+             linux-neoverse_v2/hwloc-2.11.1-ds7lwxezbsmfpo75snh63m4qeodr2x2u/in
+             clude -I/iopsstor/scratch/cscs/mcopik/xaas-containers-artifact/dep
+             endencies/spack/opt/spack/linux-neoverse_v2/libxml2-2.13.5-mocgenp
+             s5askhr466byjcohznrnpqcty/include/libxml2 -I/iopsstor/scratch/cscs
+             /mcopik/xaas-containers-artifact/dependencies/spack/opt/spack/linu
+             x-neoverse_v2/libiconv-1.17-ioaocnj45x2esdfq3u3zuw7zcfyrri34/inclu
+             de -I/iopsstor/scratch/cscs/mcopik/xaas-containers-artifact/depend
+             encies/spack/opt/spack/linux-neoverse_v2/libpciaccess-0.17-yivxvty
+             y5kk6ylrozw3b4walbdhxjacf/include -pthread -I/iopsstor/scratch/csc
+             s/mcopik/xaas-containers-artifact/dependencies/spack/opt/spack/lin
+             ux-neoverse_v2/zlib-ng-2.2.3-y6xjjeljvb3leat3mgiju3n27wb3fujk/incl
+             ude -DWITH_GZFILEOP -I/iopsstor/scratch/cscs/mcopik/xaas-container
+             s-artifact/dependencies/spack/opt/spack/linux-neoverse_v2/hwloc-2.
+             11.1-ds7lwxezbsmfpo75snh63m4qeodr2x2u/include -I/iopsstor/scratch/
+             cscs/mcopik/xaas-containers-artifact/dependencies/spack/opt/spack/
+             linux-neoverse_v2/libxml2-2.13.5-mocgenps5askhr466byjcohznrnpqcty/
+             include/libxml2 -I/iopsstor/scratch/cscs/mcopik/xaas-containers-ar
+             tifact/dependencies/spack/opt/spack/linux-neoverse_v2/libiconv-1.1
+             7-ioaocnj45x2esdfq3u3zuw7zcfyrri34/include -I/iopsstor/scratch/csc
+             s/mcopik/xaas-containers-artifact/dependencies/spack/opt/spack/lin
+             ux-neoverse_v2/libpciaccess-0.17-yivxvtyy5kk6ylrozw3b4walbdhxjacf/
+             include -O3 -DNDEBUG -DYY_BUF_SIZE=1048576 -finline-functions -pth
+             read -MT reachable_netlink_component.lo -MD -MP -MF .deps/reachabl
+             e_netlink_component.Tpo -c reachable_netlink_component.c  -fPIC -D
+             PIC -o .libs/reachable_netlink_component.o
+     3914    libtool: compile:  /iopsstor/scratch/cscs/mcopik/xaas-containers-a
+             rtifact/dependencies/spack/opt/spack/linux-neoverse_v2/compiler-wr
+             apper-1.0-axxghzn7az3fq7jodan27v6axodl37qn/libexec/spack/gcc/gcc -
+             DHAVE_CONFIG_H -I. -I../../../../src/include -I/usr/include/libnl3
+              -DPRTE_HAVE_LIBNL3= -iquote/tmp/mcopik/spack-stage/spack-stage-op
+             enmpi-5.0.6-sdpmbmpakeo45exs4zghuxg5xq6fw3bd/spack-src/3rd-party/p
+             rrte -iquote/tmp/mcopik/spack-stage/spack-stage-openmpi-5.0.6-sdpm
+             bmpakeo45exs4zghuxg5xq6fw3bd/spack-src/3rd-party/prrte/src/include
+              -I/iopsstor/scratch/cscs/mcopik/xaas-containers-artifact/dependen
+             cies/spack/opt/spack/linux-neoverse_v2/libevent-2.1.12-rljlidnkqch
+             pkr6wl3piulytconszmzm/include -I/iopsstor/scratch/cscs/mcopik/xaas
+             -containers-artifact/dependencies/spack/opt/spack/linux-neoverse_v
+             2/pmix-5.0.5-e52lgmwze5ybe7xf3j5bp4tlxx44wezh/include -I/iopsstor/
+             scratch/cscs/mcopik/xaas-containers-artifact/dependencies/spack/op
+             t/spack/linux-neoverse_v2/pmix-5.0.5-e52lgmwze5ybe7xf3j5bp4tlxx44w
+             ezh/include/pmix -I/iopsstor/scratch/cscs/mcopik/xaas-containers-a
+             rtifact/dependencies/spack/opt/spack/linux-neoverse_v2/libevent-2.
+             1.12-rljlidnkqchpkr6wl3piulytconszmzm/include -I/iopsstor/scratch/
+             cscs/mcopik/xaas-containers-artifact/dependencies/spack/opt/spack/
+             linux-neoverse_v2/hwloc-2.11.1-ds7lwxezbsmfpo75snh63m4qeodr2x2u/in
+             clude -I/iopsstor/scratch/cscs/mcopik/xaas-containers-artifact/dep
+             endencies/spack/opt/spack/linux-neoverse_v2/libxml2-2.13.5-mocgenp
+             s5askhr466byjcohznrnpqcty/include/libxml2 -I/iopsstor/scratch/cscs
+             /mcopik/xaas-containers-artifact/dependencies/spack/opt/spack/linu
+             x-neoverse_v2/libiconv-1.17-ioaocnj45x2esdfq3u3zuw7zcfyrri34/inclu
+             de -I/iopsstor/scratch/cscs/mcopik/xaas-containers-artifact/depend
+             encies/spack/opt/spack/linux-neoverse_v2/libpciaccess-0.17-yivxvty
+             y5kk6ylrozw3b4walbdhxjacf/include -pthread -I/iopsstor/scratch/csc
+             s/mcopik/xaas-containers-artifact/dependencies/spack/opt/spack/lin
+             ux-neoverse_v2/zlib-ng-2.2.3-y6xjjeljvb3leat3mgiju3n27wb3fujk/incl
+             ude -DWITH_GZFILEOP -I/iopsstor/scratch/cscs/mcopik/xaas-container
+             s-artifact/dependencies/spack/opt/spack/linux-neoverse_v2/hwloc-2.
+             11.1-ds7lwxezbsmfpo75snh63m4qeodr2x2u/include -I/iopsstor/scratch/
+             cscs/mcopik/xaas-containers-artifact/dependencies/spack/opt/spack/
+             linux-neoverse_v2/libxml2-2.13.5-mocgenps5askhr466byjcohznrnpqcty/
+             include/libxml2 -I/iopsstor/scratch/cscs/mcopik/xaas-containers-ar
+             tifact/dependencies/spack/opt/spack/linux-neoverse_v2/libiconv-1.1
+             7-ioaocnj45x2esdfq3u3zuw7zcfyrri34/include -I/iopsstor/scratch/csc
+             s/mcopik/xaas-containers-artifact/dependencies/spack/opt/spack/lin
+             ux-neoverse_v2/libpciaccess-0.17-yivxvtyy5kk6ylrozw3b4walbdhxjacf/
+             include -O3 -DNDEBUG -DYY_BUF_SIZE=1048576 -finline-functions -pth
+             read -MT reachable_netlink_module.lo -MD -MP -MF .deps/reachable_n
+             etlink_module.Tpo -c reachable_netlink_module.c  -fPIC -DPIC -o .l
+             ibs/reachable_netlink_module.o
+     3915    /bin/sh ../../../../libtool  --tag=CC   --mode=link /iopsstor/scra
+             tch/cscs/mcopik/xaas-containers-artifact/dependencies/spack/opt/sp
+             ack/linux-neoverse_v2/compiler-wrapper-1.0-axxghzn7az3fq7jodan27v6
+             axodl37qn/libexec/spack/gcc/gcc  -O3 -DNDEBUG  -DYY_BUF_SIZE=10485
+             76 -finline-functions -pthread -module -avoid-version -L/usr/lib64
+              -L/iopsstor/scratch/cscs/mcopik/xaas-containers-artifact/dependen
+             cies/spack/opt/spack/linux-neoverse_v2/libevent-2.1.12-rljlidnkqch
+             pkr6wl3piulytconszmzm/lib -L/iopsstor/scratch/cscs/mcopik/xaas-con
+             tainers-artifact/dependencies/spack/opt/spack/linux-neoverse_v2/pm
+             ix-5.0.5-e52lgmwze5ybe7xf3j5bp4tlxx44wezh/lib -Wl,-rpath -Wl,/iops
+             stor/scratch/cscs/mcopik/xaas-containers-artifact/dependencies/spa
+             ck/opt/spack/linux-neoverse_v2/pmix-5.0.5-e52lgmwze5ybe7xf3j5bp4tl
+             xx44wezh/lib -Wl,--enable-new-dtags -L/iopsstor/scratch/cscs/mcopi
+             k/xaas-containers-artifact/dependencies/spack/opt/spack/linux-neov
+             erse_v2/hwloc-2.11.1-ds7lwxezbsmfpo75snh63m4qeodr2x2u/lib -o libpr
+             temca_prtereachable_netlink.la  reachable_netlink_component.lo rea
+             chable_netlink_module.lo reachable_netlink_utils_common.lo -lnl-ro
+             ute-3 -lnl-3 -lm   -levent_core -levent_pthreads -lpmix -lhwloc
+  >> 3916    /usr/bin/grep: /usr/lib64/libmunge.la: No such file or directory
+  >> 3917    /usr/bin/sed: can't read /usr/lib64/libmunge.la: No such file or d
+             irectory
+     3918    libtool:   error: '/usr/lib64/libmunge.la' is not a valid libtool 
+             archive
+  >> 3919    make[4]: *** [Makefile:795: libprtemca_prtereachable_netlink.la] E
+             rror 1
+     3920    make[4]: Leaving directory '/tmp/mcopik/spack-stage/spack-stage-op
+             enmpi-5.0.6-sdpmbmpakeo45exs4zghuxg5xq6fw3bd/spack-src/3rd-party/p
+             rrte/src/mca/prtereachable/netlink'
+  >> 3921    make[3]: *** [Makefile:1705: all-recursive] Error 1
+     3922    make[3]: Leaving directory '/tmp/mcopik/spack-stage/spack-stage-op
+             enmpi-5.0.6-sdpmbmpakeo45exs4zghuxg5xq6fw3bd/spack-src/3rd-party/p
+             rrte/src'
+  >> 3923    make[2]: *** [Makefile:801: all-recursive] Error 1
+     3924    make[2]: Leaving directory '/tmp/mcopik/spack-stage/spack-stage-op
+             enmpi-5.0.6-sdpmbmpakeo45exs4zghuxg5xq6fw3bd/spack-src/3rd-party/p
+             rrte'
+  >> 3925    make[1]: *** [Makefile:1411: all-recursive] Error 1
+     3926    make[1]: Leaving directory '/tmp/mcopik/spack-stage/spack-stage-op
+             enmpi-5.0.6-sdpmbmpakeo45exs4zghuxg5xq6fw3bd/spack-src/3rd-party'
+  >> 3927    make: *** [Makefile:1538: all-recursive] Error 1
+
+See build log for details:
+  /tmp/mcopik/spack-stage/spack-stage-openmpi-5.0.6-sdpmbmpakeo45exs4zghuxg5xq6fw3bd/spack-build-out.txt
+
+==> Warning: Skipping build of gromacs-2024.4-ng5fmzfqk6dmjuchrroxggxn54inxqgs since openmpi-5.0.6-sdpmbmpakeo45exs4zghuxg5xq6fw3bd failed
+==> Warning: Skipping build of fftw-3.3.10-c3o5ahmbf6cmyxy5r3jjp4lbmmjzftqe since openmpi-5.0.6-sdpmbmpakeo45exs4zghuxg5xq6fw3bd failed
+==> Error: gromacs-2024.4-ng5fmzfqk6dmjuchrroxggxn54inxqgs: Package was not installed
+==> Error: Installation request failed.  Refer to reported errors for failing package(s).

@@ -1,31 +1,18 @@
-#!/bin/bash
-# Run the script from inside the container 
-# To run the container: ssrun -A a-g200 --nodes=1 --ntasks-per-node=4 --cpus-per-task=64 --hint=nomultithread --time=01:00:00 --environment=testcase2-clariden  --pty bash 
+ARTIFACT_LOCATION=${ARTIFACT_LOCATION:-${SCRATCH}/xaas-containers-artifact}
+STEPS=3000
+#STEPS=300
 
-
-
-TPR_FILE="/users/ealnuaim/GROMACS_TestCaseB/lignocellulose.tpr"
+TPR_FILE="${ARTIFACT_LOCATION}/data/gromacs/GROMACS_TestCaseB/lignocellulose.tpr"
+BENCH_DIR="${ARTIFACT_LOCATION}/benchmarks-source/gromacs/clariden/gromacs-benchmarks/TestcaseB_benchmarks/gromacs_testcase2_testcaseB/steps_${STEPS}"
 GROMACS_BIN="/usr/local/gromacs/bin/gmx_mpi"
-BENCH_DIR="/users/ealnuaim/gromacs_benchmarks/TestcaseB_benchmarks/gromacs_testcase2_testcaseB"
 
-WARMUP_RUNS=10
+WARMUP_RUNS=2
 BENCHMARK_RUNS=30
 TOTAL_RUNS=$((WARMUP_RUNS + BENCHMARK_RUNS))
 
-
-export OMP_NUM_THREADS=64
-export CUDA_VISIBLE_DEVICES=0
-export HYDRA_LAUNCHER=fork
-
-export MPICH_GPU_SUPPORT_ENABLED=1
-export FI_CXI_RX_MATCH_MODE=software
-
-export GMX_GPU_DD_COMMS=true
-export GMX_GPU_PME_PP_COMMS=true
-export GMX_FORCE_UPDATE_DEFAULT_GPU=true
+export OMP_NUM_THREADS=72
 
 mkdir -p "$BENCH_DIR"
-
 
 for i in $(seq 1 $TOTAL_RUNS); do
     echo "Starting run $i..."
@@ -33,14 +20,9 @@ for i in $(seq 1 $TOTAL_RUNS); do
     mkdir -p "$RUN_DIR"
     cd "$RUN_DIR"
 
-    mpiexec -n 4 "$GROMACS_BIN" mdrun \
-        -s "$TPR_FILE" \
-        -ntomp 64 \
-        -bonded gpu -nb gpu -pme cpu -pin on -v \
-        -noconfout -dlb yes -nstlist 300 -gpu_id 0 -nsteps 300 \
-        > mdrun_output.log 2>&1
+    ${GROMACS_BIN} mdrun -s ${TPR_FILE} -ntomp 72 -nsteps ${STEPS} -gpu_id 0 > mdrun_output.log 2>&1
 
-    mv md.log ener.edr confout.gro state.cpt "$RUN_DIR/" 2>/dev/null || true
+    #mv md.log ener.edr confout.gro state.cpt "$RUN_DIR/" 2>/dev/null || true
 
     if [ "$i" -le "$WARMUP_RUNS" ]; then
         echo "Warm-up run $i completed. Deleting files..."

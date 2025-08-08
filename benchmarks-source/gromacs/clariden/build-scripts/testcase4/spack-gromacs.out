@@ -1,0 +1,120 @@
+GCC version:  gcc (Spack GCC) 13.3.0 Copyright (C) 2023 Free Software Foundation, Inc. This is free software; see the source for copying conditions. There is NO warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+mpich version:  MPICH Version: 3.4a2 MPICH Release date: unreleased development copy MPICH Device: ch4:ofi MPICH configure: --prefix=/home/jenkins/install-gnu-ofi --without-mpe --enable-shared --enable-sharedlibs=gcc --enable-debuginfo --enable-yield=sched_yield --enable-mpit-pvars=cray_mpiio_stat,cray_misc_stat --with-configfile=/etc/cray-mpich.conf --with-device=ch4:ofi --with-libfabric-include=/opt/cray/include --with-libfabric-lib=/home/jenkins/pebuildenv/opt/libfabric/1.14.0-onlysockets/lib --with-custom-version-string=GTL-built-with,ROCM-6.0,CUDA-12.0 --with-namepublisher=file --with-shared-memory=sysv --with-ch4-shmmods=cray_xpmem --enable-fortran=all --with-pmiext=pmi_cray_ext.h --with-pmi=cray --with-weak-pmiext=cray --disable-allowport --with-pm=gforker --with-file-system=ufs+lustre+cray+gpfs+nfs --disable-cxx --enable-threads=runtime --enable-thread-cs=global --enable-fast=O2 --enable-g=mem MPICH CC: /usr/bin/gcc-12 -fcommon -I/opt/cray/dvs/2.12_4.3.22-2.3_154.1__g7b1d0e31/include -I/opt/cray/pe/gtl/0.1.3/include -I/opt/cray/pe/pmi/6.1.14/include -D_CRAY_OFI -D_CRAY_CH4 -DHAVE_LUSTRE_COMP_LAYOUT_SUPPORT -O2 MPICH CXX: MPICH F77: ftn -fallow-argument-mismatch -O2 MPICH FC: ftn -fallow-argument-mismatch -O2 MPICH Custom Information: GTL-built-with,ROCM-6.0,CUDA-12.0
+==> Created environment gromacs_basic_env2 in: /iopsstor/scratch/cscs/mcopik/xaas-containers-artifact/dependencies/spack/var/spack/environments/gromacs_basic_env2
+==> Activate with: spack env activate gromacs_basic_env2
+==> Added 3 new compilers to /iopsstor/scratch/cscs/mcopik/xaas-containers-artifact/dependencies/spack/var/spack/environments/gromacs_basic_env2/spack.yaml
+    gcc@7.5.0
+    gcc@13.3.0
+    gcc@12.3.0
+==> Compilers are defined in the following files:
+    /iopsstor/scratch/cscs/mcopik/xaas-containers-artifact/dependencies/spack/var/spack/environments/gromacs_basic_env2/spack.yaml
+==> No new external packages detected
+==> Adding gromacs@2024.4+cuda+mpi ^mpich to environment gromacs_basic_env2
+==> Concretized 1 spec:
+[+]  tkucspg  gromacs@2024.4~cp2k+cuda~cufftmp~cycle_subcounters~double+gmxapi~heffte+hwloc~intel_provided_gcc~ipo~itt~mdrun_only+mpi+nblib~nosuffix~nvshmem~opencl+openmp~relaxed_double_precision+shared+sve~sycl build_system=cmake build_type=Release cuda_arch=none generator=make openmp_max_threads=none arch=linux-sles15-neoverse_v2
+[+]  ewjq57c      ^cmake@3.31.5~doc+ncurses+ownlibs~qtgui build_system=generic build_type=Release arch=linux-sles15-neoverse_v2
+[+]  qkonb3o          ^curl@8.11.1~gssapi~ldap~libidn2~librtmp~libssh~libssh2+nghttp2 build_system=autotools libs=shared,static tls=openssl arch=linux-sles15-neoverse_v2
+[+]  xfpug2o              ^nghttp2@1.64.0 build_system=autotools arch=linux-sles15-neoverse_v2
+[+]  q7y4izu                  ^diffutils@3.10 build_system=autotools arch=linux-sles15-neoverse_v2
+[+]  oqvhsa4              ^openssl@3.4.0~docs+shared build_system=generic certs=mozilla arch=linux-sles15-neoverse_v2
+[+]  4ktcnfn                  ^ca-certificates-mozilla@2024-12-31 build_system=generic arch=linux-sles15-neoverse_v2
+[+]  rqqcdkb                  ^perl@5.40.0+cpanm+opcode+open+shared+threads build_system=generic arch=linux-sles15-neoverse_v2
+[+]  vnki3gq                      ^berkeley-db@18.1.40+cxx~docs+stl build_system=autotools patches=26090f4,b231fcc arch=linux-sles15-neoverse_v2
+[+]  cdk77x6                      ^gdbm@1.23 build_system=autotools arch=linux-sles15-neoverse_v2
+[+]  a3jgxgh                          ^readline@8.2 build_system=autotools patches=1ea4349,24f587b,3d9885e,5911a5b,622ba38,6c8adf8,758e2ec,79572ee,a177edc,bbf97f1,c7b45ff,e0013d9,e065038 arch=linux-sles15-neoverse_v2
+[+]  ena2utz          ^ncurses@6.5~symlinks+termlib abi=none build_system=autotools patches=7a351bc arch=linux-sles15-neoverse_v2
+[+]  y6xjjel          ^zlib-ng@2.2.3+compat+new_strategies+opt+pic+shared build_system=autotools arch=linux-sles15-neoverse_v2
+[+]  axxghzn      ^compiler-wrapper@1.0 build_system=generic arch=linux-sles15-neoverse_v2
+[+]  ja274yq      ^cuda@12.8.0~allow-unsupported-compilers~dev build_system=generic arch=linux-sles15-neoverse_v2
+[+]  mocgenp          ^libxml2@2.13.5~http+pic~python+shared build_system=autotools arch=linux-sles15-neoverse_v2
+[+]  ioaocnj              ^libiconv@1.17 build_system=autotools libs=shared,static arch=linux-sles15-neoverse_v2
+[+]  i67zoqh              ^xz@5.4.6~pic build_system=autotools libs=shared,static arch=linux-sles15-neoverse_v2
+[+]  a6ldhg2      ^fftw@3.3.10+mpi~openmp~pfft_patches+shared build_system=autotools patches=872cff9 precision=double,float arch=linux-sles15-neoverse_v2
+[+]  mxu5bka          ^gnuconfig@2024-07-27 build_system=generic arch=linux-sles15-neoverse_v2
+[e]  mk56twf      ^gcc@13.3.0~binutils+bootstrap~graphite~mold~nvptx~piclibs~strip build_system=autotools build_type=RelWithDebInfo languages='c,c++,fortran' arch=linux-sles15-neoverse_v2
+[+]  7n4eq3q      ^gcc-runtime@13.3.0 build_system=generic arch=linux-sles15-neoverse_v2
+[e]  2tfjxrn      ^glibc@2.31 build_system=autotools arch=linux-sles15-neoverse_v2
+[+]  fah4jl7      ^gmake@4.4.1~guile build_system=generic arch=linux-sles15-neoverse_v2
+[+]  ds7lwxe      ^hwloc@2.11.1~cairo~cuda~gl~level_zero~libudev+libxml2~nvml~opencl+pci~rocm build_system=autotools libs=shared,static arch=linux-sles15-neoverse_v2
+[+]  yivxvty          ^libpciaccess@0.17 build_system=autotools arch=linux-sles15-neoverse_v2
+[+]  37sybg4              ^util-macros@1.20.1 build_system=autotools arch=linux-sles15-neoverse_v2
+[+]  lrmrcci      ^mpich@4.2.3~argobots~cuda+fortran+hwloc+hydra~level_zero+libxml2+pci~rocm+romio~slurm~vci~verbs+wrapperrpath~xpmem build_system=autotools datatype-engine=auto device=ch4 netmod=ofi pmi=default arch=linux-sles15-neoverse_v2
+[+]  uni5vjf          ^findutils@4.10.0 build_system=autotools patches=440b954 arch=linux-sles15-neoverse_v2
+[+]  ud7t2j2              ^gettext@0.23.1+bzip2+curses+git~libunistring+libxml2+pic+shared+tar+xz build_system=autotools arch=linux-sles15-neoverse_v2
+[+]  m47jys7                  ^bzip2@1.0.8~debug~pic+shared build_system=generic arch=linux-sles15-neoverse_v2
+[+]  j2s2ed7                  ^tar@1.35 build_system=autotools zip=pigz arch=linux-sles15-neoverse_v2
+[+]  f3q2hs3                      ^pigz@2.8 build_system=makefile arch=linux-sles15-neoverse_v2
+[+]  qbhury6                      ^zstd@1.5.6+programs build_system=makefile compression=none libs=shared,static arch=linux-sles15-neoverse_v2
+[+]  eqb2um6          ^libfabric@1.22.0~cuda~debug~kdreg~level_zero~uring build_system=autotools fabrics=sockets,tcp,udp arch=linux-sles15-neoverse_v2
+[+]  jkcgqkn          ^yaksa@0.3~cuda~level_zero~rocm build_system=autotools arch=linux-sles15-neoverse_v2
+[+]  rh2yunu              ^autoconf@2.72 build_system=autotools arch=linux-sles15-neoverse_v2
+[+]  ft5kqrj              ^automake@1.16.5 build_system=autotools arch=linux-sles15-neoverse_v2
+[+]  xtoqeod              ^libtool@2.4.7 build_system=autotools arch=linux-sles15-neoverse_v2
+[+]  bhnf3j3              ^m4@1.4.19+sigsegv build_system=autotools patches=9dc5fbd,bfdffa7 arch=linux-sles15-neoverse_v2
+[+]  7c7ycwl                  ^libsigsegv@2.14 build_system=autotools arch=linux-sles15-neoverse_v2
+[e]  z7r2c4k              ^python@3.12.5+bz2+crypt+ctypes+dbm~debug+libxml2+lzma~optimizations+pic+pyexpat+pythoncmd+readline+shared+sqlite3+ssl~tkinter+uuid+zlib build_system=generic arch=linux-sles15-neoverse_v2
+[+]  iubhfmn      ^openblas@0.3.29~bignuma~consistent_fpcsr+dynamic_dispatch+fortran~ilp64+locking+pic+shared build_system=makefile symbol_suffix=none threads=none arch=linux-sles15-neoverse_v2
+[+]  rj3v5kn      ^pkgconf@2.3.0 build_system=autotools arch=linux-sles15-neoverse_v2
+
+==> Updating view at /iopsstor/scratch/cscs/mcopik/xaas-containers-artifact/dependencies/spack/var/spack/environments/gromacs_basic_env2/.spack-env/view
+[+] /usr (external glibc-2.31-2tfjxrnwqew6mjxhjzl3i3vouh7zwla7)
+[+] /iopsstor/scratch/cscs/mcopik/xaas-containers-artifact/dependencies/spack/opt/spack/linux-neoverse_v2/gcc-runtime-13.3.0-7n4eq3q7o5uo7tr7wwvwlj7by4lyftwj
+[+] /iopsstor/scratch/cscs/mcopik/xaas-containers-artifact/dependencies/spack/opt/spack/linux-neoverse_v2/libpciaccess-0.17-yivxvtyy5kk6ylrozw3b4walbdhxjacf
+[+] /iopsstor/scratch/cscs/mcopik/xaas-containers-artifact/dependencies/spack/opt/spack/linux-neoverse_v2/ncurses-6.5-ena2utziusgt3n2whzegbyhj527xsik4
+[+] /iopsstor/scratch/cscs/mcopik/xaas-containers-artifact/dependencies/spack/opt/spack/linux-neoverse_v2/openblas-0.3.29-iubhfmnvqrb55tldp3kzhsugjtt4of24
+[+] /iopsstor/scratch/cscs/mcopik/xaas-containers-artifact/dependencies/spack/opt/spack/linux-neoverse_v2/xz-5.4.6-i67zoqhs5gtupj2f5y2icf4ycwpwl4aq
+[+] /iopsstor/scratch/cscs/mcopik/xaas-containers-artifact/dependencies/spack/opt/spack/linux-neoverse_v2/yaksa-0.3-jkcgqkn3zcbpc7dmjwqi4tazxsb7ihbk
+[+] /iopsstor/scratch/cscs/mcopik/xaas-containers-artifact/dependencies/spack/opt/spack/linux-neoverse_v2/zlib-ng-2.2.3-y6xjjeljvb3leat3mgiju3n27wb3fujk
+[+] /iopsstor/scratch/cscs/mcopik/xaas-containers-artifact/dependencies/spack/opt/spack/linux-neoverse_v2/libiconv-1.17-ioaocnj45x2esdfq3u3zuw7zcfyrri34
+[+] /iopsstor/scratch/cscs/mcopik/xaas-containers-artifact/dependencies/spack/opt/spack/linux-neoverse_v2/libfabric-1.22.0-eqb2um6ybuyhgiu6ottbfbjiyhgrcekc
+[+] /iopsstor/scratch/cscs/mcopik/xaas-containers-artifact/dependencies/spack/opt/spack/linux-neoverse_v2/libxml2-2.13.5-mocgenps5askhr466byjcohznrnpqcty
+[+] /iopsstor/scratch/cscs/mcopik/xaas-containers-artifact/dependencies/spack/opt/spack/linux-neoverse_v2/hwloc-2.11.1-ds7lwxezbsmfpo75snh63m4qeodr2x2u
+[+] /iopsstor/scratch/cscs/mcopik/xaas-containers-artifact/dependencies/spack/opt/spack/linux-neoverse_v2/cuda-12.8.0-ja274yqmm3wv5ndtoh4punnf5iy7s752
+[+] /iopsstor/scratch/cscs/mcopik/xaas-containers-artifact/dependencies/spack/opt/spack/linux-neoverse_v2/mpich-4.2.3-lrmrccijrhr4moe3oxcf6bynrcnna5su
+[+] /iopsstor/scratch/cscs/mcopik/xaas-containers-artifact/dependencies/spack/opt/spack/linux-neoverse_v2/fftw-3.3.10-a6ldhg22gygmlpt5orij7ibqa62dw6fn
+[+] /iopsstor/scratch/cscs/mcopik/xaas-containers-artifact/dependencies/spack/opt/spack/linux-neoverse_v2/gromacs-2024.4-tkucspgquqk2z7ugnfqeyk33fhcgdvqa
+[+]  gromacs@2024.4~cp2k+cuda~cufftmp~cycle_subcounters~double+gmxapi~heffte+hwloc~intel_provided_gcc~ipo~itt~mdrun_only+mpi+nblib~nosuffix~nvshmem~opencl+openmp~relaxed_double_precision+shared+sve~sycl build_system=cmake build_type=Release cuda_arch=none generator=make openmp_max_threads=none arch=linux-sles15-neoverse_v2
+[+]      ^cmake@3.31.5~doc+ncurses+ownlibs~qtgui build_system=generic build_type=Release arch=linux-sles15-neoverse_v2
+[+]          ^curl@8.11.1~gssapi~ldap~libidn2~librtmp~libssh~libssh2+nghttp2 build_system=autotools libs=shared,static tls=openssl arch=linux-sles15-neoverse_v2
+[+]              ^nghttp2@1.64.0 build_system=autotools arch=linux-sles15-neoverse_v2
+[+]                  ^diffutils@3.10 build_system=autotools arch=linux-sles15-neoverse_v2
+[+]              ^openssl@3.4.0~docs+shared build_system=generic certs=mozilla arch=linux-sles15-neoverse_v2
+[+]                  ^ca-certificates-mozilla@2024-12-31 build_system=generic arch=linux-sles15-neoverse_v2
+[+]                  ^perl@5.40.0+cpanm+opcode+open+shared+threads build_system=generic arch=linux-sles15-neoverse_v2
+[+]                      ^berkeley-db@18.1.40+cxx~docs+stl build_system=autotools patches=26090f4,b231fcc arch=linux-sles15-neoverse_v2
+[+]                      ^gdbm@1.23 build_system=autotools arch=linux-sles15-neoverse_v2
+[+]                          ^readline@8.2 build_system=autotools patches=1ea4349,24f587b,3d9885e,5911a5b,622ba38,6c8adf8,758e2ec,79572ee,a177edc,bbf97f1,c7b45ff,e0013d9,e065038 arch=linux-sles15-neoverse_v2
+[+]          ^ncurses@6.5~symlinks+termlib abi=none build_system=autotools patches=7a351bc arch=linux-sles15-neoverse_v2
+[+]          ^zlib-ng@2.2.3+compat+new_strategies+opt+pic+shared build_system=autotools arch=linux-sles15-neoverse_v2
+[+]      ^compiler-wrapper@1.0 build_system=generic arch=linux-sles15-neoverse_v2
+[+]      ^cuda@12.8.0~allow-unsupported-compilers~dev build_system=generic arch=linux-sles15-neoverse_v2
+[+]          ^libxml2@2.13.5~http+pic~python+shared build_system=autotools arch=linux-sles15-neoverse_v2
+[+]              ^libiconv@1.17 build_system=autotools libs=shared,static arch=linux-sles15-neoverse_v2
+[+]              ^xz@5.4.6~pic build_system=autotools libs=shared,static arch=linux-sles15-neoverse_v2
+[+]      ^fftw@3.3.10+mpi~openmp~pfft_patches+shared build_system=autotools patches=872cff9 precision=double,float arch=linux-sles15-neoverse_v2
+[+]          ^gnuconfig@2024-07-27 build_system=generic arch=linux-sles15-neoverse_v2
+[e]      ^gcc@13.3.0~binutils+bootstrap~graphite~mold~nvptx~piclibs~strip build_system=autotools build_type=RelWithDebInfo languages='c,c++,fortran' arch=linux-sles15-neoverse_v2
+[+]      ^gcc-runtime@13.3.0 build_system=generic arch=linux-sles15-neoverse_v2
+[e]      ^glibc@2.31 build_system=autotools arch=linux-sles15-neoverse_v2
+[+]      ^gmake@4.4.1~guile build_system=generic arch=linux-sles15-neoverse_v2
+[+]      ^hwloc@2.11.1~cairo~cuda~gl~level_zero~libudev+libxml2~nvml~opencl+pci~rocm build_system=autotools libs=shared,static arch=linux-sles15-neoverse_v2
+[+]          ^libpciaccess@0.17 build_system=autotools arch=linux-sles15-neoverse_v2
+[+]              ^util-macros@1.20.1 build_system=autotools arch=linux-sles15-neoverse_v2
+[+]      ^mpich@4.2.3~argobots~cuda+fortran+hwloc+hydra~level_zero+libxml2+pci~rocm+romio~slurm~vci~verbs+wrapperrpath~xpmem build_system=autotools datatype-engine=auto device=ch4 netmod=ofi pmi=default arch=linux-sles15-neoverse_v2
+[+]          ^findutils@4.10.0 build_system=autotools patches=440b954 arch=linux-sles15-neoverse_v2
+[+]              ^gettext@0.23.1+bzip2+curses+git~libunistring+libxml2+pic+shared+tar+xz build_system=autotools arch=linux-sles15-neoverse_v2
+[+]                  ^bzip2@1.0.8~debug~pic+shared build_system=generic arch=linux-sles15-neoverse_v2
+[+]                  ^tar@1.35 build_system=autotools zip=pigz arch=linux-sles15-neoverse_v2
+[+]                      ^pigz@2.8 build_system=makefile arch=linux-sles15-neoverse_v2
+[+]                      ^zstd@1.5.6+programs build_system=makefile compression=none libs=shared,static arch=linux-sles15-neoverse_v2
+[+]          ^libfabric@1.22.0~cuda~debug~kdreg~level_zero~uring build_system=autotools fabrics=sockets,tcp,udp arch=linux-sles15-neoverse_v2
+[+]          ^yaksa@0.3~cuda~level_zero~rocm build_system=autotools arch=linux-sles15-neoverse_v2
+[+]              ^autoconf@2.72 build_system=autotools arch=linux-sles15-neoverse_v2
+[+]              ^automake@1.16.5 build_system=autotools arch=linux-sles15-neoverse_v2
+[+]              ^libtool@2.4.7 build_system=autotools arch=linux-sles15-neoverse_v2
+[+]              ^m4@1.4.19+sigsegv build_system=autotools patches=9dc5fbd,bfdffa7 arch=linux-sles15-neoverse_v2
+[+]                  ^libsigsegv@2.14 build_system=autotools arch=linux-sles15-neoverse_v2
+[e]              ^python@3.12.5+bz2+crypt+ctypes+dbm~debug+libxml2+lzma~optimizations+pic+pyexpat+pythoncmd+readline+shared+sqlite3+ssl~tkinter+uuid+zlib build_system=generic arch=linux-sles15-neoverse_v2
+[+]      ^openblas@0.3.29~bignuma~consistent_fpcsr+dynamic_dispatch+fortran~ilp64+locking+pic+shared build_system=makefile symbol_suffix=none threads=none arch=linux-sles15-neoverse_v2
+[+]      ^pkgconf@2.3.0 build_system=autotools arch=linux-sles15-neoverse_v2
+

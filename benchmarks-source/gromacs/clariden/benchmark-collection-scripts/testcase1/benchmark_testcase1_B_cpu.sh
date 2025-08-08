@@ -13,7 +13,7 @@
 
 ARTIFACT_LOCATION=${ARTIFACT_LOCATION:-${SCRATCH}/xaas-containers-artifact}
 STEPS=3000
-#STEPS=300
+STEPS=300
 
 module load cray-mpich/8.1.30 cuda/12.6.2 gcc/13.3.0
 
