@@ -1,0 +1,38 @@
+                      :-) GROMACS - gmx mdrun, 2025.0 (-:
+
+Executable:   /usr/local/gromacs/bin/gmx
+Data prefix:  /usr/local/gromacs
+Working dir:  /home/alokvk2
+Command line:
+  gmx mdrun -s /home/alokvk2/xaas-containers-artifact/data/gromacs/GROMACS_TestCaseB/lignocellulose.tpr -ntomp 104 -ntmpi 1 -nsteps 1000
+
+Reading file /home/alokvk2/xaas-containers-artifact/data/gromacs/GROMACS_TestCaseB/lignocellulose.tpr, VERSION 2020.1 (single precision)
+Note: file tpx version 119, software tpx version 137
+Overriding nsteps with value passed on the command line: 1000 steps, 2 ps
+Changing nstlist from 10 to 25, rlist from 1.262 to 1.407
+
+
+Update groups can not be used for this system because there are three or more consecutively coupled constraints
+
+Using 1 MPI thread
+
+Non-default thread affinity set, disabling internal thread affinity
+
+Using 104 OpenMP threads 
+
+starting mdrun ''
+1000 steps,      2.0 ps.
+
+Back Off! I just backed up state_step1000.cpt to ./#state_step1000.cpt.1#
+
+-------------------------------------------------------
+Program:     gmx mdrun, version 2025.0
+Source file: src/gromacs/mdlib/mdoutf.cpp (line 495)
+Function:    void write_checkpoint(const char *, gmx_bool, FILE *, const t_commrec *, int *, int, IntegrationAlgorithm, int, gmx_bool, LambdaWeightCalculation, int64_t, double, t_state *, ObservablesHistory *, const gmx::MDModulesNotifiers &, gmx::WriteCheckpointDataHolder *, bool, MPI_Comm)
+
+System I/O error:
+Cannot rename checkpoint file; maybe you are out of disk space?
+
+For more information and tips for troubleshooting, please check the GROMACS
+website at https://manual.gromacs.org/current/user-guide/run-time-errors.html
+-------------------------------------------------------

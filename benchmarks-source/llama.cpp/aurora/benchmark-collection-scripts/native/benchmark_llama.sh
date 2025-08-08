@@ -7,10 +7,6 @@
 
 ARTIFACT_LOCATION=${ARTIFACT_LOCATION:-${HOME}/xaas-containers-artifact}
 
-# FIXME: replace with oneapi 2025.0 available on Aurora
-module unload oneapi
-source $HOME/intel/oneapi/setvars.sh
-
 # FIXME: adapt for your configuration
 export OMP_NUM_THREADS=102  # Use 102 OpenMP threads
 
