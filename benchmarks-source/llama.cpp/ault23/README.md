@@ -18,6 +18,8 @@ spcleth/xaas-artifact:llamacpp-source-deploy-ault23
 spcleth/xaas-artifact:llamacpp-specialized-ault23
 ```
 
+All images are provided in the repository and can also be rebuilt.
+
 ## Test Cases
 
 This repository contains four benchmark test cases:
