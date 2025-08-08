@@ -1,0 +1,126 @@
+GROMACS configuration
+	linux-vdso.so.1 (0x0000400009680000)
+	libgromacs_mpi.so.9 => /iopsstor/scratch/cscs/mcopik/xaas-containers-artifact/dependencies/spack/opt/spack/linux-neoverse_v2/gromacs-2024.4-tkucspgquqk2z7ugnfqeyk33fhcgdvqa/lib64/libgromacs_mpi.so.9 (0x0000400009690000)
+	libmpicxx.so.12 => /iopsstor/scratch/cscs/mcopik/xaas-containers-artifact/dependencies/spack/opt/spack/linux-neoverse_v2/mpich-4.2.3-lrmrccijrhr4moe3oxcf6bynrcnna5su/lib/libmpicxx.so.12 (0x000040000df40000)
+	libmpi.so.12 => /iopsstor/scratch/cscs/mcopik/xaas-containers-artifact/dependencies/spack/opt/spack/linux-neoverse_v2/mpich-4.2.3-lrmrccijrhr4moe3oxcf6bynrcnna5su/lib/libmpi.so.12 (0x000040000df90000)
+	libgomp.so.1 => /user-environment/linux-sles15-neoverse_v2/gcc-12.3.0/gcc-13.3.0-rnbf75vyhchi5reyzoadq2jgz4tmue5t/lib64/libgomp.so.1 (0x000040000e880000)
+	libpthread.so.0 => /lib64/libpthread.so.0 (0x000040000e920000)
+	libstdc++.so.6 => /user-environment/linux-sles15-neoverse_v2/gcc-12.3.0/gcc-13.3.0-rnbf75vyhchi5reyzoadq2jgz4tmue5t/lib64/libstdc++.so.6 (0x000040000e960000)
+	libm.so.6 => /lib64/libm.so.6 (0x000040000ebe0000)
+	libgcc_s.so.1 => /user-environment/linux-sles15-neoverse_v2/gcc-12.3.0/gcc-13.3.0-rnbf75vyhchi5reyzoadq2jgz4tmue5t/lib64/libgcc_s.so.1 (0x000040000eca0000)
+	libc.so.6 => /lib64/libc.so.6 (0x000040000ece0000)
+	libdl.so.2 => /lib64/libdl.so.2 (0x000040000ee70000)
+	librt.so.1 => /lib64/librt.so.1 (0x000040000eea0000)
+	libcufft.so.11 => /iopsstor/scratch/cscs/mcopik/xaas-containers-artifact/dependencies/spack/opt/spack/linux-neoverse_v2/cuda-12.8.0-ja274yqmm3wv5ndtoh4punnf5iy7s752/lib64/libcufft.so.11 (0x000040000eed0000)
+	libhwloc.so.15 => /iopsstor/scratch/cscs/mcopik/xaas-containers-artifact/dependencies/spack/opt/spack/linux-neoverse_v2/hwloc-2.11.1-ds7lwxezbsmfpo75snh63m4qeodr2x2u/lib/libhwloc.so.15 (0x000040001f8f0000)
+	libfftw3f.so.3 => /iopsstor/scratch/cscs/mcopik/xaas-containers-artifact/dependencies/spack/opt/spack/linux-neoverse_v2/fftw-3.3.10-a6ldhg22gygmlpt5orij7ibqa62dw6fn/lib/libfftw3f.so.3 (0x000040001f970000)
+	libopenblas.so.0 => /iopsstor/scratch/cscs/mcopik/xaas-containers-artifact/dependencies/spack/opt/spack/linux-neoverse_v2/openblas-0.3.29-iubhfmnvqrb55tldp3kzhsugjtt4of24/lib/libopenblas.so.0 (0x000040001fac0000)
+	libmuparser.so.2 => /iopsstor/scratch/cscs/mcopik/xaas-containers-artifact/dependencies/spack/opt/spack/linux-neoverse_v2/gromacs-2024.4-tkucspgquqk2z7ugnfqeyk33fhcgdvqa/lib64/libmuparser.so.2 (0x0000400020e40000)
+	libyaksa.so.0 => /iopsstor/scratch/cscs/mcopik/xaas-containers-artifact/dependencies/spack/opt/spack/linux-neoverse_v2/yaksa-0.3-jkcgqkn3zcbpc7dmjwqi4tazxsb7ihbk/lib/libyaksa.so.0 (0x0000400020ed0000)
+	libfabric.so.1 => /iopsstor/scratch/cscs/mcopik/xaas-containers-artifact/dependencies/spack/opt/spack/linux-neoverse_v2/libfabric-1.22.0-eqb2um6ybuyhgiu6ottbfbjiyhgrcekc/lib/libfabric.so.1 (0x0000400022e50000)
+	libatomic.so.1 => /user-environment/linux-sles15-neoverse_v2/gcc-12.3.0/gcc-13.3.0-rnbf75vyhchi5reyzoadq2jgz4tmue5t/lib64/libatomic.so.1 (0x0000400022f10000)
+	/lib/ld-linux-aarch64.so.1 (0x0000400009610000)
+	libpciaccess.so.0 => /iopsstor/scratch/cscs/mcopik/xaas-containers-artifact/dependencies/spack/opt/spack/linux-neoverse_v2/libpciaccess-0.17-yivxvtyy5kk6ylrozw3b4walbdhxjacf/lib/libpciaccess.so.0 (0x0000400022f40000)
+	libxml2.so.2 => /iopsstor/scratch/cscs/mcopik/xaas-containers-artifact/dependencies/spack/opt/spack/linux-neoverse_v2/libxml2-2.13.5-mocgenps5askhr466byjcohznrnpqcty/lib/libxml2.so.2 (0x0000400022f70000)
+	libgfortran.so.5 => /user-environment/linux-sles15-neoverse_v2/gcc-12.3.0/gcc-13.3.0-rnbf75vyhchi5reyzoadq2jgz4tmue5t/lib64/libgfortran.so.5 (0x00004000230e0000)
+	liblzma.so.5 => /iopsstor/scratch/cscs/mcopik/xaas-containers-artifact/dependencies/spack/opt/spack/linux-neoverse_v2/xz-5.4.6-i67zoqhs5gtupj2f5y2icf4ycwpwl4aq/lib/liblzma.so.5 (0x0000400023490000)
+	libiconv.so.2 => /iopsstor/scratch/cscs/mcopik/xaas-containers-artifact/dependencies/spack/opt/spack/linux-neoverse_v2/libiconv-1.17-ioaocnj45x2esdfq3u3zuw7zcfyrri34/lib/libiconv.so.2 (0x00004000234e0000)
+                       :-) GROMACS - gmx_mpi, 2024.4 (-:
+
+Executable:   /iopsstor/scratch/cscs/mcopik/xaas-containers-artifact/dependencies/spack/opt/spack/linux-neoverse_v2/gromacs-2024.4-tkucspgquqk2z7ugnfqeyk33fhcgdvqa/bin/gmx_mpi
+Data prefix:  /iopsstor/scratch/cscs/mcopik/xaas-containers-artifact/dependencies/spack/opt/spack/linux-neoverse_v2/gromacs-2024.4-tkucspgquqk2z7ugnfqeyk33fhcgdvqa
+Working dir:  /iopsstor/scratch/cscs/mcopik/xaas-containers-artifact/benchmarks-source/gromacs/clariden
+Command line:
+  gmx_mpi --version
+
+GROMACS version:     2024.4
+Precision:           mixed
+Memory model:        64 bit
+MPI library:         MPI
+MPI library version: MPICH Version:      4.2.3 MPICH Release date: Wed Oct  2 09:35:21 AM CDT 2024 MPICH ABI:          16:3:4 MPICH Device:       ch4:ofi MPICH configure:    --prefix=/iopsstor/scratch/cscs/mcopik/xaas-containers-artifact/dependencies/spack/opt/spack/linux-neoverse_v2/mpich-4.2.3-lrmrccijrhr4moe3oxcf6bynrcnna5su --disable-maintainer-mode --disable-silent-rules --enable-shared --with-pm=hydra --enable-romio --without-ibverbs --enable-wrapper-rpath=yes --with-yaksa=/iopsstor/scratch/cscs/mcopik/xaas-containers-artifact/dependencies/spack/opt/spack/linux-neoverse_v2/yaksa-0.3-jkcgqkn3zcbpc7dmjwqi4tazxsb7ihbk --without-ze --with-hwloc=/iopsstor/scratch/cscs/mcopik/xaas-containers-artifact/dependencies/spack/opt/spack/linux-neoverse_v2/hwloc-2.11.1-ds7lwxezbsmfpo75snh63m4qeodr2x2u --enable-fortran --with-slurm=no --without-cuda --without-hip --with-device=ch4:ofi --with-libfabric=/iopsstor/scratch/cscs/mcopik/xaas-containers-artifact/dependencies/spack/opt/spack/linux-neoverse_v2/libfabric-1.22.0-eqb2um6ybuyhgiu6ottbfbjiyhgrcekc --enable-libxml2 --with-datatype-engine=auto MPICH CC:           /iopsstor/scratch/cscs/mcopik/xaas-containers-artifact/dependencies/spack/opt/spack/linux-neoverse_v2/compiler-wrapper-1.0-axxghzn7az3fq7jodan27v6axodl37qn/libexec/spack/gcc/gcc    -O2 MPICH CXX:          /iopsstor/scratch/cscs/mcopik/xaas-containers-artifact/dependencies/spack/opt/spack/linux-neoverse_v2/compiler-wrapper-1.0-axxghzn7az3fq7jodan27v6axodl37qn/libexec/spack/gcc/g++   -O2 MPICH F77:          /iopsstor/scratch/cscs/mcopik/xaas-containers-artifact/dependencies/spack/opt/spack/linux-neoverse_v2/compiler-wrapper-1.0-axxghzn7az3fq7jodan27v6axodl37qn/libexec/spack/gcc/gfortran   -O2 MPICH FC:           /iopsstor/scratch/cscs/mcopik/xaas-containers-artifact/dependencies/spack/opt/spack/linux-neoverse_v2/compiler-wrapper-1.0-axxghzn7az3fq7jodan27v6axodl37qn/libexec/spack/gcc/gfortran   -O2 MPICH features:     threadcomm 
+OpenMP support:      enabled (GMX_OPENMP_MAX_THREADS = 128)
+GPU support:         CUDA
+NBNxM GPU setup:     super-cluster 2x2x2 / cluster 8
+SIMD instructions:   ARM_SVE
+CPU FFT library:     fftw-3.3.10-neon
+GPU FFT library:     cuFFT
+Multi-GPU FFT:       none
+TNG support:         enabled
+Hwloc support:       hwloc-2.11.1
+Tracing support:     disabled
+C compiler:          /iopsstor/scratch/cscs/mcopik/xaas-containers-artifact/dependencies/spack/opt/spack/linux-neoverse_v2/compiler-wrapper-1.0-axxghzn7az3fq7jodan27v6axodl37qn/libexec/spack/gcc/gcc GNU 13.3.0
+C compiler flags:    -fexcess-precision=fast -funroll-all-loops -msve-vector-bits=128 -Wno-missing-field-initializers -O3 -DNDEBUG
+C++ compiler:        /iopsstor/scratch/cscs/mcopik/xaas-containers-artifact/dependencies/spack/opt/spack/linux-neoverse_v2/compiler-wrapper-1.0-axxghzn7az3fq7jodan27v6axodl37qn/libexec/spack/gcc/g++ GNU 13.3.0
+C++ compiler flags:  -fexcess-precision=fast -funroll-all-loops -msve-vector-bits=128 -Wno-missing-field-initializers -Wno-cast-function-type-strict SHELL:-fopenmp -O3 -DNDEBUG
+BLAS library:        External - user-supplied
+LAPACK library:      External - user-supplied
+CUDA compiler:       /iopsstor/scratch/cscs/mcopik/xaas-containers-artifact/dependencies/spack/opt/spack/linux-neoverse_v2/cuda-12.8.0-ja274yqmm3wv5ndtoh4punnf5iy7s752/bin/nvcc nvcc: NVIDIA (R) Cuda compiler driver;Copyright (c) 2005-2025 NVIDIA Corporation;Built on Wed_Jan_15_19:21:50_PST_2025;Cuda compilation tools, release 12.8, V12.8.61;Build cuda_12.8.r12.8/compiler.35404655_0
+CUDA compiler flags:-std=c++17;--generate-code=arch=compute_50,code=sm_50;--generate-code=arch=compute_52,code=sm_52;--generate-code=arch=compute_60,code=sm_60;--generate-code=arch=compute_61,code=sm_61;--generate-code=arch=compute_70,code=sm_70;--generate-code=arch=compute_75,code=sm_75;--generate-code=arch=compute_80,code=sm_80;--generate-code=arch=compute_86,code=sm_86;--generate-code=arch=compute_89,code=sm_89;--generate-code=arch=compute_90,code=sm_90;-Wno-deprecated-gpu-targets;--generate-code=arch=compute_53,code=sm_53;--generate-code=arch=compute_80,code=sm_80;-use_fast_math;-Xptxas;-warn-double-usage;-Xptxas;-Werror;-D_FORCE_INLINES;-Xcompiler;-fopenmp;-fexcess-precision=fast -funroll-all-loops -msve-vector-bits=128 -Wno-missing-field-initializers -Wno-cast-function-type-strict SHELL:-fopenmp -O3 -DNDEBUG
+CUDA driver:         12.40
+CUDA runtime:        12.80
+
+Starting run 1...
+Warm-up run 1 completed. Deleting files...
+Starting run 2...
+Warm-up run 2 completed. Deleting files...
+Starting run 3...
+Benchmark run 3 completed. Results saved.
+Starting run 4...
+Benchmark run 4 completed. Results saved.
+Starting run 5...
+Benchmark run 5 completed. Results saved.
+Starting run 6...
+Benchmark run 6 completed. Results saved.
+Starting run 7...
+Benchmark run 7 completed. Results saved.
+Starting run 8...
+Benchmark run 8 completed. Results saved.
+Starting run 9...
+Benchmark run 9 completed. Results saved.
+Starting run 10...
+Benchmark run 10 completed. Results saved.
+Starting run 11...
+Benchmark run 11 completed. Results saved.
+Starting run 12...
+Benchmark run 12 completed. Results saved.
+Starting run 13...
+Benchmark run 13 completed. Results saved.
+Starting run 14...
+Benchmark run 14 completed. Results saved.
+Starting run 15...
+Benchmark run 15 completed. Results saved.
+Starting run 16...
+Benchmark run 16 completed. Results saved.
+Starting run 17...
+Benchmark run 17 completed. Results saved.
+Starting run 18...
+Benchmark run 18 completed. Results saved.
+Starting run 19...
+Benchmark run 19 completed. Results saved.
+Starting run 20...
+Benchmark run 20 completed. Results saved.
+Starting run 21...
+Benchmark run 21 completed. Results saved.
+Starting run 22...
+Benchmark run 22 completed. Results saved.
+Starting run 23...
+Benchmark run 23 completed. Results saved.
+Starting run 24...
+Benchmark run 24 completed. Results saved.
+Starting run 25...
+Benchmark run 25 completed. Results saved.
+Starting run 26...
+Benchmark run 26 completed. Results saved.
+Starting run 27...
+Benchmark run 27 completed. Results saved.
+Starting run 28...
+Benchmark run 28 completed. Results saved.
+Starting run 29...
+Benchmark run 29 completed. Results saved.
+Starting run 30...
+Benchmark run 30 completed. Results saved.
+Starting run 31...
+Benchmark run 31 completed. Results saved.
+Starting run 32...
+Benchmark run 32 completed. Results saved.
+All benchmarking runs completed.

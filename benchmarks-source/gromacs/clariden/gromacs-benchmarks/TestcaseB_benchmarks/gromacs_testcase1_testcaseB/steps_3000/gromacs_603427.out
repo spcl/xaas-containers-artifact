@@ -1,0 +1,154 @@
+GROMACS configuration
+	linux-vdso.so.1 (0x0000400016e20000)
+	libgromacs_mpi.so.10 => /iopsstor/scratch/cscs/mcopik/xaas-containers-artifact/benchmarks-source/gromacs/clariden/build-scripts/testcase1/install/bin/../lib64/libgromacs_mpi.so.10 (0x0000400016e30000)
+	libmpi_gnu_123.so.12 => /user-environment/linux-sles15-neoverse_v2/gcc-13.3.0/cray-mpich-8.1.30-wb5peugemrg2ebx7psp2iz2abmqy3rgz/lib/libmpi_gnu_123.so.12 (0x000040001d390000)
+	libmpi_gtl_cuda.so.0 => /user-environment/linux-sles15-neoverse_v2/gcc-13.3.0/cray-gtl-8.1.30-yjzx5mja37woqidkb7lj6lpbu3omqrsr/lib/libmpi_gtl_cuda.so.0 (0x000040001f770000)
+	libm.so.6 => /lib64/libm.so.6 (0x000040001f820000)
+	libgomp.so.1 => /user-environment/linux-sles15-neoverse_v2/gcc-12.3.0/gcc-13.3.0-rnbf75vyhchi5reyzoadq2jgz4tmue5t/lib64/libgomp.so.1 (0x000040001f8e0000)
+	libpthread.so.0 => /lib64/libpthread.so.0 (0x000040001f960000)
+	libstdc++.so.6 => /user-environment/linux-sles15-neoverse_v2/gcc-12.3.0/gcc-13.3.0-rnbf75vyhchi5reyzoadq2jgz4tmue5t/lib64/libstdc++.so.6 (0x000040001f9a0000)
+	libgcc_s.so.1 => /user-environment/linux-sles15-neoverse_v2/gcc-12.3.0/gcc-13.3.0-rnbf75vyhchi5reyzoadq2jgz4tmue5t/lib64/libgcc_s.so.1 (0x000040001fc20000)
+	libc.so.6 => /lib64/libc.so.6 (0x000040001fc60000)
+	libcufft.so.11 => /user-environment/linux-sles15-neoverse_v2/gcc-13.3.0/cuda-12.6.2-csv6jo3czkfdk46ep7pmm6ipo3yjlbjj/lib64/libcufft.so.11 (0x000040001fdf0000)
+	librt.so.1 => /lib64/librt.so.1 (0x0000400030910000)
+	libopenblas.so.0 => /user-environment/env/default/lib/libopenblas.so.0 (0x0000400030940000)
+	libdl.so.2 => /lib64/libdl.so.2 (0x0000400031da0000)
+	libmuparser.so.2 => /iopsstor/scratch/cscs/mcopik/xaas-containers-artifact/benchmarks-source/gromacs/clariden/build-scripts/testcase1/install/bin/../lib64/../lib64/libmuparser.so.2 (0x0000400031dd0000)
+	libxpmem.so => /usr/lib64/libxpmem.so (0x0000400031e40000)
+	libfabric.so.1 => /opt/cray/libfabric/1.15.2.0/lib64/libfabric.so.1 (0x0000400031e70000)
+	libatomic.so.1 => /user-environment/linux-sles15-neoverse_v2/gcc-12.3.0/gcc-13.3.0-rnbf75vyhchi5reyzoadq2jgz4tmue5t/lib64/libatomic.so.1 (0x0000400031f60000)
+	libpmi.so.0 => /user-environment/linux-sles15-neoverse_v2/gcc-13.3.0/cray-pmi-6.1.15-mkvhzuzxulotaujnim7byxgep422chvx/lib/libpmi.so.0 (0x0000400031f90000)
+	libpmi2.so.0 => /user-environment/linux-sles15-neoverse_v2/gcc-13.3.0/cray-pmi-6.1.15-mkvhzuzxulotaujnim7byxgep422chvx/lib/libpmi2.so.0 (0x0000400031fe0000)
+	libgfortran.so.5 => /user-environment/linux-sles15-neoverse_v2/gcc-12.3.0/gcc-13.3.0-rnbf75vyhchi5reyzoadq2jgz4tmue5t/lib64/libgfortran.so.5 (0x0000400032030000)
+	libcudart.so.12 => /user-environment/linux-sles15-neoverse_v2/gcc-13.3.0/cuda-12.6.2-csv6jo3czkfdk46ep7pmm6ipo3yjlbjj/lib64/libcudart.so.12 (0x00004000323c0000)
+	libcuda.so.1 => /usr/lib64/libcuda.so.1 (0x0000400032480000)
+	/lib/ld-linux-aarch64.so.1 (0x0000400016db0000)
+	libcxi.so.1 => /usr/lib64/libcxi.so.1 (0x0000400033fe0000)
+	libcurl.so.4 => /usr/lib64/libcurl.so.4 (0x0000400034020000)
+	libjson-c.so.3 => /usr/lib64/libjson-c.so.3 (0x00004000340f0000)
+	libpals.so.0 => /user-environment/linux-sles15-neoverse_v2/gcc-13.3.0/cray-pals-1.3.2-6v7dzs4kngcojqujqshwi5qpx2u62p7j/lib/libpals.so.0 (0x0000400034120000)
+	libnl-3.so.200 => /usr/lib64/libnl-3.so.200 (0x0000400034160000)
+	libnghttp2.so.14 => /usr/lib64/libnghttp2.so.14 (0x00004000341b0000)
+	libidn2.so.0 => /usr/lib64/libidn2.so.0 (0x0000400034200000)
+	libssh.so.4 => /usr/lib64/libssh.so.4 (0x0000400034240000)
+	libpsl.so.5 => /usr/lib64/libpsl.so.5 (0x00004000342f0000)
+	libssl.so.1.1 => /usr/lib64/libssl.so.1.1 (0x0000400034330000)
+	libcrypto.so.1.1 => /usr/lib64/libcrypto.so.1.1 (0x00004000343e0000)
+	libgssapi_krb5.so.2 => /usr/lib64/libgssapi_krb5.so.2 (0x00004000346c0000)
+	libldap_r-2.4.so.2 => /usr/lib64/libldap_r-2.4.so.2 (0x0000400034730000)
+	liblber-2.4.so.2 => /usr/lib64/liblber-2.4.so.2 (0x00004000347b0000)
+	libzstd.so.1 => /usr/lib64/libzstd.so.1 (0x00004000347e0000)
+	libbrotlidec.so.1 => /usr/lib64/libbrotlidec.so.1 (0x0000400034910000)
+	libz.so.1 => /user-environment/linux-sles15-neoverse_v2/gcc-13.3.0/zlib-ng-2.2.1-62q3zt6esn37sboyftdzpli5ywwmsvwc/lib/libz.so.1 (0x0000400034940000)
+	libjansson.so.4 => /usr/lib64/libjansson.so.4 (0x0000400034980000)
+	libunistring.so.2 => /usr/lib64/libunistring.so.2 (0x00004000349b0000)
+	libjitterentropy.so.3 => /usr/lib64/libjitterentropy.so.3 (0x0000400034b50000)
+	libkrb5.so.3 => /usr/lib64/libkrb5.so.3 (0x0000400034b80000)
+	libk5crypto.so.3 => /usr/lib64/libk5crypto.so.3 (0x0000400034c80000)
+	libcom_err.so.2 => /lib64/libcom_err.so.2 (0x0000400034cc0000)
+	libkrb5support.so.0 => /usr/lib64/libkrb5support.so.0 (0x0000400034cf0000)
+	libresolv.so.2 => /lib64/libresolv.so.2 (0x0000400034d20000)
+	libsasl2.so.3 => /usr/lib64/libsasl2.so.3 (0x0000400034d60000)
+	libbrotlicommon.so.1 => /usr/lib64/libbrotlicommon.so.1 (0x0000400034da0000)
+	libkeyutils.so.1 => /usr/lib64/libkeyutils.so.1 (0x0000400034de0000)
+	libselinux.so.1 => /lib64/libselinux.so.1 (0x0000400034e10000)
+	libpcre.so.1 => /usr/lib64/libpcre.so.1 (0x0000400034e60000)
+                       :-) GROMACS - gmx_mpi, 2025.0 (-:
+
+Executable:   /iopsstor/scratch/cscs/mcopik/xaas-containers-artifact/benchmarks-source/gromacs/clariden/build-scripts/testcase1/install/bin/gmx_mpi
+Data prefix:  /iopsstor/scratch/cscs/mcopik/xaas-containers-artifact/benchmarks-source/gromacs/clariden/build-scripts/testcase1/install
+Working dir:  /iopsstor/scratch/cscs/mcopik/xaas-containers-artifact/benchmarks-source/gromacs/clariden
+Command line:
+  gmx_mpi --version
+
+GROMACS version:     2025.0
+Precision:           mixed
+Memory model:        64 bit
+MPI library:         MPI
+MPI library version: MPI VERSION    : CRAY MPICH version 8.1.30.9 (ANL base 3.4a2) MPI BUILD INFO : Sat Jun 01  0:08 2024 (git hash 69863f7-dirty) 
+OpenMP support:      enabled (GMX_OPENMP_MAX_THREADS = 128)
+GPU support:         CUDA
+NBNxM GPU setup:     super-cluster 2x2x2 / cluster 8 (cluster-pair splitting on)
+SIMD instructions:   ARM_SVE
+CPU FFT library:     fftw-3.3.10
+GPU FFT library:     cuFFT
+Multi-GPU FFT:       none
+TNG support:         enabled
+Hwloc support:       disabled
+Tracing support:     disabled
+C compiler:          /user-environment/linux-sles15-neoverse_v2/gcc-12.3.0/gcc-13.3.0-rnbf75vyhchi5reyzoadq2jgz4tmue5t/bin/gcc GNU 13.3.0
+C compiler flags:    -fexcess-precision=fast -funroll-all-loops -march=armv8.2-a+sve -msve-vector-bits=128 -Wno-missing-field-initializers -O3 -DNDEBUG
+C++ compiler:        /user-environment/linux-sles15-neoverse_v2/gcc-12.3.0/gcc-13.3.0-rnbf75vyhchi5reyzoadq2jgz4tmue5t/bin/c++ GNU 13.3.0
+C++ compiler flags:  -fexcess-precision=fast -funroll-all-loops -march=armv8.2-a+sve -msve-vector-bits=128 -Wno-missing-field-initializers -Wno-old-style-cast -Wno-cast-qual -Wno-suggest-override -Wno-suggest-destructor-override -Wno-zero-as-null-pointer-constant -Wno-cast-function-type-strict SHELL:-fopenmp -O3 -DNDEBUG
+BLAS library:        External - detected on the system
+LAPACK library:      External - detected on the system
+CUDA compiler:       /user-environment/linux-sles15-neoverse_v2/gcc-13.3.0/cuda-12.6.2-csv6jo3czkfdk46ep7pmm6ipo3yjlbjj/bin/nvcc nvcc: NVIDIA (R) Cuda compiler driver;Copyright (c) 2005-2024 NVIDIA Corporation;Built on Thu_Sep_12_02:27:38_PDT_2024;Cuda compilation tools, release 12.6, V12.6.77;Build cuda_12.6.r12.6/compiler.34841621_0
+CUDA compiler flags: -O3 -DNDEBUG
+CUDA driver:         12.40
+CUDA runtime:        12.60
+
+Starting run 1...
+Warm-up run 1 completed. Deleting files...
+Starting run 2...
+Warm-up run 2 completed. Deleting files...
+Starting run 3...
+Benchmark run 3 completed. Results saved.
+Starting run 4...
+Benchmark run 4 completed. Results saved.
+Starting run 5...
+Benchmark run 5 completed. Results saved.
+Starting run 6...
+Benchmark run 6 completed. Results saved.
+Starting run 7...
+Benchmark run 7 completed. Results saved.
+Starting run 8...
+Benchmark run 8 completed. Results saved.
+Starting run 9...
+Benchmark run 9 completed. Results saved.
+Starting run 10...
+Benchmark run 10 completed. Results saved.
+Starting run 11...
+Benchmark run 11 completed. Results saved.
+Starting run 12...
+Benchmark run 12 completed. Results saved.
+Starting run 13...
+Benchmark run 13 completed. Results saved.
+Starting run 14...
+Benchmark run 14 completed. Results saved.
+Starting run 15...
+Benchmark run 15 completed. Results saved.
+Starting run 16...
+Benchmark run 16 completed. Results saved.
+Starting run 17...
+Benchmark run 17 completed. Results saved.
+Starting run 18...
+Benchmark run 18 completed. Results saved.
+Starting run 19...
+Benchmark run 19 completed. Results saved.
+Starting run 20...
+Benchmark run 20 completed. Results saved.
+Starting run 21...
+Benchmark run 21 completed. Results saved.
+Starting run 22...
+Benchmark run 22 completed. Results saved.
+Starting run 23...
+Benchmark run 23 completed. Results saved.
+Starting run 24...
+Benchmark run 24 completed. Results saved.
+Starting run 25...
+Benchmark run 25 completed. Results saved.
+Starting run 26...
+Benchmark run 26 completed. Results saved.
+Starting run 27...
+Benchmark run 27 completed. Results saved.
+Starting run 28...
+Benchmark run 28 completed. Results saved.
+Starting run 29...
+Benchmark run 29 completed. Results saved.
+Starting run 30...
+Benchmark run 30 completed. Results saved.
+Starting run 31...
+Benchmark run 31 completed. Results saved.
+Starting run 32...
+Benchmark run 32 completed. Results saved.
+All benchmarking runs completed.
