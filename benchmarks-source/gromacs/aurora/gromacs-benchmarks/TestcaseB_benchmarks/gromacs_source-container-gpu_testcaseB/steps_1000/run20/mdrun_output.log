@@ -30,13 +30,13 @@ starting mdrun ''
 
 Writing final coordinates.
 
-NOTE: 15 % of the run time was spent in pair search,
+NOTE: 14 % of the run time was spent in pair search,
       you might want to increase nstlist (this has no effect on accuracy)
 
                Core t (s)   Wall t (s)        (%)
-       Time:     2988.089       28.733    10399.3
+       Time:     3034.097       29.176    10399.3
                  (ns/day)    (hour/ns)
-Performance:        6.020        3.987
+Performance:        5.929        4.048
 
-GROMACS reminds you: "Why add prime numbers? Prime numbers are made to be multiplied." (Lev Landau)
+GROMACS reminds you: "They Were So Quiet About It" (Pixies)
 

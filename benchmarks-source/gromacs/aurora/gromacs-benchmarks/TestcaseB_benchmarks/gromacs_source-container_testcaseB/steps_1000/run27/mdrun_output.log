@@ -25,13 +25,15 @@ starting mdrun ''
 
 Writing final coordinates.
 
+Back Off! I just backed up confout.gro to ./#confout.gro.15#
+
 NOTE: 19 % of the run time was spent in pair search,
       you might want to increase nstlist (this has no effect on accuracy)
 
                Core t (s)   Wall t (s)        (%)
-       Time:     5727.891       55.078    10399.6
+       Time:     5712.765       54.932    10399.7
                  (ns/day)    (hour/ns)
-Performance:        3.141        7.642
+Performance:        3.149        7.622
 
-GROMACS reminds you: "Academia is kind of like applied Marxism. The workers really do own the means of production." (Niklas Blomberg)
+GROMACS reminds you: "All I Ever Wanted Was Your Life" (Red Hot Chili Peppers)
 

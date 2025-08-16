@@ -30,13 +30,13 @@ starting mdrun ''
 
 Writing final coordinates.
 
-NOTE: 15 % of the run time was spent in pair search,
+NOTE: 13 % of the run time was spent in pair search,
       you might want to increase nstlist (this has no effect on accuracy)
 
                Core t (s)   Wall t (s)        (%)
-       Time:     2938.664       28.258    10399.3
+       Time:     2929.599       28.171    10399.2
                  (ns/day)    (hour/ns)
-Performance:        6.121        3.921
+Performance:        6.140        3.909
 
-GROMACS reminds you: "Blessed is He Who In the Name Of Charity and Good Will Shepherds the Weak Through the Valley Of Darkness, For He is Truly His Brother's Keeper and the Finder Of Lost Children." (Pulp Fiction)
+GROMACS reminds you: "I don't know how many of you have ever met Dijkstra, but you probably know that arrogance in computer science is measured in nano-Dijkstras." (Alan Kay)
 

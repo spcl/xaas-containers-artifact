@@ -23,16 +23,15 @@ Using 104 OpenMP threads
 starting mdrun ''
 1000 steps,      2.0 ps.
 
-Back Off! I just backed up state_step1000.cpt to ./#state_step1000.cpt.1#
+Writing final coordinates.
 
--------------------------------------------------------
-Program:     gmx mdrun, version 2025.0
-Source file: src/gromacs/mdlib/mdoutf.cpp (line 495)
-Function:    void write_checkpoint(const char *, gmx_bool, FILE *, const t_commrec *, int *, int, IntegrationAlgorithm, int, gmx_bool, LambdaWeightCalculation, int64_t, double, t_state *, ObservablesHistory *, const gmx::MDModulesNotifiers &, gmx::WriteCheckpointDataHolder *, bool, MPI_Comm)
+NOTE: 19 % of the run time was spent in pair search,
+      you might want to increase nstlist (this has no effect on accuracy)
 
-System I/O error:
-Cannot rename checkpoint file; maybe you are out of disk space?
+               Core t (s)   Wall t (s)        (%)
+       Time:     5690.970       54.723    10399.6
+                 (ns/day)    (hour/ns)
+Performance:        3.161        7.593
 
-For more information and tips for troubleshooting, please check the GROMACS
-website at https://manual.gromacs.org/current/user-guide/run-time-errors.html
--------------------------------------------------------
+GROMACS reminds you: "It Costs Too Much If It Costs a Lot" (Magnapop)
+

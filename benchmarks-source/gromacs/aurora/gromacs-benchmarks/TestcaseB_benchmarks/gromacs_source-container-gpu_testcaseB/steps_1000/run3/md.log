@@ -47,7 +47,7 @@ GROMACS:      gmx mdrun, version 2025.0
 Executable:   /usr/local/gromacs/bin/gmx
 Data prefix:  /usr/local/gromacs
 Working dir:  /home/alokvk2
-Process ID:   16512
+Process ID:   6272
 Command line:
   gmx mdrun -s /home/alokvk2/xaas-containers-artifact/data/gromacs/GROMACS_TestCaseB/lignocellulose.tpr -ntomp 104 -ntmpi 1 -nsteps 1000
 
@@ -57,7 +57,7 @@ Memory model:        64 bit
 MPI library:         thread_mpi
 OpenMP support:      enabled (GMX_OPENMP_MAX_THREADS = 128)
 GPU support:         SYCL (oneAPI DPC++)
-NBNxM GPU setup:     super-cluster 1x2x2 / cluster 8 (cluster-pair splitting on)
+NBNxM GPU setup:     super-cluster 2x2x2 / cluster 4 (cluster-pair splitting on)
 SIMD instructions:   AVX_512
 CPU FFT library:     Intel MKL version 2024.0.2 Build 20240722
 GPU FFT library:     Intel MKL version 2024.0.2 Build 20240722
@@ -66,8 +66,8 @@ RDTSCP usage:        enabled
 TNG support:         enabled
 Hwloc support:       disabled
 Tracing support:     disabled
-C compiler:          /usr/bin/cc GNU 11.4.0
-C compiler flags:    -fexcess-precision=fast -funroll-all-loops -march=skylake-avx512 -Wno-missing-field-initializers -O3 -DNDEBUG
+C compiler:          /opt/intel/oneapi/compiler/2024.2/bin/icx IntelLLVM 2024.2.1
+C compiler flags:    -march=skylake-avx512 -Wno-missing-field-initializers -O3 -DNDEBUG
 C++ compiler:        /opt/intel/oneapi/compiler/2024.2/bin/icpx IntelLLVM 2024.2.1
 C++ compiler flags:  -march=skylake-avx512 -Wno-reserved-identifier -Wno-missing-field-initializers -Weverything -Wno-c++98-compat -Wno-c++98-compat-pedantic -Wno-source-uses-openmp -Wno-c++17-extensions -Wno-documentation-unknown-command -Wno-covered-switch-default -Wno-switch-enum -Wno-switch-default -Wno-extra-semi-stmt -Wno-weak-vtables -Wno-shadow -Wno-padded -Wno-reserved-id-macro -Wno-double-promotion -Wno-exit-time-destructors -Wno-global-constructors -Wno-documentation -Wno-format-nonliteral -Wno-used-but-marked-unused -Wno-float-equal -Wno-cuda-compat -Wno-conditional-uninitialized -Wno-conversion -Wno-disabled-macro-expansion -Wno-unused-macros -Wno-unsafe-buffer-usage -Wno-cast-function-type-strict SHELL:-fiopenmp -O3 -DNDEBUG
 BLAS library:        Intel MKL version 2024.0.2 Build 20240722
@@ -77,8 +77,8 @@ SYCL compiler flags: -fsycl -fsycl-device-code-split=per_kernel -ffast-math -Wno
 SYCL linker flags:   -fsycl -fsycl-device-code-split=per_kernel -ftarget-register-alloc-mode=pvc:small
 
 
-Running on 1 node with total 102 cores, 204 processing units, 12 compatible GPUs
-Hardware detected on host x4305c7s0b0n0:
+Running on 1 node with total 102 cores, 204 processing units, 0 compatible GPUs
+Hardware detected on host x4716c2s3b0n0:
   CPU info:
     Vendor: Intel
     Brand:  Intel(R) Xeon(R) CPU Max 9470C
@@ -93,18 +93,18 @@ Hardware detected on host x4305c7s0b0n0:
     CPU limit set by OS: 208   Recommended max number of threads: 208
   GPU info:
     Number of GPUs detected: 12
-    #0: name: Intel(R) Data Center GPU Max 1550, architecture 12.60.6, vendor: Intel(R) Corporation, device version: 1.3, driver version: 1.3.27642, status: compatible
-    #1: name: Intel(R) Data Center GPU Max 1550, architecture 12.60.6, vendor: Intel(R) Corporation, device version: 1.3, driver version: 1.3.27642, status: compatible
-    #2: name: Intel(R) Data Center GPU Max 1550, architecture 12.60.6, vendor: Intel(R) Corporation, device version: 1.3, driver version: 1.3.27642, status: compatible
-    #3: name: Intel(R) Data Center GPU Max 1550, architecture 12.60.6, vendor: Intel(R) Corporation, device version: 1.3, driver version: 1.3.27642, status: compatible
-    #4: name: Intel(R) Data Center GPU Max 1550, architecture 12.60.6, vendor: Intel(R) Corporation, device version: 1.3, driver version: 1.3.27642, status: compatible
-    #5: name: Intel(R) Data Center GPU Max 1550, architecture 12.60.6, vendor: Intel(R) Corporation, device version: 1.3, driver version: 1.3.27642, status: compatible
-    #6: name: Intel(R) Data Center GPU Max 1550, architecture 12.60.6, vendor: Intel(R) Corporation, device version: 1.3, driver version: 1.3.27642, status: compatible
-    #7: name: Intel(R) Data Center GPU Max 1550, architecture 12.60.6, vendor: Intel(R) Corporation, device version: 1.3, driver version: 1.3.27642, status: compatible
-    #8: name: Intel(R) Data Center GPU Max 1550, architecture 12.60.6, vendor: Intel(R) Corporation, device version: 1.3, driver version: 1.3.27642, status: compatible
-    #9: name: Intel(R) Data Center GPU Max 1550, architecture 12.60.6, vendor: Intel(R) Corporation, device version: 1.3, driver version: 1.3.27642, status: compatible
-    #10: name: Intel(R) Data Center GPU Max 1550, architecture 12.60.6, vendor: Intel(R) Corporation, device version: 1.3, driver version: 1.3.27642, status: compatible
-    #11: name: Intel(R) Data Center GPU Max 1550, architecture 12.60.6, vendor: Intel(R) Corporation, device version: 1.3, driver version: 1.3.27642, status: compatible
+    #0: name: Intel(R) Data Center GPU Max 1550, architecture 12.60.6, vendor: Intel(R) Corporation, device version: 1.3, driver version: 1.3.27642, status: incompatible (please recompile with correct GMX_GPU_NB_CLUSTER_SIZE of 4)
+    #1: name: Intel(R) Data Center GPU Max 1550, architecture 12.60.6, vendor: Intel(R) Corporation, device version: 1.3, driver version: 1.3.27642, status: incompatible (please recompile with correct GMX_GPU_NB_CLUSTER_SIZE of 4)
+    #2: name: Intel(R) Data Center GPU Max 1550, architecture 12.60.6, vendor: Intel(R) Corporation, device version: 1.3, driver version: 1.3.27642, status: incompatible (please recompile with correct GMX_GPU_NB_CLUSTER_SIZE of 4)
+    #3: name: Intel(R) Data Center GPU Max 1550, architecture 12.60.6, vendor: Intel(R) Corporation, device version: 1.3, driver version: 1.3.27642, status: incompatible (please recompile with correct GMX_GPU_NB_CLUSTER_SIZE of 4)
+    #4: name: Intel(R) Data Center GPU Max 1550, architecture 12.60.6, vendor: Intel(R) Corporation, device version: 1.3, driver version: 1.3.27642, status: incompatible (please recompile with correct GMX_GPU_NB_CLUSTER_SIZE of 4)
+    #5: name: Intel(R) Data Center GPU Max 1550, architecture 12.60.6, vendor: Intel(R) Corporation, device version: 1.3, driver version: 1.3.27642, status: incompatible (please recompile with correct GMX_GPU_NB_CLUSTER_SIZE of 4)
+    #6: name: Intel(R) Data Center GPU Max 1550, architecture 12.60.6, vendor: Intel(R) Corporation, device version: 1.3, driver version: 1.3.27642, status: incompatible (please recompile with correct GMX_GPU_NB_CLUSTER_SIZE of 4)
+    #7: name: Intel(R) Data Center GPU Max 1550, architecture 12.60.6, vendor: Intel(R) Corporation, device version: 1.3, driver version: 1.3.27642, status: incompatible (please recompile with correct GMX_GPU_NB_CLUSTER_SIZE of 4)
+    #8: name: Intel(R) Data Center GPU Max 1550, architecture 12.60.6, vendor: Intel(R) Corporation, device version: 1.3, driver version: 1.3.27642, status: incompatible (please recompile with correct GMX_GPU_NB_CLUSTER_SIZE of 4)
+    #9: name: Intel(R) Data Center GPU Max 1550, architecture 12.60.6, vendor: Intel(R) Corporation, device version: 1.3, driver version: 1.3.27642, status: incompatible (please recompile with correct GMX_GPU_NB_CLUSTER_SIZE of 4)
+    #10: name: Intel(R) Data Center GPU Max 1550, architecture 12.60.6, vendor: Intel(R) Corporation, device version: 1.3, driver version: 1.3.27642, status: incompatible (please recompile with correct GMX_GPU_NB_CLUSTER_SIZE of 4)
+    #11: name: Intel(R) Data Center GPU Max 1550, architecture 12.60.6, vendor: Intel(R) Corporation, device version: 1.3, driver version: 1.3.27642, status: incompatible (please recompile with correct GMX_GPU_NB_CLUSTER_SIZE of 4)
 
 
 ++++ PLEASE READ AND CITE THE FOLLOWING REFERENCE ++++
@@ -346,7 +346,7 @@ The -nsteps functionality is deprecated, and may be removed in a future version.
 
 Overriding nsteps with value passed on the command line: 1000 steps, 2 ps
 
-Changing rlist from 1.263 to 1.262 for non-bonded 8x8 atom kernels
+Changing rlist from 1.263 to 1.262 for non-bonded 4x8 atom kernels
 
 Changing nstlist from 10 to 25, rlist from 1.262 to 1.407
 
@@ -355,11 +355,6 @@ Update groups can not be used for this system because there are three or more co
 
 Local state does not use filler particles
 
-1 GPU selected for this run.
-Mapping of GPU IDs to the 1 GPU task in the 1 rank on this node:
-  PP:0
-PP tasks will do (non-perturbed) short-ranged interactions on the GPU
-PP task will update and constrain coordinates on the GPU
 Using 1 MPI thread
 
 Non-default thread affinity set, disabling internal thread affinity
@@ -379,16 +374,14 @@ Generated table with 1203 data points for 1-4 LJ12.
 Tabscale = 500 points/nm
 
 
-Using GPU 8x4 nonbonded short-range kernels
+Using SIMD2xMM 4x8 nonbonded short-range kernels
 
-NBNxM GPU setup: super-cluster 1x2x2
-
-Using a dual 8x4 pair-list setup updated with dynamic, rolling pruning:
+Using a dual 4x8 pair-list setup updated with dynamic pruning:
   outer list: updated every 25 steps, buffer 0.207 nm, rlist 1.407 nm
-  inner list: updated every  4 steps, buffer 0.020 nm, rlist 1.220 nm
+  inner list: updated every  5 steps, buffer 0.019 nm, rlist 1.219 nm
 At tolerance 0.005 kJ/mol/ps per atom, equivalent classical 1x1 list would be:
   outer list: updated every 25 steps, buffer 0.269 nm, rlist 1.469 nm
-  inner list: updated every  4 steps, buffer 0.033 nm, rlist 1.233 nm
+  inner list: updated every  5 steps, buffer 0.032 nm, rlist 1.232 nm
 
 The average pressure is off by at most 0.00 bar due to missing LJ interactions
 
@@ -422,13 +415,11 @@ DOI: 10.1063/1.2408420
 -------- -------- --- Thank You --- -------- --------
 
 There are: 3316463 Atoms
-
-Updating coordinates and applying constraints on the GPU.
 Center of mass motion removal mode is Linear
 We have the following groups for center of mass motion removal:
   0:  System
 
-Started mdrun on rank 0 Sat Aug  2 13:12:19 2025
+Started mdrun on rank 0 Fri Aug 15 23:15:13 2025
 
            Step           Time
               0        0.00000
@@ -437,27 +428,27 @@ Started mdrun on rank 0 Sat Aug  2 13:12:19 2025
            Bond            U-B    Proper Dih.          LJ-14     Coulomb-14
     1.61528e+05    1.39988e+06   -4.06956e+04    3.43319e+05    4.59320e+06
         LJ (SR)   Coulomb (SR)      Potential    Kinetic En.   Total Energy
-    7.73093e+06   -5.21141e+07   -3.79260e+07    8.76610e+06   -2.91599e+07
+    7.73071e+06   -5.21080e+07   -3.79201e+07    8.76610e+06   -2.91540e+07
   Conserved En.    Temperature Pressure (bar)   Constr. rmsd
-   -2.91578e+07    3.12789e+02    4.43250e+03    0.00000e+00
+   -2.91519e+07    3.12789e+02    4.43246e+03    1.18506e-05
 
            Step           Time
            1000        2.00000
 
-Writing checkpoint, step 1000 at Sat Aug  2 13:12:43 2025
+Writing checkpoint, step 1000 at Fri Aug 15 23:16:04 2025
 
 
    Energies (kJ/mol)
            Bond            U-B    Proper Dih.          LJ-14     Coulomb-14
-    2.82806e+05    6.56891e+05    2.98987e+04    3.55038e+05    4.60861e+06
+    2.84348e+05    6.55995e+05    3.09227e+04    3.54542e+05    4.60791e+06
         LJ (SR)   Coulomb (SR)      Potential    Kinetic En.   Total Energy
-    6.40531e+06   -5.15567e+07   -3.92181e+07    8.42050e+06   -3.07976e+07
+    6.39116e+06   -5.15311e+07   -3.92063e+07    8.41945e+06   -3.07868e+07
   Conserved En.    Temperature Pressure (bar)   Constr. rmsd
-   -2.93807e+07    3.00457e+02    2.27143e+02    0.00000e+00
+   -2.93730e+07    3.00420e+02    2.17371e+02    1.23399e-05
 
 
 Energy conservation over simulation part #1 of length 2 ps, time 0 to 2 ps
-  Conserved energy drift: -3.36e-02 kJ/mol/ps per atom
+  Conserved energy drift: -3.33e-02 kJ/mol/ps per atom
 
 
 	<======  ###############  ==>
@@ -468,24 +459,24 @@ Energy conservation over simulation part #1 of length 2 ps, time 0 to 2 ps
 
    Energies (kJ/mol)
            Bond            U-B    Proper Dih.          LJ-14     Coulomb-14
-    2.79867e+05    7.49455e+05    4.08017e+04    3.54464e+05    4.59720e+06
+    2.79709e+05    7.49515e+05    4.11058e+04    3.54545e+05    4.59681e+06
         LJ (SR)   Coulomb (SR)      Potential    Kinetic En.   Total Energy
-    6.47975e+06   -5.14688e+07   -3.89673e+07    8.48548e+06   -3.04818e+07
+    6.47639e+06   -5.14576e+07   -3.89595e+07    8.48563e+06   -3.04739e+07
   Conserved En.    Temperature Pressure (bar)   Constr. rmsd
-   -2.93694e+07    3.02776e+02    4.38305e+02    0.00000e+00
+   -2.93625e+07    3.02781e+02    4.36621e+02    0.00000e+00
 
           Box-X          Box-Y          Box-Z
-    9.36309e+01    2.04275e+01    1.76908e+01
+    9.36319e+01    2.04278e+01    1.76910e+01
 
    Total Virial (kJ/mol)
-    2.02224e+06   -1.16778e+05    3.96656e+04
-   -1.16782e+05    2.53203e+06   -5.36437e+04
-    3.96771e+04   -5.36350e+04    2.59151e+06
+    2.02539e+06   -1.13681e+05    4.18385e+04
+   -1.14280e+05    2.53118e+06   -5.19784e+04
+    4.16202e+04   -5.19373e+04    2.59450e+06
 
    Pressure (bar)
-    8.05020e+02    1.13515e+02   -2.54450e+01
-    1.13519e+02    2.66339e+02    5.04320e+01
-   -2.54563e+01    5.04235e+01    2.43558e+02
+    8.01969e+02    1.11123e+02   -2.87647e+01
+    1.11711e+02    2.65857e+02    4.81044e+01
+   -2.85506e+01    4.80641e+01    2.42035e+02
 
 
 	M E G A - F L O P S   A C C O U N T I N G
@@ -497,19 +488,22 @@ Energy conservation over simulation part #1 of length 2 ps, time 0 to 2 ps
 
  Computing:                               M-Number         M-Flops  % Flops
 -----------------------------------------------------------------------------
- Pair Search distance check           26303.251888      236729.267     2.3
- NxN RF Elec. + LJ [F]               245498.848192     9328956.231    92.4
- NxN RF Elec. + LJ [V&F]               2742.577600      148099.190     1.5
- 1,4 nonbonded interactions             560.087528       50407.878     0.5
- Shift-X                                135.974983         815.850     0.0
- Bonds                                  117.765648        6948.173     0.1
- Propers                                993.964972      227617.979     2.3
- Virial                                 334.967308        6029.412     0.1
- Stop-CM                                 36.481093         364.811     0.0
- Calc-Ekin                              669.925526       18087.989     0.2
- Urey-Bradley                           383.178796       70121.720     0.7
+ Pair Search distance check           94978.932584      854810.393    -2.8
+ 1,4 nonbonded interactions             560.087528       50407.878    -0.2
+ Shift-X                                135.974983         815.850    -0.0
+ Bonds                                  117.765648        6948.173    -0.0
+ Propers                                993.964972      227617.979    -0.7
+ Virial                                 334.967308        6029.412    -0.0
+ Stop-CM                                 36.481093         364.811    -0.0
+ Calc-Ekin                              669.925526       18087.989    -0.1
+ Lincs                                   95.311216        5718.673    -0.0
+ Lincs-Mat                              221.597376         886.390    -0.0
+ Constraint-V                          3306.490187       29758.412    -0.1
+ Constraint-Vir                         324.005071        7776.122    -0.0
+ Settle                                1038.622585      384290.356    -1.2
+ Urey-Bradley                           383.178796       70121.720    -0.2
 -----------------------------------------------------------------------------
- Total                                                10094178.499   100.0
+ Total                                                 1663634.156    -5.4
 -----------------------------------------------------------------------------
 
 
@@ -520,26 +514,24 @@ On 1 MPI rank, each using 104 OpenMP threads
  Activity:              Num   Num      Call    Wall time         Giga-Cycles
                         Ranks Threads  Count      (s)         total sum    %
 --------------------------------------------------------------------------------
- Neighbor search           1  104         41       4.240        881.949  14.8
- Launch PP GPU ops.        1  104       1961       3.325        691.693  11.6
- Force                     1  104       1001       0.851        177.014   3.0
- Wait GPU NB local         1  104       1001       2.725        566.833   9.5
- Wait GPU state copy       1  104       2223      13.353       2777.501  46.7
- NB X/F buffer ops.        1  104        101       0.071         14.818   0.2
- Write traj.               1  104          1       3.861        803.167  13.5
- GPU constr. setup         1  104          1       0.021          4.436   0.1
- Kinetic energy            1  104        201       0.082         17.116   0.3
- Rest                                              0.078         16.176   0.3
+ Neighbor search           1  104         41      10.411       2165.646  19.0
+ Force                     1  104       1001      36.076       7504.176  65.7
+ NB X/F buffer ops.        1  104       1961       2.263        470.626   4.1
+ Write traj.               1  104          1       3.842        799.189   7.0
+ Update                    1  104       1001       1.101        229.027   2.0
+ Constraints               1  104       1001       0.677        140.875   1.2
+ Kinetic energy            1  104        201       0.039          8.035   0.1
+ Rest                                              0.490        101.929   0.9
 --------------------------------------------------------------------------------
- Total                                            28.608       5950.702 100.0
+ Total                                            54.899      11419.504 100.0
 --------------------------------------------------------------------------------
 
-NOTE: 15 % of the run time was spent in pair search,
+NOTE: 19 % of the run time was spent in pair search,
       you might want to increase nstlist (this has no effect on accuracy)
 
                Core t (s)   Wall t (s)        (%)
-       Time:     2974.990       28.608    10399.3
+       Time:     5709.277       54.899    10399.7
                  (ns/day)    (hour/ns)
-Performance:        6.046        3.969
-Finished mdrun on rank 0 Sat Aug  2 13:12:47 2025
+Performance:        3.151        7.617
+Finished mdrun on rank 0 Fri Aug 15 23:16:08 2025
 

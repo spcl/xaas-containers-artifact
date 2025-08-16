@@ -34,9 +34,9 @@ NOTE: 15 % of the run time was spent in pair search,
       you might want to increase nstlist (this has no effect on accuracy)
 
                Core t (s)   Wall t (s)        (%)
-       Time:     2941.458       28.285    10399.3
+       Time:     2996.005       28.810    10399.3
                  (ns/day)    (hour/ns)
-Performance:        6.115        3.925
+Performance:        6.004        3.997
 
-GROMACS reminds you: "In mathematics you don't understand things, you just get used to them" (John von Neumann)
+GROMACS reminds you: "There's so many shades of black" (The Raconteurs)
 

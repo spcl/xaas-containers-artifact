@@ -30,13 +30,13 @@ starting mdrun ''
 
 Writing final coordinates.
 
-NOTE: 15 % of the run time was spent in pair search,
+NOTE: 14 % of the run time was spent in pair search,
       you might want to increase nstlist (this has no effect on accuracy)
 
                Core t (s)   Wall t (s)        (%)
-       Time:     2939.352       28.265    10399.2
+       Time:     2991.292       28.764    10399.3
                  (ns/day)    (hour/ns)
-Performance:        6.120        3.922
+Performance:        6.013        3.991
 
-GROMACS reminds you: "Pain is inevitable. Suffering is optional." (Haruki Murakami)
+GROMACS reminds you: "No matter how important you are, you are not as important as lunch." (Randy Pausch)
 

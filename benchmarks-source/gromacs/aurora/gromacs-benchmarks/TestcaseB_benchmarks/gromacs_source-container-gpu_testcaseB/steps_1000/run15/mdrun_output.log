@@ -30,13 +30,13 @@ starting mdrun ''
 
 Writing final coordinates.
 
-NOTE: 15 % of the run time was spent in pair search,
+NOTE: 14 % of the run time was spent in pair search,
       you might want to increase nstlist (this has no effect on accuracy)
 
                Core t (s)   Wall t (s)        (%)
-       Time:     2943.075       28.301    10399.3
+       Time:     2971.350       28.573    10399.3
                  (ns/day)    (hour/ns)
-Performance:        6.112        3.927
+Performance:        6.054        3.964
 
-GROMACS reminds you: "Memory is like an orgasm. It's a lot better if you don't have to fake it." (Seymour Cray, on virtual memory)
+GROMACS reminds you: "If you open your mind too much, your brains will fall out." (Tim Minchin)
 

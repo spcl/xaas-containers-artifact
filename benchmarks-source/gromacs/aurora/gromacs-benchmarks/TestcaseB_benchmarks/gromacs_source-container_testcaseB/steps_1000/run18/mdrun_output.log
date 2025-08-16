@@ -29,9 +29,9 @@ NOTE: 19 % of the run time was spent in pair search,
       you might want to increase nstlist (this has no effect on accuracy)
 
                Core t (s)   Wall t (s)        (%)
-       Time:     5728.172       55.081    10399.6
+       Time:     5917.678       56.903    10399.6
                  (ns/day)    (hour/ns)
-Performance:        3.140        7.642
+Performance:        3.040        7.895
 
-GROMACS reminds you: "Wicky-wicky Wa-wild West" (Will Smith)
+GROMACS reminds you: "The last good thing written in C was Franz Schubert's Symphony Number 9." (Erwin Dieterich)
 

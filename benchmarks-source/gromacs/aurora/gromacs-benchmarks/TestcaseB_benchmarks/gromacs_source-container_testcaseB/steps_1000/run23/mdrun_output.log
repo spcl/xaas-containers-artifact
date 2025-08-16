@@ -29,9 +29,9 @@ NOTE: 19 % of the run time was spent in pair search,
       you might want to increase nstlist (this has no effect on accuracy)
 
                Core t (s)   Wall t (s)        (%)
-       Time:     5718.365       54.986    10399.7
+       Time:     5611.317       53.957    10399.7
                  (ns/day)    (hour/ns)
-Performance:        3.146        7.629
+Performance:        3.206        7.487
 
-GROMACS reminds you: "This simulation is not as the former." (Malvolio, Act II, scene V of Shaphespeare's Twelfth Night)
+GROMACS reminds you: "Never mind, death professor, your structure's fine" (TV on the Radio)
 

@@ -29,9 +29,9 @@ NOTE: 19 % of the run time was spent in pair search,
       you might want to increase nstlist (this has no effect on accuracy)
 
                Core t (s)   Wall t (s)        (%)
-       Time:     5953.842       57.250    10399.6
+       Time:     5631.015       54.146    10399.6
                  (ns/day)    (hour/ns)
-Performance:        3.021        7.944
+Performance:        3.195        7.513
 
-GROMACS reminds you: "I Am the Psychotherapist. Please, Describe Your Problems." (GNU Emacs)
+GROMACS reminds you: "You Fill Your Space So Sweet" (F. Apple)
 

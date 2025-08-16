@@ -29,9 +29,9 @@ NOTE: 19 % of the run time was spent in pair search,
       you might want to increase nstlist (this has no effect on accuracy)
 
                Core t (s)   Wall t (s)        (%)
-       Time:     5752.389       55.313    10399.6
+       Time:     5651.550       54.343    10399.7
                  (ns/day)    (hour/ns)
-Performance:        3.127        7.675
+Performance:        3.183        7.540
 
-GROMACS reminds you: "I Should Be the Pimp Of the Year" (Urban Dance Squad)
+GROMACS reminds you: "Quite frankly, even if the choice of C were to do *nothing* but keep the C++ programmers out, that in itself would be a huge reason to use C." (Linus Torvalds)
 

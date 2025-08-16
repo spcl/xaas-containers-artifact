@@ -29,9 +29,9 @@ NOTE: 19 % of the run time was spent in pair search,
       you might want to increase nstlist (this has no effect on accuracy)
 
                Core t (s)   Wall t (s)        (%)
-       Time:     5747.392       55.265    10399.7
+       Time:     5955.748       57.269    10399.6
                  (ns/day)    (hour/ns)
-Performance:        3.130        7.668
+Performance:        3.020        7.946
 
-GROMACS reminds you: "If You Touch Me, You'll Get Shocked" (Beastie Boys)
+GROMACS reminds you: "Science is the great antidote to the poison of enthusiasm and superstition." (Adam Smith, Wealth of Nations, 1776)
 

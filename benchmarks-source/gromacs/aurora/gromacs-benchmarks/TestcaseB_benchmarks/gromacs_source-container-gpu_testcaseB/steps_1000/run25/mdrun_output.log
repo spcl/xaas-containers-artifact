@@ -30,13 +30,13 @@ starting mdrun ''
 
 Writing final coordinates.
 
-NOTE: 15 % of the run time was spent in pair search,
+NOTE: 14 % of the run time was spent in pair search,
       you might want to increase nstlist (this has no effect on accuracy)
 
                Core t (s)   Wall t (s)        (%)
-       Time:     2975.690       28.614    10399.3
+       Time:     2989.711       28.749    10399.3
                  (ns/day)    (hour/ns)
-Performance:        6.045        3.970
+Performance:        6.017        3.989
 
-GROMACS reminds you: "I tend to consider myself as a scientist." (Emmanuelle Charpentier, when asked about the importance of two women sharing the Nobel Prize for Chemistry)
+GROMACS reminds you: "A Man Needs a Maid" (N. Young)
 

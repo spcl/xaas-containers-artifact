@@ -29,9 +29,9 @@ NOTE: 19 % of the run time was spent in pair search,
       you might want to increase nstlist (this has no effect on accuracy)
 
                Core t (s)   Wall t (s)        (%)
-       Time:     5724.158       55.042    10399.6
+       Time:     5661.108       54.436    10399.6
                  (ns/day)    (hour/ns)
-Performance:        3.143        7.637
+Performance:        3.178        7.553
 
-GROMACS reminds you: "Everything is failing" (Paul Bauer)
+GROMACS reminds you: "Make the Floor Burn" (2 Unlimited)
 

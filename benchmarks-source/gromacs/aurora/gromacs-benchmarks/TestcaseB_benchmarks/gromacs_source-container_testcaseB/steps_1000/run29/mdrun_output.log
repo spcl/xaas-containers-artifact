@@ -29,9 +29,9 @@ NOTE: 19 % of the run time was spent in pair search,
       you might want to increase nstlist (this has no effect on accuracy)
 
                Core t (s)   Wall t (s)        (%)
-       Time:     5757.374       55.361    10399.7
+       Time:     5612.592       53.969    10399.6
                  (ns/day)    (hour/ns)
-Performance:        3.124        7.681
+Performance:        3.205        7.488
 
-GROMACS reminds you: "What if you're wrong about the great Ju Ju at the bottom of the sea?" (Richard Dawkins)
+GROMACS reminds you: "The best model of a cat is another cat..., specially the same cat." (Arturo Rosenblueth)
 

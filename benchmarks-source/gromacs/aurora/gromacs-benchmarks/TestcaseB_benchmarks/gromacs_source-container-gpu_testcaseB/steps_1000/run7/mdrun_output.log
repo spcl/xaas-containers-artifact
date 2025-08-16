@@ -30,13 +30,13 @@ starting mdrun ''
 
 Writing final coordinates.
 
-NOTE: 15 % of the run time was spent in pair search,
+NOTE: 14 % of the run time was spent in pair search,
       you might want to increase nstlist (this has no effect on accuracy)
 
                Core t (s)   Wall t (s)        (%)
-       Time:     2984.788       28.702    10399.3
+       Time:     2995.370       28.804    10399.3
                  (ns/day)    (hour/ns)
-Performance:        6.027        3.982
+Performance:        6.005        3.996
 
-GROMACS reminds you: "Enthusiasm is the mother of effort, and without it nothing great was ever achieved." (Ralph Waldo Emerson)
+GROMACS reminds you: "Do you know what cations don't like? Dog-ions. Do you know what they like? Pie." (Tom Cheatham)
 

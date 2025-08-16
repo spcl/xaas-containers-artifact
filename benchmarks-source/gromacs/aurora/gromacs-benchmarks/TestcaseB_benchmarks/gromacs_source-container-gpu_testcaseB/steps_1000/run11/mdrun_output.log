@@ -30,13 +30,15 @@ starting mdrun ''
 
 Writing final coordinates.
 
-NOTE: 15 % of the run time was spent in pair search,
+Back Off! I just backed up confout.gro to ./#confout.gro.16#
+
+NOTE: 14 % of the run time was spent in pair search,
       you might want to increase nstlist (this has no effect on accuracy)
 
                Core t (s)   Wall t (s)        (%)
-       Time:     2946.364       28.332    10399.3
+       Time:     3008.405       28.929    10399.4
                  (ns/day)    (hour/ns)
-Performance:        6.105        3.931
+Performance:        5.979        4.014
 
-GROMACS reminds you: "Forget this world and all its troubles and, if possible, it's multitudinous Charlatans - everything, in short, but the Enchantress of Numbers" (Ada Lovelace)
+GROMACS reminds you: "We Can Dance Like Iggy Pop" (Red Hot Chili Peppers)
 

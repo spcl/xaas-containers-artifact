@@ -29,9 +29,9 @@ NOTE: 19 % of the run time was spent in pair search,
       you might want to increase nstlist (this has no effect on accuracy)
 
                Core t (s)   Wall t (s)        (%)
-       Time:     5736.508       55.160    10399.7
+       Time:     5721.282       55.014    10399.7
                  (ns/day)    (hour/ns)
-Performance:        3.136        7.654
+Performance:        3.144        7.633
 
-GROMACS reminds you: "Read me your scripture and I will twist it" (Red Hot Chili Peppers)
+GROMACS reminds you: "I don't know how many of you have ever met Dijkstra, but you probably know that arrogance in computer science is measured in nano-Dijkstras." (Alan Kay)
 

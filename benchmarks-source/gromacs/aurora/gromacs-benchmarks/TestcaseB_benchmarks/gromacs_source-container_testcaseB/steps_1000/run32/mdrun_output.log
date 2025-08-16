@@ -29,9 +29,9 @@ NOTE: 19 % of the run time was spent in pair search,
       you might want to increase nstlist (this has no effect on accuracy)
 
                Core t (s)   Wall t (s)        (%)
-       Time:     5739.540       55.190    10399.7
+       Time:     5576.034       53.617    10399.7
                  (ns/day)    (hour/ns)
-Performance:        3.134        7.658
+Performance:        3.226        7.439
 
-GROMACS reminds you: "It Wouldn't Hurt to Wipe Once In a While" (Beavis and Butthead)
+GROMACS reminds you: "You cannot hope to build a better world without improving the individuals." (Marie Curie)
 

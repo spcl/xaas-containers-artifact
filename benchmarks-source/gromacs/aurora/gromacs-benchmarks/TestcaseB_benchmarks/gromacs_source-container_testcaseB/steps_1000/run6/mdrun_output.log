@@ -25,13 +25,13 @@ starting mdrun ''
 
 Writing final coordinates.
 
-NOTE: 18 % of the run time was spent in pair search,
+NOTE: 19 % of the run time was spent in pair search,
       you might want to increase nstlist (this has no effect on accuracy)
 
                Core t (s)   Wall t (s)        (%)
-       Time:     5699.259       54.802    10399.7
+       Time:     5663.779       54.461    10399.7
                  (ns/day)    (hour/ns)
-Performance:        3.156        7.604
+Performance:        3.176        7.556
 
-GROMACS reminds you: "Cowardly refusing to create an empty archive" (GNU tar)
+GROMACS reminds you: "A protein is a chain of letters." (Julie Bernauer)
 

@@ -29,9 +29,9 @@ NOTE: 19 % of the run time was spent in pair search,
       you might want to increase nstlist (this has no effect on accuracy)
 
                Core t (s)   Wall t (s)        (%)
-       Time:     5710.268       54.908    10399.7
+       Time:     5687.499       54.690    10399.6
                  (ns/day)    (hour/ns)
-Performance:        3.150        7.619
+Performance:        3.163        7.588
 
-GROMACS reminds you: "Jesus Built My Hotrod" (Ministry)
+GROMACS reminds you: "Do the Dog On the Ground" (Red Hot Chili Peppers)
 

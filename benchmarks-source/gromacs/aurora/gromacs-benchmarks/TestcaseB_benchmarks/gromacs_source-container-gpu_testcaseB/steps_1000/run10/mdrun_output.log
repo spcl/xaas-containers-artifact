@@ -34,9 +34,9 @@ NOTE: 15 % of the run time was spent in pair search,
       you might want to increase nstlist (this has no effect on accuracy)
 
                Core t (s)   Wall t (s)        (%)
-       Time:     2946.998       28.339    10399.3
+       Time:     2996.392       28.813    10399.3
                  (ns/day)    (hour/ns)
-Performance:        6.104        3.932
+Performance:        6.003        3.998
 
-GROMACS reminds you: "Bad As This Shit Is, This Shit Ain't As Bad As You Think It Is." (Jackie Brown)
+GROMACS reminds you: "We must be clear that when it comes to atoms, language can be used only as in poetry. " (Niels Bohr)
 

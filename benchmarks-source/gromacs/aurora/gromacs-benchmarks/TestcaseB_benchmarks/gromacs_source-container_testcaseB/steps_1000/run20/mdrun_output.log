@@ -25,15 +25,13 @@ starting mdrun ''
 
 Writing final coordinates.
 
-Back Off! I just backed up confout.gro to ./#confout.gro.12#
-
 NOTE: 19 % of the run time was spent in pair search,
       you might want to increase nstlist (this has no effect on accuracy)
 
                Core t (s)   Wall t (s)        (%)
-       Time:     5746.263       55.255    10399.6
+       Time:     5692.074       54.734    10399.6
                  (ns/day)    (hour/ns)
-Performance:        3.130        7.667
+Performance:        3.160        7.594
 
-GROMACS reminds you: "At school I had a teacher that didn't like me and I didn't like him. At the end of the year he decided to fail me. The ironic thing is that the topic was chemistry. I have the distinction of being the only Chemistry Laurate who failed the topic in high school." (Thomas Lindahl)
+GROMACS reminds you: "When the universe has expanded, time will contract" (Franz Ferdinand)
 

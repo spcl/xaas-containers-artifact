@@ -30,13 +30,13 @@ starting mdrun ''
 
 Writing final coordinates.
 
-NOTE: 15 % of the run time was spent in pair search,
+NOTE: 14 % of the run time was spent in pair search,
       you might want to increase nstlist (this has no effect on accuracy)
 
                Core t (s)   Wall t (s)        (%)
-       Time:     2941.609       28.287    10399.2
+       Time:     2990.772       28.759    10399.3
                  (ns/day)    (hour/ns)
-Performance:        6.115        3.925
+Performance:        6.014        3.990
 
-GROMACS reminds you: "Chemistry: It tends to be a messy science." (Gunnar von Heijne, former chair of the Nobel Committee for chemistry)
+GROMACS reminds you: "This is where we have been working hard to push down performance." (Szilard Pall, GTC 2015 talk)
 

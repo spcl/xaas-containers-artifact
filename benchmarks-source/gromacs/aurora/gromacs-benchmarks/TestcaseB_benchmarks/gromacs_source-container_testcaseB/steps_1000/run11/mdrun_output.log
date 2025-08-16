@@ -29,9 +29,9 @@ NOTE: 19 % of the run time was spent in pair search,
       you might want to increase nstlist (this has no effect on accuracy)
 
                Core t (s)   Wall t (s)        (%)
-       Time:     5720.620       55.008    10399.6
+       Time:     5689.408       54.708    10399.6
                  (ns/day)    (hour/ns)
-Performance:        3.145        7.632
+Performance:        3.162        7.591
 
-GROMACS reminds you: "I am rarely happier than when spending an entire day programming my computer to perform automatically a task that it would otherwise take me a good ten seconds to do by hand." (Douglas Adams)
+GROMACS reminds you: "FORTRAN was the language of choice for the same reason that three-legged races are popular." (Ken Thompson)
 

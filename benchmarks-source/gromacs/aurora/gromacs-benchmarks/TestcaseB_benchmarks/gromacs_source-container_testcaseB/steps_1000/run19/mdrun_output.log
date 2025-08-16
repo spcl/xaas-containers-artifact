@@ -25,13 +25,13 @@ starting mdrun ''
 
 Writing final coordinates.
 
-NOTE: 19 % of the run time was spent in pair search,
+NOTE: 18 % of the run time was spent in pair search,
       you might want to increase nstlist (this has no effect on accuracy)
 
                Core t (s)   Wall t (s)        (%)
-       Time:     5977.661       57.480    10399.6
+       Time:     6017.752       57.865    10399.7
                  (ns/day)    (hour/ns)
-Performance:        3.009        7.975
+Performance:        2.989        8.029
 
-GROMACS reminds you: "Player Sleeps With the Fishes" (Ein Bekanntes Spiel Von ID Software)
+GROMACS reminds you: "I Need a Little Poison" (Throwing Muses)
 

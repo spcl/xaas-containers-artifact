@@ -34,9 +34,9 @@ NOTE: 15 % of the run time was spent in pair search,
       you might want to increase nstlist (this has no effect on accuracy)
 
                Core t (s)   Wall t (s)        (%)
-       Time:     2987.334       28.726    10399.3
+       Time:     2991.964       28.771    10399.3
                  (ns/day)    (hour/ns)
-Performance:        6.021        3.986
+Performance:        6.012        3.992
 
-GROMACS reminds you: "The public have an insatiable curiosity to know everything, except what is worth knowing." (Oscar Wilde)
+GROMACS reminds you: "With four parameters I can fit an elephant, and with five I can make him wiggle his trunk." (John von Neumann)
 

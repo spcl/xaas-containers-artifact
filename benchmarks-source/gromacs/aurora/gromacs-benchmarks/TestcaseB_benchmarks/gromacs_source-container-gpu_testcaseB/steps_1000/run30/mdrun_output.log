@@ -34,9 +34,9 @@ NOTE: 15 % of the run time was spent in pair search,
       you might want to increase nstlist (this has no effect on accuracy)
 
                Core t (s)   Wall t (s)        (%)
-       Time:     2936.689       28.239    10399.3
+       Time:     2988.656       28.739    10399.3
                  (ns/day)    (hour/ns)
-Performance:        6.125        3.918
+Performance:        6.019        3.988
 
-GROMACS reminds you: "The difficulty lies, not in the new ideas, but in escaping the old ones." (John Maynard Keynes)
+GROMACS reminds you: "They call me 007: 0 pull requests reviewed, 0 features completed, 7 bugs created." (Anonymous)
 

@@ -29,9 +29,9 @@ NOTE: 19 % of the run time was spent in pair search,
       you might want to increase nstlist (this has no effect on accuracy)
 
                Core t (s)   Wall t (s)        (%)
-       Time:     5711.694       54.922    10399.6
+       Time:     5629.602       54.133    10399.6
                  (ns/day)    (hour/ns)
-Performance:        3.149        7.620
+Performance:        3.195        7.511
 
-GROMACS reminds you: "All approaches at a higher level are suspect until confirmed at the molecular level." (Francis Crick)
+GROMACS reminds you: "'Nay. We are but men.' Rock!" (Tenacious D)
 

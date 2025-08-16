@@ -30,13 +30,13 @@ starting mdrun ''
 
 Writing final coordinates.
 
-NOTE: 15 % of the run time was spent in pair search,
+NOTE: 14 % of the run time was spent in pair search,
       you might want to increase nstlist (this has no effect on accuracy)
 
                Core t (s)   Wall t (s)        (%)
-       Time:     2939.981       28.271    10399.3
+       Time:     2984.264       28.697    10399.3
                  (ns/day)    (hour/ns)
-Performance:        6.118        3.923
+Performance:        6.028        3.982
 
-GROMACS reminds you: "Can someone please tell Icarus that he's not the only one falling from the sky?" (Urban Dance Squad)
+GROMACS reminds you: "It's So Fast It's Slow" (F. Black)
 

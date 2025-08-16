@@ -25,15 +25,13 @@ starting mdrun ''
 
 Writing final coordinates.
 
-Back Off! I just backed up confout.gro to ./#confout.gro.13#
-
 NOTE: 19 % of the run time was spent in pair search,
       you might want to increase nstlist (this has no effect on accuracy)
 
                Core t (s)   Wall t (s)        (%)
-       Time:     5730.378       55.101    10399.7
+       Time:     5721.084       55.012    10399.7
                  (ns/day)    (hour/ns)
-Performance:        3.139        7.645
+Performance:        3.144        7.633
 
-GROMACS reminds you: "You Could Make More Money As a Butcher" (F. Zappa)
+GROMACS reminds you: "Got Coffee, Got Donuts, Got Wasted" (F. Black)
 
