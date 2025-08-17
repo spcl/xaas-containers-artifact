@@ -32,13 +32,13 @@ starting mdrun ''
 
 Writing final coordinates.
 
-NOTE: 11 % of the run time was spent in pair search,
+NOTE: 14 % of the run time was spent in pair search,
       you might want to increase nstlist (this has no effect on accuracy)
 
                Core t (s)   Wall t (s)        (%)
-       Time:     3427.234       32.957    10399.2
+       Time:     3609.473       34.708    10399.4
                  (ns/day)    (hour/ns)
-Performance:        5.248        4.573
+Performance:        4.984        4.816
 
-GROMACS reminds you: "The Microsecond is Within Reach" (P.J. Van Maaren)
+GROMACS reminds you: "If you thought that science was certain - well, that is just an error on your part." (Richard Feynman)
 

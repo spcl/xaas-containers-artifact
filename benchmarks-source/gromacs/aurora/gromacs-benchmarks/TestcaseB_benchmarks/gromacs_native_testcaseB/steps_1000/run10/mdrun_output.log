@@ -32,15 +32,13 @@ starting mdrun ''
 
 Writing final coordinates.
 
-Back Off! I just backed up confout.gro to ./#confout.gro.10#
-
-NOTE: 14 % of the run time was spent in pair search,
+NOTE: 13 % of the run time was spent in pair search,
       you might want to increase nstlist (this has no effect on accuracy)
 
                Core t (s)   Wall t (s)        (%)
-       Time:     3564.973       34.281    10399.3
+       Time:     3568.171       34.311    10399.4
                  (ns/day)    (hour/ns)
-Performance:        5.046        4.756
+Performance:        5.041        4.761
 
-GROMACS reminds you: "This May Come As a Shock" (F. Black)
+GROMACS reminds you: "Nobody Never Learnt No-Nothing from No History" (Gogol Bordello)
 

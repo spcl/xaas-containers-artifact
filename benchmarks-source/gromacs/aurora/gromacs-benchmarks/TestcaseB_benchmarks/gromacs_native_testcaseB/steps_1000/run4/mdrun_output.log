@@ -36,9 +36,9 @@ NOTE: 14 % of the run time was spent in pair search,
       you might want to increase nstlist (this has no effect on accuracy)
 
                Core t (s)   Wall t (s)        (%)
-       Time:     3597.633       34.595    10399.4
+       Time:     3607.063       34.685    10399.4
                  (ns/day)    (hour/ns)
-Performance:        5.000        4.800
+Performance:        4.987        4.813
 
-GROMACS reminds you: "I love fools' experiments. I am always making them." (Charles Darwin)
+GROMACS reminds you: "Watch Out Where the Huskies Go" (F. Zappa)
 

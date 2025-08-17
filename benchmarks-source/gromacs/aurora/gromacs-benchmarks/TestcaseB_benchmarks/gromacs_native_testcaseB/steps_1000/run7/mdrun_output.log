@@ -36,9 +36,9 @@ NOTE: 14 % of the run time was spent in pair search,
       you might want to increase nstlist (this has no effect on accuracy)
 
                Core t (s)   Wall t (s)        (%)
-       Time:     3552.850       34.164    10399.4
+       Time:     3605.912       34.674    10399.4
                  (ns/day)    (hour/ns)
-Performance:        5.063        4.740
+Performance:        4.989        4.811
 
-GROMACS reminds you: "The World is a Friendly Place" (Magnapop)
+GROMACS reminds you: "I'll Match Your DNA" (Red Hot Chili Peppers)
 

@@ -36,9 +36,9 @@ NOTE: 14 % of the run time was spent in pair search,
       you might want to increase nstlist (this has no effect on accuracy)
 
                Core t (s)   Wall t (s)        (%)
-       Time:     3546.003       34.099    10399.2
+       Time:     3608.261       34.697    10399.4
                  (ns/day)    (hour/ns)
-Performance:        5.073        4.731
+Performance:        4.985        4.814
 
-GROMACS reminds you: "Good Music Saves your Soul" (Lemmy)
+GROMACS reminds you: "Above all, don't fear difficult moments. The best comes from them." (Rita Levi-Montalcini)
 

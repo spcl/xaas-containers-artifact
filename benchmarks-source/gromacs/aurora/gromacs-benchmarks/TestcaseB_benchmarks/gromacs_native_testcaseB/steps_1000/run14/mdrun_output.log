@@ -36,9 +36,9 @@ NOTE: 14 % of the run time was spent in pair search,
       you might want to increase nstlist (this has no effect on accuracy)
 
                Core t (s)   Wall t (s)        (%)
-       Time:     3606.819       34.683    10399.2
+       Time:     3606.730       34.682    10399.4
                  (ns/day)    (hour/ns)
 Performance:        4.987        4.812
 
-GROMACS reminds you: "Pump Up the Volume Along With the Tempo" (Jazzy Jeff)
+GROMACS reminds you: "Marie, you're looking more radiant every day!" (Pierre Curie)
 

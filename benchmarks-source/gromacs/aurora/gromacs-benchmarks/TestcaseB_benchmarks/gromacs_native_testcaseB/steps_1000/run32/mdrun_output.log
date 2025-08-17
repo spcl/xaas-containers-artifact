@@ -36,9 +36,9 @@ NOTE: 14 % of the run time was spent in pair search,
       you might want to increase nstlist (this has no effect on accuracy)
 
                Core t (s)   Wall t (s)        (%)
-       Time:     3593.774       34.558    10399.3
+       Time:     3658.392       35.179    10399.4
                  (ns/day)    (hour/ns)
-Performance:        5.005        4.795
+Performance:        4.917        4.881
 
-GROMACS reminds you: "It's easy to remember: a half a kT is equal to five fourths of a kJ/mol." (Anders Gabrielsson)
+GROMACS reminds you: "So can we think of the canonical ensemble sort of like if you ran the same season of temptation island over and over again and took statistics about how many times each person hooks up with each other person?" (Teddy Press)
 

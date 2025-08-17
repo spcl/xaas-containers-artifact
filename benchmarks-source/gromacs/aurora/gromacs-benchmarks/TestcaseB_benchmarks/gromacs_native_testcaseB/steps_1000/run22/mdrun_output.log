@@ -32,15 +32,13 @@ starting mdrun ''
 
 Writing final coordinates.
 
-Back Off! I just backed up confout.gro to ./#confout.gro.6#
-
 NOTE: 14 % of the run time was spent in pair search,
       you might want to increase nstlist (this has no effect on accuracy)
 
                Core t (s)   Wall t (s)        (%)
-       Time:     3559.922       34.232    10399.3
+       Time:     3606.853       34.683    10399.4
                  (ns/day)    (hour/ns)
-Performance:        5.053        4.750
+Performance:        4.987        4.812
 
-GROMACS reminds you: "The determined Real Programmer can write FORTRAN programs in any language." (Ed Post)
+GROMACS reminds you: "Nothing shocks me. I'm a scientist." (Harrison Ford as Indiana Jones)
 

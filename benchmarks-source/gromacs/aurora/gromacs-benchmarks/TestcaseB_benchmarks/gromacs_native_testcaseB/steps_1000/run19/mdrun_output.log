@@ -36,9 +36,9 @@ NOTE: 14 % of the run time was spent in pair search,
       you might want to increase nstlist (this has no effect on accuracy)
 
                Core t (s)   Wall t (s)        (%)
-       Time:     3553.976       34.175    10399.3
+       Time:     3639.430       34.997    10399.4
                  (ns/day)    (hour/ns)
-Performance:        5.061        4.742
+Performance:        4.943        4.856
 
-GROMACS reminds you: "Hmm, It *Does* Go Well With the Chicken" (Beastie Boys)
+GROMACS reminds you: "If There Is No Guitar In The House, You Know It's Owner Can Not Be Trusted" (Gogol Bordello)
 

@@ -36,9 +36,9 @@ NOTE: 14 % of the run time was spent in pair search,
       you might want to increase nstlist (this has no effect on accuracy)
 
                Core t (s)   Wall t (s)        (%)
-       Time:     3593.664       34.557    10399.3
+       Time:     3609.841       34.712    10399.4
                  (ns/day)    (hour/ns)
-Performance:        5.005        4.795
+Performance:        4.983        4.816
 
-GROMACS reminds you: "I'm no model lady. A model's just an imitation of the real thing." (Mae West)
+GROMACS reminds you: "The best part of winter in Stockholm is going to Australia" (Mark Abraham)
 

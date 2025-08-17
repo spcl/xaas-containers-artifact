@@ -27,8 +27,6 @@ Non-default thread affinity set, disabling internal thread affinity
 
 Using 104 OpenMP threads 
 
-
-Back Off! I just backed up ener.edr to ./#ener.edr.4#
 starting mdrun ''
 1000 steps,      2.0 ps.
 
@@ -38,9 +36,9 @@ NOTE: 14 % of the run time was spent in pair search,
       you might want to increase nstlist (this has no effect on accuracy)
 
                Core t (s)   Wall t (s)        (%)
-       Time:     3552.511       34.161    10399.3
+       Time:     3657.394       35.169    10399.4
                  (ns/day)    (hour/ns)
-Performance:        5.063        4.740
+Performance:        4.918        4.880
 
-GROMACS reminds you: "Ludwig Boltzmann, who spent much of his life studying statistical mechanics, died in 1906, by his own hand. Paul Ehrenfest, carrying on the same work, died similarly in 1933. Now it is our turn to study statistical mechanics. Perhaps it will be wise to approach the subject cautiously." (David Goodstein)
+GROMACS reminds you: "I came up with the new convergence method, it's called a deadline driven convergence. My simulation is converged when it hits the deadline." (Tanadet Pipatpolkai)
 

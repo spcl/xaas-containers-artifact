@@ -36,9 +36,9 @@ NOTE: 14 % of the run time was spent in pair search,
       you might want to increase nstlist (this has no effect on accuracy)
 
                Core t (s)   Wall t (s)        (%)
-       Time:     3595.919       34.579    10399.2
+       Time:     3612.540       34.738    10399.4
                  (ns/day)    (hour/ns)
-Performance:        5.002        4.798
+Performance:        4.979        4.820
 
-GROMACS reminds you: "All that glitters may not be gold, but at least it contains free electrons." (John Desmond Baernal)
+GROMACS reminds you: "A scientific truth does not triumph by convincing its opponents and making them see the light, but rather because its opponents eventually die and a new generation grows up that is familiar with it." (Max Planck)
 

@@ -36,9 +36,9 @@ NOTE: 14 % of the run time was spent in pair search,
       you might want to increase nstlist (this has no effect on accuracy)
 
                Core t (s)   Wall t (s)        (%)
-       Time:     3524.124       33.888    10399.2
+       Time:     3615.639       34.768    10399.4
                  (ns/day)    (hour/ns)
-Performance:        5.104        4.702
+Performance:        4.975        4.824
 
-GROMACS reminds you: "Base eight is just like base ten really, if you're missing two fingers." (Tom Lehrer)
+GROMACS reminds you: "Engage" (J.L. Picard)
 

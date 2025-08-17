@@ -32,13 +32,13 @@ starting mdrun ''
 
 Writing final coordinates.
 
-NOTE: 15 % of the run time was spent in pair search,
+NOTE: 14 % of the run time was spent in pair search,
       you might want to increase nstlist (this has no effect on accuracy)
 
                Core t (s)   Wall t (s)        (%)
-       Time:     3563.926       34.270    10399.4
+       Time:     3610.266       34.716    10399.4
                  (ns/day)    (hour/ns)
-Performance:        5.047        4.755
+Performance:        4.983        4.817
 
-GROMACS reminds you: "What's the point, yo, what's the spread?" (Red Hot Chili Peppers)
+GROMACS reminds you: "Inventions have long since reached their limit, and I see no hope for further development." (Julius Sextus Frontinus, 1st century A.D.)
 

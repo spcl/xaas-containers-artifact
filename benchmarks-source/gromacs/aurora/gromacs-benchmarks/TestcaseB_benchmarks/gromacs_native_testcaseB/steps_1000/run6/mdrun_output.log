@@ -36,9 +36,9 @@ NOTE: 14 % of the run time was spent in pair search,
       you might want to increase nstlist (this has no effect on accuracy)
 
                Core t (s)   Wall t (s)        (%)
-       Time:     3553.957       34.175    10399.3
+       Time:     3601.671       34.633    10399.4
                  (ns/day)    (hour/ns)
-Performance:        5.061        4.742
+Performance:        4.994        4.805
 
-GROMACS reminds you: "Load Up Your Rubber Bullets" (10 CC)
+GROMACS reminds you: "Live for Liposuction" (Robbie Williams)
 

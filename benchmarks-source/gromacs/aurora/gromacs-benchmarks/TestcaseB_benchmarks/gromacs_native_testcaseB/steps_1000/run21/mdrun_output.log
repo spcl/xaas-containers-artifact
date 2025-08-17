@@ -36,9 +36,9 @@ NOTE: 14 % of the run time was spent in pair search,
       you might want to increase nstlist (this has no effect on accuracy)
 
                Core t (s)   Wall t (s)        (%)
-       Time:     3555.093       34.186    10399.3
+       Time:     3598.221       34.600    10399.5
                  (ns/day)    (hour/ns)
-Performance:        5.060        4.743
+Performance:        4.999        4.801
 
-GROMACS reminds you: "Science, for me, gives a partial explanation for life. In so far as it goes, it is based on fact, experience and experiment." (Rosalind Franklin)
+GROMACS reminds you: "It's 2040 now. Our President is a plant." (Ghostbusters 2016)
 

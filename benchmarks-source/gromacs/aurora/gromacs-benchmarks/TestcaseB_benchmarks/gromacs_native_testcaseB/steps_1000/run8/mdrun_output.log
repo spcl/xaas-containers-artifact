@@ -36,9 +36,9 @@ NOTE: 14 % of the run time was spent in pair search,
       you might want to increase nstlist (this has no effect on accuracy)
 
                Core t (s)   Wall t (s)        (%)
-       Time:     3603.154       34.648    10399.4
+       Time:     3608.780       34.702    10399.4
                  (ns/day)    (hour/ns)
-Performance:        4.992        4.807
+Performance:        4.985        4.815
 
-GROMACS reminds you: "Nobody ever complained a seminar was too easy to understand." (Ken Dill)
+GROMACS reminds you: "Big Data is like teenage sex: everyone talks about it, nobody really knows how to do it, everyone thinks everyone else is doing it, so everyone claims they are doing it..." (Dan Ariely)
 

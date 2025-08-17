@@ -36,9 +36,9 @@ NOTE: 14 % of the run time was spent in pair search,
       you might want to increase nstlist (this has no effect on accuracy)
 
                Core t (s)   Wall t (s)        (%)
-       Time:     3548.898       34.127    10399.2
+       Time:     3604.545       34.661    10399.4
                  (ns/day)    (hour/ns)
-Performance:        5.069        4.735
+Performance:        4.990        4.809
 
-GROMACS reminds you: "Right Now My Job is Eating These Doughnuts" (Bodycount)
+GROMACS reminds you: "We're having an information explosion, among others, and it's certainly obvious that information is of no use unless it's available." (Sister Mary Kenneth Keller)
 

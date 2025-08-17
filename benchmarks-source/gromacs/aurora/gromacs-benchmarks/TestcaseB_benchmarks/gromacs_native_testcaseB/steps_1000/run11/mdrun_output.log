@@ -36,9 +36,9 @@ NOTE: 14 % of the run time was spent in pair search,
       you might want to increase nstlist (this has no effect on accuracy)
 
                Core t (s)   Wall t (s)        (%)
-       Time:     3548.632       34.124    10399.2
+       Time:     3605.949       34.675    10399.4
                  (ns/day)    (hour/ns)
-Performance:        5.069        4.735
+Performance:        4.988        4.811
 
-GROMACS reminds you: "Energy is a very subtle concept. It is very, very difficult to get right." (Richard Feynman)
+GROMACS reminds you: "We Look Pretty Sharp In These Clothes" (F. Zappa)
 

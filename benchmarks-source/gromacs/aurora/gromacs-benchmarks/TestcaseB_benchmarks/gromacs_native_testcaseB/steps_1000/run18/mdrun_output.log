@@ -36,9 +36,9 @@ NOTE: 14 % of the run time was spent in pair search,
       you might want to increase nstlist (this has no effect on accuracy)
 
                Core t (s)   Wall t (s)        (%)
-       Time:     3547.643       34.115    10399.2
+       Time:     3602.145       34.638    10399.4
                  (ns/day)    (hour/ns)
-Performance:        5.070        4.733
+Performance:        4.994        4.806
 
-GROMACS reminds you: "It's Because Of the Metric System" (Pulp Fiction)
+GROMACS reminds you: "Same sex marriage is not a gay privilege, it's equal rights. Privilege would be something like gay people not paying taxes. Like churches don't." (Ricky Gervais)
 

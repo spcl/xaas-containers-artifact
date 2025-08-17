@@ -32,15 +32,13 @@ starting mdrun ''
 
 Writing final coordinates.
 
-Back Off! I just backed up confout.gro to ./#confout.gro.8#
-
 NOTE: 14 % of the run time was spent in pair search,
       you might want to increase nstlist (this has no effect on accuracy)
 
                Core t (s)   Wall t (s)        (%)
-       Time:     3560.829       34.242    10399.1
+       Time:     3605.713       34.672    10399.4
                  (ns/day)    (hour/ns)
-Performance:        5.052        4.751
+Performance:        4.989        4.811
 
-GROMACS reminds you: "Martin [Karplus] had a green laser, Arieh [Warshel] had a red laser, I have a *blue* laser" (Michael Levitt, Nobel lecture 2013)
+GROMACS reminds you: "I Caught It In the Face" (P.J. Harvey)
 

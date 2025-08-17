@@ -1,40 +1,37 @@
-                      :-) GROMACS - gmx mdrun, 2025.0 (-:
+                      :-) GROMACS - gmx mdrun, 2024.5 (-:
 
-Copyright 1991-2025 The GROMACS Authors.
+Copyright 1991-2024 The GROMACS Authors.
 GROMACS is free software; you can redistribute it and/or modify it
 under the terms of the GNU Lesser General Public License
 as published by the Free Software Foundation; either version 2.1
 of the License, or (at your option) any later version.
 
                          Current GROMACS contributors:
-       Mark Abraham           Andrey Alekseenko           Brian Andrews       
-      Vladimir Basov              Paul Bauer                Hugh Bird         
-      Eliane Briand               Ania Brown              Mahesh Doijade      
-      Giacomo Fiorin          Stefan Fleischmann          Sergey Gorelov      
-   Gilles Gouaillardet            Alan Gray              M. Eric Irrgang      
-   Farzaneh Jalalypour         Petter Johansson          Carsten Kutzner      
-    Grzegorz Łazarski         Justin A. Lemkul          Magnus Lundborg      
-       Pascal Merz             Vedran Miletić            Dmitry Morozov      
-     Lukas Müllender            Julien Nabet             Szilárd Páll      
- Andrea Pasquadibisceglie     Michele Pellegrino         Nicola Piasentin     
-     Daniele Rapetti         Muhammad Umair Sadiq         Hubert Santuz       
-      Roland Schulz             Michael Shirts           Tatiana Shugaeva     
-     Alexey Shvetsov            Philip Turner            Alessandra Villa     
- Sebastian Wingbermühle  
+       Mark Abraham           Andrey Alekseenko           Vladimir Basov      
+      Cathrine Bergh            Eliane Briand               Ania Brown        
+      Mahesh Doijade            Giacomo Fiorin          Stefan Fleischmann    
+      Sergey Gorelov         Gilles Gouaillardet            Alan Gray         
+     M. Eric Irrgang         Farzaneh Jalalypour            Joe Jordan        
+     Carsten Kutzner           Justin A. Lemkul          Magnus Lundborg      
+       Pascal Merz              Vedran Miletic            Dmitry Morozov      
+       Julien Nabet              Szilard Pall        Andrea Pasquadibisceglie 
+    Michele Pellegrino          Hubert Santuz             Roland Schulz       
+     Tatiana Shugaeva          Alexey Shvetsov            Philip Turner       
+     Alessandra Villa      Sebastian Wingbermuehle  
 
                          Previous GROMACS contributors:
         Emile Apol             Rossen Apostolov           James Barnett       
-  Herman J.C. Berendsen         Cathrine Bergh             Par Bjelkmar       
+        Paul Bauer          Herman J.C. Berendsen          Par Bjelkmar       
       Christian Blau          Viacheslav Bolnykh            Kevin Boyd        
     Aldert van Buuren          Carlo Camilloni           Rudi van Drunen      
       Anton Feenstra           Oliver Fleetwood            Vytas Gapsys       
        Gaurav Garg             Gerrit Groenhof            Bert de Groot       
       Anca Hamuraru           Vincent Hindriksen          Victor Holanda      
-     Aleksei Iupinov              Joe Jordan            Christoph Junghans    
-    Prashanth Kanduri        Dimitrios Karkoulis           Peter Kasson       
-      Sebastian Kehl           Sebastian Keller             Jiri Kraus        
-       Per Larsson              Viveca Lindahl            Erik Marklund       
-    Pieter Meulenhoff           Teemu Murtola              Sander Pronk       
+     Aleksei Iupinov          Christoph Junghans        Prashanth Kanduri     
+   Dimitrios Karkoulis           Peter Kasson             Sebastian Kehl      
+     Sebastian Keller             Jiri Kraus               Per Larsson        
+      Viveca Lindahl            Erik Marklund           Pieter Meulenhoff     
+      Teemu Murtola              Sander Pronk             Michael Shirts      
       Alfons Sijbers            Balint Soproni         David van der Spoel    
       Peter Tieleman            Carsten Uphoff             Jon Vincent        
      Teemu Virolainen         Christian Wennberg           Maarten Wolf       
@@ -43,42 +40,43 @@ of the License, or (at your option) any later version.
                   Coordinated by the GROMACS project leaders:
                            Berk Hess and Erik Lindahl
 
-GROMACS:      gmx mdrun, version 2025.0
-Executable:   /usr/local/gromacs/bin/gmx
-Data prefix:  /usr/local/gromacs
+GROMACS:      gmx mdrun, version 2024.5
+Executable:   /soft/applications/Gromacs/gromacs-2024.5/build/bin/gmx_mpi
+Data prefix:  /soft/applications/Gromacs/gromacs-2024.5/build
 Working dir:  /home/alokvk2
-Process ID:   200385
+Process ID:   145589
 Command line:
-  gmx mdrun -s /home/alokvk2/xaas-containers-artifact/data/gromacs/GROMACS_TestCaseB/lignocellulose.tpr -ntomp 104 -ntmpi 1 -nsteps 1000
+  gmx_mpi mdrun -s /home/alokvk2/xaas-containers-artifact/data/gromacs/GROMACS_TestCaseB/lignocellulose.tpr -ntomp 104 -nsteps 1000
 
-GROMACS version:     2025.0
+GROMACS version:     2024.5
 Precision:           mixed
 Memory model:        64 bit
-MPI library:         thread_mpi
+MPI library:         MPI (GPU-aware: LevelZero)
+MPI library version: MPICH Version:      5.0.0a1 MPICH Release date: unreleased development copy MPICH ABI:          17:0:5 MPICH Device:       ch4:ofi MPICH configure:    --prefix=/opt/aurora/24.347.0/spack/unified/0.9.2/install/linux-sles15-x86_64/oneapi-2025.0.5/mpich-develop-git.6037a7a-sxnhr7p --disable-maintainer-mode --disable-silent-rules --enable-shared --enable-static --with-pm=no --enable-romio --without-ibverbs --enable-wrapper-rpath=yes --with-yaksa=/opt/aurora/24.347.0/spack/unified/0.9.2/install/linux-sles15-x86_64/oneapi-2025.0.5/yaksa-0.3-7ks5f26 --with-ch4-shmmods=posix,gpudirect --with-hwloc=/opt/aurora/24.347.0/spack/unified/0.9.2/install/linux-sles15-x86_64/oneapi-2025.0.5/hwloc-2.11.3-mpich-g7c7dzn --with-slurm=no --with-pmi=pmix --with-pmix=/usr --without-cuda --without-hip --with-device=ch4:ofi --with-libfabric=/opt/cray/libfabric/1.22.0 --enable-libxml2 --with-datatype-engine=yaksa --with-xpmem=/usr --with-file-system=daos+lustre+nfs+ufs --with-daos=/usr --enable-timer-type=linux86_cycle --enable-fast=O3,alwaysinline,avx,avx2,avx512f,ndebug,sse2 --enable-g=no --disable-debuginfo --enable-error-checking=no --without-valgrind --enable-ch4-mt=runtime --with-ze=/usr --disable-opencl CC=icx CXX=icpx FC=ifx F77=ifx MPICH CC:           icx     -DNDEBUG -DNVALGRIND  -msse2 -mavx -mavx512f -O3 MPICH CXX:          icpx   -DNDEBUG -DNVALGRIND -O3 MPICH F77:          ifx   -O3 MPICH FC:           ifx   -O3 MPICH features:     threadcomm 
 OpenMP support:      enabled (GMX_OPENMP_MAX_THREADS = 128)
-GPU support:         SYCL (oneAPI DPC++)
-NBNxM GPU setup:     super-cluster 1x2x2 / cluster 8 (cluster-pair splitting on)
+GPU support:         SYCL (DPCPP)
+NBNxM GPU setup:     super-cluster 1x2x2 / cluster 8
 SIMD instructions:   AVX_512
-CPU FFT library:     Intel MKL version 2024.0.2 Build 20240722
-GPU FFT library:     Intel MKL version 2024.0.2 Build 20240722
+CPU FFT library:     Intel MKL version 2025.0.0 Build 20241031
+GPU FFT library:     Intel MKL version 2025.0.0 Build 20241031
 Multi-GPU FFT:       none
 RDTSCP usage:        enabled
 TNG support:         enabled
 Hwloc support:       disabled
 Tracing support:     disabled
-C compiler:          /opt/intel/oneapi/compiler/2024.2/bin/icx IntelLLVM 2024.2.1
+C compiler:          /opt/aurora/24.347.0/oneapi/compiler/latest/bin/icx IntelLLVM 2025.0.4
 C compiler flags:    -march=skylake-avx512 -Wno-missing-field-initializers -O3 -DNDEBUG
-C++ compiler:        /opt/intel/oneapi/compiler/2024.2/bin/icpx IntelLLVM 2024.2.1
-C++ compiler flags:  -march=skylake-avx512 -Wno-reserved-identifier -Wno-missing-field-initializers -Weverything -Wno-c++98-compat -Wno-c++98-compat-pedantic -Wno-source-uses-openmp -Wno-c++17-extensions -Wno-documentation-unknown-command -Wno-covered-switch-default -Wno-switch-enum -Wno-switch-default -Wno-extra-semi-stmt -Wno-weak-vtables -Wno-shadow -Wno-padded -Wno-reserved-id-macro -Wno-double-promotion -Wno-exit-time-destructors -Wno-global-constructors -Wno-documentation -Wno-format-nonliteral -Wno-used-but-marked-unused -Wno-float-equal -Wno-cuda-compat -Wno-conditional-uninitialized -Wno-conversion -Wno-disabled-macro-expansion -Wno-unused-macros -Wno-unsafe-buffer-usage -Wno-cast-function-type-strict SHELL:-fiopenmp -O3 -DNDEBUG
-BLAS library:        Intel MKL version 2024.0.2 Build 20240722
-LAPACK library:      Intel MKL version 2024.0.2 Build 20240722
-SYCL version:        oneAPI DPC++ 20240711 (libsycl 7.2.0)
+C++ compiler:        /opt/aurora/24.347.0/oneapi/compiler/latest/bin/icpx IntelLLVM 2025.0.4
+C++ compiler flags:  -march=skylake-avx512 -Wno-reserved-identifier -Wno-missing-field-initializers -Wno-pass-failed -Weverything -Wno-c++98-compat -Wno-c++98-compat-pedantic -Wno-source-uses-openmp -Wno-c++17-extensions -Wno-documentation-unknown-command -Wno-covered-switch-default -Wno-switch-enum -Wno-switch-default -Wno-extra-semi-stmt -Wno-weak-vtables -Wno-shadow -Wno-padded -Wno-reserved-id-macro -Wno-double-promotion -Wno-exit-time-destructors -Wno-global-constructors -Wno-documentation -Wno-format-nonliteral -Wno-used-but-marked-unused -Wno-float-equal -Wno-cuda-compat -Wno-conditional-uninitialized -Wno-conversion -Wno-disabled-macro-expansion -Wno-unused-macros -Wno-unsafe-buffer-usage -Wno-cast-function-type-strict SHELL:-fiopenmp -O3 -DNDEBUG
+BLAS library:        Intel MKL version 2025.0.0 Build 20241031
+LAPACK library:      Intel MKL version 2025.0.0 Build 20241031
 SYCL compiler flags: -fsycl -fsycl-device-code-split=per_kernel -ffast-math -Wno-incorrect-sub-group-size -DSYCL2020_DISABLE_DEPRECATION_WARNINGS
 SYCL linker flags:   -fsycl -fsycl-device-code-split=per_kernel -ftarget-register-alloc-mode=pvc:small
+SYCL DPC++ version:  20241205 (libsycl 8.0.0)
 
 
 Running on 1 node with total 102 cores, 204 processing units, 12 compatible GPUs
-Hardware detected on host x4703c4s5b0n0:
+Hardware detected on host x4218c4s1b0n0 (the node of MPI rank 0):
   CPU info:
     Vendor: Intel
     Brand:  Intel(R) Xeon(R) CPU Max 9470C
@@ -93,18 +91,18 @@ Hardware detected on host x4703c4s5b0n0:
     CPU limit set by OS: 208   Recommended max number of threads: 208
   GPU info:
     Number of GPUs detected: 12
-    #0: name: Intel(R) Data Center GPU Max 1550, architecture 12.60.6, vendor: Intel(R) Corporation, device version: 1.3, driver version: 1.3.27642, status: compatible
-    #1: name: Intel(R) Data Center GPU Max 1550, architecture 12.60.6, vendor: Intel(R) Corporation, device version: 1.3, driver version: 1.3.27642, status: compatible
-    #2: name: Intel(R) Data Center GPU Max 1550, architecture 12.60.6, vendor: Intel(R) Corporation, device version: 1.3, driver version: 1.3.27642, status: compatible
-    #3: name: Intel(R) Data Center GPU Max 1550, architecture 12.60.6, vendor: Intel(R) Corporation, device version: 1.3, driver version: 1.3.27642, status: compatible
-    #4: name: Intel(R) Data Center GPU Max 1550, architecture 12.60.6, vendor: Intel(R) Corporation, device version: 1.3, driver version: 1.3.27642, status: compatible
-    #5: name: Intel(R) Data Center GPU Max 1550, architecture 12.60.6, vendor: Intel(R) Corporation, device version: 1.3, driver version: 1.3.27642, status: compatible
-    #6: name: Intel(R) Data Center GPU Max 1550, architecture 12.60.6, vendor: Intel(R) Corporation, device version: 1.3, driver version: 1.3.27642, status: compatible
-    #7: name: Intel(R) Data Center GPU Max 1550, architecture 12.60.6, vendor: Intel(R) Corporation, device version: 1.3, driver version: 1.3.27642, status: compatible
-    #8: name: Intel(R) Data Center GPU Max 1550, architecture 12.60.6, vendor: Intel(R) Corporation, device version: 1.3, driver version: 1.3.27642, status: compatible
-    #9: name: Intel(R) Data Center GPU Max 1550, architecture 12.60.6, vendor: Intel(R) Corporation, device version: 1.3, driver version: 1.3.27642, status: compatible
-    #10: name: Intel(R) Data Center GPU Max 1550, architecture 12.60.6, vendor: Intel(R) Corporation, device version: 1.3, driver version: 1.3.27642, status: compatible
-    #11: name: Intel(R) Data Center GPU Max 1550, architecture 12.60.6, vendor: Intel(R) Corporation, device version: 1.3, driver version: 1.3.27642, status: compatible
+    #0: name: Intel(R) Data Center GPU Max 1550, architecture 12.60.3, vendor: Intel(R) Corporation, device version: 12.60.7, driver version 1.6.32567+18, status: compatible
+    #1: name: Intel(R) Data Center GPU Max 1550, architecture 12.60.3, vendor: Intel(R) Corporation, device version: 12.60.7, driver version 1.6.32567+18, status: compatible
+    #2: name: Intel(R) Data Center GPU Max 1550, architecture 12.60.3, vendor: Intel(R) Corporation, device version: 12.60.7, driver version 1.6.32567+18, status: compatible
+    #3: name: Intel(R) Data Center GPU Max 1550, architecture 12.60.3, vendor: Intel(R) Corporation, device version: 12.60.7, driver version 1.6.32567+18, status: compatible
+    #4: name: Intel(R) Data Center GPU Max 1550, architecture 12.60.3, vendor: Intel(R) Corporation, device version: 12.60.7, driver version 1.6.32567+18, status: compatible
+    #5: name: Intel(R) Data Center GPU Max 1550, architecture 12.60.3, vendor: Intel(R) Corporation, device version: 12.60.7, driver version 1.6.32567+18, status: compatible
+    #6: name: Intel(R) Data Center GPU Max 1550, architecture 12.60.3, vendor: Intel(R) Corporation, device version: 12.60.7, driver version 1.6.32567+18, status: compatible
+    #7: name: Intel(R) Data Center GPU Max 1550, architecture 12.60.3, vendor: Intel(R) Corporation, device version: 12.60.7, driver version 1.6.32567+18, status: compatible
+    #8: name: Intel(R) Data Center GPU Max 1550, architecture 12.60.3, vendor: Intel(R) Corporation, device version: 12.60.7, driver version 1.6.32567+18, status: compatible
+    #9: name: Intel(R) Data Center GPU Max 1550, architecture 12.60.3, vendor: Intel(R) Corporation, device version: 12.60.7, driver version 1.6.32567+18, status: compatible
+    #10: name: Intel(R) Data Center GPU Max 1550, architecture 12.60.3, vendor: Intel(R) Corporation, device version: 12.60.7, driver version 1.6.32567+18, status: compatible
+    #11: name: Intel(R) Data Center GPU Max 1550, architecture 12.60.3, vendor: Intel(R) Corporation, device version: 12.60.7, driver version 1.6.32567+18, status: compatible
 
 
 ++++ PLEASE READ AND CITE THE FOLLOWING REFERENCE ++++
@@ -112,8 +110,7 @@ M. J. Abraham, T. Murtola, R. Schulz, S. Páll, J. C. Smith, B. Hess, E.
 Lindahl
 GROMACS: High performance molecular simulations through multi-level
 parallelism from laptops to supercomputers
-SoftwareX (2015)
-DOI: 10.1016/j.softx.2015.06.001
+SoftwareX 1 (2015) pp. 19-25
 -------- -------- --- Thank You --- -------- --------
 
 
@@ -121,62 +118,57 @@ DOI: 10.1016/j.softx.2015.06.001
 S. Páll, M. J. Abraham, C. Kutzner, B. Hess, E. Lindahl
 Tackling Exascale Software Challenges in Molecular Dynamics Simulations with
 GROMACS
-In S. Markidis & E. Laure (Eds.), Solving Software Challenges for Exascale (2015)
-DOI: 10.1007/978-3-319-15976-8_1
+In S. Markidis & E. Laure (Eds.), Solving Software Challenges for Exascale 8759 (2015) pp. 3-27
 -------- -------- --- Thank You --- -------- --------
 
 
 ++++ PLEASE READ AND CITE THE FOLLOWING REFERENCE ++++
 S. Pronk, S. Páll, R. Schulz, P. Larsson, P. Bjelkmar, R. Apostolov, M. R.
-Shirts, J. C. Smith, P. M. Kasson, D. van der Spoel, B. Hess, E. Lindahl
+Shirts, J. C. Smith, P. M. Kasson, D. van der Spoel, B. Hess, and E. Lindahl
 GROMACS 4.5: a high-throughput and highly parallel open source molecular
 simulation toolkit
-Bioinformatics (2013)
-DOI: 10.1093/bioinformatics/btt055
+Bioinformatics 29 (2013) pp. 845-54
 -------- -------- --- Thank You --- -------- --------
 
 
 ++++ PLEASE READ AND CITE THE FOLLOWING REFERENCE ++++
-B. Hess, C. Kutzner, D. van der Spoel, E. Lindahl
+B. Hess and C. Kutzner and D. van der Spoel and E. Lindahl
 GROMACS 4: Algorithms for highly efficient, load-balanced, and scalable
 molecular simulation
-J. Chem. Theory Comput. (2008)
-DOI: 10.1021/ct700301q
+J. Chem. Theory Comput. 4 (2008) pp. 435-447
 -------- -------- --- Thank You --- -------- --------
 
 
 ++++ PLEASE READ AND CITE THE FOLLOWING REFERENCE ++++
-D. van der Spoel, E. Lindahl, B. Hess, G. Groenhof, A. E. Mark, H. J. C.
+D. van der Spoel, E. Lindahl, B. Hess, G. Groenhof, A. E. Mark and H. J. C.
 Berendsen
 GROMACS: Fast, Flexible and Free
-J. Comp. Chem. (2005)
-DOI: 10.1002/jcc.20291
+J. Comp. Chem. 26 (2005) pp. 1701-1719
 -------- -------- --- Thank You --- -------- --------
 
 
 ++++ PLEASE READ AND CITE THE FOLLOWING REFERENCE ++++
-E. Lindahl, B. Hess, D. van der Spoel
+E. Lindahl and B. Hess and D. van der Spoel
 GROMACS 3.0: A package for molecular simulation and trajectory analysis
-J. Mol. Mod. (2001)
-DOI: 10.1007/s008940100045
+J. Mol. Mod. 7 (2001) pp. 306-317
 -------- -------- --- Thank You --- -------- --------
 
 
 ++++ PLEASE READ AND CITE THE FOLLOWING REFERENCE ++++
 H. J. C. Berendsen, D. van der Spoel and R. van Drunen
 GROMACS: A message-passing parallel molecular dynamics implementation
-Comp. Phys. Comm. (1995)
-DOI: 10.1016/0010-4655(95)00042-E
+Comp. Phys. Comm. 91 (1995) pp. 43-56
 -------- -------- --- Thank You --- -------- --------
 
 
 ++++ PLEASE CITE THE DOI FOR THIS VERSION OF GROMACS ++++
-https://doi.org/10.5281/zenodo.14846130
+https://doi.org/10.5281/zenodo.14732103
 -------- -------- --- Thank You --- -------- --------
 
 
 The number of OpenMP threads was set by environment variable OMP_NUM_THREADS to 104 (and the command-line setting agreed with that)
 
+GPU-aware MPI detected, but by default GROMACS will not make use the direct GPU communication capabilities of MPI. For improved performance try enabling the feature by setting the GMX_ENABLE_DIRECT_GPU_COMM environment variable.
 Input Parameters:
    integrator                     = md
    tinit                          = 0
@@ -253,8 +245,14 @@ Input Parameters:
       ref-p[    1]={ 0.00000e+00,  1.00000e+00,  0.00000e+00}
       ref-p[    2]={ 0.00000e+00,  0.00000e+00,  1.00000e+00}
    refcoord-scaling               = No
-   posres-com (0x3):
-   posres-comB (0x3):
+   posres-com (3):
+      posres-com[0]= 0.00000e+00
+      posres-com[1]= 0.00000e+00
+      posres-com[2]= 0.00000e+00
+   posres-comB (3):
+      posres-comB[0]= 0.00000e+00
+      posres-comB[1]= 0.00000e+00
+      posres-comB[2]= 0.00000e+00
    QMMM                           = false
 qm-opts:
    ngQM                           = 0
@@ -342,25 +340,29 @@ annealing-npoints:           0
    nfreeze:           N           N           N
    energygrp-flags[  0]: 0
 
+
 The -nsteps functionality is deprecated, and may be removed in a future version. Consider using gmx convert-tpr -nsteps or changing the appropriate .mdp file field.
 
 Overriding nsteps with value passed on the command line: 1000 steps, 2 ps
 
-Changing rlist from 1.263 to 1.262 for non-bonded 8x8 atom kernels
+Changing rlist from 1.263 to 1.262 for non-bonded 8x4 atom kernels
 
 Changing nstlist from 10 to 25, rlist from 1.262 to 1.407
 
 
 Update groups can not be used for this system because there are three or more consecutively coupled constraints
 
-Local state does not use filler particles
+NOTE: SYCL GPU support in GROMACS, and the compilers, libraries,
+and drivers that it depends on are fairly new.
+Please, pay extra attention to the correctness of your results,
+and update to the latest GROMACS patch version if warranted.
 
 1 GPU selected for this run.
 Mapping of GPU IDs to the 1 GPU task in the 1 rank on this node:
   PP:0
 PP tasks will do (non-perturbed) short-ranged interactions on the GPU
 PP task will update and constrain coordinates on the GPU
-Using 1 MPI thread
+Using 1 MPI process
 
 Non-default thread affinity set, disabling internal thread affinity
 
@@ -379,11 +381,9 @@ Generated table with 1203 data points for 1-4 LJ12.
 Tabscale = 500 points/nm
 
 
-Using GPU 8x4 nonbonded short-range kernels
+Using GPU 8x8 nonbonded short-range kernels
 
-NBNxM GPU setup: super-cluster 1x2x2
-
-Using a dual 8x4 pair-list setup updated with dynamic, rolling pruning:
+Using a dual 8x8 pair-list setup updated with dynamic, rolling pruning:
   outer list: updated every 25 steps, buffer 0.207 nm, rlist 1.407 nm
   inner list: updated every  4 steps, buffer 0.020 nm, rlist 1.220 nm
 At tolerance 0.005 kJ/mol/ps per atom, equivalent classical 1x1 list would be:
@@ -397,28 +397,25 @@ Using Lorentz-Berthelot Lennard-Jones combination rule
 Initializing LINear Constraint Solver
 
 ++++ PLEASE READ AND CITE THE FOLLOWING REFERENCE ++++
-B. Hess, H. Bekker, H. J. C. Berendsen, J. G. E. M. Fraaije
+B. Hess and H. Bekker and H. J. C. Berendsen and J. G. E. M. Fraaije
 LINCS: A Linear Constraint Solver for molecular simulations
-J. Comp. Chem. (1997)
-DOI: 10.1002/(sici)1096-987x(199709)18:12<1463::aid-jcc4>3.0.co;2-h
+J. Comp. Chem. 18 (1997) pp. 1463-1472
 -------- -------- --- Thank You --- -------- --------
 
 The number of constraints is 95216
 
 ++++ PLEASE READ AND CITE THE FOLLOWING REFERENCE ++++
-S. Miyamoto, P. A. Kollman
+S. Miyamoto and P. A. Kollman
 SETTLE: An Analytical Version of the SHAKE and RATTLE Algorithms for Rigid
 Water Models
-J. Comp. Chem. (1992)
-DOI: 10.1002/jcc.540130805
+J. Comp. Chem. 13 (1992) pp. 952-962
 -------- -------- --- Thank You --- -------- --------
 
 
 ++++ PLEASE READ AND CITE THE FOLLOWING REFERENCE ++++
-G. Bussi, D. Donadio, M. Parrinello
+G. Bussi, D. Donadio and M. Parrinello
 Canonical sampling through velocity rescaling
-J. Chem. Phys. (2007)
-DOI: 10.1063/1.2408420
+J. Chem. Phys. 126 (2007) pp. 014101
 -------- -------- --- Thank You --- -------- --------
 
 There are: 3316463 Atoms
@@ -428,7 +425,7 @@ Center of mass motion removal mode is Linear
 We have the following groups for center of mass motion removal:
   0:  System
 
-Started mdrun on rank 0 Fri Aug  1 15:32:30 2025
+Started mdrun on rank 0 Sun Aug 17 19:36:30 2025
 
            Step           Time
               0        0.00000
@@ -437,27 +434,27 @@ Started mdrun on rank 0 Fri Aug  1 15:32:30 2025
            Bond            U-B    Proper Dih.          LJ-14     Coulomb-14
     1.61528e+05    1.39988e+06   -4.06956e+04    3.43319e+05    4.59320e+06
         LJ (SR)   Coulomb (SR)      Potential    Kinetic En.   Total Energy
-    7.73093e+06   -5.21141e+07   -3.79260e+07    8.76610e+06   -2.91599e+07
+    7.73092e+06   -5.21141e+07   -3.79260e+07    8.76610e+06   -2.91599e+07
   Conserved En.    Temperature Pressure (bar)   Constr. rmsd
-   -2.91578e+07    3.12789e+02    4.43250e+03    0.00000e+00
+   -2.91578e+07    3.12789e+02    4.43254e+03    0.00000e+00
 
            Step           Time
            1000        2.00000
 
-Writing checkpoint, step 1000 at Fri Aug  1 15:32:54 2025
+Writing checkpoint, step 1000 at Sun Aug 17 19:37:01 2025
 
 
    Energies (kJ/mol)
            Bond            U-B    Proper Dih.          LJ-14     Coulomb-14
-    2.84021e+05    6.56006e+05    3.13489e+04    3.55289e+05    4.60833e+06
+    2.83469e+05    6.56722e+05    3.04442e+04    3.55449e+05    4.60720e+06
         LJ (SR)   Coulomb (SR)      Potential    Kinetic En.   Total Energy
-    6.39533e+06   -5.15398e+07   -3.92095e+07    8.41967e+06   -3.07898e+07
+    6.38719e+06   -5.15421e+07   -3.92216e+07    8.42605e+06   -3.07956e+07
   Conserved En.    Temperature Pressure (bar)   Constr. rmsd
-   -2.93812e+07    3.00428e+02    2.23681e+02    0.00000e+00
+   -2.93800e+07    3.00655e+02    2.10693e+02    0.00000e+00
 
 
 Energy conservation over simulation part #1 of length 2 ps, time 0 to 2 ps
-  Conserved energy drift: -3.37e-02 kJ/mol/ps per atom
+  Conserved energy drift: -3.35e-02 kJ/mol/ps per atom
 
 
 	<======  ###############  ==>
@@ -468,24 +465,24 @@ Energy conservation over simulation part #1 of length 2 ps, time 0 to 2 ps
 
    Energies (kJ/mol)
            Bond            U-B    Proper Dih.          LJ-14     Coulomb-14
-    2.80391e+05    7.49434e+05    4.10513e+04    3.54596e+05    4.59715e+06
+    2.79497e+05    7.50009e+05    4.14796e+04    3.54517e+05    4.59711e+06
         LJ (SR)   Coulomb (SR)      Potential    Kinetic En.   Total Energy
-    6.47587e+06   -5.14645e+07   -3.89660e+07    8.48570e+06   -3.04803e+07
+    6.47458e+06   -5.14638e+07   -3.89666e+07    8.48621e+06   -3.04804e+07
   Conserved En.    Temperature Pressure (bar)   Constr. rmsd
-   -2.93694e+07    3.02784e+02    4.33972e+02    0.00000e+00
+   -2.93692e+07    3.02802e+02    4.32187e+02    0.00000e+00
 
           Box-X          Box-Y          Box-Z
-    9.36294e+01    2.04272e+01    1.76905e+01
+    9.36292e+01    2.04272e+01    1.76905e+01
 
    Total Virial (kJ/mol)
-    2.02523e+06   -1.09603e+05    4.28580e+04
-   -1.09597e+05    2.53679e+06   -4.86198e+04
-    4.28817e+04   -4.86049e+04    2.59721e+06
+    2.01979e+06   -1.13211e+05    4.44502e+04
+   -1.13197e+05    2.54570e+06   -4.70667e+04
+    4.44239e+04   -4.70684e+04    2.59973e+06
 
    Pressure (bar)
-    8.03024e+02    1.06842e+02   -2.90072e+01
-    1.06836e+02    2.60035e+02    4.58670e+01
-   -2.90304e+01    4.58524e+01    2.38857e+02
+    8.07952e+02    1.10220e+02   -2.97128e+01
+    1.10206e+02    2.52353e+02    4.45728e+01
+   -2.96871e+01    4.45746e+01    2.36255e+02
 
 
 	M E G A - F L O P S   A C C O U N T I N G
@@ -497,9 +494,9 @@ Energy conservation over simulation part #1 of length 2 ps, time 0 to 2 ps
 
  Computing:                               M-Number         M-Flops  % Flops
 -----------------------------------------------------------------------------
- Pair Search distance check           26304.472752      236740.255     2.3
- NxN RF Elec. + LJ [F]               245651.485312     9334756.442    92.4
- NxN RF Elec. + LJ [V&F]               2743.625344      148155.769     1.5
+ Pair Search distance check           26301.419952      236712.780     2.3
+ NxN RF Elec. + LJ [F]               245763.909504     9339028.561    92.4
+ NxN RF Elec. + LJ [V&F]               2743.992000      148175.568     1.5
  1,4 nonbonded interactions             560.087528       50407.878     0.5
  Shift-X                                135.974983         815.850     0.0
  Bonds                                  117.765648        6948.173     0.1
@@ -509,7 +506,7 @@ Energy conservation over simulation part #1 of length 2 ps, time 0 to 2 ps
  Calc-Ekin                              669.925526       18087.989     0.2
  Urey-Bradley                           383.178796       70121.720     0.7
 -----------------------------------------------------------------------------
- Total                                                10100046.276   100.0
+ Total                                                10104310.719   100.0
 -----------------------------------------------------------------------------
 
 
@@ -520,26 +517,24 @@ On 1 MPI rank, each using 104 OpenMP threads
  Activity:              Num   Num      Call    Wall time         Giga-Cycles
                         Ranks Threads  Count      (s)         total sum    %
 --------------------------------------------------------------------------------
- Neighbor search           1  104         41       4.193        872.259  14.8
- Launch PP GPU ops.        1  104       1961       3.465        720.852  12.2
- Force                     1  104       1001       0.874        181.826   3.1
- Wait GPU NB local         1  104       1001       2.202        458.104   7.8
- Wait GPU state copy       1  104       2223      13.399       2787.118  47.2
- NB X/F buffer ops.        1  104        101       0.073         15.147   0.3
- Write traj.               1  104          1       3.980        827.882  14.0
- GPU constr. setup         1  104          1       0.022          4.479   0.1
- Kinetic energy            1  104        201       0.086         17.919   0.3
- Rest                                              0.083         17.213   0.3
+ Neighbor search           1  104         41       4.987       1037.259  14.4
+ Launch PP GPU ops.        1  104       1961       8.139       1693.069  23.5
+ Force                     1  104       1001       0.864        179.761   2.5
+ Wait GPU NB local         1  104       1001       2.274        473.092   6.6
+ Wait GPU state copy       1  104       1263      14.138       2940.864  40.8
+ NB X/F buffer ops.        1  104        101       0.073         15.104   0.2
+ Write traj.               1  104          1       4.046        841.559  11.7
+ Rest                                              0.164         34.160   0.5
 --------------------------------------------------------------------------------
- Total                                            28.377       5902.796 100.0
+ Total                                            34.685       7214.867 100.0
 --------------------------------------------------------------------------------
 
-NOTE: 15 % of the run time was spent in pair search,
+NOTE: 14 % of the run time was spent in pair search,
       you might want to increase nstlist (this has no effect on accuracy)
 
                Core t (s)   Wall t (s)        (%)
-       Time:     2951.071       28.377    10399.4
+       Time:     3607.063       34.685    10399.4
                  (ns/day)    (hour/ns)
-Performance:        6.095        3.937
-Finished mdrun on rank 0 Fri Aug  1 15:32:58 2025
+Performance:        4.987        4.813
+Finished mdrun on rank 0 Sun Aug 17 19:37:05 2025
 

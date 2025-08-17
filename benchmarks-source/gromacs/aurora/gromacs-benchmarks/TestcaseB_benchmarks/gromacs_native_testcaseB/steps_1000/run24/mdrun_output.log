@@ -36,9 +36,9 @@ NOTE: 14 % of the run time was spent in pair search,
       you might want to increase nstlist (this has no effect on accuracy)
 
                Core t (s)   Wall t (s)        (%)
-       Time:     3556.132       34.196    10399.3
+       Time:     3609.706       34.711    10399.4
                  (ns/day)    (hour/ns)
-Performance:        5.058        4.745
+Performance:        4.983        4.816
 
-GROMACS reminds you: "Is This the Right Room for an Argument ?" (Monty Python)
+GROMACS reminds you: "Uh-oh .... Right Again" (Laurie Anderson)
 
