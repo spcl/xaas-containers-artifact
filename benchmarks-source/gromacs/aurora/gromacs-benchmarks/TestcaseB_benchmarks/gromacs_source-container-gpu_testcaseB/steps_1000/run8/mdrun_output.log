@@ -34,9 +34,9 @@ NOTE: 15 % of the run time was spent in pair search,
       you might want to increase nstlist (this has no effect on accuracy)
 
                Core t (s)   Wall t (s)        (%)
-       Time:     2996.883       28.829    10395.5
+       Time:     3043.612       29.267    10399.3
                  (ns/day)    (hour/ns)
-Performance:        6.000        4.000
+Performance:        5.910        4.061
 
-GROMACS reminds you: "The Universe is Somewhere In Here" (J.G.E.M. Fraaije)
+GROMACS reminds you: "My greatest contribution to the field of science is that I never entered it." (Colin Powell)
 

@@ -25,13 +25,13 @@ starting mdrun ''
 
 Writing final coordinates.
 
-NOTE: 19 % of the run time was spent in pair search,
+NOTE: 18 % of the run time was spent in pair search,
       you might want to increase nstlist (this has no effect on accuracy)
 
                Core t (s)   Wall t (s)        (%)
-       Time:     5628.654       54.123    10399.7
+       Time:     5878.843       56.529    10399.6
                  (ns/day)    (hour/ns)
-Performance:        3.196        7.510
+Performance:        3.060        7.843
 
-GROMACS reminds you: "Live for Liposuction" (Robbie Williams)
+GROMACS reminds you: "You should call it 'entropy'. No one knows what entropy really is, so in a debate you will always have the advantage." (John von Neumann to Claude Shannon, on why he should borrow the term for information theory)
 

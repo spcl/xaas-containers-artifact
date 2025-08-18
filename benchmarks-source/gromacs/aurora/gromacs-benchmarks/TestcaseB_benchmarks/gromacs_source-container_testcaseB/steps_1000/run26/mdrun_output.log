@@ -29,9 +29,9 @@ NOTE: 19 % of the run time was spent in pair search,
       you might want to increase nstlist (this has no effect on accuracy)
 
                Core t (s)   Wall t (s)        (%)
-       Time:     5724.111       55.042    10399.6
+       Time:     5670.862       54.529    10399.7
                  (ns/day)    (hour/ns)
-Performance:        3.143        7.637
+Performance:        3.172        7.566
 
-GROMACS reminds you: "Lottery: A tax on people who are bad at math." (Ambrose Bierce)
+GROMACS reminds you: "You Will Be Surprised At What Resides In Your Inside" (Arrested Development)
 

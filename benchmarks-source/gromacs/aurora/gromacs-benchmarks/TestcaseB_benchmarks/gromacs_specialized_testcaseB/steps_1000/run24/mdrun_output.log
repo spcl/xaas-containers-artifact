@@ -34,9 +34,9 @@ NOTE: 15 % of the run time was spent in pair search,
       you might want to increase nstlist (this has no effect on accuracy)
 
                Core t (s)   Wall t (s)        (%)
-       Time:     2981.186       28.667    10399.3
+       Time:     3025.314       29.092    10399.3
                  (ns/day)    (hour/ns)
-Performance:        6.034        3.978
+Performance:        5.946        4.036
 
-GROMACS reminds you: "Rockets are cool. There's no getting around that." (Elon Musk)
+GROMACS reminds you: "You Dirty Switch, You're On Again" (The Breeders)
 

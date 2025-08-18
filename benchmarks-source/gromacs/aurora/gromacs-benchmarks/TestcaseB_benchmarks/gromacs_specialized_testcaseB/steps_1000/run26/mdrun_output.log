@@ -34,9 +34,9 @@ NOTE: 15 % of the run time was spent in pair search,
       you might want to increase nstlist (this has no effect on accuracy)
 
                Core t (s)   Wall t (s)        (%)
-       Time:     2936.861       28.241    10399.3
+       Time:     3014.505       28.988    10399.3
                  (ns/day)    (hour/ns)
-Performance:        6.125        3.918
+Performance:        5.967        4.022
 
-GROMACS reminds you: "Been There, Done It" (Beavis and Butthead)
+GROMACS reminds you: "Put Me Inside SSC, Let's Test Superstring Theory, Oh Yoi Yoi Accelerate the Protons" (Gogol Bordello)
 

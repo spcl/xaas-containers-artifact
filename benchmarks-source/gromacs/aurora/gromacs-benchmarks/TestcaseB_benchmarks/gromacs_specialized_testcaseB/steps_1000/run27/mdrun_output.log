@@ -30,13 +30,13 @@ starting mdrun ''
 
 Writing final coordinates.
 
-NOTE: 15 % of the run time was spent in pair search,
+NOTE: 14 % of the run time was spent in pair search,
       you might want to increase nstlist (this has no effect on accuracy)
 
                Core t (s)   Wall t (s)        (%)
-       Time:     2937.403       28.246    10399.4
+       Time:     3057.082       29.397    10399.3
                  (ns/day)    (hour/ns)
-Performance:        6.124        3.919
+Performance:        5.884        4.079
 
-GROMACS reminds you: "Good judgement is the result of experience; experience is the result of bad judgement." (Mark Twain)
+GROMACS reminds you: "XML is not a language in the sense of a programming language any more than sketches on a napkin are a language." (Charles Simonyi)
 

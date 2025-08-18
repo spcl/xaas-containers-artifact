@@ -30,15 +30,13 @@ starting mdrun ''
 
 Writing final coordinates.
 
-Back Off! I just backed up confout.gro to ./#confout.gro.7#
-
-NOTE: 15 % of the run time was spent in pair search,
+NOTE: 14 % of the run time was spent in pair search,
       you might want to increase nstlist (this has no effect on accuracy)
 
                Core t (s)   Wall t (s)        (%)
-       Time:     2994.109       28.791    10399.4
+       Time:     3053.038       29.358    10399.3
                  (ns/day)    (hour/ns)
-Performance:        6.008        3.995
+Performance:        5.892        4.073
 
-GROMACS reminds you: "I Need Love, Not Games" (Iggy Pop & Kate Pierson)
+GROMACS reminds you: "Well, I am a dilettante. It's only in England that dilettantism is considered a bad thing. In other countries it's called interdisciplinary research." (Brian Eno)
 

@@ -29,9 +29,9 @@ NOTE: 19 % of the run time was spent in pair search,
       you might want to increase nstlist (this has no effect on accuracy)
 
                Core t (s)   Wall t (s)        (%)
-       Time:     5689.408       54.708    10399.6
+       Time:     5747.870       55.270    10399.6
                  (ns/day)    (hour/ns)
-Performance:        3.162        7.591
+Performance:        3.130        7.669
 
-GROMACS reminds you: "FORTRAN was the language of choice for the same reason that three-legged races are popular." (Ken Thompson)
+GROMACS reminds you: "(That makes 100 errors; please try again.)" (TeX)
 

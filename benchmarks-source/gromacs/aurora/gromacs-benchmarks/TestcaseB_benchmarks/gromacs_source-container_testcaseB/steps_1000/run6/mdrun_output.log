@@ -29,9 +29,9 @@ NOTE: 19 % of the run time was spent in pair search,
       you might want to increase nstlist (this has no effect on accuracy)
 
                Core t (s)   Wall t (s)        (%)
-       Time:     5663.779       54.461    10399.7
+       Time:     5777.691       55.557    10399.6
                  (ns/day)    (hour/ns)
-Performance:        3.176        7.556
+Performance:        3.113        7.708
 
-GROMACS reminds you: "A protein is a chain of letters." (Julie Bernauer)
+GROMACS reminds you: "It'll Cure Your Asthma Too !" (F. Zappa)
 

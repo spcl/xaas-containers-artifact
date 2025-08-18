@@ -47,7 +47,7 @@ GROMACS:      gmx mdrun, version 2025.0
 Executable:   /usr/local/gromacs/bin/gmx
 Data prefix:  /usr/local/gromacs
 Working dir:  /home/alokvk2
-Process ID:   130282
+Process ID:   86130
 Command line:
   gmx mdrun -s /home/alokvk2/xaas-containers-artifact/data/gromacs/GROMACS_TestCaseB/lignocellulose.tpr -ntomp 104 -ntmpi 1 -nsteps 1000
 
@@ -78,7 +78,7 @@ SYCL linker flags:   -fsycl -fsycl-device-code-split=per_kernel -ftarget-registe
 
 
 Running on 1 node with total 102 cores, 204 processing units, 12 compatible GPUs
-Hardware detected on host x4717c0s0b0n0:
+Hardware detected on host x4220c4s3b0n0:
   CPU info:
     Vendor: Intel
     Brand:  Intel(R) Xeon(R) CPU Max 9470C
@@ -428,7 +428,7 @@ Center of mass motion removal mode is Linear
 We have the following groups for center of mass motion removal:
   0:  System
 
-Started mdrun on rank 0 Fri Aug 15 23:22:47 2025
+Started mdrun on rank 0 Mon Aug 18 16:48:24 2025
 
            Step           Time
               0        0.00000
@@ -439,25 +439,25 @@ Started mdrun on rank 0 Fri Aug 15 23:22:47 2025
         LJ (SR)   Coulomb (SR)      Potential    Kinetic En.   Total Energy
     7.73093e+06   -5.21141e+07   -3.79260e+07    8.76610e+06   -2.91599e+07
   Conserved En.    Temperature Pressure (bar)   Constr. rmsd
-   -2.91578e+07    3.12789e+02    4.43251e+03    0.00000e+00
+   -2.91578e+07    3.12789e+02    4.43249e+03    0.00000e+00
 
            Step           Time
            1000        2.00000
 
-Writing checkpoint, step 1000 at Fri Aug 15 23:23:13 2025
+Writing checkpoint, step 1000 at Mon Aug 18 16:48:49 2025
 
 
    Energies (kJ/mol)
            Bond            U-B    Proper Dih.          LJ-14     Coulomb-14
-    2.85497e+05    6.58729e+05    2.77793e+04    3.53318e+05    4.60711e+06
+    2.83403e+05    6.57681e+05    3.06592e+04    3.54902e+05    4.60856e+06
         LJ (SR)   Coulomb (SR)      Potential    Kinetic En.   Total Energy
-    6.39374e+06   -5.15388e+07   -3.92126e+07    8.42277e+06   -3.07899e+07
+    6.40601e+06   -5.15517e+07   -3.92105e+07    8.41554e+06   -3.07949e+07
   Conserved En.    Temperature Pressure (bar)   Constr. rmsd
-   -2.93811e+07    3.00538e+02    1.95203e+02    0.00000e+00
+   -2.93798e+07    3.00280e+02    2.46724e+02    0.00000e+00
 
 
 Energy conservation over simulation part #1 of length 2 ps, time 0 to 2 ps
-  Conserved energy drift: -3.37e-02 kJ/mol/ps per atom
+  Conserved energy drift: -3.35e-02 kJ/mol/ps per atom
 
 
 	<======  ###############  ==>
@@ -468,24 +468,24 @@ Energy conservation over simulation part #1 of length 2 ps, time 0 to 2 ps
 
    Energies (kJ/mol)
            Bond            U-B    Proper Dih.          LJ-14     Coulomb-14
-    2.79688e+05    7.49656e+05    4.10991e+04    3.54453e+05    4.59658e+06
+    2.79960e+05    7.49691e+05    4.14335e+04    3.54522e+05    4.59665e+06
         LJ (SR)   Coulomb (SR)      Potential    Kinetic En.   Total Energy
-    6.47529e+06   -5.14604e+07   -3.89636e+07    8.48413e+06   -3.04795e+07
+    6.47918e+06   -5.14687e+07   -3.89672e+07    8.48454e+06   -3.04827e+07
   Conserved En.    Temperature Pressure (bar)   Constr. rmsd
-   -2.93697e+07    3.02728e+02    4.34812e+02    0.00000e+00
+   -2.93693e+07    3.02742e+02    4.37804e+02    0.00000e+00
 
           Box-X          Box-Y          Box-Z
-    9.36316e+01    2.04277e+01    1.76909e+01
+    9.36295e+01    2.04272e+01    1.76905e+01
 
    Total Virial (kJ/mol)
-    2.01899e+06   -1.18391e+05    3.74553e+04
-   -1.18387e+05    2.53943e+06   -4.90510e+04
-    3.74627e+04   -4.90553e+04    2.59666e+06
+    2.01437e+06   -1.09063e+05    4.69545e+04
+   -1.09087e+05    2.53843e+06   -4.49991e+04
+    4.69700e+04   -4.49881e+04    2.59367e+06
 
    Pressure (bar)
-    8.07920e+02    1.15195e+02   -2.38771e+01
-    1.15191e+02    2.58162e+02    4.62901e+01
-   -2.38844e+01    4.62943e+01    2.38354e+02
+    8.12360e+02    1.06574e+02   -3.27100e+01
+    1.06598e+02    2.59076e+02    4.16590e+01
+   -3.27251e+01    4.16481e+01    2.41974e+02
 
 
 	M E G A - F L O P S   A C C O U N T I N G
@@ -497,9 +497,9 @@ Energy conservation over simulation part #1 of length 2 ps, time 0 to 2 ps
 
  Computing:                               M-Number         M-Flops  % Flops
 -----------------------------------------------------------------------------
- Pair Search distance check           26300.576832      236705.191     2.3
- NxN RF Elec. + LJ [F]               245290.858624     9321052.628    92.4
- NxN RF Elec. + LJ [V&F]               2737.933312      147848.399     1.5
+ Pair Search distance check           26302.923600      236726.312     2.3
+ NxN RF Elec. + LJ [F]               245490.589632     9328642.406    92.4
+ NxN RF Elec. + LJ [V&F]               2740.345600      147978.662     1.5
  1,4 nonbonded interactions             560.087528       50407.878     0.5
  Shift-X                                135.974983         815.850     0.0
  Bonds                                  117.765648        6948.173     0.1
@@ -509,7 +509,7 @@ Energy conservation over simulation part #1 of length 2 ps, time 0 to 2 ps
  Calc-Ekin                              669.925526       18087.989     0.2
  Urey-Bradley                           383.178796       70121.720     0.7
 -----------------------------------------------------------------------------
- Total                                                10086000.029   100.0
+ Total                                                10093741.191   100.0
 -----------------------------------------------------------------------------
 
 
@@ -520,26 +520,26 @@ On 1 MPI rank, each using 104 OpenMP threads
  Activity:              Num   Num      Call    Wall time         Giga-Cycles
                         Ranks Threads  Count      (s)         total sum    %
 --------------------------------------------------------------------------------
- Neighbor search           1  104         41       4.161        865.627  14.3
- Launch PP GPU ops.        1  104       1961       3.407        708.620  11.7
- Force                     1  104       1001       0.877        182.500   3.0
- Wait GPU NB local         1  104       1001       2.789        580.157   9.6
- Wait GPU state copy       1  104       2223      13.792       2868.965  47.3
- NB X/F buffer ops.        1  104        101       0.070         14.592   0.2
- Write traj.               1  104          1       3.873        805.710  13.3
- GPU constr. setup         1  104          1       0.022          4.478   0.1
- Kinetic energy            1  104        201       0.084         17.537   0.3
- Rest                                              0.080         16.586   0.3
+ Neighbor search           1  104         41       4.314        897.426  14.7
+ Launch PP GPU ops.        1  104       1961       3.432        713.985  11.7
+ Force                     1  104       1001       0.865        179.988   3.0
+ Wait GPU NB local         1  104       1001       2.328        484.312   8.0
+ Wait GPU state copy       1  104       2223      14.124       2937.877  48.3
+ NB X/F buffer ops.        1  104        101       0.073         15.116   0.2
+ Write traj.               1  104          1       3.937        818.947  13.5
+ GPU constr. setup         1  104          1       0.021          4.432   0.1
+ Kinetic energy            1  104        201       0.087         18.082   0.3
+ Rest                                              0.082         17.100   0.3
 --------------------------------------------------------------------------------
- Total                                            29.156       6064.773 100.0
+ Total                                            29.264       6087.265 100.0
 --------------------------------------------------------------------------------
 
-NOTE: 14 % of the run time was spent in pair search,
+NOTE: 15 % of the run time was spent in pair search,
       you might want to increase nstlist (this has no effect on accuracy)
 
                Core t (s)   Wall t (s)        (%)
-       Time:     3032.034       29.156    10399.3
+       Time:     3043.297       29.264    10399.3
                  (ns/day)    (hour/ns)
-Performance:        5.933        4.045
-Finished mdrun on rank 0 Fri Aug 15 23:23:17 2025
+Performance:        5.911        4.060
+Finished mdrun on rank 0 Mon Aug 18 16:48:53 2025
 

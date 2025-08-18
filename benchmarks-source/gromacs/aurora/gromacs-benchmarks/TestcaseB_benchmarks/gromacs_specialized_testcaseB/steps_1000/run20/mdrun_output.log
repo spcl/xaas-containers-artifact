@@ -30,15 +30,13 @@ starting mdrun ''
 
 Writing final coordinates.
 
-Back Off! I just backed up confout.gro to ./#confout.gro.5#
-
-NOTE: 15 % of the run time was spent in pair search,
+NOTE: 14 % of the run time was spent in pair search,
       you might want to increase nstlist (this has no effect on accuracy)
 
                Core t (s)   Wall t (s)        (%)
-       Time:     2951.155       28.378    10399.3
+       Time:     3013.988       28.983    10399.3
                  (ns/day)    (hour/ns)
-Performance:        6.095        3.938
+Performance:        5.968        4.021
 
-GROMACS reminds you: "Computers are incredibly fast, accurate and stupid. Humans are incredibly slow, inaccurate and... also stupid." (Anonymous)
+GROMACS reminds you: "A curious aspect of the theory of evolution is that everybody thinks he understands it." (Jacques Monod)
 

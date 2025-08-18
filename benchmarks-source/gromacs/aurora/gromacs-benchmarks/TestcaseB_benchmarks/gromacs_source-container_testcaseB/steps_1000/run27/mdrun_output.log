@@ -25,15 +25,13 @@ starting mdrun ''
 
 Writing final coordinates.
 
-Back Off! I just backed up confout.gro to ./#confout.gro.15#
-
 NOTE: 19 % of the run time was spent in pair search,
       you might want to increase nstlist (this has no effect on accuracy)
 
                Core t (s)   Wall t (s)        (%)
-       Time:     5712.765       54.932    10399.7
+       Time:     5715.384       54.957    10399.7
                  (ns/day)    (hour/ns)
-Performance:        3.149        7.622
+Performance:        3.147        7.625
 
-GROMACS reminds you: "All I Ever Wanted Was Your Life" (Red Hot Chili Peppers)
+GROMACS reminds you: "I think everybody should like everybody." (Andy Warhol)
 

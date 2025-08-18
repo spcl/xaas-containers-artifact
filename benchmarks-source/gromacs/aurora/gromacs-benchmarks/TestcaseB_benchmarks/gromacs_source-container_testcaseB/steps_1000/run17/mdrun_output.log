@@ -25,13 +25,13 @@ starting mdrun ''
 
 Writing final coordinates.
 
-NOTE: 19 % of the run time was spent in pair search,
+NOTE: 18 % of the run time was spent in pair search,
       you might want to increase nstlist (this has no effect on accuracy)
 
                Core t (s)   Wall t (s)        (%)
-       Time:     5646.230       54.292    10399.7
+       Time:     5746.257       55.255    10399.6
                  (ns/day)    (hour/ns)
-Performance:        3.186        7.533
+Performance:        3.130        7.667
 
-GROMACS reminds you: "Forget this world and all its troubles and, if possible, it's multitudinous Charlatans - everything, in short, but the Enchantress of Numbers" (Ada Lovelace)
+GROMACS reminds you: "Sisters Have Always Fascinated Me" (Speech)
 

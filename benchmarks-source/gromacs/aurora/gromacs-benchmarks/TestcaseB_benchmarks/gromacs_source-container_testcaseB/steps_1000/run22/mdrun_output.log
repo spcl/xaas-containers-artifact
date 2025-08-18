@@ -29,9 +29,9 @@ NOTE: 19 % of the run time was spent in pair search,
       you might want to increase nstlist (this has no effect on accuracy)
 
                Core t (s)   Wall t (s)        (%)
-       Time:     5735.324       55.149    10399.7
+       Time:     5742.489       55.219    10399.6
                  (ns/day)    (hour/ns)
-Performance:        3.136        7.652
+Performance:        3.133        7.662
 
-GROMACS reminds you: "Science... never solves a problem without creating ten more." (George Bernard Shaw)
+GROMACS reminds you: "This isn't right. This isn't even wrong." (Wolfgang Pauli)
 

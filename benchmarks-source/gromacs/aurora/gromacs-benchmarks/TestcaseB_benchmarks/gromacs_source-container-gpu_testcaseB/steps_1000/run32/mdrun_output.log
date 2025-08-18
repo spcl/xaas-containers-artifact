@@ -30,13 +30,13 @@ starting mdrun ''
 
 Writing final coordinates.
 
-NOTE: 14 % of the run time was spent in pair search,
+NOTE: 15 % of the run time was spent in pair search,
       you might want to increase nstlist (this has no effect on accuracy)
 
                Core t (s)   Wall t (s)        (%)
-       Time:     2987.885       28.732    10399.3
+       Time:     3041.987       29.252    10399.3
                  (ns/day)    (hour/ns)
-Performance:        6.020        3.987
+Performance:        5.913        4.059
 
-GROMACS reminds you: "For a research worker the unforgotten moments of his life are those rare ones which come after years of plodding work, when the veil over natures secret seems suddenly to lift & when what was dark & chaotic appears in a clear & beautiful light & pattern." (Gerty Cori)
+GROMACS reminds you: "They don't have any beavers in India, so they have to simulate them" (The Tubes)
 

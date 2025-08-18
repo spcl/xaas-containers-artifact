@@ -29,9 +29,9 @@ NOTE: 19 % of the run time was spent in pair search,
       you might want to increase nstlist (this has no effect on accuracy)
 
                Core t (s)   Wall t (s)        (%)
-       Time:     5661.108       54.436    10399.6
+       Time:     5743.449       55.227    10399.7
                  (ns/day)    (hour/ns)
-Performance:        3.178        7.553
+Performance:        3.132        7.663
 
-GROMACS reminds you: "Make the Floor Burn" (2 Unlimited)
+GROMACS reminds you: "It's Bicycle Repair Man !" (Monty Python)
 

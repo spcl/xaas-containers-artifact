@@ -30,13 +30,13 @@ starting mdrun ''
 
 Writing final coordinates.
 
-NOTE: 11 % of the run time was spent in pair search,
+NOTE: 15 % of the run time was spent in pair search,
       you might want to increase nstlist (this has no effect on accuracy)
 
                Core t (s)   Wall t (s)        (%)
-       Time:     2835.246       27.264    10399.3
+       Time:     3045.021       29.281    10399.3
                  (ns/day)    (hour/ns)
-Performance:        6.344        3.783
+Performance:        5.907        4.063
 
-GROMACS reminds you: "No great discovery was ever made without a bold guess." (Marie Curie)
+GROMACS reminds you: "Two guys can move very fast when they're motivated enough and unemployed" (Eric Betzig)
 

@@ -34,9 +34,9 @@ NOTE: 15 % of the run time was spent in pair search,
       you might want to increase nstlist (this has no effect on accuracy)
 
                Core t (s)   Wall t (s)        (%)
-       Time:     2991.964       28.771    10399.3
+       Time:     3041.450       29.247    10399.3
                  (ns/day)    (hour/ns)
-Performance:        6.012        3.992
+Performance:        5.914        4.058
 
-GROMACS reminds you: "With four parameters I can fit an elephant, and with five I can make him wiggle his trunk." (John von Neumann)
+GROMACS reminds you: "I cannot think of a single one, not even intelligence." (Enrico Fermi, when asked what characteristics physics Nobel laureates had in common.)
 

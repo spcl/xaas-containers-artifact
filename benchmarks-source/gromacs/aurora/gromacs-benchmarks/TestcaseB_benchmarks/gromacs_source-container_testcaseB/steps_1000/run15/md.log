@@ -47,7 +47,7 @@ GROMACS:      gmx mdrun, version 2025.0
 Executable:   /usr/local/gromacs/bin/gmx
 Data prefix:  /usr/local/gromacs
 Working dir:  /home/alokvk2
-Process ID:   1292
+Process ID:   104915
 Command line:
   gmx mdrun -s /home/alokvk2/xaas-containers-artifact/data/gromacs/GROMACS_TestCaseB/lignocellulose.tpr -ntomp 104 -ntmpi 1 -nsteps 1000
 
@@ -78,7 +78,7 @@ SYCL linker flags:   -fsycl -fsycl-device-code-split=per_kernel -ftarget-registe
 
 
 Running on 1 node with total 102 cores, 204 processing units, 0 compatible GPUs
-Hardware detected on host x4716c2s3b0n0:
+Hardware detected on host x4418c7s7b0n0:
   CPU info:
     Vendor: Intel
     Brand:  Intel(R) Xeon(R) CPU Max 9470C
@@ -419,7 +419,7 @@ Center of mass motion removal mode is Linear
 We have the following groups for center of mass motion removal:
   0:  System
 
-Started mdrun on rank 0 Fri Aug 15 23:02:25 2025
+Started mdrun on rank 0 Mon Aug 18 16:20:33 2025
 
            Step           Time
               0        0.00000
@@ -435,7 +435,7 @@ Started mdrun on rank 0 Fri Aug 15 23:02:25 2025
            Step           Time
            1000        2.00000
 
-Writing checkpoint, step 1000 at Fri Aug 15 23:03:16 2025
+Writing checkpoint, step 1000 at Mon Aug 18 16:21:24 2025
 
 
    Energies (kJ/mol)
@@ -514,24 +514,24 @@ On 1 MPI rank, each using 104 OpenMP threads
  Activity:              Num   Num      Call    Wall time         Giga-Cycles
                         Ranks Threads  Count      (s)         total sum    %
 --------------------------------------------------------------------------------
- Neighbor search           1  104         41      10.433       2170.080  19.1
- Force                     1  104       1001      35.908       7469.256  65.6
- NB X/F buffer ops.        1  104       1961       2.248        467.547   4.1
- Write traj.               1  104          1       3.825        795.737   7.0
- Update                    1  104       1001       1.086        225.990   2.0
- Constraints               1  104       1001       0.688        143.113   1.3
- Kinetic energy            1  104        201       0.041          8.495   0.1
- Rest                                              0.494        102.771   0.9
+ Neighbor search           1  104         41      10.329       2148.470  18.9
+ Force                     1  104       1001      35.793       7445.294  65.4
+ NB X/F buffer ops.        1  104       1961       2.385        496.057   4.4
+ Write traj.               1  104          1       3.805        791.562   7.0
+ Update                    1  104       1001       1.147        238.611   2.1
+ Constraints               1  104       1001       0.735        152.942   1.3
+ Kinetic energy            1  104        201       0.042          8.712   0.1
+ Rest                                              0.487        101.198   0.9
 --------------------------------------------------------------------------------
- Total                                            54.723      11382.989 100.0
+ Total                                            54.723      11382.845 100.0
 --------------------------------------------------------------------------------
 
 NOTE: 19 % of the run time was spent in pair search,
       you might want to increase nstlist (this has no effect on accuracy)
 
                Core t (s)   Wall t (s)        (%)
-       Time:     5690.970       54.723    10399.6
+       Time:     5691.010       54.723    10399.7
                  (ns/day)    (hour/ns)
 Performance:        3.161        7.593
-Finished mdrun on rank 0 Fri Aug 15 23:03:20 2025
+Finished mdrun on rank 0 Mon Aug 18 16:21:27 2025
 

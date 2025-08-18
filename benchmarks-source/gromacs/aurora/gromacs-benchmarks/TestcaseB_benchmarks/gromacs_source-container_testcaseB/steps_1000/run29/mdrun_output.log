@@ -29,9 +29,9 @@ NOTE: 19 % of the run time was spent in pair search,
       you might want to increase nstlist (this has no effect on accuracy)
 
                Core t (s)   Wall t (s)        (%)
-       Time:     5612.592       53.969    10399.6
+       Time:     5776.921       55.549    10399.6
                  (ns/day)    (hour/ns)
-Performance:        3.205        7.488
+Performance:        3.114        7.707
 
-GROMACS reminds you: "The best model of a cat is another cat..., specially the same cat." (Arturo Rosenblueth)
+GROMACS reminds you: "GROMACS First : Making MD Great Again" (Vedran Miletic)
 

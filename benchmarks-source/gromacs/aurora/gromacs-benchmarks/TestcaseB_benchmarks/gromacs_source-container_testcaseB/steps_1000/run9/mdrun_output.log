@@ -29,9 +29,9 @@ NOTE: 19 % of the run time was spent in pair search,
       you might want to increase nstlist (this has no effect on accuracy)
 
                Core t (s)   Wall t (s)        (%)
-       Time:     5687.499       54.690    10399.6
+       Time:     5731.687       55.114    10399.6
                  (ns/day)    (hour/ns)
-Performance:        3.163        7.588
+Performance:        3.138        7.647
 
-GROMACS reminds you: "Do the Dog On the Ground" (Red Hot Chili Peppers)
+GROMACS reminds you: "We can make it into a friend class. But I don't like having friends." (Joe Jordan)
 

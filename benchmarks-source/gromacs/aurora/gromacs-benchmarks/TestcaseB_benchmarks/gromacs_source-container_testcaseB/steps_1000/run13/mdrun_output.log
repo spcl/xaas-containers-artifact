@@ -29,9 +29,9 @@ NOTE: 19 % of the run time was spent in pair search,
       you might want to increase nstlist (this has no effect on accuracy)
 
                Core t (s)   Wall t (s)        (%)
-       Time:     5713.623       54.941    10399.6
+       Time:     5715.319       54.957    10399.6
                  (ns/day)    (hour/ns)
-Performance:        3.148        7.623
+Performance:        3.147        7.625
 
-GROMACS reminds you: "Microbiology Lab - Staph Only." (Anonymous)
+GROMACS reminds you: "If you thought that science was certain - well, that is just an error on your part." (Richard Feynman)
 

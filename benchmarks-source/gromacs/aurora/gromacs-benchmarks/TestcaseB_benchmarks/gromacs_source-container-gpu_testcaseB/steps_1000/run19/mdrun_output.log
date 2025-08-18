@@ -30,13 +30,13 @@ starting mdrun ''
 
 Writing final coordinates.
 
-NOTE: 15 % of the run time was spent in pair search,
+NOTE: 14 % of the run time was spent in pair search,
       you might want to increase nstlist (this has no effect on accuracy)
 
                Core t (s)   Wall t (s)        (%)
-       Time:     2993.317       28.784    10399.3
+       Time:     3074.041       29.560    10399.3
                  (ns/day)    (hour/ns)
-Performance:        6.009        3.994
+Performance:        5.852        4.101
 
-GROMACS reminds you: "Rockets are cool. There's no getting around that." (Elon Musk)
+GROMACS reminds you: "Schrödinger's backup: The condition of any backup is unknown until a restore is attempted." (Anonymous)
 

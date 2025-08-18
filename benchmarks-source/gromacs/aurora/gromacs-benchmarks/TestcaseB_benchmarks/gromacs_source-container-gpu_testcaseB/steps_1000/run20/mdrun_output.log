@@ -30,13 +30,13 @@ starting mdrun ''
 
 Writing final coordinates.
 
-NOTE: 14 % of the run time was spent in pair search,
+NOTE: 15 % of the run time was spent in pair search,
       you might want to increase nstlist (this has no effect on accuracy)
 
                Core t (s)   Wall t (s)        (%)
-       Time:     3034.097       29.176    10399.3
+       Time:     3040.927       29.242    10399.3
                  (ns/day)    (hour/ns)
-Performance:        5.929        4.048
+Performance:        5.915        4.057
 
-GROMACS reminds you: "They Were So Quiet About It" (Pixies)
+GROMACS reminds you: "Do you know what cations don't like? Dog-ions. Do you know what they like? Pie." (Tom Cheatham)
 

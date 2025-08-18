@@ -30,13 +30,13 @@ starting mdrun ''
 
 Writing final coordinates.
 
-NOTE: 11 % of the run time was spent in pair search,
+NOTE: 15 % of the run time was spent in pair search,
       you might want to increase nstlist (this has no effect on accuracy)
 
                Core t (s)   Wall t (s)        (%)
-       Time:     2763.327       26.572    10399.3
+       Time:     3015.922       29.001    10399.3
                  (ns/day)    (hour/ns)
-Performance:        6.510        3.687
+Performance:        5.964        4.024
 
-GROMACS reminds you: "Rub It Right Across Your Eyes" (F. Zappa)
+GROMACS reminds you: "Perfect is the enemy of good." (Voltaire)
 

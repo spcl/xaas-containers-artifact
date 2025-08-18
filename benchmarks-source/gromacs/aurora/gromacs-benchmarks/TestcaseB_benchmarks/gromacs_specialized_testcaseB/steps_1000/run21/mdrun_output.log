@@ -34,9 +34,9 @@ NOTE: 15 % of the run time was spent in pair search,
       you might want to increase nstlist (this has no effect on accuracy)
 
                Core t (s)   Wall t (s)        (%)
-       Time:     2945.554       28.325    10399.3
+       Time:     3015.643       28.998    10399.3
                  (ns/day)    (hour/ns)
-Performance:        6.107        3.930
+Performance:        5.965        4.024
 
-GROMACS reminds you: "We must be clear that when it comes to atoms, language can be used only as in poetry. " (Niels Bohr)
+GROMACS reminds you: "There's only music to make new ringtones" (Arctic Monkeys)
 

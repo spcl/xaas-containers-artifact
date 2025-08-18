@@ -25,20 +25,18 @@ Non-default thread affinity set, disabling internal thread affinity
 
 Using 104 OpenMP threads 
 
-
-Back Off! I just backed up ener.edr to ./#ener.edr.3#
 starting mdrun ''
 1000 steps,      2.0 ps.
 
 Writing final coordinates.
 
-NOTE: 15 % of the run time was spent in pair search,
+NOTE: 14 % of the run time was spent in pair search,
       you might want to increase nstlist (this has no effect on accuracy)
 
                Core t (s)   Wall t (s)        (%)
-       Time:     2942.521       28.295    10399.3
+       Time:     3059.753       29.423    10399.3
                  (ns/day)    (hour/ns)
-Performance:        6.113        3.926
+Performance:        5.879        4.082
 
-GROMACS reminds you: "Science is the great antidote to the poison of enthusiasm and superstition." (Adam Smith, Wealth of Nations, 1776)
+GROMACS reminds you: "If all it takes to motivate you is a fancy picture and quote, you probably have a very easy job. The type of job computers will soon be doing." (Anonymous)
 

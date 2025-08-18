@@ -30,13 +30,13 @@ starting mdrun ''
 
 Writing final coordinates.
 
-NOTE: 15 % of the run time was spent in pair search,
+NOTE: 11 % of the run time was spent in pair search,
       you might want to increase nstlist (this has no effect on accuracy)
 
                Core t (s)   Wall t (s)        (%)
-       Time:     2944.872       28.318    10399.2
+       Time:     2934.982       28.223    10399.3
                  (ns/day)    (hour/ns)
-Performance:        6.108        3.929
+Performance:        6.129        3.916
 
-GROMACS reminds you: "Weaseling out of things is important to learn. It's what separates us from the animals... except the weasels." (Homer Simpson)
+GROMACS reminds you: "I'll Master Your Language, and In the Meantime I'll Create My Own" (Tricky)
 

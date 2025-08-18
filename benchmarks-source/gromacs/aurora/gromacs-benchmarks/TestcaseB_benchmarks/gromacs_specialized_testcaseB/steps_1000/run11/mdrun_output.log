@@ -30,13 +30,13 @@ starting mdrun ''
 
 Writing final coordinates.
 
-NOTE: 15 % of the run time was spent in pair search,
+NOTE: 14 % of the run time was spent in pair search,
       you might want to increase nstlist (this has no effect on accuracy)
 
                Core t (s)   Wall t (s)        (%)
-       Time:     2978.072       28.637    10399.4
+       Time:     3053.193       29.360    10399.3
                  (ns/day)    (hour/ns)
-Performance:        6.040        3.973
+Performance:        5.892        4.074
 
-GROMACS reminds you: "The road to openness is paved with git commits" (Vedran Miletic)
+GROMACS reminds you: "There's only music to make new ringtones" (Arctic Monkeys)
 

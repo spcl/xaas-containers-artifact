@@ -30,15 +30,13 @@ starting mdrun ''
 
 Writing final coordinates.
 
-Back Off! I just backed up confout.gro to ./#confout.gro.3#
-
 NOTE: 14 % of the run time was spent in pair search,
       you might want to increase nstlist (this has no effect on accuracy)
 
                Core t (s)   Wall t (s)        (%)
-       Time:     2993.893       28.789    10399.3
+       Time:     3018.877       29.030    10399.3
                  (ns/day)    (hour/ns)
-Performance:        6.008        3.995
+Performance:        5.958        4.028
 
-GROMACS reminds you: "Success is going from one failure to another without loss of enthusiasm" (Winston Churchill)
+GROMACS reminds you: "Take Dehydrated Water On Your Desert Trips" (Space Quest III)
 

@@ -29,9 +29,9 @@ NOTE: 19 % of the run time was spent in pair search,
       you might want to increase nstlist (this has no effect on accuracy)
 
                Core t (s)   Wall t (s)        (%)
-       Time:     5758.758       55.375    10399.6
+       Time:     5756.704       55.355    10399.6
                  (ns/day)    (hour/ns)
-Performance:        3.124        7.683
+Performance:        3.125        7.680
 
-GROMACS reminds you: "The easiest way to scale well is to have bad single-core performance" (Blind Freddie)
+GROMACS reminds you: "The only greatness for man is immortality." (James Dean)
 

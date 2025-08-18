@@ -34,9 +34,9 @@ NOTE: 15 % of the run time was spent in pair search,
       you might want to increase nstlist (this has no effect on accuracy)
 
                Core t (s)   Wall t (s)        (%)
-       Time:     2943.920       28.309    10399.3
+       Time:     3018.955       29.030    10399.3
                  (ns/day)    (hour/ns)
-Performance:        6.110        3.928
+Performance:        5.958        4.028
 
-GROMACS reminds you: "I can't help but think the model is ungrateful for all that nice data I gave it. Jerk." (Kate Stafford)
+GROMACS reminds you: "Almost without exception, the talented women I have known have believed they had less ability than they actually had. And almost without exception, the talented men I have known believed they had more." (Gregory Petsko)
 

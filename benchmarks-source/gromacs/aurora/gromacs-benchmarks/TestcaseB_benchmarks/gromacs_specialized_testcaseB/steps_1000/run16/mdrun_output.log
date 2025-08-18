@@ -30,13 +30,13 @@ starting mdrun ''
 
 Writing final coordinates.
 
-NOTE: 15 % of the run time was spent in pair search,
+NOTE: 14 % of the run time was spent in pair search,
       you might want to increase nstlist (this has no effect on accuracy)
 
                Core t (s)   Wall t (s)        (%)
-       Time:     2945.050       28.320    10399.3
+       Time:     3058.810       29.414    10399.3
                  (ns/day)    (hour/ns)
-Performance:        6.108        3.929
+Performance:        5.881        4.081
 
-GROMACS reminds you: "They call me 007: 0 pull requests reviewed, 0 features completed, 7 bugs created." (Anonymous)
+GROMACS reminds you: "I don’t think we’re afraid of inline assembly." (Szilard Pall)
 

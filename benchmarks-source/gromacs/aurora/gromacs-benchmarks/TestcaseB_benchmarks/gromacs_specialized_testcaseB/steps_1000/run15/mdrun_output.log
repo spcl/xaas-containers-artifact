@@ -30,13 +30,13 @@ starting mdrun ''
 
 Writing final coordinates.
 
-NOTE: 15 % of the run time was spent in pair search,
+NOTE: 14 % of the run time was spent in pair search,
       you might want to increase nstlist (this has no effect on accuracy)
 
                Core t (s)   Wall t (s)        (%)
-       Time:     2930.773       28.182    10399.3
+       Time:     3011.307       28.957    10399.3
                  (ns/day)    (hour/ns)
-Performance:        6.138        3.910
+Performance:        5.973        4.018
 
-GROMACS reminds you: "I'd be Safe and Warm if I was in L.A." (The Mamas and the Papas)
+GROMACS reminds you: "A cop pulls Heisenberg over and asks him 'Do you know how fast you were going?' Heisenberg replies 'No, but I know exactly where I am'. The cop says 'You were doing 55 in a 35 zone'. Heisenberg: 'Great! Now I'm lost!" (Anonymous)
 

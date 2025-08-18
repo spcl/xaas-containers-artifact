@@ -30,13 +30,13 @@ starting mdrun ''
 
 Writing final coordinates.
 
-NOTE: 15 % of the run time was spent in pair search,
+NOTE: 14 % of the run time was spent in pair search,
       you might want to increase nstlist (this has no effect on accuracy)
 
                Core t (s)   Wall t (s)        (%)
-       Time:     2976.998       28.627    10399.3
+       Time:     3048.695       29.316    10399.3
                  (ns/day)    (hour/ns)
-Performance:        6.042        3.972
+Performance:        5.900        4.068
 
-GROMACS reminds you: "I will not be a lemming and follow the crowd over the cliff and into the C." (John Beidler)
+GROMACS reminds you: "BioBeat is Not Available In Regular Shops" (P.J. Meulenhoff)
 

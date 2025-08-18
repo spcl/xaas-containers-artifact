@@ -30,13 +30,13 @@ starting mdrun ''
 
 Writing final coordinates.
 
-NOTE: 15 % of the run time was spent in pair search,
+NOTE: 14 % of the run time was spent in pair search,
       you might want to increase nstlist (this has no effect on accuracy)
 
                Core t (s)   Wall t (s)        (%)
-       Time:     2996.392       28.813    10399.3
+       Time:     3083.224       29.648    10399.3
                  (ns/day)    (hour/ns)
-Performance:        6.003        3.998
+Performance:        5.834        4.114
 
-GROMACS reminds you: "We must be clear that when it comes to atoms, language can be used only as in poetry. " (Niels Bohr)
+GROMACS reminds you: "I don't want to achieve immortality through my work... I want to achieve it through not dying!" (Woody Allen)
 
