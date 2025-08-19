@@ -17,8 +17,7 @@ Before running the scripts, make sure to update the following paths:
 
 ## Test Cases
 
-- Portable Container - Clang, SSE4.1 vectorization, SYCL for GPUs.
 - Specialized container - Intel Compiler, MKL, SYCL for GPUs.
-- Spack installation (no container) - specialized to platform.
+- Native module for Aurora.
+- Spack installation (no container) - specialized to platform, does not currently work.
 - XaaS Source container - run `spcleth/xaas-artifact:source-gromacs-aurora` through the container method of the platform.
-- XaaS IR container - run FIXME through the container method of the platform.

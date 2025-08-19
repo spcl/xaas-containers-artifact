@@ -11,6 +11,7 @@
 #SBATCH --view=modules
 
 ARTIFACT_LOCATION=${ARTIFACT_LOCATION:-${SCRATCH}/xaas-containers-artifact}
+DOCKER_REPOSITORY=${DOCKER_REPOSITORY:-"spcleth/xaas-artifact"}
 
 cd ${ARTIFACT_LOCATION}/benchmarks-source/gromacs/clariden/build-scripts/testcase2
 
@@ -18,6 +19,5 @@ CONTAINER_IMAGE=gromacs_clariden.sqsh
 IMAGE_NAME=gromacs-source-deploy-clariden
 
 rm ${CONTAINER_IMAGE}
-podman pull docker.io/spcleth/xaas-artifact:${IMAGE_NAME}
+podman pull docker.io/${DOCKER_REPOSITORY}:${IMAGE_NAME}
 enroot import -x mount -o ${CONTAINER_IMAGE} podman://xaas-artifact:${IMAGE_NAME}
-
