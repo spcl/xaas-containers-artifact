@@ -19,8 +19,8 @@ cd ${ARTIFACT_LOCATION}/benchmarks-source/gromacs/clariden/build-scripts/testcas
 
 CONF_FILE="$HOME/.config/containers/storage.conf"
 if [ ! -f ${CONF_FILE} ]; then
-	echo "Create ${CONF_FILE} because not found!"
-	cat > ${CONF_FILE} << EOF
+  echo "Create ${CONF_FILE} because not found!"
+  cat >${CONF_FILE} <<EOF
 [storage]
 driver = "overlay"
 runroot = "/dev/shm/$USER/runroot"
@@ -33,7 +33,7 @@ CONTAINER_IMAGE=gromacs_clariden.sqsh
 # then, create the environment
 ENVIRONMENT_FILE=${ARTIFACT_LOCATION}/benchmarks-source/gromacs/clariden/build-scripts/testcase2/environment.toml
 echo "Create new ${ENVIRONMENT_FILE}"
-cat > ${ENVIRONMENT_FILE} << EOF
+cat >${ENVIRONMENT_FILE} <<EOF
 image = "${ARTIFACT_LOCATION}/benchmarks-source/gromacs/clariden/build-scripts/testcase2/${CONTAINER_IMAGE}"
 workdir = "${SCRATCH}"
 writable = true
@@ -49,9 +49,9 @@ EOF
 IMAGE_NAME=gromacs-source-deploy-clariden
 
 # schedule the build
-podman build --platform linux/arm64 --build-arg nproc=72 -t docker.io/spcleth/xaas-artifact:${IMAGE_NAME} -f Dockerfile.deployment-clariden . 
+podman build --platform linux/arm64 --build-arg nproc=72 -t docker.io/spcleth/xaas-artifact:${IMAGE_NAME} -f Dockerfile.deployment-clariden .
 enroot import -x mount -o ${CONTAINER_IMAGE} podman://${DOCKER_REPOSITORY}:${IMAGE_NAME}
 
 # push to remote repository - optional
-podman login docker.io -u spcleth -p Qk2EkvFrDdzLLtB
+podman login docker.io -u XXXXXXX -p XXXXXXXXXX
 podman push docker.io/${DOCKER_REPOSITORY}:${IMAGE_NAME}
