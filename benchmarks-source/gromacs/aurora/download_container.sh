@@ -8,16 +8,16 @@
 module load apptainer
 
 ARTIFACT_LOCATION=${ARTIFACT_LOCATION:-${HOME}/xaas-containers-artifact}
-ARTIFACT_REPOSITORY=${ARTIFACT_REPOSITORY:-"spcleth/xaas-artifact"}
+DOCKER_REPOSITORY=${DOCKER_REPOSITORY:-"spcleth/xaas-artifact"}
 CONTAINER_PATH="${ARTIFACT_LOCATION}/data/gromacs/images/"
 
 mkdir -p ${CONTAINER_PATH}
 
 echo "Download specialized container"
-apptainer build ${CONTAINER_PATH}/gromacs-mpi-ipc.sing docker://${ARTIFACT_REPOSITORY}:gromacs-aurora-specialized
+apptainer build ${CONTAINER_PATH}/gromacs-mpi-ipc.sing docker://${DOCKER_REPOSITORY}:gromacs-aurora-specialized
 
 echo "Download XaaS Source container"
-apptainer build ${CONTAINER_PATH}/gromacs-xaas-source.sing docker://${ARTIFACT_REPOSITORY}:gromacs-source-deploy-aurora
+apptainer build ${CONTAINER_PATH}/gromacs-xaas-source.sing docker://${DOCKER_REPOSITORY}:gromacs-source-deploy-aurora
 
 echo "Download XaaS Source + GPU container"
-apptainer build ${CONTAINER_PATH}/gromacs-xaas-source-gpu.sing docker://${ARTIFACT_REPOSITORY}:gromacs-source-deploy-aurora-gpu-fix
+apptainer build ${CONTAINER_PATH}/gromacs-xaas-source-gpu.sing docker://${DOCKER_REPOSITORY}:gromacs-source-deploy-aurora-gpu-fix

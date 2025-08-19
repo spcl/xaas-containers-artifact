@@ -8,10 +8,10 @@
 module load apptainer
 
 ARTIFACT_LOCATION=${ARTIFACT_LOCATION:-${HOME}/xaas-containers-artifact}
-ARTIFACT_REPOSITORY=${ARTIFACT_REPOSITORY:-"spcleth/xaas-artifact"}
+DOCKER_REPOSITORY=${DOCKER_REPOSITORY:-"spcleth/xaas-artifact"}
 CONTAINER_PATH="${ARTIFACT_LOCATION}/data/gromacs/images/"
 
 mkdir -p ${CONTAINER_PATH}
 
 echo "Download XaaS Source "
-apptainer build ${CONTAINER_PATH}/source-llamacpp-aurora.sing docker://${ARTIFACT_REPOSITORY}:llamacpp-source-deploy-aurora
+apptainer build ${CONTAINER_PATH}/source-llamacpp-aurora.sing docker://${DOCKER_REPOSITORY}:llamacpp-source-deploy-aurora

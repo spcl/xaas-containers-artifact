@@ -49,7 +49,7 @@ EOF
 IMAGE_NAME=gromacs-source-deploy-clariden
 
 # schedule the build
-podman build --platform linux/arm64 --build-arg nproc=72 -t docker.io/spcleth/xaas-artifact:${IMAGE_NAME} -f Dockerfile.deployment-clariden .
+podman build --platform linux/arm64 --build-arg nproc=72 -t docker.io/${DOCKER_REPOSITORY}:${IMAGE_NAME} -f Dockerfile.deployment-clariden .
 enroot import -x mount -o ${CONTAINER_IMAGE} podman://${DOCKER_REPOSITORY}:${IMAGE_NAME}
 
 # push to remote repository - optional
