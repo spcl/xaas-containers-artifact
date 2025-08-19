@@ -1,9 +1,9 @@
 #!/bin/bash
 #PBS -A workflow_scaling
 #PBS -N gromacs_app_tests
-#PBS -l walltime=00:60:00
+#PBS -l walltime=02:00:00
 #PBS -l filesystems=flare
-#PBS -q debug
+#PBS -q prod
 
 # FIXME: adapt for your configuration
 module load apptainer
@@ -22,7 +22,7 @@ CONTAINER_PATH="${ARTIFACT_LOCATION}/data/gromacs/images/gromacs-mpi-ipc.sing"
 
 mkdir -p "$TESTCASE_DIR"
 
-WARMUP_RUNS=10
+WARMUP_RUNS=2
 BENCHMARK_RUNS=30
 TOTAL_RUNS=$((WARMUP_RUNS + BENCHMARK_RUNS))
 
