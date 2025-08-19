@@ -19,8 +19,8 @@ cd ${ARTIFACT_LOCATION}/benchmarks-source/llama.cpp/clariden/build-scripts/testc
 
 CONF_FILE="$HOME/.config/containers/storage.conf"
 if [ ! -f ${CONF_FILE} ]; then
-	echo "Create ${CONF_FILE} because not found!"
-	cat > ${CONF_FILE} << EOF
+  echo "Create ${CONF_FILE} because not found!"
+  cat >${CONF_FILE} <<EOF
 [storage]
 driver = "overlay"
 runroot = "/dev/shm/$USER/runroot"
@@ -33,7 +33,7 @@ CONTAINER_IMAGE=llamacpp_clariden.sqsh
 # then, create the environment
 ENVIRONMENT_FILE=${ARTIFACT_LOCATION}/benchmarks-source/llama.cpp/clariden/build-scripts/testcase3/environment.toml
 echo "Create new ${ENVIRONMENT_FILE}"
-cat > ${ENVIRONMENT_FILE} << EOF
+cat >${ENVIRONMENT_FILE} <<EOF
 image = "${ARTIFACT_LOCATION}/benchmarks-source/llama.cpp/clariden/build-scripts/testcase3/${CONTAINER_IMAGE}"
 workdir = "${SCRATCH}"
 writable = true
@@ -46,9 +46,9 @@ mounts = [
 com.hooks.cxi.enabled = "true"
 EOF
 
-IMAGE_NAME=llamacpp-source-deploy-clariden
+IMAGE_NAME=llama.cpp-source-deploy-clariden
 # schedule the build
-podman build --platform linux/arm64 --build-arg nproc=72 -t docker.io/${DOCKER_REPOSITORY}:${IMAGE_NAME} -f Dockerfile . 
+podman build --platform linux/arm64 --build-arg nproc=72 -t docker.io/${DOCKER_REPOSITORY}:${IMAGE_NAME} -f Dockerfile .
 enroot import -x mount -o ${CONTAINER_IMAGE} podman://${DOCKER_REPOSITORY}:${IMAGE_NAME}
 
 # push to remote repository - optional

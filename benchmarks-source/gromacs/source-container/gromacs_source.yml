@@ -1,0 +1,4 @@
+working_directory: gromacs-builds
+source_directory: gromacs-2025.0
+project_name: gromacs
+docker_repository: spcleth/xaas-artifact

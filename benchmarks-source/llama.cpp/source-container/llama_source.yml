@@ -1,0 +1,4 @@
+working_directory: llamacpp-builds
+source_directory: llama.cpp
+project_name: llama.cpp
+docker_repository: spcleth/xaas-artifact

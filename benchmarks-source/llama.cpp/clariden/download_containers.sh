@@ -15,7 +15,7 @@ ARTIFACT_LOCATION=${ARTIFACT_LOCATION:-${SCRATCH}/xaas-containers-artifact}
 cd ${ARTIFACT_LOCATION}/benchmarks-source/llama.cpp/clariden/build-scripts/testcase3
 
 CONTAINER_IMAGE=llamacpp_clariden.sqsh
-IMAGE_NAME=llamacpp-source-deploy-clariden
+IMAGE_NAME=llama.cpp-source-deploy-clariden
 
 rm ${CONTAINER_IMAGE}
 podman pull docker.io/spcleth/xaas-artifact:${IMAGE_NAME}

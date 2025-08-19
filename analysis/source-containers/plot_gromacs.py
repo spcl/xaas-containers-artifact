@@ -24,15 +24,17 @@ DATA_DIR = os.path.join(
 mapping_experiments = {
     "ault23": {
         "testcase0": "naive",
+        "testcase1": "native",
         "testcase4": "spack",
-        "testcase5": "optimized spack",
+        "testcase5": "optimized_spack",
         "testcase3": "xaas",
     },
     "clariden": {
         "testcase0": "naive",
+        "testcase1": "native",
         "testcase4": "spack",
-        "testcase5": "optimized spack",
-        "testcase3": "xaas",
+        "testcase5": "optimized_spack",
+        "testcase2": "xaas",
     },
     "aurora": {
         "native": "module",
@@ -41,6 +43,8 @@ mapping_experiments = {
         "source-container-gpu": "xaas_gpu",
     },
 }
+
+STEPS = {"ault23": 1000, "clariden": 3000, "aurora": None}
 
 colors = {
     "native": "#6B6463",
@@ -56,15 +60,15 @@ legends = {
     "module": "Module",
     "naive": "Naive\nBuild",
     "spack": "Spack",
-    "optimized_spack": "Spack optimized",
+    "optimized_spack": "Spack\nOptimized",
     "xaas": "XaaS\nSource",
     "xaas_gpu": "XaaS\nSource\n+Manual",
-    "specialized": "Container",
+    "specialized": "Specialized\nContainer",
 }
 
 
 def extract_values(md_log_path):
-    wall_time, performance = None, None
+    wall_time, performance, io_time = None, None, None
     try:
         with open(md_log_path, "r") as file:
             for line in file:
@@ -76,11 +80,16 @@ def extract_values(md_log_path):
                     perf_values = re.findall(r"\d+\.\d+", line)
                     if perf_values:
                         performance = float(perf_values[0])
-                if wall_time is not None and performance is not None:
+                if "Write traj." in line:
+                    io_time = line.split()[5]
+                if wall_time and performance and io_time:
                     break
     except Exception as e:
         print(f"Error reading {md_log_path}: {e}")
-    return wall_time, performance
+    if wall_time is None or performance is None or io_time is None:
+        print(f"Missing data in {md_log_path}")
+        raise RuntimeError()
+    return wall_time, performance, io_time
 
 
 def compute_statistics(data, harmonic=False):
@@ -110,7 +119,16 @@ def process_data(input_directory):
         for testcase in os.listdir(benchmarks_path):
             testcase_path = os.path.join(benchmarks_path, testcase)
             print(testcase_path)
+
+            steps = STEPS[system]
+
+            if steps is not None:
+                testcase_path = os.path.join(testcase_path, f"steps_{steps}")
+
             if not os.path.isdir(testcase_path):
+                continue
+
+            if testcase.split("_")[0] != "gromacs":
                 continue
 
             testcase_name = testcase.split("_")[1]
@@ -123,21 +141,30 @@ def process_data(input_directory):
 
             wall_times = []
             performances = []
+            io_times = []
             for run_dir in os.listdir(testcase_path):
                 run_path = os.path.join(testcase_path, run_dir, "md.log")
                 if os.path.exists(run_path):
-                    wall, perf = extract_values(run_path)
+                    wall, perf, io_time = extract_values(run_path)
                     if wall is not None and perf is not None:
                         wall_times.append(wall)
                         performances.append(perf)
+                        io_times.append(io_time)
 
             print(
                 f"Processing {system} - {testcase_name}, samples: {len(wall_times)}, {len(performances)}"
             )
 
             if wall_times and performances:
+                for i in range(len(wall_times)):
+                    wall_times[i] -= float(io_times[i])
+
                 wall_mean, wall_ci = compute_statistics(wall_times, harmonic=False)
                 perf_hmean, perf_ci = compute_statistics(performances, harmonic=True)
+
+                print(
+                    f"Processing {system} - {testcase_name}, time: {wall_mean} +- {wall_ci}"
+                )
 
                 records.append(
                     {
@@ -166,7 +193,7 @@ def plot_grouped_bar(df, metric_name):
     systems = df_metric["System"].unique()
 
     fig, axs = plt.subplots(
-        1, len(systems), figsize=(10, 4), width_ratios=[2, 3, 2], sharey=False
+        1, len(systems), figsize=(10, 4), width_ratios=[2.5, 2, 2.5], sharey=False
     )
     if len(systems) == 1:
         axs = [axs]
@@ -207,18 +234,19 @@ def plot_grouped_bar(df, metric_name):
             x = bar.get_x() + bar.get_width() / 2
             y = row["Mean"]
             err = row["CI"]
+            print(y, err)
             ax.errorbar(x=x, y=y, yerr=err, fmt="none", ecolor="black", capsize=5)
 
         # Titles and axes
         system_titles = {
-            "clariden": "Clariden-Alps",
-            "aurora": "Aurora",
-            "ault23": "Ault23",
+            "clariden": "Clariden-Alps (3000 steps)",
+            "aurora": "Aurora (1000 steps)",
+            "ault23": "Ault23 (1000 steps)",
         }
         ax.set_title(
             system_titles.get(system.lower(), system.capitalize()),
             fontweight="bold",
-            fontsize=16,
+            fontsize=14,
         )
         # ax.set_xlabel("Build Settings", fontweight="bold", color="#333333")
         ax.set_xlabel("")
@@ -240,7 +268,7 @@ def plot_grouped_bar(df, metric_name):
             # rotation=20,
             ha="center",
             fontweight="bold",
-            fontsize=14,
+            fontsize=10,
             color="#333333",
         )
         ax.tick_params(axis="y", labelsize=12, labelcolor="#333333")

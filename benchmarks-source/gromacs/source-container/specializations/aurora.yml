@@ -1,0 +1,20 @@
+source_container: spcleth/xaas-artifact:gromacs-source-x86_64
+working_directory: gromacs-builds
+project_name: gromacs
+language: cxx
+system:
+  name: aurora
+  system_discovery: ../../../system_discovery/aurora.json
+  base_image:
+    name: intel/hpckit:2024.2.1-0-devel-ubuntu22.04
+    provided_features: [ICPX, ONEAPI, SYCL]
+    additional_commands: []
+mode:
+  predefined_config:
+    vectorization_flags: avx_512
+    gpu_backends: SYCL
+    parallel_libraries: [OpenMP]
+    fft_libraries: [mkl, MKL]
+    linear_algebra_libraries: MKL
+    compiler: icpx
+  mode: predefined

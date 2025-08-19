@@ -40,6 +40,10 @@
     "MPICH": {
       "libmpi.so": "/user-environment/linux-sles15-neoverse_v2/gcc-13.3.0/cray-mpich-8.1.30-wb5peugemrg2ebx7psp2iz2abmqy3rgz/lib/libmpi.so",
       "libmpifort.so": "/user-environment/linux-sles15-neoverse_v2/gcc-13.3.0/cray-mpich-8.1.30-wb5peugemrg2ebx7psp2iz2abmqy3rgz/lib/libmpifort.so"
+    },
+    "Unknown MPI": {
+      "libmpi.so": "/user-environment/env/default/lib/libmpi.so",
+      "libmpifort.so": "/user-environment/env/default/lib/libmpifort.so"
     }
   },
   "FFT Libraries": {
@@ -54,7 +58,24 @@
       "version": "11.3.0.4"
     }
   },
-  "Linear Algebra Libraries": {},
+  "linear algebra Libraries": {
+    "BLAS": {
+      "installation_path": "/user-environment/linux-sles15-neoverse_v2/gcc-13.3.0/openblas-0.3.28-fzip767wty4ltewko533hrsek2xhslwk/lib",
+      "version": "13.3.0"
+    },
+    "LAPACK": {
+      "installation_path": "/user-environment/linux-sles15-neoverse_v2/gcc-13.3.0/netlib-scalapack-2.2.0-pwuhyygllbznwxfkorpvms3mji42p5mu/lib",
+      "version": "13.3.0"
+    },
+    "SCALAPACK": {
+      "installation_path": "/user-environment/linux-sles15-neoverse_v2/gcc-13.3.0/netlib-scalapack-2.2.0-pwuhyygllbznwxfkorpvms3mji42p5mu/lib",
+      "version": "13.3.0"
+    },
+    "OpenBLAS": {
+      "installation_path": "/user-environment/linux-sles15-neoverse_v2/gcc-13.3.0/openblas-0.3.28-fzip767wty4ltewko533hrsek2xhslwk/lib",
+      "version": "13.3.0"
+    }
+  },
   "GPU Backends": {
     "CUDA": {
       "libraries": [],
@@ -78,13 +99,36 @@
     }
   },
   "Loaded Modules": {
-    "cray-mpich": "8.1.30",
+    "cmake": "3.30.5",
     "cuda": "12.6.2",
+    "cray-mpich": "8.1.30",
     "fftw": "3.3.10",
-    "aws-ofi-nccl": "git.v1.9.2-aws_1.9.2",
-    "python": "3.12.5",
-    "hdf5": "1.14.5",
     "gcc": "13.3.0",
-    "cmake": "3.30.5"
+    "kokkos": "4.4.01",
+    "nccl": "2.22.3-1",
+    "netlib-scalapack": "2.2.0",
+    "openblas": "0.3.28",
+    "python": "3.12.5"
+  },
+  "Compilers": {
+    "c": {
+      "gcc": "gcc (Spack GCC) 13.3.0",
+      "clang": "Not found",
+      "icc": "Not found",
+      "icx": "Not found",
+      "mpicc": "gcc (Spack GCC) 13.3.0"
+    },
+    "cxx": {
+      "g++": "g++ (Spack GCC) 13.3.0",
+      "clang++": "Not found",
+      "icpc": "Not found",
+      "icpx": "Not found",
+      "mpicxx": "g++ (Spack GCC) 13.3.0"
+    },
+    "fortran": {
+      "gfortran": "GNU Fortran (Spack GCC) 13.3.0",
+      "ifort": "Not found",
+      "mpifort": "GNU Fortran (Spack GCC) 13.3.0"
+    }
   }
 }

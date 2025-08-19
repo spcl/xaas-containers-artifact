@@ -31,6 +31,7 @@ mapping_experiments = {
     "aurora": {
         "testcase0": "Specialized",
         "testcase1": "XaaS Source Container",
+        "testcase2": "Naive",
     },
 }
 
@@ -83,7 +84,6 @@ for system in os.listdir(DATA_DIR):
             continue
 
         config_name = os.path.splitext(file)[0].split("_")[0]
-        print(os.path.splitext(file)[0], config_name)
 
         config_name = mapping_experiments[system.lower()][config_name]
 
@@ -96,6 +96,7 @@ for system in os.listdir(DATA_DIR):
 
         avg_ns_sec = float(last_row["avg_ns"]) / 1e9
         stddev_ns_sec = float(last_row["stddev_ns"]) / 1e9
+        print(system, file, avg_ns_sec, stddev_ns_sec)
 
         execution_data.append(
             {
@@ -146,10 +147,13 @@ for ax, system in zip(axs1, systems):
     )
     color = data["Color"].iloc[0]
 
-    for patch, row in zip(ax.patches, data.itertuples()):
+    # for patch, row in zip(ax.patches, data.itertuples()):
+    for patch, build in zip(ax.patches, system_order):
         patch.set_color(color)
         bar_x = patch.get_x() + patch.get_width() / 2
         bar_y = patch.get_height()
+
+        row = data.loc[data["Build"] == build].iloc[0]
         ax.errorbar(bar_x, bar_y, yerr=row.Std, fmt="none", c="black", capsize=5)
         ax.text(
             bar_x,

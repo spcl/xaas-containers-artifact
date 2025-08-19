@@ -1,0 +1,17 @@
+source_container: spcleth/xaas-artifact:gromacs-source-x86_64
+working_directory: gromacs-builds
+project_name: gromacs
+language: cxx
+system:
+  name: ault23_second
+  system_discovery: ../../../system_discovery/ault23.json
+  base_image: null
+mode:
+  predefined_config:
+    vectorization_flags: avx_512
+    gpu_backends: CUDA
+    parallel_libraries: [OpenMP, mpich]
+    fft_libraries: [fftw3, cuFFT]
+    linear_algebra_libraries: null
+    compiler: g++
+  mode: predefined

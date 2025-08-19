@@ -1,0 +1,18 @@
+source_container: spcleth/xaas-artifact:gromacs-source-arm64
+working_directory: gromacs-builds
+project_name: gromacs
+language: cxx
+system:
+  name: clariden
+  system_discovery: ../../../system_discovery/clariden-alps.json
+  base_image: null
+  cpu_architecture: arm64
+mode:
+  predefined_config:
+    vectorization_flags: arm_sve
+    gpu_backends: CUDA
+    parallel_libraries: [OpenMP, mpich]
+    fft_libraries: [fftw3, cuFFT]
+    linear_algebra_libraries: null
+    compiler: g++
+  mode: predefined

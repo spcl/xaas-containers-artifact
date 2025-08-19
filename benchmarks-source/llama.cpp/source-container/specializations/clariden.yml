@@ -1,0 +1,19 @@
+source_container: spcleth/xaas-artifact:llama.cpp-source-arm64
+working_directory: llamacpp-builds
+project_name: llama.cpp
+language: cxx
+cpu_architecture: arm64
+system:
+  name: clariden
+  system_discovery: ../../../system_discovery/clariden-alps.json
+  base_image: null
+  cpu_architecture: arm64
+mode:
+  predefined_config:
+    vectorization_flags: null
+    gpu_backends: CUDA
+    parallel_libraries: [OpenMP]
+    fft_libraries: []
+    linear_algebra_libraries: null
+    compiler: g++
+  mode: predefined

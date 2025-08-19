@@ -92,9 +92,7 @@ Then, you can copy the results to the local directory in artifact, where the plo
 scp -r <system-name>:<output-dir> ../ault01
 ```
 
-
 ## Docker Images
-
 
 The build depends on the following Docker images:
 
