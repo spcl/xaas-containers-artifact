@@ -39,12 +39,12 @@ mapping_experiments = {
     "aurora": {
         "native": "module",
         "specialized": "specialized",
-        "source-container-default": "xaas",
+        "source-container": "xaas",
         "source-container-gpu": "xaas_gpu",
     },
 }
 
-STEPS = {"ault23": 1000, "clariden": 3000, "aurora": None}
+STEPS = {"ault23": 1000, "clariden": 3000, "aurora": 1000}
 
 colors = {
     "native": "#6B6463",
