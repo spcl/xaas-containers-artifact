@@ -39,7 +39,7 @@ DATA_DIR = os.path.join(
 
 
 def extract_values(md_log_path):
-    wall_time, performance = None, None
+    wall_time, performance, io_time = None, None, None
     try:
         with open(md_log_path, "r") as file:
             lines = file.readlines()
@@ -52,11 +52,13 @@ def extract_values(md_log_path):
                     perf_values = re.findall(r"\d+\.\d+", lines[i])
                     if perf_values:
                         performance = float(perf_values[0])
-                if wall_time and performance:
+                if "Write traj." in lines[i]:
+                    io_time = lines[i].split()[5]
+                if wall_time and performance and io_time:
                     break
     except Exception as e:
         print(f"Error reading {md_log_path}: {e}")
-    return wall_time, performance
+    return wall_time, performance, io_time
 
 
 def compute_statistics(data, harmonic=False):
@@ -84,17 +86,27 @@ def process_benchmarks(base_dir):
             if not os.path.isdir(vec_path):
                 continue
 
-            wall_times, performances = [], []
+            wall_times, performances, io_times = [], [], []
 
             for run in range(11, 41):
                 log_path = os.path.join(vec_path, f"run{run}", "md.log")
                 if os.path.exists(log_path):
-                    wall, perf = extract_values(log_path)
+                    wall, perf, io_time = extract_values(log_path)
                     if wall and perf:
                         wall_times.append(wall)
                         performances.append(perf)
+                        io_times.append(io_time)
 
             if wall_times and performances:
+
+                wall_mean, wall_ci = compute_statistics(wall_times, harmonic=False)
+                arch_display = "x86" if arch == "intel" else arch
+                print(
+                    f"With I/O: {arch_display}-{vec_flag} → Execution Time: {wall_mean:.2f} ± {wall_ci:.2f} s"
+                )
+
+                for i in range(len(wall_times)):
+                    wall_times[i] -= float(io_times[i])
                 wall_mean, wall_ci = compute_statistics(wall_times, harmonic=False)
                 perf_mean, perf_ci = compute_statistics(performances, harmonic=True)
 

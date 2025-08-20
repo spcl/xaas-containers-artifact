@@ -60,9 +60,9 @@ legends = {
     "module": "Module",
     "naive": "Naive\nBuild",
     "spack": "Spack",
-    "optimized_spack": "Spack\nOptimized",
+    "optimized_spack": "Optimized\nSpack",
     "xaas": "XaaS\nSource",
-    "xaas_gpu": "XaaS\nSource\n+Manual",
+    "xaas_gpu": "XaaS Source\n+Fix",
     "specialized": "Specialized\nContainer",
 }
 
@@ -128,8 +128,8 @@ def process_data(input_directory):
             if not os.path.isdir(testcase_path):
                 continue
 
-            if testcase.split("_")[0] != "gromacs":
-                continue
+                # if testcase.split("_")[0] != "gromacs":
+                #    continue
 
             testcase_name = testcase.split("_")[1]
 
@@ -253,9 +253,11 @@ def plot_grouped_bar(df, metric_name):
         # ax.set_title("")
         if i == 0:
             ax.set_ylabel(
-                "Execution Time (s)"
-                if metric_name == "Execution Time"
-                else "Performance (ns/day)",
+                (
+                    "Execution Time (s)"
+                    if metric_name == "Execution Time"
+                    else "Performance (ns/day)"
+                ),
                 fontweight="bold",
                 fontsize=14,
                 color="#333333",
@@ -268,7 +270,9 @@ def plot_grouped_bar(df, metric_name):
             # rotation=20,
             ha="center",
             fontweight="bold",
-            fontsize=10,
+            # fontsize=8,
+            rotation=45,
+            fontsize=11,
             color="#333333",
         )
         ax.tick_params(axis="y", labelsize=12, labelcolor="#333333")

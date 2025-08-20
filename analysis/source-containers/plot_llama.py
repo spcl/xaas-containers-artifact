@@ -124,9 +124,11 @@ df_thru = pd.DataFrame(throughput_data)
 sns.set_style("darkgrid", {"grid.color": ".6", "grid.linestyle": ":"})
 
 # --- Plot 1: Execution Time ---
-systems = df_exec["System"].unique()
+# systems = df_exec["System"].unique()
+systems = ["Ault23", "Aurora", "Clariden-Alps"]
+
 fig1, axs1 = plt.subplots(
-    1, len(systems), figsize=(10, 4), width_ratios=[4, 4, 2], sharey=False
+    1, len(systems), figsize=(10, 4), width_ratios=[4, 3, 4], sharey=False
 )
 if len(systems) == 1:
     axs1 = [axs1]
@@ -180,8 +182,8 @@ for ax, system in zip(axs1, systems):
     ax.set_title(system, weight="bold")
     ax.set_xlabel("")
 
-    if i == 2:
-        ax.set_ylim([0, 7.5])
+    # if i == 2:
+    #    ax.set_ylim([0, 7.5])
 
     i += 1
 
