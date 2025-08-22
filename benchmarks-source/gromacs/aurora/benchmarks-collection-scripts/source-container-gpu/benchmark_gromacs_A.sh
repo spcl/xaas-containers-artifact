@@ -39,7 +39,7 @@ for i in $(seq 1 $TOTAL_RUNS); do
 
   mkdir -p "$RUN_DIR"
 
-  apptainer exec ${CONTAINER_PATH} /bin/bash -c "source /usr/local/gromacs/bin/GMXRC && gmx mdrun -s $TPR_FILE -ntomp 104 -ntmpi 1 -nsteps ${STEPS}" -resethway >"$RUN_DIR/mdrun_output.log" 2>&1
+  apptainer exec ${CONTAINER_PATH} /bin/bash -c "source /usr/local/gromacs/bin/GMXRC && gmx mdrun -s $TPR_FILE -ntomp 104 -ntmpi 1 -nsteps ${STEPS} -resethway" >"$RUN_DIR/mdrun_output.log" 2>&1
   mv md.log traj* ener.edr confout.gro state.cpt "$RUN_DIR/" 2>/dev/null
 
   if [ "$i" -le "$WARMUP_RUNS" ]; then
