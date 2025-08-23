@@ -3,7 +3,7 @@
 #PBS -N llama_xaas_tests
 #PBS -l walltime=00:60:00
 #PBS -l filesystems=flare
-#PBS -q debug
+#PBS -q prod
 
 ARTIFACT_LOCATION=${ARTIFACT_LOCATION:-${HOME}/xaas-containers-artifact}
 
