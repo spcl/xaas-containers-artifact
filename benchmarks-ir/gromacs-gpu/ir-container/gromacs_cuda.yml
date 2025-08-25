@@ -1,0 +1,26 @@
+working_directory: builds_cuda
+source_directory: gromacs-2025.0
+project_name: gromacs-gpu
+build_system: cmake
+cpu_architecture: x86_64
+layers_deps:
+  fftw3:
+    arg_mapping:
+      VECTORIZATION: VECTORIZATION
+    version: 3.3.10
+features_select:
+  VECTORIZATION:
+    AVX2_256: GMX_SIMD=AVX2_256
+    AVX_512: GMX_SIMD=AVX_512
+features_boolean:
+  CUDA: [GMX_GPU=CUDA, GMX_GPU=OFF]
+additional_args:
+  - GMX_OPENMP=ON
+  - GMX_MPI=OFF
+  - GMX_BUILD_OWN_FFTW=OFF
+  - FFTWF_INCLUDE_DIR=/opt/fftw3/include
+  - FFTWF_LIBRARY=/opt/fftw3/lib/libfftw3f.a
+additional_steps:
+  - "make -f ./CMakeFiles/release-version-info.dir/build.make CMakeFiles/release-version-info"
+  - "make -f src/gromacs/CMakeFiles/libgromacs.dir/build.make src/gromacs/CMakeFiles/libgromacs.dir/depend"
+

@@ -146,8 +146,8 @@ def plot_side_by_side_execution_times(results):
     # fig, (ax1, ax2) = plt.subplots(1, 2, figsize=(12, 6), dpi=100)
     fig, (ax1, ax2) = plt.subplots(1, 2, figsize=(12, 4), dpi=100)
 
-    x86_color = "#3498db"  # Blue shade
-    arm_color = "#e74c3c"  # Red shade
+    x86_color = "#3498db"  # blue shade
+    arm_color = "#e74c3c"  # red shade
 
     bars1 = ax1.bar(
         x86_labels,
@@ -160,7 +160,7 @@ def plot_side_by_side_execution_times(results):
         linewidth=0.8,
     )
     ax1.set_title(
-        "TestCase A, 1 core, 200 steps",
+        "CPU, Test A, 1 core, 200 steps",
         fontsize=18,
         fontweight="bold",
         pad=15,
@@ -169,7 +169,7 @@ def plot_side_by_side_execution_times(results):
     # ax1.set_xlabel("Vectorization Type", fontsize=18, fontweight="bold")
     ax1.tick_params(axis="x", rotation=30, labelsize=18)
     ax1.tick_params(axis="y", labelsize=18)
-    ax1.grid(True, linestyle="--", alpha=0.7)
+    # ax1.grid(True, linestyle="--", alpha=0.7)
 
     current_xticks_text = ax1.get_xticklabels()
 
@@ -219,7 +219,7 @@ def plot_side_by_side_execution_times(results):
         linewidth=0.8,
     )
     ax2.set_title(
-        "TestCase B, 36 cores, 200 steps",
+        "CPU, Test B, 36 cores, 200 steps",
         fontsize=18,
         fontweight="bold",
         pad=15,
@@ -228,7 +228,7 @@ def plot_side_by_side_execution_times(results):
     # ax2.set_xlabel("Vectorization Type", fontsize=18, fontweight="bold")
     ax2.tick_params(axis="x", rotation=30, labelsize=18)
     ax2.tick_params(axis="y", labelsize=18)
-    ax2.grid(True, linestyle="--", alpha=0.7)
+    # ax2.grid(True, linestyle="--", alpha=0.7)
 
     current_xticks_text = ax2.get_xticklabels()
 
@@ -294,7 +294,7 @@ def main():
 
     fig = plot_side_by_side_execution_times(results)
     if fig:
-        output_path = os.path.join(CURRENT_DIR, "vectorization_comparison.pdf")
+        output_path = os.path.join(CURRENT_DIR, "ir_comparison.pdf")
         fig.savefig(output_path, format="pdf", dpi=300, bbox_inches="tight")
         print(f"Plot saved to: {output_path}")
 
