@@ -4,7 +4,7 @@ Executable:   /usr/local/gromacs/bin/gmx
 Data prefix:  /usr/local/gromacs
 Working dir:  /home/alokvk2
 Command line:
-  gmx mdrun -s /home/alokvk2/xaas-containers-artifact/data/gromacs/GROMACS_TestCaseA/ion_channel.tpr -ntomp 104 -ntmpi 1 -nsteps 20000
+  gmx mdrun -s /home/alokvk2/xaas-containers-artifact/data/gromacs/GROMACS_TestCaseA/ion_channel.tpr -ntomp 104 -ntmpi 1 -nsteps 20000 -resethway
 
 Reading file /home/alokvk2/xaas-containers-artifact/data/gromacs/GROMACS_TestCaseA/ion_channel.tpr, VERSION 2020.3 (single precision)
 Note: file tpx version 119, software tpx version 137
@@ -29,12 +29,14 @@ Using 104 OpenMP threads
 starting mdrun 'Protein'
 20000 steps,     50.0 ps.
 
+step 10000: resetting all time and cycle counters
+
 Writing final coordinates.
 
                Core t (s)   Wall t (s)        (%)
-       Time:     3032.077       29.164    10396.7
+       Time:     1254.006       12.065    10393.7
                  (ns/day)    (hour/ns)
-Performance:      148.136        0.162
+Performance:      179.047        0.134
 
-GROMACS reminds you: "Nothing in biology makes sense except in the light of evolution." (Theodosius Dobzhansky)
+GROMACS reminds you: "Not everyone is capable of madness; and of those lucky enough to be capable, not many have the courage for it." (August Strindberg)
 

@@ -4,7 +4,7 @@ Executable:   /usr/local/gromacs/bin/gmx
 Data prefix:  /usr/local/gromacs
 Working dir:  /home/alokvk2
 Command line:
-  gmx mdrun -s /home/alokvk2/xaas-containers-artifact/data/gromacs/GROMACS_TestCaseA/ion_channel.tpr -ntomp 104 -ntmpi 1 -nsteps 20000
+  gmx mdrun -s /home/alokvk2/xaas-containers-artifact/data/gromacs/GROMACS_TestCaseA/ion_channel.tpr -ntomp 104 -ntmpi 1 -nsteps 20000 -resethway
 
 Reading file /home/alokvk2/xaas-containers-artifact/data/gromacs/GROMACS_TestCaseA/ion_channel.tpr, VERSION 2020.3 (single precision)
 Note: file tpx version 119, software tpx version 137
@@ -29,12 +29,14 @@ Using 104 OpenMP threads
 starting mdrun 'Protein'
 20000 steps,     50.0 ps.
 
+step 10000: resetting all time and cycle counters
+
 Writing final coordinates.
 
                Core t (s)   Wall t (s)        (%)
-       Time:     3054.530       29.378    10397.5
+       Time:     1233.284       11.886    10375.9
                  (ns/day)    (hour/ns)
-Performance:      147.058        0.163
+Performance:      181.744        0.132
 
-GROMACS reminds you: "Everything what mathematicians were saying for the last 50 years is slowly catching up with us." (David van der Spoel)
+GROMACS reminds you: "During my undergraduate work I concluded that electrostatics is unlikely to be important [for enzymes]" (Arieh Warshel, Nobel lecture 2013)
 

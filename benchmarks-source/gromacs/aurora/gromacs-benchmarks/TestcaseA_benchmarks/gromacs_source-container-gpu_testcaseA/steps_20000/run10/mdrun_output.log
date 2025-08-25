@@ -4,7 +4,7 @@ Executable:   /usr/local/gromacs/bin/gmx
 Data prefix:  /usr/local/gromacs
 Working dir:  /home/alokvk2
 Command line:
-  gmx mdrun -s /home/alokvk2/xaas-containers-artifact/data/gromacs/GROMACS_TestCaseA/ion_channel.tpr -ntomp 104 -ntmpi 1 -nsteps 20000
+  gmx mdrun -s /home/alokvk2/xaas-containers-artifact/data/gromacs/GROMACS_TestCaseA/ion_channel.tpr -ntomp 104 -ntmpi 1 -nsteps 20000 -resethway
 
 Reading file /home/alokvk2/xaas-containers-artifact/data/gromacs/GROMACS_TestCaseA/ion_channel.tpr, VERSION 2020.3 (single precision)
 Note: file tpx version 119, software tpx version 137
@@ -29,12 +29,14 @@ Using 104 OpenMP threads
 starting mdrun 'Protein'
 20000 steps,     50.0 ps.
 
+step 10000: resetting all time and cycle counters
+
 Writing final coordinates.
 
                Core t (s)   Wall t (s)        (%)
-       Time:     3062.488       29.454    10397.4
+       Time:     1253.095       12.068    10383.3
                  (ns/day)    (hour/ns)
-Performance:      146.676        0.164
+Performance:      178.997        0.134
 
-GROMACS reminds you: "Don't Push Me, Cause I'm Close to the Edge" (Tricky)
+GROMACS reminds you: "Nothing shocks me. I'm a scientist." (Harrison Ford as Indiana Jones)
 

@@ -4,7 +4,7 @@ Executable:   /usr/local/gromacs/bin/gmx
 Data prefix:  /usr/local/gromacs
 Working dir:  /home/alokvk2
 Command line:
-  gmx mdrun -s /home/alokvk2/xaas-containers-artifact/data/gromacs/GROMACS_TestCaseA/ion_channel.tpr -ntomp 104 -ntmpi 1 -nsteps 20000
+  gmx mdrun -s /home/alokvk2/xaas-containers-artifact/data/gromacs/GROMACS_TestCaseA/ion_channel.tpr -ntomp 104 -ntmpi 1 -nsteps 20000 -resethway
 
 Reading file /home/alokvk2/xaas-containers-artifact/data/gromacs/GROMACS_TestCaseA/ion_channel.tpr, VERSION 2020.3 (single precision)
 Note: file tpx version 119, software tpx version 137
@@ -29,12 +29,14 @@ Using 104 OpenMP threads
 starting mdrun 'Protein'
 20000 steps,     50.0 ps.
 
+step 10000: resetting all time and cycle counters
+
 Writing final coordinates.
 
                Core t (s)   Wall t (s)        (%)
-       Time:     3063.445       29.463    10397.4
+       Time:     1231.667       11.872    10374.8
                  (ns/day)    (hour/ns)
-Performance:      146.629        0.164
+Performance:      181.963        0.132
 
-GROMACS reminds you: "In the End Science Comes Down to Praying" (P. v.d. Berg)
+GROMACS reminds you: "There are three types of people: Those who see, those who see when they are shown, and those who do not see." (Leonardo da Vinci)
 

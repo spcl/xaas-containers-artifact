@@ -4,7 +4,7 @@ Executable:   /usr/local/gromacs/bin/gmx
 Data prefix:  /usr/local/gromacs
 Working dir:  /home/alokvk2
 Command line:
-  gmx mdrun -s /home/alokvk2/xaas-containers-artifact/data/gromacs/GROMACS_TestCaseA/ion_channel.tpr -ntomp 104 -ntmpi 1 -nsteps 20000
+  gmx mdrun -s /home/alokvk2/xaas-containers-artifact/data/gromacs/GROMACS_TestCaseA/ion_channel.tpr -ntomp 104 -ntmpi 1 -nsteps 20000 -resethway
 
 Reading file /home/alokvk2/xaas-containers-artifact/data/gromacs/GROMACS_TestCaseA/ion_channel.tpr, VERSION 2020.3 (single precision)
 Note: file tpx version 119, software tpx version 137
@@ -29,12 +29,14 @@ Using 104 OpenMP threads
 starting mdrun 'Protein'
 20000 steps,     50.0 ps.
 
+step 10000: resetting all time and cycle counters
+
 Writing final coordinates.
 
                Core t (s)   Wall t (s)        (%)
-       Time:     3044.966       29.285    10397.5
+       Time:     1232.406       11.878    10375.3
                  (ns/day)    (hour/ns)
-Performance:      147.521        0.163
+Performance:      181.862        0.132
 
-GROMACS reminds you: "Uh-oh .... Right Again" (Laurie Anderson)
+GROMACS reminds you: "For the first time we can now mechanically simulate the cognitive process. We can make studies in artificial intelligence. Beyond that, this mechanism can be used to assist humans in learning. As we are going to have more mature students in greater numbers as time goes on, this type of teaching will probably be increasingly important." (Sister Mary Kenneth Keller)
 
