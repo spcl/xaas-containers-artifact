@@ -1,0 +1,16 @@
+ir_image: spcleth/xaas-artifact:gromacs-gpu-ir
+cpu_architecture: x86_64
+working_directory: deployment
+layers_deps:
+  fftw3:
+    version: 3.3.10
+    arg_mapping:
+      VECTORIZATION: VECTORIZATION
+docker_repository: spcleth/xaas-artifact
+features_select:
+  VECTORIZATION: AVX2_256
+features_enabled: []
+features_boolean:
+  CUDA: ON
+features_versions:
+  CUDA: 12.8
