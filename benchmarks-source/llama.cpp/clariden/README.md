@@ -46,7 +46,7 @@ sbatch < build-scripts/testcase1/build.sh
 
 Containers can be either rebuilt from scratch or imported to the system. All container operation have to run on compute nodes, as Podman requires access to dedicated filesystem.
 
-## Download Containers
+### Download Containers
 
 Just run and wait for the batch job to complete:
 
@@ -54,7 +54,7 @@ Just run and wait for the batch job to complete:
 sbatch < download_containers.sh
 ```
 
-## Rebuild Containers
+### Rebuild Containers
 
 If you want to rebuild container versions, then run the following scripts. Pushing to remote repositories is disabled by default, as it requires a login with Podman.
 
@@ -81,3 +81,4 @@ To submit container jobs, we need to use `srun` currently which is a blocking pr
 ```
 
 It is possible to also submit those jobs through `sbatch`, but [it is experimental and discouraged by system operators](https://docs.cscs.ch/software/container-engine/run/#running-containerized-environments).
+
