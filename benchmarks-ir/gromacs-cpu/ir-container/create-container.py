@@ -46,27 +46,27 @@ with open("gromacs_vectorization_config.yml", "w") as config_output:
     yaml.dump(config, config_output, default_flow_style=False)
 
 print("Generate build configurations")
-run_cmd("xaas buildgen gromacs_vectorization_config.yml")
+run_cmd("xaas ir buildgen gromacs_vectorization_config.yml")
 
 print("Analyze build configurations")
-run_cmd("xaas analyze gromacs_vectorization_config.yml")
+run_cmd("xaas ir analyze gromacs_vectorization_config.yml")
 
 print("Preprocess build configurations")
 run_cmd(
-    f"xaas preprocess run --parallel-workers {PARALLEL_WORKERS} gromacs_vectorization_config.yml"
+    f"xaas ir preprocess run --parallel-workers {PARALLEL_WORKERS} gromacs_vectorization_config.yml"
 )
 
 print("Handle CPU tuning and opts")
-run_cmd("xaas cpu-tuning run gromacs_vectorization_config.yml")
+run_cmd("xaas ir cpu-tuning run gromacs_vectorization_config.yml")
 
 print("Compile to IRs")
 run_cmd(
-    f"xaas ir run --parallel-workers {PARALLEL_WORKERS} gromacs_vectorization_config.yml"
+    f"xaas ir irs run --parallel-workers {PARALLEL_WORKERS} gromacs_vectorization_config.yml"
 )
 
 print("Create IR container")
 run_cmd(
-    f"xaas container --docker-repository {repository} gromacs_vectorization_config.yml"
+    f"xaas ir container --docker-repository {repository} gromacs_vectorization_config.yml"
 )
 
 for vectorization in ["SSE4.1", "AVX_256", "AVX2_128", "AVX2_256", "AVX_512"]:
@@ -82,4 +82,4 @@ for vectorization in ["SSE4.1", "AVX_256", "AVX2_128", "AVX2_256", "AVX_512"]:
         yaml.dump(config, config_output, default_flow_style=False)
 
     print(f"Create deployment container for {vectorization}")
-    run_cmd(f"xaas deploy --parallel-workers {PARALLEL_WORKERS} {output_fname}")
+    run_cmd(f"xaas ir deploy --parallel-workers {PARALLEL_WORKERS} {output_fname}")

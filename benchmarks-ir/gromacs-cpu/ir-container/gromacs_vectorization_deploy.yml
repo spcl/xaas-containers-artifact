@@ -1,5 +1,6 @@
 ir_image: gromacs-ir
 working_directory: deployment
+cpu_architecture: x86_64
 layers_deps:
   fftw3:
     version: 3.3.10

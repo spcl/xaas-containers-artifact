@@ -79,4 +79,4 @@ for deploy in ["ault23", "ault25"]:
         yaml.dump(config, config_output, default_flow_style=False)
 
     print(f"Create deployment container for {deploy}")
-    run_cmd(f"xaas deploy --parallel-workers {PARALLEL_WORKERS} {output_fname}")
+    run_cmd(f"xaas ir deploy --parallel-workers {PARALLEL_WORKERS} {output_fname}")

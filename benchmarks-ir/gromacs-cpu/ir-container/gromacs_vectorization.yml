@@ -2,6 +2,7 @@ working_directory: gromacs-build
 source_directory: gromacs-2025.0
 project_name: gromacs
 build_system: cmake
+cpu_architecture: x86_64
 layers_deps:
   fftw3:
     version: 3.3.10
