@@ -19,7 +19,7 @@ module load sarus/1.6
 export CUDA_VISIBLE_DEVICES=0
 export OMP_NUM_THREADS=64
 
-TESTCASE_DIR="${ARTIFACT_LOCATION}/benchmarks-source/gromacs/ault23/gromacs-benchmarks/TestcaseB_benchmarks/gromacs_testcase2NEW_testcaseB/steps_${STEPS}"
+TESTCASE_DIR="${ARTIFACT_LOCATION}/benchmarks-source/gromacs/ault23/gromacs-benchmarks/TestcaseB_benchmarks/gromacs_testcase2_testcaseB/steps_${STEPS}"
 TPR_FILE="${ARTIFACT_LOCATION}/data/gromacs/GROMACS_TestCaseB/lignocellulose.tpr"
 
 # Create base directory for runs (on host)
