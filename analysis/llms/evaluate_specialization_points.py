@@ -28,6 +28,16 @@ def normalize_flag(flag):
 def extract_relevant_fields(json_data):
     flattened = {}
 
+    if "parallel_programming_libraries" in json_data:
+        for lib, info in json_data["parallel_programming_libraries"].items():
+            key = normalize_key(lib)
+            flattened[f"parallel_programming_libraries.{key}.used_as_default"] = (
+                info.get("used_as_default")
+            )
+            flattened[f"parallel_programming_libraries.{key}.build_flag"] = (
+                normalize_flag(info.get("build_flag"))
+            )
+
     # gpu_build
     if "gpu_build" in json_data:
         flattened["gpu_build.value"] = json_data["gpu_build"].get("value")
