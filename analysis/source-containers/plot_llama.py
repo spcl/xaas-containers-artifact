@@ -138,12 +138,18 @@ for ax, system in zip(axs1, systems):
     system_order = [b for b in build_order if b in data["Build"].values]
 
     bar_width = 0.5 if system.lower() == "aurora" else 0.8
+
+    palette = sns.color_palette("pastel")
+    if system.lower() == "aurora":
+        palette = [palette[0], palette[1], palette[3]]
     sns.barplot(
         data=data,
         x="Build",
         y="Value",
         order=system_order,
         ax=ax,
+        palette=palette,
+        edgecolor="black",
         ci=None,
         width=bar_width,
     )
@@ -151,7 +157,7 @@ for ax, system in zip(axs1, systems):
 
     # for patch, row in zip(ax.patches, data.itertuples()):
     for patch, build in zip(ax.patches, system_order):
-        patch.set_color(color)
+        # patch.set_color(color, linewidth=0)
         bar_x = patch.get_x() + patch.get_width() / 2
         bar_y = patch.get_height()
 
