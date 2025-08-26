@@ -61,9 +61,16 @@ This will build containers in the default `spcleth/xaas-artifact` repository. Us
 Submit jobs:
 
 ```
+sbatch -t 01:00:00 < benchmark-collection-scripts/testcase0/benchmark_testcase0_A.sh
 sbatch -t 01:00:00 < benchmark-collection-scripts/testcase0/benchmark_testcase0_B.sh
+
+sbatch -t 01:00:00 < benchmark-collection-scripts/testcase1/benchmark_testcase1_A.sh
 sbatch -t 01:00:00 < benchmark-collection-scripts/testcase1/benchmark_testcase1_B.sh
+
+sbatch -t 01:00:00 < benchmark-collection-scripts/testcase4/benchmark_testcase4_A.sh
 sbatch -t 01:00:00 < benchmark-collection-scripts/testcase4/benchmark_testcase4_B.sh
+
+sbatch -t 01:00:00 < benchmark-collection-scripts/testcase5/benchmark_testcase5_A.sh
 sbatch -t 01:00:00 < benchmark-collection-scripts/testcase5/benchmark_testcase5_B.sh
 ```
 

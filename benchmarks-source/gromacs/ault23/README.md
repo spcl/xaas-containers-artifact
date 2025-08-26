@@ -56,11 +56,22 @@ Then, run the following script to get all containers on Ault:
 Submit jobs:
 
 ```
+sbatch -w ault23 < benchmarks-collection-scripts/test_case_0/benchmark_gromacs_A.sh
 sbatch -w ault23 < benchmarks-collection-scripts/test_case_0/benchmark_gromacs.sh
+
+sbatch -w ault23 < benchmarks-collection-scripts/test_case_1/benchmark_gromacs_A.sh
 sbatch -w ault23 < benchmarks-collection-scripts/test_case_1/benchmark_gromacs.sh
+
+sbatch -w ault23 < benchmarks-collection-scripts/test_case_2/benchmark_gromacs_A.sh
 sbatch -w ault23 < benchmarks-collection-scripts/test_case_2/benchmark_gromacs.sh
+
+sbatch -w ault23 < benchmarks-collection-scripts/test_case_3/benchmark_gromacs_A.sh
 sbatch -w ault23 < benchmarks-collection-scripts/test_case_3/benchmark_gromacs.sh
+
+sbatch -w ault23 < benchmarks-collection-scripts/test_case_4/benchmark_gromacs_A.sh
 sbatch -w ault23 < benchmarks-collection-scripts/test_case_4/benchmark_gromacs.sh
+
+sbatch -w ault23 < benchmarks-collection-scripts/test_case_5/benchmark_gromacs_A.sh
 sbatch -w ault23 < benchmarks-collection-scripts/test_case_5/benchmark_gromacs.sh
 ```
 
