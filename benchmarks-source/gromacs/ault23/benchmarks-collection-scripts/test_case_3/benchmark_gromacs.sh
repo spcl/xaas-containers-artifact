@@ -10,8 +10,8 @@
 #SBATCH --exclusive                       # Ensures no other jobs run on this node
 
 ARTIFACT_LOCATION=${ARTIFACT_LOCATION:-${SCRATCH}/xaas-containers-artifact}
-DOCKER_REPOSITORY=${DOCKER_REPOSITORY:-"ealnuaimi/testcase_3"}
-DOCKER_IMAGE="updated"
+DOCKER_REPOSITORY=${DOCKER_REPOSITORY:-"spcleth/xaas-artifact"}
+DOCKER_IMAGE="gromacs-source-deploy-ault23"
 STEPS=1000
 
 module load sarus/1.6
@@ -24,7 +24,7 @@ TPR_FILE="${ARTIFACT_LOCATION}/data/gromacs/GROMACS_TestCaseB/lignocellulose.tpr
 
 mkdir -p "$TESTCASE_DIR"
 
-WARMUP_RUNS=10
+WARMUP_RUNS=2
 BENCHMARK_RUNS=30
 TOTAL_RUNS=$((WARMUP_RUNS + BENCHMARK_RUNS))
 
@@ -35,7 +35,7 @@ srun --mpi=pmi2 sarus run --mpi \
   --env CUDA_VISIBLE_DEVICES=${CUDA_VISIBLE_DEVICES} \
   ${DOCKER_REPOSITORY}:${DOCKER_IMAGE} bash -c '
   source /usr/local/gromacs/bin/GMXRC && \
-  source /opt/intel/oneapi/mkl/latest/env/vars.sh && \
+  source /opt/intel/oneapi/setvars.sh > /dev/null 2>&1 && \
   ldd $(which gmx_mpi) > /result_dir/ldd_output.txt && \
   gmx_mpi mdrun --version > /result_dir/version_output.txt 2>&1 || echo true'
 
@@ -54,7 +54,7 @@ for i in $(seq 1 $TOTAL_RUNS); do
     --env CUDA_VISIBLE_DEVICES=${CUDA_VISIBLE_DEVICES} \
     ${DOCKER_REPOSITORY}:${DOCKER_IMAGE} bash -c "
     source /usr/local/gromacs/bin/GMXRC && \
-    source /opt/intel/oneapi/mkl/latest/env/vars.sh && \
+    source /opt/intel/oneapi/setvars.sh > /dev/null 2>&1 && \
     mkdir -p \"/result_dir/run${i}\" && \
     cd \"/result_dir/run${i}\" && \
     gmx_mpi mdrun -s \"/input_dir/lignocellulose.tpr\" -ntomp 64 -nsteps ${STEPS} > mdrun_output.log 2>&1"
