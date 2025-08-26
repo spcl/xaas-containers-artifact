@@ -44,7 +44,11 @@ mapping_experiments = {
     },
 }
 
-STEPS = {"ault23": 1000, "clariden": 3000, "aurora": 1000}
+STEPS = {
+    "ault23": {"A": 20000, "B": 1000},
+    "clariden": {"A": 30000, "B": 3000},
+    "aurora": {"A": 20000, "B": 1000},
+}
 
 colors = {
     "native": "#6B6463",
@@ -56,6 +60,8 @@ colors = {
 }
 
 legends = {
+    "A": "Test A",
+    "B": "Test B",
     "native": "Native\nBuild",
     "module": "Module",
     "naive": "Naive\nBuild",
@@ -114,76 +120,83 @@ def process_data(input_directory):
         if not os.path.isdir(system_path):
             continue
 
-        benchmarks_path = os.path.join(system_path, "TestcaseB_benchmarks")
-
-        for testcase in os.listdir(benchmarks_path):
-            testcase_path = os.path.join(benchmarks_path, testcase)
-            print(testcase_path)
-
-            steps = STEPS[system]
-
-            if steps is not None:
-                testcase_path = os.path.join(testcase_path, f"steps_{steps}")
-
-            if not os.path.isdir(testcase_path):
-                continue
-
-                # if testcase.split("_")[0] != "gromacs":
-                #    continue
-
-            testcase_name = testcase.split("_")[1]
-
-            if testcase_name not in mapping_experiments.get(system.lower(), {}):
-                continue
-
-            # we map from system specific naming to the one that our plotting can understand
-            testcase = mapping_experiments[system][testcase_name]
-
-            wall_times = []
-            performances = []
-            io_times = []
-            for run_dir in os.listdir(testcase_path):
-                run_path = os.path.join(testcase_path, run_dir, "md.log")
-                if os.path.exists(run_path):
-                    wall, perf, io_time = extract_values(run_path)
-                    if wall is not None and perf is not None:
-                        wall_times.append(wall)
-                        performances.append(perf)
-                        io_times.append(io_time)
-
-            print(
-                f"Processing {system} - {testcase_name}, samples: {len(wall_times)}, {len(performances)}"
+        for test_case_letter in ["A", "B"]:
+            benchmarks_path = os.path.join(
+                system_path, f"Testcase{test_case_letter}_benchmarks"
             )
 
-            if wall_times and performances:
-                for i in range(len(wall_times)):
-                    wall_times[i] -= float(io_times[i])
+            for testcase in os.listdir(benchmarks_path):
+                testcase_path = os.path.join(benchmarks_path, testcase)
 
-                wall_mean, wall_ci = compute_statistics(wall_times, harmonic=False)
-                perf_hmean, perf_ci = compute_statistics(performances, harmonic=True)
+                steps = STEPS[system][test_case_letter]
+
+                if steps is not None:
+                    testcase_path = os.path.join(testcase_path, f"steps_{steps}")
+
+                if not os.path.isdir(testcase_path):
+                    continue
+
+                if testcase.split("_")[0] != "gromacs":
+                    continue
+
+                testcase_name = testcase.split("_")[1]
+
+                if testcase_name not in mapping_experiments.get(system.lower(), {}):
+                    continue
+
+                # we map from system specific naming to the one that our plotting can understand
+                testcase = mapping_experiments[system][testcase_name]
+
+                wall_times = []
+                performances = []
+                io_times = []
+                for run_dir in os.listdir(testcase_path):
+                    run_path = os.path.join(testcase_path, run_dir, "md.log")
+                    if os.path.exists(run_path):
+                        wall, perf, io_time = extract_values(run_path)
+                        if wall is not None and perf is not None:
+                            wall_times.append(wall)
+                            performances.append(perf)
+                            io_times.append(io_time)
 
                 print(
-                    f"Processing {system} - {testcase_name}, time: {wall_mean} +- {wall_ci}"
+                    f"Processing {system} - {test_case_letter} - {testcase_name}, samples: {len(wall_times)}, {len(performances)}"
                 )
 
-                records.append(
-                    {
-                        "System": system,
-                        "TestCase": testcase,
-                        "Metric": "Execution Time",
-                        "Mean": wall_mean,
-                        "CI": wall_ci,
-                    }
-                )
-                records.append(
-                    {
-                        "System": system,
-                        "TestCase": testcase,
-                        "Metric": "Performance",
-                        "Mean": perf_hmean,
-                        "CI": perf_ci,
-                    }
-                )
+                if wall_times and performances:
+                    for i in range(len(wall_times)):
+                        wall_times[i] -= float(io_times[i])
+
+                    wall_mean, wall_ci = compute_statistics(wall_times, harmonic=False)
+                    perf_hmean, perf_ci = compute_statistics(
+                        performances, harmonic=True
+                    )
+
+                    print(
+                        f"Processing {system} - {testcase_name}, time: {wall_mean} +- {wall_ci}"
+                    )
+
+                    for time in wall_times:
+                        records.append(
+                            {
+                                "System": system,
+                                "TestCase": testcase,
+                                "Benchmark": test_case_letter,
+                                "Metric": "Execution Time",
+                                "Mean": time,
+                                # "CI": wall_ci,
+                            }
+                        )
+                    records.append(
+                        {
+                            "System": system,
+                            "TestCase": testcase,
+                            "Benchmark": test_case_letter,
+                            "Metric": "Performance",
+                            "Mean": perf_hmean,
+                            "CI": perf_ci,
+                        }
+                    )
 
     return pd.DataFrame(records)
 
@@ -222,31 +235,41 @@ def plot_grouped_bar(df, metric_name):
             "clariden": "#067114",  # green
         }.get(system.lower(), "gray")
 
-        palette = {tc: system_color for tc in available}
+        # palette = {tc: system_color for tc in available}
+        palette = {"A": "#3498db", "B": "#e74c3c"}
 
         # Plot bars
         sns.barplot(
-            data=group, x="TestCase", y="Mean", palette=palette, ax=ax, errorbar=None
+            data=group,
+            x="TestCase",
+            y="Mean",
+            hue="Benchmark",
+            errorbar=("ci", 95),
+            seed=2024,
+            palette=palette,
+            edgecolor="black",
+            # linewidth=0,
+            ax=ax,
         )
 
         # Add error bars manually aligned to bars
-        for bar, (_, row) in zip(ax.patches, group.iterrows()):
-            x = bar.get_x() + bar.get_width() / 2
-            y = row["Mean"]
-            err = row["CI"]
-            print(y, err)
-            ax.errorbar(x=x, y=y, yerr=err, fmt="none", ecolor="black", capsize=5)
+        # for bar, (_, row) in zip(ax.patches, group.iterrows()):
+        #    x = bar.get_x() + bar.get_width() / 2
+        #    y = row["Mean"]
+        #    err = row["CI"]
+        #    print(y, err)
+        #    ax.errorbar(x=x, y=y, yerr=err, fmt="none", ecolor="black", capsize=5)
 
         # Titles and axes
         system_titles = {
-            "clariden": "Clariden-Alps (3000 steps)",
-            "aurora": "Aurora (1000 steps)",
-            "ault23": "Ault23 (1000 steps)",
+            "clariden": "Clariden (A 30,000, B 3000 steps)",
+            "aurora": "Aurora (A 20,000, B 1000 steps)",
+            "ault23": "Ault23 (A 20,000, B 1000 steps)",
         }
         ax.set_title(
             system_titles.get(system.lower(), system.capitalize()),
             fontweight="bold",
-            fontsize=14,
+            fontsize=11,
         )
         # ax.set_xlabel("Build Settings", fontweight="bold", color="#333333")
         ax.set_xlabel("")
@@ -293,9 +316,12 @@ def plot_grouped_bar(df, metric_name):
         fig.legend(
             handles,
             [legends.get(lbl, lbl) for lbl in labels],
-            loc="upper center",
-            ncol=len(labels),
+            loc="center right",
+            ncols=1,
+            fontsize=14,
+            bbox_to_anchor=(0.98, 0.8),
         )
+    fig.legend().set_visible(False)
     plt.tight_layout()
 
     plt.savefig(
