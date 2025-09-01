@@ -1,0 +1,17 @@
+INFO:root:Total files: 1752
+INFO:root:Project builds/build/build_MPI_OPENMP_SSE4.1:
+INFO:root:	Files 1730 files
+INFO:root:Project builds/build/build_MPI_SSE4.1:
+INFO:root:	Files 1730 files
+INFO:root:Project builds/build/build_OPENMP_SSE4.1:
+INFO:root:	Files 1742 files
+INFO:root:Project builds/build/build__SSE4.1:
+INFO:root:	Files 1742 files
+INFO:root:Different files: 1752
+INFO:root:Difference: definitions, count: 1112
+INFO:root:Difference: flags, count: 1426
+INFO:root:Difference: includes, count: 1752
+INFO:root:Different files across all projects: 6944
+INFO:root:	Baselines files: 1752
+INFO:root:	Identical to baseline: 19
+INFO:root:	Total divergences: 5173

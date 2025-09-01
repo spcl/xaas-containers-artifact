@@ -1,0 +1,28 @@
+additional_args:
+- GMX_BUILD_OWN_FFTW=OFF
+- FFTWF_INCLUDE_DIR=/opt/fftw3/include
+- FFTWF_LIBRARY=/opt/fftw3/lib/libfftw3f.a
+additional_steps:
+- make -f ./CMakeFiles/release-version-info.dir/build.make CMakeFiles/release-version-info
+- make -f src/gromacs/CMakeFiles/libgromacs.dir/build.make src/gromacs/CMakeFiles/libgromacs.dir/depend
+build_system: cmake
+cpu_architecture: x86_64
+docker_repository: spcleth/test
+features_boolean:
+  MPI:
+  - GMX_MPI=ON
+  - GMX_MPI=OFF
+  OPENMP:
+  - GMX_OPENMP=ON
+  - GMX_OPENMP=OFF
+features_select:
+  VECTORIZATION:
+    SSE4.1: GMX_SIMD=SSE4.1
+layers_deps:
+  fftw3:
+    arg_mapping:
+      VECTORIZATION: VECTORIZATION
+    version: 3.3.10
+project_name: gromacs-gpu
+source_directory: gromacs-2025.0
+working_directory: builds

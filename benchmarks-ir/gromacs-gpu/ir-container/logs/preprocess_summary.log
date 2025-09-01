@@ -1,0 +1,18 @@
+INFO:root:Counting all variants of all targets: 7052
+INFO:root:	Baseline targets 1791
+INFO:root:	Targets identical to baseline after preprocessing: 1581
+INFO:root:	Total different targets across projects: 3680
+INFO:root:		Different hash from baseline 928
+INFO:root:			All different hashes (including repeating hashes diff. from baseline) 773
+INFO:root:		Identical hash, different flags: 2752
+INFO:root:Counting all targets: 1791
+INFO:root:	Targets with no difference 124
+INFO:root:	Targets with at least one difference: 1667
+INFO:root:		Targets with at least one different hash: 361
+INFO:root:			Targets with no identical hash across variants: 206
+INFO:root:			Targets with both identical hash and different hash across variants: 155
+INFO:root:		All variants identical to baseline after preprocessing: 1306
+INFO:root:			Difference: cpu_tuning, count: 1306
+INFO:root:			Difference: includes, count: 1306
+INFO:root:			Difference: definitions, count: 25
+INFO:root:			Difference: flags, count: 25

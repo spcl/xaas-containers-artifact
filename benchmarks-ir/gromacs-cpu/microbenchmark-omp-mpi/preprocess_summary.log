@@ -1,0 +1,17 @@
+INFO:root:Counting all variants of all targets: 6944
+INFO:root:	Baseline targets 1752
+INFO:root:	Targets identical to baseline after preprocessing: 2016
+INFO:root:	Total different targets across projects: 3176
+INFO:root:		Different hash from baseline 710
+INFO:root:			All different hashes (including repeating hashes diff. from baseline) 441
+INFO:root:		Identical hash, different flags: 2466
+INFO:root:Counting all targets: 1752
+INFO:root:	Targets with no difference 313
+INFO:root:	Targets with at least one difference: 1439
+INFO:root:		Targets with at least one different hash: 332
+INFO:root:			Targets with no identical hash across variants: 62
+INFO:root:			Targets with both identical hash and different hash across variants: 270
+INFO:root:		All variants identical to baseline after preprocessing: 1107
+INFO:root:			Difference: definitions, count: 679
+INFO:root:			Difference: flags, count: 1107
+INFO:root:			Difference: includes, count: 1107

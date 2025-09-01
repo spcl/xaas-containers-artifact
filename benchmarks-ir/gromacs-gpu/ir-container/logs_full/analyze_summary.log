@@ -1,0 +1,32 @@
+INFO:root:Total files: 1791
+INFO:root:Project gromacs-build/build/build_CUDA_AVX2_128:
+INFO:root:	Files 1784 files
+INFO:root:Project gromacs-build/build/build_CUDA_AVX2_256:
+INFO:root:	Files 1784 files
+INFO:root:Project gromacs-build/build/build_CUDA_AVX_256:
+INFO:root:	Files 1784 files
+INFO:root:Project gromacs-build/build/build_CUDA_AVX_512:
+INFO:root:	Files 1784 files
+INFO:root:Project gromacs-build/build/build_CUDA_SSE4.1:
+INFO:root:	Files 1784 files
+INFO:root:Project gromacs-build/build/build__AVX2_128:
+INFO:root:	Files 1742 files
+INFO:root:Project gromacs-build/build/build__AVX2_256:
+INFO:root:	Files 1742 files
+INFO:root:Project gromacs-build/build/build__AVX_256:
+INFO:root:	Files 1742 files
+INFO:root:Project gromacs-build/build/build__AVX_512:
+INFO:root:	Files 1742 files
+INFO:root:Project gromacs-build/build/build__SSE4.1:
+INFO:root:	Files 1742 files
+INFO:root:Different files: 1672
+INFO:root:Difference: includes, count: 1672
+INFO:root:Difference: cpu_tuning, count: 1667
+INFO:root:Difference: compiler, count: 18
+INFO:root:Difference: definitions, count: 44
+INFO:root:Difference: flags, count: 44
+INFO:root:Difference: others, count: 18
+INFO:root:Different files across all projects: 17630
+INFO:root:	Baselines files: 1791
+INFO:root:	Identical to baseline: 831
+INFO:root:	Total divergences: 15008

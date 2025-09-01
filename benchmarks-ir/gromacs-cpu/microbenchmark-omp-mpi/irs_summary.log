@@ -1,0 +1,9 @@
+INFO:root:IR Generation Summary
+INFO:root:	Total unique IRs 2333
+INFO:root:	Unique Hashes in Baseline Configurations: 1752
+INFO:root:		Unique Hashes Used Only by Non-Baseline Configurations: 581
+INFO:root:	Configurations and Target Counts:
+INFO:root:		- builds/build/build_MPI_OPENMP_SSE4.1: 1730 targets, 1730 unique hashes.
+INFO:root:		- builds/build/build_MPI_SSE4.1: 1730 targets, 1730 unique hashes.
+INFO:root:		- builds/build/build_OPENMP_SSE4.1: 1742 targets, 1742 unique hashes.
+INFO:root:		- builds/build/build__SSE4.1: 1742 targets, 1742 unique hashes.

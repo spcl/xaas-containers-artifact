@@ -1,0 +1,9 @@
+INFO:root:IR Generation Summary
+INFO:root:	Total unique IRs 2694
+INFO:root:	Unique Hashes in Baseline Configurations: 1791
+INFO:root:		Unique Hashes Used Only by Non-Baseline Configurations: 903
+INFO:root:	Configurations and Target Counts:
+INFO:root:		- builds_cuda/build/build_CUDA_AVX2_256: 1784 targets, 1784 unique hashes.
+INFO:root:		- builds_cuda/build/build_CUDA_AVX_512: 1784 targets, 1784 unique hashes.
+INFO:root:		- builds_cuda/build/build__AVX2_256: 1742 targets, 1742 unique hashes.
+INFO:root:		- builds_cuda/build/build__AVX_512: 1742 targets, 1742 unique hashes.

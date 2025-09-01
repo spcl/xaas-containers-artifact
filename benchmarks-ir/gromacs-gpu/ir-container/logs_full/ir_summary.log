@@ -1,0 +1,15 @@
+INFO:root:IR Generation Summary
+INFO:root:	Total unique IRs 4237
+INFO:root:	Unique Hashes in Baseline Configurations: 1791
+INFO:root:		Unique Hashes Used Only by Non-Baseline Configurations: 2446
+INFO:root:	Configurations and Target Counts:
+INFO:root:		- gromacs-build/build/build_CUDA_AVX2_128: 1784 targets, 1784 unique hashes.
+INFO:root:		- gromacs-build/build/build_CUDA_AVX2_256: 1784 targets, 1784 unique hashes.
+INFO:root:		- gromacs-build/build/build_CUDA_AVX_256: 1784 targets, 1784 unique hashes.
+INFO:root:		- gromacs-build/build/build_CUDA_AVX_512: 1784 targets, 1784 unique hashes.
+INFO:root:		- gromacs-build/build/build_CUDA_SSE4.1: 1784 targets, 1784 unique hashes.
+INFO:root:		- gromacs-build/build/build__AVX2_128: 1742 targets, 1742 unique hashes.
+INFO:root:		- gromacs-build/build/build__AVX2_256: 1742 targets, 1742 unique hashes.
+INFO:root:		- gromacs-build/build/build__AVX_256: 1742 targets, 1742 unique hashes.
+INFO:root:		- gromacs-build/build/build__AVX_512: 1742 targets, 1742 unique hashes.
+INFO:root:		- gromacs-build/build/build__SSE4.1: 1742 targets, 1742 unique hashes.

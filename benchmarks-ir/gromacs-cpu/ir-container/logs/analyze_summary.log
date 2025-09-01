@@ -1,0 +1,18 @@
+INFO:root:Total files: 1742
+INFO:root:Project gromacs-build/build/build__AVX2_128:
+INFO:root:	Files 1742 files
+INFO:root:Project gromacs-build/build/build__AVX2_256:
+INFO:root:	Files 1742 files
+INFO:root:Project gromacs-build/build/build__AVX_256:
+INFO:root:	Files 1742 files
+INFO:root:Project gromacs-build/build/build__AVX_512:
+INFO:root:	Files 1742 files
+INFO:root:Project gromacs-build/build/build__SSE4.1:
+INFO:root:	Files 1742 files
+INFO:root:Different files: 1671
+INFO:root:Difference: includes, count: 1671
+INFO:root:Difference: cpu_tuning, count: 1666
+INFO:root:Different files across all projects: 8710
+INFO:root:	Baselines files: 1742
+INFO:root:	Identical to baseline: 284
+INFO:root:	Total divergences: 6684
