@@ -1,4 +1,5 @@
 import os
+import sys
 import google.generativeai as genai
 
 # Configure API key (set yours here or via environment variable)
@@ -13,6 +14,7 @@ model_info = genai.get_model(f"models/{model_name}")
 print("Context window:", model_info.input_token_limit, "tokens")
 print("Max output window:", model_info.output_token_limit, "tokens")
 
+
 def count_tokens_with_gemini(text):
     try:
         token_count = model.count_tokens(text)
@@ -21,6 +23,7 @@ def count_tokens_with_gemini(text):
         print(f"Error counting tokens: {e}")
         return 0
 
+
 def read_text_file(filepath):
     try:
         with open(filepath, "r", encoding="utf-8", errors="ignore") as f:
@@ -28,6 +31,7 @@ def read_text_file(filepath):
     except Exception as e:
         print(f"Failed to read {filepath}: {e}")
         return ""
+
 
 def collect_token_counts(gromacs_path):
     token_report = {}
@@ -44,7 +48,8 @@ def collect_token_counts(gromacs_path):
         print("CMakeLists.txt not found.")
 
     # docs/ folder
-    docs_dir = os.path.join(gromacs_path, "docs")
+    # docs_dir = os.path.join(gromacs_path, "docs")
+    docs_dir = os.path.join(gromacs_path, "cmake")
     if os.path.isdir(docs_dir):
         for root, _, files in os.walk(docs_dir):
             for file in files:
@@ -59,9 +64,10 @@ def collect_token_counts(gromacs_path):
 
     return token_report, cmake_tokens, docs_tokens
 
+
 # === MAIN ===
 if __name__ == "__main__":
-    gromacs_path = "/Users/eimanalnuaimi/Desktop/gromacs-2025.0"  # Replace with actual path
+    gromacs_path = sys.argv[1]
     report, cmake_tokens, docs_tokens = collect_token_counts(gromacs_path)
 
     print("\nToken Report:")

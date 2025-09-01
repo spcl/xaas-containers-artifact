@@ -22,6 +22,9 @@ def normalize_key(key):
 def normalize_flag(flag):
     if not flag:
         return None
+    if re.match(r"-D.*=ON$", flag):
+        # normalize by stripping =ON
+        return flag.replace("=ON", "")
     return flag.strip()  # Only strip whitespace, preserve `-D`
 
 
