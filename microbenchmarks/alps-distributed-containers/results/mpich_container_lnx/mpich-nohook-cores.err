@@ -1,0 +1,2 @@
+cpu-bind=MAP  - nid007572, task  0  0 [32990]: mask 0x2 set
+cpu-bind=MAP  - nid007572, task  1  1 [32991]: mask 0x4 set

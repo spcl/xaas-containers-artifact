@@ -1,0 +1,1290 @@
+cpu-bind=MASK - nid006696, task  0  0 [243936]: mask 0xffffffffffffffffff set
+cpu-bind=MASK - nid006696, task  1  1 [243937]: mask 0xffffffffffffffffff000000000000000000 set
+--------------------------------------------------------------------------
+A requested component was not found, or was unable to be opened.  This
+means that this component is either not installed or is unable to be
+used on your system (e.g., sometimes this means that shared libraries
+that the component requires are unable to be found/loaded).  Note that
+PMIx stopped checking at the first component that it did not find.
+
+Host:      nid006696
+Framework: psec
+Component: munge
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+A requested component was not found, or was unable to be opened.  This
+means that this component is either not installed or is unable to be
+used on your system (e.g., sometimes this means that shared libraries
+that the component requires are unable to be found/loaded).  Note that
+PMIx stopped checking at the first component that it did not find.
+
+Host:      nid006696
+Framework: psec
+Component: munge
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+A requested component was not found, or was unable to be opened.  This
+means that this component is either not installed or is unable to be
+used on your system (e.g., sometimes this means that shared libraries
+that the component requires are unable to be found/loaded).  Note that
+PMIx stopped checking at the first component that it did not find.
+
+Host:      nid006696
+Framework: psec
+Component: munge
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+A requested component was not found, or was unable to be opened.  This
+means that this component is either not installed or is unable to be
+used on your system (e.g., sometimes this means that shared libraries
+that the component requires are unable to be found/loaded).  Note that
+PMIx stopped checking at the first component that it did not find.
+
+Host:      nid006696
+Framework: psec
+Component: munge
+--------------------------------------------------------------------------
+libfabric:243937:1755977520::core:core:fi_param_get_():278<info> variable perf_cntr=<not set>
+libfabric:243937:1755977520::core:core:fi_param_get_():278<info> variable hook=<not set>
+libfabric:243937:1755977520::core:core:fi_param_get_():278<info> variable hmem_cuda_use_gdrcopy=<not set>
+libfabric:243937:1755977520::core:core:fi_param_get_():278<info> variable hmem_cuda_enable_xfer=<not set>
+libfabric:243937:1755977520::core:core:ofi_hmem_init():227<info> Hmem iface FI_HMEM_ROCR not supported
+libfabric:243937:1755977520::core:core:ofi_hmem_init():227<info> Hmem iface FI_HMEM_ZE not supported
+libfabric:243937:1755977520::core:core:ofi_hmem_init():227<info> Hmem iface FI_HMEM_NEURON not supported
+libfabric:243937:1755977520::core:core:fi_param_get_():278<info> variable hmem_disable_p2p=<not set>
+libfabric:243937:1755977520::core:core:fi_param_get_():278<info> variable mr_cache_max_size=<not set>
+libfabric:243937:1755977520::core:core:fi_param_get_():278<info> variable mr_cache_max_count=<not set>
+libfabric:243937:1755977520::core:core:fi_param_get_():278<info> variable mr_cache_monitor=<not set>
+libfabric:243937:1755977520::core:core:fi_param_get_():278<info> variable mr_cuda_cache_monitor_enabled=<not set>
+libfabric:243937:1755977520::core:core:fi_param_get_():278<info> variable mr_rocr_cache_monitor_enabled=<not set>
+libfabric:243937:1755977520::core:core:fi_param_get_():278<info> variable mr_ze_cache_monitor_enabled=<not set>
+libfabric:243937:1755977520::core:mr:ofi_default_cache_size():77<info> default cache size=1592830748
+libfabric:243937:1755977520::core:core:fi_param_get_():278<info> variable provider=<not set>
+libfabric:243937:1755977520::core:core:fi_param_get_():278<info> variable universe_size=<not set>
+libfabric:243937:1755977520::core:core:fi_param_get_():278<info> variable poll_fairness=<not set>
+libfabric:243937:1755977520::core:core:fi_param_get_():278<info> variable provider_path=<not set>
+libfabric:243937:1755977520::core:core:ofi_register_provider():466<info> registering provider: usnic (1.0)
+libfabric:243937:1755977520::shm:core:fi_param_get_():278<info> variable sar_threshold=<not set>
+libfabric:243937:1755977520::shm:core:fi_param_get_():278<info> variable tx_size=<not set>
+libfabric:243937:1755977520::shm:core:fi_param_get_():278<info> variable rx_size=<not set>
+libfabric:243937:1755977520::shm:core:fi_param_get_():278<info> variable disable_cma=<not set>
+libfabric:243937:1755977520::core:core:ofi_register_provider():466<info> registering provider: shm (115.0)
+libfabric:243937:1755977520::ofi_rxm:core:fi_param_get_():278<info> variable enable_passthru=<not set>
+libfabric:243937:1755977520::ofi_rxm:core:fi_param_get_():278<info> variable buffer_size=<not set>
+libfabric:243937:1755977520::ofi_rxm:core:fi_param_get_():278<info> variable tx_size=<not set>
+libfabric:243937:1755977520::ofi_rxm:core:fi_param_get_():278<info> variable rx_size=<not set>
+libfabric:243937:1755977520::ofi_rxm:core:fi_param_get_():278<info> variable msg_tx_size=<not set>
+libfabric:243937:1755977520::ofi_rxm:core:fi_param_get_():278<info> variable msg_rx_size=<not set>
+libfabric:243937:1755977520::ofi_rxm:core:fi_param_get_():278<info> variable cm_progress_interval=<not set>
+libfabric:243937:1755977520::ofi_rxm:core:fi_param_get_():278<info> variable cq_eq_fairness=<not set>
+libfabric:243937:1755977520::ofi_rxm:core:fi_param_get_():278<info> variable data_auto_progress=<not set>
+libfabric:243937:1755977520::ofi_rxm:core:fi_param_get_():278<info> variable use_rndv_write=<not set>
+libfabric:243937:1755977520::ofi_rxm:core:fi_param_get_():278<info> variable def_wait_obj=<not set>
+libfabric:243937:1755977520::ofi_rxm:core:fi_param_get_():278<info> variable def_tcp_wait_obj=<not set>
+libfabric:243937:1755977520::core:core:ofi_register_provider():466<info> registering provider: ofi_rxm (115.0)
+libfabric:243937:1755977520::ofi_mrail:core:fi_param_get_():278<info> variable config=<not set>
+libfabric:243937:1755977520::ofi_mrail:core:fi_param_get_():278<info> variable addr=<not set>
+libfabric:243937:1755977520::ofi_mrail:core:fi_param_get_():278<info> variable addr_strc=<not set>
+libfabric:243937:1755977520::ofi_mrail:core:mrail_parse_env_vars():115<info> unable to read FI_OFI_MRAIL_ADDR env variable
+libfabric:243937:1755977520::core:core:ofi_register_provider():466<info> registering provider: ofi_mrail (115.0)
+libfabric:243937:1755977520::ofi_rxd:core:fi_param_get_():278<info> variable spin_count=<not set>
+libfabric:243937:1755977520::ofi_rxd:core:fi_param_get_():278<info> variable retry=<not set>
+libfabric:243937:1755977520::ofi_rxd:core:fi_param_get_():278<info> variable max_peers=<not set>
+libfabric:243937:1755977520::ofi_rxd:core:fi_param_get_():278<info> variable max_unacked=<not set>
+libfabric:243937:1755977520::core:core:ofi_register_provider():466<info> registering provider: ofi_rxd (115.0)
+libfabric:243937:1755977520::efa:core:fi_param_get_():278<info> variable rx_window_size=<not set>
+libfabric:243937:1755977520::efa:core:fi_param_get_():278<info> variable tx_max_credits=<not set>
+libfabric:243937:1755977520::efa:core:fi_param_get_():278<info> variable tx_min_credits=<not set>
+libfabric:243937:1755977520::efa:core:fi_param_get_():278<info> variable tx_queue_size=<not set>
+libfabric:243937:1755977520::efa:core:fi_param_get_():278<info> variable enable_shm_transfer=<not set>
+libfabric:243937:1755977520::efa:core:fi_param_get_():278<info> variable use_device_rdma=<not set>
+libfabric:243937:1755977520::efa:core:fi_param_get_():278<info> variable use_zcpy_rx=<not set>
+libfabric:243937:1755977520::efa:core:fi_param_get_():278<info> variable zcpy_rx_seed=<not set>
+libfabric:243937:1755977520::efa:core:fi_param_get_():278<info> variable shm_av_size=<not set>
+libfabric:243937:1755977520::efa:core:fi_param_get_():278<info> variable recvwin_size=<not set>
+libfabric:243937:1755977520::efa:core:fi_param_get_():278<info> variable readcopy_pool_size=<not set>
+libfabric:243937:1755977520::efa:core:fi_param_get_():278<info> variable cq_size=<not set>
+libfabric:243937:1755977520::efa:core:fi_param_get_():278<info> variable max_memcpy_size=<not set>
+libfabric:243937:1755977520::efa:core:fi_param_get_():278<info> variable mr_cache_enable=<not set>
+libfabric:243937:1755977520::efa:core:fi_param_get_():278<info> variable mr_max_cached_count=<not set>
+libfabric:243937:1755977520::efa:core:fi_param_get_():278<info> variable mr_max_cached_size=<not set>
+libfabric:243937:1755977520::efa:core:fi_param_get_():278<info> variable mtu_size=<not set>
+libfabric:243937:1755977520::efa:core:fi_param_get_():278<info> variable tx_size=<not set>
+libfabric:243937:1755977520::efa:core:fi_param_get_():278<info> variable rx_size=<not set>
+libfabric:243937:1755977520::efa:core:fi_param_get_():278<info> variable tx_iov_limit=<not set>
+libfabric:243937:1755977520::efa:core:fi_param_get_():278<info> variable rx_iov_limit=<not set>
+libfabric:243937:1755977520::efa:core:fi_param_get_():278<info> variable rx_copy_unexp=<not set>
+libfabric:243937:1755977520::efa:core:fi_param_get_():278<info> variable rx_copy_ooo=<not set>
+libfabric:243937:1755977520::efa:core:fi_param_get_():278<info> variable max_timeout=<not set>
+libfabric:243937:1755977520::efa:core:fi_param_get_():278<info> variable timeout_interval=<not set>
+libfabric:243937:1755977520::efa:core:fi_param_get_():278<info> variable efa_cq_read_size=<not set>
+libfabric:243937:1755977520::efa:core:fi_param_get_():278<info> variable shm_cq_read_size=<not set>
+libfabric:243937:1755977520::efa:core:fi_param_get_():278<info> variable inter_max_medium_message_size=<not set>
+libfabric:243937:1755977520::efa:core:fi_param_get_():278<info> variable inter_min_read_message_size=<not set>
+libfabric:243937:1755977520::efa:core:fi_param_get_():278<info> variable inter_min_read_write_size=<not set>
+libfabric:243937:1755977520::efa:core:fi_param_get_():278<info> variable inter_read_segment_size=<not set>
+libfabric:243937:1755977520::efa:core:fi_param_get_():278<info> variable inter_max_gdrcopy_message_size=<not set>
+libfabric:243937:1755977520::core:core:ofi_register_provider():466<info> registering provider: udp (115.0)
+libfabric:243937:1755977520::core:core:ofi_register_provider():466<info> registering provider: sockets (115.0)
+libfabric:243937:1755977520::tcp:core:fi_param_get_():278<info> variable port_high_range=<not set>
+libfabric:243937:1755977520::tcp:core:fi_param_get_():278<info> variable port_low_range=<not set>
+libfabric:243937:1755977520::tcp:core:fi_param_get_():278<info> variable tx_size=<not set>
+libfabric:243937:1755977520::tcp:core:fi_param_get_():278<info> variable rx_size=<not set>
+libfabric:243937:1755977520::tcp:core:fi_param_get_():278<info> variable nodelay=<not set>
+libfabric:243937:1755977520::tcp:core:fi_param_get_():278<info> variable staging_sbuf_size=<not set>
+libfabric:243937:1755977520::tcp:core:fi_param_get_():278<info> variable prefetch_rbuf_size=<not set>
+libfabric:243937:1755977520::tcp:core:fi_param_get_():278<info> variable zerocopy_size=<not set>
+libfabric:243937:1755977520::core:core:ofi_register_provider():466<info> registering provider: tcp (115.0)
+libfabric:243937:1755977520::core:core:ofi_register_provider():466<info> registering provider: ofi_hook_perf (115.0)
+libfabric:243937:1755977520::core:core:ofi_register_provider():466<info> registering provider: ofi_hook_debug (115.0)
+libfabric:243937:1755977520::core:core:fi_param_get_():278<info> variable hmem_cuda_use_gdrcopy=<not set>
+libfabric:243937:1755977520::core:core:fi_param_get_():278<info> variable hmem_cuda_enable_xfer=<not set>
+libfabric:243937:1755977520::core:core:ofi_hmem_init():227<info> Hmem iface FI_HMEM_ROCR not supported
+libfabric:243937:1755977520::core:core:ofi_hmem_init():227<info> Hmem iface FI_HMEM_ZE not supported
+libfabric:243937:1755977520::core:core:ofi_hmem_init():227<info> Hmem iface FI_HMEM_NEURON not supported
+libfabric:243937:1755977520::core:core:fi_param_get_():278<info> variable hmem_disable_p2p=<not set>
+libfabric:243937:1755977520::core:core:ofi_register_provider():466<info> registering provider: ofi_hook_hmem (1.0)
+libfabric:243937:1755977520::core:core:ofi_register_provider():466<info> registering provider: ofi_hook_dmabuf_peer_mem (115.0)
+libfabric:243937:1755977520::core:core:ofi_register_provider():466<info> registering provider: ofi_hook_noop (115.0)
+libfabric:243937:1755977520::core:core:fi_getinfo_():1100<warn> Requested version is newer than library
+libfabric:243937:1755977520::ofi_rxm:core:ofi_check_fabric_attr():407<info> Requesting provider efa, skipping verbs
+libfabric:243937:1755977520::ofi_rxm:core:ofi_check_fabric_attr():407<info> Requesting provider efa, skipping tcp
+libfabric:243937:1755977520::ofi_rxm:core:ofi_check_info():1056<info> Unsupported capabilities
+libfabric:243937:1755977520::ofi_rxm:core:ofi_check_info():1057<info> Supported: FI_MSG, FI_RMA, FI_TAGGED, FI_ATOMIC, FI_READ, FI_WRITE, FI_RECV, FI_SEND, FI_REMOTE_READ, FI_REMOTE_WRITE, FI_MULTI_RECV, FI_LOCAL_COMM, FI_REMOTE_COMM, FI_SOURCE, FI_DIRECTED_RECV
+libfabric:243937:1755977520::ofi_rxm:core:ofi_check_info():1057<info> Requested: FI_MSG, FI_TAGGED, FI_DIRECTED_RECV, FI_HMEM
+libfabric:243937:1755977520::ofi_rxm:core:fi_param_get_():278<info> variable use_srx=<not set>
+libfabric:243937:1755977520:ofi_rxm:core:core:ofi_layering_ok():1042<info> Need core provider, skipping ofi_rxd
+libfabric:243937:1755977520:ofi_rxm:core:core:ofi_layering_ok():1042<info> Need core provider, skipping ofi_mrail
+libfabric:243937:1755977520::ofi_rxm:core:ofi_check_info():1056<info> Unsupported capabilities
+libfabric:243937:1755977520::ofi_rxm:core:ofi_check_info():1057<info> Supported: FI_MSG, FI_RMA, FI_TAGGED, FI_ATOMIC, FI_COLLECTIVE, FI_READ, FI_WRITE, FI_RECV, FI_SEND, FI_REMOTE_READ, FI_REMOTE_WRITE, FI_MULTI_RECV, FI_LOCAL_COMM, FI_REMOTE_COMM, FI_SOURCE, FI_DIRECTED_RECV
+libfabric:243937:1755977520::ofi_rxm:core:ofi_check_info():1057<info> Requested: FI_MSG, FI_TAGGED, FI_DIRECTED_RECV, FI_HMEM
+libfabric:243937:1755977520::core:core:fi_getinfo_():1147<warn> fi_getinfo: provider ofi_rxm returned -61 (No data available)
+libfabric:243937:1755977520::ofi_rxd:core:ofi_check_info():1056<info> Unsupported capabilities
+libfabric:243937:1755977520::ofi_rxd:core:ofi_check_info():1057<info> Supported: FI_MSG, FI_RMA, FI_TAGGED, FI_ATOMIC, FI_READ, FI_WRITE, FI_RECV, FI_SEND, FI_REMOTE_READ, FI_REMOTE_WRITE, FI_MULTI_RECV, FI_LOCAL_COMM, FI_REMOTE_COMM, FI_RMA_EVENT, FI_SOURCE, FI_DIRECTED_RECV
+libfabric:243937:1755977520::ofi_rxd:core:ofi_check_info():1057<info> Requested: FI_MSG, FI_TAGGED, FI_DIRECTED_RECV, FI_HMEM
+libfabric:243937:1755977520::core:core:fi_getinfo_():1147<warn> fi_getinfo: provider ofi_rxd returned -61 (No data available)
+libfabric:243937:1755977520::ofi_mrail:fabric:mrail_get_core_info():288<warn> OFI_MRAIL_ADDR_STRC env variable not set!
+libfabric:243937:1755977520::core:core:fi_getinfo_():1147<warn> fi_getinfo: provider ofi_mrail returned -61 (No data available)
+libfabric:243937:1755977520::core:core:fi_getinfo_():1100<warn> Requested version is newer than library
+libfabric:243937:1755977520::usnic:fabric:usdf_getinfo():763<trace> 
+libfabric:243937:1755977520::usnic:fabric:usdf_getinfo():777<warn> failed to usdf_get_devinfo, ret=-19 (No such device)
+libfabric:243937:1755977520::usnic:fabric:usdf_getinfo():848<info> returning -61 (No data available)
+libfabric:243937:1755977520::core:core:fi_getinfo_():1147<info> fi_getinfo: provider usnic returned -61 (No data available)
+libfabric:243937:1755977520::ofi_rxm:core:fi_param_get_():278<info> variable use_srx=<not set>
+libfabric:243937:1755977520:ofi_rxm:core:core:ofi_layering_ok():1042<info> Need core provider, skipping ofi_rxd
+libfabric:243937:1755977520:ofi_rxm:core:core:ofi_layering_ok():1042<info> Need core provider, skipping ofi_mrail
+libfabric:243937:1755977520::ofi_rxm:core:ofi_check_info():1056<info> Unsupported capabilities
+libfabric:243937:1755977520::ofi_rxm:core:ofi_check_info():1057<info> Supported: FI_MSG, FI_RMA, FI_TAGGED, FI_ATOMIC, FI_READ, FI_WRITE, FI_RECV, FI_SEND, FI_REMOTE_READ, FI_REMOTE_WRITE, FI_MULTI_RECV, FI_LOCAL_COMM, FI_REMOTE_COMM, FI_SOURCE, FI_DIRECTED_RECV
+libfabric:243937:1755977520::ofi_rxm:core:ofi_check_info():1057<info> Requested: FI_MSG, FI_TAGGED, FI_LOCAL_COMM, FI_REMOTE_COMM, FI_DIRECTED_RECV, FI_HMEM
+libfabric:243937:1755977520::ofi_rxm:core:fi_param_get_():278<info> variable use_srx=<not set>
+libfabric:243937:1755977520:ofi_rxm:usnic:fabric:usdf_getinfo():763<trace> 
+libfabric:243937:1755977520:ofi_rxm:usnic:fabric:usdf_getinfo():848<info> returning -61 (No data available)
+libfabric:243937:1755977520:ofi_rxm:core:core:fi_getinfo_():1147<info> fi_getinfo: provider usnic returned -61 (No data available)
+libfabric:243937:1755977520:ofi_rxm:core:core:ofi_layering_ok():1042<info> Need core provider, skipping ofi_rxm
+libfabric:243937:1755977520:ofi_rxm:core:core:ofi_layering_ok():1042<info> Need core provider, skipping ofi_rxd
+libfabric:243937:1755977520:ofi_rxm:core:core:ofi_layering_ok():1049<info> Skipping util;shm layering
+libfabric:243937:1755977520:ofi_rxm:udp:core:ofi_check_ep_type():663<info> unsupported endpoint type
+libfabric:243937:1755977520:ofi_rxm:udp:core:ofi_check_ep_type():664<info> Supported: FI_EP_DGRAM
+libfabric:243937:1755977520:ofi_rxm:udp:core:ofi_check_ep_type():664<info> Requested: FI_EP_MSG
+libfabric:243937:1755977520:ofi_rxm:core:core:fi_getinfo_():1147<info> fi_getinfo: provider udp returned -61 (No data available)
+libfabric:243937:1755977520:ofi_rxm:tcp:core:ofi_check_info():1056<info> Unsupported capabilities
+libfabric:243937:1755977520:ofi_rxm:tcp:core:ofi_check_info():1057<info> Supported: FI_MSG, FI_RMA, FI_READ, FI_WRITE, FI_RECV, FI_SEND, FI_REMOTE_READ, FI_REMOTE_WRITE, FI_RMA_PMEM, FI_LOCAL_COMM, FI_REMOTE_COMM, FI_RMA_EVENT
+libfabric:243937:1755977520:ofi_rxm:tcp:core:ofi_check_info():1057<info> Requested: FI_MSG, FI_RMA, FI_READ, FI_RECV, FI_SEND, FI_REMOTE_READ, FI_REMOTE_WRITE, FI_HMEM
+libfabric:243937:1755977520:ofi_rxm:tcp:core:ofi_check_info():1056<info> Unsupported capabilities
+libfabric:243937:1755977520:ofi_rxm:tcp:core:ofi_check_info():1057<info> Supported: FI_MSG, FI_RMA, FI_TAGGED, FI_READ, FI_WRITE, FI_RECV, FI_SEND, FI_REMOTE_READ, FI_REMOTE_WRITE, FI_RMA_PMEM, FI_LOCAL_COMM, FI_REMOTE_COMM, FI_RMA_EVENT
+libfabric:243937:1755977520:ofi_rxm:tcp:core:ofi_check_info():1057<info> Requested: FI_MSG, FI_RMA, FI_READ, FI_RECV, FI_SEND, FI_REMOTE_READ, FI_REMOTE_WRITE, FI_HMEM
+libfabric:243937:1755977520:ofi_rxm:core:core:fi_getinfo_():1147<info> fi_getinfo: provider tcp returned -61 (No data available)
+libfabric:243937:1755977520:ofi_rxm:core:core:ofi_layering_ok():1049<info> Skipping util;sockets layering
+libfabric:243937:1755977520:ofi_rxm:core:core:ofi_layering_ok():1042<info> Need core provider, skipping ofi_mrail
+libfabric:243937:1755977520::ofi_rxm:core:ofi_check_info():1056<info> Unsupported capabilities
+libfabric:243937:1755977520::ofi_rxm:core:ofi_check_info():1057<info> Supported: FI_MSG, FI_RMA, FI_TAGGED, FI_ATOMIC, FI_COLLECTIVE, FI_READ, FI_WRITE, FI_RECV, FI_SEND, FI_REMOTE_READ, FI_REMOTE_WRITE, FI_MULTI_RECV, FI_LOCAL_COMM, FI_REMOTE_COMM, FI_SOURCE, FI_DIRECTED_RECV
+libfabric:243937:1755977520::ofi_rxm:core:ofi_check_info():1057<info> Requested: FI_MSG, FI_TAGGED, FI_LOCAL_COMM, FI_REMOTE_COMM, FI_DIRECTED_RECV, FI_HMEM
+libfabric:243937:1755977520::core:core:fi_getinfo_():1147<info> fi_getinfo: provider ofi_rxm returned -61 (No data available)
+libfabric:243937:1755977520::ofi_rxd:core:ofi_check_info():1056<info> Unsupported capabilities
+libfabric:243937:1755977520::ofi_rxd:core:ofi_check_info():1057<info> Supported: FI_MSG, FI_RMA, FI_TAGGED, FI_ATOMIC, FI_READ, FI_WRITE, FI_RECV, FI_SEND, FI_REMOTE_READ, FI_REMOTE_WRITE, FI_MULTI_RECV, FI_LOCAL_COMM, FI_REMOTE_COMM, FI_RMA_EVENT, FI_SOURCE, FI_DIRECTED_RECV
+libfabric:243937:1755977520::ofi_rxd:core:ofi_check_info():1057<info> Requested: FI_MSG, FI_TAGGED, FI_LOCAL_COMM, FI_REMOTE_COMM, FI_DIRECTED_RECV, FI_HMEM
+libfabric:243937:1755977520::core:core:fi_getinfo_():1147<info> fi_getinfo: provider ofi_rxd returned -61 (No data available)
+libfabric:243937:1755977520::shm:core:ofi_check_info():1056<info> Unsupported capabilities
+libfabric:243937:1755977520::shm:core:ofi_check_info():1057<info> Supported: FI_MSG, FI_RMA, FI_TAGGED, FI_ATOMIC, FI_READ, FI_WRITE, FI_RECV, FI_SEND, FI_REMOTE_READ, FI_REMOTE_WRITE, FI_MULTI_RECV, FI_RMA_EVENT, FI_SOURCE, FI_DIRECTED_RECV
+libfabric:243937:1755977520::shm:core:ofi_check_info():1057<info> Requested: FI_MSG, FI_TAGGED, FI_LOCAL_COMM, FI_REMOTE_COMM, FI_DIRECTED_RECV, FI_HMEM
+libfabric:243937:1755977520::shm:core:ofi_check_info():1056<info> Unsupported capabilities
+libfabric:243937:1755977520::shm:core:ofi_check_info():1057<info> Supported: FI_MSG, FI_RMA, FI_TAGGED, FI_READ, FI_WRITE, FI_RECV, FI_SEND, FI_REMOTE_READ, FI_REMOTE_WRITE, FI_MULTI_RECV, FI_RMA_EVENT, FI_SOURCE, FI_DIRECTED_RECV, FI_HMEM
+libfabric:243937:1755977520::shm:core:ofi_check_info():1057<info> Requested: FI_MSG, FI_TAGGED, FI_LOCAL_COMM, FI_REMOTE_COMM, FI_DIRECTED_RECV, FI_HMEM
+libfabric:243937:1755977520::core:core:fi_getinfo_():1147<info> fi_getinfo: provider shm returned -61 (No data available)
+libfabric:243937:1755977520::udp:core:ofi_check_ep_type():663<info> unsupported endpoint type
+libfabric:243937:1755977520::udp:core:ofi_check_ep_type():664<info> Supported: FI_EP_DGRAM
+libfabric:243937:1755977520::udp:core:ofi_check_ep_type():664<info> Requested: FI_EP_RDM
+libfabric:243937:1755977520::core:core:fi_getinfo_():1147<info> fi_getinfo: provider udp returned -61 (No data available)
+libfabric:243937:1755977520::tcp:core:ofi_check_ep_type():663<info> unsupported endpoint type
+libfabric:243937:1755977520::tcp:core:ofi_check_ep_type():664<info> Supported: FI_EP_MSG
+libfabric:243937:1755977520::tcp:core:ofi_check_ep_type():664<info> Requested: FI_EP_RDM
+libfabric:243937:1755977520::tcp:core:ofi_check_ep_type():663<info> unsupported endpoint type
+libfabric:243937:1755977520::tcp:core:ofi_check_ep_type():664<info> Supported: FI_EP_MSG
+libfabric:243937:1755977520::tcp:core:ofi_check_ep_type():664<info> Requested: FI_EP_RDM
+libfabric:243937:1755977520::core:core:fi_getinfo_():1147<info> fi_getinfo: provider tcp returned -61 (No data available)
+libfabric:243937:1755977520::sockets:core:ofi_check_ep_type():663<info> unsupported endpoint type
+libfabric:243937:1755977520::sockets:core:ofi_check_ep_type():664<info> Supported: FI_EP_DGRAM
+libfabric:243937:1755977520::sockets:core:ofi_check_ep_type():664<info> Requested: FI_EP_RDM
+libfabric:243937:1755977520::sockets:core:ofi_check_info():1056<info> Unsupported capabilities
+libfabric:243937:1755977520::sockets:core:ofi_check_info():1057<info> Supported: FI_MSG, FI_RMA, FI_TAGGED, FI_ATOMIC, FI_READ, FI_WRITE, FI_RECV, FI_SEND, FI_REMOTE_READ, FI_REMOTE_WRITE, FI_MULTI_RECV, FI_TRIGGER, FI_FENCE, FI_RMA_PMEM, FI_LOCAL_COMM, FI_REMOTE_COMM, FI_SHARED_AV, FI_RMA_EVENT, FI_SOURCE, FI_NAMED_RX_CTX, FI_DIRECTED_RECV
+libfabric:243937:1755977520::sockets:core:ofi_check_info():1057<info> Requested: FI_MSG, FI_TAGGED, FI_LOCAL_COMM, FI_REMOTE_COMM, FI_DIRECTED_RECV, FI_HMEM
+libfabric:243937:1755977520::sockets:core:ofi_check_ep_type():663<info> unsupported endpoint type
+libfabric:243937:1755977520::sockets:core:ofi_check_ep_type():664<info> Supported: FI_EP_MSG
+libfabric:243937:1755977520::sockets:core:ofi_check_ep_type():664<info> Requested: FI_EP_RDM
+libfabric:243937:1755977520::core:core:fi_getinfo_():1147<info> fi_getinfo: provider sockets returned -61 (No data available)
+libfabric:243937:1755977520::ofi_mrail:fabric:mrail_get_core_info():288<info> OFI_MRAIL_ADDR_STRC env variable not set!
+libfabric:243937:1755977520::core:core:fi_getinfo_():1147<info> fi_getinfo: provider ofi_mrail returned -61 (No data available)
+libfabric:243937:1755977520::core:core:fi_getinfo_():1100<warn> Requested version is newer than library
+libfabric:243937:1755977520::ofi_rxm:core:ofi_check_fabric_attr():407<info> Requesting provider efa, skipping verbs
+libfabric:243937:1755977520::ofi_rxm:core:ofi_check_fabric_attr():407<info> Requesting provider efa, skipping tcp
+libfabric:243937:1755977520::ofi_rxm:core:ofi_check_fabric_attr():407<info> Requesting provider efa, skipping tcp
+libfabric:243937:1755977520::ofi_rxm:core:fi_param_get_():278<info> variable use_srx=<not set>
+libfabric:243937:1755977520:ofi_rxm:core:core:ofi_layering_ok():1042<info> Need core provider, skipping ofi_rxd
+libfabric:243937:1755977520:ofi_rxm:core:core:ofi_layering_ok():1042<info> Need core provider, skipping ofi_mrail
+libfabric:243937:1755977520::ofi_rxm:core:fi_param_get_():278<info> variable use_srx=<not set>
+libfabric:243937:1755977520:ofi_rxm:core:core:ofi_layering_ok():1042<info> Need core provider, skipping ofi_rxd
+libfabric:243937:1755977520:ofi_rxm:core:core:ofi_layering_ok():1042<info> Need core provider, skipping ofi_mrail
+libfabric:243937:1755977520::core:core:fi_getinfo_():1147<warn> fi_getinfo: provider ofi_rxm returned -61 (No data available)
+libfabric:243937:1755977520:ofi_rxd:core:core:ofi_layering_ok():1042<info> Need core provider, skipping ofi_rxm
+libfabric:243937:1755977520:ofi_rxd:core:core:ofi_layering_ok():1042<info> Need core provider, skipping ofi_mrail
+libfabric:243937:1755977520::core:core:fi_getinfo_():1147<warn> fi_getinfo: provider ofi_rxd returned -61 (No data available)
+libfabric:243937:1755977520::ofi_mrail:fabric:mrail_get_core_info():288<warn> OFI_MRAIL_ADDR_STRC env variable not set!
+libfabric:243937:1755977520::core:core:fi_getinfo_():1147<warn> fi_getinfo: provider ofi_mrail returned -61 (No data available)
+libfabric:243937:1755977520::core:core:fi_getinfo_():1100<warn> Requested version is newer than library
+libfabric:243937:1755977520::usnic:fabric:usdf_getinfo():763<trace> 
+libfabric:243937:1755977520::usnic:fabric:usdf_getinfo():848<info> returning -61 (No data available)
+libfabric:243937:1755977520::core:core:fi_getinfo_():1147<info> fi_getinfo: provider usnic returned -61 (No data available)
+libfabric:243937:1755977520::ofi_rxm:core:fi_param_get_():278<info> variable use_srx=<not set>
+libfabric:243937:1755977520:ofi_rxm:core:core:ofi_layering_ok():1042<info> Need core provider, skipping ofi_rxd
+libfabric:243937:1755977520:ofi_rxm:core:core:ofi_layering_ok():1042<info> Need core provider, skipping ofi_mrail
+libfabric:243937:1755977520::ofi_rxm:core:fi_param_get_():278<info> variable use_srx=<not set>
+libfabric:243937:1755977520:ofi_rxm:core:core:ofi_layering_ok():1042<info> Need core provider, skipping ofi_rxd
+libfabric:243937:1755977520:ofi_rxm:tcp:core:fi_param_get_():278<info> variable iface=<not set>
+libfabric:243937:1755977520:ofi_rxm:tcp:core:ofi_get_list_of_addr():2000<info> Available addr: 10.100.96.90, iface name: nmn0, speed: 1000
+libfabric:243937:1755977520:ofi_rxm:tcp:core:ofi_get_list_of_addr():2000<info> Available addr: 172.28.33.200, iface name: hsn0, speed: 200000
+libfabric:243937:1755977520:ofi_rxm:tcp:core:ofi_get_list_of_addr():2000<info> Available addr: 172.28.33.202, iface name: hsn2, speed: 200000
+libfabric:243937:1755977520:ofi_rxm:tcp:core:ofi_get_list_of_addr():2000<info> Available addr: 172.28.33.203, iface name: hsn3, speed: 200000
+libfabric:243937:1755977520:ofi_rxm:tcp:core:ofi_get_list_of_addr():2000<info> Available addr: 172.28.33.201, iface name: hsn1, speed: 200000
+libfabric:243937:1755977520:ofi_rxm:tcp:core:ofi_get_list_of_addr():2000<info> Available addr: fe80::240:a6ff:fe89:2e55, iface name: nmn0, speed: 1000
+libfabric:243937:1755977520:ofi_rxm:tcp:core:ofi_get_list_of_addr():2000<info> Available addr: fe80::ff:fe00:e9e2, iface name: hsn0, speed: 200000
+libfabric:243937:1755977520:ofi_rxm:tcp:core:ofi_get_list_of_addr():2000<info> Available addr: fe80::ff:fe00:e922, iface name: hsn2, speed: 200000
+libfabric:243937:1755977520:ofi_rxm:tcp:core:ofi_get_list_of_addr():2000<info> Available addr: fe80::ff:fe00:e923, iface name: hsn3, speed: 200000
+libfabric:243937:1755977520:ofi_rxm:tcp:core:ofi_get_list_of_addr():2000<info> Available addr: fe80::ff:fe00:e9e3, iface name: hsn1, speed: 200000
+libfabric:243937:1755977520:ofi_rxm:tcp:core:ofi_insert_loopback_addr():1844<info> available addr: : fi_sockaddr_in://127.0.0.1:0
+libfabric:243937:1755977520:ofi_rxm:tcp:core:ofi_insert_loopback_addr():1859<info> available addr: : fi_sockaddr_in6://[::1]:0
+libfabric:243937:1755977520:ofi_rxm:tcp:core:util_getinfo_ifs():333<info> Chosen addr for using: 172.28.33.200, speed 200000
+libfabric:243937:1755977520:ofi_rxm:tcp:core:fi_param_get_():278<info> variable iface=<not set>
+libfabric:243937:1755977520:ofi_rxm:tcp:core:ofi_get_list_of_addr():2000<info> Available addr: 10.100.96.90, iface name: nmn0, speed: 1000
+libfabric:243937:1755977520:ofi_rxm:tcp:core:ofi_get_list_of_addr():2000<info> Available addr: 172.28.33.200, iface name: hsn0, speed: 200000
+libfabric:243937:1755977520:ofi_rxm:tcp:core:ofi_get_list_of_addr():2000<info> Available addr: 172.28.33.202, iface name: hsn2, speed: 200000
+libfabric:243937:1755977520:ofi_rxm:tcp:core:ofi_get_list_of_addr():2000<info> Available addr: 172.28.33.203, iface name: hsn3, speed: 200000
+libfabric:243937:1755977520:ofi_rxm:tcp:core:ofi_get_list_of_addr():2000<info> Available addr: 172.28.33.201, iface name: hsn1, speed: 200000
+libfabric:243937:1755977520:ofi_rxm:tcp:core:ofi_get_list_of_addr():2000<info> Available addr: fe80::240:a6ff:fe89:2e55, iface name: nmn0, speed: 1000
+libfabric:243937:1755977520:ofi_rxm:tcp:core:ofi_get_list_of_addr():2000<info> Available addr: fe80::ff:fe00:e9e2, iface name: hsn0, speed: 200000
+libfabric:243937:1755977520:ofi_rxm:tcp:core:ofi_get_list_of_addr():2000<info> Available addr: fe80::ff:fe00:e922, iface name: hsn2, speed: 200000
+libfabric:243937:1755977520:ofi_rxm:tcp:core:ofi_get_list_of_addr():2000<info> Available addr: fe80::ff:fe00:e923, iface name: hsn3, speed: 200000
+libfabric:243937:1755977520:ofi_rxm:tcp:core:ofi_get_list_of_addr():2000<info> Available addr: fe80::ff:fe00:e9e3, iface name: hsn1, speed: 200000
+libfabric:243937:1755977520:ofi_rxm:tcp:core:ofi_insert_loopback_addr():1844<info> available addr: : fi_sockaddr_in://127.0.0.1:0
+libfabric:243937:1755977520:ofi_rxm:tcp:core:ofi_insert_loopback_addr():1859<info> available addr: : fi_sockaddr_in6://[::1]:0
+libfabric:243937:1755977520:ofi_rxm:tcp:core:util_getinfo_ifs():333<info> Chosen addr for using: 172.28.33.200, speed 200000
+libfabric:243937:1755977520:ofi_rxm:core:core:ofi_layering_ok():1042<info> Need core provider, skipping ofi_mrail
+libfabric:243937:1755977520::ofi_rxm:core:fi_param_get_():278<info> variable use_srx=<not set>
+libfabric:243937:1755977520:ofi_rxm:usnic:fabric:usdf_getinfo():763<trace> 
+libfabric:243937:1755977520:ofi_rxm:usnic:fabric:usdf_getinfo():848<info> returning -61 (No data available)
+libfabric:243937:1755977520:ofi_rxm:core:core:fi_getinfo_():1147<info> fi_getinfo: provider usnic returned -61 (No data available)
+libfabric:243937:1755977520:ofi_rxm:core:core:ofi_layering_ok():1042<info> Need core provider, skipping ofi_rxm
+libfabric:243937:1755977520:ofi_rxm:core:core:ofi_layering_ok():1042<info> Need core provider, skipping ofi_rxd
+libfabric:243937:1755977520:ofi_rxm:core:core:ofi_layering_ok():1049<info> Skipping util;shm layering
+libfabric:243937:1755977520:ofi_rxm:udp:core:ofi_check_ep_type():663<info> unsupported endpoint type
+libfabric:243937:1755977520:ofi_rxm:udp:core:ofi_check_ep_type():664<info> Supported: FI_EP_DGRAM
+libfabric:243937:1755977520:ofi_rxm:udp:core:ofi_check_ep_type():664<info> Requested: FI_EP_MSG
+libfabric:243937:1755977520:ofi_rxm:core:core:fi_getinfo_():1147<info> fi_getinfo: provider udp returned -61 (No data available)
+libfabric:243937:1755977520:ofi_rxm:tcp:core:ofi_check_ep_attr():741<info> Provider requires use of shared rx context
+libfabric:243937:1755977520:ofi_rxm:tcp:core:fi_param_get_():278<info> variable iface=<not set>
+libfabric:243937:1755977520:ofi_rxm:tcp:core:ofi_get_list_of_addr():2000<info> Available addr: 10.100.96.90, iface name: nmn0, speed: 1000
+libfabric:243937:1755977520:ofi_rxm:tcp:core:ofi_get_list_of_addr():2000<info> Available addr: 172.28.33.200, iface name: hsn0, speed: 200000
+libfabric:243937:1755977520:ofi_rxm:tcp:core:ofi_get_list_of_addr():2000<info> Available addr: 172.28.33.202, iface name: hsn2, speed: 200000
+libfabric:243937:1755977520:ofi_rxm:tcp:core:ofi_get_list_of_addr():2000<info> Available addr: 172.28.33.203, iface name: hsn3, speed: 200000
+libfabric:243937:1755977520:ofi_rxm:tcp:core:ofi_get_list_of_addr():2000<info> Available addr: 172.28.33.201, iface name: hsn1, speed: 200000
+libfabric:243937:1755977520:ofi_rxm:tcp:core:ofi_get_list_of_addr():2000<info> Available addr: fe80::240:a6ff:fe89:2e55, iface name: nmn0, speed: 1000
+libfabric:243937:1755977520:ofi_rxm:tcp:core:ofi_get_list_of_addr():2000<info> Available addr: fe80::ff:fe00:e9e2, iface name: hsn0, speed: 200000
+libfabric:243937:1755977520:ofi_rxm:tcp:core:ofi_get_list_of_addr():2000<info> Available addr: fe80::ff:fe00:e922, iface name: hsn2, speed: 200000
+libfabric:243937:1755977520:ofi_rxm:tcp:core:ofi_get_list_of_addr():2000<info> Available addr: fe80::ff:fe00:e923, iface name: hsn3, speed: 200000
+libfabric:243937:1755977520:ofi_rxm:tcp:core:ofi_get_list_of_addr():2000<info> Available addr: fe80::ff:fe00:e9e3, iface name: hsn1, speed: 200000
+libfabric:243937:1755977520:ofi_rxm:tcp:core:ofi_insert_loopback_addr():1844<info> available addr: : fi_sockaddr_in://127.0.0.1:0
+libfabric:243937:1755977520:ofi_rxm:tcp:core:ofi_insert_loopback_addr():1859<info> available addr: : fi_sockaddr_in6://[::1]:0
+libfabric:243937:1755977520:ofi_rxm:tcp:core:util_getinfo_ifs():333<info> Chosen addr for using: 172.28.33.200, speed 200000
+libfabric:243937:1755977520:ofi_rxm:core:core:ofi_layering_ok():1049<info> Skipping util;sockets layering
+libfabric:243937:1755977520:ofi_rxm:core:core:ofi_layering_ok():1042<info> Need core provider, skipping ofi_mrail
+libfabric:243937:1755977520::ofi_rxm:core:fi_param_get_():278<info> variable use_srx=<not set>
+libfabric:243937:1755977520:ofi_rxm:usnic:fabric:usdf_getinfo():763<trace> 
+libfabric:243937:1755977520:ofi_rxm:usnic:fabric:usdf_getinfo():848<info> returning -61 (No data available)
+libfabric:243937:1755977520:ofi_rxm:core:core:fi_getinfo_():1147<info> fi_getinfo: provider usnic returned -61 (No data available)
+libfabric:243937:1755977520:ofi_rxm:core:core:ofi_layering_ok():1042<info> Need core provider, skipping ofi_rxm
+libfabric:243937:1755977520:ofi_rxm:core:core:ofi_layering_ok():1042<info> Need core provider, skipping ofi_rxd
+libfabric:243937:1755977520:ofi_rxm:core:core:ofi_layering_ok():1049<info> Skipping util;shm layering
+libfabric:243937:1755977520:ofi_rxm:udp:core:ofi_check_ep_type():663<info> unsupported endpoint type
+libfabric:243937:1755977520:ofi_rxm:udp:core:ofi_check_ep_type():664<info> Supported: FI_EP_DGRAM
+libfabric:243937:1755977520:ofi_rxm:udp:core:ofi_check_ep_type():664<info> Requested: FI_EP_MSG
+libfabric:243937:1755977520:ofi_rxm:core:core:fi_getinfo_():1147<info> fi_getinfo: provider udp returned -61 (No data available)
+libfabric:243937:1755977520:ofi_rxm:tcp:core:ofi_check_ep_attr():741<info> Provider requires use of shared rx context
+libfabric:243937:1755977520:ofi_rxm:tcp:core:fi_param_get_():278<info> variable iface=<not set>
+libfabric:243937:1755977520:ofi_rxm:tcp:core:ofi_get_list_of_addr():2000<info> Available addr: 10.100.96.90, iface name: nmn0, speed: 1000
+libfabric:243937:1755977520:ofi_rxm:tcp:core:ofi_get_list_of_addr():2000<info> Available addr: 172.28.33.200, iface name: hsn0, speed: 200000
+libfabric:243937:1755977520:ofi_rxm:tcp:core:ofi_get_list_of_addr():2000<info> Available addr: 172.28.33.202, iface name: hsn2, speed: 200000
+libfabric:243937:1755977520:ofi_rxm:tcp:core:ofi_get_list_of_addr():2000<info> Available addr: 172.28.33.203, iface name: hsn3, speed: 200000
+libfabric:243937:1755977520:ofi_rxm:tcp:core:ofi_get_list_of_addr():2000<info> Available addr: 172.28.33.201, iface name: hsn1, speed: 200000
+libfabric:243937:1755977520:ofi_rxm:tcp:core:ofi_get_list_of_addr():2000<info> Available addr: fe80::240:a6ff:fe89:2e55, iface name: nmn0, speed: 1000
+libfabric:243937:1755977520:ofi_rxm:tcp:core:ofi_get_list_of_addr():2000<info> Available addr: fe80::ff:fe00:e9e2, iface name: hsn0, speed: 200000
+libfabric:243937:1755977520:ofi_rxm:tcp:core:ofi_get_list_of_addr():2000<info> Available addr: fe80::ff:fe00:e922, iface name: hsn2, speed: 200000
+libfabric:243937:1755977520:ofi_rxm:tcp:core:ofi_get_list_of_addr():2000<info> Available addr: fe80::ff:fe00:e923, iface name: hsn3, speed: 200000
+libfabric:243937:1755977520:ofi_rxm:tcp:core:ofi_get_list_of_addr():2000<info> Available addr: fe80::ff:fe00:e9e3, iface name: hsn1, speed: 200000
+libfabric:243937:1755977520:ofi_rxm:tcp:core:ofi_insert_loopback_addr():1844<info> available addr: : fi_sockaddr_in://127.0.0.1:0
+libfabric:243937:1755977520:ofi_rxm:tcp:core:ofi_insert_loopback_addr():1859<info> available addr: : fi_sockaddr_in6://[::1]:0
+libfabric:243937:1755977520:ofi_rxm:tcp:core:util_getinfo_ifs():333<info> Chosen addr for using: 172.28.33.200, speed 200000
+libfabric:243937:1755977520:ofi_rxm:core:core:ofi_layering_ok():1049<info> Skipping util;sockets layering
+libfabric:243937:1755977520:ofi_rxm:core:core:ofi_layering_ok():1042<info> Need core provider, skipping ofi_mrail
+libfabric:243937:1755977520:ofi_rxd:usnic:fabric:usdf_getinfo():763<trace> 
+libfabric:243937:1755977520:ofi_rxd:usnic:fabric:usdf_getinfo():848<info> returning -61 (No data available)
+libfabric:243937:1755977520:ofi_rxd:core:core:fi_getinfo_():1147<info> fi_getinfo: provider usnic returned -61 (No data available)
+libfabric:243937:1755977520:ofi_rxd:core:core:ofi_layering_ok():1042<info> Need core provider, skipping ofi_rxm
+libfabric:243937:1755977520:ofi_rxd:core:core:ofi_layering_ok():1042<info> Need core provider, skipping ofi_rxd
+libfabric:243937:1755977520:ofi_rxd:core:core:ofi_layering_ok():1049<info> Skipping util;shm layering
+libfabric:243937:1755977520:ofi_rxd:udp:core:fi_param_get_():278<info> variable iface=<not set>
+libfabric:243937:1755977520:ofi_rxd:udp:core:ofi_get_list_of_addr():2000<info> Available addr: 10.100.96.90, iface name: nmn0, speed: 1000
+libfabric:243937:1755977520:ofi_rxd:udp:core:ofi_get_list_of_addr():2000<info> Available addr: 172.28.33.200, iface name: hsn0, speed: 200000
+libfabric:243937:1755977520:ofi_rxd:udp:core:ofi_get_list_of_addr():2000<info> Available addr: 172.28.33.202, iface name: hsn2, speed: 200000
+libfabric:243937:1755977520:ofi_rxd:udp:core:ofi_get_list_of_addr():2000<info> Available addr: 172.28.33.203, iface name: hsn3, speed: 200000
+libfabric:243937:1755977520:ofi_rxd:udp:core:ofi_get_list_of_addr():2000<info> Available addr: 172.28.33.201, iface name: hsn1, speed: 200000
+libfabric:243937:1755977520:ofi_rxd:udp:core:ofi_get_list_of_addr():2000<info> Available addr: fe80::240:a6ff:fe89:2e55, iface name: nmn0, speed: 1000
+libfabric:243937:1755977520:ofi_rxd:udp:core:ofi_get_list_of_addr():2000<info> Available addr: fe80::ff:fe00:e9e2, iface name: hsn0, speed: 200000
+libfabric:243937:1755977520:ofi_rxd:udp:core:ofi_get_list_of_addr():2000<info> Available addr: fe80::ff:fe00:e922, iface name: hsn2, speed: 200000
+libfabric:243937:1755977520:ofi_rxd:udp:core:ofi_get_list_of_addr():2000<info> Available addr: fe80::ff:fe00:e923, iface name: hsn3, speed: 200000
+libfabric:243937:1755977520:ofi_rxd:udp:core:ofi_get_list_of_addr():2000<info> Available addr: fe80::ff:fe00:e9e3, iface name: hsn1, speed: 200000
+libfabric:243937:1755977520:ofi_rxd:udp:core:ofi_insert_loopback_addr():1844<info> available addr: : fi_sockaddr_in://127.0.0.1:0
+libfabric:243937:1755977520:ofi_rxd:udp:core:ofi_insert_loopback_addr():1859<info> available addr: : fi_sockaddr_in6://[::1]:0
+libfabric:243937:1755977520:ofi_rxd:udp:core:util_getinfo_ifs():333<info> Chosen addr for using: 172.28.33.200, speed 200000
+libfabric:243937:1755977520:ofi_rxd:tcp:core:ofi_check_ep_type():663<info> unsupported endpoint type
+libfabric:243937:1755977520:ofi_rxd:tcp:core:ofi_check_ep_type():664<info> Supported: FI_EP_MSG
+libfabric:243937:1755977520:ofi_rxd:tcp:core:ofi_check_ep_type():664<info> Requested: FI_EP_DGRAM
+libfabric:243937:1755977520:ofi_rxd:tcp:core:ofi_check_ep_type():663<info> unsupported endpoint type
+libfabric:243937:1755977520:ofi_rxd:tcp:core:ofi_check_ep_type():664<info> Supported: FI_EP_MSG
+libfabric:243937:1755977520:ofi_rxd:tcp:core:ofi_check_ep_type():664<info> Requested: FI_EP_DGRAM
+libfabric:243937:1755977520:ofi_rxd:core:core:fi_getinfo_():1147<info> fi_getinfo: provider tcp returned -61 (No data available)
+libfabric:243937:1755977520:ofi_rxd:core:core:ofi_layering_ok():1049<info> Skipping util;sockets layering
+libfabric:243937:1755977520:ofi_rxd:core:core:ofi_layering_ok():1042<info> Need core provider, skipping ofi_mrail
+libfabric:243937:1755977520::shm:core:ofi_check_info():1056<info> Unsupported capabilities
+libfabric:243937:1755977520::shm:core:ofi_check_info():1057<info> Supported: FI_MSG, FI_RMA, FI_TAGGED, FI_ATOMIC, FI_READ, FI_WRITE, FI_RECV, FI_SEND, FI_REMOTE_READ, FI_REMOTE_WRITE, FI_MULTI_RECV, FI_RMA_EVENT, FI_SOURCE, FI_DIRECTED_RECV
+libfabric:243937:1755977520::shm:core:ofi_check_info():1057<info> Requested: FI_MSG, FI_TAGGED, FI_LOCAL_COMM, FI_REMOTE_COMM, FI_DIRECTED_RECV
+libfabric:243937:1755977520::shm:core:ofi_check_info():1056<info> Unsupported capabilities
+libfabric:243937:1755977520::shm:core:ofi_check_info():1057<info> Supported: FI_MSG, FI_RMA, FI_TAGGED, FI_READ, FI_WRITE, FI_RECV, FI_SEND, FI_REMOTE_READ, FI_REMOTE_WRITE, FI_MULTI_RECV, FI_RMA_EVENT, FI_SOURCE, FI_DIRECTED_RECV, FI_HMEM
+libfabric:243937:1755977520::shm:core:ofi_check_info():1057<info> Requested: FI_MSG, FI_TAGGED, FI_LOCAL_COMM, FI_REMOTE_COMM, FI_DIRECTED_RECV
+libfabric:243937:1755977520::core:core:fi_getinfo_():1147<info> fi_getinfo: provider shm returned -61 (No data available)
+libfabric:243937:1755977520::udp:core:ofi_check_ep_type():663<info> unsupported endpoint type
+libfabric:243937:1755977520::udp:core:ofi_check_ep_type():664<info> Supported: FI_EP_DGRAM
+libfabric:243937:1755977520::udp:core:ofi_check_ep_type():664<info> Requested: FI_EP_RDM
+libfabric:243937:1755977520::core:core:fi_getinfo_():1147<info> fi_getinfo: provider udp returned -61 (No data available)
+libfabric:243937:1755977520::tcp:core:ofi_check_ep_type():663<info> unsupported endpoint type
+libfabric:243937:1755977520::tcp:core:ofi_check_ep_type():664<info> Supported: FI_EP_MSG
+libfabric:243937:1755977520::tcp:core:ofi_check_ep_type():664<info> Requested: FI_EP_RDM
+libfabric:243937:1755977520::tcp:core:ofi_check_ep_type():663<info> unsupported endpoint type
+libfabric:243937:1755977520::tcp:core:ofi_check_ep_type():664<info> Supported: FI_EP_MSG
+libfabric:243937:1755977520::tcp:core:ofi_check_ep_type():664<info> Requested: FI_EP_RDM
+libfabric:243937:1755977520::core:core:fi_getinfo_():1147<info> fi_getinfo: provider tcp returned -61 (No data available)
+libfabric:243937:1755977520::sockets:core:ofi_check_ep_type():663<info> unsupported endpoint type
+libfabric:243937:1755977520::sockets:core:ofi_check_ep_type():664<info> Supported: FI_EP_DGRAM
+libfabric:243937:1755977520::sockets:core:ofi_check_ep_type():664<info> Requested: FI_EP_RDM
+libfabric:243937:1755977520::sockets:core:ofi_check_ep_type():663<info> unsupported endpoint type
+libfabric:243937:1755977520::sockets:core:ofi_check_ep_type():664<info> Supported: FI_EP_MSG
+libfabric:243937:1755977520::sockets:core:ofi_check_ep_type():664<info> Requested: FI_EP_RDM
+libfabric:243937:1755977520::sockets:core:fi_param_get_():278<info> variable iface=<not set>
+libfabric:243937:1755977520::sockets:core:ofi_get_list_of_addr():2000<info> Available addr: 10.100.96.90, iface name: nmn0, speed: 1000
+libfabric:243937:1755977520::sockets:core:ofi_get_list_of_addr():2000<info> Available addr: 172.28.33.200, iface name: hsn0, speed: 200000
+libfabric:243937:1755977520::sockets:core:ofi_get_list_of_addr():2000<info> Available addr: 172.28.33.202, iface name: hsn2, speed: 200000
+libfabric:243937:1755977520::sockets:core:ofi_get_list_of_addr():2000<info> Available addr: 172.28.33.203, iface name: hsn3, speed: 200000
+libfabric:243937:1755977520::sockets:core:ofi_get_list_of_addr():2000<info> Available addr: 172.28.33.201, iface name: hsn1, speed: 200000
+libfabric:243937:1755977520::sockets:core:ofi_get_list_of_addr():2000<info> Available addr: fe80::240:a6ff:fe89:2e55, iface name: nmn0, speed: 1000
+libfabric:243937:1755977520::sockets:core:ofi_get_list_of_addr():2000<info> Available addr: fe80::ff:fe00:e9e2, iface name: hsn0, speed: 200000
+libfabric:243937:1755977520::sockets:core:ofi_get_list_of_addr():2000<info> Available addr: fe80::ff:fe00:e922, iface name: hsn2, speed: 200000
+libfabric:243937:1755977520::sockets:core:ofi_get_list_of_addr():2000<info> Available addr: fe80::ff:fe00:e923, iface name: hsn3, speed: 200000
+libfabric:243937:1755977520::sockets:core:ofi_get_list_of_addr():2000<info> Available addr: fe80::ff:fe00:e9e3, iface name: hsn1, speed: 200000
+libfabric:243937:1755977520::sockets:core:ofi_insert_loopback_addr():1844<info> available addr: : fi_sockaddr_in://127.0.0.1:0
+libfabric:243937:1755977520::sockets:core:ofi_insert_loopback_addr():1859<info> available addr: : fi_sockaddr_in6://[::1]:0
+libfabric:243937:1755977520::sockets:core:util_getinfo_ifs():333<info> Chosen addr for using: 172.28.33.200, speed 200000
+libfabric:243937:1755977520::ofi_mrail:fabric:mrail_get_core_info():288<info> OFI_MRAIL_ADDR_STRC env variable not set!
+libfabric:243937:1755977520::core:core:fi_getinfo_():1147<info> fi_getinfo: provider ofi_mrail returned -61 (No data available)
+libfabric:243937:1755977520::core:core:fi_getinfo_():1100<warn> Requested version is newer than library
+libfabric:243937:1755977520::usnic:fabric:usdf_getinfo():763<trace> 
+libfabric:243937:1755977520::usnic:fabric:usdf_getinfo():848<info> returning -61 (No data available)
+libfabric:243937:1755977520::core:core:fi_getinfo_():1147<info> fi_getinfo: provider usnic returned -61 (No data available)
+libfabric:243937:1755977520::ofi_rxm:core:fi_param_get_():278<info> variable use_srx=<not set>
+libfabric:243937:1755977520:ofi_rxm:core:core:ofi_layering_ok():1042<info> Need core provider, skipping ofi_rxd
+libfabric:243937:1755977520:ofi_rxm:core:core:ofi_layering_ok():1042<info> Need core provider, skipping ofi_mrail
+libfabric:243937:1755977520::ofi_rxm:core:ofi_check_info():1056<info> Unsupported capabilities
+libfabric:243937:1755977520::ofi_rxm:core:ofi_check_info():1057<info> Supported: FI_MSG, FI_RMA, FI_TAGGED, FI_ATOMIC, FI_READ, FI_WRITE, FI_RECV, FI_SEND, FI_REMOTE_READ, FI_REMOTE_WRITE, FI_MULTI_RECV, FI_LOCAL_COMM, FI_REMOTE_COMM, FI_SOURCE, FI_DIRECTED_RECV
+libfabric:243937:1755977520::ofi_rxm:core:ofi_check_info():1057<info> Requested: FI_RMA, FI_ATOMIC, FI_HMEM
+libfabric:243937:1755977520::ofi_rxm:core:fi_param_get_():278<info> variable use_srx=<not set>
+libfabric:243937:1755977520:ofi_rxm:usnic:fabric:usdf_getinfo():763<trace> 
+libfabric:243937:1755977520:ofi_rxm:usnic:fabric:usdf_getinfo():848<info> returning -61 (No data available)
+libfabric:243937:1755977520:ofi_rxm:core:core:fi_getinfo_():1147<info> fi_getinfo: provider usnic returned -61 (No data available)
+libfabric:243937:1755977520:ofi_rxm:core:core:ofi_layering_ok():1042<info> Need core provider, skipping ofi_rxm
+libfabric:243937:1755977520:ofi_rxm:core:core:ofi_layering_ok():1042<info> Need core provider, skipping ofi_rxd
+libfabric:243937:1755977520:ofi_rxm:core:core:ofi_layering_ok():1049<info> Skipping util;shm layering
+libfabric:243937:1755977520:ofi_rxm:udp:core:ofi_check_ep_type():663<info> unsupported endpoint type
+libfabric:243937:1755977520:ofi_rxm:udp:core:ofi_check_ep_type():664<info> Supported: FI_EP_DGRAM
+libfabric:243937:1755977520:ofi_rxm:udp:core:ofi_check_ep_type():664<info> Requested: FI_EP_MSG
+libfabric:243937:1755977520:ofi_rxm:core:core:fi_getinfo_():1147<info> fi_getinfo: provider udp returned -61 (No data available)
+libfabric:243937:1755977520:ofi_rxm:tcp:core:ofi_check_info():1056<info> Unsupported capabilities
+libfabric:243937:1755977520:ofi_rxm:tcp:core:ofi_check_info():1057<info> Supported: FI_MSG, FI_RMA, FI_READ, FI_WRITE, FI_RECV, FI_SEND, FI_REMOTE_READ, FI_REMOTE_WRITE, FI_RMA_PMEM, FI_LOCAL_COMM, FI_REMOTE_COMM, FI_RMA_EVENT
+libfabric:243937:1755977520:ofi_rxm:tcp:core:ofi_check_info():1057<info> Requested: FI_MSG, FI_RMA, FI_READ, FI_RECV, FI_SEND, FI_REMOTE_READ, FI_REMOTE_WRITE, FI_HMEM
+libfabric:243937:1755977520:ofi_rxm:tcp:core:ofi_check_info():1056<info> Unsupported capabilities
+libfabric:243937:1755977520:ofi_rxm:tcp:core:ofi_check_info():1057<info> Supported: FI_MSG, FI_RMA, FI_TAGGED, FI_READ, FI_WRITE, FI_RECV, FI_SEND, FI_REMOTE_READ, FI_REMOTE_WRITE, FI_RMA_PMEM, FI_LOCAL_COMM, FI_REMOTE_COMM, FI_RMA_EVENT
+libfabric:243937:1755977520:ofi_rxm:tcp:core:ofi_check_info():1057<info> Requested: FI_MSG, FI_RMA, FI_READ, FI_RECV, FI_SEND, FI_REMOTE_READ, FI_REMOTE_WRITE, FI_HMEM
+libfabric:243937:1755977520:ofi_rxm:core:core:fi_getinfo_():1147<info> fi_getinfo: provider tcp returned -61 (No data available)
+libfabric:243937:1755977520:ofi_rxm:core:core:ofi_layering_ok():1049<info> Skipping util;sockets layering
+libfabric:243937:1755977520:ofi_rxm:core:core:ofi_layering_ok():1042<info> Need core provider, skipping ofi_mrail
+libfabric:243937:1755977520::ofi_rxm:core:ofi_check_info():1056<info> Unsupported capabilities
+libfabric:243937:1755977520::ofi_rxm:core:ofi_check_info():1057<info> Supported: FI_MSG, FI_RMA, FI_TAGGED, FI_ATOMIC, FI_COLLECTIVE, FI_READ, FI_WRITE, FI_RECV, FI_SEND, FI_REMOTE_READ, FI_REMOTE_WRITE, FI_MULTI_RECV, FI_LOCAL_COMM, FI_REMOTE_COMM, FI_SOURCE, FI_DIRECTED_RECV
+libfabric:243937:1755977520::ofi_rxm:core:ofi_check_info():1057<info> Requested: FI_RMA, FI_ATOMIC, FI_HMEM
+libfabric:243937:1755977520::core:core:fi_getinfo_():1147<info> fi_getinfo: provider ofi_rxm returned -61 (No data available)
+libfabric:243937:1755977520::ofi_rxd:core:ofi_check_info():1056<info> Unsupported capabilities
+libfabric:243937:1755977520::ofi_rxd:core:ofi_check_info():1057<info> Supported: FI_MSG, FI_RMA, FI_TAGGED, FI_ATOMIC, FI_READ, FI_WRITE, FI_RECV, FI_SEND, FI_REMOTE_READ, FI_REMOTE_WRITE, FI_MULTI_RECV, FI_LOCAL_COMM, FI_REMOTE_COMM, FI_RMA_EVENT, FI_SOURCE, FI_DIRECTED_RECV
+libfabric:243937:1755977520::ofi_rxd:core:ofi_check_info():1057<info> Requested: FI_RMA, FI_ATOMIC, FI_HMEM
+libfabric:243937:1755977520::core:core:fi_getinfo_():1147<info> fi_getinfo: provider ofi_rxd returned -61 (No data available)
+libfabric:243937:1755977520::shm:core:ofi_check_info():1056<info> Unsupported capabilities
+libfabric:243937:1755977520::shm:core:ofi_check_info():1057<info> Supported: FI_MSG, FI_RMA, FI_TAGGED, FI_ATOMIC, FI_READ, FI_WRITE, FI_RECV, FI_SEND, FI_REMOTE_READ, FI_REMOTE_WRITE, FI_MULTI_RECV, FI_RMA_EVENT, FI_SOURCE, FI_DIRECTED_RECV
+libfabric:243937:1755977520::shm:core:ofi_check_info():1057<info> Requested: FI_RMA, FI_ATOMIC, FI_HMEM
+libfabric:243937:1755977520::shm:core:ofi_check_info():1056<info> Unsupported capabilities
+libfabric:243937:1755977520::shm:core:ofi_check_info():1057<info> Supported: FI_MSG, FI_RMA, FI_TAGGED, FI_READ, FI_WRITE, FI_RECV, FI_SEND, FI_REMOTE_READ, FI_REMOTE_WRITE, FI_MULTI_RECV, FI_RMA_EVENT, FI_SOURCE, FI_DIRECTED_RECV, FI_HMEM
+libfabric:243937:1755977520::shm:core:ofi_check_info():1057<info> Requested: FI_RMA, FI_ATOMIC, FI_HMEM
+libfabric:243937:1755977520::core:core:fi_getinfo_():1147<info> fi_getinfo: provider shm returned -61 (No data available)
+libfabric:243937:1755977520::udp:core:ofi_check_ep_type():663<info> unsupported endpoint type
+libfabric:243937:1755977520::udp:core:ofi_check_ep_type():664<info> Supported: FI_EP_DGRAM
+libfabric:243937:1755977520::udp:core:ofi_check_ep_type():664<info> Requested: FI_EP_RDM
+libfabric:243937:1755977520::core:core:fi_getinfo_():1147<info> fi_getinfo: provider udp returned -61 (No data available)
+libfabric:243937:1755977520::tcp:core:ofi_check_ep_type():663<info> unsupported endpoint type
+libfabric:243937:1755977520::tcp:core:ofi_check_ep_type():664<info> Supported: FI_EP_MSG
+libfabric:243937:1755977520::tcp:core:ofi_check_ep_type():664<info> Requested: FI_EP_RDM
+libfabric:243937:1755977520::tcp:core:ofi_check_ep_type():663<info> unsupported endpoint type
+libfabric:243937:1755977520::tcp:core:ofi_check_ep_type():664<info> Supported: FI_EP_MSG
+libfabric:243937:1755977520::tcp:core:ofi_check_ep_type():664<info> Requested: FI_EP_RDM
+libfabric:243937:1755977520::core:core:fi_getinfo_():1147<info> fi_getinfo: provider tcp returned -61 (No data available)
+libfabric:243937:1755977520::sockets:core:ofi_check_ep_type():663<info> unsupported endpoint type
+libfabric:243937:1755977520::sockets:core:ofi_check_ep_type():664<info> Supported: FI_EP_DGRAM
+libfabric:243937:1755977520::sockets:core:ofi_check_ep_type():664<info> Requested: FI_EP_RDM
+libfabric:243937:1755977520::sockets:core:ofi_check_info():1056<info> Unsupported capabilities
+libfabric:243937:1755977520::sockets:core:ofi_check_info():1057<info> Supported: FI_MSG, FI_RMA, FI_TAGGED, FI_ATOMIC, FI_READ, FI_WRITE, FI_RECV, FI_SEND, FI_REMOTE_READ, FI_REMOTE_WRITE, FI_MULTI_RECV, FI_TRIGGER, FI_FENCE, FI_RMA_PMEM, FI_LOCAL_COMM, FI_REMOTE_COMM, FI_SHARED_AV, FI_RMA_EVENT, FI_SOURCE, FI_NAMED_RX_CTX, FI_DIRECTED_RECV
+libfabric:243937:1755977520::sockets:core:ofi_check_info():1057<info> Requested: FI_RMA, FI_ATOMIC, FI_HMEM
+libfabric:243937:1755977520::sockets:core:ofi_check_ep_type():663<info> unsupported endpoint type
+libfabric:243937:1755977520::sockets:core:ofi_check_ep_type():664<info> Supported: FI_EP_MSG
+libfabric:243937:1755977520::sockets:core:ofi_check_ep_type():664<info> Requested: FI_EP_RDM
+libfabric:243937:1755977520::core:core:fi_getinfo_():1147<info> fi_getinfo: provider sockets returned -61 (No data available)
+libfabric:243937:1755977520::ofi_mrail:fabric:mrail_get_core_info():288<info> OFI_MRAIL_ADDR_STRC env variable not set!
+libfabric:243937:1755977520::core:core:fi_getinfo_():1147<info> fi_getinfo: provider ofi_mrail returned -61 (No data available)
+libfabric:243937:1755977520::core:core:fi_getinfo_():1100<warn> Requested version is newer than library
+libfabric:243937:1755977520::usnic:fabric:usdf_getinfo():763<trace> 
+libfabric:243937:1755977520::usnic:fabric:usdf_getinfo():848<info> returning -61 (No data available)
+libfabric:243937:1755977520::core:core:fi_getinfo_():1147<info> fi_getinfo: provider usnic returned -61 (No data available)
+libfabric:243937:1755977520::ofi_rxm:core:fi_param_get_():278<info> variable use_srx=<not set>
+libfabric:243937:1755977520:ofi_rxm:core:core:ofi_layering_ok():1042<info> Need core provider, skipping ofi_rxd
+libfabric:243937:1755977520:ofi_rxm:core:core:ofi_layering_ok():1042<info> Need core provider, skipping ofi_mrail
+libfabric:243937:1755977520::ofi_rxm:core:fi_param_get_():278<info> variable use_srx=<not set>
+libfabric:243937:1755977520:ofi_rxm:core:core:ofi_layering_ok():1042<info> Need core provider, skipping ofi_rxd
+libfabric:243937:1755977520:ofi_rxm:tcp:core:fi_param_get_():278<info> variable iface=<not set>
+libfabric:243936:1755977520::core:core:fi_param_get_():278<info> variable perf_cntr=<not set>
+libfabric:243936:1755977520::core:core:fi_param_get_():278<info> variable hook=<not set>
+libfabric:243937:1755977520:ofi_rxm:tcp:core:ofi_get_list_of_addr():2000<info> Available addr: 10.100.96.90, iface name: nmn0, speed: 1000
+libfabric:243937:1755977520:ofi_rxm:tcp:core:ofi_get_list_of_addr():2000<info> Available addr: 172.28.33.200, iface name: hsn0, speed: 200000
+libfabric:243937:1755977520:ofi_rxm:tcp:core:ofi_get_list_of_addr():2000<info> Available addr: 172.28.33.202, iface name: hsn2, speed: 200000
+libfabric:243937:1755977520:ofi_rxm:tcp:core:ofi_get_list_of_addr():2000<info> Available addr: 172.28.33.203, iface name: hsn3, speed: 200000
+libfabric:243937:1755977520:ofi_rxm:tcp:core:ofi_get_list_of_addr():2000<info> Available addr: 172.28.33.201, iface name: hsn1, speed: 200000
+libfabric:243937:1755977520:ofi_rxm:tcp:core:ofi_get_list_of_addr():2000<info> Available addr: fe80::240:a6ff:fe89:2e55, iface name: nmn0, speed: 1000
+libfabric:243937:1755977520:ofi_rxm:tcp:core:ofi_get_list_of_addr():2000<info> Available addr: fe80::ff:fe00:e9e2, iface name: hsn0, speed: 200000
+libfabric:243937:1755977520:ofi_rxm:tcp:core:ofi_get_list_of_addr():2000<info> Available addr: fe80::ff:fe00:e922, iface name: hsn2, speed: 200000
+libfabric:243937:1755977520:ofi_rxm:tcp:core:ofi_get_list_of_addr():2000<info> Available addr: fe80::ff:fe00:e923, iface name: hsn3, speed: 200000
+libfabric:243937:1755977520:ofi_rxm:tcp:core:ofi_get_list_of_addr():2000<info> Available addr: fe80::ff:fe00:e9e3, iface name: hsn1, speed: 200000
+libfabric:243937:1755977520:ofi_rxm:tcp:core:ofi_insert_loopback_addr():1844<info> available addr: : fi_sockaddr_in://127.0.0.1:0
+libfabric:243937:1755977520:ofi_rxm:tcp:core:ofi_insert_loopback_addr():1859<info> available addr: : fi_sockaddr_in6://[::1]:0
+libfabric:243937:1755977520:ofi_rxm:tcp:core:util_getinfo_ifs():333<info> Chosen addr for using: 172.28.33.200, speed 200000
+libfabric:243937:1755977520:ofi_rxm:tcp:core:fi_param_get_():278<info> variable iface=<not set>
+libfabric:243937:1755977520:ofi_rxm:tcp:core:ofi_get_list_of_addr():2000<info> Available addr: 10.100.96.90, iface name: nmn0, speed: 1000
+libfabric:243937:1755977520:ofi_rxm:tcp:core:ofi_get_list_of_addr():2000<info> Available addr: 172.28.33.200, iface name: hsn0, speed: 200000
+libfabric:243937:1755977520:ofi_rxm:tcp:core:ofi_get_list_of_addr():2000<info> Available addr: 172.28.33.202, iface name: hsn2, speed: 200000
+libfabric:243937:1755977520:ofi_rxm:tcp:core:ofi_get_list_of_addr():2000<info> Available addr: 172.28.33.203, iface name: hsn3, speed: 200000
+libfabric:243937:1755977520:ofi_rxm:tcp:core:ofi_get_list_of_addr():2000<info> Available addr: 172.28.33.201, iface name: hsn1, speed: 200000
+libfabric:243937:1755977520:ofi_rxm:tcp:core:ofi_get_list_of_addr():2000<info> Available addr: fe80::240:a6ff:fe89:2e55, iface name: nmn0, speed: 1000
+libfabric:243937:1755977520:ofi_rxm:tcp:core:ofi_get_list_of_addr():2000<info> Available addr: fe80::ff:fe00:e9e2, iface name: hsn0, speed: 200000
+libfabric:243937:1755977520:ofi_rxm:tcp:core:ofi_get_list_of_addr():2000<info> Available addr: fe80::ff:fe00:e922, iface name: hsn2, speed: 200000
+libfabric:243937:1755977520:ofi_rxm:tcp:core:ofi_get_list_of_addr():2000<info> Available addr: fe80::ff:fe00:e923, iface name: hsn3, speed: 200000
+libfabric:243937:1755977520:ofi_rxm:tcp:core:ofi_get_list_of_addr():2000<info> Available addr: fe80::ff:fe00:e9e3, iface name: hsn1, speed: 200000
+libfabric:243937:1755977520:ofi_rxm:tcp:core:ofi_insert_loopback_addr():1844<info> available addr: : fi_sockaddr_in://127.0.0.1:0
+libfabric:243937:1755977520:ofi_rxm:tcp:core:ofi_insert_loopback_addr():1859<info> available addr: : fi_sockaddr_in6://[::1]:0
+libfabric:243937:1755977520:ofi_rxm:tcp:core:util_getinfo_ifs():333<info> Chosen addr for using: 172.28.33.200, speed 200000
+libfabric:243937:1755977520:ofi_rxm:core:core:ofi_layering_ok():1042<info> Need core provider, skipping ofi_mrail
+libfabric:243937:1755977520::ofi_rxm:core:fi_param_get_():278<info> variable use_srx=<not set>
+libfabric:243937:1755977520:ofi_rxm:usnic:fabric:usdf_getinfo():763<trace> 
+libfabric:243937:1755977520:ofi_rxm:usnic:fabric:usdf_getinfo():848<info> returning -61 (No data available)
+libfabric:243937:1755977520:ofi_rxm:core:core:fi_getinfo_():1147<info> fi_getinfo: provider usnic returned -61 (No data available)
+libfabric:243937:1755977520:ofi_rxm:core:core:ofi_layering_ok():1042<info> Need core provider, skipping ofi_rxm
+libfabric:243937:1755977520:ofi_rxm:core:core:ofi_layering_ok():1042<info> Need core provider, skipping ofi_rxd
+libfabric:243937:1755977520:ofi_rxm:core:core:ofi_layering_ok():1049<info> Skipping util;shm layering
+libfabric:243937:1755977520:ofi_rxm:udp:core:ofi_check_ep_type():663<info> unsupported endpoint type
+libfabric:243937:1755977520:ofi_rxm:udp:core:ofi_check_ep_type():664<info> Supported: FI_EP_DGRAM
+libfabric:243937:1755977520:ofi_rxm:udp:core:ofi_check_ep_type():664<info> Requested: FI_EP_MSG
+libfabric:243937:1755977520:ofi_rxm:core:core:fi_getinfo_():1147<info> fi_getinfo: provider udp returned -61 (No data available)
+libfabric:243937:1755977520:ofi_rxm:tcp:core:ofi_check_ep_attr():741<info> Provider requires use of shared rx context
+libfabric:243937:1755977520:ofi_rxm:tcp:core:fi_param_get_():278<info> variable iface=<not set>
+libfabric:243936:1755977520::core:core:fi_param_get_():278<info> variable hmem_cuda_use_gdrcopy=<not set>
+libfabric:243937:1755977520:ofi_rxm:tcp:core:ofi_get_list_of_addr():2000<info> Available addr: 10.100.96.90, iface name: nmn0, speed: 1000
+libfabric:243937:1755977520:ofi_rxm:tcp:core:ofi_get_list_of_addr():2000<info> Available addr: 172.28.33.200, iface name: hsn0, speed: 200000
+libfabric:243937:1755977520:ofi_rxm:tcp:core:ofi_get_list_of_addr():2000<info> Available addr: 172.28.33.202, iface name: hsn2, speed: 200000
+libfabric:243937:1755977520:ofi_rxm:tcp:core:ofi_get_list_of_addr():2000<info> Available addr: 172.28.33.203, iface name: hsn3, speed: 200000
+libfabric:243937:1755977520:ofi_rxm:tcp:core:ofi_get_list_of_addr():2000<info> Available addr: 172.28.33.201, iface name: hsn1, speed: 200000
+libfabric:243937:1755977520:ofi_rxm:tcp:core:ofi_get_list_of_addr():2000<info> Available addr: fe80::240:a6ff:fe89:2e55, iface name: nmn0, speed: 1000
+libfabric:243937:1755977520:ofi_rxm:tcp:core:ofi_get_list_of_addr():2000<info> Available addr: fe80::ff:fe00:e9e2, iface name: hsn0, speed: 200000
+libfabric:243937:1755977520:ofi_rxm:tcp:core:ofi_get_list_of_addr():2000<info> Available addr: fe80::ff:fe00:e922, iface name: hsn2, speed: 200000
+libfabric:243937:1755977520:ofi_rxm:tcp:core:ofi_get_list_of_addr():2000<info> Available addr: fe80::ff:fe00:e923, iface name: hsn3, speed: 200000
+libfabric:243937:1755977520:ofi_rxm:tcp:core:ofi_get_list_of_addr():2000<info> Available addr: fe80::ff:fe00:e9e3, iface name: hsn1, speed: 200000
+libfabric:243937:1755977520:ofi_rxm:tcp:core:ofi_insert_loopback_addr():1844<info> available addr: : fi_sockaddr_in://127.0.0.1:0
+libfabric:243937:1755977520:ofi_rxm:tcp:core:ofi_insert_loopback_addr():1859<info> available addr: : fi_sockaddr_in6://[::1]:0
+libfabric:243937:1755977520:ofi_rxm:tcp:core:util_getinfo_ifs():333<info> Chosen addr for using: 172.28.33.200, speed 200000
+libfabric:243937:1755977520:ofi_rxm:core:core:ofi_layering_ok():1049<info> Skipping util;sockets layering
+libfabric:243937:1755977520:ofi_rxm:core:core:ofi_layering_ok():1042<info> Need core provider, skipping ofi_mrail
+libfabric:243937:1755977520::ofi_rxm:core:fi_param_get_():278<info> variable use_srx=<not set>
+libfabric:243937:1755977520:ofi_rxm:usnic:fabric:usdf_getinfo():763<trace> 
+libfabric:243937:1755977520:ofi_rxm:usnic:fabric:usdf_getinfo():848<info> returning -61 (No data available)
+libfabric:243937:1755977520:ofi_rxm:core:core:fi_getinfo_():1147<info> fi_getinfo: provider usnic returned -61 (No data available)
+libfabric:243937:1755977520:ofi_rxm:core:core:ofi_layering_ok():1042<info> Need core provider, skipping ofi_rxm
+libfabric:243937:1755977520:ofi_rxm:core:core:ofi_layering_ok():1042<info> Need core provider, skipping ofi_rxd
+libfabric:243937:1755977520:ofi_rxm:core:core:ofi_layering_ok():1049<info> Skipping util;shm layering
+libfabric:243937:1755977520:ofi_rxm:udp:core:ofi_check_ep_type():663<info> unsupported endpoint type
+libfabric:243937:1755977520:ofi_rxm:udp:core:ofi_check_ep_type():664<info> Supported: FI_EP_DGRAM
+libfabric:243937:1755977520:ofi_rxm:udp:core:ofi_check_ep_type():664<info> Requested: FI_EP_MSG
+libfabric:243937:1755977520:ofi_rxm:core:core:fi_getinfo_():1147<info> fi_getinfo: provider udp returned -61 (No data available)
+libfabric:243937:1755977520:ofi_rxm:tcp:core:ofi_check_ep_attr():741<info> Provider requires use of shared rx context
+libfabric:243937:1755977520:ofi_rxm:tcp:core:fi_param_get_():278<info> variable iface=<not set>
+libfabric:243936:1755977520::core:core:fi_param_get_():278<info> variable hmem_cuda_enable_xfer=<not set>
+libfabric:243936:1755977520::core:core:ofi_hmem_init():227<info> Hmem iface FI_HMEM_ROCR not supported
+libfabric:243936:1755977520::core:core:ofi_hmem_init():227<info> Hmem iface FI_HMEM_ZE not supported
+libfabric:243936:1755977520::core:core:ofi_hmem_init():227<info> Hmem iface FI_HMEM_NEURON not supported
+libfabric:243936:1755977520::core:core:fi_param_get_():278<info> variable hmem_disable_p2p=<not set>
+libfabric:243936:1755977520::core:core:fi_param_get_():278<info> variable mr_cache_max_size=<not set>
+libfabric:243936:1755977520::core:core:fi_param_get_():278<info> variable mr_cache_max_count=<not set>
+libfabric:243936:1755977520::core:core:fi_param_get_():278<info> variable mr_cache_monitor=<not set>
+libfabric:243936:1755977520::core:core:fi_param_get_():278<info> variable mr_cuda_cache_monitor_enabled=<not set>
+libfabric:243936:1755977520::core:core:fi_param_get_():278<info> variable mr_rocr_cache_monitor_enabled=<not set>
+libfabric:243936:1755977520::core:core:fi_param_get_():278<info> variable mr_ze_cache_monitor_enabled=<not set>
+libfabric:243936:1755977520::core:mr:ofi_default_cache_size():77<info> default cache size=1592830748
+libfabric:243936:1755977520::core:core:fi_param_get_():278<info> variable provider=<not set>
+libfabric:243936:1755977520::core:core:fi_param_get_():278<info> variable universe_size=<not set>
+libfabric:243936:1755977520::core:core:fi_param_get_():278<info> variable poll_fairness=<not set>
+libfabric:243936:1755977520::core:core:fi_param_get_():278<info> variable provider_path=<not set>
+libfabric:243937:1755977520:ofi_rxm:tcp:core:ofi_get_list_of_addr():2000<info> Available addr: 10.100.96.90, iface name: nmn0, speed: 1000
+libfabric:243937:1755977520:ofi_rxm:tcp:core:ofi_get_list_of_addr():2000<info> Available addr: 172.28.33.200, iface name: hsn0, speed: 200000
+libfabric:243937:1755977520:ofi_rxm:tcp:core:ofi_get_list_of_addr():2000<info> Available addr: 172.28.33.202, iface name: hsn2, speed: 200000
+libfabric:243937:1755977520:ofi_rxm:tcp:core:ofi_get_list_of_addr():2000<info> Available addr: 172.28.33.203, iface name: hsn3, speed: 200000
+libfabric:243937:1755977520:ofi_rxm:tcp:core:ofi_get_list_of_addr():2000<info> Available addr: 172.28.33.201, iface name: hsn1, speed: 200000
+libfabric:243937:1755977520:ofi_rxm:tcp:core:ofi_get_list_of_addr():2000<info> Available addr: fe80::240:a6ff:fe89:2e55, iface name: nmn0, speed: 1000
+libfabric:243937:1755977520:ofi_rxm:tcp:core:ofi_get_list_of_addr():2000<info> Available addr: fe80::ff:fe00:e9e2, iface name: hsn0, speed: 200000
+libfabric:243937:1755977520:ofi_rxm:tcp:core:ofi_get_list_of_addr():2000<info> Available addr: fe80::ff:fe00:e922, iface name: hsn2, speed: 200000
+libfabric:243937:1755977520:ofi_rxm:tcp:core:ofi_get_list_of_addr():2000<info> Available addr: fe80::ff:fe00:e923, iface name: hsn3, speed: 200000
+libfabric:243937:1755977520:ofi_rxm:tcp:core:ofi_get_list_of_addr():2000<info> Available addr: fe80::ff:fe00:e9e3, iface name: hsn1, speed: 200000
+libfabric:243937:1755977520:ofi_rxm:tcp:core:ofi_insert_loopback_addr():1844<info> available addr: : fi_sockaddr_in://127.0.0.1:0
+libfabric:243937:1755977520:ofi_rxm:tcp:core:ofi_insert_loopback_addr():1859<info> available addr: : fi_sockaddr_in6://[::1]:0
+libfabric:243937:1755977520:ofi_rxm:tcp:core:util_getinfo_ifs():333<info> Chosen addr for using: 172.28.33.200, speed 200000
+libfabric:243937:1755977520:ofi_rxm:core:core:ofi_layering_ok():1049<info> Skipping util;sockets layering
+libfabric:243937:1755977520:ofi_rxm:core:core:ofi_layering_ok():1042<info> Need core provider, skipping ofi_mrail
+libfabric:243937:1755977520:ofi_rxd:usnic:fabric:usdf_getinfo():763<trace> 
+libfabric:243937:1755977520:ofi_rxd:usnic:fabric:usdf_getinfo():848<info> returning -61 (No data available)
+libfabric:243937:1755977520:ofi_rxd:core:core:fi_getinfo_():1147<info> fi_getinfo: provider usnic returned -61 (No data available)
+libfabric:243937:1755977520:ofi_rxd:core:core:ofi_layering_ok():1042<info> Need core provider, skipping ofi_rxm
+libfabric:243937:1755977520:ofi_rxd:core:core:ofi_layering_ok():1042<info> Need core provider, skipping ofi_rxd
+libfabric:243937:1755977520:ofi_rxd:core:core:ofi_layering_ok():1049<info> Skipping util;shm layering
+libfabric:243937:1755977520:ofi_rxd:udp:core:fi_param_get_():278<info> variable iface=<not set>
+libfabric:243937:1755977520:ofi_rxd:udp:core:ofi_get_list_of_addr():2000<info> Available addr: 10.100.96.90, iface name: nmn0, speed: 1000
+libfabric:243937:1755977520:ofi_rxd:udp:core:ofi_get_list_of_addr():2000<info> Available addr: 172.28.33.200, iface name: hsn0, speed: 200000
+libfabric:243937:1755977520:ofi_rxd:udp:core:ofi_get_list_of_addr():2000<info> Available addr: 172.28.33.202, iface name: hsn2, speed: 200000
+libfabric:243937:1755977520:ofi_rxd:udp:core:ofi_get_list_of_addr():2000<info> Available addr: 172.28.33.203, iface name: hsn3, speed: 200000
+libfabric:243937:1755977520:ofi_rxd:udp:core:ofi_get_list_of_addr():2000<info> Available addr: 172.28.33.201, iface name: hsn1, speed: 200000
+libfabric:243937:1755977520:ofi_rxd:udp:core:ofi_get_list_of_addr():2000<info> Available addr: fe80::240:a6ff:fe89:2e55, iface name: nmn0, speed: 1000
+libfabric:243937:1755977520:ofi_rxd:udp:core:ofi_get_list_of_addr():2000<info> Available addr: fe80::ff:fe00:e9e2, iface name: hsn0, speed: 200000
+libfabric:243937:1755977520:ofi_rxd:udp:core:ofi_get_list_of_addr():2000<info> Available addr: fe80::ff:fe00:e922, iface name: hsn2, speed: 200000
+libfabric:243937:1755977520:ofi_rxd:udp:core:ofi_get_list_of_addr():2000<info> Available addr: fe80::ff:fe00:e923, iface name: hsn3, speed: 200000
+libfabric:243937:1755977520:ofi_rxd:udp:core:ofi_get_list_of_addr():2000<info> Available addr: fe80::ff:fe00:e9e3, iface name: hsn1, speed: 200000
+libfabric:243937:1755977520:ofi_rxd:udp:core:ofi_insert_loopback_addr():1844<info> available addr: : fi_sockaddr_in://127.0.0.1:0
+libfabric:243937:1755977520:ofi_rxd:udp:core:ofi_insert_loopback_addr():1859<info> available addr: : fi_sockaddr_in6://[::1]:0
+libfabric:243937:1755977520:ofi_rxd:udp:core:util_getinfo_ifs():333<info> Chosen addr for using: 172.28.33.200, speed 200000
+libfabric:243937:1755977520:ofi_rxd:tcp:core:ofi_check_ep_type():663<info> unsupported endpoint type
+libfabric:243937:1755977520:ofi_rxd:tcp:core:ofi_check_ep_type():664<info> Supported: FI_EP_MSG
+libfabric:243937:1755977520:ofi_rxd:tcp:core:ofi_check_ep_type():664<info> Requested: FI_EP_DGRAM
+libfabric:243937:1755977520:ofi_rxd:tcp:core:ofi_check_ep_type():663<info> unsupported endpoint type
+libfabric:243937:1755977520:ofi_rxd:tcp:core:ofi_check_ep_type():664<info> Supported: FI_EP_MSG
+libfabric:243937:1755977520:ofi_rxd:tcp:core:ofi_check_ep_type():664<info> Requested: FI_EP_DGRAM
+libfabric:243937:1755977520:ofi_rxd:core:core:fi_getinfo_():1147<info> fi_getinfo: provider tcp returned -61 (No data available)
+libfabric:243937:1755977520:ofi_rxd:core:core:ofi_layering_ok():1049<info> Skipping util;sockets layering
+libfabric:243937:1755977520:ofi_rxd:core:core:ofi_layering_ok():1042<info> Need core provider, skipping ofi_mrail
+libfabric:243937:1755977520::shm:core:ofi_check_info():1056<info> Unsupported capabilities
+libfabric:243937:1755977520::shm:core:ofi_check_info():1057<info> Supported: FI_MSG, FI_RMA, FI_TAGGED, FI_READ, FI_WRITE, FI_RECV, FI_SEND, FI_REMOTE_READ, FI_REMOTE_WRITE, FI_MULTI_RECV, FI_RMA_EVENT, FI_SOURCE, FI_DIRECTED_RECV, FI_HMEM
+libfabric:243937:1755977520::shm:core:ofi_check_info():1057<info> Requested: FI_RMA, FI_ATOMIC
+libfabric:243937:1755977520::udp:core:ofi_check_ep_type():663<info> unsupported endpoint type
+libfabric:243937:1755977520::udp:core:ofi_check_ep_type():664<info> Supported: FI_EP_DGRAM
+libfabric:243937:1755977520::udp:core:ofi_check_ep_type():664<info> Requested: FI_EP_RDM
+libfabric:243937:1755977520::core:core:fi_getinfo_():1147<info> fi_getinfo: provider udp returned -61 (No data available)
+libfabric:243937:1755977520::tcp:core:ofi_check_ep_type():663<info> unsupported endpoint type
+libfabric:243937:1755977520::tcp:core:ofi_check_ep_type():664<info> Supported: FI_EP_MSG
+libfabric:243937:1755977520::tcp:core:ofi_check_ep_type():664<info> Requested: FI_EP_RDM
+libfabric:243937:1755977520::tcp:core:ofi_check_ep_type():663<info> unsupported endpoint type
+libfabric:243937:1755977520::tcp:core:ofi_check_ep_type():664<info> Supported: FI_EP_MSG
+libfabric:243937:1755977520::tcp:core:ofi_check_ep_type():664<info> Requested: FI_EP_RDM
+libfabric:243937:1755977520::core:core:fi_getinfo_():1147<info> fi_getinfo: provider tcp returned -61 (No data available)
+libfabric:243937:1755977520::sockets:core:ofi_check_ep_type():663<info> unsupported endpoint type
+libfabric:243937:1755977520::sockets:core:ofi_check_ep_type():664<info> Supported: FI_EP_DGRAM
+libfabric:243937:1755977520::sockets:core:ofi_check_ep_type():664<info> Requested: FI_EP_RDM
+libfabric:243937:1755977520::sockets:core:ofi_check_ep_type():663<info> unsupported endpoint type
+libfabric:243937:1755977520::sockets:core:ofi_check_ep_type():664<info> Supported: FI_EP_MSG
+libfabric:243937:1755977520::sockets:core:ofi_check_ep_type():664<info> Requested: FI_EP_RDM
+libfabric:243937:1755977520::sockets:core:fi_param_get_():278<info> variable iface=<not set>
+libfabric:243937:1755977520::sockets:core:ofi_get_list_of_addr():2000<info> Available addr: 10.100.96.90, iface name: nmn0, speed: 1000
+libfabric:243937:1755977520::sockets:core:ofi_get_list_of_addr():2000<info> Available addr: 172.28.33.200, iface name: hsn0, speed: 200000
+libfabric:243937:1755977520::sockets:core:ofi_get_list_of_addr():2000<info> Available addr: 172.28.33.202, iface name: hsn2, speed: 200000
+libfabric:243937:1755977520::sockets:core:ofi_get_list_of_addr():2000<info> Available addr: 172.28.33.203, iface name: hsn3, speed: 200000
+libfabric:243937:1755977520::sockets:core:ofi_get_list_of_addr():2000<info> Available addr: 172.28.33.201, iface name: hsn1, speed: 200000
+libfabric:243937:1755977520::sockets:core:ofi_get_list_of_addr():2000<info> Available addr: fe80::240:a6ff:fe89:2e55, iface name: nmn0, speed: 1000
+libfabric:243937:1755977520::sockets:core:ofi_get_list_of_addr():2000<info> Available addr: fe80::ff:fe00:e9e2, iface name: hsn0, speed: 200000
+libfabric:243937:1755977520::sockets:core:ofi_get_list_of_addr():2000<info> Available addr: fe80::ff:fe00:e922, iface name: hsn2, speed: 200000
+libfabric:243937:1755977520::sockets:core:ofi_get_list_of_addr():2000<info> Available addr: fe80::ff:fe00:e923, iface name: hsn3, speed: 200000
+libfabric:243937:1755977520::sockets:core:ofi_get_list_of_addr():2000<info> Available addr: fe80::ff:fe00:e9e3, iface name: hsn1, speed: 200000
+libfabric:243937:1755977520::sockets:core:ofi_insert_loopback_addr():1844<info> available addr: : fi_sockaddr_in://127.0.0.1:0
+libfabric:243937:1755977520::sockets:core:ofi_insert_loopback_addr():1859<info> available addr: : fi_sockaddr_in6://[::1]:0
+libfabric:243937:1755977520::sockets:core:util_getinfo_ifs():333<info> Chosen addr for using: 172.28.33.200, speed 200000
+libfabric:243937:1755977520::ofi_mrail:fabric:mrail_get_core_info():288<info> OFI_MRAIL_ADDR_STRC env variable not set!
+libfabric:243937:1755977520::core:core:fi_getinfo_():1147<info> fi_getinfo: provider ofi_mrail returned -61 (No data available)
+libfabric:243936:1755977520::core:core:ofi_register_provider():466<info> registering provider: usnic (1.0)
+libfabric:243936:1755977520::shm:core:fi_param_get_():278<info> variable sar_threshold=<not set>
+libfabric:243936:1755977520::shm:core:fi_param_get_():278<info> variable tx_size=<not set>
+libfabric:243936:1755977520::shm:core:fi_param_get_():278<info> variable rx_size=<not set>
+libfabric:243936:1755977520::shm:core:fi_param_get_():278<info> variable disable_cma=<not set>
+libfabric:243936:1755977520::core:core:ofi_register_provider():466<info> registering provider: shm (115.0)
+libfabric:243936:1755977520::ofi_rxm:core:fi_param_get_():278<info> variable enable_passthru=<not set>
+libfabric:243936:1755977520::ofi_rxm:core:fi_param_get_():278<info> variable buffer_size=<not set>
+libfabric:243936:1755977520::ofi_rxm:core:fi_param_get_():278<info> variable tx_size=<not set>
+libfabric:243936:1755977520::ofi_rxm:core:fi_param_get_():278<info> variable rx_size=<not set>
+libfabric:243936:1755977520::ofi_rxm:core:fi_param_get_():278<info> variable msg_tx_size=<not set>
+libfabric:243936:1755977520::ofi_rxm:core:fi_param_get_():278<info> variable msg_rx_size=<not set>
+libfabric:243936:1755977520::ofi_rxm:core:fi_param_get_():278<info> variable cm_progress_interval=<not set>
+libfabric:243936:1755977520::ofi_rxm:core:fi_param_get_():278<info> variable cq_eq_fairness=<not set>
+libfabric:243936:1755977520::ofi_rxm:core:fi_param_get_():278<info> variable data_auto_progress=<not set>
+libfabric:243936:1755977520::ofi_rxm:core:fi_param_get_():278<info> variable use_rndv_write=<not set>
+libfabric:243936:1755977520::ofi_rxm:core:fi_param_get_():278<info> variable def_wait_obj=<not set>
+libfabric:243936:1755977520::ofi_rxm:core:fi_param_get_():278<info> variable def_tcp_wait_obj=<not set>
+libfabric:243936:1755977520::core:core:ofi_register_provider():466<info> registering provider: ofi_rxm (115.0)
+libfabric:243936:1755977520::ofi_mrail:core:fi_param_get_():278<info> variable config=<not set>
+libfabric:243936:1755977520::ofi_mrail:core:fi_param_get_():278<info> variable addr=<not set>
+libfabric:243936:1755977520::ofi_mrail:core:fi_param_get_():278<info> variable addr_strc=<not set>
+libfabric:243936:1755977520::ofi_mrail:core:mrail_parse_env_vars():115<info> unable to read FI_OFI_MRAIL_ADDR env variable
+libfabric:243936:1755977520::core:core:ofi_register_provider():466<info> registering provider: ofi_mrail (115.0)
+libfabric:243936:1755977520::ofi_rxd:core:fi_param_get_():278<info> variable spin_count=<not set>
+libfabric:243936:1755977520::ofi_rxd:core:fi_param_get_():278<info> variable retry=<not set>
+libfabric:243936:1755977520::ofi_rxd:core:fi_param_get_():278<info> variable max_peers=<not set>
+libfabric:243936:1755977520::ofi_rxd:core:fi_param_get_():278<info> variable max_unacked=<not set>
+libfabric:243936:1755977520::core:core:ofi_register_provider():466<info> registering provider: ofi_rxd (115.0)
+libfabric:243936:1755977520::efa:core:fi_param_get_():278<info> variable rx_window_size=<not set>
+libfabric:243936:1755977520::efa:core:fi_param_get_():278<info> variable tx_max_credits=<not set>
+libfabric:243936:1755977520::efa:core:fi_param_get_():278<info> variable tx_min_credits=<not set>
+libfabric:243936:1755977520::efa:core:fi_param_get_():278<info> variable tx_queue_size=<not set>
+libfabric:243936:1755977520::efa:core:fi_param_get_():278<info> variable enable_shm_transfer=<not set>
+libfabric:243936:1755977520::efa:core:fi_param_get_():278<info> variable use_device_rdma=<not set>
+libfabric:243936:1755977520::efa:core:fi_param_get_():278<info> variable use_zcpy_rx=<not set>
+libfabric:243936:1755977520::efa:core:fi_param_get_():278<info> variable zcpy_rx_seed=<not set>
+libfabric:243936:1755977520::efa:core:fi_param_get_():278<info> variable shm_av_size=<not set>
+libfabric:243936:1755977520::efa:core:fi_param_get_():278<info> variable recvwin_size=<not set>
+libfabric:243936:1755977520::efa:core:fi_param_get_():278<info> variable readcopy_pool_size=<not set>
+libfabric:243936:1755977520::efa:core:fi_param_get_():278<info> variable cq_size=<not set>
+libfabric:243936:1755977520::efa:core:fi_param_get_():278<info> variable max_memcpy_size=<not set>
+libfabric:243936:1755977520::efa:core:fi_param_get_():278<info> variable mr_cache_enable=<not set>
+libfabric:243936:1755977520::efa:core:fi_param_get_():278<info> variable mr_max_cached_count=<not set>
+libfabric:243936:1755977520::efa:core:fi_param_get_():278<info> variable mr_max_cached_size=<not set>
+libfabric:243936:1755977520::efa:core:fi_param_get_():278<info> variable mtu_size=<not set>
+libfabric:243936:1755977520::efa:core:fi_param_get_():278<info> variable tx_size=<not set>
+libfabric:243936:1755977520::efa:core:fi_param_get_():278<info> variable rx_size=<not set>
+libfabric:243936:1755977520::efa:core:fi_param_get_():278<info> variable tx_iov_limit=<not set>
+libfabric:243936:1755977520::efa:core:fi_param_get_():278<info> variable rx_iov_limit=<not set>
+libfabric:243936:1755977520::efa:core:fi_param_get_():278<info> variable rx_copy_unexp=<not set>
+libfabric:243936:1755977520::efa:core:fi_param_get_():278<info> variable rx_copy_ooo=<not set>
+libfabric:243936:1755977520::efa:core:fi_param_get_():278<info> variable max_timeout=<not set>
+libfabric:243936:1755977520::efa:core:fi_param_get_():278<info> variable timeout_interval=<not set>
+libfabric:243936:1755977520::efa:core:fi_param_get_():278<info> variable efa_cq_read_size=<not set>
+libfabric:243936:1755977520::efa:core:fi_param_get_():278<info> variable shm_cq_read_size=<not set>
+libfabric:243936:1755977520::efa:core:fi_param_get_():278<info> variable inter_max_medium_message_size=<not set>
+libfabric:243936:1755977520::efa:core:fi_param_get_():278<info> variable inter_min_read_message_size=<not set>
+libfabric:243936:1755977520::efa:core:fi_param_get_():278<info> variable inter_min_read_write_size=<not set>
+libfabric:243936:1755977520::efa:core:fi_param_get_():278<info> variable inter_read_segment_size=<not set>
+libfabric:243936:1755977520::efa:core:fi_param_get_():278<info> variable inter_max_gdrcopy_message_size=<not set>
+libfabric:243936:1755977520::core:core:ofi_register_provider():466<info> registering provider: udp (115.0)
+libfabric:243936:1755977520::core:core:ofi_register_provider():466<info> registering provider: sockets (115.0)
+libfabric:243936:1755977520::tcp:core:fi_param_get_():278<info> variable port_high_range=<not set>
+libfabric:243936:1755977520::tcp:core:fi_param_get_():278<info> variable port_low_range=<not set>
+libfabric:243936:1755977520::tcp:core:fi_param_get_():278<info> variable tx_size=<not set>
+libfabric:243936:1755977520::tcp:core:fi_param_get_():278<info> variable rx_size=<not set>
+libfabric:243936:1755977520::tcp:core:fi_param_get_():278<info> variable nodelay=<not set>
+libfabric:243936:1755977520::tcp:core:fi_param_get_():278<info> variable staging_sbuf_size=<not set>
+libfabric:243936:1755977520::tcp:core:fi_param_get_():278<info> variable prefetch_rbuf_size=<not set>
+libfabric:243936:1755977520::tcp:core:fi_param_get_():278<info> variable zerocopy_size=<not set>
+libfabric:243936:1755977520::core:core:ofi_register_provider():466<info> registering provider: tcp (115.0)
+libfabric:243936:1755977520::core:core:ofi_register_provider():466<info> registering provider: ofi_hook_perf (115.0)
+libfabric:243936:1755977520::core:core:ofi_register_provider():466<info> registering provider: ofi_hook_debug (115.0)
+libfabric:243936:1755977520::core:core:fi_param_get_():278<info> variable hmem_cuda_use_gdrcopy=<not set>
+libfabric:243936:1755977520::core:core:fi_param_get_():278<info> variable hmem_cuda_enable_xfer=<not set>
+libfabric:243936:1755977520::core:core:ofi_hmem_init():227<info> Hmem iface FI_HMEM_ROCR not supported
+libfabric:243936:1755977520::core:core:ofi_hmem_init():227<info> Hmem iface FI_HMEM_ZE not supported
+libfabric:243936:1755977520::core:core:ofi_hmem_init():227<info> Hmem iface FI_HMEM_NEURON not supported
+libfabric:243936:1755977520::core:core:fi_param_get_():278<info> variable hmem_disable_p2p=<not set>
+libfabric:243936:1755977520::core:core:ofi_register_provider():466<info> registering provider: ofi_hook_hmem (1.0)
+libfabric:243936:1755977520::core:core:ofi_register_provider():466<info> registering provider: ofi_hook_dmabuf_peer_mem (115.0)
+libfabric:243936:1755977520::core:core:ofi_register_provider():466<info> registering provider: ofi_hook_noop (115.0)
+libfabric:243936:1755977520::core:core:fi_getinfo_():1100<warn> Requested version is newer than library
+libfabric:243936:1755977520::ofi_rxm:core:ofi_check_fabric_attr():407<info> Requesting provider efa, skipping verbs
+libfabric:243936:1755977520::ofi_rxm:core:ofi_check_fabric_attr():407<info> Requesting provider efa, skipping tcp
+libfabric:243936:1755977520::ofi_rxm:core:ofi_check_info():1056<info> Unsupported capabilities
+libfabric:243936:1755977520::ofi_rxm:core:ofi_check_info():1057<info> Supported: FI_MSG, FI_RMA, FI_TAGGED, FI_ATOMIC, FI_READ, FI_WRITE, FI_RECV, FI_SEND, FI_REMOTE_READ, FI_REMOTE_WRITE, FI_MULTI_RECV, FI_LOCAL_COMM, FI_REMOTE_COMM, FI_SOURCE, FI_DIRECTED_RECV
+libfabric:243936:1755977520::ofi_rxm:core:ofi_check_info():1057<info> Requested: FI_MSG, FI_TAGGED, FI_DIRECTED_RECV, FI_HMEM
+libfabric:243936:1755977520::ofi_rxm:core:fi_param_get_():278<info> variable use_srx=<not set>
+libfabric:243936:1755977520:ofi_rxm:core:core:ofi_layering_ok():1042<info> Need core provider, skipping ofi_rxd
+libfabric:243936:1755977520:ofi_rxm:core:core:ofi_layering_ok():1042<info> Need core provider, skipping ofi_mrail
+libfabric:243936:1755977520::ofi_rxm:core:ofi_check_info():1056<info> Unsupported capabilities
+libfabric:243936:1755977520::ofi_rxm:core:ofi_check_info():1057<info> Supported: FI_MSG, FI_RMA, FI_TAGGED, FI_ATOMIC, FI_COLLECTIVE, FI_READ, FI_WRITE, FI_RECV, FI_SEND, FI_REMOTE_READ, FI_REMOTE_WRITE, FI_MULTI_RECV, FI_LOCAL_COMM, FI_REMOTE_COMM, FI_SOURCE, FI_DIRECTED_RECV
+libfabric:243936:1755977520::ofi_rxm:core:ofi_check_info():1057<info> Requested: FI_MSG, FI_TAGGED, FI_DIRECTED_RECV, FI_HMEM
+libfabric:243936:1755977520::core:core:fi_getinfo_():1147<warn> fi_getinfo: provider ofi_rxm returned -61 (No data available)
+libfabric:243936:1755977520::ofi_rxd:core:ofi_check_info():1056<info> Unsupported capabilities
+libfabric:243936:1755977520::ofi_rxd:core:ofi_check_info():1057<info> Supported: FI_MSG, FI_RMA, FI_TAGGED, FI_ATOMIC, FI_READ, FI_WRITE, FI_RECV, FI_SEND, FI_REMOTE_READ, FI_REMOTE_WRITE, FI_MULTI_RECV, FI_LOCAL_COMM, FI_REMOTE_COMM, FI_RMA_EVENT, FI_SOURCE, FI_DIRECTED_RECV
+libfabric:243936:1755977520::ofi_rxd:core:ofi_check_info():1057<info> Requested: FI_MSG, FI_TAGGED, FI_DIRECTED_RECV, FI_HMEM
+libfabric:243936:1755977520::core:core:fi_getinfo_():1147<warn> fi_getinfo: provider ofi_rxd returned -61 (No data available)
+libfabric:243936:1755977520::ofi_mrail:fabric:mrail_get_core_info():288<warn> OFI_MRAIL_ADDR_STRC env variable not set!
+libfabric:243936:1755977520::core:core:fi_getinfo_():1147<warn> fi_getinfo: provider ofi_mrail returned -61 (No data available)
+libfabric:243936:1755977520::core:core:fi_getinfo_():1100<warn> Requested version is newer than library
+libfabric:243936:1755977520::usnic:fabric:usdf_getinfo():763<trace> 
+libfabric:243936:1755977520::usnic:fabric:usdf_getinfo():777<warn> failed to usdf_get_devinfo, ret=-19 (No such device)
+libfabric:243936:1755977520::usnic:fabric:usdf_getinfo():848<info> returning -61 (No data available)
+libfabric:243936:1755977520::core:core:fi_getinfo_():1147<info> fi_getinfo: provider usnic returned -61 (No data available)
+libfabric:243936:1755977520::ofi_rxm:core:fi_param_get_():278<info> variable use_srx=<not set>
+libfabric:243936:1755977520:ofi_rxm:core:core:ofi_layering_ok():1042<info> Need core provider, skipping ofi_rxd
+libfabric:243936:1755977520:ofi_rxm:core:core:ofi_layering_ok():1042<info> Need core provider, skipping ofi_mrail
+libfabric:243936:1755977520::ofi_rxm:core:ofi_check_info():1056<info> Unsupported capabilities
+libfabric:243936:1755977520::ofi_rxm:core:ofi_check_info():1057<info> Supported: FI_MSG, FI_RMA, FI_TAGGED, FI_ATOMIC, FI_READ, FI_WRITE, FI_RECV, FI_SEND, FI_REMOTE_READ, FI_REMOTE_WRITE, FI_MULTI_RECV, FI_LOCAL_COMM, FI_REMOTE_COMM, FI_SOURCE, FI_DIRECTED_RECV
+libfabric:243936:1755977520::ofi_rxm:core:ofi_check_info():1057<info> Requested: FI_MSG, FI_TAGGED, FI_LOCAL_COMM, FI_REMOTE_COMM, FI_DIRECTED_RECV, FI_HMEM
+libfabric:243936:1755977520::ofi_rxm:core:fi_param_get_():278<info> variable use_srx=<not set>
+libfabric:243936:1755977520:ofi_rxm:usnic:fabric:usdf_getinfo():763<trace> 
+libfabric:243936:1755977520:ofi_rxm:usnic:fabric:usdf_getinfo():848<info> returning -61 (No data available)
+libfabric:243936:1755977520:ofi_rxm:core:core:fi_getinfo_():1147<info> fi_getinfo: provider usnic returned -61 (No data available)
+libfabric:243936:1755977520:ofi_rxm:core:core:ofi_layering_ok():1042<info> Need core provider, skipping ofi_rxm
+libfabric:243936:1755977520:ofi_rxm:core:core:ofi_layering_ok():1042<info> Need core provider, skipping ofi_rxd
+libfabric:243936:1755977520:ofi_rxm:core:core:ofi_layering_ok():1049<info> Skipping util;shm layering
+libfabric:243936:1755977520:ofi_rxm:udp:core:ofi_check_ep_type():663<info> unsupported endpoint type
+libfabric:243936:1755977520:ofi_rxm:udp:core:ofi_check_ep_type():664<info> Supported: FI_EP_DGRAM
+libfabric:243936:1755977520:ofi_rxm:udp:core:ofi_check_ep_type():664<info> Requested: FI_EP_MSG
+libfabric:243936:1755977520:ofi_rxm:core:core:fi_getinfo_():1147<info> fi_getinfo: provider udp returned -61 (No data available)
+libfabric:243936:1755977520:ofi_rxm:tcp:core:ofi_check_info():1056<info> Unsupported capabilities
+libfabric:243936:1755977520:ofi_rxm:tcp:core:ofi_check_info():1057<info> Supported: FI_MSG, FI_RMA, FI_READ, FI_WRITE, FI_RECV, FI_SEND, FI_REMOTE_READ, FI_REMOTE_WRITE, FI_RMA_PMEM, FI_LOCAL_COMM, FI_REMOTE_COMM, FI_RMA_EVENT
+libfabric:243936:1755977520:ofi_rxm:tcp:core:ofi_check_info():1057<info> Requested: FI_MSG, FI_RMA, FI_READ, FI_RECV, FI_SEND, FI_REMOTE_READ, FI_REMOTE_WRITE, FI_HMEM
+libfabric:243936:1755977520:ofi_rxm:tcp:core:ofi_check_info():1056<info> Unsupported capabilities
+libfabric:243936:1755977520:ofi_rxm:tcp:core:ofi_check_info():1057<info> Supported: FI_MSG, FI_RMA, FI_TAGGED, FI_READ, FI_WRITE, FI_RECV, FI_SEND, FI_REMOTE_READ, FI_REMOTE_WRITE, FI_RMA_PMEM, FI_LOCAL_COMM, FI_REMOTE_COMM, FI_RMA_EVENT
+libfabric:243936:1755977520:ofi_rxm:tcp:core:ofi_check_info():1057<info> Requested: FI_MSG, FI_RMA, FI_READ, FI_RECV, FI_SEND, FI_REMOTE_READ, FI_REMOTE_WRITE, FI_HMEM
+libfabric:243936:1755977520:ofi_rxm:core:core:fi_getinfo_():1147<info> fi_getinfo: provider tcp returned -61 (No data available)
+libfabric:243936:1755977520:ofi_rxm:core:core:ofi_layering_ok():1049<info> Skipping util;sockets layering
+libfabric:243936:1755977520:ofi_rxm:core:core:ofi_layering_ok():1042<info> Need core provider, skipping ofi_mrail
+libfabric:243936:1755977520::ofi_rxm:core:ofi_check_info():1056<info> Unsupported capabilities
+libfabric:243936:1755977520::ofi_rxm:core:ofi_check_info():1057<info> Supported: FI_MSG, FI_RMA, FI_TAGGED, FI_ATOMIC, FI_COLLECTIVE, FI_READ, FI_WRITE, FI_RECV, FI_SEND, FI_REMOTE_READ, FI_REMOTE_WRITE, FI_MULTI_RECV, FI_LOCAL_COMM, FI_REMOTE_COMM, FI_SOURCE, FI_DIRECTED_RECV
+libfabric:243936:1755977520::ofi_rxm:core:ofi_check_info():1057<info> Requested: FI_MSG, FI_TAGGED, FI_LOCAL_COMM, FI_REMOTE_COMM, FI_DIRECTED_RECV, FI_HMEM
+libfabric:243936:1755977520::core:core:fi_getinfo_():1147<info> fi_getinfo: provider ofi_rxm returned -61 (No data available)
+libfabric:243936:1755977520::ofi_rxd:core:ofi_check_info():1056<info> Unsupported capabilities
+libfabric:243936:1755977520::ofi_rxd:core:ofi_check_info():1057<info> Supported: FI_MSG, FI_RMA, FI_TAGGED, FI_ATOMIC, FI_READ, FI_WRITE, FI_RECV, FI_SEND, FI_REMOTE_READ, FI_REMOTE_WRITE, FI_MULTI_RECV, FI_LOCAL_COMM, FI_REMOTE_COMM, FI_RMA_EVENT, FI_SOURCE, FI_DIRECTED_RECV
+libfabric:243936:1755977520::ofi_rxd:core:ofi_check_info():1057<info> Requested: FI_MSG, FI_TAGGED, FI_LOCAL_COMM, FI_REMOTE_COMM, FI_DIRECTED_RECV, FI_HMEM
+libfabric:243936:1755977520::core:core:fi_getinfo_():1147<info> fi_getinfo: provider ofi_rxd returned -61 (No data available)
+libfabric:243936:1755977520::shm:core:ofi_check_info():1056<info> Unsupported capabilities
+libfabric:243936:1755977520::shm:core:ofi_check_info():1057<info> Supported: FI_MSG, FI_RMA, FI_TAGGED, FI_ATOMIC, FI_READ, FI_WRITE, FI_RECV, FI_SEND, FI_REMOTE_READ, FI_REMOTE_WRITE, FI_MULTI_RECV, FI_RMA_EVENT, FI_SOURCE, FI_DIRECTED_RECV
+libfabric:243936:1755977520::shm:core:ofi_check_info():1057<info> Requested: FI_MSG, FI_TAGGED, FI_LOCAL_COMM, FI_REMOTE_COMM, FI_DIRECTED_RECV, FI_HMEM
+libfabric:243936:1755977520::shm:core:ofi_check_info():1056<info> Unsupported capabilities
+libfabric:243936:1755977520::shm:core:ofi_check_info():1057<info> Supported: FI_MSG, FI_RMA, FI_TAGGED, FI_READ, FI_WRITE, FI_RECV, FI_SEND, FI_REMOTE_READ, FI_REMOTE_WRITE, FI_MULTI_RECV, FI_RMA_EVENT, FI_SOURCE, FI_DIRECTED_RECV, FI_HMEM
+libfabric:243936:1755977520::shm:core:ofi_check_info():1057<info> Requested: FI_MSG, FI_TAGGED, FI_LOCAL_COMM, FI_REMOTE_COMM, FI_DIRECTED_RECV, FI_HMEM
+libfabric:243936:1755977520::core:core:fi_getinfo_():1147<info> fi_getinfo: provider shm returned -61 (No data available)
+libfabric:243936:1755977520::udp:core:ofi_check_ep_type():663<info> unsupported endpoint type
+libfabric:243936:1755977520::udp:core:ofi_check_ep_type():664<info> Supported: FI_EP_DGRAM
+libfabric:243936:1755977520::udp:core:ofi_check_ep_type():664<info> Requested: FI_EP_RDM
+libfabric:243936:1755977520::core:core:fi_getinfo_():1147<info> fi_getinfo: provider udp returned -61 (No data available)
+libfabric:243936:1755977520::tcp:core:ofi_check_ep_type():663<info> unsupported endpoint type
+libfabric:243936:1755977520::tcp:core:ofi_check_ep_type():664<info> Supported: FI_EP_MSG
+libfabric:243936:1755977520::tcp:core:ofi_check_ep_type():664<info> Requested: FI_EP_RDM
+libfabric:243936:1755977520::tcp:core:ofi_check_ep_type():663<info> unsupported endpoint type
+libfabric:243936:1755977520::tcp:core:ofi_check_ep_type():664<info> Supported: FI_EP_MSG
+libfabric:243936:1755977520::tcp:core:ofi_check_ep_type():664<info> Requested: FI_EP_RDM
+libfabric:243936:1755977520::core:core:fi_getinfo_():1147<info> fi_getinfo: provider tcp returned -61 (No data available)
+libfabric:243936:1755977520::sockets:core:ofi_check_ep_type():663<info> unsupported endpoint type
+libfabric:243936:1755977520::sockets:core:ofi_check_ep_type():664<info> Supported: FI_EP_DGRAM
+libfabric:243936:1755977520::sockets:core:ofi_check_ep_type():664<info> Requested: FI_EP_RDM
+libfabric:243936:1755977520::sockets:core:ofi_check_info():1056<info> Unsupported capabilities
+libfabric:243936:1755977520::sockets:core:ofi_check_info():1057<info> Supported: FI_MSG, FI_RMA, FI_TAGGED, FI_ATOMIC, FI_READ, FI_WRITE, FI_RECV, FI_SEND, FI_REMOTE_READ, FI_REMOTE_WRITE, FI_MULTI_RECV, FI_TRIGGER, FI_FENCE, FI_RMA_PMEM, FI_LOCAL_COMM, FI_REMOTE_COMM, FI_SHARED_AV, FI_RMA_EVENT, FI_SOURCE, FI_NAMED_RX_CTX, FI_DIRECTED_RECV
+libfabric:243936:1755977520::sockets:core:ofi_check_info():1057<info> Requested: FI_MSG, FI_TAGGED, FI_LOCAL_COMM, FI_REMOTE_COMM, FI_DIRECTED_RECV, FI_HMEM
+libfabric:243936:1755977520::sockets:core:ofi_check_ep_type():663<info> unsupported endpoint type
+libfabric:243936:1755977520::sockets:core:ofi_check_ep_type():664<info> Supported: FI_EP_MSG
+libfabric:243936:1755977520::sockets:core:ofi_check_ep_type():664<info> Requested: FI_EP_RDM
+libfabric:243936:1755977520::core:core:fi_getinfo_():1147<info> fi_getinfo: provider sockets returned -61 (No data available)
+libfabric:243936:1755977520::ofi_mrail:fabric:mrail_get_core_info():288<info> OFI_MRAIL_ADDR_STRC env variable not set!
+libfabric:243936:1755977520::core:core:fi_getinfo_():1147<info> fi_getinfo: provider ofi_mrail returned -61 (No data available)
+libfabric:243936:1755977520::core:core:fi_getinfo_():1100<warn> Requested version is newer than library
+libfabric:243936:1755977520::ofi_rxm:core:ofi_check_fabric_attr():407<info> Requesting provider efa, skipping verbs
+libfabric:243936:1755977520::ofi_rxm:core:ofi_check_fabric_attr():407<info> Requesting provider efa, skipping tcp
+libfabric:243936:1755977520::ofi_rxm:core:ofi_check_fabric_attr():407<info> Requesting provider efa, skipping tcp
+libfabric:243936:1755977520::ofi_rxm:core:fi_param_get_():278<info> variable use_srx=<not set>
+libfabric:243936:1755977520:ofi_rxm:core:core:ofi_layering_ok():1042<info> Need core provider, skipping ofi_rxd
+libfabric:243936:1755977520:ofi_rxm:core:core:ofi_layering_ok():1042<info> Need core provider, skipping ofi_mrail
+libfabric:243936:1755977520::ofi_rxm:core:fi_param_get_():278<info> variable use_srx=<not set>
+libfabric:243936:1755977520:ofi_rxm:core:core:ofi_layering_ok():1042<info> Need core provider, skipping ofi_rxd
+libfabric:243936:1755977520:ofi_rxm:core:core:ofi_layering_ok():1042<info> Need core provider, skipping ofi_mrail
+libfabric:243936:1755977520::core:core:fi_getinfo_():1147<warn> fi_getinfo: provider ofi_rxm returned -61 (No data available)
+libfabric:243936:1755977520:ofi_rxd:core:core:ofi_layering_ok():1042<info> Need core provider, skipping ofi_rxm
+libfabric:243936:1755977520:ofi_rxd:core:core:ofi_layering_ok():1042<info> Need core provider, skipping ofi_mrail
+libfabric:243936:1755977520::core:core:fi_getinfo_():1147<warn> fi_getinfo: provider ofi_rxd returned -61 (No data available)
+libfabric:243936:1755977520::ofi_mrail:fabric:mrail_get_core_info():288<warn> OFI_MRAIL_ADDR_STRC env variable not set!
+libfabric:243936:1755977520::core:core:fi_getinfo_():1147<warn> fi_getinfo: provider ofi_mrail returned -61 (No data available)
+libfabric:243936:1755977520::core:core:fi_getinfo_():1100<warn> Requested version is newer than library
+libfabric:243936:1755977520::usnic:fabric:usdf_getinfo():763<trace> 
+libfabric:243936:1755977520::usnic:fabric:usdf_getinfo():848<info> returning -61 (No data available)
+libfabric:243936:1755977520::core:core:fi_getinfo_():1147<info> fi_getinfo: provider usnic returned -61 (No data available)
+libfabric:243936:1755977520::ofi_rxm:core:fi_param_get_():278<info> variable use_srx=<not set>
+libfabric:243936:1755977520:ofi_rxm:core:core:ofi_layering_ok():1042<info> Need core provider, skipping ofi_rxd
+libfabric:243936:1755977520:ofi_rxm:core:core:ofi_layering_ok():1042<info> Need core provider, skipping ofi_mrail
+libfabric:243936:1755977520::ofi_rxm:core:fi_param_get_():278<info> variable use_srx=<not set>
+libfabric:243936:1755977520:ofi_rxm:core:core:ofi_layering_ok():1042<info> Need core provider, skipping ofi_rxd
+libfabric:243936:1755977520:ofi_rxm:tcp:core:fi_param_get_():278<info> variable iface=<not set>
+libfabric:243936:1755977520:ofi_rxm:tcp:core:ofi_get_list_of_addr():2000<info> Available addr: 10.100.96.90, iface name: nmn0, speed: 1000
+libfabric:243936:1755977520:ofi_rxm:tcp:core:ofi_get_list_of_addr():2000<info> Available addr: 172.28.33.200, iface name: hsn0, speed: 200000
+libfabric:243936:1755977520:ofi_rxm:tcp:core:ofi_get_list_of_addr():2000<info> Available addr: 172.28.33.202, iface name: hsn2, speed: 200000
+libfabric:243936:1755977520:ofi_rxm:tcp:core:ofi_get_list_of_addr():2000<info> Available addr: 172.28.33.203, iface name: hsn3, speed: 200000
+libfabric:243936:1755977520:ofi_rxm:tcp:core:ofi_get_list_of_addr():2000<info> Available addr: 172.28.33.201, iface name: hsn1, speed: 200000
+libfabric:243936:1755977520:ofi_rxm:tcp:core:ofi_get_list_of_addr():2000<info> Available addr: fe80::240:a6ff:fe89:2e55, iface name: nmn0, speed: 1000
+libfabric:243936:1755977520:ofi_rxm:tcp:core:ofi_get_list_of_addr():2000<info> Available addr: fe80::ff:fe00:e9e2, iface name: hsn0, speed: 200000
+libfabric:243936:1755977520:ofi_rxm:tcp:core:ofi_get_list_of_addr():2000<info> Available addr: fe80::ff:fe00:e922, iface name: hsn2, speed: 200000
+libfabric:243936:1755977520:ofi_rxm:tcp:core:ofi_get_list_of_addr():2000<info> Available addr: fe80::ff:fe00:e923, iface name: hsn3, speed: 200000
+libfabric:243936:1755977520:ofi_rxm:tcp:core:ofi_get_list_of_addr():2000<info> Available addr: fe80::ff:fe00:e9e3, iface name: hsn1, speed: 200000
+libfabric:243936:1755977520:ofi_rxm:tcp:core:ofi_insert_loopback_addr():1844<info> available addr: : fi_sockaddr_in://127.0.0.1:0
+libfabric:243936:1755977520:ofi_rxm:tcp:core:ofi_insert_loopback_addr():1859<info> available addr: : fi_sockaddr_in6://[::1]:0
+libfabric:243936:1755977520:ofi_rxm:tcp:core:util_getinfo_ifs():333<info> Chosen addr for using: 172.28.33.200, speed 200000
+libfabric:243936:1755977520:ofi_rxm:tcp:core:fi_param_get_():278<info> variable iface=<not set>
+libfabric:243936:1755977520:ofi_rxm:tcp:core:ofi_get_list_of_addr():2000<info> Available addr: 10.100.96.90, iface name: nmn0, speed: 1000
+libfabric:243936:1755977520:ofi_rxm:tcp:core:ofi_get_list_of_addr():2000<info> Available addr: 172.28.33.200, iface name: hsn0, speed: 200000
+libfabric:243936:1755977520:ofi_rxm:tcp:core:ofi_get_list_of_addr():2000<info> Available addr: 172.28.33.202, iface name: hsn2, speed: 200000
+libfabric:243936:1755977520:ofi_rxm:tcp:core:ofi_get_list_of_addr():2000<info> Available addr: 172.28.33.203, iface name: hsn3, speed: 200000
+libfabric:243936:1755977520:ofi_rxm:tcp:core:ofi_get_list_of_addr():2000<info> Available addr: 172.28.33.201, iface name: hsn1, speed: 200000
+libfabric:243936:1755977520:ofi_rxm:tcp:core:ofi_get_list_of_addr():2000<info> Available addr: fe80::240:a6ff:fe89:2e55, iface name: nmn0, speed: 1000
+libfabric:243936:1755977520:ofi_rxm:tcp:core:ofi_get_list_of_addr():2000<info> Available addr: fe80::ff:fe00:e9e2, iface name: hsn0, speed: 200000
+libfabric:243936:1755977520:ofi_rxm:tcp:core:ofi_get_list_of_addr():2000<info> Available addr: fe80::ff:fe00:e922, iface name: hsn2, speed: 200000
+libfabric:243936:1755977520:ofi_rxm:tcp:core:ofi_get_list_of_addr():2000<info> Available addr: fe80::ff:fe00:e923, iface name: hsn3, speed: 200000
+libfabric:243936:1755977520:ofi_rxm:tcp:core:ofi_get_list_of_addr():2000<info> Available addr: fe80::ff:fe00:e9e3, iface name: hsn1, speed: 200000
+libfabric:243936:1755977520:ofi_rxm:tcp:core:ofi_insert_loopback_addr():1844<info> available addr: : fi_sockaddr_in://127.0.0.1:0
+libfabric:243936:1755977520:ofi_rxm:tcp:core:ofi_insert_loopback_addr():1859<info> available addr: : fi_sockaddr_in6://[::1]:0
+libfabric:243936:1755977520:ofi_rxm:tcp:core:util_getinfo_ifs():333<info> Chosen addr for using: 172.28.33.200, speed 200000
+libfabric:243936:1755977520:ofi_rxm:core:core:ofi_layering_ok():1042<info> Need core provider, skipping ofi_mrail
+libfabric:243936:1755977520::ofi_rxm:core:fi_param_get_():278<info> variable use_srx=<not set>
+libfabric:243936:1755977520:ofi_rxm:usnic:fabric:usdf_getinfo():763<trace> 
+libfabric:243936:1755977520:ofi_rxm:usnic:fabric:usdf_getinfo():848<info> returning -61 (No data available)
+libfabric:243936:1755977520:ofi_rxm:core:core:fi_getinfo_():1147<info> fi_getinfo: provider usnic returned -61 (No data available)
+libfabric:243936:1755977520:ofi_rxm:core:core:ofi_layering_ok():1042<info> Need core provider, skipping ofi_rxm
+libfabric:243936:1755977520:ofi_rxm:core:core:ofi_layering_ok():1042<info> Need core provider, skipping ofi_rxd
+libfabric:243936:1755977520:ofi_rxm:core:core:ofi_layering_ok():1049<info> Skipping util;shm layering
+libfabric:243936:1755977520:ofi_rxm:udp:core:ofi_check_ep_type():663<info> unsupported endpoint type
+libfabric:243936:1755977520:ofi_rxm:udp:core:ofi_check_ep_type():664<info> Supported: FI_EP_DGRAM
+libfabric:243936:1755977520:ofi_rxm:udp:core:ofi_check_ep_type():664<info> Requested: FI_EP_MSG
+libfabric:243936:1755977520:ofi_rxm:core:core:fi_getinfo_():1147<info> fi_getinfo: provider udp returned -61 (No data available)
+libfabric:243936:1755977520:ofi_rxm:tcp:core:ofi_check_ep_attr():741<info> Provider requires use of shared rx context
+libfabric:243936:1755977520:ofi_rxm:tcp:core:fi_param_get_():278<info> variable iface=<not set>
+libfabric:243936:1755977520:ofi_rxm:tcp:core:ofi_get_list_of_addr():2000<info> Available addr: 10.100.96.90, iface name: nmn0, speed: 1000
+libfabric:243936:1755977520:ofi_rxm:tcp:core:ofi_get_list_of_addr():2000<info> Available addr: 172.28.33.200, iface name: hsn0, speed: 200000
+libfabric:243936:1755977520:ofi_rxm:tcp:core:ofi_get_list_of_addr():2000<info> Available addr: 172.28.33.202, iface name: hsn2, speed: 200000
+libfabric:243936:1755977520:ofi_rxm:tcp:core:ofi_get_list_of_addr():2000<info> Available addr: 172.28.33.203, iface name: hsn3, speed: 200000
+libfabric:243936:1755977520:ofi_rxm:tcp:core:ofi_get_list_of_addr():2000<info> Available addr: 172.28.33.201, iface name: hsn1, speed: 200000
+libfabric:243936:1755977520:ofi_rxm:tcp:core:ofi_get_list_of_addr():2000<info> Available addr: fe80::240:a6ff:fe89:2e55, iface name: nmn0, speed: 1000
+libfabric:243936:1755977520:ofi_rxm:tcp:core:ofi_get_list_of_addr():2000<info> Available addr: fe80::ff:fe00:e9e2, iface name: hsn0, speed: 200000
+libfabric:243936:1755977520:ofi_rxm:tcp:core:ofi_get_list_of_addr():2000<info> Available addr: fe80::ff:fe00:e922, iface name: hsn2, speed: 200000
+libfabric:243936:1755977520:ofi_rxm:tcp:core:ofi_get_list_of_addr():2000<info> Available addr: fe80::ff:fe00:e923, iface name: hsn3, speed: 200000
+libfabric:243936:1755977520:ofi_rxm:tcp:core:ofi_get_list_of_addr():2000<info> Available addr: fe80::ff:fe00:e9e3, iface name: hsn1, speed: 200000
+libfabric:243936:1755977520:ofi_rxm:tcp:core:ofi_insert_loopback_addr():1844<info> available addr: : fi_sockaddr_in://127.0.0.1:0
+libfabric:243936:1755977520:ofi_rxm:tcp:core:ofi_insert_loopback_addr():1859<info> available addr: : fi_sockaddr_in6://[::1]:0
+libfabric:243936:1755977520:ofi_rxm:tcp:core:util_getinfo_ifs():333<info> Chosen addr for using: 172.28.33.200, speed 200000
+libfabric:243936:1755977520:ofi_rxm:core:core:ofi_layering_ok():1049<info> Skipping util;sockets layering
+libfabric:243936:1755977520:ofi_rxm:core:core:ofi_layering_ok():1042<info> Need core provider, skipping ofi_mrail
+libfabric:243936:1755977520::ofi_rxm:core:fi_param_get_():278<info> variable use_srx=<not set>
+libfabric:243936:1755977520:ofi_rxm:usnic:fabric:usdf_getinfo():763<trace> 
+libfabric:243936:1755977520:ofi_rxm:usnic:fabric:usdf_getinfo():848<info> returning -61 (No data available)
+libfabric:243936:1755977520:ofi_rxm:core:core:fi_getinfo_():1147<info> fi_getinfo: provider usnic returned -61 (No data available)
+libfabric:243936:1755977520:ofi_rxm:core:core:ofi_layering_ok():1042<info> Need core provider, skipping ofi_rxm
+libfabric:243936:1755977520:ofi_rxm:core:core:ofi_layering_ok():1042<info> Need core provider, skipping ofi_rxd
+libfabric:243936:1755977520:ofi_rxm:core:core:ofi_layering_ok():1049<info> Skipping util;shm layering
+libfabric:243936:1755977520:ofi_rxm:udp:core:ofi_check_ep_type():663<info> unsupported endpoint type
+libfabric:243936:1755977520:ofi_rxm:udp:core:ofi_check_ep_type():664<info> Supported: FI_EP_DGRAM
+libfabric:243936:1755977520:ofi_rxm:udp:core:ofi_check_ep_type():664<info> Requested: FI_EP_MSG
+libfabric:243936:1755977520:ofi_rxm:core:core:fi_getinfo_():1147<info> fi_getinfo: provider udp returned -61 (No data available)
+libfabric:243936:1755977520:ofi_rxm:tcp:core:ofi_check_ep_attr():741<info> Provider requires use of shared rx context
+libfabric:243936:1755977520:ofi_rxm:tcp:core:fi_param_get_():278<info> variable iface=<not set>
+libfabric:243936:1755977520:ofi_rxm:tcp:core:ofi_get_list_of_addr():2000<info> Available addr: 10.100.96.90, iface name: nmn0, speed: 1000
+libfabric:243936:1755977520:ofi_rxm:tcp:core:ofi_get_list_of_addr():2000<info> Available addr: 172.28.33.200, iface name: hsn0, speed: 200000
+libfabric:243936:1755977520:ofi_rxm:tcp:core:ofi_get_list_of_addr():2000<info> Available addr: 172.28.33.202, iface name: hsn2, speed: 200000
+libfabric:243936:1755977520:ofi_rxm:tcp:core:ofi_get_list_of_addr():2000<info> Available addr: 172.28.33.203, iface name: hsn3, speed: 200000
+libfabric:243936:1755977520:ofi_rxm:tcp:core:ofi_get_list_of_addr():2000<info> Available addr: 172.28.33.201, iface name: hsn1, speed: 200000
+libfabric:243936:1755977520:ofi_rxm:tcp:core:ofi_get_list_of_addr():2000<info> Available addr: fe80::240:a6ff:fe89:2e55, iface name: nmn0, speed: 1000
+libfabric:243936:1755977520:ofi_rxm:tcp:core:ofi_get_list_of_addr():2000<info> Available addr: fe80::ff:fe00:e9e2, iface name: hsn0, speed: 200000
+libfabric:243936:1755977520:ofi_rxm:tcp:core:ofi_get_list_of_addr():2000<info> Available addr: fe80::ff:fe00:e922, iface name: hsn2, speed: 200000
+libfabric:243936:1755977520:ofi_rxm:tcp:core:ofi_get_list_of_addr():2000<info> Available addr: fe80::ff:fe00:e923, iface name: hsn3, speed: 200000
+libfabric:243936:1755977520:ofi_rxm:tcp:core:ofi_get_list_of_addr():2000<info> Available addr: fe80::ff:fe00:e9e3, iface name: hsn1, speed: 200000
+libfabric:243936:1755977520:ofi_rxm:tcp:core:ofi_insert_loopback_addr():1844<info> available addr: : fi_sockaddr_in://127.0.0.1:0
+libfabric:243936:1755977520:ofi_rxm:tcp:core:ofi_insert_loopback_addr():1859<info> available addr: : fi_sockaddr_in6://[::1]:0
+libfabric:243936:1755977520:ofi_rxm:tcp:core:util_getinfo_ifs():333<info> Chosen addr for using: 172.28.33.200, speed 200000
+libfabric:243936:1755977520:ofi_rxm:core:core:ofi_layering_ok():1049<info> Skipping util;sockets layering
+libfabric:243936:1755977520:ofi_rxm:core:core:ofi_layering_ok():1042<info> Need core provider, skipping ofi_mrail
+libfabric:243936:1755977520:ofi_rxd:usnic:fabric:usdf_getinfo():763<trace> 
+libfabric:243936:1755977520:ofi_rxd:usnic:fabric:usdf_getinfo():848<info> returning -61 (No data available)
+libfabric:243936:1755977520:ofi_rxd:core:core:fi_getinfo_():1147<info> fi_getinfo: provider usnic returned -61 (No data available)
+libfabric:243936:1755977520:ofi_rxd:core:core:ofi_layering_ok():1042<info> Need core provider, skipping ofi_rxm
+libfabric:243936:1755977520:ofi_rxd:core:core:ofi_layering_ok():1042<info> Need core provider, skipping ofi_rxd
+libfabric:243936:1755977520:ofi_rxd:core:core:ofi_layering_ok():1049<info> Skipping util;shm layering
+libfabric:243936:1755977520:ofi_rxd:udp:core:fi_param_get_():278<info> variable iface=<not set>
+libfabric:243936:1755977520:ofi_rxd:udp:core:ofi_get_list_of_addr():2000<info> Available addr: 10.100.96.90, iface name: nmn0, speed: 1000
+libfabric:243936:1755977520:ofi_rxd:udp:core:ofi_get_list_of_addr():2000<info> Available addr: 172.28.33.200, iface name: hsn0, speed: 200000
+libfabric:243936:1755977520:ofi_rxd:udp:core:ofi_get_list_of_addr():2000<info> Available addr: 172.28.33.202, iface name: hsn2, speed: 200000
+libfabric:243936:1755977520:ofi_rxd:udp:core:ofi_get_list_of_addr():2000<info> Available addr: 172.28.33.203, iface name: hsn3, speed: 200000
+libfabric:243936:1755977520:ofi_rxd:udp:core:ofi_get_list_of_addr():2000<info> Available addr: 172.28.33.201, iface name: hsn1, speed: 200000
+libfabric:243936:1755977520:ofi_rxd:udp:core:ofi_get_list_of_addr():2000<info> Available addr: fe80::240:a6ff:fe89:2e55, iface name: nmn0, speed: 1000
+libfabric:243936:1755977520:ofi_rxd:udp:core:ofi_get_list_of_addr():2000<info> Available addr: fe80::ff:fe00:e9e2, iface name: hsn0, speed: 200000
+libfabric:243936:1755977520:ofi_rxd:udp:core:ofi_get_list_of_addr():2000<info> Available addr: fe80::ff:fe00:e922, iface name: hsn2, speed: 200000
+libfabric:243936:1755977520:ofi_rxd:udp:core:ofi_get_list_of_addr():2000<info> Available addr: fe80::ff:fe00:e923, iface name: hsn3, speed: 200000
+libfabric:243936:1755977520:ofi_rxd:udp:core:ofi_get_list_of_addr():2000<info> Available addr: fe80::ff:fe00:e9e3, iface name: hsn1, speed: 200000
+libfabric:243936:1755977520:ofi_rxd:udp:core:ofi_insert_loopback_addr():1844<info> available addr: : fi_sockaddr_in://127.0.0.1:0
+libfabric:243936:1755977520:ofi_rxd:udp:core:ofi_insert_loopback_addr():1859<info> available addr: : fi_sockaddr_in6://[::1]:0
+libfabric:243936:1755977520:ofi_rxd:udp:core:util_getinfo_ifs():333<info> Chosen addr for using: 172.28.33.200, speed 200000
+libfabric:243936:1755977520:ofi_rxd:tcp:core:ofi_check_ep_type():663<info> unsupported endpoint type
+libfabric:243936:1755977520:ofi_rxd:tcp:core:ofi_check_ep_type():664<info> Supported: FI_EP_MSG
+libfabric:243936:1755977520:ofi_rxd:tcp:core:ofi_check_ep_type():664<info> Requested: FI_EP_DGRAM
+libfabric:243936:1755977520:ofi_rxd:tcp:core:ofi_check_ep_type():663<info> unsupported endpoint type
+libfabric:243936:1755977520:ofi_rxd:tcp:core:ofi_check_ep_type():664<info> Supported: FI_EP_MSG
+libfabric:243936:1755977520:ofi_rxd:tcp:core:ofi_check_ep_type():664<info> Requested: FI_EP_DGRAM
+libfabric:243936:1755977520:ofi_rxd:core:core:fi_getinfo_():1147<info> fi_getinfo: provider tcp returned -61 (No data available)
+libfabric:243936:1755977520:ofi_rxd:core:core:ofi_layering_ok():1049<info> Skipping util;sockets layering
+libfabric:243936:1755977520:ofi_rxd:core:core:ofi_layering_ok():1042<info> Need core provider, skipping ofi_mrail
+libfabric:243936:1755977520::shm:core:ofi_check_info():1056<info> Unsupported capabilities
+libfabric:243936:1755977520::shm:core:ofi_check_info():1057<info> Supported: FI_MSG, FI_RMA, FI_TAGGED, FI_ATOMIC, FI_READ, FI_WRITE, FI_RECV, FI_SEND, FI_REMOTE_READ, FI_REMOTE_WRITE, FI_MULTI_RECV, FI_RMA_EVENT, FI_SOURCE, FI_DIRECTED_RECV
+libfabric:243936:1755977520::shm:core:ofi_check_info():1057<info> Requested: FI_MSG, FI_TAGGED, FI_LOCAL_COMM, FI_REMOTE_COMM, FI_DIRECTED_RECV
+libfabric:243936:1755977520::shm:core:ofi_check_info():1056<info> Unsupported capabilities
+libfabric:243936:1755977520::shm:core:ofi_check_info():1057<info> Supported: FI_MSG, FI_RMA, FI_TAGGED, FI_READ, FI_WRITE, FI_RECV, FI_SEND, FI_REMOTE_READ, FI_REMOTE_WRITE, FI_MULTI_RECV, FI_RMA_EVENT, FI_SOURCE, FI_DIRECTED_RECV, FI_HMEM
+libfabric:243936:1755977520::shm:core:ofi_check_info():1057<info> Requested: FI_MSG, FI_TAGGED, FI_LOCAL_COMM, FI_REMOTE_COMM, FI_DIRECTED_RECV
+libfabric:243936:1755977520::core:core:fi_getinfo_():1147<info> fi_getinfo: provider shm returned -61 (No data available)
+libfabric:243936:1755977520::udp:core:ofi_check_ep_type():663<info> unsupported endpoint type
+libfabric:243936:1755977520::udp:core:ofi_check_ep_type():664<info> Supported: FI_EP_DGRAM
+libfabric:243936:1755977520::udp:core:ofi_check_ep_type():664<info> Requested: FI_EP_RDM
+libfabric:243936:1755977520::core:core:fi_getinfo_():1147<info> fi_getinfo: provider udp returned -61 (No data available)
+libfabric:243936:1755977520::tcp:core:ofi_check_ep_type():663<info> unsupported endpoint type
+libfabric:243936:1755977520::tcp:core:ofi_check_ep_type():664<info> Supported: FI_EP_MSG
+libfabric:243936:1755977520::tcp:core:ofi_check_ep_type():664<info> Requested: FI_EP_RDM
+libfabric:243936:1755977520::tcp:core:ofi_check_ep_type():663<info> unsupported endpoint type
+libfabric:243936:1755977520::tcp:core:ofi_check_ep_type():664<info> Supported: FI_EP_MSG
+libfabric:243936:1755977520::tcp:core:ofi_check_ep_type():664<info> Requested: FI_EP_RDM
+libfabric:243936:1755977520::core:core:fi_getinfo_():1147<info> fi_getinfo: provider tcp returned -61 (No data available)
+libfabric:243936:1755977520::sockets:core:ofi_check_ep_type():663<info> unsupported endpoint type
+libfabric:243936:1755977520::sockets:core:ofi_check_ep_type():664<info> Supported: FI_EP_DGRAM
+libfabric:243936:1755977520::sockets:core:ofi_check_ep_type():664<info> Requested: FI_EP_RDM
+libfabric:243936:1755977520::sockets:core:ofi_check_ep_type():663<info> unsupported endpoint type
+libfabric:243936:1755977520::sockets:core:ofi_check_ep_type():664<info> Supported: FI_EP_MSG
+libfabric:243936:1755977520::sockets:core:ofi_check_ep_type():664<info> Requested: FI_EP_RDM
+libfabric:243936:1755977520::sockets:core:fi_param_get_():278<info> variable iface=<not set>
+libfabric:243936:1755977520::sockets:core:ofi_get_list_of_addr():2000<info> Available addr: 10.100.96.90, iface name: nmn0, speed: 1000
+libfabric:243936:1755977520::sockets:core:ofi_get_list_of_addr():2000<info> Available addr: 172.28.33.200, iface name: hsn0, speed: 200000
+libfabric:243936:1755977520::sockets:core:ofi_get_list_of_addr():2000<info> Available addr: 172.28.33.202, iface name: hsn2, speed: 200000
+libfabric:243936:1755977520::sockets:core:ofi_get_list_of_addr():2000<info> Available addr: 172.28.33.203, iface name: hsn3, speed: 200000
+libfabric:243936:1755977520::sockets:core:ofi_get_list_of_addr():2000<info> Available addr: 172.28.33.201, iface name: hsn1, speed: 200000
+libfabric:243936:1755977520::sockets:core:ofi_get_list_of_addr():2000<info> Available addr: fe80::240:a6ff:fe89:2e55, iface name: nmn0, speed: 1000
+libfabric:243936:1755977520::sockets:core:ofi_get_list_of_addr():2000<info> Available addr: fe80::ff:fe00:e9e2, iface name: hsn0, speed: 200000
+libfabric:243936:1755977520::sockets:core:ofi_get_list_of_addr():2000<info> Available addr: fe80::ff:fe00:e922, iface name: hsn2, speed: 200000
+libfabric:243936:1755977520::sockets:core:ofi_get_list_of_addr():2000<info> Available addr: fe80::ff:fe00:e923, iface name: hsn3, speed: 200000
+libfabric:243936:1755977520::sockets:core:ofi_get_list_of_addr():2000<info> Available addr: fe80::ff:fe00:e9e3, iface name: hsn1, speed: 200000
+libfabric:243936:1755977520::sockets:core:ofi_insert_loopback_addr():1844<info> available addr: : fi_sockaddr_in://127.0.0.1:0
+libfabric:243936:1755977520::sockets:core:ofi_insert_loopback_addr():1859<info> available addr: : fi_sockaddr_in6://[::1]:0
+libfabric:243936:1755977520::sockets:core:util_getinfo_ifs():333<info> Chosen addr for using: 172.28.33.200, speed 200000
+libfabric:243936:1755977520::ofi_mrail:fabric:mrail_get_core_info():288<info> OFI_MRAIL_ADDR_STRC env variable not set!
+libfabric:243936:1755977520::core:core:fi_getinfo_():1147<info> fi_getinfo: provider ofi_mrail returned -61 (No data available)
+libfabric:243936:1755977520::core:core:fi_getinfo_():1100<warn> Requested version is newer than library
+libfabric:243936:1755977520::usnic:fabric:usdf_getinfo():763<trace> 
+libfabric:243936:1755977520::usnic:fabric:usdf_getinfo():848<info> returning -61 (No data available)
+libfabric:243936:1755977520::core:core:fi_getinfo_():1147<info> fi_getinfo: provider usnic returned -61 (No data available)
+libfabric:243936:1755977520::ofi_rxm:core:fi_param_get_():278<info> variable use_srx=<not set>
+libfabric:243936:1755977520:ofi_rxm:core:core:ofi_layering_ok():1042<info> Need core provider, skipping ofi_rxd
+libfabric:243936:1755977520:ofi_rxm:core:core:ofi_layering_ok():1042<info> Need core provider, skipping ofi_mrail
+libfabric:243936:1755977520::ofi_rxm:core:ofi_check_info():1056<info> Unsupported capabilities
+libfabric:243936:1755977520::ofi_rxm:core:ofi_check_info():1057<info> Supported: FI_MSG, FI_RMA, FI_TAGGED, FI_ATOMIC, FI_READ, FI_WRITE, FI_RECV, FI_SEND, FI_REMOTE_READ, FI_REMOTE_WRITE, FI_MULTI_RECV, FI_LOCAL_COMM, FI_REMOTE_COMM, FI_SOURCE, FI_DIRECTED_RECV
+libfabric:243936:1755977520::ofi_rxm:core:ofi_check_info():1057<info> Requested: FI_RMA, FI_ATOMIC, FI_HMEM
+libfabric:243936:1755977520::ofi_rxm:core:fi_param_get_():278<info> variable use_srx=<not set>
+libfabric:243936:1755977520:ofi_rxm:usnic:fabric:usdf_getinfo():763<trace> 
+libfabric:243936:1755977520:ofi_rxm:usnic:fabric:usdf_getinfo():848<info> returning -61 (No data available)
+libfabric:243936:1755977520:ofi_rxm:core:core:fi_getinfo_():1147<info> fi_getinfo: provider usnic returned -61 (No data available)
+libfabric:243936:1755977520:ofi_rxm:core:core:ofi_layering_ok():1042<info> Need core provider, skipping ofi_rxm
+libfabric:243936:1755977520:ofi_rxm:core:core:ofi_layering_ok():1042<info> Need core provider, skipping ofi_rxd
+libfabric:243936:1755977520:ofi_rxm:core:core:ofi_layering_ok():1049<info> Skipping util;shm layering
+libfabric:243936:1755977520:ofi_rxm:udp:core:ofi_check_ep_type():663<info> unsupported endpoint type
+libfabric:243936:1755977520:ofi_rxm:udp:core:ofi_check_ep_type():664<info> Supported: FI_EP_DGRAM
+libfabric:243936:1755977520:ofi_rxm:udp:core:ofi_check_ep_type():664<info> Requested: FI_EP_MSG
+libfabric:243936:1755977520:ofi_rxm:core:core:fi_getinfo_():1147<info> fi_getinfo: provider udp returned -61 (No data available)
+libfabric:243936:1755977520:ofi_rxm:tcp:core:ofi_check_info():1056<info> Unsupported capabilities
+libfabric:243936:1755977520:ofi_rxm:tcp:core:ofi_check_info():1057<info> Supported: FI_MSG, FI_RMA, FI_READ, FI_WRITE, FI_RECV, FI_SEND, FI_REMOTE_READ, FI_REMOTE_WRITE, FI_RMA_PMEM, FI_LOCAL_COMM, FI_REMOTE_COMM, FI_RMA_EVENT
+libfabric:243936:1755977520:ofi_rxm:tcp:core:ofi_check_info():1057<info> Requested: FI_MSG, FI_RMA, FI_READ, FI_RECV, FI_SEND, FI_REMOTE_READ, FI_REMOTE_WRITE, FI_HMEM
+libfabric:243936:1755977520:ofi_rxm:tcp:core:ofi_check_info():1056<info> Unsupported capabilities
+libfabric:243936:1755977520:ofi_rxm:tcp:core:ofi_check_info():1057<info> Supported: FI_MSG, FI_RMA, FI_TAGGED, FI_READ, FI_WRITE, FI_RECV, FI_SEND, FI_REMOTE_READ, FI_REMOTE_WRITE, FI_RMA_PMEM, FI_LOCAL_COMM, FI_REMOTE_COMM, FI_RMA_EVENT
+libfabric:243936:1755977520:ofi_rxm:tcp:core:ofi_check_info():1057<info> Requested: FI_MSG, FI_RMA, FI_READ, FI_RECV, FI_SEND, FI_REMOTE_READ, FI_REMOTE_WRITE, FI_HMEM
+libfabric:243936:1755977520:ofi_rxm:core:core:fi_getinfo_():1147<info> fi_getinfo: provider tcp returned -61 (No data available)
+libfabric:243936:1755977520:ofi_rxm:core:core:ofi_layering_ok():1049<info> Skipping util;sockets layering
+libfabric:243936:1755977520:ofi_rxm:core:core:ofi_layering_ok():1042<info> Need core provider, skipping ofi_mrail
+libfabric:243936:1755977520::ofi_rxm:core:ofi_check_info():1056<info> Unsupported capabilities
+libfabric:243936:1755977520::ofi_rxm:core:ofi_check_info():1057<info> Supported: FI_MSG, FI_RMA, FI_TAGGED, FI_ATOMIC, FI_COLLECTIVE, FI_READ, FI_WRITE, FI_RECV, FI_SEND, FI_REMOTE_READ, FI_REMOTE_WRITE, FI_MULTI_RECV, FI_LOCAL_COMM, FI_REMOTE_COMM, FI_SOURCE, FI_DIRECTED_RECV
+libfabric:243936:1755977520::ofi_rxm:core:ofi_check_info():1057<info> Requested: FI_RMA, FI_ATOMIC, FI_HMEM
+libfabric:243936:1755977520::core:core:fi_getinfo_():1147<info> fi_getinfo: provider ofi_rxm returned -61 (No data available)
+libfabric:243936:1755977520::ofi_rxd:core:ofi_check_info():1056<info> Unsupported capabilities
+libfabric:243936:1755977520::ofi_rxd:core:ofi_check_info():1057<info> Supported: FI_MSG, FI_RMA, FI_TAGGED, FI_ATOMIC, FI_READ, FI_WRITE, FI_RECV, FI_SEND, FI_REMOTE_READ, FI_REMOTE_WRITE, FI_MULTI_RECV, FI_LOCAL_COMM, FI_REMOTE_COMM, FI_RMA_EVENT, FI_SOURCE, FI_DIRECTED_RECV
+libfabric:243936:1755977520::ofi_rxd:core:ofi_check_info():1057<info> Requested: FI_RMA, FI_ATOMIC, FI_HMEM
+libfabric:243936:1755977520::core:core:fi_getinfo_():1147<info> fi_getinfo: provider ofi_rxd returned -61 (No data available)
+libfabric:243936:1755977520::shm:core:ofi_check_info():1056<info> Unsupported capabilities
+libfabric:243936:1755977520::shm:core:ofi_check_info():1057<info> Supported: FI_MSG, FI_RMA, FI_TAGGED, FI_ATOMIC, FI_READ, FI_WRITE, FI_RECV, FI_SEND, FI_REMOTE_READ, FI_REMOTE_WRITE, FI_MULTI_RECV, FI_RMA_EVENT, FI_SOURCE, FI_DIRECTED_RECV
+libfabric:243936:1755977520::shm:core:ofi_check_info():1057<info> Requested: FI_RMA, FI_ATOMIC, FI_HMEM
+libfabric:243936:1755977520::shm:core:ofi_check_info():1056<info> Unsupported capabilities
+libfabric:243936:1755977520::shm:core:ofi_check_info():1057<info> Supported: FI_MSG, FI_RMA, FI_TAGGED, FI_READ, FI_WRITE, FI_RECV, FI_SEND, FI_REMOTE_READ, FI_REMOTE_WRITE, FI_MULTI_RECV, FI_RMA_EVENT, FI_SOURCE, FI_DIRECTED_RECV, FI_HMEM
+libfabric:243936:1755977520::shm:core:ofi_check_info():1057<info> Requested: FI_RMA, FI_ATOMIC, FI_HMEM
+libfabric:243936:1755977520::core:core:fi_getinfo_():1147<info> fi_getinfo: provider shm returned -61 (No data available)
+libfabric:243936:1755977520::udp:core:ofi_check_ep_type():663<info> unsupported endpoint type
+libfabric:243936:1755977520::udp:core:ofi_check_ep_type():664<info> Supported: FI_EP_DGRAM
+libfabric:243936:1755977520::udp:core:ofi_check_ep_type():664<info> Requested: FI_EP_RDM
+libfabric:243936:1755977520::core:core:fi_getinfo_():1147<info> fi_getinfo: provider udp returned -61 (No data available)
+libfabric:243936:1755977520::tcp:core:ofi_check_ep_type():663<info> unsupported endpoint type
+libfabric:243936:1755977520::tcp:core:ofi_check_ep_type():664<info> Supported: FI_EP_MSG
+libfabric:243936:1755977520::tcp:core:ofi_check_ep_type():664<info> Requested: FI_EP_RDM
+libfabric:243936:1755977520::tcp:core:ofi_check_ep_type():663<info> unsupported endpoint type
+libfabric:243936:1755977520::tcp:core:ofi_check_ep_type():664<info> Supported: FI_EP_MSG
+libfabric:243936:1755977520::tcp:core:ofi_check_ep_type():664<info> Requested: FI_EP_RDM
+libfabric:243936:1755977520::core:core:fi_getinfo_():1147<info> fi_getinfo: provider tcp returned -61 (No data available)
+libfabric:243936:1755977520::sockets:core:ofi_check_ep_type():663<info> unsupported endpoint type
+libfabric:243936:1755977520::sockets:core:ofi_check_ep_type():664<info> Supported: FI_EP_DGRAM
+libfabric:243936:1755977520::sockets:core:ofi_check_ep_type():664<info> Requested: FI_EP_RDM
+libfabric:243936:1755977520::sockets:core:ofi_check_info():1056<info> Unsupported capabilities
+libfabric:243936:1755977520::sockets:core:ofi_check_info():1057<info> Supported: FI_MSG, FI_RMA, FI_TAGGED, FI_ATOMIC, FI_READ, FI_WRITE, FI_RECV, FI_SEND, FI_REMOTE_READ, FI_REMOTE_WRITE, FI_MULTI_RECV, FI_TRIGGER, FI_FENCE, FI_RMA_PMEM, FI_LOCAL_COMM, FI_REMOTE_COMM, FI_SHARED_AV, FI_RMA_EVENT, FI_SOURCE, FI_NAMED_RX_CTX, FI_DIRECTED_RECV
+libfabric:243936:1755977520::sockets:core:ofi_check_info():1057<info> Requested: FI_RMA, FI_ATOMIC, FI_HMEM
+libfabric:243936:1755977520::sockets:core:ofi_check_ep_type():663<info> unsupported endpoint type
+libfabric:243936:1755977520::sockets:core:ofi_check_ep_type():664<info> Supported: FI_EP_MSG
+libfabric:243936:1755977520::sockets:core:ofi_check_ep_type():664<info> Requested: FI_EP_RDM
+libfabric:243936:1755977520::core:core:fi_getinfo_():1147<info> fi_getinfo: provider sockets returned -61 (No data available)
+libfabric:243936:1755977520::ofi_mrail:fabric:mrail_get_core_info():288<info> OFI_MRAIL_ADDR_STRC env variable not set!
+libfabric:243936:1755977520::core:core:fi_getinfo_():1147<info> fi_getinfo: provider ofi_mrail returned -61 (No data available)
+libfabric:243936:1755977520::core:core:fi_getinfo_():1100<warn> Requested version is newer than library
+libfabric:243936:1755977520::usnic:fabric:usdf_getinfo():763<trace> 
+libfabric:243936:1755977520::usnic:fabric:usdf_getinfo():848<info> returning -61 (No data available)
+libfabric:243936:1755977520::core:core:fi_getinfo_():1147<info> fi_getinfo: provider usnic returned -61 (No data available)
+libfabric:243936:1755977520::ofi_rxm:core:fi_param_get_():278<info> variable use_srx=<not set>
+libfabric:243936:1755977520:ofi_rxm:core:core:ofi_layering_ok():1042<info> Need core provider, skipping ofi_rxd
+libfabric:243936:1755977520:ofi_rxm:core:core:ofi_layering_ok():1042<info> Need core provider, skipping ofi_mrail
+libfabric:243936:1755977520::ofi_rxm:core:fi_param_get_():278<info> variable use_srx=<not set>
+libfabric:243936:1755977520:ofi_rxm:core:core:ofi_layering_ok():1042<info> Need core provider, skipping ofi_rxd
+libfabric:243936:1755977520:ofi_rxm:tcp:core:fi_param_get_():278<info> variable iface=<not set>
+libfabric:243936:1755977520:ofi_rxm:tcp:core:ofi_get_list_of_addr():2000<info> Available addr: 10.100.96.90, iface name: nmn0, speed: 1000
+libfabric:243936:1755977520:ofi_rxm:tcp:core:ofi_get_list_of_addr():2000<info> Available addr: 172.28.33.200, iface name: hsn0, speed: 200000
+libfabric:243936:1755977520:ofi_rxm:tcp:core:ofi_get_list_of_addr():2000<info> Available addr: 172.28.33.202, iface name: hsn2, speed: 200000
+libfabric:243936:1755977520:ofi_rxm:tcp:core:ofi_get_list_of_addr():2000<info> Available addr: 172.28.33.203, iface name: hsn3, speed: 200000
+libfabric:243936:1755977520:ofi_rxm:tcp:core:ofi_get_list_of_addr():2000<info> Available addr: 172.28.33.201, iface name: hsn1, speed: 200000
+libfabric:243936:1755977520:ofi_rxm:tcp:core:ofi_get_list_of_addr():2000<info> Available addr: fe80::240:a6ff:fe89:2e55, iface name: nmn0, speed: 1000
+libfabric:243936:1755977520:ofi_rxm:tcp:core:ofi_get_list_of_addr():2000<info> Available addr: fe80::ff:fe00:e9e2, iface name: hsn0, speed: 200000
+libfabric:243936:1755977520:ofi_rxm:tcp:core:ofi_get_list_of_addr():2000<info> Available addr: fe80::ff:fe00:e922, iface name: hsn2, speed: 200000
+libfabric:243936:1755977520:ofi_rxm:tcp:core:ofi_get_list_of_addr():2000<info> Available addr: fe80::ff:fe00:e923, iface name: hsn3, speed: 200000
+libfabric:243936:1755977520:ofi_rxm:tcp:core:ofi_get_list_of_addr():2000<info> Available addr: fe80::ff:fe00:e9e3, iface name: hsn1, speed: 200000
+libfabric:243936:1755977520:ofi_rxm:tcp:core:ofi_insert_loopback_addr():1844<info> available addr: : fi_sockaddr_in://127.0.0.1:0
+libfabric:243936:1755977520:ofi_rxm:tcp:core:ofi_insert_loopback_addr():1859<info> available addr: : fi_sockaddr_in6://[::1]:0
+libfabric:243936:1755977520:ofi_rxm:tcp:core:util_getinfo_ifs():333<info> Chosen addr for using: 172.28.33.200, speed 200000
+libfabric:243936:1755977520:ofi_rxm:tcp:core:fi_param_get_():278<info> variable iface=<not set>
+libfabric:243936:1755977520:ofi_rxm:tcp:core:ofi_get_list_of_addr():2000<info> Available addr: 10.100.96.90, iface name: nmn0, speed: 1000
+libfabric:243936:1755977520:ofi_rxm:tcp:core:ofi_get_list_of_addr():2000<info> Available addr: 172.28.33.200, iface name: hsn0, speed: 200000
+libfabric:243936:1755977520:ofi_rxm:tcp:core:ofi_get_list_of_addr():2000<info> Available addr: 172.28.33.202, iface name: hsn2, speed: 200000
+libfabric:243936:1755977520:ofi_rxm:tcp:core:ofi_get_list_of_addr():2000<info> Available addr: 172.28.33.203, iface name: hsn3, speed: 200000
+libfabric:243936:1755977520:ofi_rxm:tcp:core:ofi_get_list_of_addr():2000<info> Available addr: 172.28.33.201, iface name: hsn1, speed: 200000
+libfabric:243936:1755977520:ofi_rxm:tcp:core:ofi_get_list_of_addr():2000<info> Available addr: fe80::240:a6ff:fe89:2e55, iface name: nmn0, speed: 1000
+libfabric:243936:1755977520:ofi_rxm:tcp:core:ofi_get_list_of_addr():2000<info> Available addr: fe80::ff:fe00:e9e2, iface name: hsn0, speed: 200000
+libfabric:243936:1755977520:ofi_rxm:tcp:core:ofi_get_list_of_addr():2000<info> Available addr: fe80::ff:fe00:e922, iface name: hsn2, speed: 200000
+libfabric:243936:1755977520:ofi_rxm:tcp:core:ofi_get_list_of_addr():2000<info> Available addr: fe80::ff:fe00:e923, iface name: hsn3, speed: 200000
+libfabric:243936:1755977520:ofi_rxm:tcp:core:ofi_get_list_of_addr():2000<info> Available addr: fe80::ff:fe00:e9e3, iface name: hsn1, speed: 200000
+libfabric:243936:1755977520:ofi_rxm:tcp:core:ofi_insert_loopback_addr():1844<info> available addr: : fi_sockaddr_in://127.0.0.1:0
+libfabric:243936:1755977520:ofi_rxm:tcp:core:ofi_insert_loopback_addr():1859<info> available addr: : fi_sockaddr_in6://[::1]:0
+libfabric:243936:1755977520:ofi_rxm:tcp:core:util_getinfo_ifs():333<info> Chosen addr for using: 172.28.33.200, speed 200000
+libfabric:243936:1755977520:ofi_rxm:core:core:ofi_layering_ok():1042<info> Need core provider, skipping ofi_mrail
+libfabric:243936:1755977520::ofi_rxm:core:fi_param_get_():278<info> variable use_srx=<not set>
+libfabric:243936:1755977520:ofi_rxm:usnic:fabric:usdf_getinfo():763<trace> 
+libfabric:243936:1755977520:ofi_rxm:usnic:fabric:usdf_getinfo():848<info> returning -61 (No data available)
+libfabric:243936:1755977520:ofi_rxm:core:core:fi_getinfo_():1147<info> fi_getinfo: provider usnic returned -61 (No data available)
+libfabric:243936:1755977520:ofi_rxm:core:core:ofi_layering_ok():1042<info> Need core provider, skipping ofi_rxm
+libfabric:243936:1755977520:ofi_rxm:core:core:ofi_layering_ok():1042<info> Need core provider, skipping ofi_rxd
+libfabric:243936:1755977520:ofi_rxm:core:core:ofi_layering_ok():1049<info> Skipping util;shm layering
+libfabric:243936:1755977520:ofi_rxm:udp:core:ofi_check_ep_type():663<info> unsupported endpoint type
+libfabric:243936:1755977520:ofi_rxm:udp:core:ofi_check_ep_type():664<info> Supported: FI_EP_DGRAM
+libfabric:243936:1755977520:ofi_rxm:udp:core:ofi_check_ep_type():664<info> Requested: FI_EP_MSG
+libfabric:243936:1755977520:ofi_rxm:core:core:fi_getinfo_():1147<info> fi_getinfo: provider udp returned -61 (No data available)
+libfabric:243936:1755977520:ofi_rxm:tcp:core:ofi_check_ep_attr():741<info> Provider requires use of shared rx context
+libfabric:243936:1755977520:ofi_rxm:tcp:core:fi_param_get_():278<info> variable iface=<not set>
+libfabric:243936:1755977520:ofi_rxm:tcp:core:ofi_get_list_of_addr():2000<info> Available addr: 10.100.96.90, iface name: nmn0, speed: 1000
+libfabric:243936:1755977520:ofi_rxm:tcp:core:ofi_get_list_of_addr():2000<info> Available addr: 172.28.33.200, iface name: hsn0, speed: 200000
+libfabric:243936:1755977520:ofi_rxm:tcp:core:ofi_get_list_of_addr():2000<info> Available addr: 172.28.33.202, iface name: hsn2, speed: 200000
+libfabric:243936:1755977520:ofi_rxm:tcp:core:ofi_get_list_of_addr():2000<info> Available addr: 172.28.33.203, iface name: hsn3, speed: 200000
+libfabric:243936:1755977520:ofi_rxm:tcp:core:ofi_get_list_of_addr():2000<info> Available addr: 172.28.33.201, iface name: hsn1, speed: 200000
+libfabric:243936:1755977520:ofi_rxm:tcp:core:ofi_get_list_of_addr():2000<info> Available addr: fe80::240:a6ff:fe89:2e55, iface name: nmn0, speed: 1000
+libfabric:243936:1755977520:ofi_rxm:tcp:core:ofi_get_list_of_addr():2000<info> Available addr: fe80::ff:fe00:e9e2, iface name: hsn0, speed: 200000
+libfabric:243936:1755977520:ofi_rxm:tcp:core:ofi_get_list_of_addr():2000<info> Available addr: fe80::ff:fe00:e922, iface name: hsn2, speed: 200000
+libfabric:243936:1755977520:ofi_rxm:tcp:core:ofi_get_list_of_addr():2000<info> Available addr: fe80::ff:fe00:e923, iface name: hsn3, speed: 200000
+libfabric:243936:1755977520:ofi_rxm:tcp:core:ofi_get_list_of_addr():2000<info> Available addr: fe80::ff:fe00:e9e3, iface name: hsn1, speed: 200000
+libfabric:243936:1755977520:ofi_rxm:tcp:core:ofi_insert_loopback_addr():1844<info> available addr: : fi_sockaddr_in://127.0.0.1:0
+libfabric:243936:1755977520:ofi_rxm:tcp:core:ofi_insert_loopback_addr():1859<info> available addr: : fi_sockaddr_in6://[::1]:0
+libfabric:243936:1755977520:ofi_rxm:tcp:core:util_getinfo_ifs():333<info> Chosen addr for using: 172.28.33.200, speed 200000
+libfabric:243936:1755977520:ofi_rxm:core:core:ofi_layering_ok():1049<info> Skipping util;sockets layering
+libfabric:243936:1755977520:ofi_rxm:core:core:ofi_layering_ok():1042<info> Need core provider, skipping ofi_mrail
+libfabric:243936:1755977520::ofi_rxm:core:fi_param_get_():278<info> variable use_srx=<not set>
+libfabric:243936:1755977520:ofi_rxm:usnic:fabric:usdf_getinfo():763<trace> 
+libfabric:243936:1755977520:ofi_rxm:usnic:fabric:usdf_getinfo():848<info> returning -61 (No data available)
+libfabric:243936:1755977520:ofi_rxm:core:core:fi_getinfo_():1147<info> fi_getinfo: provider usnic returned -61 (No data available)
+libfabric:243936:1755977520:ofi_rxm:core:core:ofi_layering_ok():1042<info> Need core provider, skipping ofi_rxm
+libfabric:243936:1755977520:ofi_rxm:core:core:ofi_layering_ok():1042<info> Need core provider, skipping ofi_rxd
+libfabric:243936:1755977520:ofi_rxm:core:core:ofi_layering_ok():1049<info> Skipping util;shm layering
+libfabric:243936:1755977520:ofi_rxm:udp:core:ofi_check_ep_type():663<info> unsupported endpoint type
+libfabric:243936:1755977520:ofi_rxm:udp:core:ofi_check_ep_type():664<info> Supported: FI_EP_DGRAM
+libfabric:243936:1755977520:ofi_rxm:udp:core:ofi_check_ep_type():664<info> Requested: FI_EP_MSG
+libfabric:243936:1755977520:ofi_rxm:core:core:fi_getinfo_():1147<info> fi_getinfo: provider udp returned -61 (No data available)
+libfabric:243936:1755977520:ofi_rxm:tcp:core:ofi_check_ep_attr():741<info> Provider requires use of shared rx context
+libfabric:243936:1755977520:ofi_rxm:tcp:core:fi_param_get_():278<info> variable iface=<not set>
+libfabric:243936:1755977520:ofi_rxm:tcp:core:ofi_get_list_of_addr():2000<info> Available addr: 10.100.96.90, iface name: nmn0, speed: 1000
+libfabric:243936:1755977520:ofi_rxm:tcp:core:ofi_get_list_of_addr():2000<info> Available addr: 172.28.33.200, iface name: hsn0, speed: 200000
+libfabric:243936:1755977520:ofi_rxm:tcp:core:ofi_get_list_of_addr():2000<info> Available addr: 172.28.33.202, iface name: hsn2, speed: 200000
+libfabric:243936:1755977520:ofi_rxm:tcp:core:ofi_get_list_of_addr():2000<info> Available addr: 172.28.33.203, iface name: hsn3, speed: 200000
+libfabric:243936:1755977520:ofi_rxm:tcp:core:ofi_get_list_of_addr():2000<info> Available addr: 172.28.33.201, iface name: hsn1, speed: 200000
+libfabric:243936:1755977520:ofi_rxm:tcp:core:ofi_get_list_of_addr():2000<info> Available addr: fe80::240:a6ff:fe89:2e55, iface name: nmn0, speed: 1000
+libfabric:243936:1755977520:ofi_rxm:tcp:core:ofi_get_list_of_addr():2000<info> Available addr: fe80::ff:fe00:e9e2, iface name: hsn0, speed: 200000
+libfabric:243936:1755977520:ofi_rxm:tcp:core:ofi_get_list_of_addr():2000<info> Available addr: fe80::ff:fe00:e922, iface name: hsn2, speed: 200000
+libfabric:243936:1755977520:ofi_rxm:tcp:core:ofi_get_list_of_addr():2000<info> Available addr: fe80::ff:fe00:e923, iface name: hsn3, speed: 200000
+libfabric:243936:1755977520:ofi_rxm:tcp:core:ofi_get_list_of_addr():2000<info> Available addr: fe80::ff:fe00:e9e3, iface name: hsn1, speed: 200000
+libfabric:243936:1755977520:ofi_rxm:tcp:core:ofi_insert_loopback_addr():1844<info> available addr: : fi_sockaddr_in://127.0.0.1:0
+libfabric:243936:1755977520:ofi_rxm:tcp:core:ofi_insert_loopback_addr():1859<info> available addr: : fi_sockaddr_in6://[::1]:0
+libfabric:243936:1755977520:ofi_rxm:tcp:core:util_getinfo_ifs():333<info> Chosen addr for using: 172.28.33.200, speed 200000
+libfabric:243936:1755977520:ofi_rxm:core:core:ofi_layering_ok():1049<info> Skipping util;sockets layering
+libfabric:243936:1755977520:ofi_rxm:core:core:ofi_layering_ok():1042<info> Need core provider, skipping ofi_mrail
+libfabric:243936:1755977520:ofi_rxd:usnic:fabric:usdf_getinfo():763<trace> 
+libfabric:243936:1755977520:ofi_rxd:usnic:fabric:usdf_getinfo():848<info> returning -61 (No data available)
+libfabric:243936:1755977520:ofi_rxd:core:core:fi_getinfo_():1147<info> fi_getinfo: provider usnic returned -61 (No data available)
+libfabric:243936:1755977520:ofi_rxd:core:core:ofi_layering_ok():1042<info> Need core provider, skipping ofi_rxm
+libfabric:243936:1755977520:ofi_rxd:core:core:ofi_layering_ok():1042<info> Need core provider, skipping ofi_rxd
+libfabric:243936:1755977520:ofi_rxd:core:core:ofi_layering_ok():1049<info> Skipping util;shm layering
+libfabric:243936:1755977520:ofi_rxd:udp:core:fi_param_get_():278<info> variable iface=<not set>
+libfabric:243936:1755977520:ofi_rxd:udp:core:ofi_get_list_of_addr():2000<info> Available addr: 10.100.96.90, iface name: nmn0, speed: 1000
+libfabric:243936:1755977520:ofi_rxd:udp:core:ofi_get_list_of_addr():2000<info> Available addr: 172.28.33.200, iface name: hsn0, speed: 200000
+libfabric:243936:1755977520:ofi_rxd:udp:core:ofi_get_list_of_addr():2000<info> Available addr: 172.28.33.202, iface name: hsn2, speed: 200000
+libfabric:243936:1755977520:ofi_rxd:udp:core:ofi_get_list_of_addr():2000<info> Available addr: 172.28.33.203, iface name: hsn3, speed: 200000
+libfabric:243936:1755977520:ofi_rxd:udp:core:ofi_get_list_of_addr():2000<info> Available addr: 172.28.33.201, iface name: hsn1, speed: 200000
+libfabric:243936:1755977520:ofi_rxd:udp:core:ofi_get_list_of_addr():2000<info> Available addr: fe80::240:a6ff:fe89:2e55, iface name: nmn0, speed: 1000
+libfabric:243936:1755977520:ofi_rxd:udp:core:ofi_get_list_of_addr():2000<info> Available addr: fe80::ff:fe00:e9e2, iface name: hsn0, speed: 200000
+libfabric:243936:1755977520:ofi_rxd:udp:core:ofi_get_list_of_addr():2000<info> Available addr: fe80::ff:fe00:e922, iface name: hsn2, speed: 200000
+libfabric:243936:1755977520:ofi_rxd:udp:core:ofi_get_list_of_addr():2000<info> Available addr: fe80::ff:fe00:e923, iface name: hsn3, speed: 200000
+libfabric:243936:1755977520:ofi_rxd:udp:core:ofi_get_list_of_addr():2000<info> Available addr: fe80::ff:fe00:e9e3, iface name: hsn1, speed: 200000
+libfabric:243936:1755977520:ofi_rxd:udp:core:ofi_insert_loopback_addr():1844<info> available addr: : fi_sockaddr_in://127.0.0.1:0
+libfabric:243936:1755977520:ofi_rxd:udp:core:ofi_insert_loopback_addr():1859<info> available addr: : fi_sockaddr_in6://[::1]:0
+libfabric:243936:1755977520:ofi_rxd:udp:core:util_getinfo_ifs():333<info> Chosen addr for using: 172.28.33.200, speed 200000
+libfabric:243936:1755977520:ofi_rxd:tcp:core:ofi_check_ep_type():663<info> unsupported endpoint type
+libfabric:243936:1755977520:ofi_rxd:tcp:core:ofi_check_ep_type():664<info> Supported: FI_EP_MSG
+libfabric:243936:1755977520:ofi_rxd:tcp:core:ofi_check_ep_type():664<info> Requested: FI_EP_DGRAM
+libfabric:243936:1755977520:ofi_rxd:tcp:core:ofi_check_ep_type():663<info> unsupported endpoint type
+libfabric:243936:1755977520:ofi_rxd:tcp:core:ofi_check_ep_type():664<info> Supported: FI_EP_MSG
+libfabric:243936:1755977520:ofi_rxd:tcp:core:ofi_check_ep_type():664<info> Requested: FI_EP_DGRAM
+libfabric:243936:1755977520:ofi_rxd:core:core:fi_getinfo_():1147<info> fi_getinfo: provider tcp returned -61 (No data available)
+libfabric:243936:1755977520:ofi_rxd:core:core:ofi_layering_ok():1049<info> Skipping util;sockets layering
+libfabric:243936:1755977520:ofi_rxd:core:core:ofi_layering_ok():1042<info> Need core provider, skipping ofi_mrail
+libfabric:243936:1755977520::shm:core:ofi_check_info():1056<info> Unsupported capabilities
+libfabric:243936:1755977520::shm:core:ofi_check_info():1057<info> Supported: FI_MSG, FI_RMA, FI_TAGGED, FI_READ, FI_WRITE, FI_RECV, FI_SEND, FI_REMOTE_READ, FI_REMOTE_WRITE, FI_MULTI_RECV, FI_RMA_EVENT, FI_SOURCE, FI_DIRECTED_RECV, FI_HMEM
+libfabric:243936:1755977520::shm:core:ofi_check_info():1057<info> Requested: FI_RMA, FI_ATOMIC
+libfabric:243936:1755977520::udp:core:ofi_check_ep_type():663<info> unsupported endpoint type
+libfabric:243936:1755977520::udp:core:ofi_check_ep_type():664<info> Supported: FI_EP_DGRAM
+libfabric:243936:1755977520::udp:core:ofi_check_ep_type():664<info> Requested: FI_EP_RDM
+libfabric:243936:1755977520::core:core:fi_getinfo_():1147<info> fi_getinfo: provider udp returned -61 (No data available)
+libfabric:243936:1755977520::tcp:core:ofi_check_ep_type():663<info> unsupported endpoint type
+libfabric:243936:1755977520::tcp:core:ofi_check_ep_type():664<info> Supported: FI_EP_MSG
+libfabric:243936:1755977520::tcp:core:ofi_check_ep_type():664<info> Requested: FI_EP_RDM
+libfabric:243936:1755977520::tcp:core:ofi_check_ep_type():663<info> unsupported endpoint type
+libfabric:243936:1755977520::tcp:core:ofi_check_ep_type():664<info> Supported: FI_EP_MSG
+libfabric:243936:1755977520::tcp:core:ofi_check_ep_type():664<info> Requested: FI_EP_RDM
+libfabric:243936:1755977520::core:core:fi_getinfo_():1147<info> fi_getinfo: provider tcp returned -61 (No data available)
+libfabric:243936:1755977520::sockets:core:ofi_check_ep_type():663<info> unsupported endpoint type
+libfabric:243936:1755977520::sockets:core:ofi_check_ep_type():664<info> Supported: FI_EP_DGRAM
+libfabric:243936:1755977520::sockets:core:ofi_check_ep_type():664<info> Requested: FI_EP_RDM
+libfabric:243936:1755977520::sockets:core:ofi_check_ep_type():663<info> unsupported endpoint type
+libfabric:243936:1755977520::sockets:core:ofi_check_ep_type():664<info> Supported: FI_EP_MSG
+libfabric:243936:1755977520::sockets:core:ofi_check_ep_type():664<info> Requested: FI_EP_RDM
+libfabric:243936:1755977520::sockets:core:fi_param_get_():278<info> variable iface=<not set>
+libfabric:243936:1755977520::sockets:core:ofi_get_list_of_addr():2000<info> Available addr: 10.100.96.90, iface name: nmn0, speed: 1000
+libfabric:243936:1755977520::sockets:core:ofi_get_list_of_addr():2000<info> Available addr: 172.28.33.200, iface name: hsn0, speed: 200000
+libfabric:243936:1755977520::sockets:core:ofi_get_list_of_addr():2000<info> Available addr: 172.28.33.202, iface name: hsn2, speed: 200000
+libfabric:243936:1755977520::sockets:core:ofi_get_list_of_addr():2000<info> Available addr: 172.28.33.203, iface name: hsn3, speed: 200000
+libfabric:243936:1755977520::sockets:core:ofi_get_list_of_addr():2000<info> Available addr: 172.28.33.201, iface name: hsn1, speed: 200000
+libfabric:243936:1755977520::sockets:core:ofi_get_list_of_addr():2000<info> Available addr: fe80::240:a6ff:fe89:2e55, iface name: nmn0, speed: 1000
+libfabric:243936:1755977520::sockets:core:ofi_get_list_of_addr():2000<info> Available addr: fe80::ff:fe00:e9e2, iface name: hsn0, speed: 200000
+libfabric:243936:1755977520::sockets:core:ofi_get_list_of_addr():2000<info> Available addr: fe80::ff:fe00:e922, iface name: hsn2, speed: 200000
+libfabric:243936:1755977520::sockets:core:ofi_get_list_of_addr():2000<info> Available addr: fe80::ff:fe00:e923, iface name: hsn3, speed: 200000
+libfabric:243936:1755977520::sockets:core:ofi_get_list_of_addr():2000<info> Available addr: fe80::ff:fe00:e9e3, iface name: hsn1, speed: 200000
+libfabric:243936:1755977520::sockets:core:ofi_insert_loopback_addr():1844<info> available addr: : fi_sockaddr_in://127.0.0.1:0
+libfabric:243936:1755977520::sockets:core:ofi_insert_loopback_addr():1859<info> available addr: : fi_sockaddr_in6://[::1]:0
+libfabric:243936:1755977520::sockets:core:util_getinfo_ifs():333<info> Chosen addr for using: 172.28.33.200, speed 200000
+libfabric:243936:1755977520::ofi_mrail:fabric:mrail_get_core_info():288<info> OFI_MRAIL_ADDR_STRC env variable not set!
+libfabric:243936:1755977520::core:core:fi_getinfo_():1147<info> fi_getinfo: provider ofi_mrail returned -61 (No data available)
+libfabric:243937:1755977521::usnic:fabric:usdf_getinfo():763<trace> 
+libfabric:243937:1755977521::usnic:fabric:usdf_getinfo():848<info> returning -61 (No data available)
+libfabric:243937:1755977521::core:core:fi_getinfo_():1147<warn> fi_getinfo: provider usnic returned -61 (No data available)
+libfabric:243937:1755977521::ofi_rxm:core:ofi_check_ep_type():663<info> unsupported endpoint type
+libfabric:243937:1755977521::ofi_rxm:core:ofi_check_ep_type():664<info> Supported: FI_EP_RDM
+libfabric:243937:1755977521::ofi_rxm:core:ofi_check_ep_type():664<info> Requested: FI_EP_DGRAM
+libfabric:243937:1755977521::ofi_rxm:core:ofi_check_ep_type():663<info> unsupported endpoint type
+libfabric:243937:1755977521::ofi_rxm:core:ofi_check_ep_type():664<info> Supported: FI_EP_RDM
+libfabric:243937:1755977521::ofi_rxm:core:ofi_check_ep_type():664<info> Requested: FI_EP_DGRAM
+libfabric:243937:1755977521::ofi_rxm:core:ofi_check_ep_type():663<info> unsupported endpoint type
+libfabric:243937:1755977521::ofi_rxm:core:ofi_check_ep_type():664<info> Supported: FI_EP_RDM
+libfabric:243937:1755977521::ofi_rxm:core:ofi_check_ep_type():664<info> Requested: FI_EP_DGRAM
+libfabric:243937:1755977521::ofi_rxm:core:ofi_check_ep_type():663<info> unsupported endpoint type
+libfabric:243937:1755977521::ofi_rxm:core:ofi_check_ep_type():664<info> Supported: FI_EP_RDM
+libfabric:243937:1755977521::ofi_rxm:core:ofi_check_ep_type():664<info> Requested: FI_EP_DGRAM
+libfabric:243937:1755977521::ofi_rxm:core:ofi_check_ep_type():663<info> unsupported endpoint type
+libfabric:243937:1755977521::ofi_rxm:core:ofi_check_ep_type():664<info> Supported: FI_EP_RDM
+libfabric:243937:1755977521::ofi_rxm:core:ofi_check_ep_type():664<info> Requested: FI_EP_DGRAM
+libfabric:243937:1755977521::core:core:fi_getinfo_():1147<warn> fi_getinfo: provider ofi_rxm returned -61 (No data available)
+libfabric:243937:1755977521::ofi_rxd:core:ofi_check_ep_type():663<info> unsupported endpoint type
+libfabric:243937:1755977521::ofi_rxd:core:ofi_check_ep_type():664<info> Supported: FI_EP_RDM
+libfabric:243937:1755977521::ofi_rxd:core:ofi_check_ep_type():664<info> Requested: FI_EP_DGRAM
+libfabric:243937:1755977521::core:core:fi_getinfo_():1147<warn> fi_getinfo: provider ofi_rxd returned -61 (No data available)
+libfabric:243937:1755977521::ofi_mrail:fabric:mrail_get_core_info():288<warn> OFI_MRAIL_ADDR_STRC env variable not set!
+libfabric:243937:1755977521::core:core:fi_getinfo_():1147<warn> fi_getinfo: provider ofi_mrail returned -61 (No data available)
+libfabric:243936:1755977521::usnic:fabric:usdf_getinfo():763<trace> 
+libfabric:243936:1755977521::usnic:fabric:usdf_getinfo():848<info> returning -61 (No data available)
+libfabric:243936:1755977521::core:core:fi_getinfo_():1147<warn> fi_getinfo: provider usnic returned -61 (No data available)
+libfabric:243936:1755977521::ofi_rxm:core:ofi_check_ep_type():663<info> unsupported endpoint type
+libfabric:243936:1755977521::ofi_rxm:core:ofi_check_ep_type():664<info> Supported: FI_EP_RDM
+libfabric:243936:1755977521::ofi_rxm:core:ofi_check_ep_type():664<info> Requested: FI_EP_DGRAM
+libfabric:243936:1755977521::ofi_rxm:core:ofi_check_ep_type():663<info> unsupported endpoint type
+libfabric:243936:1755977521::ofi_rxm:core:ofi_check_ep_type():664<info> Supported: FI_EP_RDM
+libfabric:243936:1755977521::ofi_rxm:core:ofi_check_ep_type():664<info> Requested: FI_EP_DGRAM
+libfabric:243936:1755977521::ofi_rxm:core:ofi_check_ep_type():663<info> unsupported endpoint type
+libfabric:243936:1755977521::ofi_rxm:core:ofi_check_ep_type():664<info> Supported: FI_EP_RDM
+libfabric:243936:1755977521::ofi_rxm:core:ofi_check_ep_type():664<info> Requested: FI_EP_DGRAM
+libfabric:243936:1755977521::ofi_rxm:core:ofi_check_ep_type():663<info> unsupported endpoint type
+libfabric:243936:1755977521::ofi_rxm:core:ofi_check_ep_type():664<info> Supported: FI_EP_RDM
+libfabric:243936:1755977521::ofi_rxm:core:ofi_check_ep_type():664<info> Requested: FI_EP_DGRAM
+libfabric:243936:1755977521::ofi_rxm:core:ofi_check_ep_type():663<info> unsupported endpoint type
+libfabric:243936:1755977521::ofi_rxm:core:ofi_check_ep_type():664<info> Supported: FI_EP_RDM
+libfabric:243936:1755977521::ofi_rxm:core:ofi_check_ep_type():664<info> Requested: FI_EP_DGRAM
+libfabric:243936:1755977521::core:core:fi_getinfo_():1147<warn> fi_getinfo: provider ofi_rxm returned -61 (No data available)
+libfabric:243936:1755977521::ofi_rxd:core:ofi_check_ep_type():663<info> unsupported endpoint type
+libfabric:243936:1755977521::ofi_rxd:core:ofi_check_ep_type():664<info> Supported: FI_EP_RDM
+libfabric:243936:1755977521::ofi_rxd:core:ofi_check_ep_type():664<info> Requested: FI_EP_DGRAM
+libfabric:243936:1755977521::core:core:fi_getinfo_():1147<warn> fi_getinfo: provider ofi_rxd returned -61 (No data available)
+libfabric:243936:1755977521::ofi_mrail:fabric:mrail_get_core_info():288<warn> OFI_MRAIL_ADDR_STRC env variable not set!
+libfabric:243936:1755977521::core:core:fi_getinfo_():1147<warn> fi_getinfo: provider ofi_mrail returned -61 (No data available)
+libfabric:243937:1755977734::usnic:fabric:usdf_fini():1039<trace> 
+libfabric:243936:1755977734::usnic:fabric:usdf_fini():1039<trace> 

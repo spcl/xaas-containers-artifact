@@ -1,0 +1,16 @@
+image = "/iopsstor/scratch/cscs/mcopik/xaas-containers-artifact/microbenchmarks/alps-distributed-containers/containers/osu-ompi-cxi.sqsh"
+
+[env]
+PMIX_MCA_psec="native"
+
+OMPI_MCA_mtl_ofi_av="table"
+OMPI_MCA_btl="^tcp,ofi,vader,openib"
+OMPI_MCA_pml="^ucx"
+OMPI_MCA_mtl="ofi"
+OMPI_MCA_opal_common_ofi_provider_include="lnx"
+FI_LNX_PROV_LINKS="shm+cxi:cxi0"
+FI_SHM_USE_XPMEM="1"
+
+[annotations]
+com.hooks.cxi.enabled="false"
+

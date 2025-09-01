@@ -1,0 +1,16 @@
+image = "/iopsstor/scratch/cscs/mcopik/xaas-containers-artifact/microbenchmarks/alps-distributed-containers/containers/osu-mpich.sqsh"
+
+[env]
+FI_LNX_PROV_LINKS="shm+cxi:cxi0"
+FI_SHM_USE_XPMEM="1"
+MPIR_CVAR_CH4_OFI_ENABLE_PROVIDERS="lnx"
+MPIR_CVAR_OFI_USE_PROVIDER="lnx"
+
+#FI_LOG_LEVEL="debug"
+#FI_PROVIDER="cxi;tcp"
+#MPIR_CVAR_CH4_OFI_ENABLE_PROVIDERS="cxi"
+#MPIR_CVAR_OFI_USE_PROVIDER="cxi"
+#MPIR_CVAR_OFI_DUMP_PROVIDERS="true"
+
+[annotations]
+com.hooks.cxi.enabled="false"

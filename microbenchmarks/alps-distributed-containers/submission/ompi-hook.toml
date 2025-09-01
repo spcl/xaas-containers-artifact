@@ -1,0 +1,16 @@
+image = "/iopsstor/scratch/cscs/mcopik/xaas-containers-artifact/microbenchmarks/alps-distributed-containers/containers/osu-ompi.sqsh"
+
+[env]
+#FI_LOG_LEVEL="debug"
+# this causes a crash
+#FI_PROVIDER="cxi;tcp"
+
+PMIX_MCA_psec="native"
+OMPI_MCA_mtl_ofi_av="table"
+OMPI_MCA_opal_common_ofi_provider_include="cxi"
+OMPI_MCA_btl="^tcp,ofi,vader,openib"
+OMPI_MCA_pml="ucx"
+OMPI_MCA_mtl="ofi"
+
+[annotations]
+com.hooks.cxi.enabled="true"

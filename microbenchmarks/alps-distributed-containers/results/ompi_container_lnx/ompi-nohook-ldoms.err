@@ -1,0 +1,2 @@
+cpu-bind=MASK - nid007062, task  0  0 [174950]: mask 0xffffffffffffffffff set
+cpu-bind=MASK - nid007062, task  1  1 [174951]: mask 0xffffffffffffffffff000000000000000000 set

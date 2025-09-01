@@ -1,0 +1,9 @@
+cpu-bind=MASK - nid006578, task  0  0 [102506]: mask 0xffffffffffffffffff set
+cpu-bind=MASK - nid006578, task  1  1 [102507]: mask 0xffffffffffffffffff000000000000000000 set
+PE 0: MPICH Warning: MPICH_NO_LOCAL is set to 1. 
+      This setting disables all intra-node MPI optimizations.
+      In addition, on systems with multiple NICs per node, this setting 
+      forces HPE Cray MPI to only use a single NIC on each node. This 
+      setting is intended only for debugging and may significantly 
+      impact MPI performance.
+

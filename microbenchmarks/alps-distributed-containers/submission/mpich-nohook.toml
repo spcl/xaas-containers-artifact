@@ -1,0 +1,8 @@
+image = "/iopsstor/scratch/cscs/mcopik/xaas-containers-artifact/microbenchmarks/alps-distributed-containers/containers/osu-mpich.sqsh"
+
+[env]
+#FI_LOG_LEVEL="debug"
+#UCX_LOG_LEVEL="trace"
+
+[annotations]
+com.hooks.cxi.enabled="false"
