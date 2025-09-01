@@ -1,0 +1,157 @@
+{
+  "gpu_build": {
+    "value": true,
+    "build_flag": null
+  },
+  "gpu_backends": {
+    "CUDA": {
+      "used_as_default": false,
+      "build_flag": "GGML_CUDA",
+      "minimum_version": null
+    },
+    "HIP": {
+      "used_as_default": false,
+      "build_flag": "GGML_HIP",
+      "minimum_version": null
+    },
+    "Metal": {
+      "used_as_default": false,
+      "build_flag": "GGML_METAL",
+      "minimum_version": null
+    },
+    "SYCL": {
+      "used_as_default": false,
+      "build_flag": "GGML_SYCL",
+      "minimum_version": null
+    },
+    "Vulkan": {
+      "used_as_default": false,
+      "build_flag": "GGML_VULKAN",
+      "minimum_version": null
+    },
+    "Kompute": {
+      "used_as_default": false,
+      "build_flag": "GGML_KOMPUTE",
+      "minimum_version": null
+    },
+    "MUSA": {
+      "used_as_default": false,
+      "build_flag": "GGML_MUSA",
+      "minimum_version": null
+    }
+  },
+  "parallel_programming_libraries": {
+    "OpenMP": {
+      "used_as_default": true,
+      "build_flag": "GGML_OPENMP",
+      "minimum_version": null
+    },
+    "Threads": {
+      "used_as_default": true,
+      "build_flag": null,
+      "minimum_version": null
+    }
+  },
+  "linear_algebra_libraries": {
+    "Accelerate": {
+      "used_as_default": true,
+      "build_flag": "GGML_ACCELERATE",
+      "condition": "APPLE"
+    },
+    "BLAS": {
+      "used_as_default": false,
+      "build_flag": "GGML_BLAS",
+      "condition": null
+    }
+  },
+  "FFT_libraries": {},
+  "other_external_libraries": {
+    "libcurl": {
+      "version": null,
+      "used_as_default": true,
+      "conditions": "LLAMA_BUILD_COMMON",
+      "build_flag": "LLAMA_CURL"
+    },
+    "LLGuidance": {
+      "version": null,
+      "used_as_default": false,
+      "conditions": "LLAMA_BUILD_COMMON",
+      "build_flag": "LLAMA_LLGUIDANCE"
+    }
+  },
+  "compiler_flags": [
+    "-fsanitize=thread",
+    "-fsanitize=address -fno-omit-frame-pointer",
+    "-fsanitize=undefined",
+    "<$<COMPILE_LANGUAGE:C>:/utf-8>",
+    "<$<COMPILE_LANGUAGE:CXX>:/utf-8>",
+    "<$<COMPILE_LANGUAGE:C>:/bigobj>",
+    "<$<COMPILE_LANGUAGE:CXX>:/bigobj>"
+  ],
+  "optimization_build_flags": [
+    "GGML_NATIVE",
+    "GGML_LTO",
+    "GGML_AVX",
+    "GGML_AVX_VNNI",
+    "GGML_AVX2",
+    "GGML_BMI2",
+    "GGML_AVX512",
+    "GGML_AVX512_VBMI",
+    "GGML_AVX512_VNNI",
+    "GGML_AVX512_BF16",
+    "GGML_FMA",
+    "GGML_F16C",
+    "GGML_AMX_TILE",
+    "GGML_AMX_INT8",
+    "GGML_AMX_BF16",
+    "GGML_LASX",
+    "GGML_LSX",
+    "GGML_RVV",
+    "GGML_RV_ZFH",
+    "GGML_VXE",
+    "GGML_METAL_SHADER_DEBUG"
+  ],
+  "compilers": {
+    "C": {
+      "minimum_version": "11"
+    },
+    "CXX": {
+      "minimum_version": "17"
+    }
+  },
+  "architectures": [
+    "AARCH64",
+    "POWERPC",
+    "ARM"
+  ],
+  "simd_vectorization": {
+    "AVX": {
+      "build_flag": "GGML_AVX",
+      "default": false
+    },
+    "AVX2": {
+      "build_flag": "GGML_AVX2",
+      "default": false
+    },
+    "AVX512": {
+      "build_flag": "GGML_AVX512",
+      "default": false
+    },
+    "FMA": {
+      "build_flag": "GGML_FMA",
+      "default": false
+    },
+    "F16C": {
+      "build_flag": "GGML_F16C",
+      "default": false
+    }
+  },
+  "build_system": {
+    "type": "cmake",
+    "minimum_version": "3.14"
+  },
+  "internal_build": {
+    "library_name": "ggml",
+    "build_flag": null
+  }
+}

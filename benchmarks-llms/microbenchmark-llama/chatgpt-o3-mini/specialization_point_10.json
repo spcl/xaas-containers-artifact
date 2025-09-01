@@ -1,0 +1,184 @@
+{
+  "gpu_build": {
+    "value": true,
+    "build_flag": null
+  },
+  "gpu_backends": {
+    "CUDA": {
+      "used_as_default": false,
+      "build_flag": "-DGGML_CUDA",
+      "minimum_version": null
+    },
+    "HIP": {
+      "used_as_default": false,
+      "build_flag": "-DGGML_HIP",
+      "minimum_version": null
+    },
+    "Vulkan": {
+      "used_as_default": false,
+      "build_flag": "-DGGML_VULKAN",
+      "minimum_version": null
+    },
+    "SYCL": {
+      "used_as_default": false,
+      "build_flag": "-DGGML_SYCL",
+      "minimum_version": null
+    },
+    "OpenCL": {
+      "used_as_default": false,
+      "build_flag": "-DGGML_OPENCL",
+      "minimum_version": null
+    },
+    "Metal": {
+      "used_as_default": false,
+      "build_flag": "-DGGML_METAL",
+      "minimum_version": null
+    },
+    "MUSA": {
+      "used_as_default": false,
+      "build_flag": "-DGGML_MUSA",
+      "minimum_version": null
+    }
+  },
+  "parallel_programming_libraries": {
+    "OpenMP": {
+      "used_as_default": true,
+      "build_flag": "-DGGML_OPENMP",
+      "minimum_version": null
+    },
+    "Pthread": {
+      "used_as_default": true,
+      "build_flag": null,
+      "minimum_version": null
+    }
+  },
+  "linear_algebra_libraries": {
+    "BLAS": {
+      "used_as_default": false,
+      "build_flag": "-DGGML_BLAS",
+      "condition": "Default is ON on Apple (vendor 'Apple') and OFF on other platforms (vendor 'Generic')"
+    },
+    "Accelerate": {
+      "used_as_default": true,
+      "build_flag": "-DGGML_ACCELERATE",
+      "condition": "Enabled by default"
+    }
+  },
+  "FFT_libraries": {},
+  "other_external_libraries": {
+    "libcurl": {
+      "version": "",
+      "used_as_default": true,
+      "conditions": "Enabled when LLAMA_BUILD_COMMON is true; controlled by option LLAMA_CURL",
+      "build_flag": "-DLLAMA_CURL"
+    }
+  },
+  "compiler_flags": [
+    "/utf-8",
+    "/bigobj",
+    "-fsanitize=thread",
+    "-fsanitize=address",
+    "-fsanitize=undefined"
+  ],
+  "optimization_build_flags": [
+    "-DGGML_LTO",
+    "-DGGML_CCACHE",
+    "-DGGML_FATAL_WARNINGS"
+  ],
+  "compilers": {
+    "C": {
+      "minimum_version": "C11"
+    },
+    "CXX": {
+      "minimum_version": "C++17"
+    }
+  },
+  "architectures": [
+    "x86",
+    "ARM",
+    "PowerPC",
+    "RISCV"
+  ],
+  "simd_vectorization": {
+    "AVX": {
+      "build_flag": "-DGGML_AVX",
+      "default": false
+    },
+    "AVX_VNNI": {
+      "build_flag": "-DGGML_AVX_VNNI",
+      "default": false
+    },
+    "AVX2": {
+      "build_flag": "-DGGML_AVX2",
+      "default": false
+    },
+    "BMI2": {
+      "build_flag": "-DGGML_BMI2",
+      "default": false
+    },
+    "AVX512": {
+      "build_flag": "-DGGML_AVX512",
+      "default": false
+    },
+    "AVX512_VBMI": {
+      "build_flag": "-DGGML_AVX512_VBMI",
+      "default": false
+    },
+    "AVX512_VNNI": {
+      "build_flag": "-DGGML_AVX512_VNNI",
+      "default": false
+    },
+    "AVX512_BF16": {
+      "build_flag": "-DGGML_AVX512_BF16",
+      "default": false
+    },
+    "FMA": {
+      "build_flag": "-DGGML_FMA",
+      "default": false
+    },
+    "F16C": {
+      "build_flag": "-DGGML_F16C",
+      "default": false
+    },
+    "AMX_TILE": {
+      "build_flag": "-DGGML_AMX_TILE",
+      "default": false
+    },
+    "AMX_INT8": {
+      "build_flag": "-DGGML_AMX_INT8",
+      "default": false
+    },
+    "AMX_BF16": {
+      "build_flag": "-DGGML_AMX_BF16",
+      "default": false
+    },
+    "LASX": {
+      "build_flag": "-DGGML_LASX",
+      "default": true
+    },
+    "LSX": {
+      "build_flag": "-DGGML_LSX",
+      "default": true
+    },
+    "RVV": {
+      "build_flag": "-DGGML_RVV",
+      "default": true
+    },
+    "RV_ZFH": {
+      "build_flag": "-DGGML_RV_ZFH",
+      "default": false
+    },
+    "VXE": {
+      "build_flag": "-DGGML_VXE",
+      "default": true
+    }
+  },
+  "build_system": {
+    "type": "cmake",
+    "minimum_version": "3.14"
+  },
+  "internal_build": {
+    "library_name": "ggml",
+    "build_flag": null
+  }
+}

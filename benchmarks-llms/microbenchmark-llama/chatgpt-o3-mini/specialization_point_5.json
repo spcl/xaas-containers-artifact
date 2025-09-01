@@ -1,0 +1,194 @@
+{
+  "gpu_build": {
+    "value": true,
+    "build_flag": null
+  },
+  "gpu_backends": {
+    "CUDA": {
+      "used_as_default": false,
+      "build_flag": "-DGGML_CUDA",
+      "minimum_version": null
+    },
+    "HIP": {
+      "used_as_default": false,
+      "build_flag": "-DGGML_HIP",
+      "minimum_version": null
+    },
+    "VULKAN": {
+      "used_as_default": false,
+      "build_flag": "-DGGML_VULKAN",
+      "minimum_version": null
+    },
+    "OPENCL": {
+      "used_as_default": false,
+      "build_flag": "-DGGML_OPENCL",
+      "minimum_version": null
+    },
+    "SYCL": {
+      "used_as_default": false,
+      "build_flag": "-DGGML_SYCL",
+      "minimum_version": null
+    },
+    "METAL": {
+      "used_as_default": false,
+      "build_flag": "-DGGML_METAL",
+      "minimum_version": null
+    },
+    "MUSA": {
+      "used_as_default": false,
+      "build_flag": "-DGGML_MUSA",
+      "minimum_version": null
+    },
+    "KOMPUTE": {
+      "used_as_default": false,
+      "build_flag": "-DGGML_KOMPUTE",
+      "minimum_version": null
+    }
+  },
+  "parallel_programming_libraries": {
+    "OpenMP": {
+      "used_as_default": true,
+      "build_flag": "-DGGML_OPENMP",
+      "minimum_version": null
+    }
+  },
+  "linear_algebra_libraries": {
+    "BLAS": {
+      "used_as_default": false,
+      "build_flag": "-DGGML_BLAS",
+      "condition": "Default is ON on Apple (vendor Apple) and OFF on other platforms (vendor Generic)"
+    },
+    "Accelerate": {
+      "used_as_default": true,
+      "build_flag": "-DGGML_ACCELERATE",
+      "condition": null
+    }
+  },
+  "FFT_libraries": {},
+  "other_external_libraries": {
+    "libcurl": {
+      "version": "unspecified",
+      "used_as_default": true,
+      "conditions": "Enabled for downloading models (LLAMA_CURL option)",
+      "build_flag": "-DLLAMA_CURL"
+    },
+    "LLGuidance": {
+      "version": "unspecified",
+      "used_as_default": false,
+      "conditions": "Used in llama-common for structured output (LLAMA_LLGUIDANCE option)",
+      "build_flag": "-DLLAMA_LLGUIDANCE"
+    }
+  },
+  "compiler_flags": [
+    "/utf-8",
+    "/bigobj",
+    "-fsanitize=thread",
+    "-fsanitize=address",
+    "-fno-omit-frame-pointer",
+    "-fsanitize=undefined"
+  ],
+  "optimization_build_flags": [
+    "-DGGML_LTO",
+    "-DGGML_CCACHE",
+    "-DGGML_CUDA_GRAPHS"
+  ],
+  "compilers": {
+    "gcc": {
+      "minimum_version": "unspecified"
+    },
+    "clang": {
+      "minimum_version": "unspecified"
+    },
+    "msvc": {
+      "minimum_version": "unspecified"
+    }
+  },
+  "architectures": [
+    "x86",
+    "AArch64",
+    "PowerPC",
+    "RISC-V"
+  ],
+  "simd_vectorization": {
+    "AVX": {
+      "build_flag": "-DGGML_AVX",
+      "default": false
+    },
+    "AVX_VNNI": {
+      "build_flag": "-DGGML_AVX_VNNI",
+      "default": false
+    },
+    "AVX2": {
+      "build_flag": "-DGGML_AVX2",
+      "default": false
+    },
+    "BMI2": {
+      "build_flag": "-DGGML_BMI2",
+      "default": false
+    },
+    "AVX512": {
+      "build_flag": "-DGGML_AVX512",
+      "default": false
+    },
+    "AVX512_VBMI": {
+      "build_flag": "-DGGML_AVX512_VBMI",
+      "default": false
+    },
+    "AVX512_VNNI": {
+      "build_flag": "-DGGML_AVX512_VNNI",
+      "default": false
+    },
+    "AVX512_BF16": {
+      "build_flag": "-DGGML_AVX512_BF16",
+      "default": false
+    },
+    "FMA": {
+      "build_flag": "-DGGML_FMA",
+      "default": false
+    },
+    "F16C": {
+      "build_flag": "-DGGML_F16C",
+      "default": false
+    },
+    "AMX_TILE": {
+      "build_flag": "-DGGML_AMX_TILE",
+      "default": false
+    },
+    "AMX_INT8": {
+      "build_flag": "-DGGML_AMX_INT8",
+      "default": false
+    },
+    "AMX_BF16": {
+      "build_flag": "-DGGML_AMX_BF16",
+      "default": false
+    },
+    "LASX": {
+      "build_flag": "-DGGML_LASX",
+      "default": true
+    },
+    "LSX": {
+      "build_flag": "-DGGML_LSX",
+      "default": true
+    },
+    "RVV": {
+      "build_flag": "-DGGML_RVV",
+      "default": true
+    },
+    "RV_ZFH": {
+      "build_flag": "-DGGML_RV_ZFH",
+      "default": false
+    },
+    "VXE": {
+      "build_flag": "-DGGML_VXE",
+      "default": true
+    }
+  },
+  "build_system": {
+    "type": "cmake",
+    "minimum_version": "3.14"
+  },
+  "internal_build": {
+    "library_name": "none",
+    "build_flag": null
+  }
+}

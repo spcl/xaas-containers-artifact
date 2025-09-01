@@ -1,0 +1,152 @@
+{
+  "gpu_build": {
+    "value": true,
+    "build_flag": null
+  },
+  "gpu_backends": {
+    "CUDA": {
+      "used_as_default": false,
+      "build_flag": "-DGGML_CUDA",
+      "minimum_version": null
+    },
+    "HIP": {
+      "used_as_default": false,
+      "build_flag": "-DGGML_HIP",
+      "minimum_version": null
+    },
+    "SYCL": {
+      "used_as_default": false,
+      "build_flag": "-DGGML_SYCL",
+      "minimum_version": null
+    },
+    "OpenCL": {
+      "used_as_default": false,
+      "build_flag": "-DGGML_OPENCL",
+      "minimum_version": null
+    },
+    "Vulkan": {
+      "used_as_default": false,
+      "build_flag": "-DGGML_VULKAN",
+      "minimum_version": null
+    },
+    "Metal": {
+      "used_as_default": false,
+      "build_flag": "-DGGML_METAL",
+      "minimum_version": null
+    }
+  },
+  "parallel_programming_libraries": {
+    "OpenMP": {
+      "used_as_default": true,
+      "build_flag": "-DGGML_OPENMP",
+      "minimum_version": null
+    }
+  },
+  "linear_algebra_libraries": {
+    "BLAS": {
+      "used_as_default": false,
+      "build_flag": "-DGGML_BLAS",
+      "condition": "'ON' for Apple, 'OFF' otherwise"
+    },
+    "Accelerate": {
+      "used_as_default": true,
+      "build_flag": "-DGGML_ACCELERATE",
+      "condition": "ON"
+    }
+  },
+  "FFT_libraries": {},
+  "other_external_libraries": {
+    "libcurl": {
+      "version": "unspecified",
+      "used_as_default": true,
+      "conditions": "Used for downloading models",
+      "build_flag": "-DLLAMA_CURL"
+    }
+  },
+  "compiler_flags": [
+    "-Werror",
+    "-fsanitize=thread",
+    "-fsanitize=address",
+    "-fsanitize=undefined"
+  ],
+  "optimization_build_flags": [
+    "-DGGML_NATIVE",
+    "-DGGML_LTO",
+    "-DGGML_CCACHE"
+  ],
+  "compilers": {
+    "C": {
+      "minimum_version": "11"
+    },
+    "C++": {
+      "minimum_version": "17"
+    }
+  },
+  "architectures": [],
+  "simd_vectorization": {
+    "AVX": {
+      "build_flag": "-DGGML_AVX",
+      "default": true
+    },
+    "AVX2": {
+      "build_flag": "-DGGML_AVX2",
+      "default": true
+    },
+    "AVX512F": {
+      "build_flag": "-DGGML_AVX512",
+      "default": false
+    },
+    "AVX-VNNI": {
+      "build_flag": "-DGGML_AVX_VNNI",
+      "default": false
+    },
+    "AVX512-VBMI": {
+      "build_flag": "-DGGML_AVX512_VBMI",
+      "default": false
+    },
+    "AVX512-VNNI": {
+      "build_flag": "-DGGML_AVX512_VNNI",
+      "default": false
+    },
+    "F16C": {
+      "build_flag": "-DGGML_F16C",
+      "default": true
+    },
+    "FMA": {
+      "build_flag": "-DGGML_FMA",
+      "default": true
+    },
+    "AMX-TILE": {
+      "build_flag": "-DGGML_AMX_TILE",
+      "default": false
+    },
+    "AMX-INT8": {
+      "build_flag": "-DGGML_AMX_INT8",
+      "default": false
+    },
+    "AMX-BF16": {
+      "build_flag": "-DGGML_AMX_BF16",
+      "default": false
+    },
+    "LASX": {
+      "build_flag": "-DGGML_LASX",
+      "default": true
+    },
+    "LSX": {
+      "build_flag": "-DGGML_LSX",
+      "default": true
+    },
+    "RVV": {
+      "build_flag": "-DGGML_RVV",
+      "default": true
+    }
+  },
+  "build_system": {
+    "type": "cmake",
+    "minimum_version": "3.14"
+  },
+  "internal_build": {
+    "library_name": "ggml",
+    "build_flag": null
+  }
+}

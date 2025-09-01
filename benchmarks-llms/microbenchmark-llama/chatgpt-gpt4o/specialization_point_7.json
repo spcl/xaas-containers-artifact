@@ -1,0 +1,139 @@
+{
+  "gpu_build": {
+    "value": true,
+    "build_flag": null
+  },
+  "gpu_backends": {
+    "CUDA": {
+      "used_as_default": false,
+      "build_flag": "-DGGML_CUDA",
+      "minimum_version": null
+    },
+    "MUSA": {
+      "used_as_default": false,
+      "build_flag": "-DGGML_MUSA",
+      "minimum_version": null
+    },
+    "HIP": {
+      "used_as_default": false,
+      "build_flag": "-DGGML_HIP",
+      "minimum_version": null
+    },
+    "VULKAN": {
+      "used_as_default": false,
+      "build_flag": "-DGGML_VULKAN",
+      "minimum_version": null
+    },
+    "SYCL": {
+      "used_as_default": false,
+      "build_flag": "-DGGML_SYCL",
+      "minimum_version": null
+    },
+    "OPENCL": {
+      "used_as_default": false,
+      "build_flag": "-DGGML_OPENCL",
+      "minimum_version": null
+    },
+    "METAL": {
+      "used_as_default": true,
+      "build_flag": "-DGGML_METAL",
+      "minimum_version": null
+    }
+  },
+  "parallel_programming_libraries": {
+    "OpenMP": {
+      "used_as_default": true,
+      "build_flag": "-DGGML_OPENMP",
+      "minimum_version": null
+    }
+  },
+  "linear_algebra_libraries": {
+    "BLAS": {
+      "used_as_default": false,
+      "build_flag": "-DGGML_BLAS",
+      "condition": null
+    },
+    "Accelerate": {
+      "used_as_default": true,
+      "build_flag": "-DGGML_ACCELERATE",
+      "condition": "APPLE"
+    }
+  },
+  "FFT_libraries": {},
+  "other_external_libraries": {
+    "libcurl": {
+      "version": null,
+      "used_as_default": true,
+      "conditions": "LLAMA_CURL",
+      "build_flag": null
+    },
+    "LLGuidance": {
+      "version": null,
+      "used_as_default": false,
+      "conditions": "LLAMA_LLGUIDANCE",
+      "build_flag": null
+    }
+  },
+  "compiler_flags": [
+    "-Werror"
+  ],
+  "optimization_build_flags": [
+    "-DGGML_LTO",
+    "-DGGML_NATIVE",
+    "-DGGML_ALL_WARNINGS"
+  ],
+  "compilers": {
+    "C": {
+      "minimum_version": "11"
+    },
+    "CXX": {
+      "minimum_version": "17"
+    }
+  },
+  "architectures": [
+    "AARCH64",
+    "PowerPC"
+  ],
+  "simd_vectorization": {
+    "AVX": {
+      "build_flag": "-DGGML_AVX",
+      "default": false
+    },
+    "AVX2": {
+      "build_flag": "-DGGML_AVX2",
+      "default": false
+    },
+    "AVX512": {
+      "build_flag": "-DGGML_AVX512",
+      "default": false
+    },
+    "FMA": {
+      "build_flag": "-DGGML_FMA",
+      "default": false
+    },
+    "F16C": {
+      "build_flag": "-DGGML_F16C",
+      "default": false
+    },
+    "LASX": {
+      "build_flag": "-DGGML_LASX",
+      "default": true
+    },
+    "LSX": {
+      "build_flag": "-DGGML_LSX",
+      "default": true
+    },
+    "RVV": {
+      "build_flag": "-DGGML_RVV",
+      "default": true
+    }
+  },
+  "build_system": {
+    "type": "cmake",
+    "minimum_version": "3.14"
+  },
+  "internal_build": {
+    "library_name": "libggml",
+    "build_flag": null
+  }
+}

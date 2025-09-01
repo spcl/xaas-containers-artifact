@@ -1,0 +1,118 @@
+{
+  "gpu_build": {
+    "value": true,
+    "build_flag": "-DGGML_CUDA"
+  },
+  "gpu_backends": {
+    "CUDA": {
+      "used_as_default": false,
+      "build_flag": "-DGGML_CUDA=ON",
+      "minimum_version": null
+    },
+    "Metal": {
+      "used_as_default": true,
+      "build_flag": "-DGGML_METAL=ON",
+      "minimum_version": null
+    },
+    "Vulkan": {
+      "used_as_default": false,
+      "build_flag": "-DGGML_VULKAN=ON",
+      "minimum_version": null
+    },
+    "OpenCL": {
+      "used_as_default": false,
+      "build_flag": "-DGGML_OPENCL=ON",
+      "minimum_version": "3.0"
+    },
+    "SYCL": {
+      "used_as_default": false,
+      "build_flag": "-DGGML_SYCL=ON",
+      "minimum_version": null
+    }
+  },
+  "parallel_programming_libraries": {
+    "OpenMP": {
+      "used_as_default": true,
+      "build_flag": "-DGGML_OPENMP=ON",
+      "minimum_version": null
+    }
+  },
+  "linear_algebra_libraries": {
+    "BLAS": {
+      "used_as_default": true,
+      "build_flag": "-DGGML_BLAS=ON",
+      "condition": "Apple platform default"
+    }
+  },
+  "FFT_libraries": {
+    "cuFFT": {
+      "built-in": false,
+      "used_as_default": true,
+      "condition": "When CUDA is enabled",
+      "build_flag": null
+    }
+  },
+  "other_external_libraries": {
+    "CURL": {
+      "version": "",
+      "used_as_default": true,
+      "conditions": "When LLAMA_BUILD_COMMON is ON",
+      "build_flag": "-DLLAMA_CURL=ON"
+    }
+  },
+  "compiler_flags": [
+    "-fsanitize=thread",
+    "-fsanitize=address",
+    "-fsanitize=undefined",
+    "-fno-omit-frame-pointer"
+  ],
+  "optimization_build_flags": [
+    "-DGGML_CUDA_FORCE_MMQ",
+    "-DGGML_CUDA_FORCE_CUBLAS",
+    "-DGGML_METAL_NDEBUG"
+  ],
+  "compilers": {
+    "gcc": {
+      "minimum_version": "11"
+    },
+    "clang": {
+      "minimum_version": "11"
+    }
+  },
+  "architectures": [
+    "x86_64",
+    "ARM64",
+    "PowerPC",
+    "RISC-V"
+  ],
+  "simd_vectorization": {
+    "AVX": {
+      "build_flag": "-DGGML_AVX=ON",
+      "default": true
+    },
+    "AVX2": {
+      "build_flag": "-DGGML_AVX2=ON",
+      "default": true
+    },
+    "AVX512": {
+      "build_flag": "-DGGML_AVX512=ON",
+      "default": false
+    },
+    "FMA": {
+      "build_flag": "-DGGML_FMA=ON",
+      "default": true
+    },
+    "F16C": {
+      "build_flag": "-DGGML_F16C=ON",
+      "default": true
+    }
+  },
+  "build_system": {
+    "type": "cmake",
+    "minimum_version": "3.14"
+  },
+  "internal_build": {
+    "library_name": "FFTW",
+    "build_flag": "-DGMX_BUILD_OWN_FFTW"
+  }
+}
