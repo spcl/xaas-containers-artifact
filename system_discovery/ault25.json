@@ -1,0 +1,293 @@
+{
+  "CPU Info": {
+    "Architecture": "x86_64",
+    "Model Name": "AMD EPYC 7742 64-Core Processor",
+    "Supported Vectorizations": [
+      "avx2",
+      "avx",
+      "sse4_2",
+      "sse4_1",
+      "ssse3",
+      "sse2",
+      "sse"
+    ]
+  },
+  "Accelerators": {
+    "Accelerators": {
+      "lspci": [
+        "00:00.0 Host bridge: Advanced Micro Devices, Inc. [AMD] Starship/Matisse Root Complex",
+        "00:00.2 IOMMU: Advanced Micro Devices, Inc. [AMD] Starship/Matisse IOMMU",
+        "00:01.0 Host bridge: Advanced Micro Devices, Inc. [AMD] Starship/Matisse PCIe Dummy Host Bridge",
+        "00:02.0 Host bridge: Advanced Micro Devices, Inc. [AMD] Starship/Matisse PCIe Dummy Host Bridge",
+        "00:03.0 Host bridge: Advanced Micro Devices, Inc. [AMD] Starship/Matisse PCIe Dummy Host Bridge",
+        "00:04.0 Host bridge: Advanced Micro Devices, Inc. [AMD] Starship/Matisse PCIe Dummy Host Bridge",
+        "00:05.0 Host bridge: Advanced Micro Devices, Inc. [AMD] Starship/Matisse PCIe Dummy Host Bridge",
+        "00:07.0 Host bridge: Advanced Micro Devices, Inc. [AMD] Starship/Matisse PCIe Dummy Host Bridge",
+        "00:07.1 PCI bridge: Advanced Micro Devices, Inc. [AMD] Starship/Matisse Internal PCIe GPP Bridge 0 to bus[E:B]",
+        "00:08.0 Host bridge: Advanced Micro Devices, Inc. [AMD] Starship/Matisse PCIe Dummy Host Bridge",
+        "00:08.1 PCI bridge: Advanced Micro Devices, Inc. [AMD] Starship/Matisse Internal PCIe GPP Bridge 0 to bus[E:B]",
+        "00:14.0 SMBus: Advanced Micro Devices, Inc. [AMD] FCH SMBus Controller (rev 61)",
+        "00:14.3 ISA bridge: Advanced Micro Devices, Inc. [AMD] FCH LPC Bridge (rev 51)",
+        "00:18.0 Host bridge: Advanced Micro Devices, Inc. [AMD] Starship Device 24; Function 0",
+        "00:18.1 Host bridge: Advanced Micro Devices, Inc. [AMD] Starship Device 24; Function 1",
+        "00:18.2 Host bridge: Advanced Micro Devices, Inc. [AMD] Starship Device 24; Function 2",
+        "00:18.3 Host bridge: Advanced Micro Devices, Inc. [AMD] Starship Device 24; Function 3",
+        "00:18.4 Host bridge: Advanced Micro Devices, Inc. [AMD] Starship Device 24; Function 4",
+        "00:18.5 Host bridge: Advanced Micro Devices, Inc. [AMD] Starship Device 24; Function 5",
+        "00:18.6 Host bridge: Advanced Micro Devices, Inc. [AMD] Starship Device 24; Function 6",
+        "00:18.7 Host bridge: Advanced Micro Devices, Inc. [AMD] Starship Device 24; Function 7",
+        "00:19.0 Host bridge: Advanced Micro Devices, Inc. [AMD] Starship Device 24; Function 0",
+        "00:19.1 Host bridge: Advanced Micro Devices, Inc. [AMD] Starship Device 24; Function 1",
+        "00:19.2 Host bridge: Advanced Micro Devices, Inc. [AMD] Starship Device 24; Function 2",
+        "00:19.3 Host bridge: Advanced Micro Devices, Inc. [AMD] Starship Device 24; Function 3",
+        "00:19.4 Host bridge: Advanced Micro Devices, Inc. [AMD] Starship Device 24; Function 4",
+        "00:19.5 Host bridge: Advanced Micro Devices, Inc. [AMD] Starship Device 24; Function 5",
+        "00:19.6 Host bridge: Advanced Micro Devices, Inc. [AMD] Starship Device 24; Function 6",
+        "00:19.7 Host bridge: Advanced Micro Devices, Inc. [AMD] Starship Device 24; Function 7",
+        "01:00.0 Non-Essential Instrumentation [1300]: Advanced Micro Devices, Inc. [AMD] Starship/Matisse PCIe Dummy Function",
+        "01:00.2 Encryption controller: Advanced Micro Devices, Inc. [AMD] Starship/Matisse PTDMA",
+        "02:00.0 Non-Essential Instrumentation [1300]: Advanced Micro Devices, Inc. [AMD] Starship/Matisse Reserved SPP",
+        "02:00.2 Encryption controller: Advanced Micro Devices, Inc. [AMD] Starship/Matisse PTDMA",
+        "02:00.3 USB controller: Advanced Micro Devices, Inc. [AMD] Starship USB 3.0 Host Controller",
+        "20:00.0 Host bridge: Advanced Micro Devices, Inc. [AMD] Starship/Matisse Root Complex",
+        "20:00.2 IOMMU: Advanced Micro Devices, Inc. [AMD] Starship/Matisse IOMMU",
+        "20:01.0 Host bridge: Advanced Micro Devices, Inc. [AMD] Starship/Matisse PCIe Dummy Host Bridge",
+        "20:02.0 Host bridge: Advanced Micro Devices, Inc. [AMD] Starship/Matisse PCIe Dummy Host Bridge",
+        "20:03.0 Host bridge: Advanced Micro Devices, Inc. [AMD] Starship/Matisse PCIe Dummy Host Bridge",
+        "20:03.1 PCI bridge: Advanced Micro Devices, Inc. [AMD] Starship/Matisse GPP Bridge",
+        "20:04.0 Host bridge: Advanced Micro Devices, Inc. [AMD] Starship/Matisse PCIe Dummy Host Bridge",
+        "20:05.0 Host bridge: Advanced Micro Devices, Inc. [AMD] Starship/Matisse PCIe Dummy Host Bridge",
+        "20:07.0 Host bridge: Advanced Micro Devices, Inc. [AMD] Starship/Matisse PCIe Dummy Host Bridge",
+        "20:07.1 PCI bridge: Advanced Micro Devices, Inc. [AMD] Starship/Matisse Internal PCIe GPP Bridge 0 to bus[E:B]",
+        "20:08.0 Host bridge: Advanced Micro Devices, Inc. [AMD] Starship/Matisse PCIe Dummy Host Bridge",
+        "20:08.1 PCI bridge: Advanced Micro Devices, Inc. [AMD] Starship/Matisse Internal PCIe GPP Bridge 0 to bus[E:B]",
+        "2f:00.0 3D controller: NVIDIA Corporation GA100 [A100 SXM4 40GB] (rev a1)",
+        "30:00.0 3D controller: NVIDIA Corporation GA100 [A100 SXM4 40GB] (rev a1)",
+        "36:00.0 Non-Essential Instrumentation [1300]: Advanced Micro Devices, Inc. [AMD] Starship/Matisse PCIe Dummy Function",
+        "36:00.2 Encryption controller: Advanced Micro Devices, Inc. [AMD] Starship/Matisse PTDMA",
+        "37:00.0 Non-Essential Instrumentation [1300]: Advanced Micro Devices, Inc. [AMD] Starship/Matisse Reserved SPP",
+        "37:00.1 Encryption controller: Advanced Micro Devices, Inc. [AMD] Starship/Matisse Cryptographic Coprocessor PSPCPP",
+        "37:00.2 Encryption controller: Advanced Micro Devices, Inc. [AMD] Starship/Matisse PTDMA",
+        "37:00.3 USB controller: Advanced Micro Devices, Inc. [AMD] Starship USB 3.0 Host Controller",
+        "40:00.0 Host bridge: Advanced Micro Devices, Inc. [AMD] Starship/Matisse Root Complex",
+        "40:00.2 IOMMU: Advanced Micro Devices, Inc. [AMD] Starship/Matisse IOMMU",
+        "40:01.0 Host bridge: Advanced Micro Devices, Inc. [AMD] Starship/Matisse PCIe Dummy Host Bridge",
+        "40:02.0 Host bridge: Advanced Micro Devices, Inc. [AMD] Starship/Matisse PCIe Dummy Host Bridge",
+        "40:03.0 Host bridge: Advanced Micro Devices, Inc. [AMD] Starship/Matisse PCIe Dummy Host Bridge",
+        "40:04.0 Host bridge: Advanced Micro Devices, Inc. [AMD] Starship/Matisse PCIe Dummy Host Bridge",
+        "40:05.0 Host bridge: Advanced Micro Devices, Inc. [AMD] Starship/Matisse PCIe Dummy Host Bridge",
+        "40:07.0 Host bridge: Advanced Micro Devices, Inc. [AMD] Starship/Matisse PCIe Dummy Host Bridge",
+        "40:07.1 PCI bridge: Advanced Micro Devices, Inc. [AMD] Starship/Matisse Internal PCIe GPP Bridge 0 to bus[E:B]",
+        "40:08.0 Host bridge: Advanced Micro Devices, Inc. [AMD] Starship/Matisse PCIe Dummy Host Bridge",
+        "40:08.1 PCI bridge: Advanced Micro Devices, Inc. [AMD] Starship/Matisse Internal PCIe GPP Bridge 0 to bus[E:B]",
+        "40:08.2 PCI bridge: Advanced Micro Devices, Inc. [AMD] Starship/Matisse Internal PCIe GPP Bridge 0 to bus[E:B]",
+        "41:00.0 Non-Essential Instrumentation [1300]: Advanced Micro Devices, Inc. [AMD] Starship/Matisse PCIe Dummy Function",
+        "41:00.2 Encryption controller: Advanced Micro Devices, Inc. [AMD] Starship/Matisse PTDMA",
+        "42:00.0 Non-Essential Instrumentation [1300]: Advanced Micro Devices, Inc. [AMD] Starship/Matisse Reserved SPP",
+        "42:00.2 Encryption controller: Advanced Micro Devices, Inc. [AMD] Starship/Matisse PTDMA",
+        "43:00.0 SATA controller: Advanced Micro Devices, Inc. [AMD] FCH SATA Controller [AHCI mode] (rev 51)",
+        "60:00.0 Host bridge: Advanced Micro Devices, Inc. [AMD] Starship/Matisse Root Complex",
+        "60:00.2 IOMMU: Advanced Micro Devices, Inc. [AMD] Starship/Matisse IOMMU",
+        "60:01.0 Host bridge: Advanced Micro Devices, Inc. [AMD] Starship/Matisse PCIe Dummy Host Bridge",
+        "60:02.0 Host bridge: Advanced Micro Devices, Inc. [AMD] Starship/Matisse PCIe Dummy Host Bridge",
+        "60:03.0 Host bridge: Advanced Micro Devices, Inc. [AMD] Starship/Matisse PCIe Dummy Host Bridge",
+        "60:03.3 PCI bridge: Advanced Micro Devices, Inc. [AMD] Starship/Matisse GPP Bridge",
+        "60:03.6 PCI bridge: Advanced Micro Devices, Inc. [AMD] Starship/Matisse GPP Bridge",
+        "60:04.0 Host bridge: Advanced Micro Devices, Inc. [AMD] Starship/Matisse PCIe Dummy Host Bridge",
+        "60:05.0 Host bridge: Advanced Micro Devices, Inc. [AMD] Starship/Matisse PCIe Dummy Host Bridge",
+        "60:07.0 Host bridge: Advanced Micro Devices, Inc. [AMD] Starship/Matisse PCIe Dummy Host Bridge",
+        "60:07.1 PCI bridge: Advanced Micro Devices, Inc. [AMD] Starship/Matisse Internal PCIe GPP Bridge 0 to bus[E:B]",
+        "60:08.0 Host bridge: Advanced Micro Devices, Inc. [AMD] Starship/Matisse PCIe Dummy Host Bridge",
+        "60:08.1 PCI bridge: Advanced Micro Devices, Inc. [AMD] Starship/Matisse Internal PCIe GPP Bridge 0 to bus[E:B]",
+        "65:00.0 Non-Essential Instrumentation [1300]: Advanced Micro Devices, Inc. [AMD] Starship/Matisse PCIe Dummy Function",
+        "65:00.2 Encryption controller: Advanced Micro Devices, Inc. [AMD] Starship/Matisse PTDMA",
+        "66:00.0 Non-Essential Instrumentation [1300]: Advanced Micro Devices, Inc. [AMD] Starship/Matisse Reserved SPP",
+        "66:00.2 Encryption controller: Advanced Micro Devices, Inc. [AMD] Starship/Matisse PTDMA",
+        "80:00.0 Host bridge: Advanced Micro Devices, Inc. [AMD] Starship/Matisse Root Complex",
+        "80:00.2 IOMMU: Advanced Micro Devices, Inc. [AMD] Starship/Matisse IOMMU",
+        "80:01.0 Host bridge: Advanced Micro Devices, Inc. [AMD] Starship/Matisse PCIe Dummy Host Bridge",
+        "80:01.1 PCI bridge: Advanced Micro Devices, Inc. [AMD] Starship/Matisse GPP Bridge",
+        "80:01.2 PCI bridge: Advanced Micro Devices, Inc. [AMD] Starship/Matisse GPP Bridge",
+        "80:02.0 Host bridge: Advanced Micro Devices, Inc. [AMD] Starship/Matisse PCIe Dummy Host Bridge",
+        "80:03.0 Host bridge: Advanced Micro Devices, Inc. [AMD] Starship/Matisse PCIe Dummy Host Bridge",
+        "80:04.0 Host bridge: Advanced Micro Devices, Inc. [AMD] Starship/Matisse PCIe Dummy Host Bridge",
+        "80:05.0 Host bridge: Advanced Micro Devices, Inc. [AMD] Starship/Matisse PCIe Dummy Host Bridge",
+        "80:07.0 Host bridge: Advanced Micro Devices, Inc. [AMD] Starship/Matisse PCIe Dummy Host Bridge",
+        "80:07.1 PCI bridge: Advanced Micro Devices, Inc. [AMD] Starship/Matisse Internal PCIe GPP Bridge 0 to bus[E:B]",
+        "80:08.0 Host bridge: Advanced Micro Devices, Inc. [AMD] Starship/Matisse PCIe Dummy Host Bridge",
+        "80:08.1 PCI bridge: Advanced Micro Devices, Inc. [AMD] Starship/Matisse Internal PCIe GPP Bridge 0 to bus[E:B]",
+        "83:00.0 Non-Essential Instrumentation [1300]: Advanced Micro Devices, Inc. [AMD] Starship/Matisse PCIe Dummy Function",
+        "83:00.2 Encryption controller: Advanced Micro Devices, Inc. [AMD] Starship/Matisse PTDMA",
+        "84:00.0 Non-Essential Instrumentation [1300]: Advanced Micro Devices, Inc. [AMD] Starship/Matisse Reserved SPP",
+        "84:00.2 Encryption controller: Advanced Micro Devices, Inc. [AMD] Starship/Matisse PTDMA",
+        "a0:00.0 Host bridge: Advanced Micro Devices, Inc. [AMD] Starship/Matisse Root Complex",
+        "a0:00.2 IOMMU: Advanced Micro Devices, Inc. [AMD] Starship/Matisse IOMMU",
+        "a0:01.0 Host bridge: Advanced Micro Devices, Inc. [AMD] Starship/Matisse PCIe Dummy Host Bridge",
+        "a0:02.0 Host bridge: Advanced Micro Devices, Inc. [AMD] Starship/Matisse PCIe Dummy Host Bridge",
+        "a0:03.0 Host bridge: Advanced Micro Devices, Inc. [AMD] Starship/Matisse PCIe Dummy Host Bridge",
+        "a0:03.1 PCI bridge: Advanced Micro Devices, Inc. [AMD] Starship/Matisse GPP Bridge",
+        "a0:04.0 Host bridge: Advanced Micro Devices, Inc. [AMD] Starship/Matisse PCIe Dummy Host Bridge",
+        "a0:05.0 Host bridge: Advanced Micro Devices, Inc. [AMD] Starship/Matisse PCIe Dummy Host Bridge",
+        "a0:07.0 Host bridge: Advanced Micro Devices, Inc. [AMD] Starship/Matisse PCIe Dummy Host Bridge",
+        "a0:07.1 PCI bridge: Advanced Micro Devices, Inc. [AMD] Starship/Matisse Internal PCIe GPP Bridge 0 to bus[E:B]",
+        "a0:08.0 Host bridge: Advanced Micro Devices, Inc. [AMD] Starship/Matisse PCIe Dummy Host Bridge",
+        "a0:08.1 PCI bridge: Advanced Micro Devices, Inc. [AMD] Starship/Matisse Internal PCIe GPP Bridge 0 to bus[E:B]",
+        "af:00.0 3D controller: NVIDIA Corporation GA100 [A100 SXM4 40GB] (rev a1)",
+        "b0:00.0 3D controller: NVIDIA Corporation GA100 [A100 SXM4 40GB] (rev a1)",
+        "b6:00.0 Non-Essential Instrumentation [1300]: Advanced Micro Devices, Inc. [AMD] Starship/Matisse PCIe Dummy Function",
+        "b6:00.2 Encryption controller: Advanced Micro Devices, Inc. [AMD] Starship/Matisse PTDMA",
+        "b7:00.0 Non-Essential Instrumentation [1300]: Advanced Micro Devices, Inc. [AMD] Starship/Matisse Reserved SPP",
+        "b7:00.1 Encryption controller: Advanced Micro Devices, Inc. [AMD] Starship/Matisse Cryptographic Coprocessor PSPCPP",
+        "b7:00.2 Encryption controller: Advanced Micro Devices, Inc. [AMD] Starship/Matisse PTDMA",
+        "c0:00.0 Host bridge: Advanced Micro Devices, Inc. [AMD] Starship/Matisse Root Complex",
+        "c0:00.2 IOMMU: Advanced Micro Devices, Inc. [AMD] Starship/Matisse IOMMU",
+        "c0:01.0 Host bridge: Advanced Micro Devices, Inc. [AMD] Starship/Matisse PCIe Dummy Host Bridge",
+        "c0:02.0 Host bridge: Advanced Micro Devices, Inc. [AMD] Starship/Matisse PCIe Dummy Host Bridge",
+        "c0:03.0 Host bridge: Advanced Micro Devices, Inc. [AMD] Starship/Matisse PCIe Dummy Host Bridge",
+        "c0:04.0 Host bridge: Advanced Micro Devices, Inc. [AMD] Starship/Matisse PCIe Dummy Host Bridge",
+        "c0:05.0 Host bridge: Advanced Micro Devices, Inc. [AMD] Starship/Matisse PCIe Dummy Host Bridge",
+        "c0:07.0 Host bridge: Advanced Micro Devices, Inc. [AMD] Starship/Matisse PCIe Dummy Host Bridge",
+        "c0:07.1 PCI bridge: Advanced Micro Devices, Inc. [AMD] Starship/Matisse Internal PCIe GPP Bridge 0 to bus[E:B]",
+        "c0:08.0 Host bridge: Advanced Micro Devices, Inc. [AMD] Starship/Matisse PCIe Dummy Host Bridge",
+        "c0:08.1 PCI bridge: Advanced Micro Devices, Inc. [AMD] Starship/Matisse Internal PCIe GPP Bridge 0 to bus[E:B]",
+        "c1:00.0 Non-Essential Instrumentation [1300]: Advanced Micro Devices, Inc. [AMD] Starship/Matisse PCIe Dummy Function",
+        "c1:00.2 Encryption controller: Advanced Micro Devices, Inc. [AMD] Starship/Matisse PTDMA",
+        "c2:00.0 Non-Essential Instrumentation [1300]: Advanced Micro Devices, Inc. [AMD] Starship/Matisse Reserved SPP",
+        "c2:00.2 Encryption controller: Advanced Micro Devices, Inc. [AMD] Starship/Matisse PTDMA",
+        "e0:00.0 Host bridge: Advanced Micro Devices, Inc. [AMD] Starship/Matisse Root Complex",
+        "e0:00.2 IOMMU: Advanced Micro Devices, Inc. [AMD] Starship/Matisse IOMMU",
+        "e0:01.0 Host bridge: Advanced Micro Devices, Inc. [AMD] Starship/Matisse PCIe Dummy Host Bridge",
+        "e0:02.0 Host bridge: Advanced Micro Devices, Inc. [AMD] Starship/Matisse PCIe Dummy Host Bridge",
+        "e0:03.0 Host bridge: Advanced Micro Devices, Inc. [AMD] Starship/Matisse PCIe Dummy Host Bridge",
+        "e0:04.0 Host bridge: Advanced Micro Devices, Inc. [AMD] Starship/Matisse PCIe Dummy Host Bridge",
+        "e0:05.0 Host bridge: Advanced Micro Devices, Inc. [AMD] Starship/Matisse PCIe Dummy Host Bridge",
+        "e0:07.0 Host bridge: Advanced Micro Devices, Inc. [AMD] Starship/Matisse PCIe Dummy Host Bridge",
+        "e0:07.1 PCI bridge: Advanced Micro Devices, Inc. [AMD] Starship/Matisse Internal PCIe GPP Bridge 0 to bus[E:B]",
+        "e0:08.0 Host bridge: Advanced Micro Devices, Inc. [AMD] Starship/Matisse PCIe Dummy Host Bridge",
+        "e0:08.1 PCI bridge: Advanced Micro Devices, Inc. [AMD] Starship/Matisse Internal PCIe GPP Bridge 0 to bus[E:B]",
+        "e1:00.0 Non-Essential Instrumentation [1300]: Advanced Micro Devices, Inc. [AMD] Starship/Matisse PCIe Dummy Function",
+        "e1:00.2 Encryption controller: Advanced Micro Devices, Inc. [AMD] Starship/Matisse PTDMA",
+        "e2:00.0 Non-Essential Instrumentation [1300]: Advanced Micro Devices, Inc. [AMD] Starship/Matisse Reserved SPP",
+        "e2:00.2 Encryption controller: Advanced Micro Devices, Inc. [AMD] Starship/Matisse PTDMA"
+      ],
+      "nvidia": [
+        {
+          "gpu": "NVIDIA A100-SXM4-40GB",
+          "compute_cap": "8.0",
+          "driver": "570.86.15"
+        },
+        {
+          "gpu": "NVIDIA A100-SXM4-40GB",
+          "compute_cap": "8.0",
+          "driver": "570.86.15"
+        },
+        {
+          "gpu": "NVIDIA A100-SXM4-40GB",
+          "compute_cap": "8.0",
+          "driver": "570.86.15"
+        },
+        {
+          "gpu": "NVIDIA A100-SXM4-40GB",
+          "compute_cap": "8.0",
+          "driver": "570.86.15"
+        }
+      ]
+    },
+    "Driver Versions": {
+      "NVIDIA": "570.86.15",
+      "AMD": "5.11.14"
+    }
+  },
+  "Parallel Libraries": {
+    "OpenMPI": {
+      "libmpi.so.40": "/apps/ault/spack/opt/spack/linux-centos8-zen/gcc-8.4.1/openmpi-4.1.1-epxpvnwjl2smjwuwqg67h2wrmdxw6nhj/lib/libmpi.so.40",
+      "libmpi.so": "/apps/ault/spack/opt/spack/linux-centos8-zen/gcc-8.4.1/openmpi-4.1.1-epxpvnwjl2smjwuwqg67h2wrmdxw6nhj/lib/libmpi.so",
+      "libmpi.so.40.30.1": "/apps/ault/spack/opt/spack/linux-centos8-zen/gcc-8.4.1/openmpi-4.1.1-epxpvnwjl2smjwuwqg67h2wrmdxw6nhj/lib/libmpi.so.40.30.1"
+    }
+  },
+  "FFT Libraries": {
+    "MKL": {
+      "shared_lib": "libmkl_core",
+      "path": "/apps/ault/spack/opt/spack/linux-centos8-zen/gcc-8.4.1/intel-oneapi-mkl-2021.3.0-7vtzbakydduwk5lkporwbhsd6znar5ib/mkl/2021.3.0/lib/intel64/libmkl_core.so",
+      "version": "Unknown Version"
+    },
+    "cufft": {
+      "shared_lib": "libcufft",
+      "path": "/apps/ault/spack/opt/spack/linux-centos8-zen/gcc-8.4.1/cuda-12.1.1-zbdbt4aikrp6sdems6n3t5wvqxm3tza5/lib64/libcufft.so.11.0.2.54",
+      "version": "11.0.2.54"
+    },
+    "cufftw": {
+      "shared_lib": "libcufftw",
+      "path": "/apps/ault/spack/opt/spack/linux-centos8-zen/gcc-8.4.1/cuda-12.1.1-zbdbt4aikrp6sdems6n3t5wvqxm3tza5/lib64/libcufftw.so.11.0.2.54",
+      "version": "11.0.2.54"
+    }
+  },
+  "linear algebra Libraries": {
+    "MKL": {
+      "installation_path": "/apps/ault/spack/opt/spack/linux-centos8-zen/gcc-8.4.1/intel-oneapi-mkl-2021.3.0-7vtzbakydduwk5lkporwbhsd6znar5ib/mkl/2021.3.0/lib/intel64",
+      "version": "8.4.1"
+    }
+  },
+  "GPU Backends": {
+    "CUDA": {
+      "libraries": [
+        "/lib64/libcudadebugger.so.1",
+        "/lib64/libcuda.so.1",
+        "/lib/libcuda.so.1",
+        "/lib64/libcuda.so",
+        "/lib/libcuda.so"
+      ],
+      "version": "12.1"
+    },
+    "OpenCL": {
+      "libraries": [
+        "/lib64/libOpenCL.so.1",
+        "/lib/libOpenCL.so.1",
+        "/lib64/libOpenCL.so",
+        "/lib/libOpenCL.so"
+      ],
+      "version": "3.0"
+    },
+    "SYCL": {
+      "libraries": "5",
+      "version": "/apps/ault/spack/opt/spack/linux-centos8-zen/gcc-8.4.1/intel-oneapi-compilers-2021.3.0-zdnqmgilkc6gnyxxmek7w3ny7iua4qpw/compiler/2021.3.0/linux/lib/libsycl.so.5"
+    },
+    "HIP": {
+      "libraries": [],
+      "version": null
+    },
+    "ROCm": {
+      "libraries": [],
+      "version": "4.3.0"
+    }
+  },
+  "Loaded Modules": {
+    "libxml2": "2.9.10",
+    "cuda": "12.1.1",
+    "intel-oneapi-mkl": "2021.3.0",
+    "openmpi": "4.1.1",
+    "intel-oneapi-compilers": "2021.3.0",
+    "sarus": "1.6.0"
+  },
+  "Compilers": {
+    "c": {
+      "gcc": "gcc (GCC) 8.4.1 20200928 (Red Hat 8.4.1-1)",
+      "clang": "Intel(R) oneAPI DPC++/C++ Compiler 2021.3.0 (2021.3.0.20210619)",
+      "icc": "icc (ICC) 2021.3.0 20210609",
+      "icx": "Intel(R) oneAPI DPC++/C++ Compiler 2021.3.0 (2021.3.0.20210619)",
+      "mpicc": "gcc (GCC) 8.4.1 20200928 (Red Hat 8.4.1-1)"
+    },
+    "cxx": {
+      "g++": "g++ (GCC) 8.4.1 20200928 (Red Hat 8.4.1-1)",
+      "clang++": "Intel(R) oneAPI DPC++/C++ Compiler 2021.3.0 (2021.3.0.20210619)",
+      "icpc": "icpc (ICC) 2021.3.0 20210609",
+      "icpx": "Intel(R) oneAPI DPC++/C++ Compiler 2021.3.0 (2021.3.0.20210619)",
+      "mpicxx": "g++ (GCC) 8.4.1 20200928 (Red Hat 8.4.1-1)"
+    },
+    "fortran": {
+      "gfortran": "GNU Fortran (GCC) 8.4.1 20200928 (Red Hat 8.4.1-1)",
+      "ifort": "ifort (IFORT) 2021.3.0 20210609",
+      "mpifort": "GNU Fortran (GCC) 8.4.1 20200928 (Red Hat 8.4.1-1)"
+    }
+  }
+}

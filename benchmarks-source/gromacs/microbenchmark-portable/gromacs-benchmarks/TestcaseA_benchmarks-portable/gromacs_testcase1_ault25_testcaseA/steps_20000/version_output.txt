@@ -1,0 +1,34 @@
+                      :-) GROMACS - gmx mdrun, 2025.0 (-:
+
+Executable:   /usr/local/gromacs/bin/gmx_mpi
+Data prefix:  /usr/local/gromacs
+Working dir:  /
+Command line:
+  gmx_mpi mdrun --version
+
+GROMACS version:     2025.0
+Precision:           mixed
+Memory model:        64 bit
+MPI library:         MPI
+MPI library version: Intel(R) MPI Library 2021.13 for Linux* OS 
+OpenMP support:      enabled (GMX_OPENMP_MAX_THREADS = 128)
+GPU support:         SYCL (oneAPI DPC++)
+NBNxM GPU setup:     super-cluster 2x2x2 / cluster 8 (cluster-pair splitting on)
+SIMD instructions:   SSE4.1
+CPU FFT library:     fftw-3.3.10-sse2
+GPU FFT library:     oneMath interface library (backends: cuFFT MKLGPU)
+Multi-GPU FFT:       none
+RDTSCP usage:        enabled
+TNG support:         enabled
+Hwloc support:       disabled
+Tracing support:     disabled
+C compiler:          /opt/intel/oneapi/compiler/2024.2/bin/icx IntelLLVM 2024.2.1
+C compiler flags:    -msse4.1 -Wno-missing-field-initializers -fsycl -O3 -DNDEBUG
+C++ compiler:        /opt/intel/oneapi/compiler/2024.2/bin/icpx IntelLLVM 2024.2.1
+C++ compiler flags:  -msse4.1 -Wno-reserved-identifier -Wno-missing-field-initializers -Weverything -Wno-c++98-compat -Wno-c++98-compat-pedantic -Wno-source-uses-openmp -Wno-c++17-extensions -Wno-documentation-unknown-command -Wno-covered-switch-default -Wno-switch-enum -Wno-switch-default -Wno-extra-semi-stmt -Wno-weak-vtables -Wno-shadow -Wno-padded -Wno-reserved-id-macro -Wno-double-promotion -Wno-exit-time-destructors -Wno-global-constructors -Wno-documentation -Wno-format-nonliteral -Wno-used-but-marked-unused -Wno-float-equal -Wno-cuda-compat -Wno-conditional-uninitialized -Wno-conversion -Wno-disabled-macro-expansion -Wno-unused-macros -Wno-unsafe-buffer-usage -fsycl -Wno-old-style-cast -Wno-cast-qual -Wno-suggest-override -Wno-suggest-destructor-override -Wno-zero-as-null-pointer-constant -Wno-cast-function-type-strict SHELL:-fiopenmp -O3 -DNDEBUG
+BLAS library:        Internal
+LAPACK library:      Internal
+SYCL version:        oneAPI DPC++ 20240711 (libsycl 7.2.0)
+SYCL compiler flags: -fsycl -fsycl-targets=nvptx64-nvidia-cuda -fsycl-device-code-split=per_kernel -ffast-math -Wno-incorrect-sub-group-size -Wno-linker-warnings -Wno-override-module -Wno-sycl-target -DSYCL2020_DISABLE_DEPRECATION_WARNINGS
+SYCL linker flags:   -fsycl -fsycl-targets=nvptx64-nvidia-cuda -fsycl-device-code-split=per_kernel -ftarget-register-alloc-mode=pvc:small -Wno-linker-warnings -Wno-override-module -Wno-sycl-target
+

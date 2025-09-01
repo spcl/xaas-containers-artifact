@@ -1,4 +1,4 @@
-# llama.cpp - Source Containers
+# GROMACS - Source Containers
 
 Use the `DOCKER_REPOSITORY` vairable to specify the Docker repository where the source containers will be pushed. The default is `spcleth/xaas-artifact`.
 
