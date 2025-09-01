@@ -16,7 +16,7 @@ pip install -U google-generativeai==0.8.3
 
 pip install openai==1.72.0
 
-pip install anthropic=0.49.0
+pip install anthropic==0.49.0
 
 # no longer used
 #pip install ollama
