@@ -7,7 +7,7 @@ echo "Creating images in Docker repository: ${DOCKER_REPOSITORY}"
 
 echo "Download llama.cpp source code"
 if [ ! -d llama.cpp ]; then
-  git clone git@github.com:ggml-org/llama.cpp.git
+  git clone https://github.com/ggml-org/llama.cpp.git
   cd llama.cpp && git checkout 307bfa253dea07c9270e78fa53b133504e9c3c9d && cd ..
 fi
 
