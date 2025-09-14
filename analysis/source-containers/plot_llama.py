@@ -135,6 +135,10 @@ if len(systems) == 1:
 i = 0
 for ax, system in zip(axs1, systems):
     data = df_exec[df_exec["System"] == system]
+
+    if len(data) == 0:
+        continue
+
     system_order = [b for b in build_order if b in data["Build"].values]
 
     bar_width = 0.5 if system.lower() == "aurora" else 0.8
