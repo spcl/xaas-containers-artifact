@@ -126,6 +126,10 @@ class SpecializationBatchExtractor:
         stats = []
 
         for i in range(1, num_runs + 1):
+
+            # avoid timeouts caused by Anthropic rate limits
+            time.sleep(30)
+
             start_time = time.time()
             response = self.client.messages.create(
                 model=self.model_name,
