@@ -1,6 +1,6 @@
 FROM docker.io/spcleth/xaas:cuda-12.1 as cuda-12.1-layer
 FROM docker.io/spcleth/xaas:oneapi-2021.3.0 as oneapi-2021.3.0-layer
-FROM docker.io/spcleth/xaas-artifact:llamacpp-source-x86_64 AS SOURCE
+FROM docker.io/spcleth/xaas-artifact:llama.cpp-source-x86_64 AS SOURCE
 SHELL ["/bin/bash", "-c"]
 
 ARG nproc

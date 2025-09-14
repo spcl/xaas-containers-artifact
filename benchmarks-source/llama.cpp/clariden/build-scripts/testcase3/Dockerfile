@@ -1,5 +1,5 @@
 FROM docker.io/spcleth/xaas:cuda-12.6-arm as cuda-12.6-arm-layer
-FROM docker.io/spcleth/xaas-artifact:llamacpp-source-arm64 AS SOURCE
+FROM docker.io/spcleth/xaas-artifact:llama.cpp-source-arm64 AS SOURCE
 SHELL ["/bin/bash", "-c"]
 
 ARG nproc

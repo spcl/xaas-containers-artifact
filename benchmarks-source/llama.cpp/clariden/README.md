@@ -14,7 +14,7 @@ We provide the script `download_data.sh` which downloads them and places them in
 We use the following Docker images:
 
 ```
-spcleth/xaas-artifact:llamacpp-source-deploy-clariden
+spcleth/xaas-artifact:llama.cpp-source-deploy-clariden
 spcleth/xaas-artifact:llamacpp-specialized-clariden
 ```
 
