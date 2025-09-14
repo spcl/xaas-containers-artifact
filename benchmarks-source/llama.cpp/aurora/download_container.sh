@@ -14,4 +14,4 @@ CONTAINER_PATH="${ARTIFACT_LOCATION}/data/gromacs/images/"
 mkdir -p ${CONTAINER_PATH}
 
 echo "Download XaaS Source "
-apptainer build ${CONTAINER_PATH}/source-llamacpp-aurora.sing docker://${DOCKER_REPOSITORY}:llamacpp-source-deploy-aurora
+apptainer build ${CONTAINER_PATH}/source-llamacpp-aurora.sing docker://${DOCKER_REPOSITORY}:llama.cpp-source-deploy-aurora
