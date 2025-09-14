@@ -2,6 +2,15 @@
 
 Use the `DOCKER_REPOSITORY` vairable to specify the Docker repository where the source containers will be pushed. The default is `spcleth/xaas-artifact`.
 
+## Requirements
+
+A relatively new version of `yq` is required for the script to transform the YAML definition of specialization and allow override of repository name.
+To install it on Ubuntu, use the following one-liner
+
+```
+sudo wget https://github.com/mikefarah/yq/releases/download/v4.47.1/yq_linux_amd64 -O /usr/local/bin/yq && sudo chmod +x /usr/local/bin/yq
+```
+
 
 ## Generate Source Containers
 
